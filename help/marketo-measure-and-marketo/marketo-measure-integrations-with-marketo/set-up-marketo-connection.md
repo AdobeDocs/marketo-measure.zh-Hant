@@ -3,9 +3,9 @@ unique-page-id: 42762762
 description: 設定Marketo連線 —  [!DNL Marketo Measure]  — 產品檔案
 title: 設定Marketo連線
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
-source-git-commit: 391d2f42c0ee7e0b9e36c8257d23a6e942e4a9fa
+source-git-commit: ff3ebd557ffe745e1297d053be1390093dc4033c
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '190'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->[建立僅限API的使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) Marketo測量/Marketo Engage連線。
+>[建立僅限API的使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) 針對 [!DNL Marketo Measure]/Marketo Engage連接。
 
 1. 在 [!DNL Marketo Measure]，按一下 **[!UICONTROL My Account]** 下拉式清單並選取 **[!UICONTROL Settings]**.
 
