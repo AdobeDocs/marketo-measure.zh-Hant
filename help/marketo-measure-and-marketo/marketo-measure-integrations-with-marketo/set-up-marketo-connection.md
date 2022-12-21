@@ -1,0 +1,59 @@
+---
+unique-page-id: 42762762
+description: 設定Marketo連線 —  [!DNL Marketo Measure]  — 產品檔案
+title: 設定Marketo連線
+exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
+source-git-commit: 391d2f42c0ee7e0b9e36c8257d23a6e942e4a9fa
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 1%
+
+---
+
+# 設定Marketo連線 {#set-up-marketo-connection}
+
+以下說明如何設定您與Marketo的連線。
+
+>[!PREREQUISITES]
+>
+>[建立僅限API的使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) Marketo測量/Marketo Engage連線。
+
+1. 在 [!DNL Marketo Measure]，按一下 **[!UICONTROL My Account]** 下拉式清單並選取 **[!UICONTROL Settings]**.
+
+   ![](assets/set-up-marketo-connection-1.png)
+
+1. 在 [!UICONTROL Integrations]，按一下 **[!UICONTROL Connections]**.
+
+   ![](assets/set-up-marketo-connection-2.png)
+
+1. 按一下 **[!UICONTROL Set Up New CRM Connection]**.
+
+   ![](assets/set-up-marketo-connection-3.png)
+
+1. 按一下 **[!UICONTROL Connect]** 按鈕(在Marketo旁邊)。
+
+   ![](assets/set-up-marketo-connection-4.png)
+
+1. 在新索引標籤中，登入您的Marketo Engage帳戶。 前往 **管理** > **網站服務**. 向下捲動至REST API。 反白顯示並儲存端點與Identity服務URL。 你會需要的。
+
+   ![](assets/set-up-marketo-connection-5.png)
+
+1. 仍處於Marketo Engage中，請選擇 **LaunchPoint** 在左邊的樹上。 找到您要連線至Marketo測量的自訂服務，然後按一下 **檢視詳細資料**.
+
+   ![](assets/set-up-marketo-connection-6.png)
+
+1. 反白顯示並儲存用戶端ID和用戶端密碼。 按一下 **關閉**。
+
+   ![](assets/set-up-marketo-connection-7.png)
+
+1. 返回 [!DNL Marketo Measure]，將您剛收集的資料填入欄位中。
+
+   ![](assets/set-up-marketo-connection-8.png)
+
+1. 輸入值後，按一下 **[!UICONTROL Authenticate]**. 您的Marketo Engage帳戶隨後將連線至 [!DNL Marketo Measure].
+
+   ![](assets/set-up-marketo-connection-9.png)
+
+   >[!NOTE]
+   >
+   >[!DNL Marketo Measure] 會代表您呼叫Marketo API，而不會耗用任何Marketo API限制，因此您無需擔心其他整合的上限和評分配置。
