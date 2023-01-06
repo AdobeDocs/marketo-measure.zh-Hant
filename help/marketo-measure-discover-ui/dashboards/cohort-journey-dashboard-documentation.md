@@ -3,18 +3,32 @@ unique-page-id: 42762648
 description: 同類群組歷程控制面板檔案 —  [!DNL Marketo Measure]  — 產品檔案
 title: 同類群組歷程控制面板檔案
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+source-git-commit: 68d860308fa1939a1c456314ade3d34f896df831
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # 同類群組歷程控制面板檔案 {#cohort-journey-dashboard-documentation}
 
-「同類群組歷程」控制面板可讓行銷人員檢視所選時間範圍內從起始同類群組階段進行的進度，並測量轉換率。
+「同類群組影響」和「漏斗」控制面板可讓行銷人員檢視從所選時間範圍內開始同類群組階段的進展，並測量轉換率。
 
-此控制面板有兩個圖磚：
+主要差異在於我們如何從同類群組階段計算每個實體。
+
+* 同類群組漏斗：每個階段的結果直接從前一階段得出。
+
+   * 只會計算在設定的同類群組開始時間後，從漏斗各個階段經過的記錄。
+
+![](assets/cohort-journey-dashboard-documentation-1.png)
+
+* 同類群組影響：每個階段的結果來自同類群組階段，而非先前階段。
+
+   * 每個階段中的所有記錄只要發生在設定的同類群組開始時間之後，即會計算。 此控制面板自然會有比漏斗控制面板更多的記錄，因為我們要查看的是實體如何從同類群組階段受到影響，而不只是漏斗中的移動。
+
+![](assets/cohort-journey-dashboard-documentation-2.png)
+
+每個控制面板有兩個圖磚：
 
 * 同類群組收入：「同類群組歷程」圖磚「交易」階段中所有商機的總商機量。
 * 同類群組歷程：在所選時間範圍內，從起始同類群組階段晉升至每個歷程階段。
@@ -40,7 +54,7 @@ ht-degree: 0%
 >
 >區段篩選器只會套用至LC階段和之後。 如果「同類群組階段」為「未知」或「已知」，且其中一個區段篩選器有值，控制面板將不會傳回任何結果。
 
-![](assets/one-2.png)
+![](assets/cohort-journey-dashboard-documentation-3.png)
 
 階段包括未知、已知、LC、未結銷售機會/聯繫人階段（設定> CRM >階段映射）中的選定漏斗階段、OC、未結銷售機會階段（設定> CRM >階段映射）中的選定漏斗階段和交易（已結成功銷售機會）。
 
