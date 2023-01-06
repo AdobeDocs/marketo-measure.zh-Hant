@@ -3,7 +3,7 @@ unique-page-id: 42762648
 description: 同類群組歷程控制面板檔案 —  [!DNL Marketo Measure]  — 產品檔案
 title: 同類群組歷程控制面板檔案
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
-source-git-commit: 68d860308fa1939a1c456314ade3d34f896df831
+source-git-commit: 28f1400e8e13c091e8ea2a3bef115a0db810c2e0
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >在所有Discover控制面板中，只能報告一個人員物件，即銷售機會或聯絡人。 此設定於 [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
 
-此控制面板支援下列篩選器：
+控制面板支援下列篩選器：
 
 * 同類群組階段：選取起始同類群組階段。 後續所有階段的記錄都是從同類群組階段的記錄中演化而來。
 * 同類群組日期範圍：選取所選同類群組階段的時間範圍。 它會與同類群組階段一起定義起始資料集。
@@ -53,8 +53,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >區段篩選器只會套用至LC階段和之後。 如果「同類群組階段」為「未知」或「已知」，且其中一個區段篩選器有值，控制面板將不會傳回任何結果。
-
-![](assets/cohort-journey-dashboard-documentation-3.png)
 
 階段包括未知、已知、LC、未結銷售機會/聯繫人階段（設定> CRM >階段映射）中的選定漏斗階段、OC、未結銷售機會階段（設定> CRM >階段映射）中的選定漏斗階段和交易（已結成功銷售機會）。
 
