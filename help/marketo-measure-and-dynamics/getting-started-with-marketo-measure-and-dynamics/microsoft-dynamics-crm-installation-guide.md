@@ -3,9 +3,9 @@ unique-page-id: 18874763
 description: '"[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo測量 — 產品檔案」'
 title: '"[!DNL Microsoft Dynamics] CRM安裝指南」'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 9de82556ca543aa8e6c53242eacae5c87019886c
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -138,11 +138,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->為了成為 [!DNL Marketo Measure] 管理員 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;})，必須將使用者新增為使用者 _和_ 管理員 [!DNL Marketo Measure] 中的產品設定檔 [!DNL Marketo Measure] 產品卡。
+>為了成為 [!DNL Marketo Measure] 管理員 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"})，則使用者必須新增為使用者 _和_ 管理員 [!DNL Marketo Measure] 中的產品設定檔 [!DNL Marketo Measure] 產品卡。
 
 **登入[!DNL Marketo Measure]**
 
-將使用者新增至產品設定檔後，他們就能存取 [!DNL Marketo Measure] 例項 **使用Adobe ID登入** 選項 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。
+將使用者新增至產品設定檔後，他們就能存取 [!DNL Marketo Measure] 例項 **使用Adobe ID登入** 選項 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 ![](assets/microsoft-dynamics-crm-installation-guide-15.png)
 
@@ -217,3 +217,7 @@ ht-degree: 0%
    >依預設， [!DNL Marketo Measure] 每次工作將資料傳送至您的CRM時，會根據每個API評分匯出200筆記錄。 對於大部分的客戶，這可提供所使用API評分之間的最佳平衡 [!DNL Marketo Measure] 和CRM的CPU資源需求。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此， [!DNL Marketo Measure] 允許客戶配置CRM導出批大小。 此設定位於 [!DNL Marketo Measure] Web應用程式和客戶可以選擇200（預設）、100、50或25的批量大小。
    >
    >修改此設定時，請記住，較小的批次大小將會佔用您CRM的更多API評分。 建議您只有在CRM中遇到CPU逾時或CPU負載高時，才減少批次大小。
+
+   >[!NOTE]
+   >
+   >當您停用將資料匯出至Dynamics的Marketo測量時，不會移除任何現有資料。 如需移除現有資料的協助，請聯絡Dynamics支援。
