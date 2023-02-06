@@ -5,7 +5,7 @@ title: '"[!DNL Marketo Measure] 維護」'
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 0%
 
 **更新要追蹤的網域清單（1x/月）**
 
-Marketo測量會追蹤Javascript作用中的所有頁面和子網域，但僅限我們已知的網域。 如果您最近首次推出新網域、進行國際擴展或變更主要網域，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}，以確保我們會據此更新您的帳戶。
+Marketo Measure會追蹤Javascript啟用的所有頁面和子網域，但僅限我們已知的網域。 如果您最近首次推出新網域、進行國際擴展或變更主要網域，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以確保我們會據此更新您的帳戶。
 
 **檢閱自訂通道對應以取得正確性（1x/月）**
 
-在上線期間，您可為線上和離線行銷工作設定自訂管道對應。 隨著您的行銷策略和Marketo測量的使用方式不斷演化，您會想要留意對應邏輯，以確保所有接觸點皆已適當分類。
+在上線期間，您可為線上和離線行銷工作設定自訂管道對應。 隨著您的行銷策略和Marketo Measure的使用方式不斷演化，您將會想要留意對應邏輯，以確保所有接觸點皆已適當分類。
 
 記住， [!DNL Marketo Measure] 在編輯對應邏輯時重新處理資料，因此您無法每7天變更這些規則一次。
 

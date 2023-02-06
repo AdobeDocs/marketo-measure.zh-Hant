@@ -4,7 +4,7 @@ title: '"[!DNL Marketo Measure] [!DNL Salesforce] 軟體包安裝和設定」'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 請依照下列步驟安裝 [!DNL Marketo Measure Salesforce] 基本包。
 
-1. 使用無痕瀏覽器，前往 [Salesforce Appexchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target=&quot;_blank&quot;}並登入。
+1. 使用無痕瀏覽器，前往 [Salesforce Appexchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} 並登入。
 
 1. 在 [!DNL Marketo Measure] 在沙箱或生產環境中套件。
 
@@ -41,17 +41,17 @@ ht-degree: 0%
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-2.png)
 
-完成安裝後，您可以更新 [[!DNL Salesforce] 頁面配置](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target=&quot;_blank&quot;}搭配 [!DNL Marketo Measure] 欄位。
+完成安裝後，您可以更新 [[!DNL Salesforce] 頁面配置](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"} 和 [!DNL Marketo Measure] 欄位。
 
 >[!NOTE]
 >
->閱讀 [!DNL Marketo Measure] 已建立和 [如何使用](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target=&quot;_blank&quot;}。
+>閱讀 [!DNL Marketo Measure] 已建立和 [如何使用](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
 
 ## 安裝 [!DNL Marketo Measure] 控制面板套件 {#install-marketo-measure-dashboard-package}
 
 此 [!UICONTROL Dashboard] 擴充功能套件包含三個預先建立的控制面板。 建議您安裝 [!UICONTROL within] 適用於所有使用者的生產環境。
 
-1. 從安裝套件 [[!DNL Salesforce] Appexchange](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target=&quot;_blank&quot;}。
+1. 從安裝套件 [[!DNL Salesforce] Appexchange](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}.
 
 1. 選取 **[!UICONTROL Install for All Users]**.
 

@@ -5,7 +5,7 @@ title: 定義 [!DNL Marketo Measure] 網路會議
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,4 +65,4 @@ _不過_，如果海莉的第一次網路會話源自Web Direct，那麼她將�
 
 ## Google Analytics工作階段 {#google-analytics-sessions}
 
-這些方法有些相似之處 [!DNL Marketo Measure] 和Google Analytics定義工作階段。 如需Google Analytics如何定義工作階段的詳細資訊，請造訪： [https://support.google.com/analytics/answer/2731565?hl=en](http://support.google.com/analytics/answer/2731565?hl=en){target=&quot;_blank&quot;}
+這些方法有些相似之處 [!DNL Marketo Measure] 和Google Analytics定義工作階段。 如需Google Analytics如何定義工作階段的詳細資訊，請造訪： [https://support.google.com/analytics/answer/2731565?hl=en](http://support.google.com/analytics/answer/2731565?hl=en){target="_blank"}

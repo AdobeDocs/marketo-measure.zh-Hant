@@ -4,7 +4,7 @@ title: '"[!DNL Marketo Measure] 報表範本 — Tableau」'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 快速入門 {#getting-started}
 
-您可以存取 [!DNL Tableau] 報表範本 [此處](https://github.com/adobe/Marketo-Measure-BI-Templates){target=&quot;_blank&quot;}。
+您可以存取 [!DNL Tableau] 報表範本 [此處](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
 開啟 [!DNL Adobe Marketo] 測量報表範本Tableau活頁簿檔案。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 資料連線 {#data-connection}
 
-您需要設定與Snowflake例項的資料連線。 為此，您需要伺服器名稱以及用戶名和密碼。 有關在何處查找此資訊和重設密碼（如果需要）的詳細資訊將記錄在案 [此處](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target=&quot;_blank&quot;}。
+您需要設定與Snowflake例項的資料連線。 為此，您需要伺服器名稱以及用戶名和密碼。 有關在何處查找此資訊和重設密碼（如果需要）的詳細資訊將記錄在案 [此處](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ![](assets/marketo-measure-report-template-tableau-2.png)
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 按一下下面的影像以獲得其完整大小版本。
 
-[![](assets/marketo-measure-report-template-tableau-11.png)](/help/bi-report-templates/assets/tableau-data-model.png){target=&quot;_blank&quot;}
+[![](assets/marketo-measure-report-template-tableau-11.png)](/help/bi-report-templates/assets/tableau-data-model.png){target="_blank"}
 
 ### 關係和資料流 {#relationships-and-data-flow}
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-report-template-tableau-15.png)
 
-檢視直接來自的欄的定義 [!DNL Snowflake]，請參閱 [資料倉儲檔案](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target=&quot;_blank&quot;}。
+檢視直接來自的欄的定義 [!DNL Snowflake]，請參閱 [資料倉儲檔案](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}.
 
 ## 範本和Discover之間的差異 {#discrepancies-between-templates-and-discover}
 

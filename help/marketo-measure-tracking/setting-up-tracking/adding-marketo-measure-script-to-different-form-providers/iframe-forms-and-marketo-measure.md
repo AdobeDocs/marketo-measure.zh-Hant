@@ -5,7 +5,7 @@ title: IFrame Forms和 [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 ![](assets/1-1.png)
 
-若您對將JavaScript新增至IFrame表單有任何疑問，請洽詢您的客戶成功經理，或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+若您對將JavaScript新增至IFrame表單有任何疑問，請洽詢您的客戶成功經理，或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 線上管道最佳實務 {#best-practices-for-online-channels}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 要準確 [!DNL Marketo Measure] 報表，您的行銷管道必須正確設定。 行銷管道欄位會顯示接觸點可隸屬的行銷活動的最高層級群組（例如付費搜尋、直接、社交等）。
 

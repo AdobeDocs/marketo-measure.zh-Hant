@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 使用自訂收入金額的最佳實務 {#best-practices-for-utilizing-a-custom-revenue-amount}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 的核心功能 [!DNL Marketo Measure] 是指在整個購買者歷程中，將收入評分指派給行銷接觸點的能力。 準確歸因的關鍵是 [!DNL Marketo Measure] 以參考Opportunity上正確的收入額，而Opportunity又通過各種歸因模型分佈在各個行銷接觸點。
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # API連線最佳實務 {#best-practices-for-api-connections}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 [!DNL Marketo Measure] 提供API連線，與 [!DNL Google AdWords], [!DNL Microsoft Bing Ads], [!DNL Facebook Ads]和LinkedIn。 這些API連線可啟用 [!DNL Marketo Measure] 從您的廣告平台提取各種資料，然後可在您的購買者接觸點資料中報告。 這些API連線的一個關鍵功能是能夠自動提取支出資料，從而為您和您的團隊節省手動上傳資料以實現ROI報告的時間和精力。 設定這些API連線並非 [!DNL Marketo Measure] 來追蹤這些管道，但這些管道確實提供可增強您報表的寶貴精細詳細資料。
 

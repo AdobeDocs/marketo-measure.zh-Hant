@@ -72,7 +72,7 @@ ht-degree: 1%
 
 1. 按一下 [!DNL VisualForce] 頁面並將高度變更為100並啟用捲軸。
 
-1. 返回功能表，選取 [!UICONTROL Canvas Apps] 區段，並在接觸點下方建立名為「Marketo測量深入分析」的新區段 [!DNL VisualForce] 區段。
+1. 返回功能表，選取 [!UICONTROL Canvas Apps] 區段，並在接觸點下方建立名為「Marketo Measure Insights」的新區段 [!DNL VisualForce] 區段。
 
    >[!NOTE]
    >

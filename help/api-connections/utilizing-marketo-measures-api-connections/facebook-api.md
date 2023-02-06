@@ -5,7 +5,7 @@ title: "[!DNL Facebook] API"
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 至於設定，在 [!DNL Marketo Measure] 應用程式。
 
-1. 導覽至 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}並登入。
+1. 導覽至 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 並登入。
 1. 在「我的帳戶」下選擇 **[!UICONTROL Settings]**.
 1. 在整合下選取 **[!UICONTROL Connections]**.
 1. 選擇 **[!UICONTROL Set Up New Ads Connection]** 彈出畫面隨即顯示。 選擇 **[!UICONTROL Facebook]** 並使用您的Facebook憑證登入。

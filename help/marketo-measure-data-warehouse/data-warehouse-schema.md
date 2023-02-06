@@ -1,6 +1,6 @@
 ---
 unique-page-id: 35586140
-description: Data Warehouse結構 — Marketo測量 — 產品檔案
+description: Data Warehouse結構 — Marketo Measure — 產品檔案
 title: Data Warehouse結構
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
@@ -7894,7 +7894,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_IMPRESSIONS {#biz-impressions}
 
-引發並記錄了曝光數。 此表需要DoubleClick連接，並將「啟用查看」設定為True。
+引發並記錄了曝光數。 此表需要將DoubleClick連接和「啟用查看」設定為True。
 
 <table>
   <tbody>

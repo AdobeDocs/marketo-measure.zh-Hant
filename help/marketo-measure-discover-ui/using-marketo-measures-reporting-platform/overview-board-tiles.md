@@ -56,7 +56,7 @@ ht-degree: 0%
    <td><strong>X</strong></td> 
   </tr> 
   <tr> 
-   <td><p><strong>總覽</strong></p></td> 
+   <td><p><strong>概觀</strong></p></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 
    <td><strong>X</strong></td> 

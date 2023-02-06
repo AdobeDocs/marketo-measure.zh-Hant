@@ -4,7 +4,7 @@ title: 隱私權要求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 您可以提交個別請求，以存取和刪除 [!DNL Marketo Measure] 有兩種方式：
 
-* 透過 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target=&quot;_blank&quot;}。
-* 透過 **[!DNL Privacy Service]API**. 請參閱本檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target=&quot;_blank&quot;}和API參考 [此處](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target=&quot;_blank&quot;}。
+* 透過 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
+* 透過 **[!DNL Privacy Service]API**. 請參閱本檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
-此 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;}支援兩種請求：資料存取和資料刪除。
+此 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"} 支援兩種請求：資料存取和資料刪除。
 
 讓我們來看看您如何建立存取和刪除請求。
 
-## 傳送Marketo測量請求的必要設定 {#required-setup-to-send-requests-for-marketo-measure}
+## 傳送Marketo Measure請求的必要設定 {#required-setup-to-send-requests-for-marketo-measure}
 
 請求訪問和刪除資料 [!DNL Marketo Measure]，您必須：
 

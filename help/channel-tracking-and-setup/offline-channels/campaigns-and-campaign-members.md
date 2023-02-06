@@ -5,7 +5,7 @@ title: 促銷活動和促銷活動成員
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 如果需要更新大量促銷活動成員記錄，您可以使用 [!UICONTROL Bulk Update Touchpoint Date] 按鈕進行成批編輯。
 
-如果有不重複的使用案例未涵蓋此介面，您也可以使用 [資料載入器](https://dataloader.io/){target=&quot;_blank&quot;}可匯出記錄、進行變更，然後將記錄上傳回。
+如果有不重複的使用案例未涵蓋此介面，您也可以使用 [資料載入器](https://dataloader.io/){target="_blank"} 要導出記錄，請進行更改，然後將記錄上載回。
 
 首先，請搜尋記錄，並篩選您要為其設定購買者接觸點日期的記錄。
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->請記住，此觸發器不會追蹤任何過去已移除的促銷活動成員，因此這只會持續運作。 如果您需要移除大量過去的促銷活動成員接觸點，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+>請記住，此觸發器不會追蹤任何過去已移除的促銷活動成員，因此這只會持續運作。 如果您需要移除大量過去的促銷活動成員接觸點，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

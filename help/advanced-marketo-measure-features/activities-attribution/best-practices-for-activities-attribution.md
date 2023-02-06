@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 活動歸因最佳實務 {#best-practices-for-activities-attribution}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 此 [!DNL Marketo Measure] 活動歸因功能可讓客戶從CRM中的活動記錄建立接觸點。 此建立接觸點的方法具有彈性，可讓您根據「任務」或「事件」欄位建立規則，以通知 [!DNL Marketo Measure] 哪些活動會記錄其應從產生接觸點，並隨後獲得歸因評分。
 

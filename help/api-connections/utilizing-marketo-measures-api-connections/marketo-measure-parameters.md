@@ -5,7 +5,7 @@ title: '"[!DNL Marketo Measure] 參數」'
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ URL的範例，其中 [!DNL Marketo Measure] 參數：
 
 >[!NOTE]
 >
->如需符合類型的詳細資訊， [這是相關的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target=&quot;_blank&quot;}。
+>如需符合類型的詳細資訊， [這是相關的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
 
 * `_bn={network}`
-   * 代表廣告網路類型 —  [顯示或搜尋](https://support.google.com/adwords/answer/1752334?hl=en){target=&quot;_blank&quot;}。
+   * 代表廣告網路類型 —  [顯示或搜尋](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
    * 這類似於UTM Source參數。
 
 * `_bg={adgroupID}`

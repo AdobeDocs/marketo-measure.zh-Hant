@@ -1,11 +1,11 @@
 ---
 unique-page-id: 18874562
-description: PostLC接觸點和潛在客戶參與 — Marketo測量 — 產品檔案
+description: PostLC接觸點和銷售機會參與 — Marketo Measure — 產品檔案
 title: PostLC接觸點和銷售機會參與
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ PostLC接觸點為動態。 由於銷售機會或聯繫人繼續提交PostLC表�
 
 **銷售機會**
 
-1. 登入 [!DNL Marketo Measure] 帳戶 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}，轉到 [!UICONTROL Settings].
+1. 登入 [!DNL Marketo Measure] 帳戶 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 然後 [!UICONTROL Settings].
 
 1. 在CRM下，選擇 **[!UICONTROL Leads]**.
 
@@ -46,7 +46,7 @@ PostLC接觸點為動態。 由於銷售機會或聯繫人繼續提交PostLC表�
 
 **聯繫人**
 
-1. 登入 [!DNL Marketo Measure] 帳戶 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}，轉到 [!UICONTROL Settings].
+1. 登入 [!DNL Marketo Measure] 帳戶 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 然後 [!UICONTROL Settings].
 
 1. 在CRM下，選擇 **[!UICONTROL Contacts]**.
 

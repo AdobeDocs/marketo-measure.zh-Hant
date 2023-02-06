@@ -5,7 +5,7 @@ title: 了解 [!DNL Marketo Measure] AdWords標籤
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 **若 [!DNL Marketo Measure] 尋找追蹤範本：**
 
 * [!DNL Marketo Measure] 會將其參數新增至追蹤範本。
-* 如果在追蹤範本（例如Kenshoo或Marin）中找到第三方重新導向， [!DNL Marketo Measure] 不會採取任何行動。 相反，您必須 [新增 [!DNL Marketo Measure] 參數至帳戶中的協力廠商工具](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target=&quot;_blank&quot;}。
+* 如果在追蹤範本（例如Kenshoo或Marin）中找到第三方重新導向， [!DNL Marketo Measure] 不會採取任何行動。 相反，您必須 [新增 [!DNL Marketo Measure] 參數至帳戶中的協力廠商工具](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 不過，如果找不到追蹤範本， [!DNL Marketo Measure] 會：
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 追蹤範本 {#tracking-templates}
 
-如 [!DNL Google AdWords]，追蹤範本是用來存取登錄頁面的URL。 收集的追蹤資訊用於了解您的廣告流量。 [按一下這裡](https://support.google.com/adwords/answer/7197008?hl=en){target=&quot;_blank&quot;}，以取得Google的詳細資訊。
+如 [!DNL Google AdWords]，追蹤範本是用來存取登錄頁面的URL。 收集的追蹤資訊用於了解您的廣告流量。 [按一下這裡](https://support.google.com/adwords/answer/7197008?hl=en){target="_blank"} 以取得Google的詳細資訊。
 
 [!DNL Marketo Measure] 建議使用「帳戶層級」、「促銷活動層級」或「廣告群組層級追蹤」範本，因為此範本可為所有廣告新增和減除參數，而不會造成廣告歷史記錄中斷或刪除的風險。
 
@@ -108,6 +108,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->進行變更後，即完成。 隨時可以聯繫 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}（若在設定期間有任何問題）。
+>進行變更後，即完成。 隨時可以聯繫 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 設定期間是否有任何問題。
 
-[按一下這裡](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target=&quot;_blank&quot;}，以取得Google有關建立帳戶層級追蹤範本的指示。
+[按一下這裡](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"} Google建立帳戶層級追蹤範本的相關指示。

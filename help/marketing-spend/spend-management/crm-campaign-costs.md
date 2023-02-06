@@ -5,7 +5,7 @@ title: CRM促銷活動成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 **我已填寫開始日期、結束日期和成本，但為什麼我的成本仍未顯示在 [!DNL Marketo Measure]?**
 
-請檢查您是否已將「啟用購買者接觸點」值設為「包含所有促銷活動成員」或至少「包含&#39;已回應&#39;促銷活動成員」，或您已建立包含此促銷活動的自訂促銷活動同步規則。 如果您已確認此項目，但仍未看見促銷活動，請洽詢 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}，以便我們檢查您的促銷活動是否正確匯入。
+請檢查您是否已將「啟用購買者接觸點」值設為「包含所有促銷活動成員」或至少「包含&#39;已回應&#39;促銷活動成員」，或您已建立包含此促銷活動的自訂促銷活動同步規則。 如果您已確認此項目，但仍未看見促銷活動，請洽詢 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 這樣，我們就可以檢查您的促銷活動是否正確匯入。
 
 **我需要改變我的促銷活動的分佈方式，這樣我就能在特定月份中重量更大。 我該怎麼做？**
 

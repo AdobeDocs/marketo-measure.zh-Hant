@@ -5,7 +5,7 @@ title: "[!DNL Marketo Measure] 資源清單"
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 **疑難排解**
 
 * [授予 [!DNL Marketo Measure] 支援訪問SFDC](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
-* 聯繫人： [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}
+* 聯繫人： [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}
 
 ## 影片 {#videos}
 

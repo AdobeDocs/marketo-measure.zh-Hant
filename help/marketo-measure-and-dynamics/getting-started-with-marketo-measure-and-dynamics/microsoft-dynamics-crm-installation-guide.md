@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874763
-description: '"[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo測量 — 產品檔案」'
+description: '"[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo Measure — 產品檔案」'
 title: '"[!DNL Microsoft Dynamics] CRM安裝指南」'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 source-git-commit: 9de82556ca543aa8e6c53242eacae5c87019886c
@@ -220,4 +220,4 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >當您停用將資料匯出至Dynamics的Marketo測量時，不會移除任何現有資料。 如需移除現有資料的協助，請聯絡Dynamics支援。
+   >當您停用將資料匯出至Dynamics的Marketo Measure時，它不會移除任何現有資料。 如需移除現有資料的協助，請聯絡Dynamics支援。

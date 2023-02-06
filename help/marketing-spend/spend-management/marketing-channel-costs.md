@@ -5,14 +5,14 @@ title: 行銷管道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
 
 # 行銷管道成本 {#marketing-channel-costs}
 
-使用的最基本好處之一 [!DNL Marketo Measure] 能夠將行銷工作直接與對收入的影響聯繫起來，並盡可能精細。 在接觸點層級可以看到投資回報。 為了利用此優勢，渠道成本只需上傳至 [!DNL Marketo Measure] 應用程式。 ROI報表會自動建立，並可在 **行銷ROI儀表板** in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。
+使用的最基本好處之一 [!DNL Marketo Measure] 能夠將行銷工作直接與對收入的影響聯繫起來，並盡可能精細。 在接觸點層級可以看到投資回報。 為了利用此優勢，渠道成本只需上傳至 [!DNL Marketo Measure] 應用程式。 ROI報表會自動建立，並可在 **行銷ROI儀表板** in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 [按一下這裡直接導覽至指示。](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 

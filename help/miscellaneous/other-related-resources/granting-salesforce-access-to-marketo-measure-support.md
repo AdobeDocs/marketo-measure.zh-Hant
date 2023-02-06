@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874791
 description: 授予 [!DNL Salesforce] 存取 [!DNL Marketo Measure] 支援 —  [!DNL Marketo Measure]  — 產品檔案
-title: 授予 [!DNL Salesforce] 存取Marketo測量支援
+title: 授予 [!DNL Salesforce] 存取Marketo Measure支援
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# 授予 [!DNL Salesforce] 存取Marketo測量支援 {#granting-salesforce-access-to-marketo-measure-support}
+# 授予 [!DNL Salesforce] 存取Marketo Measure支援 {#granting-salesforce-access-to-marketo-measure-support}
 
 在某些情況下， [!DNL Marketo Measure] 支援人員可能會要求 [!DNL Salesforce] 環境，協助進行診斷疑難排解或在實施期間進行Salesforce設定。
 

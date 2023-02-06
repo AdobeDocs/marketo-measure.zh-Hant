@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 接觸點設定最佳實務 {#best-practices-for-touchpoint-settings}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 您 [!DNL Marketo Measure] 應用程式可讓您設定規則，以從您的 [!DNL Marketo Measure] 資料及相關系統。 這些規則可協助您隔離出不需要在購買者接觸點資料中呈現，或您不想在不干擾追蹤和資料收集的情況下接收歸因評分的特定資料集。
 

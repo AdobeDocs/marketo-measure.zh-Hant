@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Marketo測量Cookie {#marketo-measure-cookies}
+# Marketo Measure Cookie {#marketo-measure-cookies}
 
 了解各種 [!DNL Marketo Measure] 套用 [!DNL Marketo Measure] JavaScript至您的登錄頁面。 這些資訊在實作期間可能對Web開發團隊有用。
 

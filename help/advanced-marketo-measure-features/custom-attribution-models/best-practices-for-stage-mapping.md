@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 階段對應最佳作法 {#best-practices-for-stage-mapping}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 您的 [!DNL Marketo Measure] 帳戶概述 [!DNL Marketo Measure] 使用自訂歸因模型時，會自動從您的CRM和您定義的任何自訂階段中提取。 您的 [!DNL Marketo Measure] 資料依賴這些階段的正確排序， [!DNL Marketo Measure] 能夠準確了解您的漏斗以及整個漏斗中記錄的進展。
 

@@ -6,7 +6,7 @@ exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 定義管道和子管道的位置 [!DNL Marketo Measure]，它們與您內容的關聯、兩個分類之間的差異，以及在 [!DNL Marketo Measure] 應用程式。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 「行銷管道」可協助您將行銷活動分類（或「分段」），以方便報告，兩者皆位於 [!DNL Marketo Measure] ROI破折號以及您的CRM中。 [!DNL Marketo Measure] 隨附12個現成可用的管道（您可以自訂/重新命名以符合組織的慣例），以及進一步建立自訂管道以進行更精細的篩選的能力。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 * 按兩下
 * 卡佩拉
 * 滴漏行銷活動
-* linkedIn Ads
+* LinkedIn 廣告
 
 **內容（白皮書、頁面URL、部落格文章）**
 

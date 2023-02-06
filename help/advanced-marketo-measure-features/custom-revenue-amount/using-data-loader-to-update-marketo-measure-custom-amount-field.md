@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874771
 description: 使用資料載入器更新 [!DNL Marketo Measure] 自訂金額欄位 —  [!DNL Marketo Measure]  — 產品檔案
-title: 使用資料載入器更新Marketo測量自訂量欄位
+title: 使用資料載入器更新Marketo Measure自訂量欄位
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt

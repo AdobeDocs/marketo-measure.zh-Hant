@@ -1,7 +1,7 @@
 ---
 unique-page-id: 35586069
-description: 確保Marketo測量Js - Marketo測量 — 產品檔案中GDPR的同意
-title: 確保Marketo測量Js中GDPR的同意
+description: 確保Marketo Measure Js中GDPR的同意 — Marketo Measure — 產品檔案
+title: 確保Marketo Measure Js中的GDPR同意
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 source-git-commit: c7d3bbce1f0c6a99409822c06c43961c93cd9458
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# 確保Marketo測量Js中GDPR的同意 {#ensuring-consent-for-gdpr-in-marketo-measure-js}
+# 確保Marketo Measure Js中的GDPR同意 {#ensuring-consent-for-gdpr-in-marketo-measure-js}
 
 一般資料保護規範(GDPR)是歐盟一項於2018年5月25日生效的法規。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 GDPR的目的在於加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對於其個人資料的使用與保護方式的權利。 個人資料是指與已識別或可識別的自然人相關的任何資訊。 GDPR適用於歐盟內外向歐盟和EEA內的資料主體行銷商品或服務，及/或追蹤其行為的任何組織。 如果您在歐洲與涉及處理個人資料的資料主體有業務往來，本法規適用於您。 對不遵守規定的人處以高額罰款；單次違規的最高罰款金額為2000萬歐元，即全球年營業額的4%，以其中的更高者為準。
 

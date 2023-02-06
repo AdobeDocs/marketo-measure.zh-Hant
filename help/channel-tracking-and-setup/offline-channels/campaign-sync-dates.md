@@ -5,7 +5,7 @@ title: 促銷活動同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 如果你是新來的 [!DNL Marketo Measure] 客戶，您可能有興趣將您通過SFDC促銷活動追蹤的一些行銷資料帶入。 不過，如果您要為線上SFDC促銷活動啟用接觸點，則可能會遇到重複計算歸因的問題，因為 [!DNL Marketo Measure] 自動建立線上行銷工作的接觸點。 為避免重複計算資料，您可以使用「促銷活動接觸點結束日期」來設定所建立之接觸點日期的限制 [!DNL Marketo Measure] 在SFDC促銷活動上。 例如，如果您想要為已在SFDC中追蹤的Social促銷活動新增追溯轉換，但您了解您已新增 [!DNL Marketo Measure] JavaScript（即於7月1日建立線上接觸點），然後您可以編輯Social SFDC促銷活動，將接觸點結束日期等於7月1日，並啟用該促銷活動的購買者接觸點。
 
-接觸點結束日期可能有許多其他使用案例。 如果你需要幫助，找出具體情況，請立即聯繫 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+接觸點結束日期可能有許多其他使用案例。 如果你需要幫助，找出具體情況，請立即聯繫 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

@@ -5,7 +5,7 @@ title: 自訂歸因模型與設定
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
    若要開始建立自訂歸因模型，您需要選取哪些階段對您的行銷團隊來說很重要。 除了 [!DNL Marketo Measure] 里程碑階段(FT、LC、OC、Closed)您可以在自定義模型中添加多達六個附加的Lead/Contact狀態或Opportunity階段。 例如，MQL階段通常包含在自訂模型中。 行銷團隊通常想知道哪些工作或管道正在推動MQL階段的轉變。
 
-   登入 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。 前往 [!UICONTROL My Account] > [!UICONTROL Settings] >和「CRM」區段下，選取 **[!UICONTROL Stage Mapping]**.
+   登入 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 前往 [!UICONTROL My Account] > [!UICONTROL Settings] >和「CRM」區段下，選取 **[!UICONTROL Stage Mapping]**.
 
    在此處，您需要通過選擇 **[!UICONTROL Include in Model]** 框。
 

@@ -5,18 +5,18 @@ title: A/B測試設定和報告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
 # A/B測試設定和報告 {#a-b-testing-set-up-and-reporting}
 
-此 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://optimizely.com/){target=&quot;_blank&quot;}和VWO網站實驗。 本文章指南提供如何新增 [!DNL Marketo Measure] A/B測試區段至銷售機會， [!UICONTROL Contact]、案例和 [!UICONTROL Opportunity] 頁面配置。 我們還將介紹一般報告做法和運行建議 [!DNL Marketo Measure] A/B報表類型。
+此 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://optimizely.com/){target="_blank"} 和VWO現場實驗。 本文章指南提供如何新增 [!DNL Marketo Measure] A/B測試區段至銷售機會， [!UICONTROL Contact]、案例和 [!UICONTROL Opportunity] 頁面配置。 我們還將介紹一般報告做法和運行建議 [!DNL Marketo Measure] A/B報表類型。
 
 ## 設定 {#set-up}
 
-新增 [!DNL Marketo Measure] A/B測試區段，包括銷售機會、連絡人、案例和機會。 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://optimizely.com/){target=&quot;_blank&quot;}和 [VWO](https://vwo.com/){target=&quot;_blank&quot;}網站實驗。
+新增 [!DNL Marketo Measure] A/B測試區段，包括銷售機會、連絡人、案例和機會。 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 網站實驗。
 
 1. 確認您使用套件 [!DNL Marketo Measure] v3.9或更新版本。 您可以前往 [!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages].
 1. 編輯銷售機會頁面版面並新增 **[!DNL Marketo Measure]A/B測試** 頁面的相關清單。
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![](assets/3.png)
 
-1. 請連絡您的 [!DNL Marketo Measure] 代表或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}啟用此功能。
+1. 請連絡您的 [!DNL Marketo Measure] 代表或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 啟用功能。
 
 ## 報表 {#reporting}
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 實作最佳實務 [!DNL Marketo Measure] JavaScript {#best-practices-for-implementing-marketo-measure-javascript}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 此 [!DNL Marketo Measure] JavaScript會追蹤您的網頁訪客數位行銷互動，且是 [!DNL Marketo Measure] 可建立線上接觸點資料。 擁有 [!DNL Marketo Measure] 在整個網站上正確且全面部署的JavaScript將確保收集的工作階段資料會產生準確的接觸點資料。
 

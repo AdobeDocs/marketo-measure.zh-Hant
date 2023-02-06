@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # [!DNL Marketo Measure] 說明檔案 {#using}
 
-+ [總覽](home.md)
++ [概觀](home.md)
 + 簡介 [!DNL Marketo Measure] {#introduction-to-marketo-measure}
    + 概覽資源 {#overview-resources}
       + [行銷歸因](introduction-to-marketo-measure/overview-resources/marketing-attribution.md)
@@ -141,7 +141,7 @@ ht-degree: 1%
    + 聊天整合 {#chat-integration}
       + [Drift整合常見問題集](advanced-marketo-measure-features/chat-integration/drift-integration-faq.md)
    + 多貨幣 {#multi-currency}
-      + [總覽](advanced-marketo-measure-features/multi-currency/overview.md)
+      + [概觀](advanced-marketo-measure-features/multi-currency/overview.md)
       + [設定](advanced-marketo-measure-features/multi-currency/settings.md)
       + [Discover報表](advanced-marketo-measure-features/multi-currency/discover-reporting.md)
       + [常見問題集（多貨幣）](advanced-marketo-measure-features/multi-currency/faq-multi-currency.md)

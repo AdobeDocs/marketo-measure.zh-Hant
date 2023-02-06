@@ -5,7 +5,7 @@ title: UTM參數
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 標籤URL是擷取數位行銷工作相關資料的簡單而有效方式。 這是將參數新增至收集及記錄資料之URL結尾的程式。 最常用的參數為Google支援的Urchin追蹤模組(UTM)。 可用的UTM主要有五個：媒體、來源、促銷活動、內容和詞語。 下一節會更詳細地討論這些問題。
 
-UTM參數可手動新增至URL，或透過特定平台（例如AdWords）的自動標籤附加。 自動標籤會自動化將參數附加至URL的程式。 此外， [URL產生器](https://ga-dev-tools.appspot.com/campaign-url-builder/){target=&quot;_blank&quot;}可加速手動標籤URL。 使用URL產生器時，您只需指定要用於每個參數的值，產生器就會為您設定URL格式。
+UTM參數可手動新增至URL，或透過特定平台（例如AdWords）的自動標籤附加。 自動標籤會自動化將參數附加至URL的程式。 此外， [URL產生器](https://ga-dev-tools.appspot.com/campaign-url-builder/){target="_blank"} 來加速手動標籤URL。 使用URL產生器時，您只需指定要用於每個參數的值，產生器就會為您設定URL格式。
 
 ## 什麼是UTM參數？ {#what-are-utm-parameters}
 

@@ -5,7 +5,7 @@ title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 擷取
 
-擷取運算子會從其他位置的欄位中提取值，例如：促銷活動欄位、銷售機會欄位，或在更進階的使用案例中， [從登錄頁面擷取自訂參數](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target=&quot;_blank&quot;}。 接著，將其置於接觸點欄位(請參閱 [映射至範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target=&quot;_blank&quot;} #2)。
+擷取運算子會從其他位置的欄位中提取值，例如：促銷活動欄位、銷售機會欄位，或在更進階的使用案例中， [從登錄頁面擷取自訂參數](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2)。
 
 **範例#1**
 
@@ -220,7 +220,7 @@ Segment__c和Grade__c的Opportunity對象上有單獨的欄位，用戶希望將
 
 **如何驗證我的擷取運算式是否有效並提取正確的值？**
 
-有線上工具([https://regex101.com/](https://regex101.com/){target=&quot;_blank&quot;})，您可以執行並測試運算式。 如果運算式有效，則顯示為綠色；如果無效，則顯示為紅色。 此外，右上角的說明方塊很實用，可告訴您擷取的內容。
+有線上工具([https://regex101.com/](https://regex101.com/){target="_blank"})，以執行並測試運算式。 如果運算式有效，則顯示為綠色；如果無效，則顯示為紅色。 此外，右上角的說明方塊很實用，可告訴您擷取的內容。
 
 ![](assets/twelve.png)
 

@@ -5,14 +5,14 @@ title: Salesforce活動屬性
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
 
 # Salesforce活動屬性 {#salesforce-activities-attribution}
 
-此 [!DNL Marketo Measure] Salesforce活動整合會將特定任務和事件記錄帶入您的歸因模型。 開始追蹤未收到到期信用的銷售電子郵件或銷售電話等。 若要設定活動規則，您必須前往 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。 從那裡，前往 **[!UICONTROL Settings]** ，然後按一下 **[!UICONTROL Activities]** 標籤。
+此 [!DNL Marketo Measure] Salesforce活動整合會將特定任務和事件記錄帶入您的歸因模型。 開始追蹤未收到到期信用的銷售電子郵件或銷售電話等。 若要設定活動規則，您必須前往 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 從那裡，前往 **[!UICONTROL Settings]** ，然後按一下 **[!UICONTROL Activities]** 標籤。
 
 你將讓你的銷售團隊非常開心！ 讓我們帶您進行快速教學課程。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ![](assets/5.png)
 
-您可能會想要將這些新接觸點放入適當的 [行銷管道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target=&quot;_blank&quot;}。 您可以使用您剛建立的新行銷活動對應來定義管道，即可執行此操作。 您可能會為BDR管道建立新的列，其中促銷活動以傳出開始。
+您可能會想要將這些新接觸點放入適當的 [行銷管道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target="_blank"}. 您可以使用您剛建立的新行銷活動對應來定義管道，即可執行此操作。 您可能會為BDR管道建立新的列，其中促銷活動以傳出開始。
 
 >[!TIP]
 >
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ![](assets/6.png)
 
-最後，您可以選擇輸入新渠道的成本。 我們的 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target=&quot;_blank&quot;}可讓您在管道層級、子管道層級或促銷活動層級輸入您的支出。 使用您的新 [!DNL Marketo Measure] 行銷活動，您可以按月新增相關成本，然後查看每個行銷活動的ROI!
+最後，您可以選擇輸入新渠道的成本。 我們的 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target="_blank"} 可讓您在管道層級、子管道層級或促銷活動層級輸入您的支出。 使用您的新 [!DNL Marketo Measure] 行銷活動，您可以按月新增相關成本，然後查看每個行銷活動的ROI!
 
 ![](assets/7.png)
 

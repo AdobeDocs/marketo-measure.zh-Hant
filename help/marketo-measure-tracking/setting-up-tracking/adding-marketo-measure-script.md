@@ -5,7 +5,7 @@ title: 新增 [!DNL Marketo Measure] 指令碼
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->確保 [在 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md)除部署外，還有{target=&quot;_blank&quot;} [!DNL Marketo Measure] JavaScript。
+>確保 [在 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"} 除了部署 [!DNL Marketo Measure] JavaScript。
 
 開始使用時 [!DNL Marketo Measure]，有兩種方式可新增 [!DNL Marketo Measure] JavaScript至您的網站：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->了解如何確認指令碼為 [符合GDPR規範](/help/security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target=&quot;_blank&quot;}。
+>了解如何確認指令碼為 [符合GDPR規範](/help/security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target="_blank"}.
 
 ## Tag Management系統 {#tag-management-systems}
 
@@ -47,17 +47,17 @@ ht-degree: 0%
 
 [!DNL Marketo Measure] 建議任何頁面檢視都應觸發標籤。 此外，最好 [!DNL Marketo Measure] 引發順序中的最高優先順序，並確保前面沒有同步指令碼 [!DNL Marketo Measure] 標籤，以確保最高的資料品質。
 
-更多資訊可以是 [此處找到](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target=&quot;_blank&quot;}。
+更多資訊可以是 [此處找到](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target="_blank"}.
 
 ## 其他考量事項 {#additional-considerations}
 
-[!DNL Marketo Measure] JavaScript是以網域為基礎，因此只要JavaScript位於頁面上，且根網域與用來建立Marketo測量帳戶的網域相同，它就能自動處理任何子網域。
+[!DNL Marketo Measure] JavaScript是以網域為基礎，因此只要JavaScript位於頁面上，且根網域與用來建立Marketo Measure帳戶的網域相同，它就能自動處理任何子網域。
 
 不過，如果您使用任何個別或國際網域，請務必讓 [!DNL Marketo Measure] 顧問知道。 網域需要手動新增至您帳戶的 [!DNL Marketo Measure] 結束 [!DNL Marketo Measure] 知道將其他網域的資料連結至您的帳戶。 因此，請將任何個別/國際網域傳送至您的 [!DNL Marketo Measure] 顧問。
 
 如果您使用任何第三方頁面，請與您的 [!DNL Marketo Measure] 顧問。 一般而言，您會想知道是否可以新增 [!DNL Marketo Measure] JavaScript來追蹤這些頁面（若適用）。 如果無法，將會使用您的 [!DNL Marketo Measure] 顧問。
 
-您有任何「不應」由 [!DNL Marketo Measure] 因為歸因（例如取消訂閱表單、客戶登入等）不一定有意義嗎？ 若是，您將想要新增排除程式碼 [本文](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target=&quot;_blank&quot;}
+您有任何「不應」由 [!DNL Marketo Measure] 因為歸因（例如取消訂閱表單、客戶登入等）不一定有意義嗎？ 若是，您將想要新增排除程式碼 [本文](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} 每個表單
 
 您有任何不安全的頁面嗎？ 若是如此，當您在安全/非安全頁面之間導覽時，會想要保護他們的安全，以中斷追蹤工作階段。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 **多表單提交**
 
 * 問題：如果您在提交單一表單時有多個已連結的表單，即使未提交完整的表單，第一個表單仍可能產生接觸點。
-* 解決方案：您需要強制其中一個表單向 [!DNL Marketo Measure] 會根據快取的資料，並討論放棄實務。 一般來說， [報告使用者代碼](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target=&quot;_blank&quot;}可解決此問題。
+* 解決方案：您需要強制其中一個表單向 [!DNL Marketo Measure] 會根據快取的資料，並討論放棄實務。 一般來說， [報告使用者代碼](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} 能解決這個問題。
 
 **帳戶登入（非建立）**
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 **Forms組織 `<div>` 格式**
 
 * 問題： [!DNL Marketo Measure] JS很難辨識組織於 `<div>` 格式，因此可能需要自訂程式碼。
-* 解決方案：這些 [報表使用者範本](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md)您的網頁開發團隊可使用{target=&quot;_blank&quot;}來新增所需的程式碼。
+* 解決方案：這些 [報表使用者範本](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} 可供網頁開發團隊用來新增所需的程式碼。
 
 **聊天**
 

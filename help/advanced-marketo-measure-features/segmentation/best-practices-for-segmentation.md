@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 區段最佳作法 {#best-practices-for-segmentation}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 [!DNL Marketo Measure] 分段可讓您根據您的CRM欄位來定義規則，這些規則實際上是篩選器，以將它們分段至個別區段。 這些區段便可在您的Discover控制面板及 [!DNL Salesforce] 報告。
 

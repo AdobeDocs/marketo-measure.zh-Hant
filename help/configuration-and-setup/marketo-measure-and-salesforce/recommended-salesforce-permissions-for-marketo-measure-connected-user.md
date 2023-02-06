@@ -5,7 +5,7 @@ title: 建議 [!DNL Salesforce] 的權限 [!DNL Marketo Measure] 已連接用戶
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -44,4 +44,4 @@ ht-degree: 0%
 
 欄位層級安全性和欄位協助工具相關，但有一些主要差異。 「欄位級安全性」定義指定設定檔的欄位可見性，而「欄位可及性」則根據欄位級安全性和頁面配置設定來判斷欄位是否可編輯。 使用 [!DNL Marketo Measure] 包的權限集將接收必要的欄位對象安全設定。 在某些情況下，為了擁有正確的欄位協助工具，連線的使用者必須具備 [!DNL Marketo Measure] 欄位。 [!DNL Marketo Measure] 版面上的欄位允許 [!DNL Marketo Measure] 對應至 [!DNL Salesforce]. 這取決於您的特定 [!DNL Salesforce] 環境。
 
-每個組織的 [!DNL Salesforce] 有個人需求，但我們提供您平衡需求的條件 [!DNL Marketo Measure] 存取需要您的安全通訊協定。 不要猶豫地聯繫 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+每個組織的 [!DNL Salesforce] 有個人需求，但我們提供您平衡需求的條件 [!DNL Marketo Measure] 存取需要您的安全通訊協定。 不要猶豫地聯繫 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

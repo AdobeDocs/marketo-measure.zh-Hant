@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874586
-description: Marketo測量欄位辭匯表 — Marketo測量 — 產品檔案
-title: Marketo測量欄位辭匯表
+description: Marketo Measure欄位辭匯表 — Marketo Measure — 產品檔案
+title: Marketo Measure欄位辭匯表
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 source-git-commit: 334dcd3dcbddacc4920d182d94908babd3cb8c89
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# Marketo測量欄位辭匯表 {#glossary-of-marketo-measure-fields}
+# Marketo Measure欄位辭匯表 {#glossary-of-marketo-measure-fields}
 
-本文提供從Marketo Measure Base包添加到Salesforce的所有Marketo Measure欄位的辭匯表。 您還將查找有關可在哪個對象上找到該欄位的資訊，以及如何為每個欄位填充資訊。
+本文提供從Marketo Measure基本套件新增至Salesforce的所有Marketo Measure欄位字彙表。 您還將查找有關可在哪個對象上找到該欄位的資訊，以及如何為每個欄位填充資訊。
 
-請查看每個Marketo測量欄位與哪個對象相關的映射 [按一下這裡](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
+請取得每個Marketo Measure欄位所關聯之物件的地圖 [按一下這裡](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) ·問· [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) ·寬· X · Y · Z
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 `3)` 如果接觸點來自Salesforce促銷活動，則此處將顯示Salesforce促銷活動的名稱。
 
-`4)` 這會以在您的Marketo測量帳戶內建置的「活動」中產生的接觸點所定義的促銷活動名稱填入。
+`4)` 這會填入為從活動產生的接觸點所定義的促銷活動名稱，如您的Marketo Measure帳戶內建置。
 
 如果沒有上述任何欄位，此欄位將會空白。
 
@@ -126,9 +126,9 @@ ht-degree: 0%
 
 ## B {#b}
 
-**Marketo測量機會金額** |銷售人員機會
+**Marketo Measure機會金額** |銷售人員機會
 
-如果您使用自訂金額欄位來報告Opportunity收入，則Marketo度量無法讀取這些自訂金額欄位。 Marketo Measure Opportunity Amount是一個隱藏欄位，用於建立工作流，使Marketo Measure能夠讀取Opportunity上的自定義Amount欄位。
+如果您使用自訂金額欄位來報告Opportunity收入，Marketo Measure將無法讀取這些自訂金額欄位。 Marketo Measure Opportunity Amount是一個隱藏欄位，用於建立一個工作流，使Marketo Measure能夠讀取Opportunity上的自定義Amount欄位。
 
 **瀏覽器** |購買者接觸點、購買者歸因接觸點
 
@@ -196,29 +196,29 @@ ht-degree: 0%
 
 ## D {#d}
 
-報告日期 | Marketo測量ABTest、Marketo測量事件
+報告日期 | Marketo Measure ABTest, Marketo Measure活動
 
-Marketo測量事件 — 使用者在您的網站上執行特定動作並啟動事件的日期
+Marketo Measure事件 — 使用者在您的網站上執行特定動作並啟動事件的日期
 
-Marketo測量ABTest — 使用者在您的網站上參與A/B測試的日期
+Marketo Measure ABTest — 使用者在您的網站上參與A/B測試的日期
 
 [按一下這裡以返回頁面頂端](#top)
 
 ## E {#e}
 
-**事件名稱** | Marketo測量事件
+**事件名稱** | Marketo Measure事件
 
 此欄位會顯示觸發事件的動作名稱（即頁面檢視）。
 
-**事件值** | Marketo測量事件
+**事件值** | Marketo Measure事件
 
 活動的說明（即首頁）
 
-**實驗名稱** | Marketo測量ABTest
+**實驗名稱** | Marketo Measure ABTest
 
 此欄位會顯示實驗的名稱（即試用按鈕）
 
-**實驗ID** |Marketo測量AB測試
+**實驗ID** |Marketo Measure AB測試
 
 每個實驗的唯一識別碼
 
@@ -288,7 +288,7 @@ Marketo測量ABTest — 使用者在您的網站上參與A/B測試的日期
 
 此欄位會顯示Web工作階段期間造訪之第一個網頁的整個URL（包括UTM參數）。
 
-**銷售機會** |購買者接觸點，Marketo測量人員
+**銷售機會** |購買者接觸點，Marketo Measure人員
 
 此欄位顯示接觸點所屬銷售機會的名稱。
 
@@ -298,7 +298,7 @@ Marketo測量ABTest — 使用者在您的網站上參與A/B測試的日期
 
 **行銷管道** |購買者接觸點、購買者歸因接觸點
 
-此欄位會顯示接觸點所屬的行銷活動或行銷管道的一般群組（例如付費搜尋、直接、社交等）。 接觸點會根據在Marketo測量應用程式中設定管道的方式分組。 如需行銷管道或如何設定管道的詳細資訊，請參閱 [按一下這裡](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
+此欄位會顯示接觸點所屬的行銷活動或行銷管道的一般群組（例如付費搜尋、直接、社交等）。 接觸點會根據在Marketo Measure應用程式中設定管道的方式分組。 如需行銷管道或如何設定管道的詳細資訊，請參閱 [按一下這裡](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
 **行銷管道 — 路徑** |購買者接觸點、購買者歸因接觸點
 
@@ -316,7 +316,7 @@ Marketo測量ABTest — 使用者在您的網站上參與A/B測試的日期
 
 `4)` 這會從產生接觸點的相關活動中，填入「活動類型」值。
 
-如果沒有上述任何值，則Marketo測量會自動設定中值。
+如果沒有上述任何條件，Marketo Measure會自動設定中值。
 
 [按一下這裡以返回頁面頂端](#top)
 
@@ -392,7 +392,7 @@ S
 
 **區段** |購買者歸因接觸點
 
-此欄位將顯示接觸點所屬的區段。 這取決於您在Marketo測量應用程式中如何設定分段規則。
+此欄位將顯示接觸點所屬的區段。 這取決於您在Marketo Measure應用程式中如何設定分段規則。
 
 [按一下這裡以返回頁面頂端](#top)
 
@@ -462,7 +462,7 @@ U
 
 與每個接觸點相關聯的唯一ID
 
-**使用者ID** | Marketo測量ABTest
+**使用者ID** | Marketo Measure ABTest
 
 每種用途的最佳化唯一識別碼
 
@@ -470,11 +470,11 @@ U
 
 ## V {#v}
 
-**變異** | Marketo測量ABTest
+**變異** | Marketo Measure ABTest
 
 A/B測試變異的名稱
 
-**變數ID** | Marketo測量ABTest
+**變數ID** | Marketo Measure ABTest
 
 每個A/B測試變異的唯一識別碼。
 

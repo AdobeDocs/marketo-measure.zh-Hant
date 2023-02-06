@@ -26,7 +26,7 @@ ht-degree: 1%
 
 身為客戶，您會像平常一樣建立電子郵件範本。 一旦需要針對您要追蹤的動作將新增至登錄頁面，您就需要決定Token、變數標籤，或您的行銷自動化平台接受的巨集，以動態顯示每個個人的值。
 
-Marketo測量接受下列值：電子郵件地址、Salesforce銷售機會Id或Salesforce聯繫人Id。
+Marketo Measure接受下列值：電子郵件地址、Salesforce銷售機會Id或Salesforce聯繫人Id。
 
 ## 標籤範例 {#tag-examples}
 

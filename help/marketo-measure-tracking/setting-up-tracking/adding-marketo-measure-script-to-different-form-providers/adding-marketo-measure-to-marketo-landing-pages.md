@@ -5,7 +5,7 @@ title: 新增 [!DNL Marketo Measure] 至Marketo登陸頁面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 * 您可能有多個使用中的登錄頁面範本，請務必將程式碼新增至所有有表單的範本。
 
-* 有時候，當您編輯登錄頁面的範本時，您需要重新核准登錄頁面所使用的頁面。 本文說明 [如何成批批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target=&quot;_blank&quot;}。
+* 有時候，當您編輯登錄頁面的範本時，您需要重新核准登錄頁面所使用的頁面。 本文說明 [如何成批批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.

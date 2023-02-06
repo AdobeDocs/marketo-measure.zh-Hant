@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874765
-description: 測試Marketo測量與Salesforce沙箱的整合 —  [!DNL Marketo Measure]  — 產品檔案
-title: 測試Marketo測量與Salesforce沙箱的整合
+description: 使用Salesforce沙箱測試Marketo Measure整合 —  [!DNL Marketo Measure]  — 產品檔案
+title: 使用Salesforce沙箱測試Marketo Measure整合
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 source-git-commit: 993a326c377b3b6ff48c4e0114b59297f9ca2ca6
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 1%
 
 ---
 
-# 測試Marketo測量與Salesforce沙箱的整合 {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
+# 使用Salesforce沙箱測試Marketo Measure整合 {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
 
 >[!NOTE]
 >

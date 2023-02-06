@@ -5,7 +5,7 @@ title: Salesforce沙箱移轉至生產環境
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 * 安裝兩個 [!DNL Marketo Measure] 封裝至生產環境，並搭配「[!UICONTROL All Users]&quot;設定
 
-   * [基本包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target=&quot;_blank&quot;}
-   * [控制面板擴充功能套件](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target=&quot;_blank&quot;}
+   * [基本包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
+   * [控制面板擴充功能套件](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}
 
 * 如需 [!DNL Marketo Measure] 關係 [!DNL Salesforce]，請查看 [這篇文章](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * 有點 [!DNL Salesforce] 需要設定。 具體的動作項目概述於 [下面的步驟4](#salesforce-configuration)
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 [權限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 
-[共用報表](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target=&quot;_blank&quot;}
+[共用報表](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target="_blank"}
 
 [隱藏不必要的報表類型](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
 

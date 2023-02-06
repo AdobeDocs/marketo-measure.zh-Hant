@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874568
-description: Marketo測量歸因模型 — Marketo測量 — 產品檔案
-title: Marketo測量歸因模型
+description: Marketo Measure歸因模型 — Marketo Measure — 產品檔案
+title: Marketo Measure歸因模型
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 source-git-commit: 0aa263053aa8dd804b03a67ab446dc0cda3850c5
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Marketo測量歸因模型 {#marketo-measure-attribution-models}
+# Marketo Measure歸因模型 {#marketo-measure-attribution-models}
 
-Marketo測量提供6種歸因模型：
+Marketo Measure提供6種歸因模型：
 
 * 首次接觸
 * 銷售機會建立
@@ -21,7 +21,7 @@ Marketo測量提供6種歸因模型：
 * 完整路徑
 * 自訂模型
 
-這些模型的複雜性各不相同。 首次接觸和銷售機會建立是我們簡單的單次接觸模型。 其餘四種是更複雜、多點接觸的模型。 Marketo測量的歸因模型結構反映了客戶歷程中發生的四個主要接觸點：
+這些模型的複雜性各不相同。 首次接觸和銷售機會建立是我們簡單的單次接觸模型。 其餘四種是更複雜、多點接觸的模型。 Marketo Measure的歸因模型結構反映了客戶歷程中發生的四個主要接觸點：
 
 * 首次接觸(FT)
 * 銷售機會建立(LC)
@@ -69,7 +69,7 @@ Kate透過Adwords廣告首次造訪www.adobe.com ，將獲得50%的歸因評分�
 
 W形模型中包含三個里程碑接觸點。 在此模型中，FT、LC和OC接觸點各歸因於歸因評分的30%。 其餘10%會按比例歸因於三個里程碑接觸點之間發生的任何中間接觸點。
 
-凱特和奧斯丁向同事希拉里提到Marketo·邁斯。 她通過谷歌搜索找到了一個內容，並填寫了表格。 之後，Austin會收到電子郵件，供網路研討會註冊，並填寫網站上的註冊表。 Kate與一個銷售代表談了Marketo測量產品。
+凱特和奧斯丁向同事希拉里提到Marketo Measure。 她通過谷歌搜索找到了一個內容，並填寫了表格。 之後，Austin會收到電子郵件，供網路研討會註冊，並填寫網站上的註冊表。 Kate與一個銷售代表談了一談Marketo Measure產品。
 
 希拉里收到一封包含定價頁面連結的電子郵件，並瀏覽該頁面。 然後為其帳戶建立Opportunity。 希拉里訪問定價頁面的Web訪問獲得了機會建立的評分，因為它是最接近機會建立日期的最接近市場營銷交互。 每個里程碑接觸點都會獲派30%的歸因評分，而中介接觸點則歸因於其餘10%。
 
@@ -79,10 +79,10 @@ W形模型中包含三個里程碑接觸點。 在此模型中，FT、LC和OC接
 
 完整路徑模型包含所有四個里程碑接觸點。 英國《金融時報》、LC、OC和CW各獲得22.5%的收入評分，其餘10%在中間環節平均分配。
 
-機會創造後，凱特、奧斯丁和希拉里決定向CMO伊麗莎白推銷Marketo測量。 Elizabeth會出席Marketo Measure主持活動的會議。 Kate看到了Linkedin的一篇關於案例研究的帖子，並填寫了一份表格以下載內容。 伊麗莎白參加了由Marketo·邁爾主辦的銷售晚宴。 晚飯後，她決定購買Marketo Measure，並成為客戶。 在此情況下，銷售晚宴將歸因於已結交交易的收入評分的22.5%。 英國《金融時報》、LC和OC接觸點也分別獲得22.5%的評分。 中介接觸點會平均分配其餘10%的收入評分。
+機會創造後，凱特、奧斯丁和希拉里決定向CMO伊麗莎白推銷Marketo Measure。 Elizabeth出席Marketo Measure主辦的會議。 Kate看到了Linkedin的一篇關於案例研究的帖子，並填寫了一份表格以下載內容。 伊麗莎白參加了由Marketo Measure主辦的銷售晚宴。 晚飯後，她決定購買Marketo Measure，成為客戶。 在此情況下，銷售晚宴將歸因於已結交交易的收入評分的22.5%。 英國《金融時報》、LC和OC接觸點也分別獲得22.5%的評分。 中介接觸點會平均分配其餘10%的收入評分。
 
 ![](assets/6.png)
 
 **自訂歸因模型**
 
-Marketo測量也提供自訂歸因模型，讓使用者可以選擇要納入其模型中的接觸點或自訂階段。 此外，使用者還能控制歸因於這些接觸點和階段的百分比。
+Marketo Measure也提供自訂歸因模型，讓使用者可以選擇要納入其模型中的接觸點或自訂階段。 此外，使用者還能控制歸因於這些接觸點和階段的百分比。

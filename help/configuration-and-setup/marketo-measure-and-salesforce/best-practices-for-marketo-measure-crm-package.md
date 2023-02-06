@@ -4,7 +4,7 @@ title: 最佳實務 [!DNL Marketo Measure] CRM套件
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 source-git-commit: 00268f49ff6e5dfc105fa7ea21837375eae49647
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >您可能會看到指定「[!DNL Marketo Measure]「 」，但仍可在CRM中看到「Bizible」。 我們正致力更新該更新，品牌重塑將很快反映在您的CRM中。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 [!DNL Marketo Measure] 與兩者整合 [!DNL Salesforce] 和 [!DNL Microsoft Dynamics]，本檔案將著重於 [!DNL Marketo Measure] 專為 [!DNL Salesforce].
 
@@ -49,12 +49,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->當您停用將資料匯出至Salesforce的Marketo測量時，不會移除任何現有資料。 若要移除，請依照 [本Salesforce說明文章](https://help.salesforce.com/s/articleView?id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target=&quot;_blank&quot;}。
+>當您停用Marketo Measure將資料匯出至Salesforce時，不會移除任何現有資料。 若要移除，請依照 [本Salesforce說明文章](https://help.salesforce.com/s/articleView?id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target="_blank"}.
 
 >[!MORELIKETHIS]
 >
 >* [更新購買者接觸點套件](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
 >* [[!DNL Marketo Measure] 權限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 >* [共用報表和控制面板資料夾](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0)
->* [將Marketo測量連接到Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
+>* [將Marketo Measure連接到Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
 

@@ -5,7 +5,7 @@ title: 使用自訂收入金額欄位
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ ht-degree: 0%
 
    通過SFDC內的Data Loader運行您的機會可以實現這一點。 有關使用資料載入器的詳細資訊，請參閱 [這篇文章](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
 
-若在過程中有任何疑問，請立即洽詢您的客戶成功經理或 [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+若在過程中有任何疑問，請立即洽詢您的客戶成功經理或 [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

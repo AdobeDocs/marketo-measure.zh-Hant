@@ -5,7 +5,7 @@ title: 為何您絕不應刪除接觸點
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 ![](assets/1.png)
 
-如果從您的SFDC中刪除了接觸點，請聯繫 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}要求重新匯入您的資料。
+如果從您的SFDC中刪除了接觸點，請聯繫 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 請求重新匯入資料。

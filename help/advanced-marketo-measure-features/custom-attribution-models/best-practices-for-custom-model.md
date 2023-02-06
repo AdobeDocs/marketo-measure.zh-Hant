@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 自訂模型最佳作法 {#best-practices-for-custom-model}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 除了 [!DNL Marketo Measure] 立即可用的歸因模型中，第2層客戶及以上版本都可存取自訂歸因模型。
 

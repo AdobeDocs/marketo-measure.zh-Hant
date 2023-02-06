@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 離線頻道最佳實務 {#best-practices-for-offline-channels}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 要準確 [!DNL Marketo Measure] 報表，您的行銷管道必須正確設定。 「[!UICONTROL Marketing Channel]「 」欄位顯示接觸點可屬於的最高層級行銷策略群組（例如，事件、網路研討會、內容整合等）。
 

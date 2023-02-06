@@ -5,16 +5,16 @@ title: 帳戶型行銷概述
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
 # 帳戶型行銷概述 {#account-based-marketing-overview}
 
-以下是ABM的簡要概述， [!DNL Marketo Measure] ABM功能，以及如何將其新增至 [!DNL Salesforce] 頁面配置。 要閱讀更多有關ABM的資訊，請查看 [本頁](https://www.marketo.com/account-based-marketing/){target=&quot;_blank&quot;}。
+以下是ABM的簡要概述， [!DNL Marketo Measure] ABM功能，以及如何將其新增至 [!DNL Salesforce] 頁面配置。 要閱讀更多有關ABM的資訊，請查看 [本頁](https://www.marketo.com/account-based-marketing/){target="_blank"}.
 
-直接導航到在 [!DNL Salesforce] 例項，請 [按一下這裡](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target=&quot;_blank&quot;}。
+直接導航到在 [!DNL Salesforce] 例項，請 [按一下這裡](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}.
 
 ## 什麼是ABM {#what-is-abm}
 

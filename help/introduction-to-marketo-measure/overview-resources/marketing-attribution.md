@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874566
-description: 行銷歸因 — Marketo測量 — 產品檔案
+description: 行銷歸因 — Marketo Measure — 產品檔案
 title: 行銷歸因
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 source-git-commit: 0aa263053aa8dd804b03a67ab446dc0cda3850c5
@@ -12,9 +12,9 @@ ht-degree: 4%
 
 # 行銷歸因 {#marketing-attribution}
 
-## 歡迎使用Marketo測量 {#welcome-to-marketo-measure}
+## 歡迎來到Marketo Measure {#welcome-to-marketo-measure}
 
-Marketo Measure 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收。Marketo測量是行銷歸因解決方案，可自動追蹤並報告管道效能，讓您洞察哪些管道吸引最多客戶參與，並據此最佳化行銷支出。
+Marketo Measure 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收。Marketo Measure是行銷歸因解決方案，可自動追蹤及報告管道效能，讓您洞察哪些管道吸引最多客戶參與，並據此最佳化行銷支出。
 
 ## 行銷歸因 {#marketing-attribution-1}
 
@@ -24,7 +24,7 @@ Marketo Measure 可協助行銷人員深入了解哪些行銷手法最能有效�
 
 ![](assets/1.png)
 
-這些里程碑的接觸是Marketo措施 **歸因模型**. Marketo測量提供6個歸因模型。 每個模型都會著重於客戶歷程中的不同階段，並提供將收入評分歸因於行銷接觸點的一般結構。 您使用的模型取決於您最想測量的歷程階段，以及您要報告多少資料。 Marketo測量提供的歸因模型為：
+這些里程碑的接觸是Marketo Measure **歸因模型**. Marketo Measure提供6種歸因模型。 每個模型都會著重於客戶歷程中的不同階段，並提供將收入評分歸因於行銷接觸點的一般結構。 您使用的模型取決於您最想測量的歷程階段，以及您要報告多少資料。 Marketo Measure提供的歸因模型包括：
 
 * 首次接觸
 * 銷售機會建立

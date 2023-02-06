@@ -5,7 +5,7 @@ title: 自訂區段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 步驟2 — 登入並找出區段功能。
 
-* 前往 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}登入
+* 前往 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 登入
 * 在 [!UICONTROL My Account] 索引標籤，選取 [!UICONTROL Settings]
 * 選擇 [!UICONTROL Segments] 從側邊欄的選項到左側， [!UICONTROL Reporting] 節
 

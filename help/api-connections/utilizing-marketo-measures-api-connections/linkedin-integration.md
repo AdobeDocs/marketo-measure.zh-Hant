@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # linkedIn整合 {#linkedin-integration}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 此 [!DNL Marketo Measure] 與LinkedIn的整合分為兩部分：
 
 贊助內容：贊助內容整合可讓 [!DNL Marketo Measure] 標籤目標URL [!DNL LinkedIn] 最終允許 [!DNL Marketo Measure] 追蹤使用者完成其整個接觸點歷程，並將活動對應回特定 [!DNL LinkedIn] 行銷活動與創意。 這可為客戶提供其投資報酬率的深入分析 [!DNL LinkedIn] 活動。
 
-第一代Forms:透過與LinkedIn的Lead Gen Forms整合，Marketo Measure可深入分析透過LinkedIn平台提交的表單。 這些表單填入會與來自您CRM或 [!DNL Marketo Engage] 例項，以便符合歸因的資格。 透過有助於產生表單的Campaign、Creative和Form的深入分析，團隊現在可以進一步最佳化其LinkedIn行銷和廣告支出。
+第一代Forms:透過與LinkedIn的Lead Gen Forms整合，Marketo Measure能深入了解透過LinkedIn平台提交的表單。 這些表單填入會與來自您CRM或 [!DNL Marketo Engage] 例項，以便符合歸因的資格。 透過有助於產生表單的Campaign、Creative和Form的深入分析，團隊現在可以進一步最佳化其LinkedIn行銷和廣告支出。
 
 ## 可用性 {#availability}
 

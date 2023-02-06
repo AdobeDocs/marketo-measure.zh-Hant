@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874580
 description: 將Marketo Measure連接到Salesforce - [!DNL Marketo Measure]  — 產品檔案
-title: 將Marketo測量連接到Salesforce
+title: 將Marketo Measure連接到Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 source-git-commit: 993a326c377b3b6ff48c4e0114b59297f9ca2ca6
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# 將Marketo測量連接到Salesforce {#connect-marketo-measure-to-salesforce}
+# 將Marketo Measure連接到Salesforce {#connect-marketo-measure-to-salesforce}
 
 本文概述如何連接您的 [!DNL Salesforce] 帳戶 [!DNL Marketo Measure] 帳戶。
 
