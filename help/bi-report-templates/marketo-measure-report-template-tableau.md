@@ -2,9 +2,9 @@
 description: '"[!DNL Marketo Measure] 報表範本 — Tableau - [!DNL Marketo Measure]  — 產品檔案」'
 title: '"[!DNL Marketo Measure] 報表範本 — Tableau」'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
-source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
+source-git-commit: 1b0d043e9015f2f8e2f6a3a2a49849bb792c7f21
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 您可以存取 [!DNL Tableau] 報表範本 [此處](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
-開啟 [!DNL Adobe Marketo] 測量報表範本Tableau活頁簿檔案。
+開啟 [!DNL Adobe Marketo Measure] 報表範本Tableau活頁簿檔案。
 
 您需要將現有連線資料更新為特定Snowflake連線資訊。 按一下 [!UICONTROL Edit Connection] 按鈕，並遵循 [[!UICONTROL Data Connection]](#data-connection) 一節。
 
