@@ -3,9 +3,9 @@ unique-page-id: 18874730
 description: 帳戶型行銷概述 —  [!DNL Marketo Measure]  — 產品檔案
 title: 帳戶型行銷概述
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 48bff0d1cade7c216988170b16942ebffb71cc63
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ ht-degree: 0%
 * 銷售機會公司名稱至帳戶名稱
 * 引導公司到帳戶網站域
 * 透過連絡人的電子郵件地址，將潛在客戶電子郵件地址上的網域與帳戶相符
+
+>[!NOTE]
+>
+>會嘗試以上述方法的優先順序來匹配每個銷售機會與帳戶。 一旦進行比對，AccountId就會立即設定在銷售機會上，且不會使用其他方法進行比對。 如果Lead已具有有效的AccountId，則會跳過Lead。
 
 ## 預測性參與分數 {#predictive-engagement-score}
 
