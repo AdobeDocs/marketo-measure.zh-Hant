@@ -3,9 +3,9 @@ unique-page-id: 18874734
 description: 合併銷售機會的最佳實務 —  [!DNL Marketo Measure]  — 產品檔案
 title: 合併銷售機會的最佳實務
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 從那裡，您應該可以自由合併Lead和 [!DNL Marketo Measure] 資料將被傳遞至新記錄。
 
-若您有任何疑問，請隨時聯絡您的客戶成功經理或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+若您有任何疑問，請隨時聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 ![](assets/1.jpg)

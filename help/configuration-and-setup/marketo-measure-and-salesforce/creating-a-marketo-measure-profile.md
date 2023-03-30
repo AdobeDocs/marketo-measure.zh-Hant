@@ -3,9 +3,9 @@ unique-page-id: 18874698
 description: 建立 [!DNL Marketo Measure] 設定檔 —  [!DNL Marketo Measure]  — 產品檔案
 title: 建立 [!DNL Marketo Measure] 設定檔
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ ht-degree: 0%
 
    完成!
 
-   如果您對建立專用 [!DNL Marketo Measure] 設定檔請洽詢您的客戶成功經理，或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+   如果您對建立專用 [!DNL Marketo Measure] 設定檔，請聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

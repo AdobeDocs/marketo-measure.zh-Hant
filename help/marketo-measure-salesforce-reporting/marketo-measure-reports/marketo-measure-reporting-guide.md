@@ -2,9 +2,9 @@
 description: '"[!DNL Marketo Measure] 報表指南 —  [!DNL Marketo Measure]  — 產品檔案」'
 title: '"[!DNL Marketo Measure] 報告指南」'
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '6392'
+source-wordcount: '6395'
 ht-degree: 0%
 
 ---
@@ -557,7 +557,7 @@ _只有在您的網站上托管註冊表單時，才適用此報表 [!DNL Market
 
 >[!NOTE]
 >
->自訂歸因模型是並非所有客戶都能使用的額外功能。 請連絡您的客戶成功經理，以進一步了解如何將此功能新增至您的帳戶。
+>自訂歸因模型是並非所有客戶都能使用的額外功能。 請連絡Adobe客戶團隊（您的客戶經理），以進一步了解如何將此功能新增至您的帳戶。
 
 通常，行銷人員需要知道「我的商機來自何處？」 與銷售機會層級報表類似，此問題在歷史上以單一、一維度的值（例如主要促銷活動來源）回答。 但是，我們知道，與單一接觸的單一接觸點相比，在開發Opportunity方面投入的資源要多得多。 通常有多個接觸點，來自不同渠道和多個利益相關方，這些接觸點將影響Opportunity的建立。 使用 [!DNL Marketo Measure]，我們可以顯示帳戶中的所有接觸點，以便最好地了解機會的來源。 但是，除此之外，我們還可以繼續顯示在建立Opportunity之後發生的任何接觸點，直到Opportunity關閉為止。 這不僅使我們能夠採用多接觸方法來了解Opportunity的來源，還使我們能夠了解影響Opportunity的因素，以結束並最終代表已結束的韓元收入。 這可讓您深入了解不同的問題，例如「行銷對影響交易以完成有何影響？」、「是什麼行銷推動了結，贏得了收入？」 最終，「我的哪些營銷努力都看到了最大的ROI？」
 
