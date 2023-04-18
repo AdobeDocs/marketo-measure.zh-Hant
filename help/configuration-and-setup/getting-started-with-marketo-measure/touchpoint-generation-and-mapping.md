@@ -3,9 +3,9 @@ unique-page-id: 18874554
 description: 接觸點產生與對應 —  [!DNL Marketo Measure]  — 產品檔案
 title: 接觸點產生與對應
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 950dbfacf48cbb81acad9c40033c25a765287bee
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 接觸點產生方法
 
 接觸點產生程式可回答「如何 [!DNL Marketo Measure] 會知道發生了什麼？」 根據您的功能集和潛在客戶的互動類型，最多有三種方式 [!DNL Marketo Measure] 可擷取互動並建立接觸點來加以呈現。
+
+>[!IMPORTANT]
+>
+>[!DNL Marketo Measure] 每個工作階段只會產生一個接觸點。 如果已填寫多個表單，則只會擷取第一個表單填入。
 
 | **互動類型** | **範例** | **接觸點產生方法** |
 |---|---|---|
