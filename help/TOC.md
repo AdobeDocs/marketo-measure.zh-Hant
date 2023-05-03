@@ -2,12 +2,12 @@
 cloud: Experience Cloud
 product: Bizible
 audience: end-user
-user-guide-title: "[!DNL Marketo Measure] 指南"
+user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入了解哪些行銷活動最能有效提升公司營收。」'
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -189,7 +189,7 @@ ht-degree: 1%
       + [[!DNL Marketo Measure] 101報表概述](marketo-measure-salesforce-reporting/marketo-measure-reports/marketo-measure-101-reports-overview.md)
       + [各行銷管道的商機](marketo-measure-salesforce-reporting/marketo-measure-reports/opportunities-by-marketing-channel.md)
       + [按行銷管道列出的已結失機會](marketo-measure-salesforce-reporting/marketo-measure-reports/closed-lost-opportunities-by-marketing-channel.md)
-      + [[!UICONTROL Leads with Buyer Touchpoints] 報表](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
+      + [[!UICONTROL Leads with Buyer Touchpoints] 報告](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
       + [報告有無購買者歸因接觸點的商機](marketo-measure-salesforce-reporting/marketo-measure-reports/reporting-on-opportunities-with-or-without-buyer-attribution-touchpoints.md)
       + [在我的報表中複製記錄](marketo-measure-salesforce-reporting/marketo-measure-reports/duplicate-records-in-my-report.md)
    + 其他功能 {#additional-functionality}
