@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入了解哪些行銷活動最能有效提升公司營收。」'
-source-git-commit: 5a27c4fc89925ae143affa2de14eca3b8a51bd11
+source-git-commit: 148cc203f1fd2a3b90771f2223bbacacdcfad7b0
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 1%
    + [[!DNL Marketo Measure] 與Adobe Analytics整合](marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md)
    + [[!DNL Marketo Measure] 與Adobe啟動的整合](marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-launch.md)
    + [網域管理](marketo-measure-and-adobe/domain-management.md)
-   + [統一殼層概述](marketo-measure-and-adobe/unified-shell-overview.md)
+   + [Adobe Experience Cloud介面概述](marketo-measure-and-adobe/experience-cloud-interface-overview.md)
 + [!DNL Marketo Measure] 和動態 {#marketo-measure-and-dynamics}
    + 開始使用 [!DNL Marketo Measure] 和動態 {#getting-started-with-marketo-measure-and-dynamics}
       + [[!DNL Marketo Measure] Dynamics架構](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md)

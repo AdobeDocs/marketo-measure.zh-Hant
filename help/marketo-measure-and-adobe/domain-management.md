@@ -2,16 +2,16 @@
 description: 網域管理 —  [!DNL Marketo Measure]  — 產品檔案
 title: 網域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 148cc203f1fd2a3b90771f2223bbacacdcfad7b0
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
 # 網域管理 {#domain-management}
 
-針對啟用IMS的租戶執行 [!DNL Marketo Measure] 在統一殼層， [!DNL Marketo Measure] 提供一個介面，讓使用者可管理自己的網域清單。 [!DNL Marketo Measure] 使用者必須先驗證想要追蹤的任何網域 [Adobe Admin Console](https://adminconsole.adobe.com/). 在Admin Console中驗證網域後，使用者可以管理 [!DNL Marketo Measure] 使用這些網域來追蹤網站流量。
+針對啟用IMS的租戶執行 [!DNL Marketo Measure] 在Experience Cloud介面中， [!DNL Marketo Measure] 提供一個介面，讓使用者可管理自己的網域清單。 [!DNL Marketo Measure] 使用者必須先驗證想要追蹤的任何網域 [Adobe Admin Console](https://adminconsole.adobe.com/). 在Admin Console中驗證網域後，使用者可以管理 [!DNL Marketo Measure] 使用這些網域來追蹤網站流量。
 
 ## 在Admin Console中新增網域 {#adding-domains-in-admin-console}
 

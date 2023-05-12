@@ -1,21 +1,19 @@
 ---
-description: 統一殼層概述 —  [!DNL Marketo Measure]  — 產品檔案
-title: 統一殼層概述
+description: Adobe Experience Cloud介面 —  [!DNL Marketo Measure]  — 產品檔案
+title: Adobe Experience Cloud介面
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
-source-git-commit: f0ad2b309172bf44ccea033e57d9aae3616532fc
+source-git-commit: 148cc203f1fd2a3b90771f2223bbacacdcfad7b0
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
-# 統一殼層概述 {#unified-shell-overview}
+# Adobe Experience Cloud介面 {#unified-shell-overview}
 
-Unified Shell會協調Adobe Experience Cloud應用程式和服務的「殼層」外觀。 但是，這不只是新設計。 這是單頁應用程式，可在單一執行個體中提供使用者體驗。
+Adobe Experience Cloud介面會協調Adobe Experience Cloud應用程式和服務的「殼層」外觀與風格。 但是，這不只是新設計。 這是單頁應用程式，可在單一執行個體中提供使用者體驗。
 
 ## 使用者流量 {#user-flow}
-
-**統一的殼流**
 
 如果您已登入Adobe Experience Cloud產品，請按一下功能表圖示並選取 **[!DNL Marketo Measure]**.
 
@@ -69,7 +67,7 @@ Unified Shell會協調Adobe Experience Cloud應用程式和服務的「殼層」
 
 系統會重新導向書籤。 例如，如果您要導覽至https://apps.marketo-measure.com/Discover/391，在完成驗證後，系統會將您重新導向至https://experience.adobe.com/marketo-measure/Discover/391。
 
-**無法登錄 [!DNL Marketo Measure] 通過統一殼層。 問題可能是什麼？**
+**無法登錄 [!DNL Marketo Measure] 透過Experience Cloud介面。 問題可能是什麼？**
 
 如果您可以登入Adobe Experience Cloud，但看到的頁面如下，則問題可能出在 [!DNL Marketo Measure] 側：
 
