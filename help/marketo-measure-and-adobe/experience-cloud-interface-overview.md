@@ -2,16 +2,16 @@
 description: Adobe Experience Cloud介面 —  [!DNL Marketo Measure]  — 產品檔案
 title: Adobe Experience Cloud介面
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
-source-git-commit: 148cc203f1fd2a3b90771f2223bbacacdcfad7b0
+source-git-commit: a14b977fc4c3d2f3eccd2c03bc8d96c2a71e6bc6
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Cloud介面 {#unified-shell-overview}
 
-Adobe Experience Cloud介面會協調Adobe Experience Cloud應用程式和服務的「殼層」外觀與風格。 但是，這不只是新設計。 這是單頁應用程式，可在單一執行個體中提供使用者體驗。
+Adobe Experience Cloud介面會協調Adobe Experience Cloud應用程式和服務的外觀與風格。 但是，這不只是新設計。 這是單頁應用程式，可在單一執行個體中提供使用者體驗。
 
 ## 使用者流量 {#user-flow}
 
