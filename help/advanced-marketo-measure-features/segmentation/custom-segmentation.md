@@ -3,9 +3,9 @@ unique-page-id: 18874604
 description: 自訂分段 —  [!DNL Marketo Measure]  — 產品檔案
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
-source-git-commit: 01be819ccee1b3079b15a748480e9dacf6adb488
+source-git-commit: 7d037783805567370daa412629d58a5dee175722
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->自訂區段可讓您依類別（篩選名稱）和規則（篩選值）篩選接觸點。 第1層獲得一個區段，第2層及更高層獲得十個。
+>自訂區段可讓您依類別（篩選名稱）和規則（篩選值）篩選接觸點。 第1級客戶可獲得一個區段，第2級及更高等級可獲得十個。
 
 **自訂分段功能何時有用？**
 
