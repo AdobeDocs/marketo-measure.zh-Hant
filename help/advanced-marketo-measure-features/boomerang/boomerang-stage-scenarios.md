@@ -1,139 +1,143 @@
 ---
 unique-page-id: 18874692
-description: 自美朗階段情景 —  [!DNL Marketo Measure]  — 產品檔案
-title: 波梅朗階段情景
+description: 迴音廊階段案例 —  [!DNL Marketo Measure]  — 產品檔案
+title: 迴音廊階段情境
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 01be819ccee1b3079b15a748480e9dacf6adb488
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1707'
 ht-degree: 0%
 
 ---
 
-# 波梅朗階段情景 {#boomerang-stage-scenarios}
+# 迴音廊階段情境 {#boomerang-stage-scenarios}
 
-以下是Boomerang Stage案例的一些範例，以了解如何 [!DNL Marketo Measure] 會在每種情況下建立接觸點。
+>[!AVAILABILITY]
+>
+>Boomerang功能僅對第3級客戶啟用。 若要要求更高的帳戶層級，請聯絡Adobe帳戶團隊（您的帳戶經理）。
 
-## 單一銷售機會方案 {#single-lead-scenarios}
+以下是「飛毛腿舞台」的一些範例，可讓您瞭解如何進行 [!DNL Marketo Measure] 會在每種情況下建立接觸點。
 
-**方案1:銷售機會的標準回歸接觸點**
+## 單一潛在客戶案例 {#single-lead-scenarios}
 
-這是最簡單的「自食其果」情景。 頂線（標示為Lead 1）代表個別Lead的歷程，以及其接觸點在Lead記錄中的顯示方式。 底線（標籤為Opportunity）顯示Lead的接觸點如何轉化到Opportunity。 接觸點的進展將以時間順序的發生方式（從左到右）進行說明。
+**案例1：潛在客戶的標準Boomerang接觸點**
 
-在此案例中，客戶已選擇 **MQL** 和 **SQL** 用波美蘭號追蹤的階段。 每個Boomerang接觸點位置都將標籤有其發生的階段和編號(MQL-01、SQL-01、MQL-02)。 等)。 該階段的最後一個回飛接觸點在接觸點位置也會有「（最後）」。
+這是最簡單的「飛人」案例。 頂行（標示為Lead 1）代表個別Lead的歷程，及其接觸點在Lead記錄上的顯示方式。 底線（標示為Opportunity）顯示Leads的接觸點如何翻譯成Opportunity。 接觸點的進度會依出現時間從左到右進行說明。
 
-然後，Lead 1將轉換為具有Opportunity的Contact，該Opportunity被視為OC接觸。
+在此案例中，客戶已選擇讓其 **MQL** 和 **SQL** 使用「回彈」追蹤的階段。 每個Boomerang接觸點位置都會標示階段和發生階段的數字(MQL-01、SQL-01、MQL-02。 等)。 該階段的最後一個迴音廊接觸點也會在接觸點位置中顯示「（最後一個）」。
+
+然後Lead 1會轉換為具有機會的聯絡人，這視為OC接觸。
 
 ![](assets/1-1.png)
 
-**方案2:Boomerang銷售機會接觸點和自訂階段**
+**案例2：潛在客戶的Boomerang接觸點和自訂階段**
 
-在此案例中，客戶選擇只追蹤 **SQL階段** 自食其果接觸點。 仍在跟蹤MQL和SAL階段，但使用 [!DNL Marketo Measure] 自訂舞台功能。
+在此案例中，客戶已選擇僅追蹤 **SQL階段** 與迴音廊接觸點。 系統仍在追蹤MQL和SAL階段，但使用 [!DNL Marketo Measure] 自訂舞台功能。
 
 ![](assets/2-1.png)
 
-請注意，MQL接觸點位置未標示數字。 這是因為未選擇使用Boomerang接觸點來追蹤。 為包含在自訂模型中的階段建立接觸點時，但不會使用Boomerang追蹤， [!DNL Marketo Measure] 會從那個階段開始。
+請注意，MQL接觸點位置未標示為數字。 這是因為系統未選取要使用迴音廊接觸點來追蹤。 為包含在自訂模型中、但未使用Boomerang追蹤的階段建立接觸點時， [!DNL Marketo Measure] 將會取用該階段的最後一次發生次數。
 
-在SAL階段， [!DNL Marketo Measure] 會忽略此階段的前兩次出現。 [!DNL Marketo Measure] 僅建立 _最近_ 值。 在上例中，這會在OC接觸點之前發生。
+在SAL階段中， [!DNL Marketo Measure] 會忽略此階段的前兩次發生次數。 [!DNL Marketo Measure] 僅建立SAL接觸點 _最後_ 發生次數。 在上述範例中，這會直接發生在OC接觸點之前。
 
-SQL階段正在使用Boomerang接觸點進行跟蹤，並且已建立三個接觸點並相應地標籤。
+正在使用Boomerang接觸點追蹤SQL階段，並且已建立三個接觸點並相應地加上標籤。
 
-然後，Lead 1將轉換為具有Opportunity的Contact，該Opportunity被視為OC接觸。
+然後Lead 1會轉換為具有機會的聯絡人，這視為OC接觸。
 
-**方案3:當Lead未到達/跳過階段**
+**案例3：潛在客戶未達到/略過階段時**
 
-此方案使用與方案2相同的條件。 客戶僅選擇使用自動調整接觸點跟蹤SQL階段。 仍在跟蹤MQL和SAL，但使用 [!DNL Marketo Measure] 自訂舞台功能。
+此案例使用與案例2相同的條件。 客戶已選擇只追蹤具有迴音廊接觸點的SQL階段。 MQL和SAL仍在追蹤中，但使用 [!DNL Marketo Measure] 自訂舞台功能。
 
 ![](assets/3.png)
 
-在此情況下，銷售機會從不實際轉變為SAL階段。 它在到達SAL階段之前轉換為Contact，實際上是「跳過」SAL階段。 在這種情況下， [!DNL Marketo Measure] 將假定SAL與OC接觸點一起發生，並且SAL和OC位置將出現在同一接觸點上。
+在此案例中，銷售機會實際上永遠不會轉換到SAL階段。 在到達SAL階段之前，它會轉換為Contact，實際上就是「略過」SAL階段。 在此情況下， [!DNL Marketo Measure] 會假設SAL與OC接觸點同時發生，且SAL和OC位置會出現在相同的接觸點上。
 
-然後，Lead 1將轉換為具有Opportunity的Contact，該Opportunity被視為OC接觸。
+然後Lead 1會轉換為具有機會的聯絡人，這視為OC接觸。
 
-## 具有多個銷售機會的方案 {#scenarios-with-multiple-leads}
+## 具有多個潛在客戶的案例 {#scenarios-with-multiple-leads}
 
-以下情形是Boomerang Stages可能變得更複雜的情形，因為我們正在研究多個Lead如何影響Opportunity歷程。
+由於我們正在研究多個潛在客戶如何影響Opportunity歷程，因此以下情境是Boomerang階段可能變得更加複雜的情況。
 
-頂線（標示為Lead 1，藍色）代表個別Lead的歷程，以及其接觸點在Lead記錄上的顯示方式。 Lead 2（粉紅色）和Lead 3（橙色）也是如此。 底線（標籤為Opportunity）顯示了這兩個Lead的接觸點如何轉化到Opportunity。 接觸點的進展將以時間順序的發生方式（從左到右）進行說明。
+頂行（標示為Lead 1，藍色的）代表個別Lead的歷程，及其接觸點在Lead記錄上的顯示方式。 這同樣適用於Lead 2 （粉紅色）和Lead 3 （橙色）。 底線（標示為Opportunity）會顯示這兩個Lead的接觸點如何翻譯成Opportunity。 接觸點的進度會依出現時間從左到右進行說明。
 
-**方案1:[!UICONTROL Three Leads with Opportunity]**
+**案例1：[!UICONTROL Three Leads with Opportunity]**
 
-在此案例中，客戶已選擇追蹤 **MQL** 和 **SAL階段** 自食其果接觸點。 SQL階段正由標準自定義階段跟蹤。
+在此案例中，客戶已選擇追蹤 **MQL** 和 **SAL階段** 與迴音廊接觸點。 標準自訂階段正在追蹤SQL階段。
 
 ![](assets/4.png)
 
-「機會」上的FT和LC接觸點將來自Lead 1（藍色），因為它們發生在Lead 2的FT和LC之前（粉紅色）。 Lead 2的LC接觸點將顯示為Opportunity上的「表單」接觸點。
+Opportunity上的FT和LC接觸點將來自Lead 1 （藍色），因為它們發生在Lead 2 （粉紅色）的FT和LC之前。 Lead 2的LC接觸點將作為Opportunity上的「Form」接觸點出現。
 
-Lead 2的MQL-01（最後一個）將成為Opportunity的第一個MQL。 Lead 1的MQL-01不會作為Opportunity上的接觸點顯示，因為Lead 2的MQL是先發生的。 但是，銷售機會上將出現Lead 1的MQL-02和MQL-03。
+來自Lead 2的MQL-01 （最後一個）將成為Opportunity上的第一個MQL。 Lead 1的MQL-01不會顯示為Opportunity上的接觸點，因為Lead 2的MQL會先發生。 但是，Lead 1的MQL-02和MQL-03將會出現在Opportunity上。
 
-請注意，SQL階段是使用自訂階段來追蹤，而非回歸階段。 儘管Lead 1和Lead 2之間有三次出現SQL階段，但只有最後一次SQL出現將作為Opportunity上的接觸點。
+請注意，正在以自訂階段追蹤SQL階段，而不是以自訂階段追蹤Boomerang。 即使Lead 1和Lead 2之間有三次SQL階段，只有最後一次SQL發生次數會作為接觸點包含在Opportunity中。
 
-來自Lead 1的SAL-01（最後一個）接觸點作為Opportunity的接觸點被傳遞。 然後，Lead 1將轉換為具有Opportunity的Contact，該Opportunity被視為OC接觸。 將建立Lead 2的SAL-01（最後一個）接觸點作為接觸點，因為此階段轉變已發生 _after_ OC接觸。
+來自Lead 1的SAL-01 （上一個）接觸點會移轉作為Opportunity上的接觸點。 然後Lead 1會轉換為具有機會的聯絡人，這視為OC接觸。 潛在客戶2的SAL-01 （上一個）接觸點將建立為接觸點，因為此階段轉換已發生 _晚於_ OC觸控。
 
-Lead 3的FT、LC和MQL、SQL、SAL接觸點（橙色）均發生在Opportunity上的OC接觸點之後。 這些接觸點將包含在「機會」中，但被視為「中間接觸」。
+Lead 3的FT、LC和MQL、SQL、SAL接觸點（橙色）都發生在Opportunity上的OC接觸點之後。 這些接觸點將包含在Opportunity中，但視為「中間接觸」。
 
-當Lead 2和3轉換為Contacts時， [!DNL Marketo Measure] 不會建立另一個OC接觸點，因為只能有一個機會建立階段。
+當潛在客戶2和3轉換為聯絡人時， [!DNL Marketo Measure] 將不會建立另一個OC接觸點，因為只能有一個機會建立階段。
 
-**方案2 -[!UICONTROL Three Leads with Opportunity]**
+**案例2 -[!UICONTROL Three Leads with Opportunity]**
 
-在此案例中，客戶已選擇追蹤 **MQL**, **SQL**，和 **薩爾** 與自飛鏢接觸點分階段。
+在此案例中，客戶已選擇追蹤 **MQL**， **SQL**、和 **SAL** 與迴音廊接觸點一起暫存。
 
-從FT到SAL-01（最後）,Lead 1的所有接觸點都將包含在銷售機會中。 Lead 2的LC接觸點將作為Opportunity上LC和MQL-01接觸點之間的表單接觸點。
+從FT到SAL-01 （上一個），Lead 1的所有接觸點都將包含在商機中。 Lead 2的LC接觸點將作為Form接觸點包含在Opportunity上的LC和MQL-01接觸點之間。
 
 ![](assets/5.png)
 
-Lead 2的MQL-01（最後一個）最終成為Opportunity上的MQL-04（最後一個）接觸點。 因為此情形是在一個Opportunity中查看多個Lead的歷程，因此當Lead的接觸點被翻譯為Opportunity上的接觸點時，其定位和編號可能會改變。 同樣地，Lead 2中的SQL-01(Last)將變成Opp上的SQL-04(Last)。 Lead 2的SAL-01(Last)也成為Opportunity的SAL-02(Last)。
+來自Lead 2的MQL-01 （上一個）最終成為Opportunity上的MQL-04 （上一個）接觸點。 由於此情境是檢視一個Opportunity中多個Lead的歷程，因此Lead的接觸點的定位和編號在轉換為Opportunity上的接觸點時可能會變更。 同樣地，來自Lead 2的SQL-01 (Last)會變成Opp上的SQL-04 (Last)。 Lead 2的SAL-01 （上一個）也會變成Opportunity的SAL-02 （上一個）。
 
-另外，請注意，Opportunity中只包含2個SAL接觸點。 [!DNL Marketo Measure] 不會嘗試強制/建立階段轉變的接觸點（如果尚未實際發生）。
+此外，請注意Opportunity上僅包含2個SAL接觸點。 [!DNL Marketo Measure] 不會嘗試強制/建立階段轉變的接觸點（如果實際上並未發生）。
 
-Lead 3的接觸點歷程就在OC接觸發生之前開始，但在Lead 1和Lead 2的FT和LC接觸很久之後。 在這種情況下，Lead 3的FT和LC將作為Opportunity上的Form接觸點顯示。 然後，Lead 1將轉換為具有Opportunity的Contact，該Opportunity被視為OC接觸。
+Lead 3的接觸點歷程在OC接觸發生之前開始，但在Lead 1和Lead 2進行FT和LC接觸之後很久。 在此案例中，Lead 3的FT和LC將作為Opportunity上的Form接觸點出現。 然後Lead 1會轉換為具有機會的聯絡人，這視為OC接觸。
 
-Lead 3的MQL、SQL和SAL接觸在OC接觸後同時發生。 由於這些接觸點是在OC接觸點之後發生的，因此此接觸點將顯示為Opportunity的表單/中間接觸，而不是Boomerang階段轉變。
+Lead 3的MQL、SQL和SAL接觸都會在OC接觸後同時發生。 由於它們發生在OC接觸點之後，此接觸點將在Opportunity上顯示為Form/Middle Touch，而不是Boomerang階段轉換。
 
-**案例2a — 在網路造訪Boomerang接觸點**
+**案例2a — 網頁瀏覽反彈式接觸點**
 
-在此案例中，客戶已選擇追蹤 **MQL**, **SQL**，和 **薩爾** 與自飛鏢接觸點分階段。 此情境幾乎與上述情境相同，但有一些例外。
+在此案例中，客戶已選擇追蹤 **MQL**， **SQL**、和 **SAL** 與迴音廊接觸點一起暫存。 除了少數例外情況外，此案例幾乎與上述案例相同。
 
 ![](assets/6.png)
 
-從FT到SAL-01（最後）,Lead 1的所有接觸點都將包含在銷售機會中。 Lead 2的LC接觸點將作為Opportunity上LC和MQL-01接觸點之間的表單接觸點。
+從FT到SAL-01 （上一個），Lead 1的所有接觸點都將包含在商機中。 Lead 2的LC接觸點將作為Form接觸點包含在Opportunity上的LC和MQL-01接觸點之間。
 
-Lead 2的MQL-01（最後一個）（Web訪問）不會作為Opp上的接觸點建立。 這是因為此接觸點是在SQL階段最後一次出現之後進行的Web訪問，不有助於推動Opportunity前進。
+潛在客戶2的MQL-01 （上次） （網頁造訪）將不會建立為Opp上的接觸點。 這是因為此接觸點是發生在SQL階段最後一次發生之後的Web造訪，無助於推動機會前進。
 
-銷售機會1的階段更改為SAL，然後轉換為Contact with a Opportunity;在這種情況下，SAL-01（最後）和OC位置將合併到同一接觸點中。
+Lead 1的階段變更為SAL，然後轉換為具有機會的聯絡人；在這種情況下，SAL-01 （上一個）和OC位置將在相同的接觸點中合併。
 
-Lead 3的FT、LC接觸將建立為Opp上的「表單」接觸點。 在OC接觸後，僅會建立表單填入動作作為接觸點。 因此，將不會建立「銷售機會2」的SQL-01（最後）和SAL-01（最後）階段轉變作為接觸點，因為這些接觸點是Web訪問。
+Lead 3的FT、LC觸控功能將建立為Opp上的表單接觸點。 只有表單填入動作才會建立為OC接觸後的接觸點。 因此，「銷售機會2」的SQL-01 （上一個）和SAL-01 （上一個）階段轉換將不會建立為接觸點，因為這些接觸點是網頁造訪。
 
-Lead 3的MQL、SQL、SAL接觸將作為接觸點包括在內，因為這是表單填充操作。
+潛在客戶3的MQL、SQL、SAL接觸將會納入為接觸點，因為這是表單填寫動作。
 
-**案例3 — 回歸歸歸因加權**
+**案例3 - Boomerang歸因加權**
 
-在此案例中，客戶已選擇追蹤 **MQL**, **SQL**，和 **薩爾** 與自飛鏢接觸點分階段。
+在此案例中，客戶已選擇追蹤 **MQL**， **SQL**、和 **SAL** 與迴音廊接觸點一起暫存。
 
 ![](assets/7.png)
 
-「機會」上的FT和LC接觸點將來自Lead 1（藍色），因為它們發生在Lead 2的FT和LC之前（粉紅色）。 Lead 2的LC接觸點將顯示為Opportunity上的「表單」接觸點。
+Opportunity上的FT和LC接觸點將來自Lead 1 （藍色），因為它們發生在Lead 2 （粉紅色）的FT和LC之前。 Lead 2的LC接觸點將作為Opportunity上的「Form」接觸點出現。
 
-Lead 2的MQL-01（最後一個）將成為Opportunity的第一個MQL。 Lead 1的MQL-01不會作為Opportunity上的接觸點顯示，因為Lead 2的MQL是先發生的。
+來自Lead 2的MQL-01 （最後一個）將成為Opportunity上的第一個MQL。 Lead 1的MQL-01不會顯示為Opportunity上的接觸點，因為Lead 2的MQL會先發生。
 
-Lead 2中的SQL-01(Last)將在Opportunity上成為SQL-01。 銷售機會1上的SQL-01不會顯示為銷售機會上的接觸點，因為銷售機會2上的SQL-01是先發生的。
+來自Lead 2的SQL-01 （上一個）將成為Opportunity上的SQL-01。 潛在客戶1上的SQL-01不會顯示為商機的接觸點，因為潛在客戶2上的SQL-01是先發生的。
 
-請注意，在MQL和SQL之間的Lead 1回歸了幾次，最後到達SAL階段。 SQL-01、MQL-02、SQL-02、MQL-03、SQL-03 _不會_ 可作為機會的接觸點，因為這些階段轉變並不有助於在歷程中推動機會前進。
+請注意，Lead 1在最終到達SAL階段之前，會在MQL和SQL之間移動幾次。 SQL-01、MQL-02、SQL-02、MQL-03、SQL-03 _不會_ 被列為機會的接觸點，因為這些階段轉換無助於推動機會在歷程中前進。
 
-來自Lead 1的SAL-01（最後一個）接觸點將是Opp上要包含的下一個接觸點。 然後銷售機會1轉換為具有銷售機會的聯繫人，建立OC接觸點。
+來自Lead 1的SAL-01 （上一個）接觸點是要包含在Opp上的下一個接觸點。 潛在客戶1接著會轉換為與商機的聯絡人，建立OC接觸點。
 
-Lead 3的FT和LC，以及MQL、SQL和SAL接觸點，將以表單形式顯示，接觸Opportunity。
+Lead 3的FT和LC，以及MQL、SQL和SAL接觸點，將以表單式接觸形式出現在Opportunity上。
 
-銷售機會2的SQL-01（最後一個）接觸點將不包括在Opp上作為接觸點，因為它發生在OC接觸點之後。 此外，Lead 2的SQL階段轉變已發生 _SAL階段最終轉變後_，並且無助於推動機會歷程向前推進。
+Lead 2的SQL-01 （上一個）接觸點不會作為Opp上的接觸點納入，因為它發生在OC接觸點之後。 此外，已發生Lead 2的SQL階段轉換 _在最後的SAL階段轉換之後_，無助於推動機會之旅。
 
-## 機會方案 {#opportunity-scenarios}
+## 機會案例 {#opportunity-scenarios}
 
-**情節1 — 與Opportunity和Boomerang跟蹤的聯繫人**
+**案例1 — 具有商機與回圈追蹤的聯絡人**
 
-在此案例中，客戶已選擇追蹤 **演示和協商階段轉換** 在 **連絡人**. 每個自飛舞台最多可接收兩個接觸點。 Contact上的階段轉變與Lead上的階段轉變之間的區別在於， Contact的階段轉變可以顯示為Opportunity上的Boomerang接觸點 _after_ OC接觸點。 對於在銷售機會上發生的階段轉變則並非如此，因為這些轉變會顯示為表單接觸點。
+在此案例中，客戶已選擇追蹤 **示範和交涉階段轉換** 於 **連絡人**. 每個迴音廊階段最多可接收兩個接觸點。 Contact上的階段轉變與Lead上的階段轉變之間的差異在於Contact階段轉變可以顯示為Opportunity上的Boomerang接觸點 _晚於_ oc接觸點。 這不適用於在Lead上發生的階段轉變，因為這些轉變會顯示為Form接觸點。
 
 ![](assets/8.png)
 
-在此示例中， Contact 1的Demo和Negotiation階段轉變包括在Opportunity上的Demo-01和Negotiation-01接觸點中。 聯繫人2的演示階段轉變發生 _after_ 聯繫1，並以Demo-02（最後一個）接觸點的形式顯示在Opportunity上。
+在此範例中，Contact 1的Demo和Negotiation Stage轉換會作為Demo-01和Negotiation-01接觸點包含在Opportunity中。 連絡人2的示範階段轉換發生 _晚於_ 連絡人1的，並出現在Opportunity上當作Demo-02 （上一個）接觸點。
 
-請注意，沒有第二個轉變到「洽談」階段；機會立即從Demo-02（最後一個）轉移到Close Won。 在這種情況下， [!DNL Marketo Measure] 將包含與「已結束原因」接觸點的「洽談」轉變。
+請注意，沒有第二個轉變到「交涉」階段；Opportunity會立即從Demo-02 （上一個）移動到Close Won。 在這種情況下， [!DNL Marketo Measure] 將包括「交涉」轉變與「成功關閉」接觸點。
