@@ -3,9 +3,9 @@ unique-page-id: 18874604
 description: 自訂分段 —  [!DNL Marketo Measure]  — 產品檔案
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
-source-git-commit: 7d037783805567370daa412629d58a5dee175722
+source-git-commit: e3a2ef7a305fff4edb6b0f21861c1ef5516212b8
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,7 @@ ht-degree: 0%
 
 **為何選擇自訂分段？**
 
-「自訂細分」功能可讓您依一個類別及最多五個區段篩選接觸點。 根據您的ROI Dash指向的Object （Lead或Contact），您可以根據Lead/Contact Object上的欄位建立區段。 此外，您也可以根據在Opportunity物件上找到的任何欄位來建立區段。
-
->[!NOTE]
->
->自訂區段可讓您依類別（篩選名稱）和規則（篩選值）篩選接觸點。 第1級客戶可獲得一個區段，第2級及更高等級可獲得十個。
+自訂區段可讓您依類別（篩選名稱）和規則（篩選值）篩選接觸點。 第1級客戶可獲得一個區段，第2級及更高等級可獲得十個。 根據您的ROI Dash指向的Object （Lead或Contact），您可以根據Lead/Contact Object上的欄位建立區段。 此外，您也可以根據在Opportunity物件上找到的任何欄位來建立區段。
 
 **自訂分段功能何時有用？**
 
