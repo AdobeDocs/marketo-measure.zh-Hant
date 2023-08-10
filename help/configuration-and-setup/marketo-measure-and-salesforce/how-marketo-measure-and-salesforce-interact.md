@@ -1,12 +1,13 @@
 ---
 unique-page-id: 18874672
-description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 互動 — Marketo Measure — 產品檔案
+description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Marketo Measure — 產品檔案
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 互動
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+feature: Salesforce
+source-git-commit: afb7805e375f26cc1b2473802582b1999e92cd8b
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 14%
+source-wordcount: '1716'
+ht-degree: 13%
 
 ---
 
@@ -14,27 +15,27 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->您可能會看到指定「[!DNL Marketo Measure]「 」，但仍可在CRM中看到「Bizible」。 我們正致力更新該更新，品牌重塑將很快反映在您的CRM中。
+>您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-讓我們高層看看 [!DNL Marketo Measure] 和銷售人員。
+讓我們來深入瞭解一下兩者之間的關係 [!DNL Marketo Measure] 和Salesforce。
 
 ## Salesforce和 [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-一旦 [!DNL Marketo Measure] 帳戶已建立， [!DNL Salesforce] 已連接， [!DNL Marketo Measure] 只要 [!DNL Marketo Measure] 已安裝托管軟體包，且 [!DNL Marketo Measure] Salesforce使用者具有編輯權限。
+一旦 [!DNL Marketo Measure] 帳戶已建立且 [!DNL Salesforce] 已連線， [!DNL Marketo Measure] 只要符合下列條件，就會開始將行銷資料推送到CRM執行個體： [!DNL Marketo Measure] 已安裝Managed套件，且 [!DNL Marketo Measure] Salesforce使用者擁有編輯許可權。
 
-如果您未安裝 [!DNL Marketo Measure] Salesforce包， [!DNL Marketo Measure] 不會將任何資料寫入您的Salesforce例項。
+如果您未安裝 [!DNL Marketo Measure] Salesforce套件， [!DNL Marketo Measure] 不會將任何資料寫入您的Salesforce執行個體。
 
 ![](assets/1-3.png)
 
-依預設， [!DNL Marketo Measure] 每次工作將資料傳送至您的CRM時，會根據每個API評分匯出200筆記錄。 對於大部分的客戶，這可提供所使用API評分之間的最佳平衡 [!DNL Marketo Measure] 和CRM的CPU資源需求。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此， [!DNL Marketo Measure] 允許客戶配置CRM導出批大小。 此設定可在 [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] 頁面 [!DNL Marketo Measure] Web應用程式和客戶可以選擇200（預設）、100、50或25的批量大小。
+根據預設， [!DNL Marketo Measure] 每次工作將資料傳送至您的CRM時，都會匯出每個API評分200筆記錄。 對於大多數客戶而言，這可提供以下專案所耗用的API積分之間的最佳平衡 [!DNL Marketo Measure] 和CRM的CPU資源需求。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此， [!DNL Marketo Measure] 允許客戶設定CRM匯出批次大小。 此設定可在 [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] 中的頁面 [!DNL Marketo Measure] Web應用程式和客戶可以選擇批次大小200 （預設）、100、50或25。
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-修改此設定時，請記住，較小的批次大小將會佔用您CRM的更多API評分。 建議您只有在CRM中遇到CPU逾時或CPU負載高時，才減少批次大小。
+修改此設定時，請牢記，較小的批次大小將使用來自CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時，才減少批次大小。
 
-## Salesforce標準對象和訪問 {#salesforce-standard-objects-and-access}
+## Salesforce標準物件與存取 {#salesforce-standard-objects-and-access}
 
-這會列出 [!DNL Salesforce] 標準對象 [!DNL Marketo Measure] 會在建立連線後與 [!DNL Marketo Measure] 已安裝軟體包。 現成可用， [!DNL Marketo Measure] 不會寫入任何標準 [!DNL Salesforce] 對象欄位。
+這會列出 [!DNL Salesforce] 符合以下條件的標準物件： [!DNL Marketo Measure] 會與互動，也會在建立連線後新增至這些物件的自訂欄位，以及 [!DNL Marketo Measure] 已安裝套件。 立即可用， [!DNL Marketo Measure] 不會寫入任何標準 [!DNL Salesforce] 物件欄位。
 
 **銷售機會**
 
@@ -43,7 +44,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -194,7 +195,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -303,7 +304,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -325,7 +326,7 @@ ht-degree: 14%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>SuppliedEmail</p></td> 
+   <td><p>提供的電子郵件</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -406,7 +407,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -449,7 +450,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -495,13 +496,13 @@ ht-degree: 14%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CloseDate</p></td> 
+   <td><p>關閉日期</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>StageName</p></td> 
+   <td><p>階段名稱</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -521,7 +522,7 @@ ht-degree: 14%
  </tbody> 
 </table>
 
-**行銷活動**
+**Campaign**
 
 <table> 
  <colgroup> 
@@ -534,7 +535,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -618,14 +619,14 @@ ht-degree: 14%
  </tbody> 
 </table>
 
-**促銷活動成員**
+**促銷活動會員**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -659,19 +660,19 @@ ht-degree: 14%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>HasResponded</p></td> 
+   <td><p>HasResponsed</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ContactId</p></td> 
+   <td><p>連絡人ID</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LeadId</p></td> 
+   <td><p>銷售機會ID</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -721,20 +722,34 @@ ht-degree: 14%
  </tbody> 
 </table>
 
+>[!NOTE]
+>
+>為了確保Marketo Measure擷取Salesforce帳戶內刪除事件的精確性，以下物件需要可複製的許可權。 可復寫許可權與下列物件一起提供標準許可權：
+>
+>* 帳戶
+>* Campaign
+>* 促銷活動會員
+>* 連絡人
+>* Event
+>* 銷售機會
+>* 機會
+>* 任務
+
+
 ## [!DNL Marketo Measure] 中的自訂物件 [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
 
-除了在SFDC的標準對象上建立自定義欄位外， [!DNL Marketo Measure] 軟體包已安裝，它將建立一些自定義對象。 以下是這些自訂物件的清單，以及表示 [!DNL Marketo Measure] 會寫信給。
+除了在SFDC的標準物件上建立自訂欄位之外， [!DNL Marketo Measure] 封裝已安裝，它會建立一些自訂物件。 以下是這些「自訂物件」的清單，以及代表以下欄位的表格： [!DNL Marketo Measure] 將寫入。
 
 **購買者接觸點**
 
-購買者接觸點是 [!DNL Marketo Measure] 「自訂物件」，封裝「連絡人」、「銷售機會」和「案例」的行銷互動。
+購買者接觸點是 [!DNL Marketo Measure] 自訂物件，封裝聯絡人、銷售機會和案例的行銷互動。
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -966,7 +981,7 @@ ht-degree: 14%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_U_Shaged__c</p></td> 
+   <td><p>bizible2__Count_U_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -994,14 +1009,14 @@ ht-degree: 14%
 
 **[!DNL Marketo Measure]個人**
 
-此 [!DNL Marketo Measure] 人是 [!DNL Marketo Measure] 與Lead、Contact和Case對象都相關的自定義對象。
+此 [!DNL Marketo Measure] 個人是 [!DNL Marketo Measure] 與Lead、Contact和Case物件都相關的自訂物件。
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1033,7 +1048,7 @@ ht-degree: 14%
 
 ## 購買者歸因接觸點 {#buyer-attribution-touchpoint}
 
-購買者歸因接觸點是 [!DNL Marketo Measure] 自訂物件，以封裝行銷對Opportunity的影響。
+購買者歸因接觸點為 [!DNL Marketo Measure] 自訂物件，可封裝行銷對機會的影響。
 
 **購買者歸因接觸點**
 
@@ -1042,7 +1057,7 @@ ht-degree: 14%
   <tr> 
    <th><p>欄位</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1286,13 +1301,13 @@ ht-degree: 14%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_U_Shifed__c</p></td> 
+   <td><p>bizible2__Attribution_U_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_W_Shifed__c</p></td> 
+   <td><p>bizible2__Attribution_W_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1322,13 +1337,13 @@ ht-degree: 14%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_U_Shaged__c</p></td> 
+   <td><p>bizible2__Count_U_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_W_Shaged__c</p></td> 
+   <td><p>bizible2__Count_W_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1364,13 +1379,13 @@ ht-degree: 14%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_U_Shaged__c</p></td> 
+   <td><p>bizible2__Revenue_U_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_W_Shifed__c</p></td> 
+   <td><p>bizible2__Revenue_W_Form__c</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
