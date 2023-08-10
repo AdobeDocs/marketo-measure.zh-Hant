@@ -4,7 +4,7 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: faa04b417c5f0512d294bf2483aef3061b10d621
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 1%
@@ -81,13 +81,13 @@ ht-degree: 1%
       + [離線自訂頻道設定](channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
       + [自訂Campaign同步](channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
       + [多種行銷活動記錄型別的設定](channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
-         + 已棄用的程式 {#deprecated-processes}
-            + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
-            + [Campaign同步日期](channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
-            + [建立行銷活動清單檢視 [!DNL Salesforce] 行銷活動](channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
-            + [Dynamics行銷活動和行銷清單](channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
-            + [同步歷史資料](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
-            + [同步離線行銷活動](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+      + 已棄用的程式 {#deprecated-processes}
+         + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
+         + [Campaign同步日期](channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
+         + [建立行銷活動清單檢視 [!DNL Salesforce] 行銷活動](channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+         + [Dynamics行銷活動和行銷清單](channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
+         + [同步歷史資料](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
+         + [同步離線行銷活動](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
 + API連線 {#api-connections}
    + 利用 [!DNL Marketo Measure]的API連線 {#utilizing-marketo-measures-api-connections}
       + [整合式廣告平台](api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md)
