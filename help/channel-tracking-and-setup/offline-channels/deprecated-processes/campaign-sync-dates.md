@@ -4,9 +4,9 @@ description: Campaign同步日期 —  [!DNL Marketo Measure]  — 產品檔案
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Campaign同步日期 {#campaign-sync-dates}
 
 瞭解Campaign同步日期功能的功能，並提供此功能的一些使用案例。
+
+>[!NOTE]
+>
+>本文會介紹過時的程式。 我們鼓勵使用者使用 [新的、改良的應用程式內程式](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 **[!DNL Marketo Measure]需要套件： 6.9或更新版本**
 

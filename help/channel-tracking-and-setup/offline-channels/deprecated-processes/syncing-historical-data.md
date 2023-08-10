@@ -4,9 +4,9 @@ description: 同步歷史資料 —  [!DNL Marketo Measure]  — 產品檔案
 title: 同步歷史資料
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 同步歷史資料 {#syncing-historical-data}
 
 [!DNL Marketo Measure] 是提供最精細、可操作資料的解決方案。 不過，我們瞭解您可能有想要歸因的現有資料。 您可以產生歷史資料的接觸點，但在進行此程式前務必要考量數個因素。
+
+>[!NOTE]
+>
+>本文會介紹過時的程式。 我們鼓勵使用者使用 [新的、改良的應用程式內程式](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 ## 要考量的因素 {#factors-to-consider}
 

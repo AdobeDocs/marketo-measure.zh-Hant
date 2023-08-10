@@ -4,9 +4,9 @@ description: 建立行銷活動清單檢視 [!DNL Salesforce Campaigns] - [!DNL 
 title: 建立行銷活動清單檢視 [!DNL Salesforce] 行銷活動
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 建立行銷活動清單檢視 [!DNL Salesforce] 行銷活動 {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 瞭解如何針對您要與購買者接觸點同步的促銷活動建立「清單檢視」 。
+
+>[!NOTE]
+>
+>本文會介紹過時的程式。 我們鼓勵使用者使用 [新的、改良的應用程式內程式](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 可建立的Campaign清單檢視可讓您擁有「前往」位置，以檢視和管理「型別」和「啟用購買者接觸點」欄位，以確保 [!DNL Salesforce] 已正確設定通知離線行銷管道的行銷活動。
 
