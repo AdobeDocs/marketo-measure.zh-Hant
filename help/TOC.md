@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: faa04b417c5f0512d294bf2483aef3061b10d621
+source-git-commit: e4852d6240a64b4a1a5c979a7528485623c68eb0
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -225,5 +225,6 @@ ht-degree: 1%
       + [隱私權請求](miscellaneous/other-related-resources/privacy-requests.md)
       + [移除 [!DNL Marketo Measure] 從Google Analytics中的登陸頁面URL追蹤引數](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
       + [正在轉換為 [!DNL Marketo Measure] 從完整圓形](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
+   + [測試](miscellaneous/test.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](release-notes/current.md)
