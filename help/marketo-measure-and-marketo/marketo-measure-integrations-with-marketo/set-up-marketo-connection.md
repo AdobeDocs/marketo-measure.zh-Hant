@@ -3,7 +3,8 @@ unique-page-id: 42762762
 description: 設定Marketo連線 —  [!DNL Marketo Measure]  — 產品檔案
 title: 設定Marketo連線
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
-source-git-commit: ff3ebd557ffe745e1297d053be1390093dc4033c
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->[建立僅限API的使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) 針對 [!DNL Marketo Measure]/Marketo Engage連接。
+>[建立僅限API的使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) 針對 [!DNL Marketo Measure]/Marketo Engage連線。
 
 1. 在 [!DNL Marketo Measure]，按一下 **[!UICONTROL My Account]** 下拉式清單並選取 **[!UICONTROL Settings]**.
 
@@ -30,30 +31,30 @@ ht-degree: 1%
 
    ![](assets/set-up-marketo-connection-3.png)
 
-1. 按一下 **[!UICONTROL Connect]** 按鈕(在Marketo旁邊)。
+1. 按一下 **[!UICONTROL Connect]** Marketo按鈕。
 
    ![](assets/set-up-marketo-connection-4.png)
 
-1. 在新索引標籤中，登入您的Marketo Engage帳戶。 前往 **管理** > **網站服務**. 向下捲動至REST API。 反白顯示並儲存端點與Identity服務URL。 你會需要的。
+1. 在新標籤中，登入您的Marketo Engage帳戶。 前往 **管理員** > **網站服務**. 向下捲動至REST API。 反白顯示並儲存端點與身分識別服務URL。 您稍後會需要它們。
 
    ![](assets/set-up-marketo-connection-5.png)
 
-1. 仍處於Marketo Engage中，請選擇 **LaunchPoint** 在左邊的樹上。 找到您要連線至Marketo Measure的自訂服務，然後按一下 **檢視詳細資料**.
+1. 仍然在Marketo Engage中，選擇 **啟動點** 在左邊的樹狀結構中。 找到您要連線至Marketo Measure的自訂服務，然後按一下 **檢視詳細資料**.
 
    ![](assets/set-up-marketo-connection-6.png)
 
-1. 反白顯示並儲存用戶端ID和用戶端密碼。 按一下 **關閉**。
+1. 反白顯示並儲存使用者端ID和使用者端密碼。 按一下 **關閉**。
 
    ![](assets/set-up-marketo-connection-7.png)
 
-1. 返回 [!DNL Marketo Measure]，將您剛收集的資料填入欄位中。
+1. 返回 [!DNL Marketo Measure]，以您剛收集的資料填入欄位。
 
    ![](assets/set-up-marketo-connection-8.png)
 
-1. 輸入值後，按一下 **[!UICONTROL Authenticate]**. 您的Marketo Engage帳戶隨後將連線至 [!DNL Marketo Measure].
+1. 輸入值後，按一下 **[!UICONTROL Authenticate]**. 您的Marketo Engage帳戶將連線至 [!DNL Marketo Measure].
 
    ![](assets/set-up-marketo-connection-9.png)
 
    >[!NOTE]
    >
-   >[!DNL Marketo Measure] 會代表您呼叫Marketo API，而不會耗用任何Marketo API限制，因此您無需擔心其他整合的上限和評分配置。
+   >[!DNL Marketo Measure] 將代表您呼叫Marketo API，而不使用任何Marketo API限制，因此您不需要擔心與其他整合的次數上限和評分分配。

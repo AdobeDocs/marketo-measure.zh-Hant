@@ -1,24 +1,25 @@
 ---
 unique-page-id: 18874614
-description: 具有採購員接觸點的銷售機會報告 —  [!DNL Marketo Measure]  — 產品檔案
-title: 具有購買者接觸點的銷售機會報告
+description: 含採購員接觸點的潛在客戶報表 —  [!DNL Marketo Measure]  — 產品檔案
+title: 具有採購員接觸點的潛在客戶報表
 exl-id: 0376abb0-5eed-41bb-ab4f-3c204ab437df
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+feature: Touchpoints, Reporting
+source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
-# 具有購買者接觸點的銷售機會報告 {#leads-with-buyer-touchpoints-report}
+# 具有採購員接觸點的潛在客戶報表 {#leads-with-buyer-touchpoints-report}
 
 >[!NOTE]
 >
->您可能會看到指定「[!DNL Marketo Measure]」，但仍請參閱「[!DNL Bizible]」。 我們正致力更新該更新，品牌重塑將很快反映在您的CRM中。
+>您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍請參閱&quot;[!DNL Bizible]」（在您的CRM中）。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-現成可用的報告功能很多，只要說到 [!DNL Marketo Measure]，但我們建議您建立其他報表類型。 了解如何以下方的「購買者接觸點」報表類型建立包含性銷售機會。
+開箱即用地提供多種報告功能，觸手可及 [!DNL Marketo Measure]，但建議您建立其他報表型別。 瞭解如何在下方使用購買者接觸點報告型別建立內含式銷售機會。
 
-1. 導覽至 [!DNL Salesforce]. 從那裡，展開「建立」分組並選取 **[!UICONTROL Report Types]**.
+1. 瀏覽至以下專案中的設定選項： [!DNL Salesforce]. 從那裡，展開「建立」分組並選取「 」 **[!UICONTROL Report Types]**.
 
    ![](assets/1.jpg)
 
@@ -26,12 +27,12 @@ ht-degree: 0%
 
    ![](assets/2.jpg)
 
-1. 將主對象設定為「銷售機會」，並在「報表類型標籤」輸入「銷售機會與採購員接觸點 — 包含」內。 將報表儲存在「銷售機會」類別中，並將部署狀態變更為 **[!UICONTROL Deployed]**. 然後選取 **[!UICONTROL Next]**.
+1. 將主要物件設為「銷售機會」，並在「報表型別標籤」輸入「具有購買者接觸點的銷售機會 — 包含」中設定。 將報告儲存在「銷售機會」類別中，並將部署狀態變更為 **[!UICONTROL Deployed]**. 然後選取 **[!UICONTROL Next]**.
 
    ![](assets/3.jpg)
 
-1. 對於對象關係，請選擇 **[!DNL Marketo Measure]人員** 物件做為次要物件。 將A到B關係選為，「每個&#39;A&#39;記錄必須至少有一個相關的&#39;B&#39;記錄。」 從那裡，您將關聯「購買者接觸點」對象，並選擇B和C對象之間的相同關係。
+1. 針對物件關係，選取 **[!DNL Marketo Measure]人員** 物件做為次要物件。 選取A到B的關係，因為「每個&#39;A&#39;記錄必須至少有一個相關的&#39;B&#39;記錄」。 從那裡，您將會建立「購買者接觸點」物件的關係，並在B和C物件之間選取相同的關係。
 
    ![](assets/4.jpg)
 
-1. 儲存並開始建置一些報表！
+1. 儲存並開始建立一些報告！

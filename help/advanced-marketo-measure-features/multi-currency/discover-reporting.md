@@ -1,17 +1,18 @@
 ---
 unique-page-id: 27656739
-description: Discover報告 —  [!DNL Marketo Measure]  — 產品檔案
-title: Discover報表
+description: 探索報告 —  [!DNL Marketo Measure]  — 產品檔案
+title: 探索報告
 exl-id: 73e1ffaf-01d0-4454-bd4f-b9e39c33615a
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+feature: Multi-Currency, Discover
+source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-# Discover報表 {#discover-reporting}
+# 探索報告 {#discover-reporting}
 
-內 [!UICONTROL User Settings]，使用者可以選擇將貨幣從預設貨幣變更為列出的任何公司貨幣。 這將更改「成本」、「收入」和「管道收入」等金額的顯示，以及三字母貨幣代碼。
+範圍 [!UICONTROL User Settings]，使用者可選擇將貨幣從預設貨幣變更為任何列出的公司貨幣。 這會變更金額（例如，成本、收入及Pipeline收入）的顯示方式，連同三個字母的貨幣代碼。
 
 ![](assets/one.png)

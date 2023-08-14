@@ -1,64 +1,65 @@
 ---
 unique-page-id: 18874732
-description: 設定UTM參數的最佳實務 —  [!DNL Marketo Measure]  — 產品檔案
-title: 設定UTM參數的最佳作法
+description: 設定UTM引數的最佳實務 —  [!DNL Marketo Measure]  — 產品檔案
+title: 設定UTM引數的最佳作法
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
-source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
+feature: UTM Parameters
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# 設定UTM參數的最佳作法 {#best-practices-for-setting-up-utm-parameters}
+# 設定UTM引數的最佳作法 {#best-practices-for-setting-up-utm-parameters}
 
-UTM參數是分解行銷資料的絕佳方式。 [!DNL Marketo Measure] 使用並擷取所有UTM參數，以填入Salesforce和 [!DNL Marketo Measure] 應用程式。 利用這些資訊，您將能夠更細緻地了解銷售機會、銷售機會和已結/贏交易的來源。
+UTM引數是切分行銷資料的絕佳方式。 [!DNL Marketo Measure] 使用和擷取所有UTM引數，以填入Salesforce和 [!DNL Marketo Measure] 應用程式。 有了這些資訊，您將能更詳細地瞭解您的銷售機會、商機以及已結/成功的交易來自何處。
 
-您可以利用 [Google URL Builder](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"} to set up your UTM parameters and add them to your links within your marketing efforts. Use this [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"} 如果您想要更輕鬆地跟蹤所有UTM連結。
+您可以利用 [Google URL產生器](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"} to set up your UTM parameters and add them to your links within your marketing efforts. Use this [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"} 如果您想要以更簡單的方式追蹤所有UTM連結。
 
-## 每個參數的高階值 {#high-level-values-for-each-parameter}
+## 每個引數的高層級值 {#high-level-values-for-each-parameter}
 
-**utm_medium**:此欄位對應至「中」欄位。 使用utm_medium表示高階通道。
+**utm_medium**：此欄位對應至中欄位。 使用utm_medium表示高階通道。
 
-例如， [!UICONTROL Social], CPC，電子郵件，網頁，自然
+例如， [!UICONTROL Social]、CPC、電子郵件、網頁、有機
 
 請勿使用此欄位來呼叫子管道。
 
-**utm_source**:此欄位對應至「接觸點來源」欄位。 使用utm_source定義潛在銷售線索的來源子通道。
+**utm_source**：此欄位對應至接觸點來源欄位。 使用utm_source來定義潛在客戶來源的子管道。
 
-例如，Facebook、Twitter、Linkedin、Drip_email、Email_blast、電子報。
+例如Facebook、Twitter、Linkedin、Drip_email、Email_blast、電子報。
 
-保持簡單。 請勿使用此參數來表示廣告類型，例如重新定位、贊助等。 請勿新增utm_source = homepage、webdirect、website。 [!DNL Marketo Measure] 會自動為您填寫此資訊。
+保持簡單。 請勿使用此引數來表示廣告型別，例如重新目標定位、贊助等。 請勿新增utm_source = homepage， webdirect， website。 [!DNL Marketo Measure] 將會自動為您填寫此資訊。
 
-**utm_campaign**:此欄位對應至廣告促銷活動名稱。 使用utm_campaign，以在廣告平台中存在或在內部參照的方式表示促銷活動的標題。
+**utm_campaign**：此欄位對應至廣告促銷活動名稱。 使用utm_campaign表示行銷活動的標題，如廣告平台中所有，或內部所參照。
 
-這也是表示地理位置、廣告網路類型（顯示v.搜尋）等項目的好參數。
+這也是一個表示地理位置、廣告網路型別（顯示v.搜尋）等的好引數。
 
-建議您使用底線而非空格，並避免使用標點符號。 這可降低瀏覽器在讀取參數時編碼錯誤的機率。
+建議您使用底線而非空格，並避免使用標點符號。 這能減少瀏覽器讀取引數時發生編碼錯誤的可能性。
 
-例如AU_Idea_for_an_App_50k
+例如，AU_Idea_for_an_App_50k
 
-**utm_content**:這會對應至「廣告內容」。 在utm_content參數中使用廣告標題。 如果是影像廣告，請使用廣告標題並納入廣告維度。
+**utm_content**：此專案對應至廣告內容。 在utm_content引數中使用廣告標題。 如果是影像廣告，請使用廣告標題並包含廣告尺寸。
 
 例如， [廣告標題] 200x400px
 
-**utm_term**:這會對應至關鍵字文字。 使用此參數表示與引發廣告相關的關鍵字。
+**utm_term**：這會對應至關鍵字文字。 此引數用於表示與廣告引發相關的關鍵字。
 
-如果沒有與廣告相關的關鍵字，請將此參數留空。
+如果沒有與廣告相關的關鍵字，請將此引數留空。
 
-例如iPhone App Ideas
+例如iPhone應用程式概念
 
-**保持簡單簡潔。 請勿複製工作、詞語和管道。**
+**保持簡單明瞭。 請勿重複工作、字詞和管道。**
 
-我們設想UTM的等級如下：
+我們將UTM階層想像如下：
 
 中> [!UICONTROL Source] > [!UICONTROL Campaign] > [!UICONTROL Content/Term]
 
-例如，若 [!UICONTROL display] 廣告放置在Facebook上，我們建議：
+例如，如果 [!UICONTROL display] 在Facebook上刊登廣告時，我們建議以下事項：
 
 fakewebsite.com/
 
-?utm_medium=social
+？utm_medium=social
 
 &amp;utm_source=facebook
 
@@ -66,6 +67,6 @@ fakewebsite.com/
 
 &amp;utm_content=content_of_campaign
 
-請注意，詞語/管道不會重複，而且此案例中不會使用utm_term。
+請注意，此情況下不會複製詞語/頻道，也不會使用utm_term。
 
-如有任何疑問，請洽詢Adobe帳戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如有任何問題，請聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

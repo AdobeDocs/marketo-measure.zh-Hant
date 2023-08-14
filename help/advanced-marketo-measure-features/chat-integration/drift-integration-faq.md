@@ -1,43 +1,44 @@
 ---
 unique-page-id: 27656441
-description: Drift整合常見問題 —  [!DNL Marketo Measure]  — 產品檔案
-title: Drift整合常見問題集
+description: 漂移整合常見問題集 —  [!DNL Marketo Measure]  — 產品檔案
+title: 漂移整合常見問題集
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
-source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-# Drift整合常見問題集 {#drift-integration-faq}
+# 漂移整合常見問題集 {#drift-integration-faq}
 
-作為 [!DNL Marketo Measure] 與Drift的整合，我們列出了一些最常見的問題。 若有任何問題未概述於下方，請洽詢Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+作為 [!DNL Marketo Measure] 與Drift整合，我們列出了一些最常見的問題。 如果有任何未概述的問題，請聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 **如何啟用整合？**
 
-漂移聊天跟蹤 [!DNL Marketo Measure] 預設為啟用。 如果您出於任何原因想要禁用它（預設情況下，不是從「漂移聊天」建立接觸點），我們需要在您的 [!DNL Marketo Measure] Javascript實施，粗體如下：
+漂移聊天追蹤 [!DNL Marketo Measure] 預設為啟用。 如果您因為任何原因想要停用它（預設不會從「漂移聊天」建立接觸點），我們還需要將額外的屬性新增到您的 [!DNL Marketo Measure] Javascript實施，粗體顯示如下：
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async="" id="bizible-settings" data-chatEnabled="false"></script>`
 
-針對使用 [!DNL Google Tag Manager] 載入 [!DNL Marketo Measure] 指令碼，如果您希望將「漂移聊天」排除在符合接觸點條件之外，則需要添加到以下內容 `<span>` 在 [!DNL Marketo Measure] 指令碼：
+適用於使用 [!DNL Google Tag Manager] 載入 [!DNL Marketo Measure] 指令碼，如果您不想讓您的漂移聊天符合接觸點資格，則需新增至下列專案 `<span>` 緊接在您的 [!DNL Marketo Measure] 指令碼：
 
 `<span id="bizible-settings" data-chatEnabled="false"></span>`
 
-**整合有何功能？**
+**整合有什麼作用？**
 
-整合現在允許 [!DNL Marketo Measure] 追蹤使用者在「漂移」聊天中提供其電子郵件地址的時間。 從那裡，我們會以「網路聊天」的接觸點類型，從這些互動中建立接觸點。 此整合可讓行銷人員了解其聊天互動的效能，以及可促進人們與這些聊天互動的管道/子管道/行銷活動。
+整合現在允許 [!DNL Marketo Measure] 追蹤一般使用者在漂移聊天中提供其電子郵件地址的時間。 從那裡，我們會使用「網頁聊天」型別的接觸點從這些互動建立接觸點。 此整合可讓行銷人員瞭解其聊天互動的效能，以及推動人們與這些聊天互動的管道/子管道/行銷活動。
 
-**如果我透過促銷活動同步規則追蹤「漂移」，該怎麼辦？**
+**如果我透過行銷活動同步規則追蹤漂移，該怎麼辦？**
 
-如果有任何促銷活動同步規則可建立「隨動聊天」互動的接觸點，您將需要確保停止將這些特定使用者新增至對應的CRM促銷活動。 否則，一旦啟用功能位，我們會為一個「漂移聊天」互動建立CRM Campaign接觸點和數位接觸點。
+如果有任何Campaign同步規則可建立Drift聊天互動的接觸點，您必須確保停止將這些特定使用者新增至對應的CRM Campaign。 否則，在啟用功能位元後，我們將建立CRM Campaign接觸點和數位接觸點，以便進行Drift聊天互動。
 
-**如果我透過CRM行銷活動追蹤流向，該怎麼辦？**
+**如果我透過CRM Campaigns追蹤漂移，該怎麼辦？**
 
-如果有CRM促銷活動可建立「隨動聊天」互動的接觸點，則需要在這些特定促銷活動上設定「接觸點結束日期」（「接觸點結束日期」應為啟用「網站聊天整合」功能位元的日期）。
+如果有CRM行銷活動來建立Drift聊天互動的接觸點，則需在這些特定行銷活動上設定接觸點結束日期（接觸點結束日期應為啟用網頁聊天整合功能位元的日期）。
 
-**如果我透過活動追蹤流向，該怎麼辦？**
+**如果我透過活動追蹤漂移，該怎麼辦？**
 
-如果有活動規則可建立「漂移」聊天互動的接觸點，則需要在規則中新增額外的邏輯片段。 您將需要使用「任務建立日期」欄位來新增邏輯，以防止建立接觸點的重複（IE CrmTask.CreatedDate小於啟用功能位的日期）。 如需範例，請參閱下方的螢幕擷圖。
+如果已有活動規則可建立「漂流」聊天互動的接觸點，則需要將額外的邏輯新增至規則。 您必須使用「任務建立日期」欄位新增邏輯，以防止建立重複的接觸點（IE CrmTask.CreatedDate小於啟用功能位元的日期）。 如需範例，請參閱下方的熒幕擷圖。
 
 ![](assets/activity-rule-drift.png)

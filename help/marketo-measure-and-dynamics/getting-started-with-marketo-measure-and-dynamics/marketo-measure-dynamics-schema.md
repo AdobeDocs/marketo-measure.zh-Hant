@@ -1,30 +1,31 @@
 ---
 unique-page-id: 18874523
-description: '"[!DNL Marketo Measure] Dynamics架構 —  [!DNL Marketo Measure]  — 產品檔案」'
-title: "[!DNL Marketo Measure] Dynamics架構"
+description: '"[!DNL Marketo Measure] 動態結構描述 —  [!DNL Marketo Measure]  — 產品檔案」'
+title: '"[!DNL Marketo Measure] 動態結構描述」'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Microsoft Dynamics
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 17%
 
 ---
 
-# [!DNL Marketo Measure] Dynamics架構 {#marketo-measure-dynamics-schema}
+# [!DNL Marketo Measure] 動態結構描述 {#marketo-measure-dynamics-schema}
 
 >[!NOTE]
 >
->您可能會看到指定「[!DNL Marketo Measure]「 」，但仍可在CRM中看到「Bizible」。 我們正致力更新該更新，品牌重塑將很快反映在您的CRM中。
+>您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-在下方，您會找到所需的Dynamics架構，以便開始使用 [!DNL Marketo Measure]. 列出所有實體和欄位，以及所需的讀取和/或寫入訪問。
+在下方，您會找到開始使用所需的Dynamics結構描述 [!DNL Marketo Measure]. 列出所有實體和欄位，以及必要的讀取和/或寫入許可權。
 
 ## 購買者接觸點 {#buyer-touchpoints}
 
-購買者接觸點是 [!DNL Marketo Measure] 自訂實體，以封裝聯絡人和銷售機會的行銷互動。
+購買者接觸點是 [!DNL Marketo Measure] 封裝聯絡人和潛在客戶行銷互動的自訂實體。
 
 ## 購買者接觸點關係 {#buyer-touchpoint-relationships}
 
-此圖表是Dynamics Stock實體與購買者接觸點之間關係的高層級視覺效果。
+此圖表是動態庫存實體與購買者接觸點之間關係的高層級視覺效果。
 
 ## 購買者接觸點 {#buyer-touchpoint}
 
@@ -33,7 +34,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -85,7 +86,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Browser</p></td> 
+   <td><p>bizible2_瀏覽器</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -115,7 +116,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Count_U_Shaged</p></td> 
+   <td><p>bizible2_Count_U_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -163,7 +164,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Keyword_text</p></td> 
+   <td><p>bizible2_Keyword_Text</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -187,13 +188,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Marketing_channel</p></td> 
+   <td><p>bizible2_Marketing_Channel</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Marketing_Channel_path</p></td> 
+   <td><p>bizible2_Marketing_Channel_Path</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -205,7 +206,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_name</p></td> 
+   <td><p>bizible2_Name</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -241,7 +242,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Search_phrase</p></td> 
+   <td><p>bizible2_Search_Phrase</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -295,7 +296,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_account</p></td> 
+   <td><p>bizible2_Account</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -305,11 +306,11 @@ ht-degree: 17%
 
 ## 購買者歸因接觸點 {#buyer-attribution-touchpoint}
 
-購買者歸因接觸點是 [!DNL Marketo Measure] 自訂實體，以涵蓋行銷對Opportunity的影響。
+購買者歸因接觸點為 [!DNL Marketo Measure] 封裝行銷對機會之影響的自訂實體。
 
 ## 購買者歸因接觸點關係 {#buyer-attribution-touchpoint-relationships}
 
-此圖表以高階視覺化呈現Dynamics Stock實體與購買者歸因接觸點之間的關係。
+此圖表是動態庫存實體與購買者歸因接觸點之間關係的高層級視覺效果。
 
 ## 購買者歸因接觸點 {#buyer-attribution-touchpoints}
 
@@ -318,7 +319,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -394,13 +395,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Attribution_U_Shiged</p></td> 
+   <td><p>bizible2_Attribution_U_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Attribution_W_Shiged</p></td> 
+   <td><p>bizible2_Attribution_W_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -412,7 +413,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Browser</p></td> 
+   <td><p>bizible2_瀏覽器</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -454,13 +455,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Count_U_Shaged</p></td> 
+   <td><p>bizible2_Count_U_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Count_W_Shiged</p></td> 
+   <td><p>bizible2_Count_W_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -508,7 +509,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Keyword_text</p></td> 
+   <td><p>bizible2_Keyword_Text</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -526,13 +527,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Marketing_channel</p></td> 
+   <td><p>bizible2_Marketing_Channel</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Marketing_Channel_path</p></td> 
+   <td><p>bizible2_Marketing_Channel_Path</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -544,7 +545,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_name</p></td> 
+   <td><p>bizible2_Name</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -604,7 +605,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_custom_model_base</p></td> 
+   <td><p>bizible2_revenue_custom_model_Base</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -616,7 +617,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_first_touch_base</p></td> 
+   <td><p>bizible2_revenue_first_touch_Base</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -628,37 +629,37 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_lead_conversion_base</p></td> 
+   <td><p>bizible2_revenue_lead_conversion_Base</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Revenue_U_Shiged</p></td> 
+   <td><p>bizible2_Revenue_U_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_u_shame_base</p></td> 
+   <td><p>bizible2_revenue_u_form_Base</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Revenue_W_Shime</p></td> 
+   <td><p>bizible2_Revenue_W_Shaped</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_w_shame_base</p></td> 
+   <td><p>bizible2_revenue_w_form_Base</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Search_phrase</p></td> 
+   <td><p>bizible2_Search_Phrase</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -721,7 +722,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -749,13 +750,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Experience</p></td> 
+   <td><p>bizible2_Experiment</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_ExperienceId</p></td> 
+   <td><p>bizible2_ExperimentId</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -767,7 +768,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_name</p></td> 
+   <td><p>bizible2_Name</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -785,7 +786,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_variation</p></td> 
+   <td><p>bizible2_Variation</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -806,7 +807,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -852,7 +853,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_name</p></td> 
+   <td><p>bizible2_Name</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -873,7 +874,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -901,7 +902,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_name</p></td> 
+   <td><p>bizible2_Name</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -911,7 +912,7 @@ ht-degree: 17%
 
 ## Dynamics標準實體 {#dynamics-standard-entities}
 
-此清單提供的Dynamics Standard實體 [!DNL Marketo Measure] 會與互動，以及我們新增至這些實體的自訂欄位。
+此清單會提供符合下列條件的Dynamics Standard實體： [!DNL Marketo Measure] 會與之互動，也會與我們新增至這些實體的自訂欄位互動。
 
 **銷售機會**
 
@@ -920,11 +921,11 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
-   <td><p>萊德</p></td> 
+   <td><p>leadid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -942,49 +943,49 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>statuscode</p></td> 
+   <td><p>狀態代碼</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>接觸</p></td> 
+   <td><p>contactid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>合格機會id</p></td> 
+   <td><p>qualifyingopportunityid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>網站url</p></td> 
+   <td><p>websiteurl</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>公司名稱</p></td> 
+   <td><p>companyname</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_account</p></td> 
+   <td><p>bizible2_Account</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1005,11 +1006,11 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
-   <td><p>接觸</p></td> 
+   <td><p>contactid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1027,13 +1028,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1054,7 +1055,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1064,19 +1065,19 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>網站url</p></td> 
+   <td><p>websiteurl</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1097,11 +1098,11 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
-   <td><p>optityid</p></td> 
+   <td><p>opportunityid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1113,13 +1114,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1131,13 +1132,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>statecoden</p></td> 
+   <td><p>statecodename</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>銷售階段</p></td> 
+   <td><p>salesstage</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1149,13 +1150,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>估計結束日期</p></td> 
+   <td><p>estimatedclosedate</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>實際值</p></td> 
+   <td><p>actualvalue</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1167,7 +1168,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_bizible_opportunity_amount_base</p></td> 
+   <td><p>bizible2_bizible_opportunity_amount_Base</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1175,14 +1176,14 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-**行銷活動**
+**Campaign**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1204,13 +1205,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1222,7 +1223,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Marketing_Lists_sync</p></td> 
+   <td><p>bizible2_Marketing_Lists_Sync</p></td> 
    <td><p>自訂</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1248,14 +1249,14 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-**促銷活動回應**
+**行銷活動回應**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1277,19 +1278,19 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>responsecode</p></td> 
+   <td><p>回應代碼</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1307,7 +1308,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>regardinjectid</p></td> 
+   <td><p>regardingobjectid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1352,7 +1353,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1362,25 +1363,25 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>由代碼建立</p></td> 
+   <td><p>createdfromcode</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>成員類型</p></td> 
+   <td><p>membertype</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1401,7 +1402,7 @@ ht-degree: 17%
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1423,13 +1424,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1437,14 +1438,14 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-**電話呼叫**
+**電話通話**
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>結構描述名稱</p></th> 
    <th><p>標準/自訂</p></th> 
-   <th><p>閱讀</p></th> 
+   <th><p>讀取</p></th> 
    <th><p>寫入</p></th> 
   </tr> 
   <tr> 
@@ -1466,13 +1467,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>建立</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>修改日期</p></td> 
+   <td><p>修改</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1484,7 +1485,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>regardinjectid</p></td> 
+   <td><p>regardingobjectid</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1504,4 +1505,4 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-[] =僅限V1舊版客戶
+[] =僅限V1舊客戶

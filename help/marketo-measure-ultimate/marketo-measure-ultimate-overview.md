@@ -1,32 +1,33 @@
 ---
-description: '''[!DNL Marketo Measure] 最終概述 —  [!DNL Marketo Measure]  — 產品檔案`'
-title: '''[!DNL Marketo Measure] Ultimate Overview的'
+description: 『[!DNL Marketo Measure] Ultimate概觀 —  [!DNL Marketo Measure]  — 產品檔案'
+title: 『[!DNL Marketo Measure] Ultimate概觀
 exl-id: fada9479-0671-4698-8043-c67d7977577b
-source-git-commit: 4a5e720a91e8b229ad2f2889dbf87f5c43767411
+feature: Integration, Tracking, Attribution
+source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 最終概述 {#marketo-measure-ultimate-overview}
+# [!DNL Marketo Measure] Ultimate概觀 {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] （前身為Bizible）可讓行銷人員深入了解哪些行銷工作最能有效促進收入，並為公司創造最大的投資報酬率。 [!DNL Marketo Measure] 是行銷歸因解決方案，可自動追蹤並報告管道效能，提供哪些管道最能吸引客戶參與，並讓您據此最佳化行銷支出。
+[!DNL Marketo Measure] （前身為Bizible）可協助行銷人員深入瞭解哪些行銷手法最能有效提升公司營收，實現投資報酬最大化。 [!DNL Marketo Measure] 是一種行銷歸因解決方案，可自動追蹤和報告管道績效，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
 
 [!DNL Marketo Measure Ultimate] 包含其他功能：
 
-* 從幾乎任何資料來源以及多個相同類型的資料來源擷取，匯入所有資料以供歸因之用。
-   * 與幾乎任何CRM搭配使用，而不只是Salesforce和Dynamics。
-   * 將多個CRM例項和/或MAP例項連結至一個 [!DNL Marketo Measure] 例項。
-   * 帶入第三方網路研討會的註冊和參與率資料。
+* 從幾乎任何資料來源以及相同型別的多個資料來源擷取，以匯入所有資料進行歸因。
+   * 與幾乎任何CRM搭配使用，不只是Salesforce和Dynamics。
+   * 將多個CRM執行個體和/或MAP執行個體連線到一個 [!DNL Marketo Measure] 執行個體。
+   * 引進協力廠商網路研討會註冊和參與率資料。
 
-* 透過欄位對應和轉換功能，以極大的彈性轉換資料，以確保正確的資料形狀。
+* 透過欄位對應和轉換功能，以極大的彈性轉換資料，確保正確的資料形狀。
 
-* 透過隨附的資料倉儲，讓外部應用程式可以取得歸因分析，將分析整合到您的工作流程中。 更詳細的結果資料和基於BI的報表，包括SnowflakeData Warehouse，它提供對精細結果資料的存取，以及使用任何BI工具進行分析和報告的功能。
+* 透過包含的資料倉儲，讓外部應用程式可使用歸因深入分析，將深入分析整合至您的工作流程中。 更精細的結果資料和BI型報表，包括SnowflakeData Warehouse，可存取精細的結果資料，以及使用任何BI工具進行分析和報表的功能。
 
-* 與RTCDP（B2B或B2P Edition）整合，為RTCDP客戶提供整合的B2B歸因解決方案，如RTCDP和 [!DNL Marketo Measure] 兩者皆可透過集中式Adobe Experience Platform(AEP)資料運作。
+* 與RTCDP （B2B或B2P版本）整合，為RTCDP客戶(例如RTCDP和 [!DNL Marketo Measure] 兩者都可從集中式Adobe Experience Platform (AEP)資料運作。
 
-**[!DNL Marketo Measure]第1-3層**
+**[!DNL Marketo Measure]階層1-3**
 
 ![](assets/marketo-measure-ultimate-overview-1.png)
 
@@ -34,80 +35,80 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-ultimate-overview-2.png)
 
-## 新增功能 [!DNL Marketo Measure Ultimate] {#whats-new-in-marketo-measure-ultimate}
+## 的新增功能 [!DNL Marketo Measure Ultimate] {#whats-new-in-marketo-measure-ultimate}
 
 **透過AEP匯入B2B資料**
 
-行銷人員需透過AEP帶入其B2B資料（例如帳戶、機會、連絡人、銷售機會、行銷活動、行銷活動成員、活動）。 Ultimate不再提供直接CRM和Marketo Engage連線。 行銷人員將持續透過直接連線和追蹤Web活動，提供Ad Platform資料 [!DNL Marketo Measure] javascript。
+行銷人員應透過AEP匯入B2B資料（例如帳戶、機會、聯絡人、銷售機會、促銷活動、促銷活動會員、活動）。 Ultimate不再提供直接CRM和Marketo Engage連線。 行銷人員將繼續透過直接連線引進廣告平台資料，並透過追蹤網路活動 [!DNL Marketo Measure] javascript。
 
 ![](assets/marketo-measure-ultimate-overview-3.png)
 
 **預設貨幣設定**
 
-[!DNL Marketo Measure Ultimate] 會將預設貨幣設為USD，直到使用者變更為止。 設定新的預設貨幣將更新資料，而不會重新處理。 只要所選貨幣顯示為目標ISO代碼，就無需提交轉換率。
+[!DNL Marketo Measure Ultimate] 將預設貨幣設定為USD，直到使用者變更為止。 設定新的預設貨幣將更新資料而不重新處理。 只要選取的貨幣以目標ISO代碼的形式存在，就不需要提交轉換率。
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
 **[!DNL Marketo Measure Ultimate]沙箱**
 
-[!DNL Marketo Measure Ultimate] 執行個體必須先對應至AEP沙箱，才能建立 [!DNL Marketo Measure] AEP中的目的地資料流。
+[!DNL Marketo Measure Ultimate] 在建立之前，必須將執行個體對應至AEP沙箱 [!DNL Marketo Measure] 目的地資料會在AEP中流動。
 
 >[!NOTE]
 >
->A [!DNL Marketo Measure Ultimate] 生產執行個體必須對應至AEP生產沙箱， [!DNL Marketo Measure Ultimate] 開發人員例項必須對應至AEP開發人員沙箱。
+>A [!DNL Marketo Measure Ultimate] 生產執行個體需要對應至AEP生產沙箱，即 [!DNL Marketo Measure Ultimate] 開發人員執行個體必須對應至AEP開發人員沙箱。
 
-儲存沙箱對應選項後，您目前無法在應用程式中加以變更。 若要變更，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+一旦沙箱對應選擇儲存後，您現在就無法在應用程式中變更它。 若要變更，請連絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
-來自指定資料來源的指定實體（例如帳戶）資料只能放入一個資料集。 每個資料集只能包含在一個資料流中。 違反規則會在執行時停止資料流。
+來自指定資料來源之指定實體（例如帳戶）的資料只能進入一個資料集。 每個資料集只能包含在一個資料流程中。 違規會在執行階段停止資料流。
 
 ![](assets/marketo-measure-ultimate-overview-5.png)
 
 **階段對應**
 
-全部 [!DNL Marketo Measure Ultimate] 規則是資料集專屬的。 必須為所有資料集和所有選定階段建立階段映射規則。
+全部 [!DNL Marketo Measure Ultimate] 規則是資料集專屬規則。 必須為所有資料集和所有選取的階段建立階段對應規則。
 
-有6個內建階段：
+內建階段共有六個：
 
-* 銷售線索
-* 銷售機會開啟
-* 銷售機會轉換
-* 機會丟失
-* 機會開放
-* 機會贏
+* 潛在客戶已遺失
+* 潛在客戶開啟
+* 潛在客戶已轉換
+* 機會遺失
+* 商機已開啟
+* 已贏得機會
 
-「遺失」、「贏取」和「已轉換」區段不允許自訂階段。 但是，源資料可以通過更新映射規則來映射到內置的「丟失/原有/已轉換」階段。
+「失敗」、「成功」和「已轉換」區段不允許自訂階段。 不過，可以更新對應規則，將來源資料對應至內建的「失敗/成功/已轉換」階段。
 
 只能為「開啟」區段定義自訂階段。
-我們不再自動在階段對應中加入CRM階段。
+我們不再自動在階段對應上包含CRM階段。
 
-必須用規則映射四個內置階段（其他兩個階段的映射規則為「銷售機會丟失」和「銷售機會轉換」，是可選的）:
+四個內建階段必須使用規則對應（其他兩個階段的對應規則為選擇性，即「銷售機會遺失」與「銷售機會轉換」）：
 
-* 銷售機會開啟
-* 機會丟失
-* 機會開放
-* 機會贏
+* 潛在客戶開啟
+* 機會遺失
+* 商機已開啟
+* 已贏得機會
 
-規則條件是資料集專屬的。 必須為所有資料集和所有階段建立階段映射規則，但「銷售機會丟失」和「銷售機會轉換」除外。
+規則條件為資料集所專屬。 必須針對所有資料集和所有階段（「銷售機會遺失」和「銷售機會已轉換」除外）建立階段對應規則。
 
-無法選取漏斗、回歸與自訂模型。 為漏斗、回歸和自訂模型選取所有階段。 我們支援的階段數有限：15個自訂階段，加上6個內建階段。
+沒有漏斗、迴旋鏢、自訂模型的選擇。 漏斗、迴旋鏢和自訂模型會選取所有階段。 我們支援的階段數量有所限制：15個自訂階段加6個內建階段。
 
 ![](assets/marketo-measure-ultimate-overview-6.png)
 
-促銷活動成員接觸點規則和活動接觸點規則是資料集專屬的。
+Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 
 ![](assets/marketo-measure-ultimate-overview-7.png)
 
 ![](assets/marketo-measure-ultimate-overview-8.png)
 
-歸因接觸點不會寫入至CRM，因為Ultimate沒有直接CRM連線。
+歸因接觸點不會寫入CRM，因為Ultimate沒有直接CRM連線。
 
-[!DNL Marketo Measure] ABM ML服務（銷售機會帳戶比對和預測性參與分數）不適用於 [!DNL Marketo Measure Ultimate]. 您可以找到RT-CDP B2B版本中免費提供的這類服務。
+[!DNL Marketo Measure] ABM ML服務（銷售線索與帳戶的比對與預測性參與分數）不適用於 [!DNL Marketo Measure Ultimate]. RT-CDP B2B版本中會免費提供這類服務。
 
 ## 限制 {#limitations}
 
-* 目前，資料轉換規則可使用有限的欄位。
-* 現有第1/2/3層用戶沒有遷移路徑。 需要新實作，但我們將協助從現有例項移轉追蹤的Web活動資料。
+* 目前資料轉換規則可用的欄位有限。
+* 現有第1/2/3層使用者沒有移轉路徑。 需要新的實施，但我們將協助從現有執行個體移轉追蹤的網頁活動資料。
 
 >[!MORELIKETHIS]
 >
->[Marketo Measure Ultimate Destination](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>[Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}

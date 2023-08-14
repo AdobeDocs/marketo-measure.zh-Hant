@@ -1,64 +1,65 @@
 ---
 unique-page-id: 42762628
-description: 護照儀表板文檔 —  [!DNL Marketo Measure]  — 產品檔案
-title: 護照儀表板文檔
+description: Passport儀表板檔案 —  [!DNL Marketo Measure]  — 產品檔案
+title: Passport Dashboard檔案
 exl-id: 43cb01a8-d02e-4086-af57-d7ec9275f87a
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# 護照儀表板文檔 {#passport-dashboard-documentation}
+# Passport Dashboard檔案 {#passport-dashboard-documentation}
 
-Passport儀表板使行銷人員能夠查看在指定時間範圍內通過每個管道階段的銷售機會/聯繫人和銷售機會。
+Passport儀表板可讓行銷人員檢視在指定時間段內經過每個管道階段的銷售機會/聯絡人以及商機。
 
-此控制面板有兩個圖磚：
+此儀表板有兩個圖磚：
 
-* 機會：在指定時間範圍內通過每個階段的Opportunity記錄數。
-* 銷售機會/聯繫人：在指定時間範圍內通過每個階段的銷售機會或聯繫人記錄數。
+* 機會：在指定的時間範圍內，每個階段傳遞的機會記錄數。
+* 銷售機會/聯絡人：在指定的時間範圍內，每個階段傳遞的銷售機會或聯絡人記錄數。
 
 >[!NOTE]
 >
->在所有Discover控制面板中，只能報告一個人員物件，即銷售機會或聯絡人。 此設定於 [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
+>在所有Discover儀表板中，只能報告一個人員物件，即潛在客戶或聯絡人。 此設定於 [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
 
-此控制面板支援下列篩選器（所有篩選器都會套用至兩個圖磚）:
+此控制面板支援下列篩選器（所有篩選器皆適用於兩個圖磚）：
 
 * 日期：選取時間範圍。
-* 管道：依管道篩選記錄。 如果其任何接觸點都與管道相關聯，則記錄會與管道相關聯。
-* 子頻道：依子通道篩選記錄。 如果記錄的任何接觸點都與子管道相關聯，則記錄會與子管道相關聯。
-* 促銷活動：依促銷活動篩選記錄。 如果促銷活動的任何接觸點都與促銷活動相關聯，則記錄會與促銷活動相關聯。
-* 促銷活動來源：依促銷活動來源篩選記錄。 範例促銷活動來源包括Adwords、BingAds、Facebook、LinkedIn等。 如果任何接觸點與促銷活動來源相關聯，則記錄會與促銷活動來源相關聯。
-* CRM帳戶名稱：按CRM帳戶名稱篩選記錄。
-* 群體篩選：依自訂區段篩選記錄。 如果任何接觸點都與區段相關聯，則記錄會與區段相關聯。
+* 管道：依管道篩選記錄。 如果某個管道具有關聯的接觸點，該管道就會與記錄相關聯。
+* 子管道：依子管道篩選記錄。 如果記錄的任何接觸點與子頻道相關聯，則該記錄與子頻道相關聯。
+* 促銷活動：依促銷活動篩選記錄。 如果記錄的任何接觸點與行銷活動相關聯，則該記錄會與行銷活動相關聯。
+* 促銷活動來源：依促銷活動來源篩選記錄。 促銷活動來源範例包括Adwords、BingAds、Facebook、LinkedIn等。 如果記錄的任何接觸點與行銷活動來源相關聯，則該記錄會與行銷活動來源相關聯。
+* CRM帳戶名稱：依CRM帳戶名稱篩選記錄。
+* 區段篩選：依自訂區段篩選記錄。 如果記錄的任何接觸點與區段相關聯，則該記錄會與區段相關聯。
 
-對所有篩選器都使用「AND」邏輯。
+在所有篩選器中，都會使用「AND」邏輯。
 
 >[!NOTE]
 >
->如果記錄在所選日期發生變更階段，則記錄將被計為從階段和到階段，以及所有傳遞階段。
+>如果記錄在選取的日期變更階段，則記錄將從起始階段到結束階段以及所有傳遞階段計數。
 
 ## 機會 {#opportunities}
 
 ![](assets/one-1.png)
 
-階段包括OC、Open Opportunity階段中選定的漏斗階段([!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL Stage Mapping])和贏得機會階段([!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL Stage Mapping])。
+階段包括OC，未結機會階段中選取的漏斗階段([!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL Stage Mapping])和成功的機會階段([!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL Stage Mapping])。
 
 >[!NOTE]
 >
->對於Won階段，記錄計數只適用於在所選時間範圍內轉換為階段的記錄。
+>對於「已成功」階段，記錄計數僅適用於在選取的時間範圍內已轉換為階段的記錄。
 
-您可以從每個欄深入查看每個階段的Opportunity記錄。
+您可以從每個長條圖向下展開，以檢視每個階段的Opportunity記錄。
 
-## 銷售機會/聯繫人 {#leads-contacts}
+## 潛在客戶/聯絡人 {#leads-contacts}
 
 ![](assets/two-1.png)
 
-階段包括FT、LC、在「設定」的「開啟銷售機會/聯繫人」階段中選定的漏斗階段 — CRM — 階段映射，以及在「設定」的「轉換銷售機會/聯繫人」階段 — CRM — 階段映射。
+階段包括FT、LC、在設定上開啟潛在客戶/聯絡人階段的所選漏斗階段 — CRM — 階段對應，以及在設定上轉換潛在客戶/聯絡人階段 — CRM — 階段對應。
 
 >[!NOTE]
 >
->對於「已轉換」階段，記錄計數只適用於在所選時間範圍內轉換為階段的記錄。
+>對於「已轉換」階段，記錄計數只適用於在選取的時間範圍內轉換至階段的記錄。
 
-您可以從每個條向下鑽取以查看每個階段的銷售機會/聯繫人記錄。
+您可以從每個列向下展開，以檢視每個階段的Lead/Contact記錄。

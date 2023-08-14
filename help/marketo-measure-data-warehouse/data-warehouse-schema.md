@@ -1,36 +1,36 @@
 ---
 unique-page-id: 35586140
-description: Data Warehouse結構 — Marketo Measure — 產品檔案
-title: Data Warehouse結構
+description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
+title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: e7993619e2dcfdfcab1a02d95d404e76fe1366c1
+feature: Data Warehouse
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '22610'
 ht-degree: 5%
 
 ---
 
-# Data Warehouse結構 {#data-warehouse-schema}
+# Data Warehouse結構描述 {#data-warehouse-schema}
 
-Data Warehouse可讓您隨意追蹤歸因資料、報告歸因資料（無論您在何處），並將其插入其他資料集。
+Data Warehouse可讓您視需要追蹤更多內容、隨處報告歸因資料，並將資料插入其他資料集。
 
 >[!IMPORTANT]
 >
->* 含有_DELETED_DATE值的列將保留7天，然後從Snowflake中刪除。
->* Snowflake中使用的時區遵循協調通用時間(UTC)。
-
+>* 具有_DELETED_DATE值的列將保留7天，然後從Snowflake中移除。
+>* snowflake使用的時區遵循世界協調時間(UTC)。
 
 >[!NOTE]
 >
->[按一下這裡](#sample-queries) 若要查看本文底部的範例查詢。
+>[按一下這裡](#sample-queries) 以在本文章底部檢視範例查詢。
 
 ## 實體關係圖 {#entity-relationship-diagrams}
 
-此 _Data Warehouse資料模型_ ERD顯示資料倉庫中的資料如何流動和連結在一起。 此圖表不包含資料倉庫中可用的所有表，因為其中有些表表示映射表、已存在其他表的視圖，或不建議使用的已棄用表。 請參閱下方資料倉庫中所呈現表格和欄的詳細說明。 其中許多表格包含非正常欄位，但此圖表是建議的資料模型，可改用維表中的資料。
+此 _Data Warehouse資料模型_ ERD會顯示Data Warehouse中資料的流動及連結方式。 此圖表不包含Data Warehouse中可用的所有表格，因為其中有些表格代表對應表格、已有其他表格的檢視，或我們不建議再使用已棄用的表格。 請參閱下列Data Warehouse中呈現之表格和欄的詳細說明。 這些表格中有許多包含反正規化的欄位，不過，此圖表是建議的資料模型，會改用維度表格的資料。
 
-其他 _廣告維度資料模型_ ERD提供了如何最好地將廣告特定維的表連結回主資料模型中的表的視圖。 雖然其他表格中的廣告維度也會非正常，但這代表加入這些維度的建議模型。
+其他 _廣告維度資料模型_ ERD提供如何以最佳方式將廣告特定維度的表格連結回主要資料模型中的表格的檢視。 雖然在其他表格中，廣告維度也會反正規化，但這是連結這些維度的建議模型。
 
-_按一下影像的完整大小版本_
+_按一下完整版本的影像_
 
 <table style="table-layout:auto"> 
  <colgroup> 
@@ -57,9 +57,9 @@ _按一下影像的完整大小版本_
 
 ## 檢視 {#views}
 
-### BIZ_ACCOUNTS {#biz-accounts}
+### 商業帳戶(_A) {#biz-accounts}
 
-從源系統導入的帳戶。
+從來源系統匯入的帳戶。
 
 <table>
   <tbody>
@@ -71,63 +71,63 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>var</td>
-      <td>來自源系統的帳戶ID。</td>
+      <td>varchar</td>
+      <td>來源系統的帳戶ID。</td>
       <td>0013100001kpAZxAAM</td>
     </tr>
     <tr>
       <td>CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>源系統中帳戶的建立日期。</td>
+      <td>來源系統中帳戶的建立日期。</td>
       <td>2016-08-28 00:32:55.000</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>來自源系統的帳戶的上次修改日期。</td>
+      <td>來自來源系統的帳戶上次修改日期。</td>
       <td>2018-08-01 17:38:30.000</td>
     </tr>
     <tr>
       <td>名稱</td>
-      <td>var</td>
-      <td>來自源系統的帳戶名。</td>
+      <td>varchar</td>
+      <td>來源系統中的「帳戶名稱」。</td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
     <tr>
-      <td>WEB_SITE</td>
-      <td>var</td>
-      <td>帳戶的網站，如來源系統中所記錄，用於「銷售機會至帳戶」對應。</td>
+      <td>WEBSITE</td>
+      <td>varchar</td>
+      <td>客戶的網站（如來源系統所記錄），用於銷售線索與客戶的對應。</td>
       <td>www.adobe.com</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_RATING</td>
-      <td>var</td>
-      <td>從 [!DNL Marketo Measure] 機器學習模型。 如果禁用ABM，則此值為空。</td>
+      <td>varchar</td>
+      <td>由產生的字母等級(A、B、C、D、N/A)。 [!DNL Marketo Measure] 機器學習模型。 如果停用ABM，則為空值。</td>
       <td>B</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_SCORE</td>
       <td>數字(38,19)</td>
-      <td>由 [!DNL Marketo Measure] 機器學習以產生預測性參與分數(Engagement_Rating)。 如果禁用ABM，則此值為空。</td>
+      <td>由計算的數值分數 [!DNL Marketo Measure] 機器學習，用於產生預測性參與分數(Engagement_Rating)。 如果停用ABM，則為空值。</td>
       <td>0.1417350147058800000</td>
     </tr>
     <tr>
       <td>網域</td>
-      <td>var</td>
-      <td>剖析後的網站版本，僅儲存網域。</td>
+      <td>varchar</td>
+      <td>已剖析的網站版本，僅儲存網域。</td>
       <td>adobe</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>布林值</td>
-      <td>是否在源系統中刪除記錄。</td>
+      <td>是否刪除來源系統中的記錄。</td>
       <td>False</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Account_Type__c":"Security", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Account_Type__c"： "Security"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -136,23 +136,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_ACCOUNT_TO_EMAILS {#biz-account-to-emails}
+### BIZ_ACCOUNT_TO_EMAIL {#biz-account-to-emails}
 
-在已知的Lead/Contact電子郵件地址和帳戶之間映射表。 如果禁用ABM，此表將為空。
+已知銷售機會/聯絡人電子郵件地址與帳戶之間的對應表。 如果停用ABM，此表格將會是空的。
 
 <table>
   <tbody>
@@ -164,7 +164,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>記錄的唯一ID。</td>
       <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</td>
     </tr>
@@ -173,10 +173,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>源系統帳戶ID。</p>
+        <p>來源系統帳戶ID。</p>
       </td>
       <td>
         <p>0013100001phrBAAAY</p>
@@ -187,10 +187,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已通過聯繫人關係或線索到帳戶映射映射到帳戶的電子郵件地址。</p>
+        <p>已透過「連絡人」關係或「銷售線索與帳戶」對應，對應至「帳戶」的電子郵件地址。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -198,13 +198,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>來自源系統的帳戶的上次修改日期。</p>
+        <p>來自來源系統的帳戶上次修改日期。</p>
       </td>
       <td>
         <p>2018-08-31 23:53:39.000</p>
@@ -218,7 +218,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>源系統中帳戶的建立日期。</p>
+        <p>來源系統中帳戶的建立日期。</p>
       </td>
       <td>
         <p>2018-08-18 22:01:32.000</p>
@@ -232,7 +232,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>記錄是否被視為刪除。</p>
+        <p>是否將記錄視為已刪除。</p>
       </td>
       <td>
         <p>False</p>
@@ -245,21 +245,21 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_ACTIVITY {#biz-activities}
+### 商業活動(_A) {#biz-activities}
 
 從來源系統或連線的廣告帳戶匯入的活動。
 
@@ -276,10 +276,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自來源系統的活動ID。</p>
+        <p>來源系統中的活動ID。</p>
       </td>
       <td>
         <p>1678625515</p>
@@ -287,12 +287,12 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>與活動相關聯的銷售機會的ID。</td>
+      <td>與活動相關聯的銷售機會ID。</td>
       <td>
         <p>15530482</p>
       </td>
@@ -302,10 +302,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與活動相關聯的連絡人的ID。</p>
+        <p>與活動相關聯的連絡人ID。</p>
       </td>
       <td>
         <p>13792552</p>
@@ -316,10 +316,10 @@ _按一下影像的完整大小版本_
         <p>ACTIVITY_TYPE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自來源系統的活動類型ID。</p>
+        <p>來源系統中活動型別的ID。</p>
       </td>
       <td>
         <p>104</p>
@@ -327,60 +327,60 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ACTIVITY_TYPE_NAME</td>
-      <td>var</td>
-      <td>來自源系統的活動名稱。</td>
+      <td>varchar</td>
+      <td>來源系統中的活動名稱。</td>
       <td>
-        <p>更改進展狀態</p>
+        <p>變更進度狀態</p>
       </td>
     </tr>
     <tr>
       <td>START_DATE</td>
       <td>timestamp_ntz</td>
-      <td>活動的開始日期，來自源系統。</td>
+      <td>來源系統中的活動開始日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestapm_ntz</td>
-      <td>來源系統中活動的結束日期。</td>
+      <td>來源系統中的活動結束日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>CAMPAIGN_ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>來源系統中活動所屬促銷活動的ID。</td>
       <td>
         <p>li.508038570.147643566</p>
       </td>
     </tr>
     <tr>
-      <td>源系統</td>
-      <td>var</td>
-      <td>標識源系統類型。</td>
+      <td>SOURCE_SYSTEM</td>
+      <td>varchar</td>
+      <td>識別來源系統型別。</td>
       <td>Marketo</td>
     </tr>
     <tr>
       <td>CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>在源系統中建立行的日期。</td>
+      <td>在來源系統中建立資料列的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次在源系統中修改行的日期。</td>
+      <td>上次在來源系統中修改資料列的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>IS_DELETD</td>
       <td>布林值</td>
-      <td>是否在源系統中考慮刪除該記錄。</td>
+      <td>是否將記錄視為已刪除來源系統。</td>
       <td>False</td>
     </tr>
     <tr>
       <td>AD_FORM_ID</td>
-      <td>var</td>
-      <td>來自來源系統的廣告表單活動所屬的ID。</td>
+      <td>varchar</td>
+      <td>來源系統中活動所屬之廣告的ID。</td>
       <td>li.507063119.3757704</td>
     </tr>
     <tr>
@@ -390,21 +390,21 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_ADS {#biz-ads}
+### 商務_廣告 {#biz-ads}
 
 從任何連線的廣告帳戶匯入的廣告。
 
@@ -429,7 +429,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告的唯一ID。</p>
@@ -443,10 +443,10 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自來源系統的廣告ID。</p>
+        <p>來源系統中的廣告ID。</p>
       </td>
       <td>
         <p>6053457066804</p>
@@ -457,10 +457,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告的廣告帳戶ID。</p>
+        <p>從中匯入廣告的廣告帳戶ID。</p>
       </td>
       <td>
         <p>fb.106851586409075</p>
@@ -471,10 +471,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告的廣告帳戶名稱。</p>
+        <p>從中匯入廣告的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 帳戶</p>
@@ -485,10 +485,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告廣告商的ID，尤其是Doubleclick。</p>
+        <p>廣告的廣告商ID，尤其是Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -496,16 +496,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告廣告商的名稱，特別是Doubleclick的名稱。</p>
+        <p>此廣告的廣告商名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -513,7 +513,7 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告的廣告群組ID。</p>
@@ -524,10 +524,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告的廣告群組名稱。</p>
@@ -541,10 +541,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告的促銷活動ID。</p>
+        <p>廣告的行銷活動ID。</p>
       </td>
       <td>
         <p>fb.106851586409075.6052044288804</p>
@@ -555,13 +555,13 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告的促銷活動名稱。</p>
+        <p>廣告的行銷活動名稱。</p>
       </td>
       <td>
-        <p>銷售機會開發促銷活動</p>
+        <p>潛在客戶產生行銷活動</p>
       </td>
     </tr>
     <tr>
@@ -572,7 +572,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>廣告在來源系統中是否仍處於作用中狀態。</p>
+        <p>廣告在來源系統中是否仍然有效。</p>
       </td>
       <td>
         <p>False</p>
@@ -594,7 +594,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -614,7 +614,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:35:59.000</p>
@@ -625,10 +625,10 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自來源系統的廣告名稱。</p>
+        <p>來源系統中的廣告名稱。</p>
       </td>
       <td>
         <p>廣告2</p>
@@ -642,7 +642,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>廣告是否需要更新 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新廣告 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -654,22 +654,22 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td>
         <p>fb.106851586409075.6052044288804.6052044290004</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「Ad」。</p>
+        <p>此表格的主要物件或實體。 在此範例中，「廣告」。</p>
       </td>
       <td>
         <p>廣告</p>
@@ -680,7 +680,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告的廣告提供者名稱。</p>
@@ -694,10 +694,10 @@ _按一下影像的完整大小版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的URL。</p>
+        <p>登入頁面的URL。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -707,7 +707,7 @@ _按一下影像的完整大小版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一個值。</p>
@@ -720,23 +720,23 @@ _按一下影像的完整大小版本_
         <p>URL_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL的裝飾項目 [!DNL Marketo Measure] 參數。</p>
+        <p>要裝飾哪個URL [!DNL Marketo Measure] 引數。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_ALTENCIVES</p>
+        <p>URL_ALTENATIVES</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從源系統導入。</p>
+        <p>已從來源系統匯入。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -746,10 +746,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>6008900572523230000</p>
@@ -762,15 +762,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -801,7 +801,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告商的唯一ID。</p>
@@ -815,9 +815,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來自來源系統的廣告商Id。</td>
+      <td>來源系統中的廣告商ID。</td>
       <td>9143143</td>
     </tr>
     <tr>
@@ -825,10 +825,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告的廣告帳戶ID。</p>
+        <p>從中匯入廣告的廣告帳戶ID。</p>
       </td>
       <td>
         <p>fb.106851586409075</p>
@@ -839,10 +839,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告的廣告帳戶名稱。</p>
+        <p>從中匯入廣告的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 帳戶</p>
@@ -853,10 +853,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告商ID，尤其是Doubleclick。</p>
+        <p>廣告商ID，特別適用於Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -864,16 +864,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告商的名稱，特別是Doubleclick。</p>
+        <p>廣告商名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 行銷分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -881,10 +881,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中廣告商上方沒有廣告群組。</p>
+        <p>預期為Null，因為廣告商上方沒有任何廣告群組。</p>
       </td>
       <td>
         <p>null</p>
@@ -892,13 +892,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中廣告商上方沒有廣告群組。</p>
+        <p>預期為Null，因為廣告商上方沒有任何廣告群組。</p>
       </td>
       <td>
         <p>null</p>
@@ -909,10 +909,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中廣告商上方沒有廣告促銷活動。</p>
+        <p>預期為Null，因為廣告商上方沒有任何廣告促銷活動。</p>
       </td>
       <td>
         <p>null</p>
@@ -923,10 +923,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中的廣告廣告商上方沒有任何促銷活動。</p>
+        <p>預期為Null，因為任何廣告階層中的廣告廣告商上方沒有促銷活動。</p>
       </td>
       <td>
         <p>null</p>
@@ -940,7 +940,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>廣告商在來源系統中是否仍處於作用中狀態。</p>
+        <p>廣告商在來源系統中是否仍為作用中。</p>
       </td>
       <td>
         <p>True</p>
@@ -954,7 +954,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>廣告商是否已在來源系統中刪除。</p>
+        <p>是否已在來源系統中刪除廣告商。</p>
       </td>
       <td>
         <p>False</p>
@@ -962,7 +962,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -982,7 +982,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:35:59.000</p>
@@ -993,13 +993,13 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>來源系統中的廣告商名稱。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 行銷分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -1022,20 +1022,20 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此案例中，為「廣告商」。</p>
+        <p>此表格的主要物件或實體。 在此案例中，「廣告商」。</p>
       </td>
       <td>
         <p>廣告商</p>
@@ -1046,13 +1046,13 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告商的廣告提供者。</p>
       </td>
       <td>
-        <p>杜布萊克利克</p>
+        <p>按兩下</p>
       </td>
     </tr>
     <tr>
@@ -1060,10 +1060,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>6008900572523230000</p>
@@ -1076,15 +1076,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1115,7 +1115,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告帳戶的唯一識別碼。</p>
@@ -1129,9 +1129,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來自來源系統的廣告帳戶ID。</td>
+      <td>來源系統的廣告帳戶ID。</td>
       <td>
         <p>6601259029</p>
       </td>
@@ -1141,9 +1141,9 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>應為null，因為這是廣告階層中廣告帳戶的記錄。</td>
+      <td>預期為Null，因為這是廣告階層中「廣告帳戶」的記錄。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -1151,9 +1151,9 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>應為null，因為這是廣告階層中廣告帳戶的記錄。</td>
+      <td>預期為Null，因為這是廣告階層中「廣告帳戶」的記錄。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -1161,22 +1161,22 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中的廣告帳戶上方沒有廣告商。</p>
+        <p>預期為空，因為任何廣告階層中的廣告帳戶上方沒有廣告商。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中的廣告帳戶上方沒有廣告商。</p>
+        <p>預期為空，因為任何廣告階層中的廣告帳戶上方沒有廣告商。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1185,22 +1185,22 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層的廣告帳戶上方沒有廣告群組。</p>
+        <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層的廣告帳戶上方沒有廣告群組。</p>
+        <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1209,10 +1209,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中的廣告帳戶上方沒有廣告促銷活動。</p>
+        <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告行銷活動。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1221,10 +1221,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中的廣告帳戶上方沒有廣告促銷活動。</p>
+        <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告行銷活動。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1258,7 +1258,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -1278,7 +1278,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -1289,9 +1289,9 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來自來源系統的廣告帳戶名稱。</td>
+      <td>來源系統中的廣告帳戶名稱。</td>
       <td>
         <p>[!DNL Marketo Measure] 廣告帳戶</p>
       </td>
@@ -1316,20 +1316,20 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「帳戶」。</p>
+        <p>此表格的主要物件或實體。 在此案例中，「帳戶」。</p>
       </td>
       <td>
         <p>帳戶</p>
@@ -1340,7 +1340,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告帳戶的廣告提供者名稱。</p>
@@ -1354,13 +1354,13 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_CURRENCY_UNIT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>源系統中用於廣告帳戶的貨幣代碼。</p>
+        <p>來源系統中用於廣告帳戶的貨幣代碼。</p>
       </td>
       <td>
-        <p>USD</p>
+        <p>美元</p>
       </td>
     </tr>
     <tr>
@@ -1368,7 +1368,7 @@ _按一下影像的完整大小版本_
         <p>COMPANY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部處理。</td>
       <td>1933789</td>
@@ -1378,9 +1378,9 @@ _按一下影像的完整大小版本_
         <p>來源</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>從URL中從utm_source剖析。</td>
+      <td>從utm_source的URL剖析。</td>
       <td>
         <p>社交</p>
       </td>
@@ -1390,9 +1390,9 @@ _按一下影像的完整大小版本_
         <p>中</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>從URL中從utm_medium剖析。</td>
+      <td>從utm_medium的URL剖析。</td>
       <td>
         <p>lisu07261601</p>
       </td>
@@ -1405,7 +1405,7 @@ _按一下影像的完整大小版本_
         <p>數字(38,19)</p>
       </td>
       <td>
-        <p>最近30天匯入的花費金額，僅適用於AdWords。</p>
+        <p>過去30天匯入的支出金額，僅適用於AdWords。</p>
       </td>
       <td>
         <p>17260.000000000000000000</p>
@@ -1416,7 +1416,7 @@ _按一下影像的完整大小版本_
         <p>LAST_30_DAYS_IMPRESSIONS</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
         <p>過去30天的曝光次數，僅適用於AdWords。</p>
@@ -1430,10 +1430,10 @@ _按一下影像的完整大小版本_
         <p>LAST_30_DAYS_CLICKS</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>最近30天的點按次數，僅適用於AdWords。</p>
+        <p>過去30天的點按次數，僅適用於AdWords。</p>
       </td>
       <td>
         <p>3400</p>
@@ -1444,10 +1444,10 @@ _按一下影像的完整大小版本_
         <p>LAST_30_DAYS_CONVERSIONS</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>最近30天回報的轉換數，僅適用於AdWords。</p>
+        <p>從過去30天報告的轉換次數，僅適用於AdWords。</p>
       </td>
       <td>
         <p>180</p>
@@ -1458,7 +1458,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td>
@@ -1470,7 +1470,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -1480,7 +1480,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -1490,10 +1490,10 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在AdWords或Bing的「廣告帳戶」層級上新增的追蹤範本，用於標籤登錄頁面。</p>
+        <p>在AdWords的「廣告帳戶」層級新增追蹤範本，或是Bing用於標籤登入頁面。</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -1504,10 +1504,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-4609512587744160000</p>
@@ -1520,15 +1520,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1536,7 +1536,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_AD_CAMPAIGNS {#biz-ad-campaigns}
 
-從連線的廣告帳戶、來源系統、utm和自行報告的促銷活動。
+從連結的廣告帳戶、來源系統、UTM及自行報告的行銷活動。
 
 <table>
   <tbody>
@@ -1559,10 +1559,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動的唯一Id。</p>
+        <p>促銷活動的唯一ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995</p>
@@ -1573,9 +1573,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來源系統的促銷活動ID。</td>
+      <td>來源系統中的促銷活動ID。</td>
       <td>
         <p>285114995</p>
       </td>
@@ -1585,10 +1585,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入促銷活動的廣告帳戶ID。</p>
+        <p>促銷活動匯入來源廣告帳戶的ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -1599,10 +1599,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入促銷活動的廣告帳戶名稱。</p>
+        <p>促銷活動匯入來源廣告帳戶的名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -1613,10 +1613,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動廣告商的ID，尤其是Doubleclick。</p>
+        <p>行銷活動的廣告商ID，特別適用於Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -1624,16 +1624,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動的廣告商名稱，尤其是Doubleclick的廣告商名稱。</p>
+        <p>行銷活動的廣告商名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -1641,10 +1641,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中促銷活動上方沒有廣告群組。</p>
+        <p>預期為Null，因為任何廣告階層中的行銷活動上方沒有廣告群組。</p>
       </td>
       <td>
         <p>null</p>
@@ -1652,13 +1652,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中促銷活動上方沒有廣告群組。</p>
+        <p>預期為Null，因為任何廣告階層中的行銷活動上方沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1667,7 +1667,7 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>促銷活動的唯一ID，請改用ID欄位。</p>
@@ -1679,10 +1679,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動名稱，請改用名稱欄位。</p>
+        <p>促銷活動的名稱，請改用名稱欄位。</p>
       </td>
       <td></td>
     </tr>
@@ -1694,7 +1694,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>促銷活動在來源系統中是否仍處於作用中狀態。</p>
+        <p>促銷活動在來源系統中是否仍為作用中。</p>
       </td>
       <td>
         <p>True</p>
@@ -1708,7 +1708,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>促銷活動是否已在來源系統中刪除。</p>
+        <p>是否已在來源系統中刪除行銷活動。</p>
       </td>
       <td>
         <p>False</p>
@@ -1716,7 +1716,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -1736,7 +1736,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -1747,13 +1747,13 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動名稱。</p>
+        <p>行銷活動的名稱。</p>
       </td>
       <td>
-        <p>合作夥伴重新定位</p>
+        <p>合作夥伴重新目標定位</p>
       </td>
     </tr>
     <tr>
@@ -1764,7 +1764,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新促銷活動 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新行銷活動 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -1776,23 +1776,23 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「促銷活動」。</p>
+        <p>此表格的主要物件或實體。 在此範例中，為「Campaign」。</p>
       </td>
       <td>
-        <p>行銷活動</p>
+        <p>Campaign</p>
       </td>
     </tr>
     <tr>
@@ -1800,7 +1800,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>促銷活動的廣告提供者名稱。</p>
@@ -1817,7 +1817,7 @@ _按一下影像的完整大小版本_
         <p>數字(38,19)</p>
       </td>
       <td>
-        <p>在促銷活動的廣告平台中設定的每日預算。</p>
+        <p>在行銷活動的廣告平台中設定的每日預算。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -1828,7 +1828,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -1838,7 +1838,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -1848,7 +1848,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -1858,10 +1858,10 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在AdWords或Bing的促銷活動層級上新增追蹤範本，以標籤登錄頁面。</p>
+        <p>在AdWords或Bing的行銷活動層級新增追蹤範本，用於標籤登入頁面。</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -1872,10 +1872,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-6008900572523230000</p>
@@ -1888,23 +1888,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_AD_FORMS。 {#biz-ad-forms}
+### BIZ_AD_FORMS {#biz-ad-forms}
 
-從任何已連線的廣告帳戶匯入的廣告Forms。
+從任何連線的廣告帳戶匯入廣告Forms。
 
 <table>
   <tr>
@@ -1927,7 +1927,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告表單的唯一ID。</p>
@@ -1941,10 +1941,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告表單的廣告帳戶ID。</p>
+        <p>從中匯入廣告表單的廣告帳戶ID。</p>
       </td>
       <td>
         <p>li.507063119</p>
@@ -1955,10 +1955,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告表單的廣告帳戶名稱。</p>
+        <p>從中匯入廣告表單的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -1972,7 +1972,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>已從源系統中刪除狀態。 如果狀態為「草稿」、「已封存」或「已取消」，則設為「已刪除」。</p>
+        <p>已從來源系統刪除狀態。 如果狀態為「草稿」、「已封存」或「已取消」，則設為「已刪除」。</p>
       </td>
       <td>
         <p>False</p>
@@ -1980,7 +1980,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2000,7 +2000,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:35:58.000</p>
@@ -2011,24 +2011,24 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告表單的名稱。</p>
       </td>
       <td>
-        <p>NSPA Ebook LGF（2020年5月）</p>
+        <p>NSPA電子書LGF （2020年5月）</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「AdForm」。</p>
+        <p>此表格的主要物件或實體。 在此範例中，為「AdForm」。</p>
       </td>
       <td>
         <p>AdForm</p>
@@ -2039,7 +2039,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告表單的廣告提供者名稱。</p>
@@ -2053,13 +2053,13 @@ _按一下影像的完整大小版本_
         <p>說明</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告表單說明。</p>
+        <p>廣告表單的說明。</p>
       </td>
       <td>
-        <p>了解智慧自動化如何提高抵押貸款再融資申請的流程效率。</p>
+        <p>瞭解智慧型自動化如何提高抵押貸款再融資貸款申請的處理效率。</p>
       </td>
     </tr>
     <tr>
@@ -2067,11 +2067,11 @@ _按一下影像的完整大小版本_
         <p>標題</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>廣告表單標題。</td>
+      <td>廣告表單的標題。</td>
       <td>
-        <p>現在是自動化再融資申請流程的時候了</p>
+        <p>該是自動化再融資申請流程了</p>
       </td>
     </tr>
     <tr>
@@ -2079,7 +2079,7 @@ _按一下影像的完整大小版本_
         <p>LANDING_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>廣告表單的登陸URL。</td>
       <td>
@@ -2091,7 +2091,7 @@ _按一下影像的完整大小版本_
         <p>問題</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>廣告表單的問題清單。</td>
       <td>
@@ -2103,7 +2103,7 @@ _按一下影像的完整大小版本_
         <p>狀態</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告表單的狀態。</p>
@@ -2119,27 +2119,27 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>SOURCE_ID</td>
-      <td>var</td>
-      <td>記錄源的來源ID。</td>
+      <td>varchar</td>
+      <td>記錄來源的ID。</td>
       <td>aw.3284209</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_AD_GROUPS {#biz-ad-groups}
+### 商業_廣告_群組 {#biz-ad-groups}
 
 從任何連線的廣告帳戶匯入的廣告群組。
 
@@ -2164,7 +2164,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告群組的唯一ID。</p>
@@ -2178,9 +2178,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來自來源系統的廣告群組Id。</td>
+      <td>來源系統的廣告群組ID。</td>
       <td>
         <p>23105326115</p>
       </td>
@@ -2190,10 +2190,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告群組的廣告帳戶ID。</p>
+        <p>從中匯入廣告群組的廣告帳戶ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -2204,10 +2204,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入廣告群組的廣告帳戶名稱。</p>
+        <p>從中匯入廣告群組的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -2218,10 +2218,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick廣告階層中沒有廣告群組。</p>
+        <p>預期為Null，因為Doubleclick廣告階層中沒有「廣告群組」。</p>
       </td>
       <td>
         <p>null</p>
@@ -2229,13 +2229,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick廣告階層中沒有廣告群組。</p>
+        <p>預期為Null，因為Doubleclick廣告階層中沒有「廣告群組」。</p>
       </td>
       <td>
         <p>null</p>
@@ -2246,10 +2246,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為這是階層中廣告群組的記錄。</p>
+        <p>預期為Null，因為這是階層中「廣告群組」的記錄。</p>
       </td>
       <td>
         <p>null</p>
@@ -2257,13 +2257,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為這是階層中廣告群組的記錄。</p>
+        <p>預期為Null，因為這是階層中「廣告群組」的記錄。</p>
       </td>
       <td>
         <p>null</p>
@@ -2274,7 +2274,7 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告群組的促銷活動ID。</p>
@@ -2288,7 +2288,7 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告群組的促銷活動名稱。</p>
@@ -2327,7 +2327,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2347,7 +2347,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:36:14.000</p>
@@ -2358,10 +2358,10 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告群組名稱。</p>
+        <p>廣告群組的名稱。</p>
       </td>
       <td>
         <p>收入歸因 — 以帳戶為基礎</p>
@@ -2387,20 +2387,20 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「AdGroup」。</p>
+        <p>此表格的主要物件或實體。 在此案例中，「AdGroup」。</p>
       </td>
       <td>
         <p>AdGroup</p>
@@ -2411,7 +2411,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告群組的廣告提供者名稱。</p>
@@ -2422,16 +2422,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_NETWORK_TYPE</p>
+        <p>ad_NETWORK_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告群組執行的媒體。</p>
+        <p>執行廣告群組的媒體。</p>
       </td>
       <td>
-        <p>搜尋、顯示、YouTube_搜尋、YouTube_Watch</p>
+        <p>搜尋，顯示， YouTube_Search， YouTube_Watch</p>
       </td>
     </tr>
     <tr>
@@ -2439,7 +2439,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -2449,7 +2449,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -2459,7 +2459,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -2469,10 +2469,10 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在AdWords或Bing的「廣告帳戶」層級上新增的追蹤範本，用於標籤登錄頁面。</p>
+        <p>在AdWords的「廣告帳戶」層級新增追蹤範本，或是Bing用於標籤登入頁面。</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -2483,10 +2483,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-5594512713562690000</p>
@@ -2499,15 +2499,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -2515,7 +2515,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_AD_PROVIDERS
 
-<p>來自任何已連線廣告帳戶的廣告提供者，包括可自行報告的項目（若適用）。</p>
+<p>來自任何已連線廣告帳戶的廣告提供者，包括自行報告的專案（如適用）。</p>
 
 <table>
   <tbody>
@@ -2538,13 +2538,13 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告提供者的唯一ID。</p>
       </td>
       <td>
-        <p>兵</p>
+        <p>Bing</p>
       </td>
     </tr>
     <tr>
@@ -2552,13 +2552,13 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>廣告提供者的名稱。</p>
       </td>
       <td>
-        <p>兵</p>
+        <p>Bing</p>
       </td>
     </tr>
     <tr>
@@ -2566,10 +2566,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>4783788151269206864</p>
@@ -2582,15 +2582,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -2598,7 +2598,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_ATTRIBUTION_TOUCHPOINTS {#biz-attribution-touchpoints}
 
-<p>購買者歸因接觸點，與機會相關的所有接觸點。</p>
+<p>購買者歸因接觸點，與商機相關的所有接觸點。</p>
 <table>
   <tbody>
     <tr>
@@ -2620,7 +2620,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>購買者歸因接觸點(BAT)的唯一ID。</p>
@@ -2632,7 +2632,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2646,13 +2646,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>BAT歸屬的Opportunity的ID。</p>
+        <p>BAT所屬商機的識別碼。</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2663,10 +2663,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與BAT關聯的聯繫人的ID。</p>
+        <p>與BAT關聯的連絡人ID。</p>
       </td>
       <td>
         <p>0030Z00003K5bpKQAR</p>
@@ -2674,8 +2674,8 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>電子郵件</td>
-      <td>var</td>
-      <td>與BAT關聯的電子郵件地址。</td>
+      <td>varchar</td>
+      <td>與BAT相關聯的電子郵件地址。</td>
       <td>person@adobe.com</td>
     </tr>
     <tr>
@@ -2683,7 +2683,7 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>BAT所屬帳戶的ID。</p>
@@ -2697,7 +2697,7 @@ _按一下影像的完整大小版本_
         <p>USER_TOUCHPOINT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>產生BAT的使用者接觸點ID。</p>
@@ -2708,7 +2708,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>接觸點日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2722,7 +2722,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>與BAT相關聯的訪客ID。</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
@@ -2731,10 +2731,10 @@ _按一下影像的完整大小版本_
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活動類型、網站瀏覽、網路表單、網路聊天、電話呼叫、[CRM]促銷活動或[CRM]活動。 在CRM中稱為「接觸點類型」。</p>
+        <p>活動型別、網頁瀏覽、網頁表單、網頁交談、電話通話、[CRM]促銷活動或[CRM]活動。 在CRM中稱為「接觸點型別」。</p>
       </td>
       <td>
         <p>網路表單</p>
@@ -2745,10 +2745,10 @@ _按一下影像的完整大小版本_
         <p>頻道</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點會落入的管道，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
+        <p>根據中的自訂管道定義，接觸點所屬的管道 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -2759,10 +2759,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點落入的第1個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第一個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>ABC</p>
@@ -2773,10 +2773,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第2類別區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第二個類別的區段值，如內的區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>是</p>
@@ -2787,10 +2787,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY3</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第3個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第三個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>中小型企業</p>
@@ -2801,9 +2801,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY4</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第4個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬第4個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td>
         <p>新業務</p>
       </td>
@@ -2813,9 +2813,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY5</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第5個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬的第5個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2823,9 +2823,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY6</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第6個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬的第6個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2833,9 +2833,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY7</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第7個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬第7個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2843,9 +2843,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY8</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第8個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬的第8個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2853,9 +2853,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY9</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第9類別區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬第9個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2863,9 +2863,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY10</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第10個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第10個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2873,9 +2873,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY11</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第11個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第11個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2883,9 +2883,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY12</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第12個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第12個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2893,9 +2893,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY13</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於第13個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第13個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2903,9 +2903,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY14</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第14個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第14個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2913,17 +2913,17 @@ _按一下影像的完整大小版本_
         <p>CATEGORY15</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於第15個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>此接觸點所屬的第15個類別的區段值，定義見內的區段定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>瀏覽器名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
@@ -2934,13 +2934,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>瀏覽器版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在瀏覽器的版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器版本。</p>
       </td>
       <td>
         <p>58</p>
@@ -2948,13 +2948,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台。</p>
       </td>
       <td>
         <p>Mac</p>
@@ -2962,13 +2962,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台版本。</p>
       </td>
       <td>
         <p>10_12</p>
@@ -2979,13 +2979,13 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點之工作階段的第一個登陸頁面。 在CRM中稱為「登陸頁面」。</p>
+        <p>產生接觸點的工作階段第一個登陸頁面。 在CRM中稱為「登陸頁面」。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/blog/uncover-</p>
+        <p>http://www.adobe.com/blog/uncover- truth-behind-cost-per-lead</p>
       </td>
     </tr>
     <tr>
@@ -2993,13 +2993,13 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點之工作階段的第一個登陸頁面。 原始登錄頁面將包含URL中的所有查詢參數。 在CRM中稱為「登陸頁面 — 原始」。</p>
+        <p>產生接觸點的工作階段第一個登陸頁面。 原始登陸頁面將在URL中包含所有查詢引數。 在CRM中稱為「登陸頁面 — 原始」。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/blog/uncover-truth -bitch-cost-per-lead?utm_content=27322869&amp;utm_ medium=social&amp;utm_source=linkedin</p>
+        <p>http://www.adobe.com/blog/uncover-truth -behind-cost-per-lead？utm_content=27322869&amp;utm_ medium=social&amp;utm_source=linkedin</p>
       </td>
     </tr>
     <tr>
@@ -3007,10 +3007,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 在CRM中稱為「反向連結頁面」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 在CRM中稱為「反向連結頁面」。</p>
       </td>
       <td>
         <p>https://www.linkedin.com/</p>
@@ -3021,10 +3021,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 原始反向連結頁面可能包含URL中的查詢參數。 在CRM中稱為「反向連結頁面 — 原始」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 原始反向連結頁面可能包含URL中的查詢引數。 在CRM中稱為「Referrer Page - Raw」。</p>
       </td>
       <td>
         <p>https://www.linkedin.com/</p>
@@ -3035,10 +3035,10 @@ _按一下影像的完整大小版本_
         <p>FORM_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在工作階段中記錄的第一個表單，導致接觸點。 後續的表單提交不會顯示在Attribution_Touchpoints表格中，而會顯示在Form_Sumbite表格中。 在CRM中稱為「表單URL」。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 在CRM中稱為「表單URL」。</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -3049,10 +3049,10 @@ _按一下影像的完整大小版本_
         <p>FORM_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在工作階段中記錄的第一個表單，導致接觸點。 後續的表單提交不會顯示在Attribution_Touchpoints表格中，而會顯示在Form_Sumbite表格中。 原始表單頁面可能包含URL中的查詢參數。 在CRM中稱為「表單URL — 原始」。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中以「表單URL — 原始」參照。</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -3066,7 +3066,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>表單提交的發生日期。</p>
+        <p>提交表單的日期。</p>
       </td>
       <td>
         <p>2017-06-20 01:06:41.000</p>
@@ -3077,10 +3077,10 @@ _按一下影像的完整大小版本_
         <p>城市</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測城市。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的城市。</p>
       </td>
       <td>
         <p>舊金山</p>
@@ -3088,13 +3088,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>地區</p>
+        <p>區域</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測區域。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的區域。</p>
       </td>
       <td>
         <p>加州</p>
@@ -3102,13 +3102,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>國家/地區</p>
+        <p>國家</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測國家/地區。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所處的國家/地區。</p>
       </td>
       <td>
         <p>美國</p>
@@ -3119,10 +3119,10 @@ _按一下影像的完整大小版本_
         <p>中</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用來定義導致接觸點的媒體。 您可從URL中從utm_medium剖析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是"cpc"或"display"等值。</p>
+        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -3133,24 +3133,24 @@ _按一下影像的完整大小版本_
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用於定義導致接觸點的來源。 如果是從CRM同步，或是從utm_source從URL中剖析，一般會設為「CRM促銷活動」 [!DNL Marketo Measure] 能夠解析廣告，可能是"Google AdWords"或"Facebook"等值。 在CRM中稱為「接觸點來源」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步，或從utm_source的URL剖析，一般會設定為「CRM Campaign」 [!DNL Marketo Measure] 能夠解析廣告，可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點來源」。</p>
       </td>
       <td>
-        <p>林克丁</p>
+        <p>linkedin</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>SEARCH_PHRASE</p>
+        <p>SEARCH_PHASE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>使用者在瀏覽器中輸入以搜尋和結束於網站的值。 視關鍵字購買而定，這可能與從付費搜尋平台購買的關鍵字不符。</p>
+        <p>使用者在要搜尋的瀏覽器中輸入並在網站上結束的值。 根據關鍵字購買而定，這可能與從付費搜尋平台購買的關鍵字相符，也可能不相符。</p>
       </td>
       <td>
         <p>google [!DNL Marketo Measure]</p>
@@ -3161,10 +3161,10 @@ _按一下影像的完整大小版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從中解決，通常是我們的其中一個整合合作夥伴。</p>
+        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
       </td>
       <td>
         <p>Google</p>
@@ -3175,10 +3175,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶ID。</p>
+        <p>從中解析廣告的廣告帳戶ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -3186,13 +3186,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帳戶名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶名稱。</p>
+        <p>從中解析廣告的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -3203,10 +3203,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的ID，其中廣告是從該帳戶解析的。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -3214,16 +3214,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的名稱，廣告從其中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 行銷分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -3231,10 +3231,10 @@ _按一下影像的完整大小版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站ID，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -3242,13 +3242,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>網站名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站名稱，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -3259,10 +3259,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶中的版位ID。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -3273,13 +3273,13 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的位置名稱。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>路障</p>
+        <p>障礙</p>
       </td>
     </tr>
     <tr>
@@ -3287,10 +3287,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的促銷活動ID。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動ID。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075</p>
@@ -3298,13 +3298,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的促銷活動名稱。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動名稱。</p>
       </td>
       <td>
         <p>行銷歸因</p>
@@ -3315,10 +3315,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中解析廣告的廣告群組ID。 這僅適用於Google Adwords。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告群組ID。 這僅適用於Google Adwords。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435</p>
@@ -3326,13 +3326,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告群組名稱，該帳戶是廣告解析的來源。 這僅適用於Google AdWords。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告群組名稱。 這僅適用於Google AdWords。</p>
       </td>
       <td>
         <p>行銷歸因 — 一般</p>
@@ -3343,10 +3343,10 @@ _按一下影像的完整大小版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的廣告ID。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告ID。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>
         <p>dc.6114.8882972.25272734.492579576</p>
@@ -3357,10 +3357,10 @@ _按一下影像的完整大小版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告名稱，廣告從中解析。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告名稱。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>
         <p>預算網路研討會 — 側欄</p>
@@ -3371,10 +3371,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告解析來源的創意ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.182716179597</p>
@@ -3382,13 +3382,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>創意名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告解析來源的創意內容名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>B2B行銷歸因</p>
@@ -3399,10 +3399,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意的第一行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>下載CMO指南</p>
@@ -3413,13 +3413,13 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意內容的第二行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>了解歸因如何透過將行銷活動與收入聯繫起來來衡量投資報酬率</p>
+        <p>瞭解歸因如何透過將行銷活動與收入關聯來衡量ROI</p>
       </td>
     </tr>
     <tr>
@@ -3427,10 +3427,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告點進的登陸頁面，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從搜尋廣告點進、從廣告解決來源廣告帳戶提取的登陸頁面。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution</p>
@@ -3441,10 +3441,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶提取的搜尋廣告上顯示的易記URL名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>易記URL名稱會顯示在搜尋廣告上，從解析廣告的來源廣告帳戶中提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>http://info.adobe.com/CMOs-Guide</p>
@@ -3455,10 +3455,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從付費搜尋購買購買、從廣告解析來源的廣告帳戶提取的關鍵字ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從付費搜尋購買處購買的關鍵字ID，從解決廣告的來源廣告帳戶提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.4838421670</p>
@@ -3469,10 +3469,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從付費搜尋購買購買、從廣告解析來源的廣告帳戶提取的關鍵字名稱。 這適用於Google AdWords和Bing Ads（搜尋）</p>
+        <p>從付費搜尋購買專案（從解決廣告的來源廣告帳戶提取）購買的關鍵字名稱。 適用於Google AdWords和Bing Ads （搜尋）</p>
       </td>
       <td>
         <p>"行銷歸因"</p>
@@ -3480,16 +3480,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>KEYWORD_MATCH_TYPE</p>
+        <p>KEYWORD_MATCH_型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜尋片語和購買的關鍵字之間找到的相符類型。</p>
+        <p>在搜尋字詞和購買的關鍵字之間找到的相符型別。</p>
       </td>
       <td>
-        <p>完全</p>
+        <p>精確</p>
       </td>
     </tr>
     <tr>
@@ -3500,7 +3500,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的首次接觸。</p>
+        <p>此接觸點是否被視為機會歷程的第一次接觸。</p>
       </td>
       <td>
         <p>False</p>
@@ -3514,7 +3514,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的潛在客戶建立接觸。</p>
+        <p>此接觸點是否被視為機會歷程的潛在客戶建立接觸點。</p>
       </td>
       <td>
         <p>False</p>
@@ -3542,7 +3542,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的封閉接觸。</p>
+        <p>此接觸點是否被視為機會歷程的封閉式接觸。</p>
       </td>
       <td>
         <p>False</p>
@@ -3550,10 +3550,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>階段(_M)</p>
+        <p>STAGES_TOUCHED</p>
       </td>
-      <td>var</td>
-      <td>已棄用此欄位。 使用Stage_Transitions表獲取舞台資訊。</td>
+      <td>varchar</td>
+      <td>此欄位已棄用。 使用Stage_Transitions表格來取得階段資訊。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -3564,7 +3564,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>此接觸點在工作階段期間是否有表單填入。</p>
+        <p>工作階段期間，此接觸點是否有表單填入。</p>
       </td>
       <td>
         <p>True</p>
@@ -3578,7 +3578,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的首次曝光接觸</p>
+        <p>此接觸點是否被視為機會歷程的第一次印象接觸</p>
       </td>
       <td>
         <p>False</p>
@@ -3589,10 +3589,10 @@ _按一下影像的完整大小版本_
         <p>FIRST_CLICK_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為是首次接觸而分配給此接觸點的計算百分比（請參閱Is_First_Touch）。</p>
+        <p>分配給此接觸點的已計算百分比，因為這是首次接觸（請參閱Is_First_Touch）。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3603,10 +3603,10 @@ _按一下影像的完整大小版本_
         <p>LAST_ANON_CLICK_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是銷售機會建立接觸（請參閱Is_Lead_Creation_Touch）。</p>
+        <p>分配給此接觸點的已計算百分比，因為這是銷售機會建立接觸（請參閱Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3617,10 +3617,10 @@ _按一下影像的完整大小版本_
         <p>U_SHAPE_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為此接觸點是u形接觸的一部分而分配給此接觸點的計算百分比（請參閱Is_First_Touch和Is_Lead_Creation_Touch）。</p>
+        <p>配置給此接觸點的已計算百分比，因為此接觸點屬於U形接觸（請參閱Is_First_Touch和Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3628,13 +3628,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>W_SHAPE_PERCENTAGE</p>
+        <p>W_SHAPE_PERCENT</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是w形接觸的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。</p>
+        <p>配置給此接觸點的已計算百分比，因為此接觸點屬於W型接觸（請參閱Is_First_Touch、Is_Lead_Creation_Touch及Is_Opp_Creation_Touch）。</p>
       </td>
       <td>
         <p>0.0153374234214425</p>
@@ -3645,10 +3645,10 @@ _按一下影像的完整大小版本_
         <p>FULL_PATH_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是完整路徑模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。</p>
+        <p>配置給此接觸點的已計算百分比，因為此接觸點是完整路徑模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。</p>
       </td>
       <td>
         <p>0.0143061513081193</p>
@@ -3658,8 +3658,8 @@ _按一下影像的完整大小版本_
       <td>
         <p>CUSTOM_MODEL_PERCENTAGE</p>
       </td>
-      <td>數字(22,19)</td>
-      <td>分配給此接觸點的計算百分比，因為它是自定義模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。</td>
+      <td>number(22,19)</td>
+      <td>配置給此接觸點的已計算百分比，因為此接觸點是自訂模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。</td>
       <td>0.0143061513081193</td>
     </tr>
     <tr>
@@ -3670,7 +3670,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否刪除此接觸點。</p>
+        <p>此接觸點是否已刪除。</p>
       </td>
       <td>
         <p>False</p>
@@ -3681,10 +3681,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -3695,44 +3695,44 @@ _按一下影像的完整大小版本_
         <p>OPPORTUNITY_ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>SITE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -3740,37 +3740,37 @@ _按一下影像的完整大小版本_
       <td>
         <p>PLACEMENT_ROW_KEY</p>
       </td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -3781,23 +3781,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CAMPAIGN_MEMBERS {#biz-campaign-members}
+### BIZ_CAMPAIGN_MEMBER {#biz-campaign-members}
 
-從源系統導入的促銷活動成員。 如果停用「促銷活動同步」，此表格將會空白。
+從來源系統匯入的行銷活動成員。 如果停用Campaign同步處理，此表格將為空白。
 
 <table>
   <tbody>
@@ -3820,10 +3820,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來源系統中的促銷活動成員Id。</p>
+        <p>來源系統中的促銷活動成員ID。</p>
       </td>
       <td>
         <p>00v0Z00001VVzdLQAT</p>
@@ -3831,13 +3831,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>來自源系統的促銷活動成員的上次修改日期。</p>
+        <p>來源系統中促銷活動成員的上次修改日期。</p>
       </td>
       <td>
         <p>2018-08-31 20:49:54.000</p>
@@ -3851,7 +3851,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立的促銷活動成員日期。</p>
+        <p>來源系統中促銷活動成員的建立日期。</p>
       </td>
       <td>
         <p>2018-08-31 20:49:54.000</p>
@@ -3865,7 +3865,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>客戶設定的日期和時間，以覆寫促銷活動日期，並將此值改用於接觸點日期。</p>
+        <p>客戶設定覆寫行銷活動日期的日期和時間，並改為將此值用於接觸點日期。</p>
       </td>
       <td>
         <p>2018-08-30 18:00:00.000</p>
@@ -3873,13 +3873,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動成員的Lead系結至。</p>
+        <p>行銷活動成員繫結的潛在客戶ID。</p>
       </td>
       <td>
         <p>00Q0Z000013dw4GUAQ</p>
@@ -3887,13 +3887,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_EMAIL</p>
+        <p>潛在客戶電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與促銷活動成員連結的銷售機會電子郵件。</p>
+        <p>促銷活動成員繫結之潛在客戶的電子郵件。</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -3904,10 +3904,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與促銷活動成員連結的連絡人ID。</p>
+        <p>行銷活動成員繫結的聯絡人ID。</p>
       </td>
       <td>
         <p>00331000032hMxRAAU</p>
@@ -3918,10 +3918,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與促銷活動成員連結的連絡人電子郵件。</p>
+        <p>促銷活動成員繫結至之聯絡人的電子郵件。</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -3932,10 +3932,10 @@ _按一下影像的完整大小版本_
         <p>狀態</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動成員的狀態，通常設為「已傳送」或「已回應」或其他自訂值。 此狀態會系結至Campaign_Sync_Type，以決定要為哪個促銷活動成員建立接觸點。</p>
+        <p>促銷活動成員的狀態，通常設定為「已傳送」或「已回應」或其他自訂值。 此狀態會繫結至Campaign_Sync_Type，以決定要建立接觸點的促銷活動成員。</p>
       </td>
       <td>
         <p>已傳送</p>
@@ -3943,13 +3943,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>HAS_RESPONSED</p>
+        <p>HAS_RESPONDED</p>
       </td>
       <td>
         <p>布林值</p>
       </td>
       <td>
-        <p>從「狀態」選取器指出促銷活動成員是否標示為「已回應」。</p>
+        <p>告知促銷活動會員是否從狀態選擇器標示為「已回應」。</p>
       </td>
       <td>
         <p>True</p>
@@ -3957,13 +3957,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_RESPONSED_DATE</p>
+        <p>FIRST_RESPONDED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>促銷活動成員首次回應的日期。</p>
+        <p>行銷活動會員首次回應的日期。</p>
       </td>
       <td>
         <p>2018-08-30 07:00:00.000</p>
@@ -3971,13 +3971,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動成員所屬的相關促銷活動名稱。</p>
+        <p>促銷活動成員所屬之相關促銷活動的名稱。</p>
       </td>
       <td>
         <p>快速CMO訪談</p>
@@ -3988,10 +3988,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促銷活動成員所屬的相關促銷活動ID。</p>
+        <p>促銷活動成員所屬之相關促銷活動的ID。</p>
       </td>
       <td>
         <p>7010Z000001TcKlQAK</p>
@@ -3999,13 +3999,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_TYPE</p>
+        <p>行銷活動型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在相關促銷活動上，「促銷活動成員」是的一部分。 類型可用來對應行銷管道。</p>
+        <p>在促銷活動會員所屬的相關促銷活動上選取的型別。 「型別」可用來對應行銷管道。</p>
       </td>
       <td>
         <p>離線</p>
@@ -4013,44 +4013,44 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_SYNC_TYPE</p>
+        <p>campaign_SYNC_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>決定要為哪些促銷活動成員建立接觸點。 可能的值為：Include_All、Include_Responsed、Exclude_All。</p>
+        <p>決定要建立接觸點的Campaign成員。 可能的值為：Include_All、Include_Responded、Exclude_All。</p>
       </td>
       <td>
-        <p>包含_全部</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>LEAD_SYNC_STATUS</p>
-      </td>
-      <td>
-        <p>var</p>
-      </td>
-      <td>
-        <p>審核欄位，說明是否為銷售機會生成了購買者接觸點。 若未建立接觸點，則會指出其不符合資格的原因。</p>
-      </td>
-      <td>
-        <p>無接觸點：日期外部模型</p>
+        <p>Include_All</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CONTACT_SYNC_STATUS</p>
+        <p>潛在客戶同步狀態</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>「審核」欄位，說明是否為聯繫人生成了購買者接觸點。 若未建立接觸點，則會指出其不符合資格的原因。</p>
+        <p>稽核欄位，說明是否已為Lead產生「購買者接觸點」。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
       </td>
       <td>
-        <p>已建立接觸點</p>
+        <p>無接觸點：模型外的日期</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>連絡人同步狀態</p>
+      </td>
+      <td>
+        <p>varchar</p>
+      </td>
+      <td>
+        <p>稽核欄位，說明是否為聯絡人產生購買者接觸點。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
+      </td>
+      <td>
+        <p>已建立的接觸點</p>
       </td>
     </tr>
     <tr>
@@ -4058,13 +4058,13 @@ _按一下影像的完整大小版本_
         <p>OPP_SYNC_STATUS</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>審核欄位，說明是否為Opportunity生成了Buyer Attribution Touchpoint。 若未建立接觸點，則會指出其不符合資格的原因。</p>
+        <p>稽核欄位，說明是否已為Opportunity產生「購買者歸因」接觸點。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
       </td>
       <td>
-        <p>已建立接觸點</p>
+        <p>已建立的接觸點</p>
       </td>
     </tr>
     <tr>
@@ -4075,7 +4075,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否在源系統中考慮刪除該記錄。</p>
+        <p>是否將記錄視為已刪除來源系統。</p>
       </td>
       <td>
         <p>False</p>
@@ -4083,9 +4083,9 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Campaign_Type__c":"Denpirts","Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Campaign_Type__c"："Dinners"，"Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -4094,23 +4094,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CHANNELS {#biz-channels}
+### 商業管道(_C) {#biz-channels}
 
-行銷管道，如 [!DNL Marketo Measure] 應用程式。
+行銷管道，建立於 [!DNL Marketo Measure] 應用程式。
 
 <table>
   <tbody>
@@ -4133,13 +4133,13 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>管道的唯一ID。</p>
       </td>
       <td>
-        <p>自然搜尋。Google</p>
+        <p>Organic Search.Google</p>
       </td>
     </tr>
     <tr>
@@ -4147,13 +4147,13 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>管道名稱。</p>
+        <p>頻道名稱。</p>
       </td>
       <td>
-        <p>自然搜尋。Google</p>
+        <p>Organic Search.Google</p>
       </td>
     </tr>
     <tr>
@@ -4161,10 +4161,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>6008900572523230000</p>
@@ -4177,23 +4177,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次以Snowflake修改記錄的日期。</td>
+      <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CONTACTS {#biz-contacts}
+### 商務聯絡人(_C) {#biz-contacts}
 
-從源系統導入的聯繫人。
+從來源系統匯入的連絡人。
 
 <table>
   <tbody>
@@ -4216,10 +4216,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的聯繫人ID。</p>
+        <p>來自來源系統的聯絡人ID。</p>
       </td>
       <td>
         <p>0030Z00003OzioeQAB</p>
@@ -4227,13 +4227,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>上次從源系統修改聯繫人記錄的日期。</p>
+        <p>上次從來源系統修改連絡人記錄的日期。</p>
       </td>
       <td>
         <p>2018-09-05 05:17:53.000</p>
@@ -4247,7 +4247,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立聯繫人記錄的日期。</p>
+        <p>從來源系統建立連絡人記錄的日期。</p>
       </td>
       <td>
         <p>2018-09-05 05:17:51.000</p>
@@ -4258,10 +4258,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>聯繫人的電子郵件地址，來自源系統。</p>
+        <p>來自來源系統的連絡人電子郵件地址。</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -4272,10 +4272,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNTID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與聯繫人相關的帳戶ID。</p>
+        <p>和連絡人相關的帳戶ID。</p>
       </td>
       <td>
         <p>0013100001b44aGAAQ</p>
@@ -4283,13 +4283,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_SOURCE</p>
+        <p>潛在客戶來源</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>建立Lead的源。</p>
+        <p>建立Lead的來源。</p>
       </td>
       <td>
         <p>廣告</p>
@@ -4300,10 +4300,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_STAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>聯繫人的當前階段，被識別為可在 [!DNL Marketo Measure] 應用程式。</p>
+        <p>連絡人的目前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
         <p>已排程示範</p>
@@ -4314,13 +4314,13 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>聯繫人的所有先前階段，已識別為可在 [!DNL Marketo Measure] 應用程式。</p>
+        <p>連絡人的所有先前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
-        <p>開啟 — 聯繫人</p>
+        <p>開啟 — 連絡人</p>
       </td>
     </tr>
     <tr>
@@ -4342,10 +4342,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用來從整合合作夥伴填入，將離線事件對應至網頁工作階段的Cookie ID。 要求：啟用呼叫追蹤：True</p>
+        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -4359,43 +4359,43 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否在源系統中刪除記錄。</p>
+        <p>是否刪除來源系統中的記錄。</p>
       </td>
       <td>False</td>
     </tr>
     <tr>
       <td>IS_DUPLICATE</td>
       <td>布林值</td>
-      <td>如果已設定CRM和Marketo整合，則用於去除重複記錄。 如果有重複項目，則Marketo聯絡人會標示為true。</td>
+      <td>若已設定CRM和Marketo整合，則用於去除重複記錄。 如果有重複專案，Marketo聯絡人會標示為true。</td>
       <td>False</td>
     </tr>
     <tr>
-      <td>源系統</td>
-      <td>var</td>
-      <td>指出記錄是來自CRM還是Marketo整合。</td>
+      <td>SOURCE_SYSTEM</td>
+      <td>varchar</td>
+      <td>指出記錄是否來自CRM或Marketo整合。</td>
       <td>Crm</td>
     </tr>
     <tr>
       <td>OTHER_SYSTEM_ID</td>
-      <td>var</td>
-      <td>將來自Marketo整合的人員與來自CRM整合的連絡人對應。 如果CRM和Marketo整合都存在，則值是對應的ID。</td>
+      <td>varchar</td>
+      <td>將來自Marketo整合的人員與來自CRM整合的連絡人進行對應。 如果CRM和Marketo整合都存在，則值為對應的ID。</td>
       <td>1234 / 00Q0Z00001OohgTUAR</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>3263982503087870000</p>
@@ -4408,15 +4408,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -4424,7 +4424,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_CONVERSION_RATES {#biz-conversion-rates}
 
-從源系統導入的貨幣兌換率。
+從來源系統匯入的貨幣轉換率。
 
 <table>
   <tbody>
@@ -4436,21 +4436,21 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td>記錄的唯一ID。</td>
       <td>-5942345438803054604</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td>貨幣的ID值。</td>
       <td>7493833133899044458</td>
     </tr>
     <tr>
-      <td>SOURCE_ISO_CODE</td>
-      <td>var</td>
-      <td>源系統中的貨幣ISO代碼。</td>
-      <td>USD</td>
+      <td>來源ISO代碼</td>
+      <td>varchar</td>
+      <td>來自來源系統的貨幣ISO代碼。</td>
+      <td>美元</td>
     </tr>
     <tr>
       <td>START_DATE</td>
@@ -4461,37 +4461,37 @@ _按一下影像的完整大小版本_
     <tr>
       <td>END_DATE</td>
       <td>timestamp_ntz</td>
-      <td>轉換率的下一個開始日期。 （轉換率的結束日期為end_date減1天。）</td>
+      <td>轉換率的下一個開始日期。 （「兌換率」的結束日期是end_date減去1天。）</td>
       <td>2018-09-01 00:00:00.000</td>
     </tr>
     <tr>
-      <td>轉換率</td>
-      <td>數字(38,0)</td>
-      <td>用於將幣種折換為公司幣種的匯率。</td>
+      <td>CONVERSION_RATE</td>
+      <td>number(38,0)</td>
+      <td>用於將貨幣轉換為公司貨幣的匯率。</td>
       <td>0.76728300</td>
     </tr>
     <tr>
       <td>IS_CURRENT</td>
       <td>布林值</td>
-      <td>此欄位的語義已損壞。 請勿使用。</td>
+      <td>此欄位的語意已損毀。 請勿使用。</td>
       <td>True</td>
     </tr>
     <tr>
       <td>CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>在源系統中建立記錄的日期。</td>
+      <td>在來源系統中建立記錄的日期。</td>
       <td>2019-03-30 00:54:50.000</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次在源系統中修改記錄的日期。</td>
+      <td>上次在來源系統中修改記錄的日期。</td>
       <td>2019-03-30 00:54:50.000</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>布林值</td>
-      <td>是否在源系統中考慮刪除該記錄。</td>
+      <td>是否將記錄視為已刪除來源系統。</td>
       <td>False</td>
     </tr>
     <tr>
@@ -4501,23 +4501,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_COSTS {#biz-costs}
+### 商業成本 {#biz-costs}
 
-從連線廣告帳戶匯入的成本資料或自行報告的行銷支出。
+從連結的廣告帳戶或自我報告的行銷支出匯入的成本資料。
 
 <table>
   <tbody>
@@ -4529,12 +4529,12 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>成本記錄的唯一ID。</td>
-      <td>aw.6601259029.285114995.21703163075。[AdWords Display]_2018-09-06</td>
+      <td>aw.6601259029.285114995.21703163075.[AdWords顯示]_2018-09-06</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次修改記錄的日期。</td>
       <td>2018-09-06 12:22:45.000</td>
@@ -4542,79 +4542,79 @@ _按一下影像的完整大小版本_
     <tr>
       <td>COST_DATE</td>
       <td>timestamp_ntz</td>
-      <td>成本產生日期（或歸因於）。</td>
+      <td>產生（或歸因）成本的日期。</td>
       <td>2018-09-06 00:00:00.000</td>
     </tr>
     <tr>
       <td>來源</td>
-      <td>var</td>
-      <td>報告成本的來源。</td>
+      <td>varchar</td>
+      <td>報告的成本的來源。</td>
       <td>[AdWords顯示]</td>
     </tr>
     <tr>
       <td>COST_IN_MICRO</td>
-      <td>數字(38,0)</td>
-      <td>成本數以百萬計。 使用者需將值除以1000000。</td>
+      <td>number(38,0)</td>
+      <td>以百萬為單位的成本金額。 使用者需要將該值除以1000000。</td>
       <td>1410000</td>
     </tr>
     <tr>
       <td>點按次數</td>
-      <td>數字(38,0)</td>
-      <td>該群組當天報告的點按次數。</td>
+      <td>number(38,0)</td>
+      <td>群組當天報告的點按次數。</td>
       <td>4</td>
     </tr>
     <tr>
       <td>曝光數</td>
-      <td>數字(38,0)</td>
-      <td>該日為群組報告的曝光次數。</td>
+      <td>number(38,0)</td>
+      <td>群組當天報告的曝光次數。</td>
       <td>4187</td>
     </tr>
     <tr>
-      <td>ESTIMATED_TOTAL_POSSIBLE_IMPRESSIONS</td>
-      <td>數字(38,0)</td>
-      <td>該群組當天從DCM預估的曝光總數。</td>
+      <td>ESTIMATED_TOTAL_POSIBLE_IMPRESSIONS</td>
+      <td>number(38,0)</td>
+      <td>從DCM估計當天群組的曝光總數。</td>
       <td>5024</td>
     </tr>
     <tr>
       <td>AD_PROVIDER</td>
-      <td>var</td>
-      <td>已提取成本的提供程式。</td>
+      <td>varchar</td>
+      <td>為其提取成本的提供者。</td>
       <td>Google</td>
     </tr>
     <tr>
       <td>CHANNEL_UNIQUE_ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>行銷管道的ID，建立者： [!DNL Marketo Measure].</td>
       <td>Display.Google</td>
     </tr>
     <tr>
-      <td>CHANNEL_NAME</td>
-      <td>var</td>
+      <td>頻道名稱</td>
+      <td>varchar</td>
       <td>行銷管道的名稱，由客戶在 [!DNL Marketo Measure] 應用程式。</td>
       <td>Display.Google</td>
     </tr>
     <tr>
       <td>CHANNEL_IS_AGGREGATABLE_COST</td>
       <td>布林值</td>
-      <td>指出該列是否包含可由管道加總的成本。 （亦即，若要取得管道成本，請加總此欄等於true的列）。</td>
+      <td>表示該列是否包含可由管道加總的成本。 （亦即，若要取得管道成本，加總此欄等於true的列。）</td>
       <td>False</td>
     </tr>
     <tr>
       <td>ADVERTISER_UNIQUE_ID</td>
-      <td>var</td>
-      <td>從廣告連線提取的廣告商ID，尤其是用於Doubleclick連線。</td>
+      <td>varchar</td>
+      <td>從廣告連線中拉取的廣告商ID，特別是針對Doubleclick連線。</td>
       <td>300181641</td>
     </tr>
     <tr>
-      <td>ADVERTISER_NAME</td>
-      <td>var</td>
-      <td>從廣告連線提取的廣告商名稱，尤其是用於Doubleclick連線。</td>
-      <td>[!DNL Marketo Measure] 行銷分析</td>
+      <td>advertiser_NAME</td>
+      <td>varchar</td>
+      <td>從廣告連線提取的廣告商名稱，特別適用於Doubleclick連線。</td>
+      <td>[!DNL Marketo Measure] Marketing Analytics</td>
     </tr>
     <tr>
       <td>ADVERTISER_IS_AGGREGATABLE_COST</td>
       <td>布林值</td>
-      <td>指出列是否包含可由廣告商加總的成本。 （亦即若要取得廣告商成本，請加總此欄等於true的列）。</td>
+      <td>表示該列是否包含可由廣告商加總的成本。 （也就是若要取得廣告商成本，請加總此欄等於true的列）。</td>
       <td>False</td>
     </tr>
     <tr>
@@ -4622,7 +4622,7 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的廣告帳戶ID。</p>
@@ -4633,10 +4633,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帳戶名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的廣告帳戶名稱。</p>
@@ -4653,7 +4653,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示行是否包含可由帳戶加總的成本。 （亦即，若要取得帳戶成本，請加總此欄等於true的列）。</p>
+        <p>表示資料列是否包含可由「科目」加總的「成本」。 （亦即，若要取得帳戶成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -4664,10 +4664,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的促銷活動ID。</p>
+        <p>從廣告連線中拉取的行銷活動ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995</p>
@@ -4675,16 +4675,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的促銷活動名稱。</p>
+        <p>從廣告連線中拉取的行銷活動名稱。</p>
       </td>
       <td>
-        <p>合作夥伴重新定位</p>
+        <p>合作夥伴重新目標定位</p>
       </td>
     </tr>
     <tr>
@@ -4695,7 +4695,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由促銷活動加總的成本。 （亦即，若要取得促銷活動成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含可由「促銷活動」加總的「成本」。 （也就是若要取得促銷活動成本，請加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>True</p>
@@ -4706,10 +4706,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的廣告群組ID。</p>
+        <p>從廣告連線中拉取的廣告群組ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.21703163075</p>
@@ -4717,13 +4717,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的廣告群組名稱。</p>
+        <p>從廣告連線中拉取的廣告群組名稱。</p>
       </td>
       <td>
         <p>歸因管理軟體 |片語</p>
@@ -4737,7 +4737,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由廣告群組加總的成本。 （亦即，若要取得廣告群組成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含成本，其可加總為廣告群組。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>False</p>
@@ -4748,7 +4748,7 @@ _按一下影像的完整大小版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的廣告ID。</p>
@@ -4762,13 +4762,13 @@ _按一下影像的完整大小版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的廣告名稱。</p>
       </td>
       <td>
-        <p>廣告名稱：Ad3-320x50.gif;320 x 50</p>
+        <p>廣告名稱： Ad3-320x50.gif； 320 x 50</p>
       </td>
     </tr>
     <tr>
@@ -4779,7 +4779,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由廣告加總的成本。 （亦即若要取得廣告成本，請加總此欄等於true的列）。</p>
+        <p>指出列是否包含可加總為廣告的成本。 （也就是若要取得廣告成本，請加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -4790,10 +4790,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的創作ID。</p>
+        <p>從廣告連線提取的創意ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.51749608028.266050115160</p>
@@ -4801,16 +4801,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>創意名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的創意素材名稱。</p>
+        <p>從廣告連線提取的創意名稱。</p>
       </td>
       <td>
-        <p>2019年Gartner幻方圖</p>
+        <p>Gartner 2019年魔力象限</p>
       </td>
     </tr>
     <tr>
@@ -4821,7 +4821,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含「成本」，可由創意素材加總。 （亦即若要取得創作成本，請加總此欄等於true的列）。</p>
+        <p>指出列是否包含可由Creative加總的成本。 （亦即若要取得創意成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -4832,7 +4832,7 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的關鍵字ID。</p>
@@ -4846,7 +4846,7 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的關鍵字名稱。</p>
@@ -4863,7 +4863,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示行是否包含可用關鍵字加總的成本。 （亦即，若要取得「關鍵字成本」，請加總此欄等於true的列。）</p>
+        <p>指示列是否包含可加總為關鍵字的成本。 （亦即，若要取得關鍵字成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -4874,10 +4874,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的版位ID。</p>
+        <p>從廣告連線提取之刊登版位的ID。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -4888,13 +4888,13 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告連線提取的版位名稱。</p>
+        <p>從廣告連線提取的位置名稱。</p>
       </td>
       <td>
-        <p>路障</p>
+        <p>障礙</p>
       </td>
     </tr>
     <tr>
@@ -4905,7 +4905,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示行是否包含「成本」(Cost)，可通過「放置」(Placement)加總。 （亦即，若要取得版位成本，請加總此欄等於true的列）。</p>
+        <p>指示列是否包含可由「位置」加總的「成本」。 （亦即，若要取得版位成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -4916,7 +4916,7 @@ _按一下影像的完整大小版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的網站ID。</p>
@@ -4927,10 +4927,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>網站名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從廣告連線提取的網站名稱。</p>
@@ -4947,7 +4947,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含成本，可由網站加總。 （亦即，若要取得網站成本，請加總此欄等於true的列）。</p>
+        <p>指出列是否包含可加總為網站的成本。 （亦即，若要取得網站成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -4961,7 +4961,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否在源系統中考慮刪除該記錄。</p>
+        <p>是否將記錄視為已刪除來源系統。</p>
       </td>
       <td>
         <p>False</p>
@@ -4969,21 +4969,21 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ISO_CURRENCY_CODE</td>
-      <td>var</td>
-      <td>貨幣的ISO代碼，從源系統導入。</td>
-      <td>USD</td>
+      <td>varchar</td>
+      <td>貨幣的ISO代碼，從來源系統匯入。</td>
+      <td>美元</td>
     </tr>
     <tr>
       <td>SOURCE_ID</td>
-      <td>var</td>
-      <td>記錄源的來源ID。</td>
+      <td>varchar</td>
+      <td>記錄來源的ID。</td>
       <td>aw.3284209</td>
     </tr>
     <tr>
       <td>ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>6008900572523230000</td>
     </tr>
@@ -4991,62 +4991,62 @@ _按一下影像的完整大小版本_
       <td>
         <p>ACCOUNT_ROW_KEY</p>
       </td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>SITE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>數字(38,0)</td>
-      <td>記錄的貨幣ID值。</td>
+      <td>number(38,0)</td>
+      <td>記錄貨幣的ID值。</td>
       <td>
         <p>-3253183181619994799</p>
       </td>
@@ -5058,23 +5058,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CREATIVES {#biz-creatives}
+### BIZ_CREATIVE {#biz-creatives}
 
-從任何連線的廣告帳戶匯入的創作。
+從任何連線的廣告帳戶匯入的創意內容。
 
 <table>
   <tbody>
@@ -5097,7 +5097,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>創意的唯一ID。</p>
@@ -5111,9 +5111,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來源系統的創作ID。</td>
+      <td>來源系統中的創作ID。</td>
       <td>
         <p>10426699711</p>
       </td>
@@ -5123,10 +5123,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入創作的廣告帳戶ID。</p>
+        <p>從中匯入創意的廣告帳戶ID。</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -5135,10 +5135,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入創作的廣告帳戶名稱。</p>
+        <p>從中匯入創意的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -5149,10 +5149,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意廣告商的ID，尤其是Doubleclick。</p>
+        <p>廣告商ID，特別適用於Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -5160,16 +5160,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意廣告商的名稱，特別是Doubleclick的名稱。</p>
+        <p>廣告商的名稱，適用於Creative （尤其是Doubleclick）。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 行銷分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -5177,22 +5177,22 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意廣告群組ID。</p>
+        <p>適用於創意的廣告群組ID。</p>
       </td>
       <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意廣告群組的名稱。</p>
+        <p>創意內容的廣告群組名稱。</p>
       </td>
       <td>廣告B的廣告集</td>
     </tr>
@@ -5201,7 +5201,7 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>創意內容促銷活動ID。</p>
@@ -5215,10 +5215,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意素材的促銷活動名稱。</p>
+        <p>創意內容的行銷活動名稱。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5232,7 +5232,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>創意素材在來源系統中是否仍處於作用中狀態。</p>
+        <p>無論創意內容在來源系統中是否仍為作用中。</p>
       </td>
       <td>
         <p>True</p>
@@ -5246,7 +5246,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否已在源系統中刪除創作。</p>
+        <p>是否已在來源系統中刪除Creative。</p>
       </td>
       <td>
         <p>False</p>
@@ -5254,7 +5254,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5274,7 +5274,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:36:25.000</p>
@@ -5285,10 +5285,10 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的創作名稱。</p>
+        <p>來源系統中的創意名稱。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5302,7 +5302,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新創意內容 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新創意 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -5314,23 +5314,23 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「創意」。</p>
+        <p>此表格的主要物件或實體。 在此案例中，「創意」。</p>
       </td>
       <td>
-        <p>創意</p>
+        <p>Creative</p>
       </td>
     </tr>
     <tr>
@@ -5338,10 +5338,10 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意廣告提供者的名稱。</p>
+        <p>創意內容的廣告提供者名稱。</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -5352,10 +5352,10 @@ _按一下影像的完整大小版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL的目前版本，包含所有標籤。</p>
+        <p>包含所有標籤的URL目前版本。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td>
@@ -5367,10 +5367,10 @@ _按一下影像的完整大小版本_
         <p>URL_DISPLAY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意內容上顯示的簡短易記URL。</p>
+        <p>顯示在Creative上的簡短易記URL。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5381,7 +5381,7 @@ _按一下影像的完整大小版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一個值。</p>
@@ -5394,22 +5394,22 @@ _按一下影像的完整大小版本_
         <p>URL_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL的裝飾項目 [!DNL Marketo Measure] 參數。</p>
+        <p>要裝飾哪個URL [!DNL Marketo Measure] 引數。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_STROMED</p>
+        <p>URL_SHORTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>創意內容上顯示的簡短易記URL。 (僅用於LinkedIn廣告。)</td>
+      <td>顯示在Creative上的簡短易記URL。 (僅適用於LinkedIn Ads)。</td>
       <td></td>
     </tr>
     <tr>
@@ -5417,10 +5417,10 @@ _按一下影像的完整大小版本_
         <p>AD_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創作的類型，可以是文字或顯示</p>
+        <p>創意型別，可以是文字或顯示</p>
       </td>
       <td>
         <p>文字</p>
@@ -5445,10 +5445,10 @@ _按一下影像的完整大小版本_
         <p>標題</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意素材的最上層（標題）</p>
+        <p>創意的頂線（標題）</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5459,13 +5459,13 @@ _按一下影像的完整大小版本_
         <p>DESCRIPTION_LINE_1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意素材第一行的副本</p>
+        <p>創意內容第一行的副本</p>
       </td>
       <td>
-        <p>與收入導向的B2B行銷人員交流並學習。 加入社群。</p>
+        <p>向收入導向的B2B行銷人員溝通並學習。 加入社群。</p>
       </td>
     </tr>
     <tr>
@@ -5473,13 +5473,13 @@ _按一下影像的完整大小版本_
         <p>DESCRIPTION_LINE_2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>創意素材第二行的副本</p>
+        <p>創意內容第二行的副本</p>
       </td>
       <td>
-        <p>您使用Analytics嗎？ 今天請留言！</p>
+        <p>您是否使用Analytics？ 立即發表評論！</p>
       </td>
     </tr>
     <tr>
@@ -5487,7 +5487,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>診斷欄位，用於內部處理。</td>
       <td></td>
@@ -5497,7 +5497,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>診斷欄位，用於內部處理。</td>
       <td></td>
@@ -5507,7 +5507,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>診斷欄位，用於內部處理。</td>
       <td></td>
@@ -5517,7 +5517,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>診斷欄位，用於內部處理。</p>
@@ -5528,16 +5528,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>共用(_U)</p>
+        <p>SHARE_URN</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>共用Id。 (僅用於LinkedIn廣告。)</p>
+        <p>共用Id。 (僅適用於LinkedIn Ads)。</p>
       </td>
       <td>
-        <p>回歸:li:共用：6376987561897848832</p>
+        <p>urn:li:共用：6376987561897848832</p>
       </td>
     </tr>
     <tr>
@@ -5545,10 +5545,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>6008900572523230000</td>
     </tr>
@@ -5559,15 +5559,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5575,7 +5575,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_CRM_EVENTS {#biz-crm-events}
 
-從源系統導入的事件。 如果禁用「活動同步」，此表將為空。
+從來源系統匯入的事件。 如果停用「活動同步」，此表格將會是空的。
 
 <table>
   <tbody>
@@ -5598,10 +5598,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的事件ID。</p>
+        <p>來源系統中的事件ID。</p>
       </td>
       <td>
         <p>00U3100000VLUnEEAX</p>
@@ -5615,7 +5615,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立事件的日期。</p>
+        <p>從來源系統建立事件的日期。</p>
       </td>
       <td>
         <p>2016-12-12 19:32:53.000</p>
@@ -5623,13 +5623,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>上次從源系統修改事件的日期。</p>
+        <p>上次從來源系統修改事件的日期。</p>
       </td>
       <td>
         <p>2018-09-03 08:39:51.000</p>
@@ -5637,13 +5637,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與事件相關聯的銷售機會的ID。</p>
+        <p>與事件相關聯的銷售機會ID。</p>
       </td>
       <td>
         <p>00Q0Z000013eVrxUAE</p>
@@ -5651,13 +5651,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_EMAIL</p>
+        <p>潛在客戶電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與事件相關聯的銷售機會的電子郵件。</p>
+        <p>與事件相關聯之潛在客戶的電子郵件。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5668,10 +5668,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與事件關聯的聯繫人的ID。</p>
+        <p>與事件相關之連絡人的ID。</p>
       </td>
       <td>
         <p>0030Z00003OyjbOQAR</p>
@@ -5682,10 +5682,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與事件關聯之連絡人的電子郵件。</p>
+        <p>與事件相關連絡人的電子郵件。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5696,10 +5696,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用來從整合合作夥伴填入，將離線事件對應至網頁工作階段的Cookie ID。 要求：啟用呼叫追蹤：True</p>
+        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5707,13 +5707,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_TYPE</p>
+        <p>活動型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活動類型名稱，來自源系統。</p>
+        <p>來源系統中的活動型別名稱。</p>
       </td>
       <td>
         <p>電子郵件</p>
@@ -5727,7 +5727,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>事件的開始日期，用於決定接觸點日期的其中一個選項。</p>
+        <p>事件的開始日期（用來決定接觸點日期的其中一個選項）。</p>
       </td>
       <td>
         <p>2016-12-16 19:30:00.000</p>
@@ -5741,7 +5741,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>事件的結束日期，用於決定接觸點日期的其中一個選項。</p>
+        <p>事件的結束日期，用來決定接觸點日期的其中一個選項。</p>
       </td>
       <td>
         <p>2016-12-16 21:30:00.000</p>
@@ -5754,16 +5754,16 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>是否在源系統中考慮刪除該記錄。</td>
+      <td>是否將記錄視為已刪除來源系統。</td>
       <td>
         <p>False</p>
       </td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Contact_Type__c":"CMO","Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Contact_Type__c"："CMO"，"Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -5772,15 +5772,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5788,7 +5788,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_CRM_TASKS {#biz-crm-tasks}
 
-從源系統導入的任務。 如果啟用「活動同步」或「呼叫追蹤」，則會填入此表格。
+從來源系統匯入的任務。 如果啟用活動同步或呼叫追蹤功能，則會填入此表格。
 
 <table>
   <tbody>
@@ -5811,10 +5811,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的任務ID。</p>
+        <p>來自來源系統的工作ID。</p>
       </td>
       <td>
         <p>00T0Z00004Rf62rUAB</p>
@@ -5828,7 +5828,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立任務的日期。</p>
+        <p>從來源系統建立任務的日期。</p>
       </td>
       <td>
         <p>2018-08-27 18:30:25.000</p>
@@ -5836,13 +5836,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>上次從源系統修改任務的日期。</p>
+        <p>上次從來源系統修改工作的日期。</p>
       </td>
       <td>
         <p>2018-08-27 18:31:53.000</p>
@@ -5850,13 +5850,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與任務關聯的銷售機會的ID。</p>
+        <p>與Task相關聯之Lead的Id。</p>
       </td>
       <td>
         <p>00Q0Z000013eVrxUAE</p>
@@ -5864,13 +5864,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_EMAIL</p>
+        <p>潛在客戶電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與Task關聯的Lead的電子郵件。</p>
+        <p>與Task相關聯之Lead的電子郵件。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5881,10 +5881,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與任務關聯的聯繫人的ID。</p>
+        <p>與任務相關聯的連絡人ID。</p>
       </td>
       <td>
         <p>00331000038uGfhAAE</p>
@@ -5895,10 +5895,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與任務關聯的聯繫人的電子郵件。</p>
+        <p>與任務關聯的連絡人的電子郵件。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5909,10 +5909,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用來從整合合作夥伴填入，將離線事件對應至網頁工作階段的Cookie ID。 要求：啟用呼叫追蹤：True</p>
+        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5920,13 +5920,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_TYPE</p>
+        <p>活動型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活動類型名稱，來自源系統。</p>
+        <p>來源系統中的活動型別名稱。</p>
       </td>
       <td>
         <p>呼叫</p>
@@ -5934,13 +5934,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_DATE</p>
+        <p>活動日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>任務發生的日期，用於確定接觸點日期的其中一個選項。</p>
+        <p>任務發生日期，用來決定接觸點日期的其中一個選項。</p>
       </td>
       <td>
         <p>2018-08-27 07:00:00.000</p>
@@ -5953,16 +5953,16 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>是否在源系統中考慮刪除該記錄。</td>
+      <td>是否將記錄視為已刪除來源系統。</td>
       <td>
         <p>False</p>
       </td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -5971,23 +5971,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CURRENCIES {#biz-currencies}
+### 商業貨幣(_C) {#biz-currencies}
 
-所有ISO貨幣的表。
+所有ISO貨幣的表格。
 
 <table>
   <tbody>
@@ -6001,15 +6001,15 @@ _按一下影像的完整大小版本_
       <td>
         <p>ID</p>
       </td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td>貨幣記錄的唯一ID。</td>
       <td>139474809945095870</td>
     </tr>
     <tr>
       <td>ISO_CODE</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>貨幣的ISO代碼。</td>
-      <td>USD</td>
+      <td>美元</td>
     </tr>
     <tr>
       <td>IS_CORPORATE</td>
@@ -6022,19 +6022,19 @@ _按一下影像的完整大小版本_
     <tr>
       <td>IS_ENABLED</td>
       <td>布林值</td>
-      <td>指定是否在源系統中啟用貨幣。</td>
+      <td>指定在來源系統中是否啟用貨幣。</td>
       <td>False</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次在中建立記錄的日期 [!DNL Marketo Measure].</td>
+      <td>上次修改記錄的日期 [!DNL Marketo Measure].</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE_CRM</td>
       <td>timestamp_ntz</td>
-      <td>上次在源系統中修改記錄的日期。</td>
+      <td>上次在來源系統中修改記錄的日期。</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
@@ -6046,25 +6046,25 @@ _按一下影像的完整大小版本_
     <tr>
       <td>CREATED_DATE_CRM</td>
       <td>timestamp_ntz</td>
-      <td>在源系統中建立記錄的日期。</td>
+      <td>在來源系統中建立記錄的日期。</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
       <td>ISO_NUMERIC</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td>ISO標準數值代碼。</td>
       <td>048</td>
     </tr>
     <tr>
       <td>指數</td>
-      <td>數字(38,0)</td>
-      <td>最小定義貨幣單位和整個貨幣單位之間的小數位數。</td>
+      <td>number(38,0)</td>
+      <td>定義的最小貨幣單位與完整貨幣單位之間的小數位數。</td>
       <td>2</td>
     </tr>
     <tr>
       <td>名稱</td>
-      <td>var</td>
-      <td>貨幣名稱。</td>
+      <td>varchar</td>
+      <td>貨幣的名稱。</td>
       <td>阿根廷比索</td>
     </tr>
     <tr>
@@ -6074,15 +6074,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6090,7 +6090,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_CUSTOMER_AB_TESTS {#biz-customer-ab-tests}
 
-已記錄AB測試。 如果未啟用AB測試，此表格將會空白。
+已記錄AB測試。 如果未啟用AB測試，此表格將為空白。
 
 <table>
   <tbody>
@@ -6111,10 +6111,10 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相關訪客id的第一個Cookie ID。</p>
+        <p>相關訪客ID的第一個Cookie ID。</p>
       </td>
       <td>v_36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
@@ -6123,7 +6123,7 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>記錄事件時記錄的Cookie ID。</p>
@@ -6138,20 +6138,20 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>記錄聊天的日期。</p>
+        <p>聊天記錄的日期。</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>IP_ADDRESS</td>
+      <td>IP位址</td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>記錄實驗時記錄的IP位址。</p>
@@ -6160,22 +6160,22 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>EXPERIENCE_ID</p>
+        <p>EXPERIMENT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從AB測試平台提取的實驗id。</p>
+        <p>從AB測試平台提取的實驗ID。</p>
       </td>
       <td>123</td>
     </tr>
     <tr>
       <td>
-        <p>EXPERIENCE_NAME</p>
+        <p>實驗名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從AB測試平台提取的實驗名稱。</p>
@@ -6187,10 +6187,10 @@ _按一下影像的完整大小版本_
         <p>VARIATION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從AB測試平台提取實驗的變異id。</p>
+        <p>從AB測試平台提取的實驗變數ID。</p>
       </td>
       <td>456</td>
     </tr>
@@ -6199,7 +6199,7 @@ _按一下影像的完整大小版本_
         <p>VARIATION_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從AB測試平台提取的實驗變數名稱。</p>
@@ -6211,10 +6211,10 @@ _按一下影像的完整大小版本_
         <p>ABTEST_USER_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從AB測試平台提取接受實驗的使用者ID。</p>
+        <p>從AB測試平台提取實驗之使用者的識別碼。</p>
       </td>
       <td>584d64et</td>
     </tr>
@@ -6226,7 +6226,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>記錄是否被刪除，用於診斷和審核。</p>
+        <p>記錄是否已刪除，用於診斷和稽核。</p>
       </td>
       <td>False</td>
     </tr>
@@ -6237,15 +6237,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6253,7 +6253,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_CUSTOMER_EVENTS {#biz-customer-events}
 
-已使用Javascript中的自訂事件記錄的Web事件。 如果 [!DNL Marketo Measure] 未啟用事件。
+已使用Javascript中的自訂事件記錄的網頁事件。 若符合下列條件，此表格將為空白： [!DNL Marketo Measure] 未啟用事件。
 
 <table>
   <tbody>
@@ -6274,10 +6274,10 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相關訪客id的第一個Cookie ID。</p>
+        <p>相關訪客ID的第一個Cookie ID。</p>
       </td>
       <td>v_36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
@@ -6286,10 +6286,10 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從自訂javascript觸發事件時記錄的Cookie ID。</p>
+        <p>從自訂JavaScript觸發事件時記錄的Cookie ID。</p>
       </td>
       <td>36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
@@ -6301,22 +6301,22 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從自訂Javascript觸發事件的日期。</p>
+        <p>從自訂JavaScript觸發事件的日期。</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期</td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP位址</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從自訂javascript觸發事件時記錄的IP位址。</p>
@@ -6325,10 +6325,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>代碼</p>
+        <p>索引鍵</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>為從自訂JavaScript觸發的事件指定的名稱。</p>
@@ -6340,12 +6340,12 @@ _按一下影像的完整大小版本_
         <p>值</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>指定給從自訂Javascript觸發之事件的值。</p>
+        <p>為從自訂JavaScript觸發的事件指定的值。</p>
       </td>
-      <td>已檢視75%</td>
+      <td>75%已檢視</td>
     </tr>
     <tr>
       <td>
@@ -6355,7 +6355,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>記錄是否被刪除，用於診斷和審核。</p>
+        <p>記錄是否已刪除，用於診斷和稽核。</p>
       </td>
       <td>False</td>
     </tr>
@@ -6366,15 +6366,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6382,7 +6382,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_CUSTOM_LANDING_PAGES {#biz-custom-landing-pages}
 
-從任何連線的廣告帳戶下載的登錄頁面。
+從任何已連線的廣告帳戶下載的登陸頁面。
 
 <table>
   <tbody>
@@ -6403,7 +6403,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>記錄的唯一ID。</p>
@@ -6415,7 +6415,7 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6425,9 +6425,9 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>匯入登錄頁面的廣告帳戶ID。</td>
+      <td>從中匯入登入頁面的廣告帳戶ID。</td>
       <td></td>
     </tr>
     <tr>
@@ -6435,9 +6435,9 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>匯入登錄頁面的廣告帳戶名稱</td>
+      <td>從中匯入登入頁面的廣告帳戶名稱</td>
       <td></td>
     </tr>
     <tr>
@@ -6445,25 +6445,25 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的廣告商ID，特別是Doubleclick。</p>
+        <p>登陸頁面（尤其是Doubleclick）的廣告商ID。</p>
       </td>
       <td>300181641</td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的廣告商名稱，尤其是Doubleclick的廣告商名稱。</p>
+        <p>登陸頁面的廣告商名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -6471,20 +6471,20 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>登錄頁面的廣告群組ID。</td>
+      <td>登陸頁面之廣告群組的ID。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的廣告群組名稱。</p>
+        <p>登陸頁面的廣告群組名稱。</p>
       </td>
       <td></td>
     </tr>
@@ -6493,10 +6493,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的促銷活動ID。</p>
+        <p>登入頁面之促銷活動的ID。</p>
       </td>
       <td></td>
     </tr>
@@ -6505,10 +6505,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的促銷活動名稱。</p>
+        <p>登入頁面促銷活動的名稱。</p>
       </td>
       <td></td>
     </tr>
@@ -6534,13 +6534,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>行的上次修改日期</p>
+        <p>列的上次修改日期</p>
       </td>
       <td></td>
     </tr>
@@ -6559,7 +6559,7 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6579,17 +6579,17 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6599,7 +6599,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6609,7 +6609,7 @@ _按一下影像的完整大小版本_
         <p>AD_DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6619,7 +6619,7 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6629,7 +6629,7 @@ _按一下影像的完整大小版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6639,7 +6639,7 @@ _按一下影像的完整大小版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6651,15 +6651,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6667,7 +6667,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_EMAIL_TO_VISITOR_IDS {#biz-email-to-visitor-ids}
 
-電子郵件地址和訪客ID的對應表格。
+電子郵件地址和訪客ID的對映表。
 
 <table>
   <tbody>
@@ -6687,7 +6687,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>記錄的唯一ID。</td>
       <td>
         <p>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</p>
@@ -6698,10 +6698,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從工作階段系結至指定訪客ID的已知電子郵件地址</p>
+        <p>繫結至工作階段中特定訪客ID的已知電子郵件地址</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -6712,7 +6712,7 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>相關訪客ID的第一個Cookie</p>
@@ -6723,13 +6723,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>行的上次修改日期</p>
+        <p>列的上次修改日期</p>
       </td>
       <td>
         <p>2018-08-14 23:55:03.000</p>
@@ -6743,7 +6743,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>行的建立日期</p>
+        <p>列的建立日期</p>
       </td>
       <td>
         <p>2018-08-14 23:55:03.000</p>
@@ -6757,7 +6757,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>記錄是否被視為已刪除，用於診斷和審核。</p>
+        <p>是否將該記錄視為已刪除，用於診斷和稽核。</p>
       </td>
       <td>
         <p>False</p>
@@ -6766,7 +6766,7 @@ _按一下影像的完整大小版本_
     <tr>
       <td>IS_IGNORE</td>
       <td>布林值</td>
-      <td>指出電子郵件或訪客ID是否被視為雜訊或垃圾訊息，用於內部處理。</td>
+      <td>表示電子郵件或訪客ID是否被視為雜訊或垃圾郵件，用於內部處理。</td>
       <td>False</td>
     </tr>
     <tr>
@@ -6776,23 +6776,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_FACTS {#biz-facts}
+### 商務資訊(_I) {#biz-facts}
 
-結合在一起：曝光數、頁面檢視、造訪、表單提交、使用者接觸點、接觸點(BT)、歸因接觸點(BAT)和成本資料。 內部用於支援 [!DNL Marketo Measure] 報告。
+將曝光數、頁面檢視數、造訪數、表單提交數、使用者接觸點、接觸點(BT)、歸因接觸點(BAT)和成本資料結合在一起。 用於內部支援 [!DNL Marketo Measure] 報告。
 
 <table>
   <tbody>
@@ -6804,80 +6804,80 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>COST_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「成本」表。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結至Costs表格。</td>
       <td>2672629811884560039</td>
     </tr>
     <tr>
       <td>ATP_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於加入歸因接觸點表格。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結「歸因接觸點」表格。</td>
       <td>2672629811884560039</td>
     </tr>
     <tr>
       <td>TP_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於加入接觸點或使用者接觸點表格。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結至接觸點或使用者接觸點表格。</td>
       <td>5028390208679093800</td>
     </tr>
     <tr>
       <td>PAGE_VIEW_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於加入「頁面檢視」表格。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結「頁面檢視」表格。</td>
       <td>-8044063242541720607</td>
     </tr>
     <tr>
       <td>SESSION_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到會話表。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結「階段作業」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>var</td>
-      <td>相關訪客id的第一個Cookie ID。</td>
+      <td>varchar</td>
+      <td>相關訪客ID的第一個Cookie ID。</td>
       <td>v_530d8334c455460df0d48f48270a4b23</td>
     </tr>
     <tr>
       <td>COOKIE_ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>記錄事件時記錄的Cookie ID。</td>
       <td>530d8334c455460df0d48f48270a4b23</td>
     </tr>
     <tr>
       <td>FORM_SUBMIT_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「表單提交」表。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結至表單提交表格。</td>
       <td>-8659572802702769670</td>
     </tr>
     <tr>
       <td>IMPRESSION_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於加入「曝光數」表格。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結至「曝光數」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到Url表。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結Url表格。</td>
       <td>4079876040770132443</td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到Url表。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結Url表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到Url表。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結Url表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>AD_PROVIDER_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於加入「廣告提供者」表格。</td>
+      <td>number(38,0)</td>
+      <td>用於聯結至廣告提供者表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
@@ -6885,10 +6885,10 @@ _按一下影像的完整大小版本_
         <p>CHANNEL_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於連接到「通道」表。</p>
+        <p>用於聯結至「管道」表格。</p>
       </td>
       <td>
         <p>-1921844114032355934</p>
@@ -6899,10 +6899,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於加入「廣告促銷活動」表格。</p>
+        <p>用於聯結Ad Campaigns表格。</p>
       </td>
       <td>
         <p>252687814634577606</p>
@@ -6913,10 +6913,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於連接到「關鍵字」表。</p>
+        <p>用於聯結至關鍵字表格。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6927,10 +6927,10 @@ _按一下影像的完整大小版本_
         <p>AD_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於連接到「廣告」表。</p>
+        <p>用於聯結至Ads表格。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6941,10 +6941,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於加入「廣告群組」表格。</p>
+        <p>用於聯結至「廣告群組」表格。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6955,10 +6955,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於聯接到創作元素表。</p>
+        <p>用於聯結至「創意」表格。</p>
       </td>
       <td>
         <p>-2333871387956621113</p>
@@ -6969,10 +6969,10 @@ _按一下影像的完整大小版本_
         <p>SITE_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於加入Sites表。</p>
+        <p>用於聯結至Sites表格。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6983,10 +6983,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於加入「廣告商」表格。</p>
+        <p>用於聯結至廣告商表格。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6997,10 +6997,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於加入「廣告帳戶」表格。</p>
+        <p>用於聯結Ad Accounts表格。</p>
       </td>
       <td>
         <p>1825012532740770032</p>
@@ -7011,10 +7011,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>用於連接到「版位」(Placements)表。</p>
+        <p>用於聯結至「位置」表格。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -7022,121 +7022,121 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CATEGORY_01_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_02_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_03_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_04_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_05_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_06_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_07_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_08_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_09_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_10_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_11_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_12_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_13_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_14_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_15_KEY</td>
-      <td>數字(38,0)</td>
-      <td>用於連接到「段」表。</td>
+      <td>numbmer(38,0)</td>
+      <td>用於聯結至「區段」表格。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
-      <td>類型</td>
-      <td>數字(38,0)</td>
-      <td>指示行的數值類型。 1 =購買者歸因接觸點2 =成本3 =購買者接觸點4 =使用者接觸點5 =頁面檢視6 =工作階段7 =表單提交8 =曝光</td>
+      <td>型別</td>
+      <td>number(38,0)</td>
+      <td>表示列的事實型別。 1 =採購員歸因接觸點2 =成本3 =採購員接觸點4 =使用者接觸點5 =頁面檢視6 =工作階段7 =表單提交8 =曝光數</td>
       <td>3</td>
     </tr>
     <tr>
       <td>日期</td>
       <td>date</td>
-      <td>事件發生的日期。</td>
+      <td>事件發生日期。</td>
       <td>2018-08-28</td>
     </tr>
     <tr>
       <td>時間戳記</td>
       <td>timestamp_ntz</td>
-      <td>事件發生的日期和時間。</td>
+      <td>事件發生日期和時間。</td>
       <td>2018-08-28 19:39:15.000</td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>上次修改行的日期。</p>
+        <p>上次修改列的日期。</p>
       </td>
       <td>
         <p>2018-08-29 00:46:47.000</p>
@@ -7147,10 +7147,10 @@ _按一下影像的完整大小版本_
         <p>COST_IN_MICRO</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>成本數以百萬計。 使用者需將值除以1000000。</p>
+        <p>以百萬為單位的成本金額。 使用者需要將該值除以1000000。</p>
       </td>
       <td>
         <p>27370000</p>
@@ -7161,10 +7161,10 @@ _按一下影像的完整大小版本_
         <p>曝光數</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>該日為群組報告的曝光次數。</p>
+        <p>群組當天報告的曝光次數。</p>
       </td>
       <td>
         <p>340</p>
@@ -7175,10 +7175,10 @@ _按一下影像的完整大小版本_
         <p>點按次數</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>該群組當天報告的點按次數。</p>
+        <p>群組當天報告的點按次數。</p>
       </td>
       <td>4</td>
     </tr>
@@ -7187,10 +7187,10 @@ _按一下影像的完整大小版本_
         <p>FIRST_CLICK_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為是首次接觸，所以分配給此接觸點的計算百分比。</p>
+        <p>分配給此接觸點的已計算百分比，因為這是首次接觸。</p>
       </td>
       <td>0.0000000000000000000</td>
     </tr>
@@ -7199,10 +7199,10 @@ _按一下影像的完整大小版本_
         <p>LAST_ANON_CLICK_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為這是銷售機會建立接觸。</p>
+        <p>分配給此接觸點的已計算百分比，因為這是銷售機會建立接觸。</p>
       </td>
       <td>100.0000000000000000000</td>
     </tr>
@@ -7211,10 +7211,10 @@ _按一下影像的完整大小版本_
         <p>U_SHAPE_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是U形接觸的一部分。</p>
+        <p>由於此接觸點為U形接觸的一部分，因此獲分配至此接觸點的計算百分比。</p>
       </td>
       <td>
         <p>100.0000000000000000000</p>
@@ -7222,13 +7222,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>W_SHAPE_PERCENTAGE</p>
+        <p>W_SHAPE_PERCENT</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是W形接觸的一部分。</p>
+        <p>由於此接觸點為W形接觸的一部分，因此獲分配至此接觸點的已計算百分比。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7239,10 +7239,10 @@ _按一下影像的完整大小版本_
         <p>FULL_PATH_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為此接觸點是完整路徑模型的一部分，所以分配給該接觸點的計算百分比。</p>
+        <p>因為此接觸點是完整路徑模型的一部分，所以會分配至此接觸點的計算百分比。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7253,10 +7253,10 @@ _按一下影像的完整大小版本_
         <p>CUSTOM_MODEL_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為此接觸點是自訂模型的一部分，而分配給該接觸點的計算百分比。</p>
+        <p>分配給此接觸點的已計算百分比，因為此接觸點是自訂模型的一部分。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7264,13 +7264,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>金額</p>
+        <p>數量</p>
       </td>
       <td>
-        <p>數字(38,8)</p>
+        <p>number(38,8)</p>
       </td>
       <td>
-        <p>來源系統的機會量。</p>
+        <p>來自來源系統的「商機」數量。</p>
       </td>
       <td>
         <p>42000.00000000</p>
@@ -7284,7 +7284,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至分類為won的階段。</p>
+        <p>表示商機是否已移至分類為成功的階段。</p>
       </td>
       <td>
         <p>False</p>
@@ -7298,7 +7298,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至分類為已結的階段。</p>
+        <p>表示商機是否已移至分類為已關閉的階段。</p>
       </td>
       <td>
         <p>False</p>
@@ -7306,13 +7306,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的機會ID。</p>
+        <p>來源系統中的機會ID。</p>
       </td>
       <td>
         <p>0060Z00000nFEfEQAW</p>
@@ -7326,7 +7326,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立Opportunity的日期。</p>
+        <p>從來源系統建立機會的日期。</p>
       </td>
       <td>
         <p>2018-08-31 15:45:47.000</p>
@@ -7340,7 +7340,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統關閉Opportunity的日期。</p>
+        <p>來源系統中的商機的結束日期。</p>
       </td>
       <td>
         <p>2018-12-31 07:00:00.000</p>
@@ -7348,13 +7348,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CONTACT_CREATED_DATE</p>
+        <p>連絡人建立日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立聯繫人記錄的日期。</p>
+        <p>從來源系統建立連絡人記錄的日期。</p>
       </td>
       <td>2017-04-28 00:21:52.000</td>
     </tr>
@@ -7363,10 +7363,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從源系統聯繫Id。</p>
+        <p>來源系統的聯絡人ID。</p>
       </td>
       <td>
         <p>0030Z00003ORVJmQAP</p>
@@ -7374,19 +7374,19 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>電子郵件</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>記錄的電子郵件地址。</td>
       <td>personb@adobe.com</td>
     </tr>
     <tr>
       <td>
-        <p>LEAD_CREATED_DATE</p>
+        <p>潛在客戶建立日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立銷售機會記錄的日期。</p>
+        <p>從來源系統建立Lead記錄的日期。</p>
       </td>
       <td>
         <p>2017-04-28 00:21:52.000</p>
@@ -7394,13 +7394,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來源系統的銷售機會ID。</p>
+        <p>來源系統中的潛在客戶ID。</p>
       </td>
       <td>
         <p>00Q3100001GMPIsEAP</p>
@@ -7414,7 +7414,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由廣告加總的成本。 （亦即若要取得廣告成本，請加總此欄等於true的列）。</p>
+        <p>指出列是否包含可加總為廣告的成本。 （也就是若要取得廣告成本，請加總此欄等於true的列。）</p>
       </td>
       <td>False</td>
     </tr>
@@ -7426,7 +7426,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由廣告商加總的成本。 （亦即若要取得廣告商成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含可由廣告商加總的成本。 （也就是若要取得廣告商成本，請加總此欄等於true的列）。</p>
       </td>
       <td>True</td>
     </tr>
@@ -7438,7 +7438,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示行是否包含可由帳戶加總的成本。 （亦即，若要取得帳戶成本，請加總此欄等於true的列）。</p>
+        <p>表示資料列是否包含可由「科目」加總的「成本」。 （亦即，若要取得帳戶成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -7452,7 +7452,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由廣告群組加總的成本。 （亦即，若要取得廣告群組成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含成本，其可加總為廣告群組。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>False</p>
@@ -7466,7 +7466,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由促銷活動加總的成本。 （亦即，若要取得促銷活動成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含可由「促銷活動」加總的「成本」。 （也就是若要取得促銷活動成本，請加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>True</p>
@@ -7480,7 +7480,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含可由管道加總的成本。 （亦即，若要取得管道成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含可由管道加總的成本。 （亦即，若要取得管道成本，加總此欄等於true的列。）</p>
       </td>
       <td>False</td>
     </tr>
@@ -7492,7 +7492,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含「成本」，可由創意素材加總。 （亦即若要取得創作成本，請加總此欄等於true的列）。</p>
+        <p>指出列是否包含可由Creative加總的成本。 （亦即若要取得創意成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -7506,7 +7506,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示行是否包含可用關鍵字加總的成本。 （亦即，若要取得「關鍵字成本」，請加總此欄等於true的列。）</p>
+        <p>指示列是否包含可加總為關鍵字的成本。 （亦即，若要取得關鍵字成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -7520,7 +7520,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示行是否包含「成本」(Cost)，可通過「放置」(Placement)加總。 （亦即，若要取得版位成本，請加總此欄等於true的列）。</p>
+        <p>指示列是否包含可由「位置」加總的「成本」。 （亦即，若要取得版位成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -7534,7 +7534,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出該列是否包含成本，可由網站加總。 （亦即，若要取得網站成本，請加總此欄等於true的列）。</p>
+        <p>指出列是否包含可加總為網站的成本。 （亦即，若要取得網站成本，加總此欄等於true的列。）</p>
       </td>
       <td>
         <p>False</p>
@@ -7548,7 +7548,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>記錄是否被刪除，用作審計跟蹤。</p>
+        <p>是否刪除記錄，以做為稽核軌跡。</p>
       </td>
       <td>
         <p>False</p>
@@ -7556,8 +7556,8 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>數字(38,0)</td>
-      <td>記錄的貨幣ID值。</td>
+      <td>number(38,0)</td>
+      <td>記錄貨幣的ID值。</td>
       <td>-3253183181619994799</td>
     </tr>
     <tr>
@@ -7567,23 +7567,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_FORM_SUMMITE {#biz-forms-submits}
+### BIZ_FORM_SUBMIT {#biz-forms-submits}
 
-擷取的表單提交。
+已擷取表單提交。
 
 <table>
   <tbody>
@@ -7606,7 +7606,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>表單提交的唯一ID。</p>
@@ -7620,7 +7620,7 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>記錄表單提交時記錄的Cookie ID。</p>
@@ -7634,10 +7634,10 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相關訪客id的第一個Cookie ID。 如果記錄標示為is_duplicated = true，則此欄位將為null。</p>
+        <p>相關訪客ID的第一個Cookie ID。 如果記錄標籤為is_duplicated = true，則此欄位將為Null。</p>
       </td>
       <td>
         <p>v_9bc63c34482f4de8c2e3b9d8d9f0df56</p>
@@ -7648,10 +7648,10 @@ _按一下影像的完整大小版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>記錄表單提交時記錄的工作階段ID。 如果記錄標示為is_duplicated = true，則此欄位將為null。</p>
+        <p>記錄表單提交時記錄的工作階段ID。 如果記錄標籤為is_duplicated = true，則此欄位將為Null。</p>
       </td>
       <td>
         <p>2018-08-06:01-35-24-1231230.9bc63c34482f</p>
@@ -7673,7 +7673,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -7687,13 +7687,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CURRENT_PAGE</p>
+        <p>CURRENTPAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提交表單的URL，不含查詢參數。</p>
+        <p>提交表單的URL，不含查詢引數。</p>
       </td>
       <td>
         <p>https://info.adobe.com/webinar-marketo-measure-impact</p>
@@ -7704,24 +7704,24 @@ _按一下影像的完整大小版本_
         <p>CURRENT_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提交表單的URL，包括任何查詢參數。</p>
+        <p>提交表單的URL，包括任何查詢引數。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Dml3YBZDdXpdXh4Q0CnRMXHWZXL1RbxXlJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z 0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP位址</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提交表單時記錄的IP地址。</p>
+        <p>提交表單時記錄的IP位址。</p>
       </td>
       <td>
         <p>174.127.184.158</p>
@@ -7729,14 +7729,14 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>類型</p>
+        <p>型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指出事件的類型。</td>
+      <td>指示事件的型別。</td>
       <td>
-        <p>表單提交</p>
+        <p>FormSubmit</p>
       </td>
     </tr>
     <tr>
@@ -7744,23 +7744,23 @@ _按一下影像的完整大小版本_
         <p>USER_AGENT_STRING</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表單提交時記錄的裝置和瀏覽器。</p>
+        <p>提交表單時記錄的裝置和瀏覽器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh;英特爾Mac OS X 10_13_6)AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0 (Macintosh；Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 （KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CLIENT_SEQUENCE</p>
+        <p>使用者端序列</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指出頁面檢視在工作階段中發生的順序。</td>
+      <td>表示頁面檢視在工作階段中發生的順序。</td>
       <td>
         <p>4</p>
       </td>
@@ -7770,9 +7770,9 @@ _按一下影像的完整大小版本_
         <p>CLIENT_RANDOM</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>用於內部稽核及處理。</td>
+      <td>用於內部稽核與處理。</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
       </td>
@@ -7784,7 +7784,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>指示記錄是否被視為重複記錄。</td>
+      <td>表示該記錄是否被視為重複。</td>
       <td>
         <p>False</p>
       </td>
@@ -7806,10 +7806,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表單上提供的電子郵件地址，從Javascript擷取。</p>
+        <p>表單上提供的電子郵件地址（從Javascript擷取）。</p>
       </td>
       <td>
         <p>personc@adobe.com</p>
@@ -7820,9 +7820,9 @@ _按一下影像的完整大小版本_
         <p>FORM_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指明提交的表單類型。</td>
+      <td>表示提交的表單型別。</td>
       <td>
         <p>聊天</p>
       </td>
@@ -7832,10 +7832,10 @@ _按一下影像的完整大小版本_
         <p>FORM_SOURCE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>指出識別表單的方法，例如onSubmit或AjaxIntercept</p>
+        <p>表示識別表單的方法，例如onSubmit或AjaxIntercept</p>
       </td>
       <td>
         <p>onSubmit</p>
@@ -7846,7 +7846,7 @@ _按一下影像的完整大小版本_
         <p>FORM_IDENTIFIER</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>表單的ID值。</td>
       <td>
@@ -7858,10 +7858,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-6255315750913680000</p>
@@ -7869,8 +7869,8 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
-      <td>數字(38,0)</td>
-      <td>Url表的外鍵。</td>
+      <td>number(38,0)</td>
+      <td>Url表格的外部索引鍵。</td>
       <td>6255315750913680000</td>
     </tr>
     <tr>
@@ -7880,23 +7880,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_IMPRESSIONS {#biz-impressions}
+### 商業曝光數(_I) {#biz-impressions}
 
-引發並記錄了曝光數。 此表需要將DoubleClick連接和「啟用查看」設定為True。
+曝光次數已引發並錄製。 此表格需要DoubleClick連線，並將Enable View Through設定為True。
 
 <table>
   <tbody>
@@ -7919,10 +7919,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>曝光的唯一Id。</p>
+        <p>曝光的唯一ID。</p>
       </td>
       <td>
         <p>6acd7b43290490fe5c53eed31281d09a|2020-05-18:22:20:59|0000|0|2869369052</p>
@@ -7933,7 +7933,7 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>曝光時記錄的Cookie ID。</p>
@@ -7945,10 +7945,10 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相關訪客id的第一個Cookie ID。</p>
+        <p>相關訪客ID的第一個Cookie ID。</p>
       </td>
       <td>v_08c1063cb0a64349ad0d2d862f5cc700</td>
     </tr>
@@ -7957,7 +7957,7 @@ _按一下影像的完整大小版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>記錄曝光時記錄的工作階段ID。</p>
@@ -7972,13 +7972,13 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>提供曝光的日期。</p>
+        <p>提供印象的日期。</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -7990,13 +7990,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CURRENT_PAGE</p>
+        <p>CURRENTPAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供曝光數的URL，不含查詢參數。</p>
+        <p>提供曝光的URL，不含查詢引數。</p>
       </td>
       <td>https://info.adobe.com/webinar-marketo-measure-impact</td>
     </tr>
@@ -8005,19 +8005,19 @@ _按一下影像的完整大小版本_
         <p>CURRENT_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供曝光數的URL，包括任何查詢參數。</p>
+        <p>提供曝光的URL，包括任何查詢引數。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Dml3YBZDdXpdXh4Q0CnRMXHWZXL1RbxXlJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z 0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP位址</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>曝光時記錄的IP位址。</p>
@@ -8026,12 +8026,12 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>類型</p>
+        <p>型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指出事件的類型。</td>
+      <td>指示事件的型別。</td>
       <td>曝光</td>
     </tr>
     <tr>
@@ -8039,23 +8039,23 @@ _按一下影像的完整大小版本_
         <p>USER_AGENT_STRING</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表單提交時記錄的裝置和瀏覽器。</p>
+        <p>提交表單時記錄的裝置和瀏覽器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh;英特爾Mac OS X 10_13_6)AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0 (Macintosh；Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 （KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CLIENT_SEQUENCE</p>
+        <p>使用者端序列</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指出頁面檢視在工作階段中發生的順序。</td>
+      <td>表示頁面檢視在工作階段中發生的順序。</td>
       <td>
         <p>4</p>
       </td>
@@ -8065,9 +8065,9 @@ _按一下影像的完整大小版本_
         <p>CLIENT_RANDOM</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>用於內部稽核及處理。</td>
+      <td>用於內部稽核與處理。</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
       </td>
@@ -8079,7 +8079,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>指示記錄是否被視為重複記錄。</td>
+      <td>表示該記錄是否被視為重複。</td>
       <td>
         <p>False</p>
       </td>
@@ -8101,10 +8101,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 在CRM中稱為「反向連結頁面」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 在CRM中稱為「反向連結頁面」。</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -8113,10 +8113,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE-RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 原始反向連結頁面可能包含URL中的查詢參數。 在CRM中稱為「反向連結頁面 — 原始」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 原始反向連結頁面可能包含URL中的查詢引數。 在CRM中稱為「Referrer Page - Raw」。</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -8125,7 +8125,7 @@ _按一下影像的完整大小版本_
         <p>城市</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從IP位址解析的城市。</p>
@@ -8136,13 +8136,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>地區</p>
+        <p>區域</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從IP位址解析的區域。</p>
+        <p>來自IP位址的已解析區域。</p>
       </td>
       <td>
         <p>華盛頓</p>
@@ -8150,13 +8150,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>國家/地區</p>
+        <p>國家</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從IP位址解析的國家/地區。</p>
+        <p>IP位址中已解析的國家/地區。</p>
       </td>
       <td>
         <p>美國</p>
@@ -8164,16 +8164,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ISP_NAME</p>
+        <p>ISP名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>具有進階地理IP追蹤之客戶使用的網際網路服務提供者名稱。</p>
+        <p>擁有進階地理IP追蹤的客戶所使用的網際網路服務提供者的名稱。</p>
       </td>
       <td>
-        <p>AT&amp;T U-verse</p>
+        <p>AT&amp;T反向</p>
       </td>
     </tr>
     <tr>
@@ -8181,10 +8181,10 @@ _按一下影像的完整大小版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從中解決，通常是我們的其中一個整合合作夥伴。</p>
+        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
       </td>
       <td>Google</td>
     </tr>
@@ -8193,22 +8193,22 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶ID。</p>
+        <p>從中解析廣告的廣告帳戶ID。</p>
       </td>
       <td>aw.6601259029</td>
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帳戶名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶名稱。</p>
+        <p>從中解析廣告的廣告帳戶名稱。</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -8217,10 +8217,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的ID，其中廣告是從該帳戶解析的。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -8228,13 +8228,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的名稱，廣告從其中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>市場測量行銷分析</p>
@@ -8245,10 +8245,10 @@ _按一下影像的完整大小版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站ID，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -8256,13 +8256,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>網站名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站名稱，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -8273,10 +8273,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶中的版位ID。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -8287,13 +8287,13 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的位置名稱。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>路障</p>
+        <p>障礙</p>
       </td>
     </tr>
     <tr>
@@ -8301,22 +8301,22 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的促銷活動ID。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動ID。</p>
       </td>
       <td>aw.6601259029.317738075</td>
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的促銷活動名稱。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動名稱。</p>
       </td>
       <td>行銷歸因</td>
     </tr>
@@ -8325,10 +8325,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>因為曝光數的Doubleclick階層中沒有廣告群組，所以應為null</p>
+        <p>預期為Null，因為Doubleclick階層中沒有廣告群組可供曝光</p>
       </td>
       <td>
         <p>null</p>
@@ -8336,13 +8336,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>因為曝光數的Doubleclick階層中沒有廣告群組，所以應為null</p>
+        <p>預期為Null，因為Doubleclick階層中沒有廣告群組可供曝光</p>
       </td>
       <td>
         <p>null</p>
@@ -8353,10 +8353,10 @@ _按一下影像的完整大小版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的廣告ID。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告ID。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>
         <p>68035923</p>
@@ -8367,10 +8367,10 @@ _按一下影像的完整大小版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告名稱，廣告從中解析。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告名稱。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>
         <p>centurylink_banner_98121</p>
@@ -8381,10 +8381,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick階層中沒有「曝光數」的「創作」。</p>
+        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>
         <p>null</p>
@@ -8392,13 +8392,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>創意名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick階層中沒有「曝光數」的「創作」。</p>
+        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8407,10 +8407,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick階層中沒有「曝光數」的「創作」。</p>
+        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8419,10 +8419,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick階層中沒有「曝光數」的「創作」。</p>
+        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8431,10 +8431,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick階層中沒有「曝光數」的「創作」。</p>
+        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8443,10 +8443,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為Doubleclick階層中沒有「曝光數」的「創作」。</p>
+        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8455,10 +8455,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為曝光數的Doubleclick階層中沒有關鍵字。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8467,31 +8467,31 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為曝光數的Doubleclick階層中沒有關鍵字。</p>
-      </td>
-      <td>null</td>
-    </tr>
-    <tr>
-      <td>
-        <p>KEYWORD_MATCH_TYPE</p>
-      </td>
-      <td>
-        <p>var</p>
-      </td>
-      <td>
-        <p>應為null，因為曝光數的Doubleclick階層中沒有關鍵字。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>KEYWORD_MATCH_型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
+      </td>
+      <td>
+        <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
+      </td>
+      <td>null</td>
+    </tr>
+    <tr>
+      <td>
+        <p>瀏覽器名稱</p>
+      </td>
+      <td>
+        <p>varchar</p>
       </td>
       <td>
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
@@ -8502,13 +8502,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>瀏覽器版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在瀏覽器的版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器版本。</p>
       </td>
       <td>
         <p>58</p>
@@ -8516,13 +8516,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台。</p>
       </td>
       <td>
         <p>Mac</p>
@@ -8530,13 +8530,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台版本。</p>
       </td>
       <td>
         <p>10_12</p>
@@ -8547,10 +8547,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>BIZ_FACTS視圖的外鍵。</p>
+        <p>BIZ_FACTS檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -8560,67 +8560,67 @@ _按一下影像的完整大小版本_
       <td>
         <p>CURRENT_PAGE_KEY</p>
       </td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>SITE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -8631,15 +8631,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -8670,7 +8670,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>關鍵字的唯一ID。</p>
@@ -8684,9 +8684,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來自來源系統的關鍵字ID。</td>
+      <td>來源系統中的關鍵字ID。</td>
       <td>
         <p>39464932147</p>
       </td>
@@ -8696,10 +8696,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入關鍵字的廣告帳戶ID。</p>
+        <p>從中匯入關鍵字的廣告帳戶ID。</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -8708,10 +8708,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入關鍵字的廣告帳戶名稱。</p>
+        <p>從中匯入關鍵字的廣告帳戶名稱。</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -8720,10 +8720,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為曝光數的Doubleclick階層中沒有關鍵字。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>
         <p>null</p>
@@ -8731,13 +8731,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>應為null，因為曝光數的Doubleclick階層中沒有關鍵字。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>
         <p>null</p>
@@ -8748,7 +8748,7 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>關鍵字的廣告群組ID。</p>
@@ -8759,10 +8759,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>關鍵字的廣告群組名稱。</p>
@@ -8776,10 +8776,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>關鍵字的促銷活動ID。</p>
+        <p>關鍵字的行銷活動ID。</p>
       </td>
       <td>
         <p>ba.3284209.132630532</p>
@@ -8790,10 +8790,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>關鍵字的促銷活動名稱。</p>
+        <p>關鍵字的行銷活動名稱。</p>
       </td>
       <td>
         <p>收入歸因</p>
@@ -8807,7 +8807,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>關鍵字在源系統中是否仍處於活動狀態。</p>
+        <p>Keyword在來源系統中是否仍然有效。</p>
       </td>
       <td>
         <p>True</p>
@@ -8821,7 +8821,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>關鍵字是否已在源系統中刪除。</p>
+        <p>是否已在來源系統中刪除Keyword。</p>
       </td>
       <td>
         <p>False</p>
@@ -8829,7 +8829,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -8847,7 +8847,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-02 06:37:29.000</p>
@@ -8858,10 +8858,10 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的關鍵字名稱。</p>
+        <p>來源系統中的關鍵字名稱。</p>
       </td>
       <td>
         <p>[收入歸因b2b]</p>
@@ -8875,7 +8875,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>關鍵字是否需要更新 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要為更新關鍵字 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td>
@@ -8887,22 +8887,22 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td>
         <p>ba.3284209.132630532.3646889365</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「關鍵字」。</p>
+        <p>此表格的主要物件或實體。 在此範例中，為「Keyword」。</p>
       </td>
       <td>
         <p>關鍵字</p>
@@ -8913,7 +8913,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>關鍵字的廣告提供者名稱。</p>
@@ -8927,10 +8927,10 @@ _按一下影像的完整大小版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的URL。</p>
+        <p>登入頁面的URL。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -8940,7 +8940,7 @@ _按一下影像的完整大小版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一個值。</p>
@@ -8950,9 +8950,9 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>URL_REQUESTED</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>
-        <p>具有的登錄頁面URL [!DNL Marketo Measure] 參數。</p>
+        <p>登陸頁面的URL，具有 [!DNL Marketo Measure] 引數。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -8964,7 +8964,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td>
         <p>False</p>
       </td>
@@ -8974,9 +8974,9 @@ _按一下影像的完整大小版本_
         <p>WORD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>用戶輸入的搜索階段。</td>
+      <td>使用者輸入的搜尋階段。</td>
       <td>
         <p>收入歸因b2b</p>
       </td>
@@ -8986,13 +8986,13 @@ _按一下影像的完整大小版本_
         <p>MATCH_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜尋片語和關鍵字之間找到的相符類型。</p>
+        <p>在搜尋字詞和關鍵字之間找到的相符型別。</p>
       </td>
       <td>
-        <p>完全</p>
+        <p>精確</p>
       </td>
     </tr>
     <tr>
@@ -9000,7 +9000,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</td>
@@ -9010,7 +9010,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -9020,7 +9020,7 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>用於內部診斷。</td>
       <td></td>
@@ -9030,9 +9030,9 @@ _按一下影像的完整大小版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>URL追蹤範本 [!DNL Marketo Measure] 新增至關鍵字。</td>
+      <td>URL追蹤範本 [!DNL Marketo Measure] 已新增至關鍵字。</td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
       </td>
@@ -9042,10 +9042,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>-2712935512233520000</td>
     </tr>
@@ -9056,15 +9056,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9072,7 +9072,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_LANDING_PAGES {#biz-landing-pages}
 
-從任何連線的廣告帳戶匯入的登錄頁面。
+從任何連線的廣告帳戶匯入的登陸頁面。
 
 <table>
   <tbody>
@@ -9093,7 +9093,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>登陸頁面的唯一ID。</p>
@@ -9105,7 +9105,7 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9115,9 +9115,9 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>匯入登錄頁面的廣告帳戶ID。</td>
+      <td>從中匯入登入頁面的廣告帳戶ID。</td>
       <td></td>
     </tr>
     <tr>
@@ -9125,9 +9125,9 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>匯入登錄頁面的廣告帳戶名稱。</td>
+      <td>從中匯入登入頁面的廣告帳戶名稱。</td>
       <td></td>
     </tr>
     <tr>
@@ -9135,43 +9135,43 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的廣告商ID，特別是Doubleclick。</p>
+        <p>登陸頁面（尤其是Doubleclick）的廣告商ID。</p>
       </td>
       <td>300181641</td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的廣告商名稱，尤其是Doubleclick的廣告商名稱。</p>
+        <p>登陸頁面的廣告商名稱，特別適用於Doubleclick。</p>
       </td>
-      <td>行銷分析</td>
+      <td>Marketing Analytics</td>
     </tr>
     <tr>
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>登錄頁面的廣告群組ID。</td>
+      <td>登陸頁面之廣告群組的ID。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>登錄頁面的廣告群組名稱。</td>
+      <td>登陸頁面的廣告群組名稱。</td>
       <td></td>
     </tr>
     <tr>
@@ -9179,9 +9179,9 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>登錄頁面的促銷活動ID。</td>
+      <td>登入頁面之促銷活動的ID。</td>
       <td></td>
     </tr>
     <tr>
@@ -9189,9 +9189,9 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>登錄頁面的促銷活動名稱。</td>
+      <td>登入頁面促銷活動的名稱。</td>
       <td></td>
     </tr>
     <tr>
@@ -9216,13 +9216,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>行的上次修改日期。</p>
+        <p>列的上次修改日期。</p>
       </td>
       <td></td>
     </tr>
@@ -9241,7 +9241,7 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9261,17 +9261,17 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9281,7 +9281,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9291,7 +9291,7 @@ _按一下影像的完整大小版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9301,7 +9301,7 @@ _按一下影像的完整大小版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9311,7 +9311,7 @@ _按一下影像的完整大小版本_
         <p>URL_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9323,23 +9323,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_LEAD {#biz-leads}
+### 商業潛在客戶(_L) {#biz-leads}
 
-從源系統導入的銷售線索。
+從來源系統匯入的潛在客戶。
 
 <table>
   <tbody>
@@ -9362,10 +9362,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的銷售機會ID。</p>
+        <p>來源系統的潛在客戶ID。</p>
       </td>
       <td>
         <p>00Q0Z00001MZcj8UAD</p>
@@ -9373,13 +9373,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>上次從源系統修改銷售機會記錄的日期。</p>
+        <p>上次從來源系統修改Lead記錄的日期。</p>
       </td>
       <td>
         <p>2018-08-27 21:52:10.000</p>
@@ -9393,7 +9393,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立銷售機會記錄的日期。</p>
+        <p>從來源系統建立Lead記錄的日期。</p>
       </td>
       <td>2018-08-27 21:52:10.000</td>
     </tr>
@@ -9402,22 +9402,22 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Lead的電子郵件地址，來自源系統。</p>
+        <p>來自來源系統的Lead電子郵件地址。</p>
       </td>
       <td>persona@adobe.com</td>
     </tr>
     <tr>
       <td>
-        <p>WEB_SITE</p>
+        <p>WEBSITE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>為Lead輸入的網站，從源系統，用於Lead2Account映射。</p>
+        <p>從來源系統輸入給Lead的網站，用於Lead2Account對應。</p>
       </td>
       <td>
         <p>adobe.com</p>
@@ -9428,10 +9428,10 @@ _按一下影像的完整大小版本_
         <p>公司</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從源系統為Lead輸入的公司名稱，用於Lead2Account映射。</p>
+        <p>從來源系統輸入給Lead的公司名稱，用於Lead2Account對應。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -9439,13 +9439,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_SOURCE</p>
+        <p>潛在客戶來源</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>建立Lead的源。</p>
+        <p>建立Lead的來源。</p>
       </td>
       <td>
         <p>廣告</p>
@@ -9459,7 +9459,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>銷售機會是否已轉換為聯繫人。</p>
+        <p>Lead是否已轉換為Contact。</p>
       </td>
       <td>
         <p>True</p>
@@ -9470,10 +9470,10 @@ _按一下影像的完整大小版本_
         <p>CONVERTED_OPPORTUNITY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>一旦轉換了銷售機會，相關Opportunity的ID。</p>
+        <p>Lead轉換後相關商機的ID。</p>
       </td>
       <td>
         <p>0013100001b44aGAAQ</p>
@@ -9487,7 +9487,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>銷售機會轉換為聯繫人的日期。</p>
+        <p>Lead轉換為Contact的日期。</p>
       </td>
       <td>
         <p>2018-08-27 07:00:00.000</p>
@@ -9498,10 +9498,10 @@ _按一下影像的完整大小版本_
         <p>CONVERTED_CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Lead轉換後相關聯繫人的ID。</p>
+        <p>潛在客戶轉換後相關聯絡人的ID。</p>
       </td>
       <td>
         <p>0030Z00003Oyp25QAB</p>
@@ -9512,10 +9512,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNTID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已映射帳戶的ID。 需求：啟用ABM</p>
+        <p>對應帳戶的ID。 需求：啟用ABM</p>
       </td>
       <td>
         <p>0010Z0000236F9GQAU</p>
@@ -9526,10 +9526,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_STAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>銷售機會的目前階段，可辨識為可在 [!DNL Marketo Measure] 應用程式。</p>
+        <p>Lead的目前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
         <p>已排程示範</p>
@@ -9540,10 +9540,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>銷售機會的所有先前階段，已識別為可在 [!DNL Marketo Measure] 應用程式。</p>
+        <p>潛在客戶的所有先前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
         <p>MQL</p>
@@ -9565,13 +9565,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_SCORE_MODEL</p>
+        <p>潛在客戶評分模型</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>（已過時）</p>
+        <p>（已棄用）</p>
       </td>
       <td>
         <p>null</p>
@@ -9582,10 +9582,10 @@ _按一下影像的完整大小版本_
         <p>LEAD_SCORE_RESULTS</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>（已過時）</p>
+        <p>（已棄用）</p>
       </td>
       <td>
         <p>null</p>
@@ -9596,10 +9596,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用來從整合合作夥伴填入，將離線事件對應至網頁工作階段的Cookie ID。 要求：啟用呼叫追蹤：True</p>
+        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -9613,7 +9613,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否在源系統中刪除記錄。</p>
+        <p>是否刪除來源系統中的記錄。</p>
       </td>
       <td>
         <p>False</p>
@@ -9624,35 +9624,35 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>3263982503087870000</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Lead_Type__c":"已建立銷售", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Lead_Type__c"："Sales Created"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>IS_DUPLICATE</td>
       <td>布林值</td>
-      <td>如果已設定CRM和Marketo整合，則用於去除重複記錄。 如果有重複項目，則Marketo Lead會標示為true。</td>
+      <td>若已設定CRM和Marketo整合，則用於去除重複記錄。 如果有重複專案，Marketo銷售機會會標示為true。</td>
       <td>True</td>
     </tr>
     <tr>
-      <td>源系統</td>
-      <td>var</td>
-      <td>指出記錄是來自CRM還是Marketo整合。</td>
+      <td>SOURCE_SYSTEM</td>
+      <td>varchar</td>
+      <td>指出記錄是否來自CRM或Marketo整合。</td>
       <td>Crm</td>
     </tr>
     <tr>
       <td>OTHER_SYSTEM_ID</td>
-      <td>var</td>
-      <td>將來自Marketo整合的人員與來自CRM整合的銷售機會對應。 如果CRM和Marketo整合都存在，則值是對應的ID。</td>
+      <td>varchar</td>
+      <td>將Marketo整合中的人員與CRM整合中的潛在客戶對應。 如果CRM和Marketo整合都存在，則值為對應的ID。</td>
       <td>1234</td>
     </tr>
     <tr>
@@ -9662,23 +9662,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_LEAD_STAGE_TRANSITIONS {#biz-lead-stage-transitions}
+### 商業_導引_舞台_轉接 {#biz-lead-stage-transitions}
 
-銷售機會或聯繫人的階段轉變。
+潛在客戶或聯絡人的階段轉換。
 
 <table>
   <tbody>
@@ -9701,7 +9701,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>轉變的唯一ID。</p>
@@ -9715,10 +9715,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供給相關銷售機會/聯繫人的電子郵件地址。</p>
+        <p>提供相關銷售機會/聯絡人的電子郵件地址。</p>
       </td>
       <td>
         <p>persone@adobe.com</p>
@@ -9726,13 +9726,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與轉變相關聯的銷售機會的ID。</p>
+        <p>與轉變相關聯的銷售機會ID。</p>
       </td>
       <td>
         <p>00Q3100001Fx6AlEAJ</p>
@@ -9743,10 +9743,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與轉變相關聯的連絡人的ID。</p>
+        <p>與轉變相關聯的連絡人ID。</p>
       </td>
       <td>
         <p>0033100003Aq9grAAB</p>
@@ -9754,13 +9754,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_ID</p>
+        <p>接觸點ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>系結至轉變的「購買者接觸點」ID。</p>
+        <p>和轉換相關聯的購買者接觸點ID。</p>
       </td>
       <td>
         <p>TP2_Person_00Q3100001Fx6AlEAJ_2018-08-28:14-41-06-1674260.d00ceb09fbd3</p>
@@ -9774,7 +9774,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>將記錄轉換為階段的日期。</p>
+        <p>記錄轉換為階段的日期。</p>
       </td>
       <td>
         <p>2018-08-27 16:05:34.000</p>
@@ -9785,10 +9785,10 @@ _按一下影像的完整大小版本_
         <p>STAGE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>轉變階段的ID值。</p>
+        <p>轉換階段的ID值。</p>
       </td>
       <td>
         <p>_bizible_FT</p>
@@ -9796,13 +9796,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>階段</p>
+        <p>STAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>轉變的階段名稱。</p>
+        <p>轉換的階段名稱。</p>
       </td>
       <td>
         <p>FT</p>
@@ -9813,10 +9813,10 @@ _按一下影像的完整大小版本_
         <p>排名</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>階段的數值排名，如 [!DNL Marketo Measure] 階段映射設定。</p>
+        <p>階段的數值排名，如 [!DNL Marketo Measure] 階段對應設定。</p>
       </td>
       <td>
         <p>5</p>
@@ -9830,7 +9830,7 @@ _按一下影像的完整大小版本_
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>用於索引和訂購回歸階段的內部處理。</p>
+        <p>用於內部處理，以索引和排序迴旋鏢階段。</p>
       </td>
       <td>
         <p>1</p>
@@ -9843,7 +9843,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>varchar(1)</p>
       </td>
-      <td>用於索引和訂購回歸階段的內部處理。</td>
+      <td>用於內部處理，以索引和排序迴旋鏢階段。</td>
       <td>
         <p>1</p>
       </td>
@@ -9856,7 +9856,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出接觸點是否視為擱置中且尚未關閉。 這只會針對具有完整路徑歸因模型的客戶顯示。</p>
+        <p>顯示是否將接觸點視為待定狀態且尚未關閉。 這僅會針對擁有完整路徑歸因模型的客戶顯示。</p>
       </td>
       <td>
         <p>False</p>
@@ -9864,13 +9864,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>IS_NON_TRANSITION</p>
+        <p>IS_NON_TRANSITIONAL</p>
       </td>
       <td>
         <p>布林值</p>
       </td>
       <td>
-        <p>指示該行是否與里程碑階段轉變綁定。 例如，如果有3個階段/登入點(FT、LC、MQL)和4個接觸點，則1個沒有階段的接觸點被視為「非過渡」，因此值將等於true。</p>
+        <p>指出列是否繫結至里程碑階段轉變。 例如，如果有3個階段/專案(FT、LC、MQL)和4個接觸點，則上面沒有階段的1個接觸點會視為「非過渡」，因此值會等於true。</p>
       </td>
       <td>
         <p>False</p>
@@ -9884,7 +9884,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根據階段排名，前一階段的轉換日期。</p>
+        <p>根據階段排名，顯示上一個階段的轉換日期。</p>
       </td>
       <td>
         <p>2017-11-28 21:26:44.000</p>
@@ -9898,7 +9898,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根據階段排名，轉換下一個階段的日期。</p>
+        <p>根據階段排名，下一個階段的轉換日期。</p>
       </td>
       <td>
         <p>2017-12-11 22:39:17.000</p>
@@ -9906,7 +9906,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -9926,7 +9926,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否考慮刪除轉變記錄。</p>
+        <p>是否將轉變記錄視為已刪除。</p>
       </td>
       <td>
         <p>False</p>
@@ -9939,23 +9939,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_OPPORTUNITY {#biz-opportunities}
+### 商機(_O) {#biz-opportunities}
 
-從源系統導入的機會。
+從來源系統匯入的機會。
 
 <table>
   <tbody>
@@ -9978,10 +9978,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的Opportunity Id。</p>
+        <p>來源系統中的機會ID。</p>
       </td>
       <td>
         <p>0060Z00000o89I4QAI</p>
@@ -9989,13 +9989,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Opportunity的上次修改日期，來自源系統。</p>
+        <p>來源系統中商機的上次修改日期。</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
@@ -10007,7 +10007,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>從源系統建立的Opportunity日期。</p>
+        <p>來源系統中機會的建立日期。</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
@@ -10016,7 +10016,7 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>相關帳戶的ID。</p>
@@ -10030,13 +10030,13 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的Opportunity Name。</p>
+        <p>來源系統中的機會名稱。</p>
       </td>
       <td>
-        <p>Mareketo度量更新</p>
+        <p>Marketo Measure續約</p>
       </td>
     </tr>
     <tr>
@@ -10047,7 +10047,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至被認為是成功的階段。</p>
+        <p>表示商機是否已移至被視為勝出的階段。</p>
       </td>
       <td>
         <p>False</p>
@@ -10055,13 +10055,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>關閉(_C)</p>
+        <p>IS_CLOSED</p>
       </td>
       <td>
         <p>布林值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至被認為已關閉的階段。</p>
+        <p>表示商機是否已移至被視為已關閉的階段。</p>
       </td>
       <td>
         <p>False</p>
@@ -10075,7 +10075,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Opportunity的預期或實際結束日期（從源系統）。</p>
+        <p>來源系統中Opportunity的預期或實際結束日期。</p>
       </td>
       <td>
         <p>2019-08-28 07:00:00.000</p>
@@ -10089,7 +10089,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>（已過時）</p>
+        <p>（已棄用）</p>
       </td>
       <td>
         <p>null</p>
@@ -10097,13 +10097,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>金額</p>
+        <p>數量</p>
       </td>
       <td>
-        <p>數字(38,8)</p>
+        <p>number(38,8)</p>
       </td>
       <td>
-        <p>從Opportunity源系統中預期或結束的交易金額。</p>
+        <p>從來源系統預期或結束的Opportunity交易金額。</p>
       </td>
       <td>
         <p>8988.00000000</p>
@@ -10114,11 +10114,11 @@ _按一下影像的完整大小版本_
         <p>CONVERTED_FROM_LEAD_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已轉換為此Opportunity的相關Lead的Id。</p>
-        <p>請注意，此欄位未設定，且在Snowflake中為所有客戶傳回null。</p>
+        <p>已轉換為此機會的相關銷售機會的ID。</p>
+        <p>請注意，此欄位未設定，且所有客戶的Snowflake會傳回null。</p>
       </td>
       <td>
         <p>null</p>
@@ -10129,11 +10129,11 @@ _按一下影像的完整大小版本_
         <p>CONVERTED_FROM_LEAD_EMAIL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已轉換為此Opportunity的相關Lead的電子郵件。</p>
-        <p>請注意，此欄位未設定，且在Snowflake中為所有客戶傳回null。</p>
+        <p>已轉換為此Opportunity之相關Lead的電子郵件。</p>
+        <p>請注意，此欄位未設定，且所有客戶的Snowflake會傳回null。</p>
       </td>
       <td>
         <p>null</p>
@@ -10144,10 +10144,10 @@ _按一下影像的完整大小版本_
         <p>PRIMARY_CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>如果使用了「主要聯繫人角色」，則列為主要聯繫人角色的相關聯繫人的ID。</p>
+        <p>若使用「主要連絡人角色」，則列為主要連絡人角色之相關連絡人的ID。</p>
       </td>
       <td>
         <p>00331000038uGfhAAE</p>
@@ -10158,10 +10158,10 @@ _按一下影像的完整大小版本_
         <p>PRIMARY_CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>如果使用了「主要聯繫人角色」，則作為主要聯繫人角色的相關聯繫人的電子郵件。</p>
+        <p>如果使用主要連絡人角色，則相關連絡人的電子郵件會列為主要連絡人角色。</p>
       </td>
       <td>
         <p>personb@adobe.com</p>
@@ -10186,10 +10186,10 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_STAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Opportunity的當前階段，如 [!DNL Marketo Measure] 應用程式。</p>
+        <p>機會的目前階段，如 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
         <p>DM示範</p>
@@ -10200,13 +10200,13 @@ _按一下影像的完整大小版本_
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Opportunity以前經歷的所有階段的字串，如 [!DNL Marketo Measure] 應用程式。</p>
+        <p>Opportunity先前經歷的所有階段的字串，如 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
-        <p>合格發現，演示計畫</p>
+        <p>合格的探索，已排程示範</p>
       </td>
     </tr>
     <tr>
@@ -10217,7 +10217,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否在源系統中刪除記錄。</p>
+        <p>是否刪除來源系統中的記錄。</p>
       </td>
       <td>False</td>
     </tr>
@@ -10226,10 +10226,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>4609512587744160000</p>
@@ -10237,21 +10237,21 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CURRENCY_ISO_CODE</td>
-      <td>var</td>
-      <td>貨幣的ISO代碼，從源系統導入。</td>
-      <td>USD</td>
+      <td>varchar</td>
+      <td>貨幣的ISO代碼，從來源系統匯入。</td>
+      <td>美元</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
-      <td>數字(38,0)</td>
-      <td>記錄的貨幣ID值。</td>
+      <td>number(38,0)</td>
+      <td>記錄貨幣的ID值。</td>
       <td>4609512587744160000</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>var</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已從來源系統匯入，格式為JSON。</td>
-      <td>{"Opportunity_Location__c":"Seattle", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>{"Opportunity_Location__c"："Seattle"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -10260,23 +10260,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_OPP_STAGE_TRANSITIONS {#biz-opp-stage-transitions}
+### 商業_OPP_舞台_轉接 {#biz-opp-stage-transitions}
 
-為機會預定過渡階段。
+為機會進行階段轉換。
 
 <table>
   <tbody>
@@ -10299,13 +10299,13 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>轉變的唯一ID。</p>
       </td>
       <td>
-        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec56e757</p>
       </td>
     </tr>
     <tr>
@@ -10313,10 +10313,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與Opportunity關聯的帳戶的ID。</p>
+        <p>與機會相關聯的帳戶ID。</p>
       </td>
       <td>
         <p>0013100001b44nTAAQ</p>
@@ -10324,13 +10324,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與轉變關聯的Opportunity的ID。</p>
+        <p>與轉變相關聯的機會ID。</p>
       </td>
       <td>
         <p>0060Z00000nEgjlQAC</p>
@@ -10341,10 +10341,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與轉變相關聯的連絡人的ID。</p>
+        <p>與轉變相關聯的連絡人ID。</p>
       </td>
       <td>
         <p>0030Z00003IjojKQAR</p>
@@ -10355,10 +10355,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供給相關連絡人的電子郵件地址。</p>
+        <p>相關連絡人提供的電子郵件地址。</p>
       </td>
       <td>
         <p>persone@adobe.com</p>
@@ -10366,13 +10366,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_ID</p>
+        <p>接觸點ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與轉變系結的購買者歸因接觸點ID。</p>
+        <p>和轉變相關聯的購買者歸因接觸點ID。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
@@ -10386,7 +10386,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>將記錄轉換為階段的日期。</p>
+        <p>記錄轉換為階段的日期。</p>
       </td>
       <td>
         <p>2018-05-26 07:29:43.000</p>
@@ -10394,13 +10394,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>階段</p>
+        <p>STAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>轉變的階段名稱。</p>
+        <p>轉換的階段名稱。</p>
       </td>
       <td>
         <p>已排程示範</p>
@@ -10411,10 +10411,10 @@ _按一下影像的完整大小版本_
         <p>STAGE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>轉變階段的ID值。</p>
+        <p>轉換階段的ID值。</p>
       </td>
       <td>
         <p>_bizible_FT</p>
@@ -10425,10 +10425,10 @@ _按一下影像的完整大小版本_
         <p>排名</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>階段的數值排名，如 [!DNL Marketo Measure] 階段映射設定。</p>
+        <p>階段的數值排名，如 [!DNL Marketo Measure] 階段對應設定。</p>
       </td>
       <td>
         <p>4</p>
@@ -10442,7 +10442,7 @@ _按一下影像的完整大小版本_
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>用於索引和訂購回歸階段的內部處理。</p>
+        <p>用於內部處理，以索引和排序迴旋鏢階段。</p>
       </td>
       <td>1</td>
     </tr>
@@ -10454,7 +10454,7 @@ _按一下影像的完整大小版本_
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>用於索引和訂購回歸階段的內部處理。</p>
+        <p>用於內部處理，以索引和排序迴旋鏢階段。</p>
       </td>
       <td>1</td>
     </tr>
@@ -10466,7 +10466,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指出接觸點是否視為擱置中且尚未關閉。 這只會針對具有完整路徑歸因模型的客戶顯示。</p>
+        <p>顯示是否將接觸點視為待定狀態且尚未關閉。 這僅會針對擁有完整路徑歸因模型的客戶顯示。</p>
       </td>
       <td>
         <p>False</p>
@@ -10474,13 +10474,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>IS_NON_TRANSITION</p>
+        <p>IS_NON_TRANSITIONAL</p>
       </td>
       <td>
         <p>布林值</p>
       </td>
       <td>
-        <p>指示該行是否與里程碑階段轉變綁定。 例如，如果有3個階段/登入點(FT、LC、MQL)和4個接觸點，則1個沒有階段的接觸點被視為「非過渡」，因此值將等於true。</p>
+        <p>指出列是否繫結至里程碑階段轉變。 例如，如果有3個階段/專案(FT、LC、MQL)和4個接觸點，則上面沒有階段的1個接觸點會視為「非過渡」，因此值會等於true。</p>
       </td>
       <td>
         <p>False</p>
@@ -10494,7 +10494,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根據階段排名，前一階段的轉換日期。</p>
+        <p>根據階段排名，顯示上一個階段的轉換日期。</p>
       </td>
       <td>
         <p>2015-07-16 17:41:49.000</p>
@@ -10508,7 +10508,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根據階段排名，轉換下一個階段的日期。</p>
+        <p>根據階段排名，下一個階段的轉換日期。</p>
       </td>
       <td>
         <p>2018-08-27 19:40:52.000</p>
@@ -10516,7 +10516,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -10536,7 +10536,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否考慮刪除轉變記錄。</p>
+        <p>是否將轉變記錄視為已刪除。</p>
       </td>
       <td>
         <p>False</p>
@@ -10549,21 +10549,21 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_PAGE_VIEWS {#biz-page-views}
+### BIZ_PAGE_VIEW {#biz-page-views}
 
 從網站造訪收集的頁面檢視。 多個頁面檢視可組成單一工作階段。
 
@@ -10588,10 +10588,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>頁面檢視的唯一Id。</p>
+        <p>頁面檢視的唯一ID。</p>
       </td>
       <td>
         <p>2018-08-19:16-49-58-24340.277d79d0167849</p>
@@ -10602,7 +10602,7 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>記錄頁面檢視時記錄的Cookie ID。</p>
@@ -10616,7 +10616,7 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>相關訪客ID的第一個Cookie。</p>
@@ -10630,10 +10630,10 @@ _按一下影像的完整大小版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>工作階段ID與頁面檢視相關聯。</p>
+        <p>與頁面檢視相關聯的工作階段ID。</p>
       </td>
       <td>
         <p>2018-08-19:16-49-58-24340.277d79d0167849</p>
@@ -10655,7 +10655,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -10669,13 +10669,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CURRENT_PAGE</p>
+        <p>CURRENTPAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>頁面檢視的URL，不含查詢參數。</p>
+        <p>頁面檢視的URL，不含查詢引數。</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo</p>
@@ -10686,10 +10686,10 @@ _按一下影像的完整大小版本_
         <p>CURRENT_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>頁面檢視的URL，包括任何查詢參數。</p>
+        <p>「頁面檢視」的URL，包括任何查詢引數。</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo?hsCtaTracking=207219e9-87b6-4105-8f4b-0a3b62ae1af8%7C48060522-3aeb-4c72-8ce5-fd4b1017f069</p>
@@ -10697,13 +10697,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP位址</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提交表單時記錄的IP地址。</p>
+        <p>提交表單時記錄的IP位址。</p>
       </td>
       <td>
         <p>174.127.184.158</p>
@@ -10711,12 +10711,12 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>類型</p>
+        <p>型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指出事件的類型。</td>
+      <td>指示事件的型別。</td>
       <td>
         <p>PageView</p>
       </td>
@@ -10726,24 +10726,24 @@ _按一下影像的完整大小版本_
         <p>USER_AGENT_STRING</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表單提交時記錄的裝置和瀏覽器。</p>
+        <p>提交表單時記錄的裝置和瀏覽器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(X11;Linux x86_64;rv:52.0)Gecko/20100101 Firefox/52.0</p>
+        <p>Mozilla/5.0 (X11；Linux x86_64；rv：52.0) Gecko/20100101 Firefox/52.0</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CLIENT_SEQUENCE</p>
+        <p>使用者端序列</p>
       </td>
       <td>
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>指出頁面檢視在工作階段中發生的順序。</p>
+        <p>表示頁面檢視在工作階段中發生的順序。</p>
       </td>
       <td>
         <p>1</p>
@@ -10754,9 +10754,9 @@ _按一下影像的完整大小版本_
         <p>CLIENT_RANDOM</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>用於內部稽核及處理。</td>
+      <td>用於內部稽核與處理。</td>
       <td>
         <p>103532</p>
       </td>
@@ -10768,7 +10768,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>指示記錄是否被視為重複記錄。</td>
+      <td>表示該記錄是否被視為重複。</td>
       <td>False</td>
     </tr>
     <tr>
@@ -10786,10 +10786,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>頁面檢視的來源URL，不含查詢參數。</p>
+        <p>頁面檢視來源的URL，不含查詢引數。</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution</p>
@@ -10800,10 +10800,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>頁面檢視的來源URL，包括任何查詢參數。</p>
+        <p>「頁面檢視」源自的URL，包括任何查詢引數。</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
@@ -10814,13 +10814,13 @@ _按一下影像的完整大小版本_
         <p>PAGE_TITLE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>頁面標題。</p>
       </td>
       <td>
-        <p>CMO的B2B行銷歸因下載指南</p>
+        <p>下載B2B行銷歸因的CMO指南</p>
       </td>
     </tr>
     <tr>
@@ -10828,10 +10828,10 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表單上提供的電子郵件地址，從Javascript擷取。</p>
+        <p>表單上提供的電子郵件地址（從Javascript擷取）。</p>
       </td>
       <td>personc@adobe.com</td>
     </tr>
@@ -10840,10 +10840,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-6255315750913680000</p>
@@ -10851,20 +10851,20 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
-      <td>數字(38,0)</td>
-      <td>Url表的外鍵。</td>
+      <td>number(38,0)</td>
+      <td>Url表格的外部索引鍵。</td>
       <td>6255315750913680000</td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
-      <td>Url表的外鍵。</td>
+      <td>number(38,0)</td>
+      <td>Url表格的外部索引鍵。</td>
       <td>6255315750913680000</td>
     </tr>
     <tr>
       <td>HAS_USER_CONSENT</td>
       <td>布林值</td>
-      <td>指出使用者是否同意追蹤。 False表示已收集頁面檢視，因為不需要使用者同意。 True表示已收集頁面檢視，且使用者已同意進行追蹤。</td>
+      <td>表示使用者是否已同意追蹤。 False表示已收集頁面檢視，因為不需要使用者同意。 True表示已收集頁面檢視，且使用者已同意被追蹤。</td>
       <td>True</td>
     </tr>
     <tr>
@@ -10874,23 +10874,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_PLACEMENTS {#biz-placements}
+### BIZ_PLACEMENT {#biz-placements}
 
-儲存從任何已連線廣告帳戶下載的所有版位的表格，即Doubleclick整合中的物件。
+此表格會儲存從任何已連線廣告帳戶下載的所有版位，以及從Doubleclick整合下載的物件。
 
 <table>
   <tbody>
@@ -10911,10 +10911,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版位的唯一ID。</p>
+        <p>此位置的唯一ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -10925,9 +10925,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來源系統的放置ID。</td>
+      <td>來源系統中的位置ID。</td>
       <td>10426699711</td>
     </tr>
     <tr>
@@ -10935,22 +10935,22 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入版位的廣告帳戶ID。</p>
+        <p>從中匯入位置的廣告帳戶ID。</p>
       </td>
-      <td>fb。 106851586409075</td>
+      <td>浮動 106851586409075</td>
     </tr>
     <tr>
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入版位的廣告帳戶名稱。</p>
+        <p>從中匯入位置的「廣告帳戶」名稱。</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -10959,46 +10959,46 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版位廣告商的ID，尤其是Doubleclick。</p>
+        <p>此版位廣告商ID，特別適用於Doubleclick。</p>
       </td>
       <td>300184624</td>
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版位的廣告商名稱，尤其是Doubleclick的名稱。</p>
+        <p>專為Doubleclick放置的廣告商名稱。</p>
       </td>
-      <td>[!DNL Marketo Measure] Analytics</td>
+      <td>[!DNL Marketo Measure] 分析</td>
     </tr>
     <tr>
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為在任何廣告階層中，「位置」上方沒有廣告群組。</p>
+        <p>預期為Null，因為在任何廣告階層中的位置上方沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為在任何廣告階層中，「位置」上方沒有廣告群組。</p>
+        <p>預期為Null，因為在任何廣告階層中的位置上方沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
@@ -11007,10 +11007,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版位的促銷活動ID。</p>
+        <p>此版位之促銷活動的ID。</p>
       </td>
       <td>ba.3284209.132855866</td>
     </tr>
@@ -11019,10 +11019,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版位的促銷活動名稱。</p>
+        <p>此版位之行銷活動的名稱。</p>
       </td>
       <td>管道行銷</td>
     </tr>
@@ -11034,7 +11034,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>放置是否在源系統中仍處於活動狀態。</p>
+        <p>在來源系統中，「位置」是否仍為作用中。</p>
       </td>
       <td>True</td>
     </tr>
@@ -11046,13 +11046,13 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否已在源系統中刪除Placement。</p>
+        <p>是否已在來源系統中刪除「位置」。</p>
       </td>
       <td>False</td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -11070,7 +11070,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>2018-08-02 06:36:25.000</td>
     </tr>
@@ -11079,10 +11079,10 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的「放置」的名稱。</p>
+        <p>來源系統中的位置名稱。</p>
       </td>
       <td>市場</td>
     </tr>
@@ -11094,7 +11094,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新版位 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新位置 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>False</td>
@@ -11104,20 +11104,20 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「位置」。</p>
+        <p>此表格的主要物件或實體。 在此範例中，為「Placement」。</p>
       </td>
       <td>位置</td>
     </tr>
@@ -11126,10 +11126,10 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版位的廣告提供者名稱。</p>
+        <p>此位置的廣告提供者名稱。</p>
       </td>
       <td>BingAds</td>
     </tr>
@@ -11138,10 +11138,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>6008900572523230000</td>
     </tr>
@@ -11152,15 +11152,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Snowflake的記錄修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的記錄刪除日期（如果已刪除）</td>
+      <td>如果記錄已刪除，則為Snowflake的記錄刪除日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11168,7 +11168,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_SEGMENTS {#biz-segments}
 
-區段值如 [!DNL Marketo Measure] 應用程式。
+區段值(定義於 [!DNL Marketo Measure] 應用程式。
 
 <table>
   <tbody>
@@ -11191,7 +11191,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>區段的唯一ID。</p>
@@ -11205,7 +11205,7 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>區段名稱。</p>
@@ -11219,10 +11219,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>1028715376434030000</p>
@@ -11235,23 +11235,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_SEGMENT_NAMES {#biz-segment-names}
+### 企業_區段_名稱 {#biz-segment-names}
 
-將自訂區段的名稱對應至其類別值。 （這會將欄名稱對應至接觸點表格中的Category1 - 15欄標題。）
+將自訂區段的名稱對應至其類別值。 （這會將欄名稱對應到接觸點表格中的Category1 - 15欄標題。）
 
 <table>
   <tbody>
@@ -11274,18 +11274,18 @@ _按一下影像的完整大小版本_
         <p>類別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>指出區段名稱對應的類別。</p>
+        <p>表示區段名稱對應的類別。</p>
       </td>
       <td>
-        <p>類別1</p>
+        <p>CategoryOne</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -11299,13 +11299,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SEGMENT_NAME</p>
+        <p>區段名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>對應至類別的區段名稱。</p>
+        <p>對應到類別的區段名稱。</p>
       </td>
       <td>
         <p>1028715376434030000</p>
@@ -11320,7 +11320,7 @@ _按一下影像的完整大小版本_
     <tr>
       <td>IS_DELETED</td>
       <td>布林值</td>
-      <td>指示記錄是否被刪除。</td>
+      <td>表示是否刪除記錄。</td>
       <td>False</td>
     </tr>
     <tr>
@@ -11330,23 +11330,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_SESSIONS {#biz-sessions}
+### 商務工作階段 {#biz-sessions}
 
-從頁面檢視處理的工作階段。 多個頁面檢視可組成一個工作階段，而單一訪客ID可與多個工作階段建立關聯。
+從頁面檢視處理的工作階段。 多個頁面檢視可組成一個工作階段，而單一訪客ID可與多個工作階段相關聯。
 
 <table>
   <tbody>
@@ -11369,7 +11369,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>工作階段的唯一ID。</p>
@@ -11383,7 +11383,7 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>相關訪客ID的第一個Cookie。</p>
@@ -11395,10 +11395,10 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已記錄的工作階段Cookie ID。</p>
+        <p>工作階段的已記錄Cookie ID。</p>
       </td>
       <td>277d79d01678498fea067c9b631bf6df</td>
     </tr>
@@ -11410,7 +11410,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>會議日期。</p>
+        <p>工作階段日期。</p>
       </td>
       <td>
         <p>2016-08-01 14:24:21.000</p>
@@ -11441,10 +11441,10 @@ _按一下影像的完整大小版本_
         <p>頻道</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>管道歸屬於工作階段，由 [!DNL Marketo Measure] 應用程式。</p>
+        <p>歸因於「工作階段」的管道，如 [!DNL Marketo Measure] 應用程式。</p>
       </td>
       <td>
         <p>付費Search.AdWords</p>
@@ -11455,10 +11455,10 @@ _按一下影像的完整大小版本_
         <p>PAGE_TITLE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網頁名稱。</p>
+        <p>網頁的名稱。</p>
       </td>
       <td>
         <p>SalesforceGoogle Analytics | [!DNL Marketo Measure]</p>
@@ -11469,10 +11469,10 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>工作階段的第一個頁面檢視的URL，不含查詢參數。</p>
+        <p>工作階段第一個頁面檢視的URL，不含查詢引數。</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics</p>
@@ -11483,10 +11483,10 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>工作階段第一個頁面檢視的URL，包括任何查詢參數。</p>
+        <p>工作階段第一個頁面檢視的URL，包括任何查詢引數。</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
@@ -11497,10 +11497,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>工作階段源自的URL，不含查詢參數。</p>
+        <p>工作階段源自的URL，不含查詢引數。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -11511,10 +11511,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>工作階段源自的URL，包括任何查詢參數。</p>
+        <p>工作階段源自的URL，包括任何查詢引數。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -11525,7 +11525,7 @@ _按一下影像的完整大小版本_
         <p>REFERRER_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>反向連結頁面的名稱。</p>
@@ -11536,13 +11536,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SEARCH_PHRASE</p>
+        <p>SEARCH_PHASE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>使用者在瀏覽器中輸入以搜尋和結束於網站的值。</p>
+        <p>使用者在瀏覽器中輸入要搜尋且最後出現在網站上的值。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] google salesforce</p>
@@ -11553,10 +11553,10 @@ _按一下影像的完整大小版本_
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用於定義導致會話的源。 這可從URL從utm_source剖析出來，或設為廣告提供者(若 [!DNL Marketo Measure] 能夠解析廣告。</p>
+        <p>用於定義產生工作階段的來源。 如果符合下列條件，則可從utm_source的URL剖析此專案，或將其設定為廣告提供者 [!DNL Marketo Measure] 能夠解析廣告。</p>
       </td>
       <td>
         <p>Google AdWords</p>
@@ -11570,7 +11570,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>無論該會話是否包含表單填充，</p>
+        <p>工作階段是否包含表單填入，</p>
       </td>
       <td>
         <p>True</p>
@@ -11584,7 +11584,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>會話是否包含Web聊天。</p>
+        <p>工作階段是否包含網頁聊天。</p>
       </td>
       <td>
         <p>False</p>
@@ -11623,13 +11623,13 @@ _按一下影像的完整大小版本_
         <p>裝置</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>會話期間用戶的瀏覽器和作業系統。</p>
+        <p>工作階段期間使用者的瀏覽器和作業系統。</p>
       </td>
       <td>
-        <p>Chrome(65.0)、Windows(6.1)</p>
+        <p>Chrome (65.0)、Windows (6.1)</p>
       </td>
     </tr>
     <tr>
@@ -11637,10 +11637,10 @@ _按一下影像的完整大小版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 解決方案，通常是我們的其中一個整合合作夥伴。</p>
+        <p>廣告平台 [!DNL Marketo Measure] 由我們的整合合作夥伴解決。</p>
       </td>
       <td>
         <p>Google</p>
@@ -11651,10 +11651,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶ID。</p>
+        <p>從中解析廣告的廣告帳戶ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -11662,13 +11662,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帳戶名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告已解析來源的廣告帳戶名稱。</p>
+        <p>從中解析廣告的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -11679,10 +11679,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告商的ID，尤其是從Doubleclick連線中解析。</p>
+        <p>從中解析廣告的廣告商ID，特別是來自Doubleclick連線。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -11690,16 +11690,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告的廣告商名稱，尤其是從Doubleclick連線中解析。</p>
+        <p>從中解析廣告的廣告商名稱，尤其是來自Doubleclick連線的廣告商。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -11707,10 +11707,10 @@ _按一下影像的完整大小版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源網站ID。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的網站識別碼。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -11718,13 +11718,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>網站名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源網站名稱。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的網站名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -11735,10 +11735,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的Palcement ID。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的所在位置的ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -11749,13 +11749,13 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源版位名稱。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告之位置的名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>路障</p>
+        <p>障礙</p>
       </td>
     </tr>
     <tr>
@@ -11763,10 +11763,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源促銷活動ID。</p>
+        <p>從中解析廣告之促銷活動的ID。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235</p>
@@ -11774,13 +11774,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源促銷活動名稱。</p>
+        <p>從中解析廣告的行銷活動名稱。</p>
       </td>
       <td>
         <p>規劃預算網路研討會</p>
@@ -11791,10 +11791,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源廣告群組ID。 這僅適用於Google Adwords。</p>
+        <p>從中解析廣告的廣告群組ID。 這僅適用於Google Adwords。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435</p>
@@ -11802,13 +11802,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源廣告群組名稱。 這僅適用於Google Adwords。</p>
+        <p>從中解析廣告的廣告群組的名稱。 這僅適用於Google Adwords。</p>
       </td>
       <td>
         <p>Salesforce -Google Analytics</p>
@@ -11819,10 +11819,10 @@ _按一下影像的完整大小版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已解析的廣告ID。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析的廣告ID。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>aw.6601259029.321586235.23182235435</td>
     </tr>
@@ -11831,10 +11831,10 @@ _按一下影像的完整大小版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已解析的廣告名稱。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析的廣告名稱。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>冬季促銷 — 綠色</td>
     </tr>
@@ -11843,10 +11843,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的創作ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.83558988035</p>
@@ -11854,16 +11854,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>創意名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的創作名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>解析廣告的來源創意內容名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>整合GA和Salesforce</p>
+        <p>整合GA與Salesforce</p>
       </td>
     </tr>
     <tr>
@@ -11871,13 +11871,13 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意的第一行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>將Salesforce和Analytics整合至</p>
+        <p>將Salesforce與Analytics整合至</p>
       </td>
     </tr>
     <tr>
@@ -11885,13 +11885,13 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意內容的第二行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>收入最佳化。 了解方法。</p>
+        <p>針對收入最佳化。 瞭解如何操作。</p>
       </td>
     </tr>
     <tr>
@@ -11899,10 +11899,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告點進的登陸頁面，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從搜尋廣告點進、從廣告解決來源廣告帳戶提取的登陸頁面。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics</p>
@@ -11913,10 +11913,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶提取的搜尋廣告上顯示的易記URL名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>易記URL名稱會顯示在搜尋廣告上，從解析廣告的來源廣告帳戶中提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>adobe.com/Salesforce-for-GA</p>
@@ -11927,10 +11927,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析的來源關鍵字ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的關鍵字ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.35934468937</p>
@@ -11941,10 +11941,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告解析來源的關鍵字名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的關鍵字名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>google analytics salesforce</p>
@@ -11952,13 +11952,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>KEYWORD_MATCH_TYPE</p>
+        <p>KEYWORD_MATCH_型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜尋片語和購買的關鍵字之間找到的相符類型。</p>
+        <p>在搜尋字詞和購買的關鍵字之間找到的相符型別。</p>
       </td>
       <td>
         <p>片語</p>
@@ -11969,10 +11969,10 @@ _按一下影像的完整大小版本_
         <p>行銷活動</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從URL中從utm_campaign剖析。</p>
+        <p>從utm_campaign的URL剖析。</p>
       </td>
       <td>
         <p>SU - ABC帳戶 — 付費媒體技能</p>
@@ -11983,13 +11983,13 @@ _按一下影像的完整大小版本_
         <p>來源</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從URL中從utm_source剖析。</p>
+        <p>從utm_source的URL剖析。</p>
       </td>
       <td>
-        <p>林克丁</p>
+        <p>linkedin</p>
       </td>
     </tr>
     <tr>
@@ -11997,10 +11997,10 @@ _按一下影像的完整大小版本_
         <p>中</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從URL中從utm_medium剖析。</p>
+        <p>從utm_medium的URL剖析。</p>
       </td>
       <td>
         <p>社交</p>
@@ -12011,10 +12011,10 @@ _按一下影像的完整大小版本_
         <p>詞語</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從URL中從utm_term剖析。</p>
+        <p>從utm_term的URL剖析。</p>
       </td>
       <td>
         <p>lisu07261601</p>
@@ -12025,13 +12025,13 @@ _按一下影像的完整大小版本_
         <p>內容</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從URL中從utm_content剖析。</p>
+        <p>從utm_content的URL剖析。</p>
       </td>
       <td>
-        <p>2016年AdWords基準報告</p>
+        <p>2016年AdWords效能指標報告</p>
       </td>
     </tr>
     <tr>
@@ -12039,7 +12039,7 @@ _按一下影像的完整大小版本_
         <p>城市</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從IP位址解析的城市。</p>
@@ -12048,51 +12048,51 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>地區</p>
+        <p>區域</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從IP位址解析的區域。</p>
+        <p>來自IP位址的已解析區域。</p>
       </td>
-      <td>卑詩省</td>
+      <td>卑詩</td>
     </tr>
     <tr>
       <td>
-        <p>國家/地區</p>
+        <p>國家</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從IP位址解析的國家/地區。</p>
+        <p>IP位址中已解析的國家/地區。</p>
       </td>
       <td>加拿大</td>
     </tr>
     <tr>
       <td>
-        <p>ISP_NAME</p>
+        <p>ISP名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用戶的Internet服務提供商</p>
+        <p>使用者的網際網路服務提供者</p>
       </td>
       <td>
-        <p>AT&amp;T U-verse</p>
+        <p>AT&amp;T反向</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP位址</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>會話時記錄的IP地址。</p>
+        <p>工作階段時記錄的IP位址。</p>
       </td>
       <td>
         <p>174.127.184.158</p>
@@ -12106,7 +12106,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>確定此會話是否已與另一個會話合併，並且應該刪除。</p>
+        <p>判斷此工作階段是否已與另一個工作階段合併，且應將其刪除。</p>
       </td>
       <td>
         <p>False</p>
@@ -12117,10 +12117,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -12128,67 +12128,67 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERTISER_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>SITE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -12199,21 +12199,21 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_SITES {#biz-sites}
+### 商業網站(_S) {#biz-sites}
 
 從任何連線的廣告帳戶匯入的網站。
 
@@ -12238,7 +12238,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站的唯一ID。</p>
@@ -12250,9 +12250,9 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>來自源系統的網站ID。</td>
+      <td>來源系統的網站ID。</td>
       <td>39464932147</td>
     </tr>
     <tr>
@@ -12260,10 +12260,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入網站的廣告帳戶ID。</p>
+        <p>網站匯入來源廣告帳戶的ID。</p>
       </td>
       <td>aw.3284209</td>
     </tr>
@@ -12272,10 +12272,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>匯入網站的廣告帳戶名稱。</p>
+        <p>網站匯入來源廣告帳戶的名稱。</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -12284,10 +12284,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站廣告商的ID，尤其是Doubleclick。</p>
+        <p>網站廣告商（尤其是Doubleclick）的ID。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -12295,16 +12295,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站的廣告商名稱，尤其是Doubleclick的廣告商名稱。</p>
+        <p>網站廣告商的名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -12312,22 +12312,22 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中都沒有位於網站上方的廣告群組。</p>
+        <p>預期為Null，因為任何廣告階層中的網站上方都沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>預期為null，因為任何廣告階層中都沒有位於網站上方的廣告群組。</p>
+        <p>預期為Null，因為任何廣告階層中的網站上方都沒有廣告群組。</p>
       </td>
       <td>null</td>
     </tr>
@@ -12336,10 +12336,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站的促銷活動ID。</p>
+        <p>網站促銷活動ID。</p>
       </td>
       <td>
         <p>ba.3284209.132630532</p>
@@ -12350,10 +12350,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站的促銷活動名稱。</p>
+        <p>網站促銷活動的名稱。</p>
       </td>
       <td>收入歸因</td>
     </tr>
@@ -12365,7 +12365,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>站點在源系統中是否仍處於活動狀態。</p>
+        <p>網站在來源系統中是否仍為作用中。</p>
       </td>
       <td>True</td>
     </tr>
@@ -12377,13 +12377,13 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>站點是否已在源系統中刪除。</p>
+        <p>是否已在來源系統中刪除網站。</p>
       </td>
       <td>False</td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -12401,7 +12401,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>首次從源系統導入記錄的日期。</p>
+        <p>首次從來源系統匯入記錄的日期。</p>
       </td>
       <td>2018-08-02 06:37:29.000</td>
     </tr>
@@ -12410,10 +12410,10 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自源系統的站點名稱。</p>
+        <p>來源系統中的「場地」名稱。</p>
       </td>
       <td>收入</td>
     </tr>
@@ -12435,20 +12435,20 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>診斷欄位，用於內部處理。</td>
+      <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此例中，為「網站」。</p>
+        <p>此表格的主要物件或實體。 在此案例中，「網站」。</p>
       </td>
       <td>網站</td>
     </tr>
@@ -12457,7 +12457,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站的廣告提供者名稱。</p>
@@ -12469,10 +12469,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-2712935512233520000</p>
@@ -12485,15 +12485,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12501,7 +12501,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_SITE_LINKS {#biz-site-links}
 
-來自任何已連線廣告帳戶的網站連結。
+來自任何已連線Ads帳戶的網站連結。
 
 <table>
   <tbody>
@@ -12524,7 +12524,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站連結的唯一ID</p>
@@ -12538,7 +12538,7 @@ _按一下影像的完整大小版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td>
@@ -12550,10 +12550,10 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站連結的已連線廣告帳戶ID</p>
+        <p>網站連結之已連線廣告帳戶的ID</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -12564,7 +12564,7 @@ _按一下影像的完整大小版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站連結的已連線廣告帳戶名稱</p>
@@ -12578,10 +12578,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站連結的廣告商ID，尤其是Doubleclick的廣告商ID。</p>
+        <p>網站連結的廣告商ID，特別適用於Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -12589,16 +12589,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站連結的廣告商名稱，尤其是Doubleclick的廣告商名稱。</p>
+        <p>網站連結的廣告商名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -12606,7 +12606,7 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站連結的廣告群組ID</p>
@@ -12615,10 +12615,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站連結的廣告群組名稱</p>
@@ -12630,10 +12630,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站連結的促銷活動ID</p>
+        <p>網站連結的行銷活動ID</p>
       </td>
       <td>
         <p>aw.6601259029.285077795</p>
@@ -12644,10 +12644,10 @@ _按一下影像的完整大小版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網站連結的促銷活動名稱</p>
+        <p>網站連結的行銷活動名稱</p>
       </td>
       <td>
         <p>品牌</p>
@@ -12661,7 +12661,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>網站連結在廣告帳戶中是否仍處於作用中狀態</p>
+        <p>網站連結在廣告帳戶中是否仍然有效</p>
       </td>
       <td>
         <p>TRUE</p>
@@ -12675,21 +12675,21 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>網站連結是否已刪除於廣告帳戶中</p>
+        <p>是否已在廣告帳戶中刪除網站連結</p>
       </td>
       <td>
-        <p>FALSE</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>行的上次修改日期</p>
+        <p>列的上次修改日期</p>
       </td>
       <td>
         <p>2018-08-02 06:36:50.000</p>
@@ -12703,7 +12703,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>網站連結首次下載的日期 [!DNL Marketo Measure]</p>
+        <p>第一次下載網站連結的日期 [!DNL Marketo Measure]</p>
       </td>
       <td>
         <p>2018-08-02 06:36:50.000</p>
@@ -12714,12 +12714,12 @@ _按一下影像的完整大小版本_
         <p>名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站連結的名稱</p>
       </td>
-      <td>連結A</td>
+      <td>連結a</td>
     </tr>
     <tr>
       <td>
@@ -12729,10 +12729,10 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>網站連結是否需要更新才能取得Marketo測量標籤</p>
+        <p>是否需要更新網站連結才能取得Marketo Measure標籤</p>
       </td>
       <td>
-        <p>FALSE</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -12740,7 +12740,7 @@ _按一下影像的完整大小版本_
         <p>GROUPING_KEY</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td>
@@ -12749,13 +12749,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>實體型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主對象或實體。 在此案例中，「SiteLink」</p>
+        <p>此表格的主要物件或實體。 在此案例中，「SiteLink」</p>
       </td>
       <td>
         <p>SiteLink</p>
@@ -12766,7 +12766,7 @@ _按一下影像的完整大小版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>網站連結的廣告提供者名稱</p>
@@ -12780,10 +12780,10 @@ _按一下影像的完整大小版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登錄頁面的URL。</p>
+        <p>登入頁面的URL。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td>
@@ -12796,7 +12796,7 @@ _按一下影像的完整大小版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一個值。</p>
@@ -12809,10 +12809,10 @@ _按一下影像的完整大小版本_
         <p>URL_REQUESTED</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL的裝飾項目 [!DNL Marketo Measure] 參數。</p>
+        <p>要裝飾哪個URL [!DNL Marketo Measure] 引數。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -12824,15 +12824,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>Snowflake的記錄修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的記錄刪除日期（如果已刪除）</td>
+      <td>如果記錄已刪除，則為Snowflake的記錄刪除日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12840,7 +12840,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_STAGE_DEFINITIONS {#biz-stage-definitions}
 
-導入或定義的階段清單 [!DNL Marketo Measure] 應用程式。
+匯入或定義的階段清單 [!DNL Marketo Measure] 應用程式。
 
 <table>
   <tbody>
@@ -12863,10 +12863,10 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>舞台的唯一ID。</p>
+        <p>此階段的唯一ID。</p>
       </td>
       <td>
         <p>01J3100000QE753EAD</p>
@@ -12874,7 +12874,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -12888,16 +12888,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>STAGE_NAME</p>
+        <p>階段名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>舞台名稱。</p>
+        <p>階段名稱。</p>
       </td>
       <td>
-        <p>語言</p>
+        <p>口頭</p>
       </td>
     </tr>
     <tr>
@@ -12907,7 +12907,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>指示階段是否被視為非活動。</td>
+      <td>表示是否將「階段」視為非使用中。</td>
       <td>
         <p>False</p>
       </td>
@@ -12920,7 +12920,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示是否在自定義模型中選擇了要跟蹤的舞台。</p>
+        <p>表示是否選取要在自訂模型中追蹤的「舞台」。</p>
       </td>
       <td>
         <p>False</p>
@@ -12934,7 +12934,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示是否選擇舞台作為回歸階段跟蹤。</p>
+        <p>表示是否選取「舞台」作為迴音符號舞台進行追蹤。</p>
       </td>
       <td>
         <p>False</p>
@@ -12947,7 +12947,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>指示是否選擇「舞台」來跟蹤轉變。</td>
+      <td>指示是否選取「舞台」來追蹤轉變。</td>
       <td>
         <p>False</p>
       </td>
@@ -12957,10 +12957,10 @@ _按一下影像的完整大小版本_
         <p>STAGE_STATUS</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>階段的狀態，如 [!DNL Marketo Measure] 應用程式階段映射。</p>
+        <p>「階段」的狀態，如 [!DNL Marketo Measure] 應用程式階段對應。</p>
       </td>
       <td>
         <p>開啟</p>
@@ -12974,7 +12974,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>指示是否從外部源系統導入舞台。</p>
+        <p>指示Stage是否從外部來源系統匯入。</p>
       </td>
       <td>
         <p>True</p>
@@ -12987,7 +12987,7 @@ _按一下影像的完整大小版本_
       <td>
         <p>布林值</p>
       </td>
-      <td>指示舞台是否設定為預設。</td>
+      <td>指示「舞台」是否設為預設值。</td>
       <td>
         <p>False</p>
       </td>
@@ -12997,10 +12997,10 @@ _按一下影像的完整大小版本_
         <p>排名</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>階段的數值排名，用於按過渡順序對階段進行排序。</p>
+        <p>「階段」的數字等級，用來以過渡順序排序「階段」。</p>
       </td>
       <td>
         <p>53</p>
@@ -13014,7 +13014,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否已刪除舞台。</p>
+        <p>是否已經刪除「舞台」。</p>
       </td>
       <td>
         <p>False</p>
@@ -13027,23 +13027,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_TOUCHPOINTS {#biz-touchpoints}
+### 商業接觸點(_T) {#biz-touchpoints}
 
-購買者接觸點，與銷售機會或聯絡人相關聯的所有接觸點。 如果「銷售機會接觸點」或「聯絡接觸點」停用，此表格將會空白。
+購買者接觸點，和銷售機會或聯絡人相關的所有接觸點。 如果潛在客戶接觸點或聯絡人接觸點已停用，此表格將為空白。
 
 <table>
   <tbody>
@@ -13058,7 +13058,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>購買者接觸點(BT)的唯一ID。</p>
@@ -13069,7 +13069,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -13086,7 +13086,7 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>與BT關聯的電子郵件地址。</td>
       <td>
@@ -13098,10 +13098,10 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與BT關聯的聯繫人的ID。</p>
+        <p>與BT相關聯的連絡人ID。</p>
       </td>
       <td>0030Z00003K5bpKQAR</td>
     </tr>
@@ -13110,10 +13110,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與BT關聯的帳戶的ID。</p>
+        <p>與BT相關聯的帳戶ID。</p>
       </td>
       <td>
         <p>0013100001lSLScAAO</p>
@@ -13121,13 +13121,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>銷售機會ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與BT關聯的銷售機會的ID。</p>
+        <p>與BT相關聯的銷售機會ID。</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -13138,10 +13138,10 @@ _按一下影像的完整大小版本_
         <p>UNIQUE_ID_PERSON</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>與銷售機會或聯繫人相關的父人記錄。</p>
+        <p>與潛在客戶或聯絡人相關的父級人員記錄。</p>
       </td>
       <td>
         <p>Person_00Q0Z000013e2PYUAY</p>
@@ -13152,7 +13152,7 @@ _按一下影像的完整大小版本_
         <p>USER_TOUCHPOINT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>產生BT的使用者接觸點ID。</p>
@@ -13163,13 +13163,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>與BT相關聯的訪客ID。</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>接觸點日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -13186,10 +13186,10 @@ _按一下影像的完整大小版本_
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活動類型、網站瀏覽、網路表單、網路聊天、電話呼叫、[CRM]促銷活動或[CRM]活動。 在CRM中稱為「接觸點類型」。</p>
+        <p>活動型別、網頁瀏覽、網頁表單、網頁交談、電話通話、[CRM]促銷活動或[CRM]活動。 在CRM中稱為「接觸點型別」。</p>
       </td>
       <td>
         <p>網路表單</p>
@@ -13200,10 +13200,10 @@ _按一下影像的完整大小版本_
         <p>頻道</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點會落入的管道，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
+        <p>根據中的自訂管道定義，接觸點所屬的管道 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
       </td>
       <td>Social.LinkedIn</td>
     </tr>
@@ -13212,10 +13212,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點落入的第1個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第一個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>ABC</td>
     </tr>
@@ -13224,10 +13224,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第2類別區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第二個類別的區段值，如內的區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>是</p>
@@ -13238,10 +13238,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY3</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第3個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第三個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>其他</p>
@@ -13252,10 +13252,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY4</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第4個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬第4個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>合作夥伴</p>
@@ -13266,10 +13266,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY5</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第5個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第5個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -13278,10 +13278,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY6</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點歸類的第6個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>接觸點所屬的第6個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -13290,9 +13290,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY7</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第7個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬第7個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13300,9 +13300,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY8</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第8個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬的第8個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13310,9 +13310,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY9</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點歸類的第9類別區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>接觸點所屬第9個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13320,9 +13320,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY10</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第10個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第10個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13330,9 +13330,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY11</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第11個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第11個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13340,9 +13340,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY12</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於的第12個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第12個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13350,9 +13350,9 @@ _按一下影像的完整大小版本_
         <p>CATEGORY13</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>接觸點屬於第13個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如內部區段定義中所定義，接觸點所屬的第13個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -13360,10 +13360,10 @@ _按一下影像的完整大小版本_
         <p>CATEGORY14</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點屬於的第14個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如內部區段定義中所定義，接觸點所屬的第14個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -13372,19 +13372,19 @@ _按一下影像的完整大小版本_
         <p>CATEGORY15</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點屬於第15個類別的區段值，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>此接觸點所屬的第15個類別的區段值，定義見內的區段定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>瀏覽器名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
@@ -13393,13 +13393,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>瀏覽器版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在瀏覽器的版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器版本。</p>
       </td>
       <td>
         <p>68</p>
@@ -13407,13 +13407,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台。</p>
       </td>
       <td>
         <p>Windows</p>
@@ -13421,13 +13421,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台版本。</p>
       </td>
       <td>10_12</td>
     </tr>
@@ -13436,10 +13436,10 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點之工作階段的第一個登陸頁面。 在CRM中稱為「登陸頁面」。</p>
+        <p>產生接觸點的工作階段第一個登陸頁面。 在CRM中稱為「登陸頁面」。</p>
       </td>
       <td>
         <p>https://info.adobe.com/definitive-guide-to-pipeline-marketing</p>
@@ -13450,10 +13450,10 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點之工作階段的第一個登陸頁面。 原始登錄頁面將包含URL中的所有查詢參數。 在CRM中稱為「登陸頁面 — 原始」。</p>
+        <p>產生接觸點的工作階段第一個登陸頁面。 原始登陸頁面將在URL中包含所有查詢引數。 在CRM中稱為「登陸頁面 — 原始」。</p>
       </td>
       <td>
         <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
@@ -13464,10 +13464,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 在CRM中稱為「反向連結頁面」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 在CRM中稱為「反向連結頁面」。</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -13476,10 +13476,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 原始反向連結頁面可能包含URL中的查詢參數。 在CRM中稱為「反向連結頁面 — 原始」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 原始反向連結頁面可能包含URL中的查詢引數。 在CRM中稱為「Referrer Page - Raw」。</p>
       </td>
       <td>
         <p>https://www.linkedin.com/feed</p>
@@ -13490,10 +13490,10 @@ _按一下影像的完整大小版本_
         <p>FORM_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在工作階段中記錄的第一個表單，導致接觸點。 後續的表單提交不會顯示在接觸點表格中，而會顯示在Form_Sumbite表格中。 在CRM中稱為「表單URL」。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續的表單提交將不會顯示在接觸點表格中，而會顯示在Form_Submit表格中。 在CRM中稱為「表單URL」。</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo</p>
@@ -13501,8 +13501,8 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>FORM_PAGE_RAW</td>
-      <td>var</td>
-      <td>在工作階段中記錄的第一個表單，導致接觸點。 後續的表單提交不會顯示在接觸點表格中，而會顯示在Form_Sumbite表格中。 原始表單頁面可能包含URL中的查詢參數。 在CRM中稱為「表單URL — 原始」。</td>
+      <td>varchar</td>
+      <td>產生接觸點的工作階段中記錄的第一個表單。 後續的表單提交將不會顯示在接觸點表格中，而會顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中以「表單URL — 原始」參照。</td>
       <td>https://info.adobe.com/demo?hsCtaTracking=98adcc2f-afe2-40c4-9d79-40dcc41663ee%7C3cfaa909-39cb-4f5d-93eb-be05de6b0180</td>
     </tr>
     <tr>
@@ -13513,7 +13513,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>表單提交的發生日期。</p>
+        <p>提交表單的日期。</p>
       </td>
       <td>
         <p>2017-06-20 01:06:41.000</p>
@@ -13524,24 +13524,10 @@ _按一下影像的完整大小版本_
         <p>城市</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測城市。</p>
-      </td>
-      <td>
-        <p>紐約</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>地區</p>
-      </td>
-      <td>
-        <p>var</p>
-      </td>
-      <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測區域。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的城市。</p>
       </td>
       <td>
         <p>紐約</p>
@@ -13549,13 +13535,27 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>國家/地區</p>
+        <p>區域</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測國家/地區。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的區域。</p>
+      </td>
+      <td>
+        <p>紐約</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>國家</p>
+      </td>
+      <td>
+        <p>varchar</p>
+      </td>
+      <td>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所處的國家/地區。</p>
       </td>
       <td>
         <p>美國</p>
@@ -13566,10 +13566,10 @@ _按一下影像的完整大小版本_
         <p>中</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用來定義導致接觸點的媒體。 您可從URL中從utm_medium剖析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是"cpc"或"display"等值。</p>
+        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -13580,10 +13580,10 @@ _按一下影像的完整大小版本_
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用於定義導致接觸點的來源。 如果是從CRM同步，或是從utm_source從URL中剖析，一般會設為「CRM促銷活動」 [!DNL Marketo Measure] 能夠解析廣告，可能是"Google AdWords"或"Facebook"等值。 在CRM中稱為「接觸點來源」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步，或從utm_source的URL剖析，一般會設定為「CRM Campaign」 [!DNL Marketo Measure] 能夠解析廣告，可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點來源」。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -13591,16 +13591,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SEARCH_PHRASE</p>
+        <p>SEARCH_PHASE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>使用者在瀏覽器中輸入以搜尋和結束於網站的值。 視關鍵字購買而定，這可能與從付費搜尋平台購買的關鍵字不符。</p>
+        <p>使用者在要搜尋的瀏覽器中輸入並在網站上結束的值。 根據關鍵字購買而定，這可能與從付費搜尋平台購買的關鍵字相符，也可能不相符。</p>
       </td>
       <td>
-        <p>marketo測量歸因</p>
+        <p>行銷量度歸因</p>
       </td>
     </tr>
     <tr>
@@ -13608,10 +13608,10 @@ _按一下影像的完整大小版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從中解決，通常是我們的其中一個整合合作夥伴。</p>
+        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -13622,10 +13622,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶ID。</p>
+        <p>從中解析廣告的廣告帳戶ID。</p>
       </td>
       <td>
         <p>li.502664737</p>
@@ -13633,13 +13633,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帳戶名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶名稱。</p>
+        <p>從中解析廣告的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>MM SC 2016_14605342_3/7-3/31/16</p>
@@ -13650,10 +13650,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的ID，其中廣告是從該帳戶解析的。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -13661,13 +13661,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的名稱，廣告從其中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>Marketo Marketing Analytics</p>
@@ -13678,10 +13678,10 @@ _按一下影像的完整大小版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站ID，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -13689,13 +13689,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>網站名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站名稱，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -13706,10 +13706,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶中的版位ID。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -13720,13 +13720,13 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的位置名稱。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>路障</p>
+        <p>障礙</p>
       </td>
     </tr>
     <tr>
@@ -13734,10 +13734,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的促銷活動ID。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動ID。</p>
       </td>
       <td>
         <p>li.502664737.138949954</p>
@@ -13745,13 +13745,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的促銷活動名稱。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動名稱。</p>
       </td>
       <td>
         <p>SU - COM帳戶 — 需求技能</p>
@@ -13762,22 +13762,22 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中解析廣告的廣告群組ID。 這僅適用於Google Adwords。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告群組ID。 這僅適用於Google Adwords。</p>
       </td>
       <td>aw.6601259029.317738075.23105327435</td>
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告群組名稱，該帳戶是廣告解析的來源。 這僅適用於Google AdWords。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告群組名稱。 這僅適用於Google AdWords。</p>
       </td>
       <td>行銷歸因 — 一般</td>
     </tr>
@@ -13786,10 +13786,10 @@ _按一下影像的完整大小版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的廣告ID。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告ID。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>dc.6114.8882972.25272734.492579576</td>
     </tr>
@@ -13798,10 +13798,10 @@ _按一下影像的完整大小版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告名稱，廣告從中解析。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告名稱。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>預算網路研討會 — 側欄</td>
     </tr>
@@ -13810,10 +13810,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告解析來源的創意ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>li.502664737.138949954.66452504</p>
@@ -13821,13 +13821,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>創意名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告解析來源的創意內容名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -13838,13 +13838,13 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意的第一行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>Lead Gen已完成</p>
+        <p>潛在客戶一般已完成</p>
       </td>
     </tr>
     <tr>
@@ -13852,10 +13852,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意內容的第二行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>下載管道行銷的最終指南：https://lnkd.in/e9xYj5M</p>
@@ -13866,10 +13866,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告點進的登陸頁面，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從搜尋廣告點進、從廣告解決來源廣告帳戶提取的登陸頁面。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>https://image-store.slidesharecdn.com/d29165c0-1e0b-4ffc-a494-d2c77e7cd4a6-large.jpeg</p>
@@ -13880,10 +13880,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶提取的搜尋廣告上顯示的易記URL名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>易記URL名稱會顯示在搜尋廣告上，從解析廣告的來源廣告帳戶中提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>marektomeasure.com/guide</p>
@@ -13894,13 +13894,13 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從付費搜尋購買購買、從廣告解析來源的廣告帳戶提取的關鍵字ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從付費搜尋購買處購買的關鍵字ID，從解決廣告的來源廣告帳戶提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>__GAId_lisu03151846</p>
+        <p>__GAId__lisu03151846</p>
       </td>
     </tr>
     <tr>
@@ -13908,10 +13908,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從付費搜尋購買購買、從廣告解析來源的廣告帳戶提取的關鍵字名稱。 這適用於Google AdWords和Bing Ads（搜尋）</p>
+        <p>從付費搜尋購買專案（從解決廣告的來源廣告帳戶提取）購買的關鍵字名稱。 適用於Google AdWords和Bing Ads （搜尋）</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -13919,13 +13919,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>KEYWORD_MATCH_TYPE</p>
+        <p>KEYWORD_MATCH_型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜尋片語和購買的關鍵字之間找到的相符類型。</p>
+        <p>在搜尋字詞和購買的關鍵字之間找到的相符型別。</p>
       </td>
       <td>
         <p>廣泛</p>
@@ -13939,7 +13939,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的首次接觸。</p>
+        <p>此接觸點是否被視為機會歷程的第一次接觸。</p>
       </td>
       <td>
         <p>True</p>
@@ -13953,7 +13953,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的潛在客戶建立接觸。</p>
+        <p>此接觸點是否被視為機會歷程的潛在客戶建立接觸點。</p>
       </td>
       <td>
         <p>True</p>
@@ -13981,16 +13981,16 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的封閉接觸。</p>
+        <p>此接觸點是否被視為機會歷程的封閉式接觸。</p>
       </td>
       <td>
         <p>False</p>
       </td>
     </tr>
     <tr>
-      <td>階段(_M)</td>
-      <td>var</td>
-      <td>已棄用此欄位。 使用Stage_Transitions表獲取舞台資訊。</td>
+      <td>STAGES_TOUCHED</td>
+      <td>varchar</td>
+      <td>此欄位已棄用。 使用Stage_Transitions表格來取得階段資訊。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -14001,7 +14001,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>此接觸點在工作階段期間是否有表單填入。</p>
+        <p>工作階段期間，此接觸點是否有表單填入。</p>
       </td>
       <td>
         <p>True</p>
@@ -14015,7 +14015,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的首次曝光接觸</p>
+        <p>此接觸點是否被視為機會歷程的第一次印象接觸</p>
       </td>
       <td>
         <p>False</p>
@@ -14026,10 +14026,10 @@ _按一下影像的完整大小版本_
         <p>FIRST_CLICK_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為是首次接觸而分配給此接觸點的計算百分比（請參閱Is_First_Touch）。</p>
+        <p>分配給此接觸點的已計算百分比，因為這是首次接觸（請參閱Is_First_Touch）。</p>
       </td>
       <td>
         <p>100</p>
@@ -14040,10 +14040,10 @@ _按一下影像的完整大小版本_
         <p>LAST_ANON_CLICK_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是銷售機會建立接觸（請參閱Is_Lead_Creation_Touch）。</p>
+        <p>分配給此接觸點的已計算百分比，因為這是銷售機會建立接觸（請參閱Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>100</p>
@@ -14054,10 +14054,10 @@ _按一下影像的完整大小版本_
         <p>U_SHAPE_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>因為此接觸點是u形接觸的一部分而分配給此接觸點的計算百分比（請參閱Is_First_Touch和Is_Lead_Creation_Touch）。</p>
+        <p>配置給此接觸點的已計算百分比，因為此接觸點屬於U形接觸（請參閱Is_First_Touch和Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>100</p>
@@ -14065,13 +14065,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>W_SHAPE_PERCENTAGE</p>
+        <p>W_SHAPE_PERCENT</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是w形接觸的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 預計為0，因為這是BT。</p>
+        <p>配置給此接觸點的已計算百分比，因為此接觸點屬於W型接觸（請參閱Is_First_Touch、Is_Lead_Creation_Touch及Is_Opp_Creation_Touch）。 預期為0，因為這是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -14082,10 +14082,10 @@ _按一下影像的完整大小版本_
         <p>FULL_PATH_PERCENTAGE</p>
       </td>
       <td>
-        <p>數字(22,19)</p>
+        <p>number(22,19)</p>
       </td>
       <td>
-        <p>分配給此接觸點的計算百分比，因為它是完整路徑模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。 預計為0，因為這是BT。</p>
+        <p>配置給此接觸點的已計算百分比，因為此接觸點是完整路徑模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 預期為0，因為這是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -14093,8 +14093,8 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CUSTOM_MODEL_PERCENTAGE</td>
-      <td>數字(22,19)</td>
-      <td>分配給此接觸點的計算百分比，因為它是自定義模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。 預計為0，因為這是BT。</p>
+      <td>number(22,19)</td>
+      <td>配置給此接觸點的已計算百分比，因為此接觸點是自訂模型的一部分（請參閱Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 預期為0，因為這是BT。</p>
       </td>
       <td>0</td>
     </tr>
@@ -14106,7 +14106,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否刪除此接觸點。</p>
+        <p>此接觸點是否已刪除。</p>
       </td>
       <td>
         <p>False</p>
@@ -14117,10 +14117,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>-9004910726709710000</p>
@@ -14131,7 +14131,7 @@ _按一下影像的完整大小版本_
         <p>CONTACT_ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td></td>
       <td></td>
@@ -14141,80 +14141,80 @@ _按一下影像的完整大小版本_
         <p>LEAD_ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERISER_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>SITE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -14225,15 +14225,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -14241,7 +14241,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_URL {#biz-urls}
 
-從登錄頁面、反向連結頁面和頁面檢視匯總URL。
+彙總來自登陸頁面、反向連結頁面和頁面檢視的URL。
 
 <table>
   <tbody>
@@ -14264,7 +14264,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>完整的URL。</p>
@@ -14275,13 +14275,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>方案</p>
+        <p>配置</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>網路上網頁的安全通訊。</p>
+        <p>網頁在網路上的安全通訊。</p>
       </td>
       <td>
         <p>https</p>
@@ -14292,7 +14292,7 @@ _按一下影像的完整大小版本_
         <p>主機</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL的網域，包含任何子網域。</p>
@@ -14303,13 +14303,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>埠</p>
+        <p>連線埠</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自網際網路主機的埠，在URL中為可選。</p>
+        <p>來自網際網路主機的連線埠（URL中的選用）。</p>
       </td>
       <td>
         <p>584</p>
@@ -14320,10 +14320,10 @@ _按一下影像的完整大小版本_
         <p>路徑</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>指向主機上特定位置的URL部分。</p>
+        <p>URL中指向主機特定位置的一部分。</p>
       </td>
       <td>
         <p>/blog/strategic-marketing-plangoals</p>
@@ -14334,10 +14334,10 @@ _按一下影像的完整大小版本_
         <p>ROW_KEY</p>
       </td>
       <td>
-        <p>數字(38,0)</p>
+        <p>number(38,0)</p>
       </td>
       <td>
-        <p>Biz_Facts視圖的外鍵。</p>
+        <p>Biz_Facts檢視的外部索引鍵。</p>
       </td>
       <td>
         <p>5686109553536636820</p>
@@ -14350,23 +14350,23 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_USER_TOUCHPOINTS {#biz-user-touchpoints}
+### 商業使用者接觸點 {#biz-user-touchpoints}
 
-從系結至電子郵件的任何事件建立的所有接觸點。
+從任何繫結至電子郵件的事件建立的所有接觸點。
 
 <table>
   <tbody>
@@ -14389,7 +14389,7 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>使用者接觸點的唯一ID。</p>
@@ -14400,7 +14400,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -14417,7 +14417,7 @@ _按一下影像的完整大小版本_
         <p>電子郵件</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>與使用者接觸點相關聯的電子郵件地址。</p>
@@ -14431,7 +14431,7 @@ _按一下影像的完整大小版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>建立使用者接觸點的工作階段ID。</p>
@@ -14445,10 +14445,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_MEMBER_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>建立使用者接觸點的促銷活動成員ID。</p>
+        <p>建立使用者接觸點之促銷活動成員的ID。</p>
       </td>
       <td>
         <p>00v0Z00001VTgv1QAD</p>
@@ -14456,7 +14456,7 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>CRM_ACTIVITY_ID</td>
-      <td>var</td>
+      <td>varchar</td>
       <td>建立使用者接觸點的活動ID。</td>
       <td>1678625515</td>
     </tr>
@@ -14465,7 +14465,7 @@ _按一下影像的完整大小版本_
         <p>CRM_EVENT_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>建立使用者接觸點之事件的ID。</p>
@@ -14479,10 +14479,10 @@ _按一下影像的完整大小版本_
         <p>CRM_TASK_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>建立用戶接觸點的任務的TId。</p>
+        <p>建立使用者接觸點之任務的提示。</p>
       </td>
       <td>
         <p>00T0Z00004Qbd1jUAB</p>
@@ -14493,28 +14493,28 @@ _按一下影像的完整大小版本_
         <p>IMPRESSION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>建立使用者接觸點的曝光ID。</p>
+        <p>建立使用者接觸點的曝光識別碼。</p>
       </td>
       <td>00T0Z00004Qbd1jUAB</td>
     </tr>
     <tr>
       <td>IS_FIRST_KNOWN_TOUCH</td>
       <td>布林值</td>
-      <td>是否將此接觸點視為機會歷程的首次接觸。</td>
+      <td>此接觸點是否被視為機會歷程的第一次接觸。</td>
       <td>False</td>
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>var</td>
-      <td>相關訪客id的第一個Cookie ID。</td>
+      <td>varchar</td>
+      <td>相關訪客ID的第一個Cookie ID。</td>
       <td>v_36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>接觸點日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -14531,10 +14531,10 @@ _按一下影像的完整大小版本_
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活動類型、網站瀏覽、網路表單、網路聊天、電話呼叫、[CRM]促銷活動或[CRM]活動。 在CRM中稱為「接觸點類型」。</p>
+        <p>活動型別、網頁瀏覽、網頁表單、網頁交談、電話通話、[CRM]促銷活動或[CRM]活動。 在CRM中稱為「接觸點型別」。</p>
       </td>
       <td>
         <p>網路表單</p>
@@ -14545,10 +14545,10 @@ _按一下影像的完整大小版本_
         <p>頻道</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接觸點會落入的管道，如 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
+        <p>根據中的自訂管道定義，接觸點所屬的管道 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -14556,10 +14556,10 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>瀏覽器名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
@@ -14570,13 +14570,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>瀏覽器版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在瀏覽器的版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器版本。</p>
       </td>
       <td>
         <p>33</p>
@@ -14584,13 +14584,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台。</p>
       </td>
       <td>
         <p>Mac</p>
@@ -14598,13 +14598,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，偵測到使用者在工作階段期間所在的平台版本。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的平台版本。</p>
       </td>
       <td>
         <p>10_12</p>
@@ -14615,10 +14615,10 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點之工作階段的第一個登陸頁面。 在CRM中稱為「登陸頁面」。</p>
+        <p>產生接觸點的工作階段第一個登陸頁面。 在CRM中稱為「登陸頁面」。</p>
       </td>
       <td>
         <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing</p>
@@ -14629,13 +14629,13 @@ _按一下影像的完整大小版本_
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點之工作階段的第一個登陸頁面。 原始登錄頁面將包含URL中的所有查詢參數。 在CRM中稱為「登陸頁面 — 原始」。</p>
+        <p>產生接觸點的工作階段第一個登陸頁面。 原始登陸頁面將在URL中包含所有查詢引數。 在CRM中稱為「登陸頁面 — 原始」。</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maesure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -14643,10 +14643,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 在CRM中稱為「反向連結頁面」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 在CRM中稱為「反向連結頁面」。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -14657,10 +14657,10 @@ _按一下影像的完整大小版本_
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常是使用者進入網站之前的外部登錄頁面。 原始反向連結頁面可能包含URL中的查詢參數。 在CRM中稱為「反向連結頁面 — 原始」。</p>
+        <p>通常是在使用者進入網站前面的外部登陸頁面。 原始反向連結頁面可能包含URL中的查詢引數。 在CRM中稱為「Referrer Page - Raw」。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -14671,10 +14671,10 @@ _按一下影像的完整大小版本_
         <p>FORM_PAGE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在工作階段中記錄的第一個表單，導致接觸點。 後續的表單提交不會顯示在Attribution_Touchpoints表格中，而會顯示在Form_Sumbite表格中。 在CRM中稱為「表單URL」。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 在CRM中稱為「表單URL」。</p>
       </td>
       <td>
         <p>http://info.adobe.com/adwords-for-lead-generation</p>
@@ -14685,13 +14685,13 @@ _按一下影像的完整大小版本_
         <p>FORM_PAGE_RAW</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在工作階段中記錄的第一個表單，導致接觸點。 後續的表單提交不會顯示在Attribution_Touchpoints表格中，而會顯示在Form_Sumbite表格中。 原始表單頁面可能包含URL中的查詢參數。 在CRM中稱為「表單URL — 原始」。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中以「表單URL — 原始」參照。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20指南</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
       </td>
     </tr>
     <tr>
@@ -14702,7 +14702,7 @@ _按一下影像的完整大小版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>表單提交的發生日期。</p>
+        <p>提交表單的日期。</p>
       </td>
       <td>
         <p>2015-06-03 17:49:10.000</p>
@@ -14713,10 +14713,10 @@ _按一下影像的完整大小版本_
         <p>城市</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測城市。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的城市。</p>
       </td>
       <td>
         <p>奧克蘭</p>
@@ -14724,13 +14724,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>地區</p>
+        <p>區域</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測區域。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的區域。</p>
       </td>
       <td>
         <p>加州</p>
@@ -14738,13 +14738,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>國家/地區</p>
+        <p>國家</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從javascript和IP位址，即使用者在工作階段期間所在的偵測國家/地區。</p>
+        <p>從javascript和IP位址中，偵測到使用者在工作階段期間所處的國家/地區。</p>
       </td>
       <td>
         <p>美國</p>
@@ -14755,13 +14755,13 @@ _按一下影像的完整大小版本_
         <p>中</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用來定義導致接觸點的媒體。 您可從URL中從utm_medium剖析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是"cpc"或"display"等值。</p>
+        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
       </td>
       <td>
-        <p>付款</p>
+        <p>付費</p>
       </td>
     </tr>
     <tr>
@@ -14769,24 +14769,24 @@ _按一下影像的完整大小版本_
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用於定義導致接觸點的來源。 如果是從CRM同步，或是從utm_source從URL中剖析，一般會設為「CRM促銷活動」 [!DNL Marketo Measure] 能夠解析廣告，可能是"Google AdWords"或"Facebook"等值。 在CRM中稱為「接觸點來源」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步，或從utm_source的URL剖析，一般會設定為「CRM Campaign」 [!DNL Marketo Measure] 能夠解析廣告，可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點來源」。</p>
       </td>
       <td>
-        <p>林克丁</p>
+        <p>linkedin</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>SEARCH_PHRASE</p>
+        <p>SEARCH_PHASE</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>使用者在瀏覽器中輸入以搜尋和結束於網站的值。 視關鍵字購買而定，這可能與從付費搜尋平台購買的關鍵字不符。</p>
+        <p>使用者在要搜尋的瀏覽器中輸入並在網站上結束的值。 根據關鍵字購買而定，這可能與從付費搜尋平台購買的關鍵字相符，也可能不相符。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -14797,10 +14797,10 @@ _按一下影像的完整大小版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從中解決，通常是我們的其中一個整合合作夥伴。</p>
+        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
       </td>
       <td>
         <p>Google</p>
@@ -14811,10 +14811,10 @@ _按一下影像的完整大小版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶ID。</p>
+        <p>從中解析廣告的廣告帳戶ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -14822,13 +14822,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帳戶名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告從中解析的廣告帳戶名稱。</p>
+        <p>從中解析廣告的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 帳戶</p>
@@ -14839,10 +14839,10 @@ _按一下影像的完整大小版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的ID，其中廣告是從該帳戶解析的。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -14850,16 +14850,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>ADVERTISER_NAME</p>
+        <p>advertiser_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告商的名稱，廣告從其中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告商名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>行銷分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -14867,10 +14867,10 @@ _按一下影像的完整大小版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站ID，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -14878,13 +14878,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>網站名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的網站名稱，廣告從中解析。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的網站名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -14895,10 +14895,10 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶中的版位ID。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位ID。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -14909,13 +14909,13 @@ _按一下影像的完整大小版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的位置名稱。 這僅適用於Doubleclick促銷活動管理員。</p>
+        <p>從中解析廣告的廣告帳戶中的版位名稱。 這僅適用於Doubleclick Campaign Manager。</p>
       </td>
       <td>
-        <p>路障</p>
+        <p>障礙</p>
       </td>
     </tr>
     <tr>
@@ -14923,10 +14923,10 @@ _按一下影像的完整大小版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的促銷活動ID。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動ID。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635</p>
@@ -14934,13 +14934,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>促銷活動名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告帳戶解析廣告的促銷活動名稱。</p>
+        <p>從中解析廣告的廣告帳戶中的促銷活動名稱。</p>
       </td>
       <td>
         <p>品牌</p>
@@ -14951,10 +14951,10 @@ _按一下影像的完整大小版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中解析廣告的廣告群組ID。 這僅適用於Google Adwords。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告群組ID。 這僅適用於Google Adwords。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675</p>
@@ -14962,13 +14962,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>AD_GROUP_NAME</p>
+        <p>ad_GROUP_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告群組名稱，該帳戶是廣告解析的來源。 這僅適用於Google AdWords。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告群組名稱。 這僅適用於Google AdWords。</p>
       </td>
       <td>
         <p>品牌 — 核心</p>
@@ -14979,10 +14979,10 @@ _按一下影像的完整大小版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告解析來源之廣告帳戶的廣告ID。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告ID。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>dc.6114.8882972.25272734.492579576</td>
     </tr>
@@ -14991,10 +14991,10 @@ _按一下影像的完整大小版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>來自廣告帳戶的廣告名稱，廣告從中解析。 這適用於Doubleclick促銷活動管理員和Facebook（顯示）。</p>
+        <p>從中解析廣告的廣告帳戶中的廣告名稱。 這適用於Doubleclick Campaign Manager和Facebook （顯示）。</p>
       </td>
       <td>預算網路研討會 — 側欄</td>
     </tr>
@@ -15003,10 +15003,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告解析來源的創意ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.195329631298</p>
@@ -15014,13 +15014,13 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>創意名稱</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>廣告帳戶中廣告解析來源的創意內容名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 官方網站</p>
@@ -15031,13 +15031,13 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意的第一行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>收入規劃與歸因</p>
+        <p>收入規劃和歸因</p>
       </td>
     </tr>
     <tr>
@@ -15045,13 +15045,13 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告提取創意內容的第二行，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>了解250多家公司為何選擇 [!DNL Marketo Measure] 行銷歸因。 準備演示！</p>
+        <p>瞭解為什麼250多家公司選擇 [!DNL Marketo Measure] 用於行銷歸因。 取得示範！</p>
       </td>
     </tr>
     <tr>
@@ -15059,10 +15059,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從搜尋廣告點進的登陸頁面，從廣告解析的廣告帳戶提取。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從搜尋廣告點進、從廣告解決來源廣告帳戶提取的登陸頁面。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>http://info.adobe.com/demo</p>
@@ -15073,10 +15073,10 @@ _按一下影像的完整大小版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從廣告解析來源的廣告帳戶提取的搜尋廣告上顯示的易記URL名稱。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>易記URL名稱會顯示在搜尋廣告上，從解析廣告的來源廣告帳戶中提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>adobe.com/demo</p>
@@ -15087,10 +15087,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從付費搜尋購買購買、從廣告解析來源的廣告帳戶提取的關鍵字ID。 這適用於Google AdWords和Bing Ads（搜尋）。</p>
+        <p>從付費搜尋購買處購買的關鍵字ID，從解決廣告的來源廣告帳戶提取。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.46267805426</p>
@@ -15101,10 +15101,10 @@ _按一下影像的完整大小版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>從付費搜尋購買購買、從廣告解析來源的廣告帳戶提取的關鍵字名稱。 這適用於Google AdWords和Bing Ads（搜尋）</p>
+        <p>從付費搜尋購買專案（從解決廣告的來源廣告帳戶提取）購買的關鍵字名稱。 適用於Google AdWords和Bing Ads （搜尋）</p>
       </td>
       <td>
         <p>[marketo]</p>
@@ -15112,16 +15112,16 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>
-        <p>KEYWORD_MATCH_TYPE</p>
+        <p>KEYWORD_MATCH_型別</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜尋片語和購買的關鍵字之間找到的相符類型。</p>
+        <p>在搜尋字詞和購買的關鍵字之間找到的相符型別。</p>
       </td>
       <td>
-        <p>完全</p>
+        <p>精確</p>
       </td>
     </tr>
     <tr>
@@ -15132,7 +15132,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>此接觸點在工作階段期間是否有表單填入。</p>
+        <p>工作階段期間，此接觸點是否有表單填入。</p>
       </td>
       <td>
         <p>True</p>
@@ -15146,7 +15146,7 @@ _按一下影像的完整大小版本_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否將此接觸點視為機會歷程的首次曝光接觸。</p>
+        <p>此接觸點是否被視為機會歷程的第一次印象接觸。</p>
       </td>
       <td>
         <p>False</p>
@@ -15168,79 +15168,79 @@ _按一下影像的完整大小版本_
     </tr>
     <tr>
       <td>ROW_KEY</td>
-      <td>數字(38,0)</td>
-      <td>Biz_Facts視圖的外鍵。</td>
+      <td>number(38,0)</td>
+      <td>Biz_Facts檢視的外部索引鍵。</td>
       <td>-5269090762570690000</td>
     </tr>
     <tr>
       <td>LANDING_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ACCOUNT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>ADVERISER_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>SITE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>PLACEMENT_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CAMPAIGN_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>AD_GROUP_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>CREATIVE_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>KEYWORD_ROW_KEY</td>
-      <td>數字(38,0)</td>
+      <td>number(38,0)</td>
       <td></td>
       <td></td>
     </tr>
@@ -15251,15 +15251,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -15267,7 +15267,7 @@ _按一下影像的完整大小版本_
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-映射表 [!DNL Marketo Measure] AdobeECID和Munckin Id的工作階段Id。
+將表格對應到對應 [!DNL Marketo Measure] AdobeECID和Munckin Id的工作階段Id。
 
 <table>
   <tbody>
@@ -15290,9 +15290,9 @@ _按一下影像的完整大小版本_
         <p>ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>映射記錄的唯一ID。</td>
+      <td>對應記錄的唯一ID。</td>
       <td>
         <p>0d643578c0c74753eff91abe668ed328|2020-06-17:19:03:36|0002|0|568668</p>
       </td>
@@ -15302,9 +15302,9 @@ _按一下影像的完整大小版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>此 [!DNL Marketo Measure] 已記錄cookie id。</td>
+      <td>此 [!DNL Marketo Measure] 記錄的Cookie ID。</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -15312,9 +15312,9 @@ _按一下影像的完整大小版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>相關訪客id的第一個Cookie ID。</td>
+      <td>相關訪客ID的第一個Cookie ID。</td>
       <td>v_0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -15322,7 +15322,7 @@ _按一下影像的完整大小版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>此 [!DNL Marketo Measure] 工作階段ID。</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
@@ -15332,14 +15332,14 @@ _按一下影像的完整大小版本_
         <p>EVENT_DATE</p>
       </td>
       <td>timestamp_ntz</td>
-      <td>記錄映射的日期。</td>
+      <td>記錄對應的日期。</td>
       <td>
         <p>2020-06-17 19:03:36.000</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>修改日期</p>
+        <p>MODIFIED_DATE</p>
       </td>
       <td>timestamp_ntz</td>
       <td>
@@ -15350,11 +15350,11 @@ _按一下影像的完整大小版本_
       </td>
     </tr>
     <tr>
-      <td>CURRENT_PAGE</td>
+      <td>CURRENTPAGE</td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>頁面檢視的URL，不含查詢參數。</td>
+      <td>頁面檢視的URL，不含查詢引數。</td>
       <td>
         <p>https://learn.atest.com/simplify-retention-starter-kit.html</p>
       </td>
@@ -15362,17 +15362,17 @@ _按一下影像的完整大小版本_
     <tr>
       <td>CURRENT_PAGE_RAW</td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>頁面檢視的URL，包括任何查詢參數。</td>
+      <td>「頁面檢視」的URL，包括任何查詢引數。</td>
       <td>
         <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>
-      <td>IP_ADDRESS</td>
+      <td>IP位址</td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>記錄的IP位址。</td>
       <td>
@@ -15380,41 +15380,41 @@ _按一下影像的完整大小版本_
       </td>
     </tr>
     <tr>
-      <td>類型</td>
+      <td>型別</td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
-      <td>指出事件的類型。</td>
+      <td>指示事件的型別。</td>
       <td>
-        <p>主機映射</p>
+        <p>主機對應</p>
       </td>
     </tr>
     <tr>
       <td>USER_AGENT_STRING</td>
       <td>
-        <p>var</p>
+        <p>varchar</p>
       </td>
       <td>在頁面檢視時記錄的裝置和瀏覽器。</td>
       <td>
-        <p>Mozilla/5.0(Windows NT 10.0;Win64;x64)AppleWebKit/537.36（KHTML，像是Gecko）Chrome/79.0.3945.130 Safari/537.36</p>
+        <p>Mozilla/5.0 (Windows NT 10.0；Win64；x64) AppleWebKit/537.36 （KHTML，如Gecko） Chrome/79.0.3945.130 Safari/537.36</p>
       </td>
     </tr>
     <tr>
-      <td>CLIENT_SEQUENCE</td>
-      <td>var</td>
-      <td>指出頁面檢視在工作階段中發生的順序。</td>
+      <td>使用者端序列</td>
+      <td>varchar</td>
+      <td>表示頁面檢視在工作階段中發生的順序。</td>
       <td>2</td>
     </tr>
     <tr>
       <td>CLIENT_RANDOM</td>
-      <td>var</td>
-      <td>用於內部稽核及處理。</td>
+      <td>varchar</td>
+      <td>用於內部稽核與處理。</td>
       <td>566868</td>
     </tr>
     <tr>
       <td>IS_DUPLICATED</td>
       <td>布林值</td>
-      <td>指示記錄是否被視為重複記錄。</td>
+      <td>表示該記錄是否被視為重複。</td>
       <td>False</td>
     </tr>
     <tr>
@@ -15424,21 +15424,21 @@ _按一下影像的完整大小版本_
       <td>True</td>
     </tr>
     <tr>
-      <td>映射類型</td>
-      <td>var</td>
-      <td>對應至的Id類型 [!DNL Marketo Measure] cookie ID。</td>
+      <td>MAPPING_TYPE</td>
+      <td>varchar</td>
+      <td>已對應至的ID型別 [!DNL Marketo Measure] Cookie ID。</td>
       <td>Adobe_OrgId_Ecid</td>
     </tr>
     <tr>
       <td>MAPPING_ORD_ID</td>
-      <td>var</td>
-      <td>Adobe IMS組織Id。</td>
+      <td>varchar</td>
+      <td>Adobe IMS組織ID。</td>
       <td>8CC867C25245ADC30A490D4C</td>
     </tr>
     <tr>
       <td>MAPPING_COOKIE_ID</td>
-      <td>var</td>
-      <td>Adobe指定組織ID的ECID。</td>
+      <td>varchar</td>
+      <td>特定組織ID的ECIDAdobe。</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
@@ -15448,15 +15448,15 @@ _按一下影像的完整大小版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>修改日期(_M)</td>
+      <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>記錄在Snowflake中標籤為已刪除的日期。</td>
+      <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -15464,7 +15464,7 @@ _按一下影像的完整大小版本_
 
 ## 範例查詢 {#sample-queries}
 
-**上個月每個管道/子管道有多少個購買者接觸點(BT)?**
+**上個月每個管道/子管道有多少個購買者接觸點(BT)？**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
@@ -15486,7 +15486,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1,2
 ```
 
-**對於完整路徑歸因模型，每個管道的歸因收入在過去一個月中關閉了多少？**
+**對於完整路徑歸因模型，每個管道在過去一個月中關閉的歸因收入為多少？**
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
@@ -15513,7 +15513,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**一個人的整個旅程是什麼？  （顯示單一電子郵件地址的所有接觸點。）**
+**一個人的整個歷程是怎樣的？  （顯示單一電子郵件地址的所有接觸點。）**
 
 ```
 select ut.touchpoint_date
@@ -15558,7 +15558,7 @@ order by 1
 
 >[!NOTE]
 >
->此查詢返回w形狀模型的歸因收入。 更新歸因收入計算中的欄位，以變更模型。
+>此查詢會傳回w形模型的歸因收入。 更新已歸因收入計算中的欄位以變更模型。
 
 ```
 select bat.id
@@ -15587,4 +15587,4 @@ group by 1,2,3,4
 order by touchpoint_date
 ```
 
-[返回頁首](#data-warehouse-schema)
+[返回頂端](#data-warehouse-schema)

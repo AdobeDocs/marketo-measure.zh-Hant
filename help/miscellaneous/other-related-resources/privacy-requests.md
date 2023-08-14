@@ -1,63 +1,64 @@
 ---
-description: 隱私權要求 —  [!DNL Marketo Measure]  — 產品檔案
-title: 隱私權要求
+description: 隱私權請求 —  [!DNL Marketo Measure]  — 產品檔案
+title: 隱私權請求
 exl-id: 883e475f-9868-412a-b505-230556f38484
-source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
+feature: APIs, Tracking
+source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 隱私權要求 {#privacy-requests}
+# 隱私權請求 {#privacy-requests}
 
-本檔案概述如何管理您可傳送至的個別資料隱私權請求 [!DNL Marketo Measure] 通過 [!DNL Privacy Service] UI和 **[!DNL Privacy Service]API**.
+本檔案概述如何管理您可傳送至的個別資料隱私權請求 [!DNL Marketo Measure] 透過 [!DNL Privacy Service] UI和 **[!DNL Privacy Service]API**.
 
-您可以提交個別請求，以存取和刪除 [!DNL Marketo Measure] 有兩種方式：
+您可以提交存取和刪除消費者資料的個別請求 [!DNL Marketo Measure] 有兩種方式：
 
-* 透過 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
-* 透過 **[!DNL Privacy Service]API**. 請參閱本檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
+* 透過 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hant){target="_blank"}.
+* 透過 **[!DNL Privacy Service]API**. 請參閱檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
 此 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"} 支援兩種請求：資料存取和資料刪除。
 
-讓我們來看看您如何建立存取和刪除請求。
+讓我們看看如何建立存取和刪除請求。
 
-## 傳送Marketo Measure請求的必要設定 {#required-setup-to-send-requests-for-marketo-measure}
+## 傳送Marketo Measure請求所需的設定 {#required-setup-to-send-requests-for-marketo-measure}
 
-請求訪問和刪除資料 [!DNL Marketo Measure]，您必須：
+請求存取和刪除以下專案的資料 [!DNL Marketo Measure]，您必須：
 
-1. 識別下列項目：
+1. 識別下列專案：
 
-   a.IMS組織ID
+   a. IMS組織ID
 
-   b.您要行事之人員的電子郵件地址
+   b.您要對其採取動作之人員的電子郵件地址
 
-   IMS組織ID是24個字元的英數字串，並附加@AdobeOrg。 如果您的行銷團隊或內部Adobe系統管理員不知道您組織的IMS組織ID，請透過gdprsupport@adobe.com聯絡Adobe客戶服務。 您需要IMS組織ID才能將請求提交至隱私權API。
+   IMS組織ID是24個字元的英數字串，通常會加上@AdobeOrg。 如果您的行銷團隊或內部Adobe系統管理員不知道您組織的IMS組織ID，請透過gdprsupport@adobe.com聯絡Adobe客戶服務。 您需先取得IMS組織ID，才能向隱私權API提交請求。
 
-1. 在 [!DNL Privacy Service]，您可以將存取和刪除請求提交至 [!DNL Marketo Measure]，並檢查現有請求的狀態。
+1. 在 [!DNL Privacy Service]，您可將存取和刪除請求提交至 [!DNL Marketo Measure]，並檢查現有請求的狀態。
 
 ## 中的必填欄位值 [!DNL Marketo Measure] JSON要求 {#required-field-values-in-marketo-measure-json-requests}
 
-&quot;companyContexts&quot;:
+&quot;companyContexts&quot;：
 
-* &quot;namespace&quot;: **imsOrgID**
-* &quot;value&quot;: `<Your IMS Org ID Value>`
+* &quot;namespace&quot;： **imsOrgID**
+* &quot;value&quot;： `<Your IMS Org ID Value>`
 
-&quot;users&quot;:
+&quot;users&quot;：
 
-* &quot;action&quot;:heer [!UICONTROL access] 或刪除
-* &quot;userIDs&quot;:
-   * &quot;namespace&quot;:電子郵件
-   * &quot;type&quot;:標準
-   * &quot;value&quot;: `<Data Subject's Email Address>`
+* &quot;action&quot;：其中之一 [!UICONTROL access] 或刪除
+* &quot;userIDs&quot;：
+   * &quot;namespace&quot;：電子郵件
+   * &quot;type&quot;：標準
+   * &quot;value&quot;： `<Data Subject's Email Address>`
 
-&quot;include&quot;:
+&quot;include&quot;：
 
-* **marketoMeasure** (適用於請求的Adobe產品)
+* **marketoMeasure** (適用於此請求的Adobe產品)
 
-&quot;regulation&quot;:
+&quot;regulation&quot;：
 
-* **gdpr**, **ccpa**, **pdpa**, **lgpd_bra**，或 **nzpa_nzl** （適用於請求的隱私權法規）
+* **gdpr**， **ccpa**， **pdpa**， **lgpd_bra**，或 **nzpa_nzl** （適用於此請求的隱私權法規）
 
 ## 範例一：GDPR刪除請求 {#gdpr-delete-request}
 

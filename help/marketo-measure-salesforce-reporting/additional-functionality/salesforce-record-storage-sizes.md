@@ -3,7 +3,8 @@ unique-page-id: 18874576
 description: '"[!DNL Salesforce] 記錄儲存大小 —  [!DNL Marketo Measure]  — 產品檔案」'
 title: '"[!DNL Salesforce] 記錄儲存大小」'
 exl-id: d72499a9-3678-4db0-9993-98c3af33b5a3
-source-git-commit: 8a630cb1f9accb8b3cd5e1b6c0d19d748d765e4c
+feature: Salesforce
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Salesforce] 記錄儲存大小 {#salesforce-record-storage-sizes}
 
-[!DNL Marketo Measure] 在 [!DNL Salesforce] 例項，因此了解這些記錄的儲存大小會很有幫助。
+[!DNL Marketo Measure] 在下列位置建立記錄： [!DNL Salesforce] 執行個體，因此瞭解這些記錄的儲存大小會很有幫助。
 
 ## 儲存大小 {#storage-sizes}
 
@@ -26,4 +27,4 @@ ht-degree: 0%
 **臨時記錄**
 
 * 事件= 2 KB
-* [!DNL Marketo Measure] 歷史記錄= 2 KB
+* [!DNL Marketo Measure] 歷程記錄= 2 KB
