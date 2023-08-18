@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: e4852d6240a64b4a1a5c979a7528485623c68eb0
+source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -150,9 +150,15 @@ ht-degree: 1%
       + [常見問題集（多貨幣）](advanced-marketo-measure-features/multi-currency/faq-multi-currency.md)
 + [!DNL Marketo Measure] 探索UI {#marketo-measure-discover-ui}
    + 儀表板 {#dashboards}
-      + [同類群組歷程儀表板檔案](marketo-measure-discover-ui/dashboards/cohort-journey-dashboard-documentation.md)
-      + [Passport Dashboard檔案](marketo-measure-discover-ui/dashboards/passport-dashboard-documentation.md)
-      + [快照儀表板檔案](marketo-measure-discover-ui/dashboards/snapshot-dashboard-documentation.md)
+      + [探索儀表板基本知識](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
+      + [收入總覽儀表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
+      + [已歸因的收入儀表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+      + [ROI控制面板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
+      + [Passport儀表板](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
+   + 舊式儀表板 {#legacy-dashboards}
+      + [同類群組歷程儀表板檔案](marketo-measure-discover-ui/legacy-dashboards/cohort-journey-dashboard-documentation.md)
+      + [Passport Dashboard檔案](marketo-measure-discover-ui/legacy-dashboards/passport-dashboard-documentation.md)
+      + [快照儀表板檔案](marketo-measure-discover-ui/legacy-dashboards/snapshot-dashboard-documentation.md)
    + 使用 [!DNL Marketo Measure]的報表平台 {#using-marketo-measures-reporting-platform}
       + [常見使用案例](marketo-measure-discover-ui/using-marketo-measures-reporting-platform/common-use-cases.md)
       + [定義與百科全書](marketo-measure-discover-ui/using-marketo-measures-reporting-platform/definitions-and-encyclopedia.md)

@@ -3,7 +3,7 @@ description: Data Warehouse存取 — Reader帳戶 — 產品檔案
 title: Data Warehouse存取 — Reader帳戶
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
