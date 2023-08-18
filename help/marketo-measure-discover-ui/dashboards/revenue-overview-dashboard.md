@@ -4,7 +4,7 @@ title: 收入總覽儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: a90a3c7a8ed7ec83bc50060da8b7ca1e69bd37bd
+source-git-commit: 5a5133fbbd4668d33ea9a0f68f38ddac7cabf38c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
@@ -46,30 +46,25 @@ ht-degree: 3%
   <tr>
     <td>交易總計圖磚</td>
     <td>CRM中標示為「已結束的勝利」的交易總數。</td>
-    <td> </td>
   </tr>
   <tr>
     <td>已歸因的收入圖磚</td>
     <td>具有記錄接觸點的「已結束的勝利」商機的應佔收入總計。</td>
-    <td> </td>
   </tr>
   <tr>
     <td>歸因交易圖磚</td>
     <td>歸因商機的「已結束的已勝」交易總數。</td>
-    <td> </td>
   </tr>
   <tr>
     <td>收入與已歸因收入圖表</td>
     <td>這個並排時間序列長條圖可將「總收入」與「已歸因收入」並置，以提供您歸因涵蓋範圍的全面檢視。
     <br/><img src="assets/revenue-overview-dashboard-1.png"></td>
-    <td> </td>
   </tr>
   <tr>
     <td>歸因涵蓋範圍圖</td>
     <td>此圓形圖提供已歸因收入與非歸因收入之間的清晰視覺比較。 圓形圖涵蓋總收入。
     <br/>
     <img src="assets/revenue-overview-dashboard-2.png"></td>
-    <td> </td>
   </tr>
 </tbody>
 </table>
