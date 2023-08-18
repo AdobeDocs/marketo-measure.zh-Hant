@@ -4,10 +4,10 @@ title: 已歸因的收入儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: fa7b28fd101e6d5013fe59649de379e36f23c6e0
+source-git-commit: f526b904fd3c04691ed784c259cb19fb24a5bd54
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 5%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 3%
    <th>篩選器</th>
   </tr>
   <tr>
-    <td>總收入圖磚</td>
-    <td>來自CRM的總收入，包括已歸因的收入。</td>
+    <td>已歸因的收入圖磚</td>
+    <td>具有記錄接觸點的「已結束的勝利」商機的應佔收入總計。</td>
     <td rowspan="6"><li>機會 ID</li>
 <li>機會名稱</li>
 <li>商機建立日期</li>
@@ -39,32 +39,32 @@ ht-degree: 3%
 <li>為已關閉(Y/N)</li>
 <li>獲勝(Y/N)</li>
 <li>目前階段</li>
-<li>收入</li></td>
+<li>歸因模型</li>
+<li>已歸因的收入</li>
+<li>已實現收入</li></td>
     <td rowspan="6">關閉日期</td>
-    <td rowspan="6">日期</td>
-  </tr>
-  <tr>
-    <td>交易總計圖磚</td>
-    <td>CRM中標示為「已結束的勝利」的交易總數。</td>
-  </tr>
-  <tr>
-    <td>已歸因的收入圖磚</td>
-    <td>具有記錄接觸點的「已結束的勝利」商機的應佔收入總計。</td>
+    <td rowspan="6"><li>日期</li>
+<li>歸因模型</li>
+<li>管道</li>
+<li>子管道</li>
+<li>Campaign</li>
+<li>區段</li></td>
   </tr>
   <tr>
     <td>歸因交易圖磚</td>
     <td>歸因商機的「已結束的已勝」交易總數。</td>
   </tr>
   <tr>
-    <td>收入與已歸因收入圖表</td>
-    <td>這個並排時間序列長條圖可將「總收入」與「已歸因收入」並置，以提供您歸因涵蓋範圍的全面檢視。
-    <br/>PICC</td>
+    <td>一段時間內依據管道的歸因收入</td>
+    <td>棧疊長條圖顯示每個季度/月的總歸因收入，依關聯的管道分段。
+    <br/><img src="assets/attributed-revenue-dashboard-1.png" width="600"></td>
   </tr>
   <tr>
-    <td>歸因涵蓋範圍圖</td>
-    <td>此圓形圖提供已歸因收入與非歸因收入之間的清晰視覺比較。 圓形圖涵蓋總收入。
-    <br/>
-    PICC</td>
+    <td>已歸因的收入表格</td>
+    <td>依管道、子管道和促銷活動劃分的總歸因收入，以表格和樹狀結構格式呈現。
+    <br/><img src="assets/attributed-revenue-dashboard-2.png" width="600">
+    <br/><img src="assets/attributed-revenue-dashboard-3.png" width="600"></td>
+  </tr>
   </tr>
 </tbody>
 </table>
