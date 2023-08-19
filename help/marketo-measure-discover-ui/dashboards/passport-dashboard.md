@@ -2,9 +2,9 @@
 description: Passport儀表板 —  [!DNL Marketo Measure]  — 產品
 title: Passport儀表板
 feature: Reporting
-source-git-commit: 436e30c2a4138d780232d6ba9e64456d6277ac9b
+source-git-commit: 73f7d14f94b236b5e078a4c8ff7a1e81d13779ee
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '290'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,15 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 <li>開始和結束日期皆包含。</li>
 <br/><img src="assets/passport-dashboard-1.png" width="600"></td>
     <td rowspan="2">轉換日期</td>
-    <td></td>
+    <td><li>機會ID</li>
+<li>機會名稱</li>
+<li>建立日期</li>
+<li>關閉日期</li>
+<li>為已關閉(Y/N)</li>
+<li>獲勝(Y/N)</li>
+<li>目前階段</li>
+<li>轉換日期</li>
+<li>轉換截止日期</li></td>
     <td rowspan="2"><li>日期</li>
 <li>管道</li>
 <li>子管道</li>
