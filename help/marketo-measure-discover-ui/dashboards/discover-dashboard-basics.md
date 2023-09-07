@@ -4,9 +4,9 @@ title: 探索儀表板基本知識
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c77f880a2e88fa60ae685b61d9ae335308e78e10
+source-git-commit: db435a669ca9a24a0661191bef9e14a8f8c78eb6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,23 @@ ht-degree: 0%
    <th>說明</th>
   </tr> 
   <tr> 
-   <td>篩選器切換按鈕</td>
+   <td><b>篩選器切換按鈕</b></td>
    <td>將篩選窗格切換為開啟或關閉。
    <p><img src="assets/discover-dashboard-basics-1.png"></td>
   </tr>
   <tr> 
-   <td>重設按鈕</td>
-   <td>將篩選器恢復為預設設定。
+   <td><b>搜尋列</b></td>
+   <td>使用篩選器窗格頂端的搜尋功能來搜尋特定篩選器。 每個篩選器都有自己的搜尋列。
    <p><img src="assets/discover-dashboard-basics-2.png"></td>
   </tr>
    <tr> 
-   <td>套用按鈕</td>
-   <td>按一下以確認並在控制面板上實作您的篩選器變更。
+   <td><b>清除篩選器按鈕</b></td>
+   <td>若要清除濾鏡，請按一下位於每個濾鏡右上角的橡皮擦圖示。
    <p><img src="assets/discover-dashboard-basics-3.png"></td>
   </tr>
   <tr> 
-   <td>區段按鈕</td>
-   <td>在具有「區段」篩選器的控制面板上，按一下篩選器窗格底部的「區段」按鈕以切換至「區段」。
+   <td><b>套用按鈕</b></td>
+   <td>按一下以確認並在控制面板上實作您的篩選器變更。
    <p><img src="assets/discover-dashboard-basics-3a.png"></td>
   </tr>
  </tbody> 
