@@ -4,70 +4,79 @@ title: 已歸因的收入儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 3%
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 
 # 已歸因的收入儀表板 {#attributed-revenue-dashboard}
 
-已歸因的收入儀表板提供與您的行銷活動直接相關的收入的焦點觀點。 深入探索您的行銷策略如何有助於達成交易。
+已歸因的收入儀表板提供與您的行銷活動直接相關的收入的焦點觀點。 探索您的行銷策略如何有助於達成交易。
 
-展示板回答的問題：
+>[!NOTE]
+>
+>此儀表板目前是Beta版。 在此過渡階段中，目前和新的儀表板皆可存取。 一旦我們完全轉換並確保最佳功能，目前的儀表板將被棄用。
 
-哪些管道、子管道或行銷活動在歸因收入方面排名最高？
-我們歸因的收入總額與已歸因的已結束交易的計數是多少？
+**展示板回答的問題：**
 
-<table style="table-layout:auto"> 
-<tbody>
-  <tr> 
-   <th>元件</th> 
-   <th>說明</th>
-   <th>鑽研欄位</th>
-   <th>日期型別</th>
-   <th>篩選器</th>
-  </tr>
-  <tr>
-    <td>已歸因的收入圖磚</td>
-    <td>具有記錄接觸點的「已結束的勝利」商機的應佔收入總計。</td>
-    <td rowspan="6"><li>機會 ID</li>
-<li>機會名稱</li>
-<li>商機建立日期</li>
-<li>商機結束日期</li>
-<li>為已關閉(Y/N)</li>
-<li>獲勝(Y/N)</li>
-<li>目前階段</li>
-<li>歸因模型</li>
-<li>已歸因的收入</li>
-<li>已實現收入</li></td>
-    <td rowspan="6">關閉日期</td>
-    <td rowspan="6"><li>日期</li>
-<li>歸因模型</li>
-<li>管道</li>
-<li>子管道</li>
-<li>Campaign</li>
-<li>區段</li></td>
-  </tr>
-  <tr>
-    <td>歸因交易圖磚</td>
-    <td>歸因商機的「已結束的已勝」交易總數。</td>
-  </tr>
-  <tr>
-    <td>一段時間內依據管道的歸因收入</td>
-    <td>棧疊長條圖顯示每個季度/月的總歸因收入，依關聯的管道分段。
-    <br/><img src="assets/attributed-revenue-dashboard-1.png" width="600"></td>
-  </tr>
-  <tr>
-    <td>已歸因的收入表格</td>
-    <td>依管道、子管道和促銷活動劃分的總歸因收入，以表格和樹狀結構格式呈現。
-    <br/><img src="assets/attributed-revenue-dashboard-2.png" width="600">
-    <br/><img src="assets/attributed-revenue-dashboard-3.png" width="600"></td>
-  </tr>
-  </tr>
-</tbody>
-</table>
+* 哪些管道、子管道或行銷活動在歸因收入方面排名最高？
+* 我們歸因的收入總額與已歸因的已結束交易的計數是多少？
+
+## 控制面板元件 {#dashboard-components}
+
+### KPI動態磚 {#kpi-tiles}
+
+* **已歸因的收入**：根據所選歸因模型，從接觸點在篩選日期期間內關閉的商機中貢獻的總收入
+* **已歸因的交易**：具有接觸點的「成功結案」機會數目。
+
+### 依管道隨時間變化的已歸因收入圖表 {#attributed-revenue-by-channel-over-time-chart}
+
+顯示每個月/季/年總歸因收入（依管道分段）的棧疊長條圖。
+
+* 運用向下鑽研和向上鑽研功能，依月、季或年對資料進行分類。
+* 將滑鼠指標暫留在長條圖區段或長條圖之間的空白處，即可顯示詳細資訊。
+
+**圖表回答的問題：**
+
+* 哪些管道每季產生的收入最能歸因？
+* 上個月依管道劃分的歸因收入分析為何？
+
+![](assets/attributed-revenue-dashboard-1.png)
+
+### 已歸因的收入表格 {#attributed-revenue-table}
+
+依管道、子管道和促銷活動劃分的總歸因收入，以表格和樹狀結構格式呈現。 按一下右上角的按鈕，在檢視之間切換。
+
+**展示板回答的問題：**
+
+* 歸因的收入分配在管道內不同子管道之間有何差異？
+* 特定子管道下的哪些行銷活動帶來最多歸因的收入？
+
+**表格檢視**
+
+* 表格檢視提供已歸因收入分佈的清晰且組織化的深入分析。 使用者可將資料分類至管道、子管道和行銷活動，以便快速辨識效能模式，並精確定位高影響力的行銷策略。
+* 按一下每個管道旁的「+」圖示，即可顯示依子管道和促銷活動的劃分。
+
+![](assets/attributed-revenue-dashboard-2.png)
+
+**樹狀檢視**
+
+* 樹狀檢視可提供更具互動性和更精細的資料探索，讓行銷人員找出趨勢、異常或行銷工作中表現突出的表現。
+* 按一下分支可深入探究後續的階層圖層。
+
+![](assets/attributed-revenue-dashboard-3.png)
+
+## 篩選窗格 {#filter-pane}
+
+此儀表板配備了下列設定和篩選器：
+
+* 日期（根據結束日期）
+* 歸因模型
+* 頻道、子頻道
+* Campaign
+* 區段
 
 >[!MORELIKETHIS]
 >
