@@ -4,9 +4,9 @@ title: 新增Discover儀表板指南
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: 511509caaa89d7e71a68f19b4c90b43f44713ae3
+source-git-commit: b75d9c7dae8886646d2df9613634c260d2d7b281
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -503,6 +503,4 @@ ht-degree: 0%
 
 ## 意見反應 {#feedback}
 
-我們持續努力地改善您的使用體驗，非常感謝您對此最新更新的意見反應。 您的想法將直接影響未來的改良，確保我們的平台永遠符合您的需求。
-
-提供如何分享意見回饋的說明（例如應用程式內意見回饋表單、電子郵件等）
+我們持續努力地改善您的使用體驗，非常感謝您對此最新更新的意見反應。 您的想法將直接影響未來的改良，確保我們的平台永遠符合您的需求。 請密切留意Marketo Measure中的意見表單。
