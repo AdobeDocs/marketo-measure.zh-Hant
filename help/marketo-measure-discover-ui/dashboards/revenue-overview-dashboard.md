@@ -4,10 +4,10 @@ title: 收入總覽儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: 09748b8ba76a89b2d955c8384ae926bb995c2171
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 2%
+source-wordcount: '313'
+ht-degree: 0%
 
 ---
 
@@ -15,59 +15,54 @@ ht-degree: 2%
 
 收入概觀儀表板提供從CRM衍生的總收入的深入分析，讓您更清楚瞭解行銷策略的角色。 它概略說明行銷如何影響您的整體收入，以及如何協助成功完成交易。
 
-展示板回答的問題：
+>[!NOTE]
+>
+>此儀表板目前是Beta版。 在此過渡階段中，目前和新的儀表板皆可存取。 一旦我們完全轉換並確保最佳功能，目前的儀表板將被棄用。
 
-* 我們的行銷活動佔總收入的百分比為何？
-* 我們的行銷活動影響了多少百分比的「成功交易」？
+**展示板回答的問題：**
 
-<table style="table-layout:auto"> 
-<tbody>
-  <tr> 
-   <th>元件</th> 
-   <th>說明</th>
-   <th>鑽研欄位</th>
-   <th>日期型別</th>
-   <th>篩選器</th>
-  </tr>
-  <tr>
-    <td>總收入圖磚</td>
-    <td>來自CRM的總收入，包括已歸因的收入。</td>
-    <td rowspan="6"><li>機會 ID</li>
-<li>機會名稱</li>
-<li>商機建立日期</li>
-<li>商機結束日期</li>
-<li>為已關閉(Y/N)</li>
-<li>獲勝(Y/N)</li>
-<li>目前階段</li>
-<li>收入</li></td>
-    <td rowspan="6">關閉日期</td>
-    <td rowspan="6">日期</td>
-  </tr>
-  <tr>
-    <td>交易總計圖磚</td>
-    <td>CRM中標示為「已結束的勝利」的交易總數。</td>
-  </tr>
-  <tr>
-    <td>已歸因的收入圖磚</td>
-    <td>具有記錄接觸點的「已結束的勝利」商機的應佔收入總計。</td>
-  </tr>
-  <tr>
-    <td>歸因交易圖磚</td>
-    <td>歸因商機的「已結束的已勝」交易總數。</td>
-  </tr>
-  <tr>
-    <td>收入與已歸因收入圖表</td>
-    <td>這個並排時間序列長條圖可將「總收入」與「已歸因收入」並置，以提供您歸因涵蓋範圍的全面檢視。
-    <br/><img src="assets/revenue-overview-dashboard-1.png" width="600"></td>
-  </tr>
-  <tr>
-    <td>歸因涵蓋範圍圖</td>
-    <td>此圓形圖提供已歸因收入與非歸因收入之間的清晰視覺比較。 圓形圖涵蓋總收入。
-    <br/>
-    <img src="assets/revenue-overview-dashboard-2.png" width="600"></td>
-  </tr>
-</tbody>
-</table>
+* 我們的行銷活動佔收入的%為何？
+* 我們的「成功交易」中，有百分之多少受到行銷活動的影響？
+
+## 控制面板元件 {#dashboard-components}
+
+### KPI動態磚 {#kpi-tiles}
+
+* 總收入：「成功的已結案」商機的總收入，包括沒有接觸點的商機。
+* 交易總數：「成功結案」的機會數目，包括沒有接觸點的機會。
+* 已歸因的收入：具有接觸點的「已結束的勝利」商機的總收入。
+* 已歸因的交易：具有接觸點的「成功結案」商機數目。
+
+### 收入與已歸因收入圖表 {#revenue-and-attributed-revenue-chart}
+
+這個並排時間序列長條圖會將總收入與歸因收入做對比，清楚呈現您對整體收入的行銷影響。
+
+* 運用向下鑽研和向上鑽研功能，依季度和年度分類資料。
+* 將滑鼠指標暫留在長條圖的某個區段上，即可顯示其詳細資訊。
+
+**圖表回答的問題：**
+
+* 我們2022年8月收入中有多少%可歸因於我們的行銷計畫？
+* 去年第3季的歸因收入與第4季相比如何？
+
+![](assets/revenue-overview-dashboard-1.png)
+
+### 歸因涵蓋範圍圖 {#attribution-coverage-chart}
+
+此圓形圖可清楚顯示您的歸因涵蓋範圍，方法是將總收入細分為已歸因和未歸因收入，並特別指出受您行銷活動影響的收入的精確百分比。
+
+**圖表回答的問題：**
+
+* 去年我們行銷活動的收入涵蓋範圍有何%？
+
+![](assets/revenue-overview-dashboard-2.png)
+
+## 篩選窗格 {#filter-pane}
+
+此儀表板配備了下列設定和篩選器：
+
+* 歸因模型
+* 日期（根據結束日期）
 
 >[!MORELIKETHIS]
 >
