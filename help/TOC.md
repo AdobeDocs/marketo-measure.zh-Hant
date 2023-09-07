@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 511509caaa89d7e71a68f19b4c90b43f44713ae3
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -151,6 +151,7 @@ ht-degree: 1%
 + [!DNL Marketo Measure] 探索UI {#marketo-measure-discover-ui}
    + 儀表板 {#dashboards}
       + [探索儀表板基本知識](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
+      + [新增Discover儀表板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [收入總覽儀表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
       + [已歸因的收入儀表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
       + [ROI控制面板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
