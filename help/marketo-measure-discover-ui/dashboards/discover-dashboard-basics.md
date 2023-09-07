@@ -4,9 +4,9 @@ title: 探索儀表板基本知識
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: c77f880a2e88fa60ae685b61d9ae335308e78e10
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 探索儀表板基本知識 {#discover-dashboard-basics}
 
 本文將引導您瞭解重新設計介面的基礎功能，確保您可以輕鬆存取和解讀資料。 深入瞭解篩選器窗格的動態，並找出增強型報告功能的複雜之處，例如鑽床功能、交叉篩選和工具提示。
+
+>[!NOTE]
+>
+>此儀表板目前是Beta版。 在此過渡階段中，目前和新的儀表板皆可存取。 一旦我們完全轉換並確保最佳功能，目前的儀表板將被棄用。
 
 ## 篩選窗格 {#filter-pane}
 
@@ -23,26 +27,36 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <th>名稱</th> 
-   <th>圖示</th>
    <th>說明</th>
   </tr> 
   <tr> 
-   <td>漢堡按鈕</td> 
-   <td><img src="assets/discover-dashboard-basics-1.png"></td>
-   <td>將篩選窗格切換為開啟或關閉。</td>
+   <td>篩選器切換按鈕</td>
+   <td>將篩選窗格切換為開啟或關閉。
+   <p><img src="assets/discover-dashboard-basics-1.png"></td>
   </tr>
   <tr> 
-   <td>重設</td> 
-   <td><img src="assets/discover-dashboard-basics-2.png"></td>
-   <td>將篩選器恢復為預設設定。</td>
+   <td>重設按鈕</td>
+   <td>將篩選器恢復為預設設定。
+   <p><img src="assets/discover-dashboard-basics-2.png"></td>
   </tr>
    <tr> 
-   <td>視覺效果上的篩選器</td> 
-   <td><img src="assets/discover-dashboard-basics-3.png"></td>
-   <td>暫留在視覺效果的右上角，然後按一下按鈕以檢視其作用中的篩選器。</td>
+   <td>套用按鈕</td>
+   <td>按一下以確認並在控制面板上實作您的篩選器變更。
+   <p><img src="assets/discover-dashboard-basics-3.png"></td>
+  </tr>
+  <tr> 
+   <td>區段按鈕</td>
+   <td>在具有「區段」篩選器的控制面板上，按一下篩選器窗格底部的「區段」按鈕以切換至「區段」。
+   <p><img src="assets/discover-dashboard-basics-3a.png"></td>
   </tr>
  </tbody> 
 </table>
+
+## 視覺效果上的篩選器 {#filters-on-visual}
+
+暫留在視覺效果的右上角，可檢視已套用篩選器的唯讀清單。
+
+![](assets/discover-dashboard-basics-3b.png)
 
 ## 報表功能 {#report-capabilities}
 
@@ -70,21 +84,24 @@ ht-degree: 0%
 
 ### 鑽研 {#drill-through}
 
-* 若要探索視覺效果背後的資料，請以滑鼠右鍵按一下視覺元素，然後選取「鑽研」選項。
+若要探索視覺效果背後的資料，請以滑鼠右鍵按一下視覺元素，然後選取「鑽研」選項。
 
-![](assets/discover-dashboard-basics-9.png)
+![](assets/discover-dashboard-basics-9.gif)
 
-* 若要匯出基礎資料，請將滑鼠停留在鑽研頁面的右上角，按一下「更多選項」按鈕，然後選取「匯出資料」。
+### 匯出資料 {#export-data}
 
-![](assets/discover-dashboard-basics-10.png)
+若要從視覺效果匯出基礎資料，請將游標停留在視覺效果的右上角。 按一下「更多選項」按鈕，選擇「匯出資料」，選取您偏好的格式，然後按一下「匯出」。
+![](assets/discover-dashboard-basics-10.gif)
 
-* 若要放大特定視覺效果或圖磚，請將游標移至右上角並選取「焦點」按鈕。
+### 焦點模式 {#focus-mode}
 
-![](assets/discover-dashboard-basics-11.png)
+若要放大特定視覺效果或圖磚，請將游標移至右上角並選取「焦點」按鈕。
+
+![](assets/discover-dashboard-basics-11.gif)
 
 ### 交叉篩選 {#cross-filtering}
 
-依預設，在一個視覺效果中選取值或軸標籤，會交叉篩選報表頁面上的其他視覺效果，確保這些視覺效果只顯示相關的篩選資料。
+在一個視覺效果中選取值或軸標籤，即可交叉篩選報表頁面上的其他視覺效果，確保這些視覺效果只會顯示相關的已篩選資料。
 
 ![](assets/discover-dashboard-basics-12.gif)
 
