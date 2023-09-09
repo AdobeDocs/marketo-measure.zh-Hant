@@ -4,7 +4,7 @@ title: 收入總覽儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
+source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -28,10 +28,10 @@ ht-degree: 0%
 
 ### KPI動態磚 {#kpi-tiles}
 
-* 總收入：「成功的已結案」商機的總收入，包括沒有接觸點的商機。
-* 交易總數：「成功結案」的機會數目，包括沒有接觸點的機會。
-* 已歸因的收入：具有接觸點的「已結束的勝利」商機的總收入。
-* 已歸因的交易：具有接觸點的「成功結案」商機數目。
+* **總收入**：來自「成功的已關閉」商機的總收入，包括沒有接觸點的商機。
+* **交易總數**：「成功的已關閉」商機數目，包括沒有接觸點的商機。
+* **已歸因的收入**：包含接觸點的「已結束的勝利」商機的總收入。
+* **已歸因的交易**：具有接觸點的「成功結案」機會數目。
 
 ### 收入與已歸因收入圖表 {#revenue-and-attributed-revenue-chart}
 

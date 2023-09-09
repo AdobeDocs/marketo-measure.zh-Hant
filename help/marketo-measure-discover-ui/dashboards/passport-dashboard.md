@@ -4,9 +4,9 @@ title: Passport儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: b3d4ea085d851908d52fb62fe58d860ae5c09099
+source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 
 ![](assets/passport-dashboard-1.png)
 
-### 階段中按階段名稱的連絡人 {#contacts-in-stage-by-stage-name}
+### 依據階段名稱的階段中的潛在客戶或聯絡人 {#leads-or-contacts-in-stage-by-stage-name}
 
 * 每個階段會顯示具有接觸點，且在指定時間範圍內經過的Lead或Contact數量。
    * 是否顯示「銷售機會」或「連絡人」取決於在「設定>歸因設定>預設儀表板物件」中設定的偏好設定。
