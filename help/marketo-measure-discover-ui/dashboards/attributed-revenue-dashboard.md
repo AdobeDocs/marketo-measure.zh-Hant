@@ -4,9 +4,9 @@ title: 已歸因的收入儀表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
+source-git-commit: dabb6ed45ec87a97b333e11d5fc71be425edaf66
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### KPI動態磚 {#kpi-tiles}
 
-* **已歸因的收入**：根據所選歸因模型，從接觸點在篩選日期期間內關閉的商機中貢獻的總收入
+* **已歸因的收入**：根據所選歸因模型，來自具有接觸點的商機的總收入貢獻。
 * **已歸因的交易**：具有接觸點的「成功結案」機會數目。
 
 ### 依管道隨時間變化的已歸因收入圖表 {#attributed-revenue-by-channel-over-time-chart}
