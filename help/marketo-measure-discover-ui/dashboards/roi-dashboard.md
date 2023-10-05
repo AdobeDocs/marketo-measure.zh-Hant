@@ -2,9 +2,10 @@
 description: ROI控制面板 —  [!DNL Marketo Measure]  — 產品
 title: ROI控制面板
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
+source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -143,4 +144,6 @@ ROI控制面板為行銷人員提供了跨管道、子管道和行銷活動的�
 
 >[!MORELIKETHIS]
 >
->[探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+

@@ -2,9 +2,10 @@
 description: 全新Discover儀表板指南 —  [!DNL Marketo Measure]  — 產品
 title: 新增Discover儀表板指南
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
+source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -502,3 +503,9 @@ ht-degree: 0%
 ## 意見反應 {#feedback}
 
 我們持續努力地改善您的使用體驗，非常感謝您對此最新更新的意見反應。 您的想法將直接影響未來的改良，確保我們的平台永遠符合您的需求。 請密切留意Marketo Measure中的意見表單。
+
+>[!MORELIKETHIS]
+>
+>* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+

@@ -2,9 +2,10 @@
 description: 收入總覽儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 收入總覽儀表板
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
+source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -59,9 +60,9 @@ ht-degree: 0%
 
 此儀表板配備了下列設定和篩選器：
 
-* 歸因模型
 * 日期（根據結束日期）
 
 >[!MORELIKETHIS]
 >
->[探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
