@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: 69304dddf3569cd92c95a50e9a2e346acdad0f43
+source-git-commit: 2d2fe74998abd853f6592c5e65edfe2ce39d7ce6
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '795'
 ht-degree: 2%
 
 ---
@@ -128,6 +128,7 @@ ht-degree: 2%
    + 自訂收入金額 {#custom-revenue-amount}
       + [使用自訂收入金額的最佳實務](advanced-marketo-measure-features/custom-revenue-amount/best-practices-for-utilizing-a-custom-revenue-amount.md)
       + [使用自訂收入金額欄位](advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
+      + [測試檔案](advanced-marketo-measure-features/custom-revenue-amount/doc.md)
       + [使用資料載入器更新 [!DNL Marketo Measure] 自訂金額欄位](advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
    + 透過歸因檢視 {#view-through-attribution}
       + [[!DNL Marketo Measure] 透過歸因常見問題集進行檢視](advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md)
