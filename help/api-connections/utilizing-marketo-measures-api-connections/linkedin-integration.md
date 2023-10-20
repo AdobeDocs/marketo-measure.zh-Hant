@@ -4,9 +4,9 @@ description: linkedIn整合 —  [!DNL Marketo Measure]  — 產品檔案
 title: linkedIn整合
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2644'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Lead Gen Forms：透過與LinkedIn的Lead Gen Forms整合，Marketo Measure可�
 
 ## 可用性 {#availability}
 
-可供所有客戶使用。
+可供所有使用者使用。
 
 ## 需求 {#requirements}
 
@@ -46,7 +46,7 @@ Lead Gen Forms：透過與LinkedIn的Lead Gen Forms整合，Marketo Measure可�
 
 瞭解更多： [linkedIn頁面管理員角色](https://www.linkedin.com/help/linkedin/answer/4783/linkedin-page-admin-roles-overview).
 
-還有其他的 [!DNL LinkedIn] 我們執行的角色 **非** 需要我們的整合。 這些角色經常被誤認為必要的角色，因此請注意它們之間有所差異！
+還有其他的 [!DNL LinkedIn] 我們執行的角色 **非** 需要我們的整合。 這些角色經常被誤認為必要的角色，所以請注意，它們之間有所差異！
 
 **頁面管理員角色**
 
@@ -127,6 +127,12 @@ Lead Gen Forms：透過與LinkedIn的Lead Gen Forms整合，Marketo Measure可�
 
 ## 運作方式：領導新一代Forms {#how-it-works-lead-gen-forms}
 
+**[!DNL LinkedIn's]獨特的自動標籤需求**
+
+[!DNL Marketo Measure] 有助於追蹤您的 [!DNL LinkedIn] 藉由自動標籤您的登入頁面，獲得行銷活動績效。
+
+[!DNL Marketo Measure] 將搜尋具有唯一LinkedIn分享的創意產品，並新增 `?_bl={creativeId}` 引數到其結尾。
+
 **程式**
 
 到 [!DNL LinkedIn's] 廣告表單API和廣告表單回應API，我們就能收集廣告帳戶的表單提交資料，並從CRM或Marketo將電子郵件地址關聯至銷售機會。
@@ -162,95 +168,99 @@ linkedIn表單可能包含多個電子郵件地址。 下載表單回應時，�
  </colgroup> 
  <tbody> 
   <tr> 
-   <th>接觸點欄位</th> 
+   <th style="width:30%">接觸點欄位</th> 
    <th>範例值</th> 
   </tr> 
   <tr> 
-   <td><p>廣告ID </p></td> 
-   <td><p>84186224 </p></td> 
+   <td>廣告ID</td>
+   <td>84186224</td>
   </tr> 
   <tr> 
-   <td><p>廣告內容 </p></td> 
-   <td><p>copy-1-image-2-man 95%的行#B2B人員認為需求建立策略是成功的。 瞭解更多： [!DNL https]：//lnkd.in/jgdi50vKrgv</p></td> 
+   <td>廣告內容</td>
+   <td>copy-1-image-2-man 95%的行#B2B人員認為需求建立策略是成功的。 瞭解更多： [!DNL https]：//lnkd.in/jgdi50vKrgv</td>
   </tr> 
   <tr> 
-   <td><p>廣告群組ID </p></td> 
-   <td><p>(空白) </p></td> 
+   <td>廣告群組ID</td>
+   <td>(空白)</td>
   </tr> 
   <tr> 
-   <td><p>廣告群組名稱 </p></td> 
-   <td><p>(空白) </p></td> 
+   <td>廣告群組名稱</td>
+   <td>(空白)</td>
   </tr> 
   <tr> 
-   <td><p>廣告行銷活動ID </p></td> 
-   <td><p>138949954 </p></td> 
+   <td>廣告行銷活動ID</td>
+   <td>138949954</td>
   </tr> 
   <tr> 
-   <td><p>廣告行銷活動名稱 </p></td> 
-   <td><p>SU - COM帳戶 — 需求技能 </p></td> 
+   <td>廣告行銷活動名稱</td>
+   <td>SU - COM帳戶 — 需求技能</td>
   </tr> 
   <tr> 
-   <td><p>廣告目的地URL </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217 </p></td> 
+   <td>廣告目的地URL <b>*</b></td>
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
   </tr> 
   <tr> 
-   <td><p>表單URL </p></td> 
-   <td><p>info.bizible.com/demo </p></td> 
+   <td>表單URL</td> 
+   <td>info.bizible.com/demo</td> 
   </tr> 
   <tr> 
-   <td><p>表單URL — 原始 </p></td> 
-   <td><p>info.bizible.com/demo </p></td> 
+   <td>表單URL — 原始</td> 
+   <td>info.bizible.com/demo</td> 
   </tr> 
   <tr> 
-   <td><p>關鍵字ID </p></td> 
-   <td><p>(空白) </p></td> 
+   <td>關鍵字ID</td> 
+   <td>(空白)</td> 
   </tr> 
   <tr> 
-   <td><p>關鍵字元合型別 </p></td> 
-   <td><p>(空白) </p></td> 
+   <td>關鍵字元合型別</td> 
+   <td>(空白)</td> 
   </tr> 
   <tr> 
-   <td><p>登陸頁面 </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders </p></td> 
+   <td>登陸頁面</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td> 
   </tr> 
   <tr> 
-   <td><p>登陸頁面 — 原始 </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217 </p></td> 
+   <td>登陸頁面 — 原始</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
   </tr> 
   <tr> 
-   <td><p>行銷管道 </p></td> 
-   <td><p>付費社交 </p></td> 
+   <td>行銷管道</td> 
+   <td>付費社交</td> 
   </tr> 
   <tr> 
-   <td><p>行銷管道 — 路徑 </p></td> 
-   <td><p>付費Social.LinkedIn </p></td> 
+   <td>行銷管道 — 路徑</td> 
+   <td>付費Social.LinkedIn</td> 
   </tr> 
   <tr> 
-   <td><p>中 </p></td> 
-   <td><p>"cpc"或"Lead Gen Form"</p></td> 
+   <td>中</td> 
+   <td>"cpc"或"Lead Gen Form"</td> 
   </tr> 
   <tr> 
-   <td><p>反向連結頁面 </p></td> 
-   <td><p>www.linkedin.com/ </p></td> 
+   <td>反向連結頁面</td> 
+   <td>www.linkedin.com/</td> 
   </tr> 
   <tr> 
-   <td><p>反向連結頁面 — 原始 </p></td> 
-   <td><p>www.linkedin.com/ </p></td> 
+   <td>反向連結頁面 — 原始</td> 
+   <td>www.linkedin.com/</td> 
   </tr> 
   <tr> 
-   <td><p>搜尋片語 </p></td> 
-   <td><p>(空白) </p></td> 
+   <td>搜尋片語</td> 
+   <td>(空白)</td> 
   </tr> 
   <tr> 
-   <td><p>接觸點型別 </p></td> 
-   <td><p>網路表單 </p></td> 
+   <td>接觸點型別</td> 
+   <td>網路表單</td>
   </tr> 
   <tr> 
-   <td><p>接觸點來源 </p></td> 
-   <td><p>LinkedIn </p></td> 
+   <td>接觸點來源</td>
+   <td>LinkedIn</td>
   </tr> 
  </tbody> 
 </table>
+
+**&#42;** _「廣告目的地URL」欄位僅會填入贊助內容。 不會為Lead Gen Forms填入。_
+
+<br>
 
 ## 成本 {#costs}
 
