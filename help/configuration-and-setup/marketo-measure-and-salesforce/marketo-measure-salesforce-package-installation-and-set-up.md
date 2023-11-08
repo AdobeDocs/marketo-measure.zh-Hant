@@ -3,9 +3,9 @@ description: '"[!DNL Marketo Measure] Salesforce封裝安裝及設定 —  [!DNL
 title: '"[!DNL Marketo Measure] [!DNL Salesforce] 封裝安裝及設定」'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -48,16 +48,6 @@ ht-degree: 0%
 >
 >閱讀關於 [!DNL Marketo Measure] 許可權集已建立和 [如何使用](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
 
-## 安裝 [!DNL Marketo Measure] 控制面板套件 {#install-marketo-measure-dashboard-package}
-
-此 [!UICONTROL Dashboard] 擴充功能套件包含三個預先建立的儀表板。 建議您安裝 [!UICONTROL within] 適用於所有使用者的生產環境。
-
-1. 從安裝套件 [[!DNL Salesforce] Appexchange](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}.
-
-1. 選取 **[!UICONTROL Install for All Users]**.
-
-   ![](assets/marketo-measure-salesforce-package-installation-and-set-up-3.png)
-
 ## 建立 [!DNL Marketo Measure] 設定檔和使用者 {#creating-a-marketo-measure-profile-and-user}
 
 [!DNL Marketo Measure] 透過已連線的傳送和接收資料 [!DNL Salesforce] 使用者在 [!DNL Marketo Measure] 應用程式。
@@ -98,3 +88,7 @@ ht-degree: 0%
 1. 選取 **[!UICONTROL Connections]** 在 **[!UICONTROL Integrations]** 分組。
 
 1. 按一下目前連線右側的按鍵圖示 [!DNL Salesforce] 連線並選取 **透過生產環境重新授權**. 使用新的使用者憑證再次登入（如果出現提示）。
+
+>[!MORELIKETHIS]
+>
+>[Adobe Admin Console設定](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}
