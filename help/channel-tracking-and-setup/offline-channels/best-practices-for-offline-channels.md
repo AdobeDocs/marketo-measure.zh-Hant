@@ -3,7 +3,7 @@ description: 離線管道的最佳作法 —  [!DNL Marketo Measure]  — 產品
 title: 離線管道的最佳作法
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -72,9 +72,9 @@ ht-degree: 0%
 >
 >* [離線管道設定](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 >* [自訂Campaign同步 — 應用程式同步](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
->* [同步離線行銷活動 — CRM同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
->* [離線Campaign與Campaign成員 — CRM同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
->* [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
+>* [同步離線行銷活動 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
+>* [離線Campaign與Campaign成員 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+>* [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
 >* [多種行銷活動記錄型別的設定](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
->* [建立行銷活動清單檢視](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
->* [同步歷史資料](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
+>* [建立行銷活動清單檢視](/help/channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+>* [同步歷史資料](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)

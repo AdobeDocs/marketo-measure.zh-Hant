@@ -3,7 +3,7 @@ description: 支出管理方法 —  [!DNL Marketo Measure]  — 產品檔案
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 啟用此功能後，將自動從符合以下條件的任何CRM行銷活動/方案提取支出
 
-i. [!DNL Marketo Measure] 首先檢視行銷活動/方案是否正在建立接觸點（從相符專案） [Campaign同步規則](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) 已建立的，或相符的 [程式同步規則](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) 已建立的，或 [啟用購買者接觸點值](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) 是「包含所有行銷活動成員」或「包含「已回應」行銷活動成員。」
+i. [!DNL Marketo Measure] 首先檢視行銷活動/方案是否正在建立接觸點（從相符專案） [Campaign同步規則](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) 已建立的，或相符的 [程式同步規則](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) 已建立的，或 [啟用購買者接觸點值](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) 是「包含所有行銷活動成員」或「包含「已回應」行銷活動成員。」
 
 二、 行銷活動/方案必須填入開始日期
 

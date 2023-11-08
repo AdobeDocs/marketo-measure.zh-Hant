@@ -4,7 +4,7 @@ description: '"[!DNL Marketo Measure] 維護 —  [!DNL Marketo Measure]  — �
 title: '"[!DNL Marketo Measure] 維護」'
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 feature: Tracking
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 **同步處理新離線行銷活動的購買者接觸點（2x/月）**
 
-正如您在入門期間所學的， [!DNL Marketo Measure] 與您的CRM行銷活動同步，以取得離線行銷工作的相關資訊。 當您的組織開始新的行銷活動時，請務必適當地為每個行銷活動啟用購買者接觸點。 簽出 [本文](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)以取得詳細資訊。
+正如您在入門期間所學的， [!DNL Marketo Measure] 與您的CRM行銷活動同步，以取得離線行銷工作的相關資訊。 當您的組織開始新的行銷活動時，請務必適當地為每個行銷活動啟用購買者接觸點。 簽出 [本文](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)以取得詳細資訊。
 
 **上傳所有管道的支出（1x/月）**
 

@@ -4,7 +4,7 @@ description: 接觸點產生與對應 —  [!DNL Marketo Measure]  — 產品檔
 title: 接觸點產生與對應
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [將線上接觸點對應至 [!DNL Marketo Measure] 管道/子管道](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
->* [從SFDC內同步CRM行銷活動](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+>* [從SFDC內同步CRM行銷活動](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
 >* [正在從內部同步CRM行銷活動 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
 >* [將CRM行銷活動對應至 [!DNL Marketo Measure] 管道/子管道](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 >* [從銷售活動建立接觸點](/help/advanced-marketo-measure-features/activities-attribution/salesforce-activities-attribution.md)

@@ -4,7 +4,7 @@ description: 使用Salesforce沙箱測試Marketo Measure整合 —  [!DNL Market
 title: 使用Salesforce沙箱測試Marketo Measure整合
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 其中一項 [!DNL Marketo Measure] 核心功能是能透過網站上的動作追蹤您的數位行銷工作，然後將資料推送至生產環境 [!DNL Salesforce org] 透過Leads和Contact。 不過，在沙箱整合中，通常不會從您的網站建立傳入銷售機會，因此對資料的關注將從純粹離線角度進行。
 
-以下是測試兩個階段參考的兩個來源。 [步驟1-4](https://help.salesforce.com/apex/HTViewHelpDoc?id=lead_import_wizard.htm&amp;language=en_US) 和 [步驟5-6](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md). 我們建議您檢閱這些檔案，因為這些檔案在某些方面可提供更多詳細資訊。
+以下是測試兩個階段參考的兩個來源。 [步驟1-4](https://help.salesforce.com/apex/HTViewHelpDoc?id=lead_import_wizard.htm&amp;language=en_US) 和 [步驟5-6](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md). 我們建議您檢閱這些檔案，因為這些檔案在某些方面可提供更多詳細資訊。
 
 1. 您需要在CSV中建立一些銷售機會，以便將其上傳至行銷活動。 方法是透過生產Salesforce中的報告匯出一些銷售機會。 否則，您可以在Excel檔案中手動建立銷售機會，然後將其儲存為CSV以供匯入。 您只需要大約20筆記錄。 檔案必須包含下列欄：
 

@@ -4,7 +4,7 @@ description: 離線自訂頻道設定 —  [!DNL Marketo Measure]  — 產品檔
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
@@ -59,7 +59,7 @@ SFDC促銷活動型別會出現在離線頻道的標籤中，列於下方 [!DNL 
 
 請花點時間進入 [!DNL Salesforce] 以決定要納入的現有記錄型別的數量和性質，以及是否需要根據上述資訊建立其他行銷活動。 填寫完所有必要資訊後，即可上傳。
 
-進一步瞭解 [離線同步 [!DNL Salesforce] 行銷活動與 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md).
+進一步瞭解 [離線同步 [!DNL Salesforce] 行銷活動與 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md).
 
 ## 處理線上行銷工作的SFDC行銷活動 {#handling-sfdc-campaigns-for-online-marketing-efforts}
 

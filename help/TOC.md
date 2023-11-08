@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 2%
    + 快速入門 [!DNL Marketo Measure] {#getting-started-with-marketo-measure}
       + [接觸點產生與對應](configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md)
       + [歸因對應方法](configuration-and-setup/getting-started-with-marketo-measure/attribution-mapping-methodology.md)
+      + [Adobe Admin Console設定](configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md)
       + [購買者接觸點和購買者歸因接觸點之間的差異](configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
       + [跨BT和的接觸點位置和產生方式說明 [!DNL BATs]](configuration-and-setup/getting-started-with-marketo-measure/explanation-of-touchpoint-positions-and-generation-across-bts-and-bats.md)
       + [[!DNL Marketo Measure] CRM無封裝整合](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
@@ -80,13 +81,13 @@ ht-degree: 2%
       + [離線自訂頻道設定](channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
       + [自訂Campaign同步](channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
       + [多種行銷活動記錄型別的設定](channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
-      + 已棄用的程式 {#deprecated-processes}
-         + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
-         + [Campaign同步日期](channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
-         + [建立行銷活動清單檢視 [!DNL Salesforce] 行銷活動](channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
-         + [Dynamics行銷活動和行銷清單](channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
-         + [同步歷史資料](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
-         + [同步離線行銷活動](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+      + 舊版流程 {#legacy-processes}
+         + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+         + [Campaign同步日期](channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
+         + [建立行銷活動清單檢視 [!DNL Salesforce] 行銷活動](channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+         + [Dynamics行銷活動和行銷清單](channel-tracking-and-setup/offline-channels/legacy-processes/dynamics-campaigns-and-marketing-lists.md)
+         + [同步歷史資料](channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)
+         + [同步離線行銷活動](channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
 + API連線 {#api-connections}
    + 利用 [!DNL Marketo Measure]的API連線 {#utilizing-marketo-measures-api-connections}
       + [整合式廣告平台](api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md)
