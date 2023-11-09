@@ -1,5 +1,5 @@
 ---
-description: 最新發行說明 —  [!DNL Marketo Measure]  — 產品檔案
+description: 最新發行說明 -  [!DNL Marketo Measure]  - 產品文件
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
