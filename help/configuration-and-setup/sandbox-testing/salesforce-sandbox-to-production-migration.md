@@ -4,9 +4,9 @@ description: Salesforce沙箱至生產環境移轉 —  [!DNL Marketo Measure]  
 title: Salesforce沙箱移轉至生產環境
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 0%
 * 安裝兩項 [!DNL Marketo Measure] 使用&quot;[!UICONTROL All Users]」設定
 
    * [基礎封裝](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
-   * [控制面板擴充功能套件](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}
 
 * 如需關於的詳細資訊 [!DNL Marketo Measure] 關聯性 [!DNL Salesforce]，檢視一下 [本文](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * 一點 [!DNL Salesforce] 設定是必要的。 以下概述特定動作專案 [下面的步驟4](#salesforce-configuration)
