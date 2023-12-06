@@ -4,10 +4,10 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3165d821000a1369ed6fdff3f786ae6632ea39f4
 workflow-type: tm+mt
-source-wordcount: '22610'
-ht-degree: 5%
+source-wordcount: '20697'
+ht-degree: 3%
 
 ---
 
@@ -179,12 +179,12 @@ _按一下完整版本的影像_
         <p>來源系統帳戶ID。</p>
       </td>
       <td>
-        <p>0013100001phrBAAAY</p>
+        <p>0013100001phrBAAY</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1382,7 +1382,7 @@ _按一下完整版本的影像_
       </td>
       <td>從utm_source的URL剖析。</td>
       <td>
-        <p>社交</p>
+        <p>Social</p>
       </td>
     </tr>
     <tr>
@@ -1394,7 +1394,7 @@ _按一下完整版本的影像_
       </td>
       <td>從utm_medium的URL剖析。</td>
       <td>
-        <p>lisu07261601</p>
+        <p>瀝蘇07261601</p>
       </td>
     </tr>
     <tr>
@@ -2673,7 +2673,7 @@ _按一下完整版本的影像_
       </td>
     </tr>
     <tr>
-      <td>電子郵件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>與BAT相關聯的電子郵件地址。</td>
       <td>person@adobe.com</td>
@@ -2689,7 +2689,7 @@ _按一下完整版本的影像_
         <p>BAT所屬帳戶的ID。</p>
       </td>
       <td>
-        <p>0013100001otbIAAAY</p>
+        <p>0013100001otbIAAY</p>
       </td>
     </tr>
     <tr>
@@ -2717,7 +2717,7 @@ _按一下完整版本的影像_
         <p>接觸點的日期。</p>
       </td>
       <td>
-        <p>2017-06-20 01:05:20.000</p>
+        <p>2017-06-20 01:05:20.00</p>
       </td>
     </tr>
     <tr>
@@ -2784,7 +2784,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY3</p>
+        <p>類別3</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2798,7 +2798,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY4</p>
+        <p>類別4</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2810,7 +2810,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY5</p>
+        <p>類別5</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2820,7 +2820,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY6</p>
+        <p>類別6</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2830,7 +2830,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY7</p>
+        <p>類別7</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2840,7 +2840,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY8</p>
+        <p>類別8</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2850,7 +2850,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY9</p>
+        <p>類別9</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2860,7 +2860,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY10</p>
+        <p>類別10</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2870,7 +2870,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY11</p>
+        <p>類別11</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2880,7 +2880,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY12</p>
+        <p>類別12</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2890,7 +2890,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY13</p>
+        <p>類別13</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2900,7 +2900,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY14</p>
+        <p>類別14</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2910,7 +2910,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY15</p>
+        <p>類別15</p>
       </td>
       <td>
         <p>varchar</p>
@@ -3052,7 +3052,7 @@ _按一下完整版本的影像_
         <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中以「表單URL — 原始」參照。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中稱為「表單URL — 原始」。</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -4255,7 +4255,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -4737,7 +4737,7 @@ _按一下完整版本的影像_
         <p>布林值</p>
       </td>
       <td>
-        <p>表示該列是否包含成本，其可加總為廣告群組。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含可由「廣告群組」加總的成本。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>False</p>
@@ -6695,7 +6695,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -7118,12 +7118,12 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>日期</td>
-      <td>date</td>
+      <td>日期</td>
       <td>事件發生日期。</td>
       <td>2018-08-28</td>
     </tr>
     <tr>
-      <td>時間戳記</td>
+      <td>TIMESTAMP</td>
       <td>timestamp_ntz</td>
       <td>事件發生日期和時間。</td>
       <td>2018-08-28 19:39:15.000</td>
@@ -7373,7 +7373,7 @@ _按一下完整版本的影像_
       </td>
     </tr>
     <tr>
-      <td>電子郵件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>記錄的電子郵件地址。</td>
       <td>personb@adobe.com</td>
@@ -7452,7 +7452,7 @@ _按一下完整版本的影像_
         <p>布林值</p>
       </td>
       <td>
-        <p>表示該列是否包含成本，其可加總為廣告群組。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
+        <p>表示該列是否包含可由「廣告群組」加總的成本。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>False</p>
@@ -7803,7 +7803,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -7896,7 +7896,7 @@ _按一下完整版本的影像_
 
 ### 商業曝光數(_I) {#biz-impressions}
 
-曝光次數已引發並錄製。 此表格需要DoubleClick連線，並將Enable View Through設定為True。
+曝光次數已引發並錄製。 此表格需要DoubleClick連線，並將「啟用檢視」設定為True。
 
 <table>
   <tbody>
@@ -9399,7 +9399,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9712,7 +9712,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -10352,7 +10352,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -10825,7 +10825,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -10976,7 +10976,7 @@ _按一下完整版本的影像_
       <td>
         <p>專為Doubleclick放置的廣告商名稱。</p>
       </td>
-      <td>[!DNL Marketo Measure] 分析</td>
+      <td>[!DNL Marketo Measure] Analytics</td>
     </tr>
     <tr>
       <td>
@@ -12003,7 +12003,7 @@ _按一下完整版本的影像_
         <p>從utm_medium的URL剖析。</p>
       </td>
       <td>
-        <p>社交</p>
+        <p>Social</p>
       </td>
     </tr>
     <tr>
@@ -12017,7 +12017,7 @@ _按一下完整版本的影像_
         <p>從utm_term的URL剖析。</p>
       </td>
       <td>
-        <p>lisu07261601</p>
+        <p>瀝蘇07261601</p>
       </td>
     </tr>
     <tr>
@@ -13083,7 +13083,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13235,7 +13235,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY3</p>
+        <p>類別3</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13249,7 +13249,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY4</p>
+        <p>類別4</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13263,7 +13263,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY5</p>
+        <p>類別5</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13275,7 +13275,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY6</p>
+        <p>類別6</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13287,7 +13287,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY7</p>
+        <p>類別7</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13297,7 +13297,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY8</p>
+        <p>類別8</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13307,7 +13307,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY9</p>
+        <p>類別9</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13317,7 +13317,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY10</p>
+        <p>類別10</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13327,7 +13327,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY11</p>
+        <p>類別11</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13337,7 +13337,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY12</p>
+        <p>類別12</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13347,7 +13347,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY13</p>
+        <p>類別13</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13357,7 +13357,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY14</p>
+        <p>類別14</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13369,7 +13369,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY15</p>
+        <p>類別15</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13502,7 +13502,7 @@ _按一下完整版本的影像_
     <tr>
       <td>FORM_PAGE_RAW</td>
       <td>varchar</td>
-      <td>產生接觸點的工作階段中記錄的第一個表單。 後續的表單提交將不會顯示在接觸點表格中，而會顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中以「表單URL — 原始」參照。</td>
+      <td>產生接觸點的工作階段中記錄的第一個表單。 後續的表單提交將不會顯示在接觸點表格中，而會顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中稱為「表單URL — 原始」。</td>
       <td>https://info.adobe.com/demo?hsCtaTracking=98adcc2f-afe2-40c4-9d79-40dcc41663ee%7C3cfaa909-39cb-4f5d-93eb-be05de6b0180</td>
     </tr>
     <tr>
@@ -13572,7 +13572,7 @@ _按一下完整版本的影像_
         <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
       </td>
       <td>
-        <p>社交</p>
+        <p>Social</p>
       </td>
     </tr>
     <tr>
@@ -13830,7 +13830,7 @@ _按一下完整版本的影像_
         <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>lisu03151846</p>
+        <p>瀝蘇03151846</p>
       </td>
     </tr>
     <tr>
@@ -13914,7 +13914,7 @@ _按一下完整版本的影像_
         <p>從付費搜尋購買專案（從解決廣告的來源廣告帳戶提取）購買的關鍵字名稱。 適用於Google AdWords和Bing Ads （搜尋）</p>
       </td>
       <td>
-        <p>lisu03151846</p>
+        <p>瀝蘇03151846</p>
       </td>
     </tr>
     <tr>
@@ -14246,102 +14246,52 @@ _按一下完整版本的影像_
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>欄</p>
-      </th>
-      <th>
-        <p>資料類型</p>
-      </th>
-      <th>
-        <p>說明</p>
-      </th>
-      <th>
-        <p>範例資料</p>
-      </th>
+      <th>欄</th>
+      <th>資料類型</th>
+      <th>說明</th>
+      <th>範例資料</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>完整的URL。</p>
-      </td>
-      <td>
-        <p>https://www.adobe.com/blog/strategic-marketing-plangoals</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>完整的URL。</td>
+      <td>https://www.adobe.com/blog/strategic-marketing-plangoals</td>
     </tr>
     <tr>
-      <td>
-        <p>配置</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>網頁在網路上的安全通訊。</p>
-      </td>
-      <td>
-        <p>https</p>
-      </td>
+      <td>配置</td>
+      <td>varchar</td>
+      <td>網頁在網路上的安全通訊。</td>
+      <td>https</td>
     </tr>
     <tr>
-      <td>
-        <p>主機</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL的網域，包含任何子網域。</p>
-      </td>
-      <td>
-        <p>www.adobe.com</p>
-      </td>
+      <td>主機</td>
+      <td>varchar</td>
+      <td>URL的網域，包含任何子網域。</td>
+      <td>www.adobe.com</td>
     </tr>
     <tr>
-      <td>
-        <p>連線埠</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來自網際網路主機的連線埠（URL中的選用）。</p>
-      </td>
-      <td>
-        <p>584</p>
-      </td>
+      <td>PAGE_TITLE</td>
+      <td>varchar</td>
+      <td>頁面標題。</td>
+      <td>下載B2B行銷歸因的CMO指南</td>
     </tr>
     <tr>
-      <td>
-        <p>路徑</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL中指向主機特定位置的一部分。</p>
-      </td>
-      <td>
-        <p>/blog/strategic-marketing-plangoals</p>
-      </td>
+      <td>路徑</td>
+      <td>varchar</td>
+      <td>URL中指向主機特定位置的一部分。</td>
+      <td>/blog/strategic-marketing-plangoals</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>number(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts檢視的外部索引鍵。</p>
-      </td>
-      <td>
-        <p>5686109553536636820</p>
-      </td>
+      <td>連線埠</td>
+      <td>varchar</td>
+      <td>來自網際網路主機的連線埠（URL中的選用）。</td>
+      <td>584</td>
+    </tr>
+    <tr>
+      <td>ROW_KEY</td>
+      <td>number(38,0)</td>
+      <td>Biz_Facts檢視的外部索引鍵。</td>
+      <td>5686109553536636820</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -14414,7 +14364,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -14688,7 +14638,7 @@ _按一下完整版本的影像_
         <p>varchar</p>
       </td>
       <td>
-        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中以「表單URL — 原始」參照。</p>
+        <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中稱為「表單URL — 原始」。</p>
       </td>
       <td>
         <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
