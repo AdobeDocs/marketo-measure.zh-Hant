@@ -4,10 +4,10 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: 89b50552455dbd4c9b60d101eaf6e1b0ff22c0c4
+source-git-commit: de74e51c023dfae454e51f99f91a3b4df7423ac2
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 2%
       + [接觸點設定的最佳實務](advanced-marketo-measure-features/touchpoint-settings/best-practices-for-touchpoint-settings.md)
       + [接觸點移除與接觸點抑制](advanced-marketo-measure-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md)
       + [為何您絕不應該刪除接觸點](advanced-marketo-measure-features/touchpoint-settings/why-you-should-never-delete-touchpoints.md)
-   + 區段 {#segmentation}
+   + 細分 {#segmentation}
       + [細分的最佳實務](advanced-marketo-measure-features/segmentation/best-practices-for-segmentation.md)
       + [自訂分段](advanced-marketo-measure-features/segmentation/custom-segmentation.md)
    + 活動歸因 {#activities-attribution}
@@ -154,6 +154,7 @@ ht-degree: 2%
       + [新增Discover儀表板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [收入總覽儀表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
       + [已歸因的收入儀表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+        [參與儀表板](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
       + [ROI控制面板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
       + [Passport儀表板](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
       + [網站流量儀表板](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
