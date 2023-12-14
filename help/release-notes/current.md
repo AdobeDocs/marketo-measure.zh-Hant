@@ -1,11 +1,11 @@
 ---
-description: 最新發行說明 -  [!DNL Marketo Measure]  - 產品文件
+description: 最新發行說明 —  [!DNL Marketo Measure]  — 產品檔案
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: dc4fda07004398207fb5067eb42ecd9e8ffe8624
+source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,69 @@ ht-degree: 0%
 ## 第4季發行 {#q4-release}
 
 <p>
+
+**網站流量儀表板**
+
+全新重新設計的 [網站流量儀表板](/help/marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md){target="_blank"} 現在可供所有客戶存取。 此儀表板提供網站訪客互動的完整總覽。 您可以分析量度，例如每個URL的不重複訪客計數、整體造訪、頁面檢視，以及來自特定表單URL或登入頁面的表單提交。 您也可以追蹤每月流量趨勢，並找出高績效的付費媒體，協助您調整策略以取得最佳收入。
+
+全新預先建立控制面板組合已排程分階段推出，於年底前完成。
+
+>[!NOTE]
+>
+>目前的控制面板將於2024年1月中旬淘汰，在此之前，您可以利用兩個版本，以確保順利轉換。
+
+**IP位址資料移除**
+
+我們將從長期儲存空間中移除IP位址資料，以確保資料隱私權法規遵循。 目前，下列Snowflake表格和檢視包含IP位址，我們計畫移除此資料並新增地理位置資訊：
+
+<table style="width:400px">
+<thead>
+  <tr>
+    <th style="width:50%">表格</th>
+    <th>檢視</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CUSTOMER_AB_TESTS</td>
+    <td>BIZ_CUSTOMER_AB_TESTS</td>
+  </tr>
+  <tr>
+    <td>CUSTOMER_EVENTS</td>
+    <td>BIZ_CUSTOMER_EVENTS</td>
+  </tr>
+  <tr>
+    <td>FORM_SUBMIT</td>
+    <td>BIZ_FORM_SUBMIT</td>
+  </tr>
+  <tr>
+    <td>曝光數</td>
+    <td>商業曝光數(_I)</td>
+  </tr>
+  <tr>
+    <td>PAGE_VIEWS</td>
+    <td>BIZ_PAGE_VIEW</td>
+  </tr>
+  <tr>
+    <td>工作階段</td>
+    <td>商務工作階段</td>
+  </tr>
+  <tr>
+    <td>WEB_HOST_MAPPINGS</td>
+    <td>BIZ_WEB_HOST_MAPPINGS</td>
+  </tr>
+</tbody>
+</table>
+
+* 從現在開始，我們將下載「國家/地區代碼」、「城市名稱」和「地區代碼」，而非「國家/地區名稱」、「城市名稱」和「地區名稱」。
+* 在處理所有歷史網路活動期間，可能會出現記錄位置資訊不一致的情況。 這些不一致之處可能包括存在的IP位址沒有地理位置詳細資訊、更新的地理位置資訊沒有IP位址，或國家或地區名稱和代碼的混合。
+* _**此混合資料期間預計從2023年1月4日到2023年2月29日。**_
+
+**URL表格中的頁面標題資料**
+
+中的URL表格 [資料倉儲](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"} 除了Web資料表格外，現在還將包含頁面標題欄位。
+
+請注意，URL表格中的頁面標題不一定都會與其他網頁表格中的頁面標題相符。 URL表格將會有最近的頁面標題。 如果網頁活動發生後URL的標題已變更，它將不會符合URL表格中的內容。
 
 **探索儀表板重新設計**
 
@@ -39,15 +102,54 @@ ht-degree: 0%
 
 <p>
 
-* **「custom_properties」欄位**
+* **Salesforce欄位淘汰**
 
-在我們Data Warehouse中，「custom_properties」欄位一直是固定結構描述未涵蓋之其他資料點的儲存空間。 此欄位以JSON格式儲存，其使用方式有限，而且與SQL查詢的整合可能會很複雜，從而影響效能。 基於這些因素，我們決定棄用此欄位。 此變更主要影響Azure表格儲存空間中的資料處理層，以及匯出至資料倉儲的資料。
+我們將逐步淘汰匯出至Lead/Contact物件的工作，以簡化整合，並免除匯出至Salesforce標準物件的需要。 下列非正規化欄位也會遭到取代，因為客戶可以從其接觸點物件取得相同的資料。 _**淘汰的時間表為2024年6月。**_
+
+<table style="width:300px">
+<tbody>
+  <tr>
+    <td>bizible2__Ad_Campaign_Name_FT__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Ad_Campaign_Name_LC__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Landing_Page_FT__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Landing_Page_LC__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Touchpoint_Date_FT__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Touchpoint_Date_LC__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Touchpoint_Source_FT__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Touchpoint_Source_LC__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Marketing_Channel_FT__c</td>
+  </tr>
+  <tr>
+    <td>bizible2__Marketing_Channel_LC__c</td>
+  </tr>
+</tbody>
+</table>
 
 * **Dynamics套件相關**
 
    * 若要保持與Dynamics的連線，請安裝最新套件版本v6.12。舊版 `(<v6.12)` 將不再受支援。 此更新會最佳化歷史記錄的建立，以減少儲存空間使用量。
 
    * 將棄用具有RefreshToken的過時方法OAuth。 請參閱 [本指南](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md){target="_blank"} 更新您的認證，以遵守Microsoft使用ClientSecret的最佳做法。
+
+* **「custom_properties」欄位**
+
+在我們Data Warehouse中，「custom_properties」欄位一直是固定結構描述未涵蓋之其他資料點的儲存空間。 此欄位以JSON格式儲存，其使用方式有限，而且與SQL查詢的整合可能會很複雜，從而影響效能。 基於這些因素，我們決定棄用此欄位。 此變更主要影響Azure表格儲存空間中的資料處理層，以及匯出至資料倉儲的資料。
 
 ### 即將推出的功能 {#q4-whats-coming}
 
