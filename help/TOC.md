@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: de74e51c023dfae454e51f99f91a3b4df7423ac2
+source-git-commit: fad900c97f25e7d19692fb2b4403b439e479caa1
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
@@ -152,13 +152,16 @@ ht-degree: 1%
    + 儀表板 {#dashboards}
       + [探索儀表板基本知識](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
       + [新增Discover儀表板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
-      + [收入總覽儀表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
-      + [已歸因的收入儀表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
-        [參與儀表板](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
-      + [ROI控制面板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
-      + [Passport儀表板](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
-      + [網站流量儀表板](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
       + [控制面板資料可見性原則](marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md)
+      + [已歸因的收入儀表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+      + [參與儀表板](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
+      + [銷售機會速度控制面板](marketo-measure-discover-ui/dashboards/lead-velocity-dashboard.md)
+      + [機會Velocity控制面板](marketo-measure-discover-ui/dashboards/opportunity-velocity-dashboard.md)
+      + [Passport儀表板](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
+      + [收入總覽儀表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
+      + [ROI控制面板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
+      + [網站流量儀表板](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
+
    + 舊式儀表板 {#legacy-dashboards}
       + [同類群組歷程儀表板檔案](marketo-measure-discover-ui/legacy-dashboards/cohort-journey-dashboard-documentation.md)
       + [Passport Dashboard檔案](marketo-measure-discover-ui/legacy-dashboards/passport-dashboard-documentation.md)
