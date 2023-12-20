@@ -1,19 +1,17 @@
 ---
 description: 『[!DNL Marketo Measure] Ultimate Implementation指南 —  [!DNL Marketo Measure]  — 產品檔案'
 title: 『[!DNL Marketo Measure] Ultimate Implementation指南
-hide: true
-hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: a1838bec06d1a626bb282f8e7d26814840f860a7
+source-git-commit: 041079d08d8e1993ecc31368c443a9a6fe3a8336
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure] Ultimate Implementation指南 {#marketo-measure-ultimate-implementation-guide}
 
-介紹句子
+本文可作為Marketo Measure Ultimate的實作指南，提供清晰的步驟和深入分析，以確保成功的整合和使用。
 
 ## 使用Ultimate層級與標準層級的主要差異 {#main-differences-when-using-ultimate-over-standard-tiers}
 
@@ -84,7 +82,7 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
    >* 如果您將一個結構描述型別對應到另一個相同的結構描述型別，則會自動完成對應作業。
    >* 您也可以從系統中的另一個流程匯入對應。
    >* 您可以將一個「來源」欄位對應到多個目的地欄位，但無法反其道而行之。
-   >* 您可以建立計算欄位（ExL：資料準備對應函式）。
+   >* 您可以建立計算欄位([資料準備對應函式](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"})。
 
    >[!CAUTION]
    >
@@ -107,8 +105,6 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 * 若要檢視資料流錯誤，請選取資料流、選擇資料流執行，然後按一下「錯誤診斷預覽」。
 
 ## 資料檢查 {#data-inspection}
-
-ExL： Marketo Measure Ultimate資料完整性要求本檔案包含每個XDM的必要欄位以及檢查查詢。 它將以ExL發佈。  — 上面已標籤 — 請再次POST???
 
 選項1：若要直接從UI執行查詢，請存取資料管理下的查詢索引標籤。
 
