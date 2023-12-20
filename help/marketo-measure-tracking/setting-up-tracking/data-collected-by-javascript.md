@@ -2,7 +2,7 @@
 description: JavaScript收集的資料 —  [!DNL Marketo Measure]  — 產品檔案
 title: JavaScript收集的資料
 feature: Tracking
-source-git-commit: 2be08b96fb9f6d027e80751db64f16a7f2893764
+source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 6%
@@ -49,25 +49,25 @@ Marketo Measure會為所有型別的請求收集以下常用資料：
     <td>查詢引數</td>
     <td>_biz_u</td>
     <td>字串</td>
-    <td>Bizible Cookie ID</td>
+    <td>Bizible Cookie ID。</td>
   </tr>
   <tr>
     <td>查詢引數</td>
     <td>_biz_l</td>
     <td>字串</td>
-    <td>目前頁面URL</td>
+    <td>目前頁面URL。</td>
   </tr>
   <tr>
     <td>查詢引數</td>
     <td>_biz_t</td>
     <td>長</td>
-    <td>活動時間戳記</td>
+    <td>活動時間戳記。</td>
   </tr>
   <tr>
     <td>查詢引數</td>
     <td>_biz_i</td>
     <td>字串</td>
-    <td>目前頁面標題</td>
+    <td>目前頁面標題。</td>
   </tr>
 </tbody>
 </table>
@@ -118,7 +118,7 @@ Marketo Measure會為所有型別的請求收集以下常用資料：
     <td>/u</td>
     <td>mapType</td>
     <td>列舉</td>
-    <td>偵測到對應bizible.js的使用者ID種類(Marketo munchkin ID和AdobeECID)</td>
+    <td>偵測到對應bizible.js的使用者ID種類(Marketo Munchkin ID和AdobeECID)</td>
   </tr>
   <tr>
     <td></td>
