@@ -4,10 +4,10 @@ description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Mark
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 互動
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: afb7805e375f26cc1b2473802582b1999e92cd8b
+source-git-commit: 3be29892b58852cf080828e9eeff969ac08cc62b
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 13%
+source-wordcount: '1268'
+ht-degree: 19%
 
 ---
 
@@ -42,148 +42,148 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>電子郵件</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>電子郵件</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>狀態</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>狀態</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CreatedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>CreatedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ConvertedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ConvertedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ConvertedContactId</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ConvertedContactId</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ConvertedOpportunityId</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ConvertedOpportunityId</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsConverted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsConverted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>網站</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>網站</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>公司</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>公司</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Account__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Account__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Source_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Touchpoint_Source_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
   </tr> 
  </tbody> 
 </table>
@@ -193,106 +193,106 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>帳戶</p></td> 
-   <td><p>標準</p></td> 
+   <td>帳戶</td> 
+   <td>標準</td> 
    <td><span>x</span></td> 
    <td><br></td> 
   </tr> 
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>電子郵件</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>電子郵件</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>建立日期</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>建立日期</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Source_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Touchpoint_Source_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
   </tr> 
  </tbody> 
 </table>
@@ -302,100 +302,100 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CreatedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>CreatedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>提供的電子郵件</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>提供的電子郵件</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source_FT__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Source_FT__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source_LC__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Touchpoint_Source_LC__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
   </tr> 
  </tbody> 
 </table>
@@ -405,119 +405,187 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>網站</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>網站</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Engagement_Score__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Engagement_Score__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
   </tr> 
  </tbody> 
 </table>
 
-**機會**
+**商機**
 
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>帳戶</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>名稱</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td><br></td> 
-  </tr> 
+  </tr>
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>帳戶</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td><br></td> 
+  </tr>
+  <tr> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CreatedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>CreatedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsWon</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsWon</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsClosed</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsClosed</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>關閉日期</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>關閉日期</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>階段名稱</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>階段名稱</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>數量</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>數量</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Bizible_Opportunity_Amount__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Bizible_Opportunity_Amount__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**機會聯絡人角色**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
+  </tr> 
+  <tr> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td>CreatedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td>商機ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td>連絡人ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr>
+
+<tr> 
+   <td>主要的</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td>角色</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -533,87 +601,87 @@ ht-degree: 13%
  </colgroup> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>電子郵件</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>電子郵件</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>狀態</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>狀態</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CreatedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>CreatedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ConvertedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ConvertedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ConvertedContactId</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ConvertedContactId</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>ConvertedOpportunityId</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ConvertedOpportunityId</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsConverted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsConverted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>網站</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>網站</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>公司</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>公司</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>類型</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>類型</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td><br></td> 
   </tr> 
  </tbody> 
@@ -624,100 +692,100 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CreatedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>CreatedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>LastModifiedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>LastModifiedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsDeleted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsDeleted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>FirstRespondedDate</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>FirstRespondedDate</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>HasResponsed</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>HasResponsed</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>連絡人ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>連絡人ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>銷售機會ID</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>銷售機會ID</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>IsConverted</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>IsConverted</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>CampaignId</p></td> 
-   <td><p>標準</p></td> 
-   <td><p>x</p></td> 
+   <td>CampaignId</td> 
+   <td>標準</td> 
+   <td>x</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Bizible_Touchpoint_Date__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Bizible_Touchpoint_Date__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Status_Date__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Status_Date__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Status_Contact__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Status_Contact__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Status_Leade__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Status_Leade__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Status_Opportunity__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Touchpoint_Status_Opportunity__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
   </tr> 
  </tbody> 
 </table>
@@ -730,7 +798,7 @@ ht-degree: 13%
 >* Campaign
 >* 促銷活動會員
 >* 連絡人
->* Event
+>* 事件
 >* 銷售機會
 >* 機會
 >* 任務
@@ -747,262 +815,262 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Bizible_Person__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Bizible_Person__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__SF_Campaign__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__SF_Campaign__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__UniqueId__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__UniqueId__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_Path__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_Path__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Type__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Type__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Content__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Content__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Group_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Group_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Group_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Group_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Placement_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Placement_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Placement_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Placement_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Site_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Site_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Site_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Site_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Form_URL__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Form_URL__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Form_URL_Raw__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Form_URL_Raw__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Platform__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Platform__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Browser__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Browser__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Geo_City__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Geo_City__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Geo_Country__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Geo_Country__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Geo_Region__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Geo_Region__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Keyword_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Keyword_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Keyword_MatchType__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Keyword_MatchType__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Position__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Position__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Keyword_Text__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Keyword_Text__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_Raw__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_Raw__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Medium__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Medium__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Referrer_Page__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Referrer_Page__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Referrer_Page_Raw__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Referrer_Page_Raw__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Search_Phrase__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Search_Phrase__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Source__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Segment__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Segment__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_First_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_First_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_Lead_Creation_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_Lead_Creation_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_U_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_U_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Destination_URL__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Destination_URL__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Case__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Case__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Contact__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Contact__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1014,34 +1082,34 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>bizible2__UniqueId__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__UniqueId__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Lead__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Lead__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Case__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Case__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Contact__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x </p></td> 
+   <td>bizible2__Contact__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1055,352 +1123,352 @@ ht-degree: 13%
 <table> 
  <tbody> 
   <tr> 
-   <th><p>欄位</p></th> 
-   <th><p>標準/自訂</p></th> 
-   <th><p>讀取</p></th> 
-   <th><p>寫入</p></th> 
+   <th>欄位</th> 
+   <th>標準/自訂</th> 
+   <th>讀取</th> 
+   <th>寫入</th> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Account__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Account__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__SF_Campaign__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__SF_Campaign__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Contact__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Contact__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Opportunity__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Opportunity__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__UniqueId__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__UniqueId__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Marketing_Channel_Path__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Marketing_Channel_Path__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Type__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Type__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Content__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Content__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Group_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Group_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Group_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Group_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Campaign_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Campaign_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Placement_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Placement_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Placement_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Placement_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Site_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Site_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Site_Name__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Site_Name__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Form_URL__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Form_URL__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Form_URL_Raw__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Form_URL_Raw__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Platform__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Platform__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Browser__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Browser__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Geo_City__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Geo_City__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Geo_Country__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Geo_Country__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Geo_Region__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Geo_Region__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Keyword_Id__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Keyword_Id__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Keyword_MatchType__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Keyword_MatchType__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Position__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Position__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Keyword_Text__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Keyword_Text__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Landing_Page_Raw__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Landing_Page_Raw__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Medium__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Medium__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Referrer_Page__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Referrer_Page__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Referrer_Page_Raw__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Referrer_Page_Raw__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Search_Phrase__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Search_Phrase__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Date__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Date__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Touchpoint_Source__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Touchpoint_Source__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Segment__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Segment__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_First_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Attribution_First_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_Lead_Conversion_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Attribution_Lead_Conversion_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_U_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Attribution_U_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_W_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Attribution_W_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_Custom_Model__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Attribution_Custom_Model__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Attribution_Custom_Model_2__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Attribution_Custom_Model_2__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_First_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_First_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_Lead_Creation_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_Lead_Creation_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_U_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_U_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_W_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_W_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_Custom_Model__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_Custom_Model__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Count_Custom_Model_2__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Count_Custom_Model_2__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Ad_Destination_URL__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Ad_Destination_URL__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_First_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Revenue_First_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_Lead_Creation_Touch__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Revenue_Lead_Creation_Touch__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_U_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Revenue_U_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_W_Form__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Revenue_W_Form__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_Custom_Model__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Revenue_Custom_Model__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
   <tr> 
-   <td><p>bizible2__Revenue_Custom_Model_2__c</p></td> 
-   <td><p>自訂</p></td> 
-   <td><p>x</p></td> 
-   <td><p>x</p></td> 
+   <td>bizible2__Revenue_Custom_Model_2__c</td> 
+   <td>自訂</td> 
+   <td>x</td> 
+   <td>x</td> 
   </tr> 
  </tbody> 
 </table>
