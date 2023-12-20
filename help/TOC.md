@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: 1fc0b98c0aa1273e5aa70ba7b89672d689e734e1
+source-git-commit: 4d91899f6126a83b29170c7c5bbe146ed49ad9b0
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 1%
       + [實作的最佳作法 [!DNL Marketo Measure] JavaScript](marketo-measure-tracking/setting-up-tracking/best-practices-for-implementing-marketo-measure-javascript.md)
       + [新增 [!DNL Marketo Measure] 指令碼](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
       + [新增 [!DNL Marketo Measure] 透過Google Tag Manager編寫指令碼](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md)
+      + [JavaScript收集的資料](marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md)
       + 新增 [!DNL Marketo Measure] 編寫給不同表單提供者的指令碼 {#adding-marketo-measure-script-to-different-form-providers}
          + [新增 [!DNL Marketo Measure] JavaScript至Pardot](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/adding-marketo-measure-javascript-to-pardot.md)
          + [新增 [!DNL Marketo Measure] Script to Lightbox Forms](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/adding-marketo-measure-script-to-lightbox-forms.md)
