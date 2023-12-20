@@ -4,7 +4,7 @@ title: 整合許可權概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 9196877384140d60a22012b43ea960017528f4d5
+source-git-commit: 1c3cd5ac9999550003765a9e1ed8d538224fe8a9
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 3%
@@ -33,24 +33,24 @@ ht-degree: 3%
     <td>B2B系統資料    
 </td>
     <td>Marketo Measure正在追蹤：
-    <br>
+    <p>
     <li>帳戶</li>
-<li>Campaign</li>
-<li>CampaignMember</li>
-<li>連絡人</li>
-<li>CurrencyConversionRange</li>
-<li>貨幣狀態</li>
-<li>事件</li>
-<li>FieldHistory （銷售機會、連絡人和商機）</li>
-<li>銷售機會</li>
-<li>機會</li>
-<li>Opportunactrole</li>
-<li>機會歷史記錄</li>
-<li>任務</li>
-<br>
+    <li>Campaign</li>
+    <li>CampaignMember</li>
+    <li>連絡人</li>
+    <li>CurrencyConversionRange</li>
+    <li>貨幣狀態</li>
+    <li>事件</li>
+    <li>FieldHistory （銷售機會、連絡人和商機）</li>
+    <li>銷售機會</li>
+    <li>機會</li>
+    <li>Opportunactrole</li>
+    <li>機會歷史記錄</li>
+    <li>任務</li>
+<p>
 建立的接觸點和其他資料會寫入帳戶、行銷活動、CampaignMember、Case、Contact、Lead和Opportunity的自訂雙機碼欄位中。</td>
     <td><b>Salesforce連線使用者許可權（必要）</b>
-    <br>
+    <p>
     <b>為專用使用者設定的Marketo Measure管理員許可權：</b> 允許SFDC管理員在Marketo測量物件上執行CRUD操作。
     <br>
     <b>檢視和編輯轉換的潛在客戶許可權集：</b> 這可讓Marketo Measure在銷售機會轉換為聯絡人後裝飾銷售機會。
