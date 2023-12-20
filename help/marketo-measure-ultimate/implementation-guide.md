@@ -4,7 +4,7 @@ title: 『[!DNL Marketo Measure] Ultimate Implementation指南
 hide: true
 hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: d8c1962aaf1830970c4cbde4385d05ca4ad3139e
+source-git-commit: a1838bec06d1a626bb282f8e7d26814840f860a7
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
@@ -32,13 +32,13 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
 * 布建的AEP版本將僅包含所有來源聯結器、結構描述資料模型、資料集、Ad Hoc Query Service和Marketo Measure目的地。
 
-進一步瞭解 [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md).
+進一步瞭解 [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md){target="_blank"}.
 
 ## 結構描述和資料集 {#schemas-and-datasets}
 
 >[!NOTE]
 >
->簽出 [結構描述的建置區塊](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema) 以取得結構描述、類別和欄位群組的概觀。
+>簽出 [結構描述的建置區塊](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} 以取得結構描述、類別和欄位群組的概觀。
 
 **XDM結構描述=類別+結構描述欄位群組&#42;**
 
@@ -49,13 +49,13 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[資料集總覽](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)：所有成功內嵌至AEP的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合的儲存和管理結構，通常是包含方案（欄）和欄位（列）的表格。
+[資料集總覽](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}：所有成功內嵌至AEP的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合的儲存和管理結構，通常是包含方案（欄）和欄位（列）的表格。
 
 ## 建立結構描述 {#creating-a-schema}
 
 我們建議使用自動產生公用程式來建立10個標準B2B結構描述。
 
-* 下載及設定公用程式的步驟 [可在此處找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility).
+* 下載及設定公用程式的步驟 [可在此處找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
 適用於具有 _**CDP權益**_：前往來源頁面建立方案。
 
@@ -69,7 +69,7 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
 ## 資料流程 {#dataflows}
 
-[資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html)
+[資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **建立資料流的步驟：**
 
@@ -93,7 +93,7 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
    >[!NOTE]
    >
-   >[Marketo Measure Ultimate資料完整性需求](help/marketo-measure-ultimate/data-integrity-requirement.md)
+   >[Marketo Measure Ultimate資料完整性需求](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}
 
 1. 設定資料載入節奏。
 1. 檢閱並完成。
@@ -114,7 +114,7 @@ ExL： Marketo Measure Ultimate資料完整性要求本檔案包含每個XDM的�
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-選項2： [下載和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html) （更快速、更可靠）
+選項2： [下載和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （更快速、更可靠）。
 
 ## 啟動Marketo Measure的資料集 {#activate-dataset-for-marketo-measure}
 
