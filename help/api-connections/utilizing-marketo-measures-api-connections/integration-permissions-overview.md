@@ -4,7 +4,7 @@ title: 整合許可權概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
+source-git-commit: 9196877384140d60a22012b43ea960017528f4d5
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 3%
@@ -18,13 +18,13 @@ ht-degree: 3%
 <table>
 <thead>
   <tr>
-    <th>整合</th>
-    <th>資料類型
+    <th style="width:10%">整合</th>
+    <th style="width:20%">資料類型
     <li>網路互動資料</li>
     <li>B2B系統資料</li>
     <li>廣告平台資料</li></th>
-    <th>我們追蹤的內容</th>
-    <th>許可權需求</th>
+    <th style="width:30%">我們追蹤的內容</th>
+    <th style="width:40%">許可權需求</th>
   </tr>
 </thead>
 <tbody>
