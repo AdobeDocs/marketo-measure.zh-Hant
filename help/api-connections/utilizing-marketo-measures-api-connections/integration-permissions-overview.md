@@ -4,9 +4,9 @@ title: 整合許可權概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: d7ded9075f7f5831314d59294327f1e4928baf8a
+source-git-commit: 3d4ee7c71ed241c8e3885b4db57168f753dcdf65
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 2%
 <thead>
   <tr>
     <th style="width:10%">整合</th>
-    <th style="width:20%">資料類型
+    <th style="width:25%">資料類型
     <li>網路互動資料</li>
     <li>B2B系統資料</li>
     <li>廣告平台資料</li></th>
-    <th style="width:30%">我們追蹤的內容</th>
+    <th style="width:25%">我們追蹤的內容</th>
     <th style="width:40%">許可權需求</th>
   </tr>
 </thead>
@@ -60,6 +60,7 @@ ht-degree: 2%
     <b>Marketo Measure Standard使用者：</b> 讓使用者能從Marketo Measure物件讀取記錄。
     <p>
     <b>Salesforce標準欄位許可權</b>
+    <br>
     <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Salesforce標準物件與存取</a>
     <p>
     <b>Salesforce自訂欄位許可權</b>
@@ -94,11 +95,11 @@ ht-degree: 2%
 <p>
 建立的接觸點和其他資料會寫入帳戶、行銷活動、CampaignResponse、Contact、Lead、List、Opportunity和PhoneCall的自訂雙機碼欄位中</td>
     <td><b>Marketo Measure使用者許可權</b>
-<p>
+<br>
 建議您在Dynamics中建立專屬的Marketo Measure使用者，以便我們透過匯出和匯入資料，進而避免您的CRM中其他使用者發生任何問題。 記下使用者名稱和密碼以及端點URL，因為建立Marketo Measure帳戶時會用到這些URL。
 <p>
 <b>安全性角色</b>
-<p>
+<br>
 如果您的組織使用Dynamics安全性角色，請確定已連線的使用者或專用的Marketo Measure使用者擁有所需實體的足夠讀取/寫入許可權。
 <br>
 安全性角色位於此處：設定&gt;安全性&gt;安全性角色
@@ -132,21 +133,36 @@ Marketo Measure會追蹤帳戶、行銷活動、廣告群組、廣告、篩選�
 <li>使用者必須具備電子郵件許可權，才能登入其Facebook電子郵件。</li>
 <p>
 <b>範圍</b>
-<p>
+<br>
 <a href="https://developers.facebook.com/docs/permissions/reference/ads_management/">ads_management</a>
 <br>
 <li>以程式設計方式建立行銷活動、管理廣告，以及擷取量度。</li>
 <li>建立廣告管理工具，為廣告商提供創新解決方案和差異化的價值。</li>
-<p>
+<br>
+<br>
 <a href="https://developers.facebook.com/docs/permissions/reference/email">電子郵件</a>
 <br>
 <li>與人員通訊，讓他們使用與其Facebook設定檔相關聯的電子郵件地址登入您的應用程式。</li></td>
   </tr>
   <tr>
     <td>LinkedIn</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>廣告平台資料
+    <p>
+    B2B系統資料（潛在客戶一般表單資料，包括表單和提交，分類為CRM活動）。</td>
+    <td>Marketo Measure正在追蹤LinkedIn廣告行銷活動、創意和成本資料，以及Lead Gen Forms和回應。 我們會根據匯入的資料，產生LinkedIn接觸點，並將潛在客戶表單回應與客戶建立關聯。</td>
+    <td><li>Marketo Measure需要行銷活動經理或客戶經理角色才能下載成本資料。 （範圍列1）</li>
+    <br>
+    <li>Marketo Measure需要超級管理員（頁面管理員角色，範圍列2）或潛在客戶Forms管理員（付費媒體管理員角色，範圍列3）來存取潛在客戶一般表單資料</li>
+    <br>
+    <li>超級管理員（頁面管理員角色，範圍列2）或贊助的內容海報（付費媒體管理員角色，範圍列3）是Marketo Measure操控自動標籤的必要專案</li>
+    <p>
+    <b>範圍</b>
+    <br>
+    <a href="https://www.linkedin.com/campaignmanager/accounts">在入口網站中設定使用者角色(需要登入LinkedIn帳戶)</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">使用者角色概觀</a>：使用者角色、檢視及管理使用者許可權、指派角色，例如帳戶管理員或行銷活動管理員
+    <p>
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">設定頁面管理員角色 —  <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">頁面管理員角色定義</a>：頁面管理員角色，在需要的管理員頁面上
+    <p>
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">設定付費媒體管理員角色（尋找付費媒體管理員） - <a href="https://www.linkedin.com/help/linkedin/answer/a554540">付費媒體管理員定義</a>：付費媒體管理員角色</td>
   </tr>
   <tr>
     <td>DoubleClick</td>
