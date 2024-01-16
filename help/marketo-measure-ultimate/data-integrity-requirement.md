@@ -3,7 +3,7 @@ description: 『[!DNL Marketo Measure] 終極資料完整性需求 —  [!DNL Ma
 title: 『[!DNL Marketo Measure] 終極資料完整性要求
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: e1c401ae41b5aeedf0c3c8b75a82f680a0dcbefb
+source-git-commit: b5277eef02d22b1f8cc10c184f232adb2ad7ac06
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 17%
@@ -407,7 +407,7 @@ ht-degree: 17%
       <td>b2b.personStatus</td>
       <td>字串</td>
       <td>狀態</td>
-      <td><font color="red">是（僅限潛在客戶個人型別）</font></td>
+      <td><b><i>是（僅限潛在客戶個人型別）</i></b></td>
       <td>只有在b2b.personType為「銷售機會」時才需要</td>
     </tr>
     <tr>
@@ -431,7 +431,7 @@ ht-degree: 17%
       <td>b2b.isConverted</td>
       <td>布林值</td>
       <td>IsConverted</td>
-      <td><font color="red">是（僅限潛在客戶個人型別）</font></td>
+      <td><b><i>是（僅限潛在客戶個人型別）</i></b></td>
       <td>只有在b2b.personType為「銷售機會」時才需要</td>
     </tr>
     <tr>
