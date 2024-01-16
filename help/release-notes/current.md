@@ -3,7 +3,7 @@ description: 最新發行說明 —  [!DNL Marketo Measure]  — 產品檔案
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
+source-git-commit: d1fffd4848452f0e1b2abfaf89c2a10fba123036
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->目前的控制面板將於2024年1月中旬淘汰，在此之前，您可以利用兩個版本，以確保順利轉換。
+>雖然目前的控制面板將於2024年3月汰除，您仍可使用兩個版本，確保順利轉換。
 
 **IP位址資料移除**
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->目前的控制面板將於2024年1月中旬淘汰，在此之前，您可以利用兩個版本，以確保順利轉換。
+>雖然目前的控制面板將於2024年3月汰除，您仍可使用兩個版本，確保順利轉換。
 
 ### 淘汰 {#deprecations}
 
