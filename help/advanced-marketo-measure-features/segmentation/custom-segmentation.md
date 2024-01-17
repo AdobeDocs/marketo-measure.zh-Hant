@@ -4,9 +4,9 @@ description: 自訂分段 —  [!DNL Marketo Measure]  — 產品檔案
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,11 @@ ht-degree: 0%
 如果未同時為「銷售機會/聯絡人」與「商機」設定規則，您只會看到資料的一部分。 更進一步說，如果您未設定「商機」規則，您只會看到沒有相關商機的銷售機會/聯絡人資料。 如果您未設定「銷售機會/聯絡人」的規則，也會發生同樣的情況，您只會看到沒有相關「銷售機會/聯絡人」的「商機」。
 
 完成後，按一下 [!UICONTROL Save] 首先，仔細檢查所有專案，然後按一下 [!UICONTROL Save and Process]. 請記住，當您儲存並處理設定時，您將無法在7天內編輯設定，因為 [!DNL Marketo Measure] 正在重新格式化此期間的資料。
+
+如果您是Marketo Measure Ultimate客戶，並將您的預設控制面板物件設定為Contact，請勿使用下列兩個特定於Lead的欄位([在此處瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+
+* b2b.personStatus
+* b2b.isConverted
 
 **如何儲存產生的報表？**
 

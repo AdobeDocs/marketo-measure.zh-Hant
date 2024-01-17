@@ -2,9 +2,9 @@
 description: 『[!DNL Marketo Measure] Ultimate Implementation指南 —  [!DNL Marketo Measure]  — 產品檔案'
 title: 『[!DNL Marketo Measure] Ultimate Implementation指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 041079d08d8e1993ecc31368c443a9a6fe3a8336
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,11 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 ![](assets/marketo-measure-ultimate-implementation-guide-5.png)
 
 如果階段未對應，系統將無法運作，因為沒有資料可移去。
+
+如果您是Marketo Measure Ultimate客戶，並將您的預設控制面板物件設定為Contact，請勿使用下列兩個特定於Lead的欄位([在此處瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+
+* b2b.personStatus
+* b2b.isConverted
 
 **促銷活動成員規則：**
 

@@ -3,9 +3,9 @@ description: 階段對應的最佳實務 —  [!DNL Marketo Measure]  — 產品
 title: 階段對應的最佳實務
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: 3bad77a72c0dea6caf0daadbb594f10f791af715
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,9 @@ ht-degree: 0%
    * 布林值欄位是最佳實務建議
 * 請注意，「銷售機會」或「聯絡人」階段區段分為「遺失」、「開啟」和「已轉換」；驗證階段是否在其適當的階段區段中
    * 在不正確的階段區段中擁有階段可能會導致高度不正確 [!DNL Marketo Measure] 資料
+   * 如果您是Marketo Measure Ultimate客戶，並將您的預設控制面板物件設定為Contact，請勿使用下列兩個特定於Lead的欄位([在此處瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+      * b2b.personStatus
+      * b2b.isConverted
 * 請注意，「機會」階段區段分為「已失敗」、「未完成」和「已獲勝」；驗證階段是否在其適當的階段區段中
    * 在不正確的階段區段中擁有階段可能會導致高度不正確 [!DNL Marketo Measure] 收入或管道收入資料
 * 避免使用重複的階段名稱（我們的系統將偵測這些名稱並自動移除一個）。

@@ -3,9 +3,9 @@ description: 區段最佳實務 —  [!DNL Marketo Measure]  — 產品檔案
 title: 細分的最佳實務
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ ht-degree: 0%
 * 將您的區段名稱與組織的名稱對齊，即類別=篩選器名稱，區段=篩選器值
 * 請勿在規則中使用公式欄位
 * 儘可能在Lead/Contact和Opportunity上建立細分，以便用於整個漏斗
+   * 如果您是Marketo Measure Ultimate客戶，並將您的預設控制面板物件設定為Contact，請勿使用下列兩個特定於Lead的欄位([在此處瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+      * b2b.personStatus
+      * b2b.isConverted
    * 並非所有「區段」類別都會在整個漏斗中對齊
       * 例如，「機會型別」的區段類別不會與銷售機會相關，但與「地區」相關的區段可能是可在整個漏斗中定義的類別
 * 請思考您目前偏好將資料分割的方式，無論資料位於CRM或BI工具中，請考慮將此區段建置為 [!DNL Marketo Measure] 以便在Discover中有相同的報表
