@@ -4,9 +4,9 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 3165d821000a1369ed6fdff3f786ae6632ea39f4
+source-git-commit: c1fc48028014160635c454138eb4ad8efb02c74a
 workflow-type: tm+mt
-source-wordcount: '20697'
+source-wordcount: '20757'
 ht-degree: 3%
 
 ---
@@ -147,8 +147,23 @@ _按一下完整版本的影像_
       <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> 產業</td>
+      <td>varchar</td>
+      <td>帳戶的主要業務。</td>
+      <td>零售、電信</td>
+    </tr>
+    <tr>
+      <td><b>∗</b> 國家</td>
+      <td>varchar</td>
+      <td>帳戶地址的國家/地區部分。</td>
+      <td>美國、加拿大</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>僅適用於Marketo Measure Ultimate</i>
+<p>
 
 ### BIZ_ACCOUNT_TO_EMAIL {#biz-account-to-emails}
 
@@ -169,74 +184,34 @@ _按一下完整版本的影像_
       <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</td>
     </tr>
     <tr>
-      <td>
-        <p>ACCOUNT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來源系統帳戶ID。</p>
-      </td>
-      <td>
-        <p>0013100001phrBAAY</p>
-      </td>
+      <td>ACCOUNT_ID</td>
+      <td>varchar</td>
+      <td>來源系統帳戶ID。</td>
+      <td>0013100001phrBAAY</td>
     </tr>
     <tr>
-      <td>
-        <p>EMAIL</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>已透過「連絡人」關係或「銷售線索與帳戶」對應，對應至「帳戶」的電子郵件地址。</p>
-      </td>
-      <td>
-        <p>person@adobe.com</p>
-      </td>
+      <td>EMAIL</td>
+      <td>varchar</td>
+      <td>已透過「連絡人」關係或「銷售線索與帳戶」對應，對應至「帳戶」的電子郵件地址。</td>
+      <td>person@adobe.com</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>來自來源系統的帳戶上次修改日期。</p>
-      </td>
-      <td>
-        <p>2018-08-31 23:53:39.000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>來自來源系統的帳戶上次修改日期。</td>
+      <td>2018-08-31 23:53:39.000</td>
     </tr>
     <tr>
-      <td>
-        <p>CREATED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>來源系統中帳戶的建立日期。</p>
-      </td>
-      <td>
-        <p>2018-08-18 22:01:32.000</p>
-      </td>
+      <td>CREATED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>來源系統中帳戶的建立日期。</td>
+      <td>2018-08-18 22:01:32.000</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>是否將記錄視為已刪除。</p>
-      </td>
-      <td>
-        <p>False</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>布林值</td>
+      <td>是否將記錄視為已刪除。</td>
+      <td>False</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -272,58 +247,29 @@ _按一下完整版本的影像_
     <th><strong>範例資料</strong></th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來源系統中的活動ID。</p>
-      </td>
-      <td>
-        <p>1678625515</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>來源系統中的活動ID。</td>
+      <td>1678625515</td>
     </tr>
     <tr>
-      <td>
-        <p>銷售機會ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>銷售機會ID</td>
+      <td>varchar</td>
       <td>與活動相關聯的銷售機會ID。</td>
-      <td>
-        <p>15530482</p>
-      </td>
+      <td>15530482</td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
+      <td>與活動相關聯的連絡人ID。
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>與活動相關聯的連絡人ID。</p>
-      </td>
-      <td>
-        <p>13792552</p>
-      </td>
+      <td>13792552</td>
     </tr>
     <tr>
-      <td>
-        <p>ACTIVITY_TYPE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來源系統中活動型別的ID。</p>
-      </td>
-      <td>
-        <p>104</p>
-      </td>
+      <td>ACTIVITY_TYPE_ID</td>
+      <td>varchar</td>
+      <td>來源系統中活動型別的ID。</td>
+      <td>104</td>
     </tr>
     <tr>
       <td>ACTIVITY_TYPE_NAME</td>
@@ -372,7 +318,7 @@ _按一下完整版本的影像_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>IS_DELETD</td>
+      <td>IS_DELETED</td>
       <td>布林值</td>
       <td>是否將記錄視為已刪除來源系統。</td>
       <td>False</td>
@@ -4388,18 +4334,10 @@ _按一下完整版本的影像_
       <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>number(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts檢視的外部索引鍵。</p>
-      </td>
-      <td>
-        <p>3263982503087870000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>number(38,0)</td>
+      <td>Biz_Facts檢視的外部索引鍵。</td>
+      <td>3263982503087870000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -4419,8 +4357,17 @@ _按一下完整版本的影像_
       <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> JOB_TITLE</td>
+      <td>varchar</td>
+      <td>連絡人的職稱。</td>
+      <td>CEO、副總裁</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>僅適用於Marketo Measure Ultimate</i>
+<p>
 
 ### BIZ_CONVERSION_RATES {#biz-conversion-rates}
 
@@ -4726,7 +4673,7 @@ _按一下完整版本的影像_
         <p>從廣告連線中拉取的廣告群組名稱。</p>
       </td>
       <td>
-        <p>歸因管理軟體 |片語</p>
+        <p>歸因管理軟體 | 片語</p>
       </td>
     </tr>
     <tr>
@@ -10271,8 +10218,17 @@ _按一下完整版本的影像_
       <td>在Snowflake中標示為刪除記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> 機會型別</td>
+      <td>varchar</td>
+      <td>機會型別，例如新業務、續約等。</td>
+      <td>續約，潛在客戶</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>僅適用於Marketo Measure Ultimate</i>
+<p>
 
 ### 商業_OPP_舞台_轉接 {#biz-opp-stage-transitions}
 
