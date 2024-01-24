@@ -3,7 +3,7 @@ description: 最新發行說明 —  [!DNL Marketo Measure]  — 產品檔案
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 2e474dfbda67b53dbf643defa383fc1b4c5f0b42
+source-git-commit: ecca4ace2bf79a3c276976ea14a73acf4927d622
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 <p>
 
-#### Salesforce欄位淘汰 {#salesforce-field-deprecations}
+#### Salesforce欄位淘汰
 
 我們將逐步淘汰匯出至Lead/Contact物件的工作，以簡化整合，並免除匯出至Salesforce標準物件的需要。 下列非正規化欄位也會遭到取代，因為客戶可以從其接觸點物件取得相同的資料。 _**淘汰的時間表為2024年6月。**_
 
@@ -175,13 +175,13 @@ ht-degree: 0%
 
 <p>
 
-* **Dynamics套件相關**
+#### Dynamics套件相關
 
-   * 若要保持與Dynamics的連線，請安裝最新套件版本v6.12。舊版 `(<v6.12)` 將不再受支援。 此更新會最佳化歷史記錄的建立，以減少儲存空間使用量。
+* 若要保持與Dynamics的連線，請安裝最新套件版本v6.12。舊版 `(<v6.12)` 將不再受支援。 此更新會最佳化歷史記錄的建立，以減少儲存空間使用量。
 
-   * 將棄用具有RefreshToken的過時方法OAuth。 請參閱 [本指南](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md){target="_blank"} 更新您的認證，以遵守Microsoft使用ClientSecret的最佳做法。
+* 將棄用具有RefreshToken的過時方法OAuth。 請參閱 [本指南](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md){target="_blank"} 更新您的認證，以遵守Microsoft使用ClientSecret的最佳做法。
 
-* **「custom_properties」欄位**
+#### 「custom_properties」欄位
 
 在我們Data Warehouse中，「custom_properties」欄位一直是固定結構描述未涵蓋之其他資料點的儲存空間。 此欄位以JSON格式儲存，其使用方式有限，而且與SQL查詢的整合可能會很複雜，從而影響效能。 基於這些因素，我們決定棄用此欄位。 此變更主要影響Azure表格儲存空間中的資料處理層，以及匯出至資料倉儲的資料。
 
