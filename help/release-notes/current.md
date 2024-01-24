@@ -3,9 +3,9 @@ description: 最新發行說明 —  [!DNL Marketo Measure]  — 產品檔案
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: d1fffd4848452f0e1b2abfaf89c2a10fba123036
+source-git-commit: cc22d6af742de7cc1acd40bc3e8d6f4f9bf93fe1
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 我們將逐步淘汰匯出至Lead/Contact物件的工作，以簡化整合，並免除匯出至Salesforce標準物件的需要。 下列非正規化欄位也會遭到取代，因為客戶可以從其接觸點物件取得相同的資料。 _**淘汰的時間表為2024年6月。**_
 
-<table style="width:300px">
+<table style="width:350px">
 <tbody>
   <tr>
     <td>bizible2__Ad_Campaign_Name_FT__c</td>
@@ -140,6 +140,40 @@ ht-degree: 0%
   </tr>
 </tbody>
 </table>
+
+在接觸點和歸因接觸點物件中包含相同資訊的欄位包括：
+
+* bizible2__Ad_Campaign_Name__c
+* bizible2__Landing_Page__c
+* bizible2__Marketing_Channel__c
+* bizible2__Touchpoint_Date__c
+* bizible2__Touchpoint_Source__c
+
+**必要動作**
+
+* 為具有或不具有接觸點的銷售機會和聯絡人建立新的報告型別。
+
+![](assets/release-notes-2023-1.png)
+
+* 建立可擷取任何現有報告（其使用已移除的欄位）功能的報告。 在此程式中，您將需要變更報表中的欄位，如下所示：
+
+   * 移除銷售機會/聯絡人FT/LC欄位：
+
+![](assets/release-notes-2023-2.png)
+
+* 新增接觸點欄位：
+
+![](assets/release-notes-2023-3.png)
+
+* 「接觸點位置」篩選器以及任何使用FT/LC欄位（包括「日期」欄位）的篩選器，都應更新如下：
+
+![](assets/release-notes-2023-4.png)
+
+![](assets/release-notes-2023-5.png)
+
+* 刪除任何使用潛在客戶/連絡人物件中移除欄位的預先存在報告，以不再參考這些欄位。
+
+<p>
 
 * **Dynamics套件相關**
 
