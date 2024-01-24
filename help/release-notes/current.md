@@ -3,7 +3,7 @@ description: 最新發行說明 —  [!DNL Marketo Measure]  — 產品檔案
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: cc22d6af742de7cc1acd40bc3e8d6f4f9bf93fe1
+source-git-commit: 2e474dfbda67b53dbf643defa383fc1b4c5f0b42
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 <p>
 
-* **Salesforce欄位淘汰**
+#### Salesforce欄位淘汰 {#salesforce-field-deprecations}
 
 我們將逐步淘汰匯出至Lead/Contact物件的工作，以簡化整合，並免除匯出至Salesforce標準物件的需要。 下列非正規化欄位也會遭到取代，因為客戶可以從其接觸點物件取得相同的資料。 _**淘汰的時間表為2024年6月。**_
 
