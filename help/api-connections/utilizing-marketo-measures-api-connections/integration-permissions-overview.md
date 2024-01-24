@@ -4,10 +4,10 @@ title: 整合許可權概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 3d4ee7c71ed241c8e3885b4db57168f753dcdf65
+source-git-commit: 95bdfe7c95111b6c6430e2de2b5eef050183fb0b
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 2%
+source-wordcount: '1286'
+ht-degree: 1%
 
 ---
 
@@ -166,38 +166,74 @@ Marketo Measure會追蹤帳戶、行銷活動、廣告群組、廣告、篩選�
   </tr>
   <tr>
     <td>DoubleClick</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>廣告平台資料</td>
+    <td>Marketo Measure會追蹤帳戶、廣告商、行銷活動、 （自訂）登陸頁面、廣告、創意、位置和網站。</td>
+    <td><li>需要使用者的主要Google帳戶電子郵件地址</li>
+<li>存取Campaign Manager 360帳戶所需的Campaign Manager許可權</li>
+<ul>
+<li>檢視和管理DoubleClick廣告商報告</li>
+<li>檢視和管理DoubleClick行銷活動經理顯示廣告行銷活動</li>
+<p>
+    <b>範圍</b>
+    <br>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>：檢視您的主要Google帳戶電子郵件地址
+    <p>
+     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>：檢視及管理廣告商的DoubleClick報表
+    <p>
+     <a href="https://www.googleapis.com/auth/dfatrafficking">https://www.googleapis.com/auth/dfatrafficking</a>：檢視及管理您的DoubleClick Campaign Manager (DCM)顯示廣告行銷活動</td>
   </tr>
   <tr>
     <td>AdWords</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>廣告平台資料</td>
+    <td>我們將AdWords整合至：
+<p>
+<li>匯入客戶廣告資料</li>
+<li>匯入客戶廣告成本資料</li>
+<li>附加url引數/更新URL追蹤範本，以更新使用者端的廣告</li>
+<p>
+Marketo Measure會追蹤促銷活動、廣告群組、創意、網站連結和關鍵字。</td>
+    <td><li>需要使用者的主要Google帳戶電子郵件地址</li>
+<p>
+    <b>範圍</b>
+    <br>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>：檢視您的主要Google帳戶電子郵件地址</td>
   </tr>
   <tr>
     <td>Bing</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>廣告平台資料</td>
+    <td>Marketo Measure會追蹤帳戶、行銷活動、廣告群組、創意和關鍵字。</td>
+    <td><li>使用者必須透過其Microsoft帳戶授予「離線存取權」(即使未登入，也會授予Marketo Measure對一般使用者UserInfo的存取權)。 另請參閱 <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的頁面</a> 操作說明。</li>
+<p>
+    <b>範圍</b>
+    <br>
+    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>：保留您已授予許可權之資料的存取權。</td>
   </tr>
   <tr>
     <td>Marketo Engage</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>B2B系統資料</td>
+    <td>Marketo整合可讓Marketo Measure收集Marketo活動、人員、計畫和計畫成員資格。 此外，Marketo Measure會追蹤Marketo Cookie (Munchkin ID)，將Marketo網路活動連結至Marketo Measure主要接觸點， <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">如此處所述</a>：
+    <p>
+    <i>由於Marketo Measure與Marketo整合，Marketo Measure Cookie ID現在也與Marketo Munchkin ID對應及同步。 這有助於縮短將匿名首次接觸歸因於網路工作階段的差距，而非將FT和LC接觸均歸因於Marketo活動。</i>
+    </td>
+    <td>客戶必須建立專用的Marketo Engage API使用者，並向Marketo Measure提供認證。 不需要其他許可權設定。 <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md#configuring-the-integration">瞭解更多</a>.</td>
   </tr>
   <tr>
     <td>Adobe Analytics</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>B2B系統資料</td>
+    <td>B2B客戶屬性整合可讓Marketo Measure和Adobe Analytics的共同使用者透過衍生自Marketo Measure歸因引擎的寶貴中繼資料，以及透過其與CRM (Microsoft Dynamics和Salesforce)的同步功能，擴充其Adobe Analytics使用者設定檔。 <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">瞭解更多</a>.</td>
+    <td>客戶必須向Marketo Measure提供別名ID和FTP伺服器認證，才能將資料上傳至其Analytics執行個體。
+    <p>
+    請記下下列資訊，因為您將需要這些資訊來完成程式中的後續步驟：
+    <p>
+    <li>別名ID，可以是您希望它成為的任何值。 我們建議使用「marketomeasure_id」</li>
+    <li>FTP伺服器主機名稱和認證（使用者名稱和密碼）</li>
+    <p>
+    <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md#configuring-the-integration">瞭解更多</a></td>
   </tr>
   <tr>
     <td>Bizible Javascript</td>
     <td></td>
-    <td></td>
+    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">bizible.js收集哪些資料</a>.</td>
     <td></td>
   </tr>
 </tbody>
