@@ -4,9 +4,9 @@ description: Marketo Measure歸因模型 — Marketo Measure — 產品檔案
 title: Marketo Measure歸因模型
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: aa12df4d0c77cdc677f78bcab19497806927ec2b
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Marketo Measure提供六種型別的歸因模型：
 
 首次接觸模型只會著重於銷售機會與您的組織進行的首次互動。 此模型將100%的歸因點數歸因於潛在客戶第一次知道您的公司時，即首次接觸(FT)。
 
-假設Kate第一次透過Adwords廣告造訪www.adobe.com並檢視白皮書。 Adwords管道將會從該Opportunity接收100%的歸因評分。
+說凱特造訪 `www.adobe.com` 首次透過Adwords廣告和檢視白皮書。 Adwords管道將會從該Opportunity接收100%的歸因評分。
 
 ![](assets/2.png)
 
@@ -50,7 +50,7 @@ Marketo Measure提供六種型別的歸因模型：
 
 當潛在客戶提供其聯絡資訊並成為潛在客戶時，「銷售機會建立」模型會將100%的歸因點歸因於LC接觸點。
 
-繼續上一個範例，在Kate第一次透過Adwords造訪www.adobe.com後，Austin透過Linkedin貼文造訪網站。 Austin填寫表單並成為Lead。 在此模型中，Linkedin會獲得100%的歸因評分。
+繼續上一個範例，在Kate第一次造訪後 `www.adobe.com` 透過Adwords，Austin透過Linkedin貼文造訪網站。 Austin填寫表單並成為Lead。 在此模型中，Linkedin會獲得100%的歸因評分。
 
 ![](assets/3.png)
 
@@ -62,7 +62,7 @@ Marketo Measure提供六種型別的歸因模型：
 
 U形模型同時針對FT和LC接觸點。 在此模型中，FT和LC接觸點各獲得50%的收入評分。
 
-Kate第一次透過Adwords廣告造訪www.adobe.com時，會獲得50%的歸因評分。 其餘50%將歸因於Linkedin促使奧斯汀填寫表單並成為潛在客戶的貼文。
+凱特第一次造訪 `www.adobe.com` 透過Adwords廣告接收50%的歸因評分。 其餘50%將歸因於Linkedin促使奧斯汀填寫表單並成為潛在客戶的貼文。
 
 ![](assets/4.png)
 
@@ -86,4 +86,4 @@ Hillary會收到含有定價頁面連結的電子郵件，並瀏覽該頁面。 
 
 **自訂歸因模型**
 
-Marketo Measure也提供自訂歸因模型，讓使用者選擇要在其模型中包含哪些接觸點或自訂階段。 此外，使用者還能控制歸因到這些接觸點和階段的歸因點數百分比。
+Marketo Measure也提供自訂歸因模型，讓使用者選擇要在其模型中包含哪些接觸點或自訂階段。 此外，使用者還能控制歸因到這些接觸點和階段的歸因點數百分比。 如果Opportunity沒有專門的中間接觸，該百分比將平均分配到其他位置。
