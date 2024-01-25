@@ -4,7 +4,7 @@ title: 錯誤通知
 hide: true
 hidefromtoc: true
 feature: Fundamentals
-source-git-commit: 79f430fc8c0d5331bc4c12dee4937bb18dd801ce
+source-git-commit: b4fadc6519761975736ce7a0e4f99a30c589c9af
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 <table>
   <tbody>
     <tr>
-      <th>錯誤碼</th>
-      <th>通知範例</th>
-      <th>說明</th>
-      <th>疑難排解步驟</th>
+      <th style="width:31%">錯誤碼</th>
+      <th style="width:23%">通知範例</th>
+      <th style="width:23%">說明</th>
+      <th style="width:23%">疑難排解步驟</th>
     </tr>
     <tr>
       <td>API_DISABLED</td>
