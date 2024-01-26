@@ -4,9 +4,9 @@ description: 常見問題集（多貨幣） - [!DNL Marketo Measure]  — 產品
 title: 常見問題集（多貨幣）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,7 @@ ht-degree: 0%
 **如果我的客戶使用工作流程填入已轉換的欄位，他們今後應如何使用此欄位？**
 
 由於我們的產品現在會處理客戶的轉換，我們建議他們移除工作流程和自訂欄位，並允許我們匯入其原始金額值。
+
+>[!MORELIKETHIS]
+>
+>[錯誤通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}
