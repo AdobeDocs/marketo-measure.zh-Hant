@@ -3,7 +3,7 @@ description: 『[!DNL Marketo Measure] 終極資料完整性需求 —  [!DNL Ma
 title: 『[!DNL Marketo Measure] 終極資料完整性要求
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: b5277eef02d22b1f8cc10c184f232adb2ad7ac06
+source-git-commit: 23890f24412e234f9ab7c08b684b6064eac5d0ed
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 17%
@@ -1366,7 +1366,7 @@ select 'last updated date', count(*) from salesforce_contact where extSourceSyst
 我們建議在欄位對應中使用計算欄位，以將欄位預設為非NULL值。 以下是兩個範例：
 
 * 如果某些機會記錄的opportunityName為Null，請在欄位對應中建立並使用下列計算欄位
-   * `iif(name != null && name != "", name, "Unknown")`
+   * `iif(name != null && trim(name) != "", name, "Unknown")`
 
 * 如果部分experienceevent記錄的leadOperation.campaignProgression.campaignID為Null，請在欄位對應中建立並使用以下計算欄位
    * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
