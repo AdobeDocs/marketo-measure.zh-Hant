@@ -4,9 +4,9 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: c1fc48028014160635c454138eb4ad8efb02c74a
+source-git-commit: cec688a6e3495679bf8d16f3974a0bb32302601d
 workflow-type: tm+mt
-source-wordcount: '20757'
+source-wordcount: '20781'
 ht-degree: 3%
 
 ---
@@ -6740,6 +6740,10 @@ _按一下完整版本的影像_
 ### 商務資訊(_I) {#biz-facts}
 
 將曝光數、頁面檢視數、造訪數、表單提交數、使用者接觸點、接觸點(BT)、歸因接觸點(BAT)和成本資料結合在一起。 用於內部支援 [!DNL Marketo Measure] 報告。
+
+>[!IMPORTANT]
+>
+>Marketo Measure將在2024年中淘汰此表格。 如果您想要在您這邊建立，請執行 [此SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
 
 <table>
   <tbody>
