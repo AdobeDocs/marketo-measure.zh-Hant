@@ -4,9 +4,9 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: cec688a6e3495679bf8d16f3974a0bb32302601d
+source-git-commit: 737fe3e5e780e654b2e53f58c957cf67ec97548c
 workflow-type: tm+mt
-source-wordcount: '20781'
+source-wordcount: '20777'
 ht-degree: 3%
 
 ---
@@ -8120,9 +8120,7 @@ _按一下完整版本的影像_
       <td>
         <p>varchar</p>
       </td>
-      <td>
-        <p>擁有進階地理IP追蹤的客戶所使用的網際網路服務提供者的名稱。</p>
-      </td>
+      <td>預期為Null，因為欄位已過時。</td>
       <td>
         <p>AT&amp;T反向</p>
       </td>
@@ -12037,9 +12035,7 @@ _按一下完整版本的影像_
       <td>
         <p>varchar</p>
       </td>
-      <td>
-        <p>使用者的網際網路服務提供者</p>
-      </td>
+      <td>預期為Null，因為欄位已過時。</td>
       <td>
         <p>AT&amp;T反向</p>
       </td>
