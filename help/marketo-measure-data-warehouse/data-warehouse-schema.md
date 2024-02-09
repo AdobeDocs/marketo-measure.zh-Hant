@@ -4,7 +4,7 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: b7675bb771c41f6d0e0b2718e64a152c78e405af
+source-git-commit: 6cc1c20c2fa0e801b2c245a5a0473f0546b15da4
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 3%
@@ -357,349 +357,164 @@ _按一下完整版本的影像_
 <table>
   <tbody>
     <tr>
-      <th>
-        <p><strong>欄</strong></p>
-      </th>
-      <th>
-        <p><strong>資料類型</strong></p>
-      </th>
-      <th>
-        <p><strong>說明</strong></p>
-      </th>
-      <th>
-        <p><strong>範例資料</strong></p>
-      </th>
+      <th><strong>欄</strong></th>
+      <th><strong>資料類型</strong></th>
+      <th><strong>說明</strong></th>
+      <th><strong>範例資料</strong></th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的唯一ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075.6052044288804.6052044290004.6053457066804</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>廣告的唯一ID。</td>
+      <td>fb.106851586409075.6052044288804.6052044290004.6053457066804</td>
     </tr>
     <tr>
-      <td>
-        <p>DISPLAY_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來源系統中的廣告ID。</p>
-      </td>
-      <td>
-        <p>6053457066804</p>
-      </td>
+      <td>DISPLAY_ID</td>
+      <td>varchar</td>
+      <td>來源系統中的廣告ID。</td>
+      <td>6053457066804</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>從中匯入廣告的廣告帳戶ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075</p>
-      </td>
+      <td>AD_ACCOUNT_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>從中匯入廣告的廣告帳戶ID。</td>
+      <td>fb.106851586409075</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>從中匯入廣告的廣告帳戶名稱。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] 帳戶</p>
-      </td>
+      <td>AD_ACCOUNT_NAME</td>
+      <td>varchar</td>
+      <td>從中匯入廣告的廣告帳戶名稱。</td>
+      <td>[!DNL Marketo Measure] 帳戶</td>
     </tr>
     <tr>
-      <td>
-        <p>ADVERTISER_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的廣告商ID，尤其是Doubleclick。</p>
-      </td>
-      <td>
-        <p>300181641</p>
-      </td>
+      <td>ADVERTISER_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>廣告的廣告商ID，尤其是Doubleclick。</td>
+      <td>300181641</td>
     </tr>
     <tr>
-      <td>
-        <p>advertiser_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>此廣告的廣告商名稱，特別適用於Doubleclick。</p>
-      </td>
-      <td>
-        <p>Marketing Analytics</p>
-      </td>
+      <td>advertiser_NAME</td>
+      <td>varchar</td>
+      <td>此廣告的廣告商名稱，特別適用於Doubleclick。</td>
+      <td>Marketing Analytics</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_GROUP_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的廣告群組ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075.6052044288804.6052044290004</p>
-      </td>
+      <td>AD_GROUP_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>廣告的廣告群組ID。</td>
+      <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
     <tr>
-      <td>
-        <p>ad_GROUP_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的廣告群組名稱。</p>
-      </td>
-      <td>
-        <p>廣告B的廣告集</p>
-      </td>
+      <td>ad_GROUP_NAME</td>
+      <td>varchar</td>
+      <td>廣告的廣告群組名稱。</td>
+      <td>廣告B的廣告集</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的行銷活動ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075.6052044288804</p>
-      </td>
+      <td>AD_CAMPAIGN_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>廣告的行銷活動ID。</td>
+      <td>fb.106851586409075.6052044288804</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的行銷活動名稱。</p>
-      </td>
-      <td>
-        <p>潛在客戶產生行銷活動</p>
-      </td>
+      <td>AD_CAMPAIGN_NAME</td>
+      <td>varchar</td>
+      <td>廣告的行銷活動名稱。</td>
+      <td>潛在客戶產生行銷活動</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_ACTIVE</p>
-      </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>廣告在來源系統中是否仍然有效。</p>
-      </td>
-      <td>
-        <p>False</p>
-      </td>
+      <td>IS_ACTIVE</td>
+      <td>布林值</td>
+      <td>廣告在來源系統中是否仍然有效。</td>
+      <td>False</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>廣告是否已在來源系統中刪除。</p>
-      </td>
-      <td>
-        <p>False</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>布林值</td>
+      <td>廣告是否已在來源系統中刪除。</td>
+      <td>False</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>上次修改記錄的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>上次修改記錄的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>FIRST_IMPORTED</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>首次從來源系統匯入記錄的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>FIRST_IMPORTED</td>
+      <td>timestamp_ntz</td>
+      <td>首次從來源系統匯入記錄的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>名稱</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來源系統中的廣告名稱。</p>
-      </td>
-      <td>
-        <p>廣告2</p>
-      </td>
+      <td>名稱</td>
+      <td>varchar</td>
+      <td>來源系統中的廣告名稱。</td>
+      <td>廣告2</td>
     </tr>
     <tr>
-      <td>
-        <p>NEEDS_UPDATE</p>
+      <td>NEEDS_UPDATE</td>
+      <td>布林值</td>
+      <td>是否需要更新廣告 [!DNL Marketo Measure] 標籤。
+      <p>（診斷欄位，由內部處理使用。）
       </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>是否需要更新廣告 [!DNL Marketo Measure] 標籤。</p>
-        <p>（診斷欄位，由內部處理使用。）</p>
-      </td>
-      <td>
-        <p>False</p>
-      </td>
+      <td>False</td>
     </tr>
     <tr>
-      <td>
-        <p>GROUPING_KEY</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>GROUPING_KEY</td>
+      <td>varchar</td>
       <td>用於內部處理的診斷欄位。</td>
-      <td>
-        <p>fb.106851586409075.6052044288804.6052044290004</p>
-      </td>
+      <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
     <tr>
-      <td>
-        <p>實體型別</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>此表格的主要物件或實體。 在此範例中，「廣告」。</p>
-      </td>
-      <td>
-        <p>廣告</p>
-      </td>
+      <td>實體型別</td>
+      <td>varchar</td>
+      <td>此表格的主要物件或實體。 在此範例中，「廣告」。</td>
+      <td>廣告</td>
     </tr>
     <tr>
-      <td>
-        <p>PROVIDER_TYPE</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告的廣告提供者名稱。</p>
-      </td>
-      <td>
-        <p>Facebook</p>
-      </td>
+      <td>PROVIDER_TYPE</td>
+      <td>varchar</td>
+      <td>廣告的廣告提供者名稱。</td>
+      <td>Facebook</td>
     </tr>
     <tr>
-      <td>
-        <p>URL_CURRENT</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>登入頁面的URL。</p>
-        <p>（診斷欄位，用於內部處理。）</p>
+      <td>URL_CURRENT</td>
+      <td>varchar</td>
+      <td>登入頁面的URL。
+        <p>（診斷欄位，用於內部處理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>URL_OLD</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL_CURRENT的上一個值。</p>
-        <p>（診斷欄位，用於內部處理。）</p>
+      <td>URL_OLD</td>
+      <td>varchar</td>
+      <td>URL_CURRENT的上一個值。
+      <p>（診斷欄位，用於內部處理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>URL_REQUESTED</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>要裝飾哪個URL [!DNL Marketo Measure] 引數。</p>
-        <p>（診斷欄位，用於內部處理。）</p>
+      <td>URL_REQUESTED</td>
+      <td>varchar</td>
+      <td>要裝飾哪個URL [!DNL Marketo Measure] 引數。
+      <p>（診斷欄位，用於內部處理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>URL_ALTENATIVES</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>已從來源系統匯入。</p>
-        <p>（診斷欄位，用於內部處理。）</p>
+      <td>URL_ALTENATIVES</td>
+      <td>varchar</td>
+      <td>已從來源系統匯入。
+      <p>（診斷欄位，用於內部處理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>number(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts檢視的外部索引鍵。</p>
-      </td>
-      <td>
-        <p>6008900572523230000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>number(38,0)</td>
+      <td>Biz_Facts檢視的外部索引鍵。</td>
+      <td>6008900572523230000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -735,277 +550,126 @@ _按一下完整版本的影像_
       <th>範例資料</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告商的唯一ID。</p>
-      </td>
-      <td>
-        <p>dc.6114.9143143</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>廣告商的唯一ID。</td>
+      <td>dc.6114.9143143</td>
     </tr>
     <tr>
-      <td>
-        <p>DISPLAY_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>DISPLAY_ID</td>
+      <td>varchar</td>
       <td>來源系統中的廣告商ID。</td>
       <td>9143143</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>從中匯入廣告的廣告帳戶ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075</p>
-      </td>
+      <td>AD_ACCOUNT_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>從中匯入廣告的廣告帳戶ID。</td>
+      <td>fb.106851586409075</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>從中匯入廣告的廣告帳戶名稱。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] 帳戶</p>
-      </td>
+      <td>AD_ACCOUNT_NAME</td>
+      <td>varchar</td>
+      <td>從中匯入廣告的廣告帳戶名稱。</td>
+      <td>[!DNL Marketo Measure] 帳戶</td>
     </tr>
     <tr>
-      <td>
-        <p>ADVERTISER_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告商ID，特別適用於Doubleclick。</p>
-      </td>
-      <td>
-        <p>300181641</p>
-      </td>
+      <td>ADVERTISER_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>廣告商ID，特別適用於Doubleclick。</td>
+      <td>300181641</td>
     </tr>
     <tr>
-      <td>
-        <p>advertiser_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告商名稱，特別適用於Doubleclick。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] Marketing Analytics</p>
-      </td>
+      <td>advertiser_NAME</td>
+      <td>varchar</td>
+      <td>廣告商名稱，特別適用於Doubleclick。</td>
+      <td>[!DNL Marketo Measure] Marketing Analytics</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_GROUP_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>預期為Null，因為廣告商上方沒有任何廣告群組。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_GROUP_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>預期為Null，因為廣告商上方沒有任何廣告群組。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>ad_GROUP_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>預期為Null，因為廣告商上方沒有任何廣告群組。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>ad_GROUP_NAME</td>
+      <td>varchar</td>
+      <td>預期為Null，因為廣告商上方沒有任何廣告群組。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>預期為Null，因為廣告商上方沒有任何廣告促銷活動。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_CAMPAIGN_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>預期為Null，因為廣告商上方沒有任何廣告促銷活動。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>預期為Null，因為任何廣告階層中的廣告廣告商上方沒有促銷活動。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_CAMPAIGN_NAME</td>
+      <td>varchar</td>
+      <td>預期為Null，因為任何廣告階層中的廣告廣告商上方沒有促銷活動。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_ACTIVE</p>
-      </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>廣告商在來源系統中是否仍為作用中。</p>
-      </td>
-      <td>
-        <p>True</p>
-      </td>
+      <td>IS_ACTIVE</td>
+      <td>布林值</td>
+      <td>廣告商在來源系統中是否仍為作用中。</td>
+      <td>True</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>是否已在來源系統中刪除廣告商。</p>
-      </td>
-      <td>
-        <p>False</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>布林值</td>
+      <td>是否已在來源系統中刪除廣告商。</td>
+      <td>False</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>上次修改記錄的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>上次修改記錄的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>FIRST_IMPORTED</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>首次從來源系統匯入記錄的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>FIRST_IMPORTED</td>
+      <td>timestamp_ntz</td>
+      <td>首次從來源系統匯入記錄的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>名稱</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>來源系統中的廣告商名稱。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] Marketing Analytics</p>
-      </td>
+      <td>名稱</td>
+      <td>varchar</td>
+      <td>來源系統中的廣告商名稱。</td>
+      <td>[!DNL Marketo Measure] Marketing Analytics</td>
     </tr>
     <tr>
-      <td>
-        <p>NEEDS_UPDATE</p>
+      <td>NEEDS_UPDATE</td>
+      <td>布林值</td>
+      <td>是否需要更新廣告商 [!DNL Marketo Measure] 標籤。
+      <p>（診斷欄位，由內部處理使用。）
       </td>
-      <td>
-        <p>布林值</p>
-      </td>
-      <td>
-        <p>是否需要更新廣告商 [!DNL Marketo Measure] 標籤。</p>
-        <p>（診斷欄位，由內部處理使用。）</p>
-      </td>
-      <td>
-        <p>False</p>
-      </td>
+      <td>False</td>
     </tr>
     <tr>
-      <td>
-        <p>GROUPING_KEY</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>GROUPING_KEY</td>
+      <td>varchar</td>
       <td>用於內部處理的診斷欄位。</td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>實體型別</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>此表格的主要物件或實體。 在此案例中，「廣告商」。</p>
-      </td>
-      <td>
-        <p>廣告商</p>
-      </td>
+      <td>實體型別</td>
+      <td>varchar</td>
+      <td>此表格的主要物件或實體。 在此案例中，「廣告商」。</td>
+      <td>廣告商</td>
     </tr>
     <tr>
-      <td>
-        <p>PROVIDER_TYPE</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>廣告商的廣告提供者。</p>
-      </td>
-      <td>
-        <p>按兩下</p>
-      </td>
+      <td>PROVIDER_TYPE</td>
+      <td>varchar</td>
+      <td>廣告商的廣告提供者。</td>
+      <td>按兩下</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>number(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts檢視的外部索引鍵。</p>
-      </td>
-      <td>
-        <p>6008900572523230000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>number(38,0)</td>
+      <td>Biz_Facts檢視的外部索引鍵。</td>
+      <td>6008900572523230000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
