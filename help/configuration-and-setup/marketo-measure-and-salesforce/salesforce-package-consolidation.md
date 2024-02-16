@@ -1,11 +1,11 @@
 ---
 description: 『[!DNL Salesforce] 封裝合併 —  [!DNL Marketo Measure]  — 產品檔案'
 title: 『[!DNL Salesforce] 封裝合併
-exl-id: f1bd5dcb-d021-4140-b6b9-cdb40e566c4b
+exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: d6bba3ea7cf97ef730681da1e21cf76e9edab779
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 我們已新增兩個新欄位來增強您的報告功能：
 
 * form_name：此欄位現在可在BT/BAT物件中使用，可讓使用者根據表單名稱建立報表。
-* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數的報告。
+* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數(`bizible2__User_Touchpoint_V2__c` （在Salesforce中）。
 
 ## 支援與轉換 {#support-and-transition}
 
@@ -61,8 +61,8 @@ ht-degree: 0%
 
 **V1和V2_EXT封裝中的欄位是否可以在整合封裝中使用？**
 
-是. 整合套件將包含與V1相同的欄位，並會透過接觸點欄位依物件和V2_EXT欄位進行進一步劃分。
+有。整合套件將包含與V1相同的欄位，並會透過接觸點欄位依物件和V2_EXT欄位進行進一步劃分。
 
 **使用V2_EXT欄位的報表是否可以在整合封裝中重新建立？**
 
-是. 請依照以下檔案中的步驟操作： [必要動作](#retired-actions) 一節。
+有。請依照以下檔案中的步驟操作： [必要動作](#retired-actions) 一節。
