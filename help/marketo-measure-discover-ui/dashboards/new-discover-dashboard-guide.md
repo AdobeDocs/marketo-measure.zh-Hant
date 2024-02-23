@@ -3,7 +3,7 @@ description: 全新Discover儀表板指南 —  [!DNL Marketo Measure]  — 產�
 title: 新增Discover儀表板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
     <tr>
       <td>概觀</td>
       <td><ul><li><strong>收入</strong>：歸因收入、收入概觀、ROI控制面板</li>
-          <li><strong>概觀</strong>:<ul>              <li>已歸因的收入儀表板：一段時間圖表中依據頻道的已歸因收入</li>
+          <li><strong>概觀</strong>：<ul>              <li>已歸因的收入儀表板：一段時間圖表中依據頻道的已歸因收入</li>
             <li>ROI儀表板：隨時間變化的成本圖表</li></ul></li><li><strong>支出</strong>： ROI控制面板</li>
           <li><strong>交易</strong>：歸因收入、收入概觀、ROI控制面板</li>
           <li>
@@ -39,14 +39,12 @@ ht-degree: 0%
           <li>
             <strong>Pipeline收入：</strong>已棄用（請參閱下文）</li>
           <li>
-            <strong>平均交易大小： </strong>已棄用（請參閱下文）</li>
-        </ul>
+            <strong>平均交易大小： </strong>已棄用（請參閱下文）</li></ul>
       </td>
     </tr>
     <tr>
       <td>成長</td>
-      <td>
-        <ul>
+      <td><ul>
           <li>
             <strong>一段時間的收入與收入</strong>：歸因收入、收入概觀、ROI控制面板</li>
           <li>
@@ -186,7 +184,7 @@ ht-degree: 0%
           <li>
             <strong>收入</strong>：歸因收入、收入概觀、ROI控制面板</li>
           <li>
-            <strong>概觀</strong>:<ul>
+            <strong>概觀</strong>：<ul>
               <li>已歸因的收入儀表板：一段時間圖表中依據頻道的已歸因收入</li>
               <li>ROI儀表板：隨時間變化的成本圖表</li>
             </ul>
