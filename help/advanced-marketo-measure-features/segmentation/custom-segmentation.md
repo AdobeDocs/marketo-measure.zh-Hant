@@ -4,9 +4,9 @@ description: 自訂分段 —  [!DNL Marketo Measure]  — 產品檔案
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 在使用此功能之前，請先瞭解您想要依據哪些接觸點資訊進行篩選。 請記得在CRM中為您的記錄型別使用完全相同的值。 此設定會從行銷漏斗的頂端篩選接觸點。
 
-步驟2 — 登入並找出區段功能。
+步驟2 — 登入並找到 [!UICONTROL Segments] 功能。
 
 * 前往 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 並登入
 * 在 [!UICONTROL My Account] 索引標籤，選取 [!UICONTROL Settings]
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 步驟4 — 新增篩選規則。
 
-* 首先，輸入類別名稱。 「業務型別」即是範例。 完成後，按一下核取記號。 在新增區段之前，您必須輸入類別名稱
+* 首先，輸入類別名稱。 [!UICONTROL Business Type] 就是個例子。 完成後，按一下核取記號。 在新增區段之前，您必須輸入類別名稱
 * 按一下加號以新增區段
 * 輸入「區段」名稱。 例如，您可以有一個區段用於新業務、合作夥伴、續約或向上銷售
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 >
 >公式欄位無法在規則中使用，也不會出現在選擇清單中。 因為公式會在背景中計算，而且不會修改記錄， [!DNL Marketo Measure] 無法偵測記錄是否符合規則。
 
-* 值選項不是下拉式清單，必須手動輸入其值。 請務必檢視Salesforce組織中的值
+* 此 [!UICONTROL Value] 選項不是下拉式清單，必須手動輸入其值。 請務必檢視Salesforce組織中的值
 * 對「商機」區段規則重複此程式
 * 「其他」類別是將擷取任何未定義接觸點的預設區段。 您可以變更預設區段名稱
 * 按一下垃圾桶圖示可刪除整個類別或類別中的個別規則。 或者，按一下鉛筆圖示來編輯類別或規則
-* 您會發現您有「儲存」按鈕和「儲存並處理」按鈕。 使用「儲存」按鈕來儲存您所做的工作和隨時間發生的變更。 只有在您確定下列專案後，才使用「儲存並處理」按鈕：
+* 您會注意到您有一個&quot;[!UICONTROL Save]」按鈕和「儲存並處理」按鈕。 使用「儲存」按鈕來儲存您所做的工作和隨時間發生的變更。 只有在您確定下列專案後，才使用「儲存並處理」按鈕：
 
    * 您的對應是準確的
    * 您已新增所有要在類別中追蹤的區段

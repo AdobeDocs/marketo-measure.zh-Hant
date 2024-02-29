@@ -4,10 +4,10 @@ description: '"[!DNL Marketo Measure] 透過歸因常見問題集進行檢視 �
 title: '"[!DNL Marketo Measure] 瀏覽歸因常見問題集」'
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 9%
+source-wordcount: '389'
+ht-degree: 1%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 9%
 
 ## 透過歸因檢視什麼？ {#what-is-view-through-attribution}
 
-此 [!DNL Marketo Measure] 透過「歸因」檢視功能包括在歸因模型中包含廣告印象的功能。
+此 [!DNL Marketo Measure] [!UICONTROL View Through Attribution] 功能包括在歸因模型中包含廣告印象的功能。
 
-## 透過歸因檢視為何重要？ {#why-is-view-through-attribution-important}
+## 為什麼是 [!UICONTROL View Through Attribution] 重要事項？ {#why-is-view-through-attribution-important}
 
 過去，行銷人員很難在歸因分析中說明重新鎖定目標或曝光數廣告。 潛在客戶可能會不時接觸到重新定位的廣告，但他們不太可能在實際上按一下這些廣告之一，並在相同工作階段中填寫表格。 我們的「透過歸因檢視」解決方案現在能夠追蹤某人是否接觸到曝光廣告。 此接觸點將會附加至個別記錄，並持續進行到潛在客戶成為客戶為止。 有了這些資訊，行銷人員現在就能更深入瞭解重新鎖定目標廣告的效能。
 
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 ## 支援哪些廣告平台？ {#which-ad-platforms-are-supported}
 
-我們目前支援Doubleclick Campaign Manager。
+我們目前支援 [!DNL Doubleclick] 行銷活動管理員。
 
 ## 歸因如何計算？ {#how-is-the-attribution-calculated}
 
@@ -110,7 +110,7 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-## 在Salesforce中會如何呈現？ {#what-will-this-look-like-in-salesforce}
+## 這看起來像什麼 [!DNL Salesforce?] {#what-will-this-look-like-in-salesforce}
 
 [!DNL Marketo Measure] 將會在展示廣告中看到的任何Lead上建立單一印象接觸點。 即使使用者第一次造訪您的網站(FT)並填寫表格(LC)，我們仍可對應使用者。 接觸點將包含廣告資訊，例如，廣告促銷活動名稱/ID、廣告ID、廣告內容、網站名稱/ID、版位名稱/ID、行銷管道、地理、反向連結頁面等。
 

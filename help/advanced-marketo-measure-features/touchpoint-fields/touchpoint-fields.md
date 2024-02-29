@@ -4,20 +4,20 @@ description: 接觸點欄位 —  [!DNL Marketo Measure]  — 產品檔案
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
 
 # 接觸點欄位 {#touchpoint-fields}
 
-過去，當客戶使用 [!DNL Marketo Measure] 在我們沒有直接標籤整合的情況下，我們的客戶成功團隊會教育客戶如何適當地標籤他們的登陸頁面，以便他們使用正確的UTM格式，並且我們可以解決他們的廣告。 其中部分客戶不使用UTM，而是使用自己的標籤引數，這表示使用具備以下功能的新標籤結構來編輯其所有廣告網路中的所有登入頁面可能相當費時 [!DNL Marketo Measure] 強制執行。 為了適應它們的標籤結構，我們現在接受可以使用我們的規則定義對應的自訂引數。 目標是要因應客戶對其自訂追蹤引數的使用方式，因此我們不需要要求他們變更其URL結構。
+過去，當客戶使用 [!DNL Marketo Measure] 在我們沒有直接標籤整合的情況下，我們的客戶成功團隊會教育客戶如何適當地標籤他們的登陸頁面，以便他們使用正確的UTM格式，並且我們可以解析他們的廣告。 其中部分客戶不使用UTM，而是使用自己的標籤引數，這表示使用具備以下功能的新標籤結構來編輯其所有廣告網路中的所有登入頁面可能相當費時 [!DNL Marketo Measure] 強制執行。 為了適應它們的標籤結構，我們現在接受可以使用我們的規則定義對應的自訂引數。 目標是要因應客戶對其自訂追蹤引數的使用方式，因此我們不需要要求他們變更其URL結構。
 
 >[!AVAILABILITY]
 >
->現在可於第2級與第3級完整細分中取得。
+>現在可於第2級與第3級中完整細分。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 擷取
 
-擷取運運算元會從其他位置的欄位中提取值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中， [從登入頁面擷取自訂引數](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2)。
+此 [!UICONTROL extracts] 運運算元從另一個位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或是在更進階的使用案例中， [從登入頁面擷取自訂引數](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2)。
 
 **範例#1**
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 **將對應至**
 
-對映至運運算元會建立需要轉譯或分段為其他值的值表。 這通常採取鍵值的形式，其中程式碼代表好記的名稱，需要對應到該好記名稱。
+此 [!UICONTROL maps to] operator會建立需要轉譯或分組為其他值的值表。 這通常採取鍵值的形式，其中程式碼代表好記的名稱，需要對應到該好記名稱。
 
 **範例#1**
 
@@ -145,18 +145,18 @@ ht-degree: 0%
    * **(** 標籤擷取的開始
 
       * 請注意，由於我們僅擷取4，因此只有第一個數字有左括弧
-
    * **)** 標籤擷取的結尾
 
       * 請注意，由於我們僅擷取4，因此只有第一個數字有右括弧
-
    * **\d** 會告訴我們正在擷取「數字」
    * **{2}** 是我們擷取的字元數
+
+
 
 * 按一下 [!UICONTROL Save]. 您必須先儲存新欄位，才能用於下一個規則！
 * 接下來，我們要將第一個數字的所有可能值對應到其易記名稱
 * 建立計算欄位並加上標籤「Region_Name」
-* 從搜尋擷取的欄位開始，以定義規則。 在此案例中，為Touchpoint.Region
+* 從搜尋擷取的欄位開始，以定義規則。 在這種情況下， [!DNL Touchpoint.Region]
 * 使用運運算元&quot;[!UICONTROL maps to]」因為我們想要為每個數字建立與其值的對應
 * 您將看到一個表格以列出每個對應。 最後，看起來會像這樣：
 * 根據對應和上述URL，使用此登陸頁面的接觸點「Region_Value」將是「EMEA」
@@ -171,7 +171,7 @@ ht-degree: 0%
 
 **串連**
 
-contenates運運算元將多個欄位的值結合為單一欄位。 這對於建立可跨不同欄位提取資料的自訂值很有用，以便
+此 [!UICONTROL concatenates] 運運算元將多個欄位的值結合為單一欄位。 這對於建立可跨不同欄位提取資料的自訂值很有用，以便
 
 **範例#1**
 
@@ -221,7 +221,7 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 
 **如何驗證我的擷取運算式是否有效並提取正確的值？**
 
-有一個線上工具([https://regex101.com/](https://regex101.com/){target="_blank"})來執行並測試運算式。 如果運算式有效，則顯示綠色，如果無效則顯示紅色。 此外，右上方的說明方塊也很實用，會告訴您正在擷取的內容。
+有一個線上工具([[!DNL https]：//regex101.com/](https://regex101.com/){target="_blank"})來執行並測試運算式。 如果運算式有效，則顯示綠色，如果無效則顯示紅色。 此外， [!UICONTROL explanation] 右上方的方塊很有幫助，會告訴您正在擷取的內容。
 
 ![](assets/twelve.png)
 

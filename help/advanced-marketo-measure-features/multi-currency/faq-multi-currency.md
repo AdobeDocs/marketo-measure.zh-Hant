@@ -4,9 +4,9 @@ description: 常見問題集（多貨幣） - [!DNL Marketo Measure]  — 產品
 title: 常見問題集（多貨幣）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 **我如何知道要啟用哪個功能位元？**
 
-請記住，此功能有兩個不同的功能位元。 兩者都位於「設定：多種貨幣和進階貨幣」中CRM區段的「一般」標籤中。 如果客戶使用多種單一貨幣，則應啟用多幣別，而如果客戶使用，則可啟用其他功能位元「進階貨幣」 [!DNL Salesforce]的「進階貨幣管理」功能，使用者可在此功能中設定轉換率的時間型範圍。
+請記住，此功能有兩個不同的功能位元。 兩者都位於 [!UICONTROL General] 「設定：多種貨幣和進階貨幣」中CRM區段的「 」標籤。 如果客戶使用多種單一貨幣，則應啟用多幣別，而如果客戶使用，則可啟用其他功能位元「進階貨幣」 [!DNL Salesforce]的「進階貨幣管理」功能，使用者可在此功能中設定轉換率的時間型範圍。
 
 不幸的是，我們不知道客戶何時在「簡單」或「進階」之間切換（如果「進階」已經開啟）。 因此，客戶需要手動保持進階貨幣設定與其CRM設定一致。 如果轉換不正確，客戶應該可清楚看到這點，這表示我們不知道要套用哪個轉換層級。
 

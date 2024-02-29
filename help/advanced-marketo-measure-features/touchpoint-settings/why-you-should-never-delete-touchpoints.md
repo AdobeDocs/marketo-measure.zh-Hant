@@ -4,9 +4,9 @@ description: 為何您絕不應該刪除接觸點 —  [!DNL Marketo Measure]  �
 title: 為何您絕不應該刪除接觸點
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 此 [!DNL Marketo Measure] 處理系統不會登入接觸點已手動從SFDC刪除。 截至今日，沒有觸發程式會訊號至我們的系統以調整資料。 [!DNL Marketo Measure] 將不會自動推送另一個接觸點來取代已刪除的接觸點，也不會重新指派該接觸點位置或歸因於後續接觸點。
 
-刪除接觸點時，會在歸因資料中建立一個洞。 通常，這會出現在機會上的歸因接觸點中。 在下圖中，原本會收到Opportunity Creation接觸的接觸點已刪除。 因此，此機會缺少OC接觸點，且此Opp的歸因百分比總和不會是100%。
+刪除接觸點時，會在歸因資料中建立一個洞。 通常，這會出現在機會上的歸因接觸點中。 在下圖中，原本會收到Opportunity Creation接觸的接觸點已刪除。 因此，此機會缺少OC接觸點，且此Opp的歸因百分比加總不會達到100%。
 
 ![](assets/1.png)
 
-如果接觸點已從SFDC刪除，請連絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以請求重新匯入您的資料。
+如果接觸點已從SFDC刪除，請連絡 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以請求重新匯入您的資料。

@@ -4,9 +4,9 @@ description: 透過歸因設定Doubleclick Campaign Manager檢視 —  [!DNL Mar
 title: 透過歸因設定Doubleclick Campaign Manager檢視
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您使用 [!DNL Marketo Measure] 和DoubleClick Campaign Manager整合，我們需要 [API連線](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) 因此，我們可以下載行銷活動的詳細資訊和創意來解析廣告。
+>如果您使用 [!DNL Marketo Measure] 和 [!DNL DoubleClick Campaign Manager] 整合，我們需要 [API連線](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) 因此，我們可以下載行銷活動的詳細資訊和創意來解析廣告。
 
-若要使用Doubleclick Campaign Manager透過追蹤功能從檢視中獲得更細微的深入分析，需要設定我們的追蹤畫素。
+透過追蹤開始從檢視中獲得更細微的深入分析 [!DNL Doubleclick Campaign Manager]，則需要設定追蹤畫素。
 
 請 [按一下這裡](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md) 以取得有關 [!DNL Marketo Measure] 透過歸因功能檢視。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 如何新增影像標籤 {#how-to-add-the-image-tag}
 
-您將在「廣告商」設定下將標籤新增至Doubleclick中，且您將想要建立「曝光事件」標籤。
+您將標籤新增至 [!DNL Doubleclick] 在「廣告商」設定下，您會想要建立「曝光事件」標籤。
 
 1. 將下列程式碼新增為1x1影像畫素。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. 新增分隔符號後，請確認分隔符號已如下對應。 套用標籤後，這應為自動的：
 
-   v = %eadv！ 展開廣告商ID\
+   v = %eadv！ [!DNL Expand] 廣告商ID\
    a = %eaid！ 展開廣告Id\
    c = %ecid！ 展開創作Id\
    s = %esid！ 展開網站ID\

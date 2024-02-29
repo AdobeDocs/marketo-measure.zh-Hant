@@ -3,7 +3,7 @@ description: 區段最佳實務 —  [!DNL Marketo Measure]  — 產品檔案
 title: 細分的最佳實務
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 當推送至 [!DNL Salesforce]，區段值會寫入「區段」欄位，並位於任何購買者接觸點報表型別內。 這允許跨兩個平台進行統一報告。 您也可以在任何接觸點的「接觸點詳細資料」上找到該區段。
 
-推送到「探索」時，區段會在所有展示板上的篩選器下拉式功能表中顯示為可用篩選器。
+當推送至 [!UICONTROL Discover]，區段會以可用篩選的形式出現在所有展示板上的篩選器下拉式功能表中。
 
 ## 最佳實務 {#best-practice}
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 * 將您的區段名稱與組織的名稱對齊，即類別=篩選器名稱，區段=篩選器值
 * 請勿在規則中使用公式欄位
 * 儘可能在Lead/Contact和Opportunity上建立細分，以便用於整個漏斗
-   * 如果您是Marketo Measure Ultimate客戶，並將您的預設控制面板物件設定為Contact，請勿使用下列兩個特定於Lead的欄位([在此處瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+   * 如果您是Marketo Measure Ultimate客戶，並將您的預設控制面板物件設定為Contact，請勿使用下列兩個專屬於Lead的欄位([在此處瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
       * b2b.personStatus
       * b2b.isConverted
    * 並非所有「區段」類別都會在整個漏斗中對齊

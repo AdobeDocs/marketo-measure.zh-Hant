@@ -4,16 +4,16 @@ description: 設定 —  [!DNL Marketo Measure]  — 產品檔案
 title: 設定
 exl-id: 704dc52d-fa21-4475-878b-073e2e65c566
 feature: Multi-Currency
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
 
 # 設定 {#settings}
 
-在CRM的「一般設定」索引標籤中，有兩個獨立的功能位元繫結至此功能：多種貨幣和進階貨幣。
+此功能有兩個獨立的功能位元，分別位於CRM的 [!UICONTROL General Settings] 頁標：多重幣別與進階幣別。
 
 **多種貨幣**：如果客戶使用多種單一貨幣，則啟用。
 
