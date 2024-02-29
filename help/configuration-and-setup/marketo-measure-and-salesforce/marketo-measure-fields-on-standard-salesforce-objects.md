@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874574
-description: '"[!DNL Marketo Measure] 標準欄位 [!DNL Salesforce] 物件 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] 標準欄位 [!DNL Salesforce] 物件 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 標準欄位 [!DNL Salesforce] 物件」'
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ BizibleID：用於關聯銷售機會與接觸點的活動歸因和calltrackingme
 
 ## 機會 {#opportunity}
 
-[!DNL Marketo Measure] 機會金額：此欄位用於針對機會運用自訂金額欄位的情境中。 我們將該自訂欄位值對應至 [!DNL Marketo Measure] 使用工作流程的「機會金額」，然後針對「購買者歸因」接觸點物件上的「收入」歸因欄位，讀取此欄位。
+[!DNL Marketo Measure] 商機金額：此欄位用於商機使用自訂金額欄位的案例中。 我們將該自訂欄位值對應至 [!DNL Marketo Measure] 使用工作流程的「機會金額」，然後針對「購買者歸因」接觸點物件上的「收入」歸因欄位，讀取此欄位。
 
 ## 活動 {#activity}
 

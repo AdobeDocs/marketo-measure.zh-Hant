@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874755
-description: 新增 [!DNL Marketo Measure] 至 [!DNL Marketo] 登陸頁面 —  [!DNL Marketo Measure]  — 產品檔案
+description: 新增 [!DNL Marketo Measure] 至 [!DNL Marketo] 登陸頁面 —  [!DNL Marketo Measure]
 title: 新增 [!DNL Marketo Measure] 前往Marketo登陸頁面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---

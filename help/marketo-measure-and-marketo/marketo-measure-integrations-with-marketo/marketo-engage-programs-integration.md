@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762729
-description: '"[!DNL Marketo Engage] 計畫整合 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Engage] 計畫整合 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 計畫整合」'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
    ![](assets/two.png)
 
-1. 如果有助於追蹤規則，您可以選擇設定規則名稱。 首先，從計畫和計畫會員資格欄位清單中選取要定義規則的欄位。 選取要檢查的運運算元和預期值，以繼續建立規則。
+1. 如果有助於追蹤規則，您可以選擇設定規則名稱。 您首先會從計畫和計畫成員資格欄位清單中選取要定義規則的欄位。 選取要檢查的運運算元和預期值，以繼續建立規則。
 
    ![](assets/three.png)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您的規則想要擷取活動日期，或方案成員達到特定狀態的日期，您將需要利用 [!DNL Marketo Engage] 活動整合，並設定「進度變更狀態」活動型別的規則。
+   >如果您的規則想要擷取「活動日期」，或「方案成員」達到特定狀態的日期，您將需要利用 [!DNL Marketo Engage] 活動整合，並設定「進度變更狀態」活動型別的規則。
 
    ![](assets/six.png)
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 1. 首先，瀏覽至 **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**.
 
-1. 在上方，您可以選擇對應至您的CRM Campaign型別，在下方，您會看到Marketo方案管道的選項。
+1. 在上方，您可以選擇對應至您的CRM Campaign型別，然後在下方，您會看到Marketo方案管道的選項。
 
 1. 首先，選取應對應至值的管道，然後選擇性選取子管道。 完成後，按一下 **[!UICONTROL Save]** 在底部。
 
@@ -161,7 +161,7 @@ Wayne Enterprises行銷團隊會建立Marketo活動規則，以產生「按一�
 
 **如何將接觸點日期設為進度日期，或我的方案成員發生狀態變更的日期？**
 
-如果您的規則想要擷取活動日期，或方案成員達到特定狀態的日期，您將需要利用 [!DNL Marketo Engage] 活動整合，並設定「進度變更狀態」活動型別的規則。 否則， [!DNL Marketo Engage] 方案整合只會提供成員資格日期，這是將Marketo人員引進方案的第一個日期，即使存在多個狀態亦然。
+如果您的規則想要擷取「活動日期」，或「方案成員」達到特定狀態的日期，您將需要利用 [!DNL Marketo Engage] 活動整合，並設定「進度變更狀態」活動型別的規則。 否則， [!DNL Marketo Engage] 方案整合只會提供成員資格日期，這是將Marketo人員引進方案的第一個日期，即使存在多個狀態亦然。
 
 **我可以取得接觸點日期的日期選項選擇清單嗎？**
 
@@ -169,7 +169,7 @@ Wayne Enterprises行銷團隊會建立Marketo活動規則，以產生「按一�
 
 **如果我建立Marketo方案規則也有CRM Campaign規則，這些規則會計算兩次嗎？**
 
-這取決於您的規則定義，但可能會。 您會想要評估規則集，這樣就不會有涵蓋方案與行銷活動的規則，因為我們不會針對類似的成員資格進行重複資料刪除或偵測。 一個可能的解決方案是，如果您希望Marketo成為您的單一信任來源，則將您的行銷活動規則複製到計畫中，然後移除行銷活動規則。 另一個選項是在規則中新增「CreatedOn」或「CreatedDate」條件，讓特定日期前的規則使用Campaign規則，而特定日期後的規則則使用Program規則。 有很多變通辦法，但需要一些規劃和協調。
+這取決於您的規則定義，但可能會。 您將需要評估規則集，這樣就不會有涵蓋方案與行銷活動的規則，因為我們不會針對類似的成員資格進行重複資料刪除或偵測。 一個可能的解決方案是，如果您希望Marketo成為您的單一信任來源，則將您的行銷活動規則複製到計畫中，然後移除行銷活動規則。 另一個選項是在規則中新增「CreatedOn」或「CreatedDate」條件，讓特定日期前的規則使用Campaign規則，而特定日期後的規則則使用Program規則。 有很多變通辦法，但需要一些規劃和協調。
 
 **Marketo的計畫會籍自訂欄位是否可供定義？**
 
@@ -177,4 +177,4 @@ Wayne Enterprises行銷團隊會建立Marketo活動規則，以產生「按一�
 
 **我如何知道要使用方案或活動？**
 
-此 [!DNL Marketo Engage] 方案整合是根據某人是否為方案的方案成員來產生接觸點的簡單方法。 如果您有興趣根據人員變更為特定計畫狀態的時間來定義規則， [!DNL Marketo Engage] 活動整合將是您想要的設定，尤其是「進度中的變更狀態」活動型別。
+此 [!DNL Marketo Engage] 方案整合是根據某人是否為方案的方案成員來產生接觸點的簡單方法。 如果您有興趣根據人員變更為特定計畫狀態的時間來定義規則， [!DNL Marketo Engage] 活動整合將是您想要的設定，尤其是「進度變更狀態」活動型別。

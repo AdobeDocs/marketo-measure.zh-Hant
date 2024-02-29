@@ -1,11 +1,11 @@
 ---
-description: '"[!DNL Marketo Measure] 報表範本 — Tableau - [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] 報表範本 — Tableau - [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 報表範本 — Tableau」'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 開啟 [!DNL Adobe Marketo Measure] 報表範本Tableau活頁簿檔案。
 
-您必須將現有的連線資料更新為特定Snowflake連線資訊。 按一下 [!UICONTROL Edit Connection] 按鈕並遵循中概述的步驟 [[!UICONTROL Data Connection]](#data-connection) 一節。
+您需要將現有的連線資料更新為特定Snowflake連線資訊。 按一下 [!UICONTROL Edit Connection] 按鈕並遵循中概述的步驟 [[!UICONTROL Data Connection]](#data-connection) 一節。
 
 ![](assets/marketo-measure-report-template-tableau-1.png)
 
 ## 資料連線 {#data-connection}
 
-您必須設定與Snowflake執行個體的資料連線。 為此，您需要伺服器名稱以及您的使用者名稱和密碼。 如需尋找此資訊及重設密碼的詳細資訊，請參閱相關檔案 [此處](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
+您需要設定與Snowflake執行個體的資料連線。 為此，您需要伺服器名稱以及您的使用者名稱和密碼。 如需尋找此資訊及重設密碼的詳細資訊，請參閱相關檔案 [此處](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ![](assets/marketo-measure-report-template-tableau-2.png)
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 已移除的欄 {#removed-columns}
 
-為了簡化資料模型，並移除多餘和不必要的資料，我們減少了從原始Snowflake表格匯入Tableau的欄數。 移除的欄包括不必要的外部索引鍵、反正規化的維度資料，其運用方式較佳地是透過與模型中其他表格的關係、稽核欄及用於內部的欄位 [!DNL Marketo Measure] 處理中。 您可以根據業務需求新增或移除欄，方法是編輯自訂SQL的「選取」區段中的匯入欄清單。
+為了簡化資料模型，並移除多餘和不必要的資料，我們減少了從原始Snowflake表格匯入Tableau的欄數。 移除的欄包括不必要的外部索引鍵、透過與模型中其他表格的關係更適合使用的反正規化維度資料、稽核欄以及用於內部的欄位 [!DNL Marketo Measure] 處理中。 您可以根據業務需求新增或移除欄，方法是編輯自訂SQL的「選取」區段中的匯入欄清單。
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 在此模型中，商機階段轉換和潛在客戶階段轉換會合併到一個表格中，並附上指向 [!UICONTROL Lead and Attribution] 接觸點表格。 已新增「轉變型別」欄，以指定列是「機會」還是「銷售機會」階段轉變。
 
-成本和接觸點資料會共用「管道」和「促銷活動」維度。 不過，Tableau在事實表格之間建立共用維度模型的能力有限。 由於我們限製為只有一個共用維度表格，因此「管道」和「促銷活動」資料已合併至一個表格。 在Tableau中使用兩個維度的交叉聯結將它們合併到一個表格中：頻道和促銷活動。 此唯一ID是透過串連管道和促銷活動ID所建立。 這個相同的ID值會新增至「接觸點」和「成本」表格，以建立與此合併維度表格的關係。
+成本和接觸點資料會共用「管道」和「促銷活動」維度。 不過，Tableau在事實表格之間建立共用維度模型的能力有限。 由於我們限制只能有一個共用維度表格，因此「管道」和「促銷活動」資料已合併至一個表格。 在Tableau中使用兩個維度的交叉聯結將它們合併到一個表格中：頻道和促銷活動。 此唯一ID是透過串連管道和促銷活動ID所建立。 這個相同的ID值會新增至「接觸點」和「成本」表格，以建立與此合併維度表格的關係。
 
 ![](assets/marketo-measure-report-template-tableau-12.png)
 
@@ -179,13 +179,13 @@ ht-degree: 0%
 
 ### 網站流量 {#web-traffic}
 
-報表範本資料模型會透過工作階段與接觸點之間的關係，將頻道、子頻道和行銷活動維度資料標準化。 這與「探索」資料模型不同，後者會將這些維度非標準化為工作階段。 由於這項區別，Discover和報告範本之間的造訪和訪客的整體計數應該相符，但是，一旦依維度顯示或篩選，這些數字就預計不會一致。 這是因為範本中的維度資料僅適用於產生接觸點（即非匿名事件）的Web事件。 如需詳細資訊，請參考 [資料模型](#data-model) 一節。
+報表範本資料模型會透過工作階段與接觸點之間的關係，將頻道、子頻道和行銷活動維度資料標準化。 這與「探索」資料模型不同，後者會將這些維度非標準化為工作階段。 由於這項區別，Discover和報告範本之間的造訪和訪客的整體計數應該相符，但是，一旦依維度顯示或篩選，這些數字就預計不會一致。 這是因為範本中的維度資料僅適用於產生接觸點（即非匿名事件）的Web事件。 如需詳細資訊，請參閱 [資料模型](#data-model) 一節。
 
 網站表單總計計數之間可能有細微差異 [!DNL Discover] 和範本。 這是因為報告範本中的資料模型會透過與工作階段的關係，然後透過接觸點來取得網站表單的維度資料；在少數情況下，網站表單資料沒有相關的工作階段。
 
 ### 潛在客戶與帳戶 {#leads-and-accounts}
 
-接觸帳戶的維度報告可能略有不同 [!DNL Discover] 和範本，這是因為維度模型來自接觸點和潛在客戶接觸點或歸因接觸點之間的關係。 如需更多詳細資訊，請參考「已歸因的收入」區段中概述的詳細資訊。
+接觸帳戶的維度報告可能略有不同 [!DNL Discover] 和範本，這是因為維度模型來自接觸點和潛在客戶接觸點或歸因接觸點之間的關係。 如需詳細資訊，請參閱「已歸因的收入」一節中概述的詳細資訊。
 
 中的所有潛在客戶計數 [!UICONTROL Discover] 是已歸因的銷售機會計數，在報表範本中，量度為 [!UICONTROL leads] 已接觸。 因此，此測量在這兩個報表之間無法直接比較。
 

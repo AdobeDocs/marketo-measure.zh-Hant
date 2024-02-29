@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874797
-description: 新增 [!DNL Marketo Measure] 指令碼管道 [!DNL Google Tag Manager] - [!DNL Marketo Measure]  — 產品檔案
+description: 新增 [!DNL Marketo Measure] 指令碼管道 [!DNL Google Tag Manager] - [!DNL Marketo Measure]
 title: 新增 [!DNL Marketo Measure] 指令碼管道 [!DNL Google Tag Manager]
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->請使用此 [Google的支援文章](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"} 以進一步瞭解。
+>使用此 [Google的支援文章](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"} 以進一步瞭解。
 
 ## 如何新增 [!DNL Marketo Measure] JS via [!DNL Google Tag Manager] {#how-to-add-marketo-measure-js-via-google-tag-manager}
 

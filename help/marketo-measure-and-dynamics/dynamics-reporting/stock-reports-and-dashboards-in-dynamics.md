@@ -1,10 +1,10 @@
 ---
 unique-page-id: 18874612
-description: Dynamics中的Stock報表和控制面板 —  [!DNL Marketo Measure]  — 產品檔案
+description: Dynamics中的Stock報表和控制面板 —  [!DNL Marketo Measure]
 title: Dynamics中的Stock報表和控制面板
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 3%
@@ -177,7 +177,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>依據部落格登陸頁面(LC)的銷售機會</td> 
-   <td>測量每個部落格內容頁面中的潛在客戶建立接觸產生了多少潛在客戶。</td> 
+   <td>測量每個部落格內容頁面中，透過潛在客戶建立接觸產生了多少潛在客戶。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 

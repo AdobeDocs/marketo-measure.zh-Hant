@@ -3,9 +3,9 @@ description: Data Warehouse存取 — Reader帳戶 — 產品檔案
 title: Data Warehouse存取 — Reader帳戶
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Snowflake存取連結 {#snowflake-access-link}
 
-若要存取您的Snowflake資料倉儲，您必須導覽至您Snowflake帳戶的特定URL。 您可以登入找到此存取連結 [!DNL Marketo Measure] 並依照下列步驟導覽至Data Warehouse資訊頁面。
+若要存取Snowflake資料倉儲，您必須導覽至Snowflake帳戶的特定URL。 您可以登入找到此存取連結 [!DNL Marketo Measure] 並依照下列步驟導覽至Data Warehouse資訊頁面。
 
 1. 在 [!DNL Marketo Measure]，在頁面頂端按一下 **[!UICONTROL My Account]** > **[!UICONTROL Settings]**.
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
    ![](assets/data-warehouse-access-reader-account-2.png)
 
-1. 在此頁面中，您會找到Snowflake資料倉儲的連結以及使用者名稱。
+1. 在此頁面中，您會找到連至您的Snowflake Data Warehouse和使用者名稱的連結。
 
    ![](assets/data-warehouse-access-reader-account-3.png)
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## 透過協力廠商工具連線至Snowflake {#connecting-to-snowflake-via-third-party-tools}
 
-您必須輸入一些資訊，才能將Snowflake資料倉儲連線到協力廠商工具。
+您必須輸入一些資訊，才能將Snowflake data warehouse連線到協力廠商工具。
 
 >[!NOTE]
 >

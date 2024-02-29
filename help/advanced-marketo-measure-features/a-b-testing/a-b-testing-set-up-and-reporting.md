@@ -1,23 +1,23 @@
 ---
 unique-page-id: 18874773
-description: A/B測試設定與報告 —  [!DNL Marketo Measure]  — 產品檔案
+description: A/B測試設定與報告 —  [!DNL Marketo Measure]
 title: A/B測試設定與報告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # A/B測試設定與報告 {#a-b-testing-set-up-and-reporting}
 
-此 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://optimizely.com/){target="_blank"} 和VWO網站實驗。 本文指南提供如何新增的指示 [!DNL Marketo Measure] 潛在客戶的A/B測試區段， [!UICONTROL Contact]、大小寫和 [!UICONTROL Opportunity] 頁面配置。 我們也會介紹一般報告實務和執行的建議 [!DNL Marketo Measure] A/B報表型別。
+此 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://www.optimizely.com/){target="_blank"} 和VWO網站實驗。 本文提供如何新增的說明 [!DNL Marketo Measure] 潛在客戶的A/B測試區段， [!UICONTROL Contact]、大小寫和 [!UICONTROL Opportunity] 頁面配置。 此外，也涵蓋一般報告實務和執行的建議 [!DNL Marketo Measure] A/B報表型別。
 
 ## 設定 {#set-up}
 
-新增 [!DNL Marketo Measure] 有關銷售機會、聯絡人、案例和機會的A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 網站實驗。
+新增 [!DNL Marketo Measure] 有關銷售機會、聯絡人、案例和機會的A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您追蹤 [最佳化](https://www.optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 網站實驗。
 
 1. 確認您正在使用封裝 [!DNL Marketo Measure] v3.9或更新版本。 若要這麼做，請前往 [!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages].
 1. 編輯銷售機會頁面版面配置並新增 **[!DNL Marketo Measure]A/B測試** 頁面的相關清單。
@@ -45,16 +45,16 @@ ht-degree: 0%
 
 ![](assets/4.png)
 
-A/B報告型別用於報告哪些Lead或Contact或Opportunity已接受A/B測試。 此外，這些報表可顯示和已遭受A/B測試的Opportunity相關聯的收入金額。
+A/B報告型別用於報告哪些Lead或Contact或Opportunity已接受A/B測試。 這些報表也會顯示和遭受A/B測試的Opportunity相關聯的收入金額。
 
-請務必注意，「最佳化/VWO」是內容變異平台，而非行銷管道。 因此，這些 [!DNL Marketo Measure] A/B報表型別的使用方式與「購買者接觸點」報表不同。 購買者接觸點報表型別可用來瞭解哪些行銷管道（例如，付費廣告、網路直接、社交）將銷售機會或聯絡人導向至特定頁面。 不過， [!DNL Marketo Measure] A/B報表型別無法用於報告變異如何影響Lead或Opportunity。 此外，由於A/B測試變數不是管道，因此變數的詳細資訊將不會顯示在購買者接觸點上。
+請務必注意，「最佳化/VWO」是內容變異平台，而非行銷管道。 因此，這些 [!DNL Marketo Measure] A/B報表型別的使用方式與「購買者接觸點」報表不同。 購買者接觸點報表型別是用來瞭解哪些行銷管道（付費廣告、網路直接、社交）將「銷售機會」或「連絡人」帶往特定頁面。 不過， [!DNL Marketo Measure] A/B報表型別無法用於報告變異如何影響Lead或Opportunity。 由於A/B測試變數不是管道，因此變數的詳細資訊不會顯示在購買者接觸點上。
 
-以下是一些建議在A/B測試報告中使用的常見欄位，以協助提高清晰度和深入分析：
+以下是報告A/B測試時建議使用的一些欄位，有助於提高清晰度和深入分析：
 
 * 潛在客戶已轉換
 * 實驗
 * 實驗ID
-* 變異
+* 變數
 * 變數ID
 * 報告日期
 

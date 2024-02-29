@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874658
-description: 常見使用案例 —  [!DNL Marketo Measure]  — 產品檔案
+description: 常見使用案例 —  [!DNL Marketo Measure]
 title: 常見使用案例
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 已建立的連絡人 {#contacts-created}
 
-若要檢視依維度分組的已建立聯絡人總數，請導覽至Discover的「概觀」或CMO儀表板，開啟圖磚上方的「篩選器」，將「量度」篩選器調整為「聯絡人」，然後將「日期型別」移動至「建立日期」。 完成!
+若要檢視依維度分組的已建立聯絡人總數，請導覽至Discover的「概觀」或CMO儀表板，開啟圖磚上方的「篩選器」，將「量度」篩選器調整為「聯絡人」，然後將「日期型別」移動至「建立日期」。 完成！
 
 若要取得聯絡人總數或檢視一段時間內的聯絡人總數，請瀏覽至「成長」儀表板，將「日期型別」調整為「建立日期」，並選取您想要的時間範圍。 「一段時間內的連絡人」和「一段時間內的連絡人」是此儀表板中以連絡人為主的圖磚。
 

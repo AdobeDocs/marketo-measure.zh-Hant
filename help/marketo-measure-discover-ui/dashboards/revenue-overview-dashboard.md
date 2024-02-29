@@ -3,9 +3,9 @@ description: 收入總覽儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 收入總覽儀表板
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 這個並排時間序列長條圖會將總收入與歸因收入做對比，清楚呈現您對整體收入的行銷影響。
 
-* 運用向下鑽研和向上鑽研功能，依季度和年度分類資料。
+* 使用向下鑽研和向上功能來依季度和年度分類資料。
 * 將滑鼠指標暫留在長條圖的某個區段上，即可顯示其詳細資訊。
 
 **圖表回答的問題：**

@@ -1,18 +1,18 @@
 ---
-description: '"[!DNL Marketo Measure] Salesforce封裝安裝及設定 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] Salesforce封裝安裝及設定 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] [!DNL Salesforce] 封裝安裝及設定」'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure] Salesforce套件安裝和設定 {#marketo-measure-salesforce-package-installation-and-set-up}
 
-安裝之前 [!DNL Marketo Measure] [!DNL Salesforce] 基礎套件，您必須先判斷是否要在 [!DNL Salesforce] 沙箱，然後再移動至您的Salesforce生產執行個體。
+安裝之前 [!DNL Marketo Measure] [!DNL Salesforce] 基礎套件，您必須判斷您是否先在 [!DNL Salesforce] 沙箱，然後再移動至您的Salesforce生產執行個體。
 
 >[!NOTE]
 >
@@ -24,11 +24,11 @@ ht-degree: 0%
 * 自訂 [!DNL Marketo Measure] 欄位
 * 25 [!DNL Stock] 報表
 
-[!DNL Marketo Measure] 能夠讀取標準內容 [!DNL Salesforce] 物件、欄位和記錄， [!DNL Marketo Measure] 絕對不會更新或推送資料給他們。 收集的所有資料 [!DNL Marketo Measure] Javascript將顯示在 [!DNL Marketo Measure] 自訂物件和欄位。
+[!DNL Marketo Measure] 能夠讀取標準內容 [!DNL Salesforce] 物件、欄位和記錄， [!DNL Marketo Measure] 絕對不會更新或推送資料給他們。 收集的所有資料 [!DNL Marketo Measure] JavaScript將顯示在 [!DNL Marketo Measure] 自訂物件和欄位。
 
 請依照下列步驟安裝 [!DNL Marketo Measure Salesforce] 基礎封裝。
 
-1. 使用無痕瀏覽器，前往 [Salesforce Appexchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} 並登入。
+1. 使用無痕瀏覽器，前往 [SalesforceAppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} 並登入。
 
 1. 在中安裝 [!DNL Marketo Measure] 封裝在沙箱或生產環境中。
 
@@ -46,13 +46,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->閱讀關於 [!DNL Marketo Measure] 許可權集已建立和 [如何使用](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
+>閱讀關於 [!DNL Marketo Measure] 許可權集已建立和 [使用方式](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}.
 
 ## 建立 [!DNL Marketo Measure] 設定檔和使用者 {#creating-a-marketo-measure-profile-and-user}
 
 [!DNL Marketo Measure] 透過已連線的傳送和接收資料 [!DNL Salesforce] 使用者在 [!DNL Marketo Measure] 應用程式。
 
-為了將接觸點資料推送至您的 [!DNL Salesforce] 執行個體，則連線的使用者必須有權存取 [!DNL Marketo Measure] 自訂物件（例如購買者接觸點和購買者歸因接觸點）以及標準 [!DNL Salesforce] 物件，例如「銷售機會」和「聯絡人」。
+若要將接觸點資料推送至您的 [!DNL Salesforce] 執行個體，則連線的使用者必須有權存取 [!DNL Marketo Measure] 自訂物件（例如購買者接觸點和購買者歸因接觸點）和標準 [!DNL Salesforce] 物件，例如「銷售機會」和「聯絡人」。
 
 建立 [!DNL Marketo Measure] 設定檔以確保您在推送資料至Salesforce時不會發生驗證錯誤。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 啟用「行銷使用者」作為使用者層級的許可權。
 
-* 此 [!UICONTROL Marketing User] 核取方塊可讓使用者建立行銷活動並使用Campaign匯入精靈。 如果未選取此選項，使用者只能檢視行銷活動和進階行銷活動設定、編輯單一潛在客戶或聯絡人的行銷活動歷史記錄，以及執行行銷活動報告。 [!DNL Marketo Measure] 需要能夠讀取和寫入campaign物件。
+* 此 [!UICONTROL Marketing User] 核取方塊可讓使用者建立行銷活動並使用Campaign匯入精靈。 如果未選取此選項，使用者只能檢視行銷活動和進階行銷活動設定、編輯單一潛在客戶或聯絡人的行銷活動歷史記錄，以及執行行銷活動報告。 [!DNL Marketo Measure] 必須能夠讀取和寫入campaign物件。
 
 步驟3：從所有觸發器、工作流程和流程中排除此設定檔
 

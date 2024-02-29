@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874789
-description: '"[!DNL Marketo Measure] 許可權集 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] 許可權集 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 許可權集」'
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 管理員</strong></span></td> 
-   <td><span>讓SFDC管理員能夠建立、讀取、寫入、刪除記錄 [!DNL Marketo Measure] 物件。 使用授權的 [!DNL Marketo Measure] 將資料推送至SFDC時，應啟用此許可權集。 此外，在以下情況下，建議此授權能夠編輯轉換的Lead：之前轉換的Lead [!DNL Marketo Measure] 將資料套用至記錄。 這將確保Salesforce和之間的報告準確性 [!DNL Marketo Measure]. <a href="http://releasenotes.docs.salesforce.com/en-us/spring17/release-notes/rn_sales_leads_view_converted.htm">請在此閱讀詳情</a>.</span></td> 
+   <td><span>讓SFDC管理員能夠建立、讀取、寫入、刪除記錄 [!DNL Marketo Measure] 物件。 使用授權的 [!DNL Marketo Measure] 將資料推送至SFDC時，應啟用此許可權集。 此外，我們建議此授權能夠在Lead之前轉換的情況下編輯轉換的Lead [!DNL Marketo Measure] 將資料套用至記錄。 這可確保Salesforce與之間報表的正確性 [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">請在此閱讀詳情</a>.</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 行銷使用者</strong></span></td> 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此外，我們連線的使用者必須擁有「行銷使用者」 [!DNL Salesforce] 設定檔已啟用至使用者層級，以便我們存取Campaign物件。 若要檢查此專案，請按一下 **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **已指派的使用者**.
+>此外，我們連線的使用者必須擁有「行銷使用者」 [!DNL Salesforce] 已在使用者層級啟用設定檔，以便我們存取Campaign物件。 若要檢查此專案，請按一下 **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **已指派的使用者**.

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874777
-description: 自訂模型設定 — 啟用欄位歷史記錄追蹤 —  [!DNL Marketo Measure]  — 產品檔案
+description: 自訂模型設定 — 啟用欄位歷史記錄追蹤 —  [!DNL Marketo Measure]
 title: 自訂模型設定 — 啟用欄位歷史記錄追蹤
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
 feature: Custom Models
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 若僅限 [!UICONTROL Lead Status] 或者，自訂模型中會使用「機會階段」，則不需要開啟「欄位歷史記錄」追蹤，因為它會在階段轉換時自動追蹤。
 
-若要啟用欄位記錄追蹤，請遵循下列指示。
+若要啟用欄位歷史記錄追蹤，請遵循下列指示。
 
 ## 啟用欄位記錄追蹤 {#enable-field-history-tracking}
 

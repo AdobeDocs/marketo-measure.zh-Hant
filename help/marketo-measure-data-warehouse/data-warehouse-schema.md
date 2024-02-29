@@ -4,9 +4,9 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: f77c4471887c18b177dedab5b4c41f3a64010539
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '21115'
+source-wordcount: '21110'
 ht-degree: 3%
 
 ---
@@ -5802,7 +5802,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 >[!IMPORTANT]
 >
->Marketo Measure將在2024年中淘汰此表格。 如果您想要在您這邊建立，請執行 [此SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
+>Marketo Measure將在2024年中淘汰此表格。 如果您想在您這邊建立它，請執行 [此SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
 
 <table>
   <tbody>

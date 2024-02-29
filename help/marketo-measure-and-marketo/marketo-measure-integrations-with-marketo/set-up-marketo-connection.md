@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762762
-description: 設定Marketo連線 —  [!DNL Marketo Measure]  — 產品檔案
+description: 設定Marketo連線 —  [!DNL Marketo Measure]
 title: 設定Marketo連線
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '181'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
    ![](assets/set-up-marketo-connection-4.png)
 
-1. 在新標籤中，登入您的Marketo Engage帳戶。 前往 **管理員** > **網站服務**. 向下捲動至REST API。 反白顯示並儲存端點與身分識別服務URL。 您稍後會需要它們。
+1. 在新標籤中，登入您的Marketo Engage帳戶。 前往 **管理員** > **網站服務**. 向下捲動至REST API。 反白顯示並儲存端點與身分識別服務URL。 稍後您將需要它們。
 
    ![](assets/set-up-marketo-connection-5.png)
 

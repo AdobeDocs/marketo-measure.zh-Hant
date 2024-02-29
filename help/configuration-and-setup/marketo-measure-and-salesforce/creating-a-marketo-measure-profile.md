@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874698
-description: 建立 [!DNL Marketo Measure] 設定檔 —  [!DNL Marketo Measure]  — 產品檔案
+description: 建立 [!DNL Marketo Measure] 設定檔 —  [!DNL Marketo Measure]
 title: 建立 [!DNL Marketo Measure] 個人資料
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ ht-degree: 0%
    * 前往 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 並使用新的使用者生產Salesforce憑證登入
    * 選取「[!UICONTROL Settings]「 （在「」中）[!UICONTROL My Account]「下拉式清單
    * 選取「[!UICONTROL Connections]「 （在「」中）[!UICONTROL Integrations]&quot;分組
-   * 按一下目前連線右側的按鍵圖示 [!DNL Salesforce] 連線並選取「 」以使用生產環境重新授權。 然後在出現提示時，使用新的使用者認證再次登入
+   * 按一下目前連線右側的按鍵圖示 [!DNL Salesforce] 連線並選取「 」以使用「生產」重新授權。 然後在出現提示時，使用新的使用者認證再次登入
 
-   完成!
+   完成！
 
    如果您對建立專屬檔案有任何疑問， [!DNL Marketo Measure] 設定檔，請聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

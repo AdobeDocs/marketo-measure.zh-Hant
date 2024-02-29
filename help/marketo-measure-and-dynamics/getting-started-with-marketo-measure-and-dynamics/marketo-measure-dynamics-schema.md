@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874523
-description: '"[!DNL Marketo Measure] 動態結構描述 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] 動態結構描述 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 動態結構描述」'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 17%
+source-wordcount: '1076'
+ht-degree: 22%
 
 ---
 
@@ -800,7 +800,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活動 {#marketo-measure-events}
 
 <table> 
  <tbody> 
@@ -867,7 +867,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 記錄 {#marketo-measure-history}
+## [!DNL Marketo Measure] 歷史記錄 {#marketo-measure-history}
 
 <table> 
  <tbody> 
@@ -931,7 +931,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>emailaddress1</p></td> 
+   <td><p>電子郵件地址1</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1016,7 +1016,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>emailaddress1</p></td> 
+   <td><p>電子郵件地址1</p></td> 
    <td><p>標準</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1091,7 +1091,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-**機會**
+**商機**
 
 <table> 
  <tbody> 

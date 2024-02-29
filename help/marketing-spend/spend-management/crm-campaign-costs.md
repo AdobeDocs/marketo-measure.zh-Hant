@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874688
-description: CRM行銷活動成本 —  [!DNL Marketo Measure]  — 產品檔案
+description: CRM行銷活動成本 —  [!DNL Marketo Measure]
 title: CRM促銷活動成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![](assets/1.jpg)
 
-所以在此範例中，我們有一個持續109天的行銷活動，所以總成本為$18,000美元時，每日花費約為$165.14。
+所以在此範例中，我們有一個持續109天的行銷活動，所以總成本為$18,000美元時，每日花費大約為$165.14。
 
 我們會根據每月的天數來取得這些每月總計，如表格中所示：
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## Marketo程式同步 {#marketo-program-sync}
 
-如果您將Marketo方案作為行銷活動帶入CRM，您將希望確保將開始日期、結束日期和期間成本對應設定為必要的CRM欄位。 由於沒有對應至「啟用購買者接觸點」欄位，因此您仍需啟用這些行銷活動，以便我們瞭解為這些行銷活動提取成本。
+如果您將Marketo方案作為行銷活動帶入CRM，您將想要確保將開始日期、結束日期和期間成本對應設定為必要的CRM欄位。 由於沒有對應至「啟用購買者接觸點」欄位，因此您仍需啟用這些行銷活動，以便我們瞭解為這些行銷活動提取成本。
 
 ## 編輯成本 {#editing-the-costs}
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 **我已填寫開始日期、結束日期和成本，但為什麼我的成本仍未顯示於 [!DNL Marketo Measure]？**
 
-請檢查您是否將「啟用購買者接觸點」值設為「包含所有促銷活動成員」，或至少設為「包含『已回應』促銷活動成員」，或者您是否建立了包含此促銷活動的自訂促銷活動同步規則。 如果您已確認此事項，但還是沒有看見Campaign，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以便我們檢查您的行銷活動是否正確匯入。
+檢查您是否將「啟用購買者接觸點」值設為「包含所有促銷活動成員」，或至少設為「包含『已回應』促銷活動成員」，或是否已建立包含此促銷活動的自訂促銷活動同步規則。 如果您已確認此事項，但仍看不到Campaign，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以便我們檢查您的行銷活動是否正確匯入。
 
 **我需要變更行銷活動的分佈，以便在特定月份中加重。 我應該怎麼做？**
 

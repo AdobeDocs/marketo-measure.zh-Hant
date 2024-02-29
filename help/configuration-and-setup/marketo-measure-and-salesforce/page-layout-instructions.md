@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874799
-description: 頁面配置指示 —  [!DNL Marketo Measure]  — 產品檔案
+description: 頁面配置指示 —  [!DNL Marketo Measure]
 title: 頁面配置指示
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 1%
+source-wordcount: '756'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 行銷活動物件 {#campaign-object}
 
-我們建議新增 [!DNL Marketo Measure] 欄位至您的SFDC Campaign，僅供沙箱使用。 這些欄位可用來測試接觸點產生。 在生產環境中，我們建議只新增 [!DNL Marketo Measure] 大量更新接觸點日期按鈕。 我們不建議新增 [!DNL Marketo Measure] 欄位來進行生產，因為您可以建立Campaign同步規則規則。
+建議您新增 [!DNL Marketo Measure] 欄位至您的SFDC Campaign，僅供沙箱使用。 這些欄位可用來測試接觸點產生。 在生產環境中，建議僅新增 [!DNL Marketo Measure] 大量更新接觸點日期按鈕。 不建議新增 [!DNL Marketo Measure] 欄位來進行生產，因為您可以建立Campaign同步規則。
 
 1. 在「建置」選項中，選取 **[!UICONTROL Campaigns]**.
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
    ![](assets/1-1.jpg)
 
-1. 按一下 **[!UICONTROL Edit]** 位於您要更新的頁面配置旁邊。
+1. 按一下 **[!UICONTROL Edit]** ，位於您要更新的頁面配置旁。
 
    ![](assets/2-1.jpg)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >如果您使用多個Campaign記錄型別，則的 **[!UICONTROL Enable Buyer Touchpoints]** 欄位需要更新。 請參考 [本文](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md) 以取得指示。
+   >如果您使用多個Campaign記錄型別，則必須更新的 **[!UICONTROL Enable Buyer Touchpoints]** 欄位。 請參閱 [本文](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md) 以取得指示。
 
 ## 銷售機會 {#leads}
 
@@ -57,11 +57,11 @@ ht-degree: 1%
 
 1. 按一下 **[!UICONTROL Page Layouts]**.
 
-1. 按一下 **[!UICONTROL Edit]** 位於您要更新的頁面配置旁邊。 請記住，多個版面配置可包含「購買者接觸點」區段。
+1. 按一下 **[!UICONTROL Edit]** ，位於您要更新的頁面配置旁。 請記住，多個版面配置可包含「購買者接觸點」區段。
 
 1. 按一下快速尋找功能表左側的VisualForce頁面選項。
 
-1. 建立新區段並將它命名為「購買者接觸點」。
+1. 建立區段並將它命名為「購買者接觸點」。
 
    >[!NOTE]
    >
@@ -73,23 +73,23 @@ ht-degree: 1%
 
 1. 按一下 [!DNL VisualForce] 頁面，並將高度變更為100並啟用卷軸。
 
-1. 返回功能表，選取 [!UICONTROL Canvas Apps] 區段，並在接觸點下方建立名為「Marketo Measure深入分析」的新區段 [!DNL VisualForce] 區段。
+1. 返回功能表，選取 [!UICONTROL Canvas Apps] 區段，並在接觸點下方建立名為「Marketo Measure深入分析」的區段 [!DNL VisualForce] 區段建立時間。
 
    >[!NOTE]
    >
    >選取每個區段的「一欄」格式。
 
-1. 拖曳 [!DNL Marketo Measure Insights] 將畫布應用程式放入新建立的區段中。 按一下 **儲存**. 有時候在放入畫布應用程式之前必須先儲存頁面配置，因為Salesforce無法立即辨識它。 因此，建立新區段後，儲存頁面版面配置，然後重新編輯，將畫布應用程式拖曳到該區段中。 這適用於每個物件。
+1. 拖曳 [!DNL Marketo Measure Insights] 將畫布應用程式放入新建立的區段中。 按一下 **儲存**. 有時候在放入畫布應用程式之前必須先儲存頁面配置，因為Salesforce無法立即辨識它。 所以在建立區段後，儲存頁面版面配置，然後重新編輯，將畫布應用程式拖曳到該區段中。 這適用於每個物件。
 
    >[!NOTE]
    >
-   >對於 [!DNL Marketo Measure Insights] Canvas應用程式正常運作， [許可權需要正確設定](/help/configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-configuration.md).
+   >對於 [!DNL Marketo Measure Insights] Canvas應用程式正常運作， [許可權必須正確設定](/help/configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-configuration.md).
 
    >[!TIP]
    >
    >大部分客戶不會使用結尾為(FT)或(LC)的欄位，因為這些欄位是 [!DNL Marketo Measure] 接觸點以物件形式存在。
 
-如果您正在利用 [!DNL Marketo Measure] ABM功能， [請按一下這裡以取得其他頁面配置指示](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
+如果您使用 [!DNL Marketo Measure] ABM功能， [按一下這裡以取得其他頁面配置指示](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
 
 ## 連絡人 {#contacts}
 
@@ -190,4 +190,4 @@ ht-degree: 1%
 
 1. 按一下 **[!UICONTROL Save]**.
 
-如果您正在利用 [!DNL Marketo Measure] ABM功能，  [請按一下這裡以取得其他頁面配置指示](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).
+如果您使用 [!DNL Marketo Measure] ABM功能，檢閱 [其他頁面配置指示](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md).

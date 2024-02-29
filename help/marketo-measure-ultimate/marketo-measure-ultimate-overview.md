@@ -1,11 +1,11 @@
 ---
-description: 『[!DNL Marketo Measure] Ultimate概觀 —  [!DNL Marketo Measure]  — 產品檔案'
+description: 『[!DNL Marketo Measure] Ultimate概觀 —  [!DNL Marketo Measure]『
 title: 『[!DNL Marketo Measure] Ultimate概觀
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
-**[!DNL Marketo Measure Ultimate]沙箱**
+**[!DNL Marketo Measure Ultimate]Sandbox**
 
 [!DNL Marketo Measure Ultimate] 在建立之前，必須將執行個體對應至AEP沙箱 [!DNL Marketo Measure] 目的地資料會在AEP中流動。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 >
 >A [!DNL Marketo Measure Ultimate] 生產執行個體需要對應至AEP生產沙箱，即 [!DNL Marketo Measure Ultimate] 開發人員執行個體必須對應至AEP開發人員沙箱。
 
-一旦沙箱對應選擇儲存後，您現在就無法在應用程式中變更它。 若要變更，請連絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+一旦沙箱對應選擇儲存後，您現在就無法在應用程式中變更它。 若要變更，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 來自指定資料來源之指定實體（例如帳戶）的資料只能進入一個資料集。 每個資料集只能包含在一個資料流程中。 違規會在執行階段停止資料流。
 

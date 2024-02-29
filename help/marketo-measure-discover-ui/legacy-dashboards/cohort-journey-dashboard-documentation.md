@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762648
-description: 同類群組歷程儀表板檔案 —  [!DNL Marketo Measure]  — 產品檔案
+description: 同類群組歷程儀表板檔案 —  [!DNL Marketo Measure]
 title: 同類群組歷程儀表板檔案
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
 feature: Reporting
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---

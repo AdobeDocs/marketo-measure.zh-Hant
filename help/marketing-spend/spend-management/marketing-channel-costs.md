@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874602
-description: 行銷管道成本 —  [!DNL Marketo Measure]  — 產品檔案
+description: 行銷管道成本 —  [!DNL Marketo Measure]
 title: 行銷管道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 無論瀏覽器中的檢視是什麼，如果它是篩選檢視或包含所有日期和管道的預設檢視，您都可以上傳任何CSV。
 
-我們面臨的最常見錯誤是日期欄的格式，如果日期格式改變，就會發生此錯誤，而且在Excel和/或Google工作表之間移動時可能會有意發生。 請記得日期應為MM-YY，因此Sep-12而非Sep-12，或May-12而非05-12。
+我們面臨的最常見錯誤是日期欄的格式，如果日期格式改變，就會發生此錯誤，而且在Excel和/或Google工作表之間移動時可能會有意發生。 請記住，日期應為MM-YY，因此Sep-12而非9-12，或May-12而非05-12。
 
 ## 開始之前 {#before-you-begin}
 

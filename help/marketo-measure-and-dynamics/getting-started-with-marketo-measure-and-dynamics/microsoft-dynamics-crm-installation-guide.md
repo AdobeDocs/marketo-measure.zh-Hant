@@ -4,9 +4,9 @@ description: '"[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo Measure —
 title: '"[!DNL Microsoft Dynamics] CRM安裝指南」'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 **收入**
 
-[!DNL Marketo Measure] 依預設，指向標準的實際收入欄位。 如果您沒有使用此功能，請說明您將需要如何向解決方案工程師或成功經理報告收入作為自訂工作流程。
+[!DNL Marketo Measure] 依預設，指向標準的實際收入欄位。 如果您未使用此專案，請說明您需要如何向解決方案工程師或成功經理報告收入，以作為自訂工作流程。
 
 **關閉日期**
 
@@ -128,11 +128,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需OAuth的詳細資訊，請造訪 [本文](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md). 如果您對程式有任何疑問，請聯絡您的 [!DNL Marketo Measure] 客戶代表。
+   >如需有關OAuth的詳細資訊，請造訪 [本文](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md). 如果您對程式有任何疑問，請聯絡您的 [!DNL Marketo Measure] 客戶代表。
 
 1. 在此範例中，我們已選取「認證」。 輸入您的認證，然後按一下 **[!UICONTROL Next]**.
 
-連線後，您會在CRM/MAP連線清單中看到Dynamics連線的詳細資料。
+連線之後，您會在CRM/MAP連線清單中看到您的Dynamics連線的詳細資料。
 
 **廣告帳戶連線**
 
@@ -170,7 +170,7 @@ ht-degree: 0%
    >
    >根據預設， [!DNL Marketo Measure] 每次工作將資料傳送至您的CRM時，都會匯出每個API評分200筆記錄。 對於大多數客戶而言，這可提供以下專案所耗用的API積分之間的最佳平衡 [!DNL Marketo Measure] 和CRM的CPU資源需求。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此， [!DNL Marketo Measure] 允許客戶設定CRM匯出批次大小。 此設定位於「 」中的「設定> CRM >一般」頁面 [!DNL Marketo Measure] Web應用程式和客戶可以選擇批次大小200 （預設）、100、50或25。
    >
-   >修改此設定時，請牢記，較小的批次大小將使用來自CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時，才減少批次大小。
+   >修改此設定時，請記住，較小的批次大小將使用來自CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時，才減少批次大小。
 
    >[!NOTE]
    >

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874554
-description: 接觸點產生與對應 —  [!DNL Marketo Measure]  — 產品檔案
+description: 接觸點產生與對應 —  [!DNL Marketo Measure]
 title: 接觸點產生與對應
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 * 產生接觸點，這會建立代表個人與行銷和銷售工作互動的接觸點
 * 接觸點對應，將接觸點歸因到適當的管道和子管道
 
-為了讓您充分利用 [!DNL Marketo Measure]，您應該使用 [!DNL Marketo Measure] 代表可自訂兩個程式以符合您組織的需求。
+讓您充分運用 [!DNL Marketo Measure]，您應該使用 [!DNL Marketo Measure] 代表可自訂兩個程式以符合您組織的需求。
 
 接觸點產生方法
 

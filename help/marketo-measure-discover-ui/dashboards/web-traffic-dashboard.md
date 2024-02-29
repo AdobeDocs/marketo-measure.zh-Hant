@@ -3,7 +3,7 @@ description: 網站流量儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 網站流量儀表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 長條圖顯示依管道/子管道/促銷活動分段的造訪或不重複訪客。
 
-* 運用向下鑽研和向上鑽研功能，依子管道和促銷活動將資料分類。
+* 使用向下展開和向上展開功能，依子管道和促銷活動將資料分類。
 * 將滑鼠停留在每個列上以檢視「造訪」或「不重複訪客」。
 
 圖表回答的問題：

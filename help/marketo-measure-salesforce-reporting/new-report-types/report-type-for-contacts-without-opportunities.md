@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874616
-description: 沒有商機的連絡人的報表型別 —  [!DNL Marketo Measure]  — 產品檔案
+description: 沒有商機的連絡人的報表型別 —  [!DNL Marketo Measure]
 title: 沒有商機的連絡人的報表型別
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---

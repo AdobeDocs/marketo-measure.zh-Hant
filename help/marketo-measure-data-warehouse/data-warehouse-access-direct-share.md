@@ -3,9 +3,9 @@ description: Data Warehouse存取 — 直接共用 — 產品檔案
 title: Data Warehouse存取 — 直接共用
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ GRANT IMPORTED PRIVILEGES ON DATABASE <database_name> TO ROLE <role_name>
 GRANT IMPORTED PRIVILEGES ON ALL SCHEMAS IN DATABASE <database_name> TO ROLE <role_name>
 ```
 
-如需從SnowflakeUI完成這些步驟的詳細指示和步驟，請參考 [直接取得Snowflake的檔案](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}.
+如需從SnowflakeUI完成這些步驟的詳細指示和步驟，請參閱 [直接取得Snowflake的檔案](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}.

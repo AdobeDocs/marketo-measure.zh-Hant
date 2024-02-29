@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874572
-description: 複製記錄和 [!DNL Marketo Measure] - [!DNL Marketo Measure]  — 產品檔案
+description: 複製記錄和 [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: 複製記錄和 [!DNL Marketo Measure]
 exl-id: e340100c-120a-4771-946d-336a1458da4e
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-[!DNL Marketo Measure] 將資料與CRM中的相關銷售機會或聯絡人比對時，會使用電子郵件地址作為我們的唯一識別碼。 時間 [!DNL Marketo Measure] 找到多個電子郵件地址相同的潛在客戶或聯絡人，我們會在所有記錄上顯示相同的資料。 當您報告的潛在客戶或聯絡人時，這會造成影響 [!DNL Marketo Measure] 而且可能會不正確地誇大擁有購買者接觸點的不重複人員數量。
+[!DNL Marketo Measure] 比對資料與CRM中相關銷售機會或聯絡人時，會使用電子郵件地址作為我們的唯一識別碼。 時間 [!DNL Marketo Measure] 找到多個電子郵件地址相同的潛在客戶或聯絡人，我們會在所有記錄上顯示相同的資料。 當您報告的潛在客戶或聯絡人時，這會造成影響 [!DNL Marketo Measure] 而且可能會不正確地誇大擁有購買者接觸點的不重複人員數量。
 
 這看起來像什麼 [!DNL Marketo Measure] 報表？
 

@@ -1,19 +1,19 @@
 ---
 unique-page-id: 18874588
-description: 自訂Campaign同步 —  [!DNL Marketo Measure]  — 產品檔案
+description: 自訂Campaign同步 —  [!DNL Marketo Measure]
 title: 自訂Campaign同步
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
 # 自訂Campaign同步 {#custom-campaign-sync}
 
-今天，已安裝 [!DNL Marketo Measure] 封裝，您就可以指出要納入哪些行銷活動作為合格的接觸點。 由於先前已有多個障礙存在，因此必須加以克服。 一旦 [!DNL Marketo Measure] 套件已安裝在CRM中，您的安全性團隊可能需要一些時間才能核准。 此外，在Campaign物件上使用單一挑選清單時缺乏彈性。 有了這項新功能，就不需要安裝套件即可開始使用Campaign和Campaign成員記錄。 可以建立規則，以明確定義可以建立的記錄，以明確定義哪些記錄是符合資格的。
+今日，透過安裝 [!DNL Marketo Measure] 封裝，您就可以指出要納入哪些行銷活動作為合格的接觸點。 由於先前已有多個障礙存在，因此必須加以克服。 一旦 [!DNL Marketo Measure] 套件已安裝在CRM中，您的安全性團隊可能需要一些時間才能核准。 此外，在Campaign物件上使用單一挑選清單時缺乏彈性。 有了這項新功能，就不需要安裝套件即可開始使用Campaign和Campaign成員記錄。 可以建立規則，以明確定義可以建立的記錄，以明確定義哪些記錄是符合資格的。
 
 ## 需求 {#requirements}
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
    ![](assets/8-1.png)
 
-1. 在您按一下 [!UICONTROL Test]，您會看到適用於接觸點的Campaign名稱和行銷活動成員數量。 下表會顯示與您的行銷活動ID相符的所有規則。 只會顯示相符專案。
+1. 在您按一下 [!UICONTROL Test]，您將會看到適用於接觸點的Campaign名稱和行銷活動成員數量。 下表會顯示與您的行銷活動ID相符的所有規則。 只會顯示相符專案。
 
    ![](assets/9.png)
 

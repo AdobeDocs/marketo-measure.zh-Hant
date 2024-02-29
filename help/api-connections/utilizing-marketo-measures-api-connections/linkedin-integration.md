@@ -1,10 +1,10 @@
 ---
 unique-page-id: 35586080
-description: linkedIn整合 —  [!DNL Marketo Measure]  — 產品檔案
+description: linkedIn整合 —  [!DNL Marketo Measure]
 title: linkedIn整合
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
 source-wordcount: '2644'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Lead Gen Forms：透過與LinkedIn的Lead Gen Forms整合，Marketo Measure可�
 
 瞭解更多： [linkedIn頁面管理員角色](https://www.linkedin.com/help/linkedin/answer/4783/linkedin-page-admin-roles-overview).
 
-還有其他的 [!DNL LinkedIn] 我們執行的角色 **非** 需要我們的整合。 這些角色經常被誤認為必要的角色，所以請注意，它們之間有所差異！
+還有其他的 [!DNL LinkedIn] 我們執行的角色 **非** 需要我們的整合。 這些角色經常被誤認為必要的角色，因此請注意，它們是有區別的！
 
 **頁面管理員角色**
 
@@ -147,7 +147,7 @@ linkedIn表單可能包含多個電子郵件地址。 下載表單回應時，�
 
 **在CRM或Marketo中追蹤銷售機會總成Forms**
 
-早於 [!DNL Marketo Measure] linkedIn Lead Gen Forms整合已經存在，客戶通常會將表單提交推送至Marketo方案及/或CRM Campaign，以追蹤表單並接收這些活動的歸因。 啟用Lead Gen Forms設定後，我們希望確保這些表單提交不會重複計算。 請檢查下列專案：
+早於 [!DNL Marketo Measure] linkedIn Lead Gen Forms整合已經存在，客戶通常會將表單提交推送至Marketo方案及/或CRM Campaign，以追蹤表單並接收這些活動的歸因。 啟用Lead Gen Forms設定後，我們希望確保這些表單提交不會重複計算。 檢查下列專案：
 
 * CRM物件上的「啟用購買者接觸點」欄位設為「無」或「排除所有促銷活動成員」
 * 更新任何相關的Marketo計畫或Marketo活動規則
@@ -159,7 +159,7 @@ linkedIn表單可能包含多個電子郵件地址。 下載表單回應時，�
 
 ## 接觸點詳細資訊 {#touchpoint-details}
 
-一次 [!DNL Marketo Measure] 已成功在LinkedIn creative上標籤您的登陸頁面，您將能夠在接觸點上檢視已解決的廣告資料。 以下是您應會看到的資料值對應：
+晚於 [!DNL Marketo Measure] 已成功在LinkedIn creative上標籤您的登陸頁面，您可以在接觸點上檢視已解析的廣告資料。 以下是您應會看到的資料值對應：
 
 <table> 
  <colgroup> 
@@ -328,7 +328,7 @@ linkedIn要求所有已建立或修改的廣告在張貼前都必須通過正常
 
 **如何知道我的創意是否會複製？ 我是否可檢視我的創意人員是否使用相同的共用？**
 
-中未提供共用ID [!DNL LinkedIn] 因此，沒有明確且顯而易見的方式可檢查創意分享對應。 如果您懷疑某創意內容可能是復本，您可以從內開啟廣告以手動檢查 [!DNL LinkedIn] 行銷活動管理員 — 這會在新標籤中開啟廣告，而您可以在URL中找到共用ID。
+中未提供共用ID [!DNL LinkedIn] 因此，沒有明確且顯而易見的方式可檢查創意分享對應。 如果您懷疑某創意內容可能是復本，您可以從內開啟廣告以手動檢查 [!DNL LinkedIn] 促銷活動管理員 — 這會在新標籤中開啟廣告，您可以在URL中找到共用ID。
 
 ![](assets/six.png)
 

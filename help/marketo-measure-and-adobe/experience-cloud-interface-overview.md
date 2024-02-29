@@ -1,11 +1,11 @@
 ---
-description: Adobe Experience Cloud介面概觀 —  [!DNL Marketo Measure]  — 產品檔案
+description: Adobe Experience Cloud介面概觀 —  [!DNL Marketo Measure]
 title: Adobe Experience Cloud介面概觀
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 ## 新功能 {#new-features}
 
-除了已更新的外觀和風格，您還會注意到以下功能：
+除了已更新的外觀和風格，請注意下列功能：
 
 **網域管理**
 
@@ -44,7 +44,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 **應用程式切換器**
 
-擁有多個Adobe產品存取權的使用者，將可輕鬆地在兩者之間切換。
+擁有多個Adobe產品存取權的使用者可在兩者之間輕鬆切換。
 
 ![](assets/unified-shell-overview-7.png)
 
@@ -58,7 +58,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 **Adobe設定**
 
-按一下您的個人資料圖示以變更您的語言或其他全Adobe偏好設定。 您也可以 [!DNL Marketo Measure] — 特定變更，按一下 **我的設定**.
+若要變更您的語言或其他全Adobe偏好設定，請按一下您的設定檔圖示。 您也可以 [!DNL Marketo Measure] — 特定變更，按一下 **我的設定**.
 
 ![](assets/unified-shell-overview-10.png)
 
@@ -66,7 +66,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 **我的書籤有什麼改變？**
 
-書籤將會被重新導向。 例如，如果您要導覽至https://apps.marketo-measure.com/Discover/391 ，您將在完成驗證後重新導向至https://experience.adobe.com/marketo-measure/Discover/391 。
+書籤會被重新導向。 例如，如果您要導覽至https://apps.marketo-measure.com/Discover/391 ，您將在完成驗證後重新導向至https://experience.adobe.com/marketo-measure/Discover/391 。
 
 **我無法登入 [!DNL Marketo Measure] 透過Experience Cloud介面。 可能有哪些問題？**
 
@@ -74,4 +74,4 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 ![](assets/unified-shell-overview-11.png)
 
-如果您收到上述錯誤，請 [聯絡支援人員](https://nation.marketo.com/t5/support/ct-p/Support) 以取得協助。
+如果您收到上述錯誤， [聯絡支援人員](https://nation.marketo.com/t5/support/ct-p/Support) 以取得協助。

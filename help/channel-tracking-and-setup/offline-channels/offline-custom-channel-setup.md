@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874598
-description: 離線自訂頻道設定 —  [!DNL Marketo Measure]  — 產品檔案
+description: 離線自訂頻道設定 —  [!DNL Marketo Measure]
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---

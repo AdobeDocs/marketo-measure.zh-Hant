@@ -4,16 +4,16 @@ description: PostLC接觸點和Lead Engagement - Marketo Measure — 產品檔�
 title: PostLC接觸點與潛在客戶參與
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # PostLC接觸點與潛在客戶參與 {#postlc-touchpoints-and-lead-engagement}
 
-[!DNL Marketo Measure] 潛在客戶建立後(PostLC)接觸點適用於使用多重接觸歸因模型（W-Shape及更新版本）的客戶。 當銷售機會或聯絡人返回您的網站並繼續填寫表單時，這些表單提交將註冊為PostLC接觸點。 這些接觸點可讓您檢視哪些內容推動Lead在首次轉換很久之後繼續參與您的網站。 PostLC接觸點與Opportunity內的所有中介接觸點共用歸因評分；10%的歸因評分會分配給中介接觸點，並在所有接觸之間平均分配。
+[!DNL Marketo Measure] 潛在客戶建立後(PostLC)接觸點適用於使用多重接觸歸因模型（W-Shape及更新版本）的客戶。 當銷售機會或聯絡人返回您的網站並繼續填寫表單時，這些表單提交將註冊為PostLC接觸點。 這些接觸點可讓您檢視哪些內容推動Lead在首次轉換很久之後繼續參與您的網站。 PostLC接觸點與Opportunity內的所有中介接觸點分享歸因評分；10%的歸因評分會分配給中介接觸點，並在所有接觸之間平均分配。
 
 ![](assets/1.png)
 

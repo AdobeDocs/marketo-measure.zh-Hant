@@ -1,11 +1,11 @@
 ---
-description: 階段對應的最佳實務 —  [!DNL Marketo Measure]  — 產品檔案
+description: 階段對應的最佳實務 —  [!DNL Marketo Measure]
 title: 階段對應的最佳實務
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---

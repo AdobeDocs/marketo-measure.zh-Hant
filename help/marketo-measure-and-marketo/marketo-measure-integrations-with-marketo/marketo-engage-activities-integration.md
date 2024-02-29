@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762749
-description: '"[!DNL Marketo Engage] 活動整合 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Engage] 活動整合 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 活動整合」'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ SFDC活動(26)\
 
 ## 頻道對應 {#channel-mapping}
 
-若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用「方案頻道」來對應到您的自訂離線頻道，因此您需要確定您的頻道已正確設定 [如這裡指示](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
+若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您將需要確定您的頻道已正確設定 [如這裡指示](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
 
 對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您的自訂線上頻道 [已在此處佈局](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 

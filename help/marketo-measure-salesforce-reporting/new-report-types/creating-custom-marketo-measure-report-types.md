@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874539
-description: 建立自訂 [!DNL Marketo Measure] 報表型別 —  [!DNL Marketo Measure]  — 產品檔案
+description: 建立自訂 [!DNL Marketo Measure] 報表型別 —  [!DNL Marketo Measure]
 title: 建立自訂 [!DNL Marketo Measure] 報表型別
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 1. 定義自訂報表型別。
 
-   * [!UICONTROL Report Type Focus] > [!UICONTROL Primary Object]: 機會
+   * [!UICONTROL Report Type Focus] > [!UICONTROL Primary Object]：機會
    * [!UICONTROL Identification] > [!UICONTROL Report Type Label]：有購買者歸因接觸點的機會（自訂）
    * [!UICONTROL Store in Category]：其他報表
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]：已部署
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 ## 新增自訂欄位至自訂報表型別 {#adding-custom-fields-to-custom-report-types}
 
-1. 建立報告後，您將被重新導向至報告型別的概觀。 按一下 **[!UICONTROL Edit Layout]**.
+1. 建立報表後，您將被重新導向至報表型別的概觀。 按一下 **[!UICONTROL Edit Layout]**.
 
    ![](assets/10.png)
 

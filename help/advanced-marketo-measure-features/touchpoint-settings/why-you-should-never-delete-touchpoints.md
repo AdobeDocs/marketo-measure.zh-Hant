@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874560
-description: 為何您絕不應該刪除接觸點 —  [!DNL Marketo Measure]  — 產品檔案
+description: 為何您絕不應該刪除接觸點 —  [!DNL Marketo Measure]
 title: 為何您絕不應該刪除接觸點
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ![](assets/1.png)
 
-如果接觸點已從SFDC刪除，請連絡 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以請求重新匯入您的資料。
+如果接觸點已從SFDC刪除，請聯絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以請求重新匯入您的資料。

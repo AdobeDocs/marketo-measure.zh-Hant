@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37355835
-description: 接觸點欄位 —  [!DNL Marketo Measure]  — 產品檔案
+description: 接觸點欄位 —  [!DNL Marketo Measure]
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ ht-degree: 0%
 * 建立計算欄位並加上標籤「Region_Name」
 * 從搜尋擷取的欄位開始，以定義規則。 在這種情況下， [!DNL Touchpoint.Region]
 * 使用運運算元&quot;[!UICONTROL maps to]」因為我們想要為每個數字建立與其值的對應
-* 您將看到一個表格以列出每個對應。 最後，看起來會像這樣：
+* 您會看到一個表格，其中列出每個對應。 最後，看起來會像這樣：
 * 根據對應和上述URL，使用此登陸頁面的接觸點「Region_Value」將是「EMEA」
 * 對其餘4組數字重複擷取和對應
 
@@ -213,7 +213,7 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 
 **使用哪個運算式從單一登陸頁面擷取多個引數？**
 
-就像在擷取範例#4位中一樣，您將需要建立多個欄位來擷取每個引數。 因此，如果您有五個不同的值，您將建立五個接觸點欄位來擷取每個值。
+就像在擷取範例#4位中一樣，您需要建立多個欄位來擷取每個引數。 因此，如果您有五個不同的值，您將建立五個接觸點欄位來擷取每個值。
 
 **為什麼我在「 」中看不到新欄位 [!DNL Marketo Measure] 綱要？**
 

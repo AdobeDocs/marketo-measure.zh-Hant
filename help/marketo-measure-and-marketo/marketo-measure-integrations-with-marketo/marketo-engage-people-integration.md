@@ -1,19 +1,19 @@
 ---
 unique-page-id: 37356395
-description: '"[!DNL Marketo Engage] 人員整合 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Engage] 人員整合 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] People整合」'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '867'
+ht-degree: 1%
 
 ---
 
 # [!DNL Marketo Engage] People整合 {#marketo-engage-people-integration}
 
-Marketo人員整合允許 [!DNL Marketo Measure] 開始從Marketo下載人員，並開始將他們的追蹤工作階段連結至個人，並將接觸點對應至他們的參與。 歷史上， [!DNL Marketo Measure] 只能將接觸點對應至CRM中的人員，因此這有助於行銷人員更早衡量其行銷成效，而非等待階段或觸發器將其同步至CRM。
+Marketo人員整合允許 [!DNL Marketo Measure] 開始從Marketo下載人員，並開始將他們的追蹤工作階段連結至個人，並將接觸點對應至他們的參與。 歷史上， [!DNL Marketo Measure] 只能將接觸點對應至CRM中的人員，因此這有助於行銷人員更早衡量其行銷成效，而非等候階段或觸發器將其同步至CRM。
 
 ## 需求 {#requirements}
 
@@ -40,7 +40,7 @@ Marketo人員整合允許 [!DNL Marketo Measure] 開始從Marketo下載人員，
 
 ## [!DNL Marketo Measure Discover] {#marketo-measure-discover}
 
-報告中的銷售機會（人員）時 [!DNL Marketo Measure Discover]，您就會看到Marketo和CRM潛在客戶的總數。 若要僅報告Marketo人員或CRM銷售機會，請為來源建立區段類別，然後使用「來源系統」欄位來定義規則，為Marketo和CRM建立區段規則。 建立區段後，您會看到「來源」類別可供篩選 [!DNL Marketo Measure Discover] 控制面板。
+報告中的銷售機會（人員）時 [!DNL Marketo Measure Discover]，您就會看到Marketo和CRM潛在客戶的總數。 為了僅報告Marketo人員或CRM銷售機會，您將想要為來源建立區段類別，然後使用「來源系統」欄位來定義規則，為Marketo和CRM建立區段規則。 建立區段後，您會看到可在您的欄位中篩選的來源類別 [!DNL Marketo Measure Discover] 控制面板。
 
 ![](assets/bizible-discover-1.png)
 
@@ -71,7 +71,7 @@ Marketo人員整合允許 [!DNL Marketo Measure] 開始從Marketo下載人員，
    <td><p>createdAt</p></td> 
   </tr> 
   <tr> 
-   <td><p>電子郵件</p></td> 
+   <td><p>EMAIL</p></td> 
    <td><p>電子郵件</p></td> 
   </tr> 
   <tr> 

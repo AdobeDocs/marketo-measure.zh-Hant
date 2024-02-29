@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874634
-description: 我的報告中的重複記錄 —  [!DNL Marketo Measure]  — 產品檔案
+description: 我的報告中的重複記錄 —  [!DNL Marketo Measure]
 title: 我的報告中的重複記錄
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---

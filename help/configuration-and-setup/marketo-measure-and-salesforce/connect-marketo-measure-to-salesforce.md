@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874580
-description: 將Marketo Measure連線至Salesforce - [!DNL Marketo Measure]  — 產品檔案
+description: 將Marketo Measure連線至Salesforce - [!DNL Marketo Measure]
 title: 將Marketo Measure連線至Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 feature: Salesforce
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
    ![](assets/connect-marketo-measure-to-salesforce-2.png)
 
-1. 系統會顯示快顯視窗，要求您選取CRM連線。 按一下 **[!UICONTROL Connect]** 按鈕旁的 [!DNL Salesforce] 標誌。
+1. 系統會顯示一個快顯視窗，要求您選取CRM連線。 按一下 **[!UICONTROL Connect]** 在 [!DNL Salesforce] 標誌。
 
    ![](assets/connect-marketo-measure-to-salesforce-3.png)
 
-1. 最後快顯視窗隨即出現，詢問您的 [!DNL Salesforce] 認證、沙箱或生產。 輸入您的資訊，然後按一下 **[!UICONTROL Authorize]** 將帳戶連線至 [!DNL Marketo Measure].
+1. 最後快顯視窗隨即出現，詢問您您的 [!DNL Salesforce] 認證、沙箱或生產。 輸入您的資訊，然後按一下 **[!UICONTROL Authorize]** 將帳戶連線至 [!DNL Marketo Measure].
 
 >[!NOTE]
 >
@@ -41,11 +41,11 @@ ht-degree: 0%
 >
 >* A [!DNL Marketo Measure] 執行個體可以連線至SFDC沙箱執行個體，以便在將連線切換至您的SFDC生產執行個體之前測試整合。
 >* 如果您先使用SFDC沙箱進行測試，我們強烈建議您使用SFDC生產執行個體的精確復本進行測試，其包含潛在客戶、連絡人、帳戶、商機、促銷活動及Case物件上的欄位。 如果您的生產中有任何作用中的APEX觸發器會觸發Lead、Contact、Account、Opportunity、Campaign和Case物件的更新，您應該嘗試將它們置於沙箱中作用中。
->* 完成測試後，您將會更新 [!DNL Marketo Measure] 指向生產環境的帳戶 [!DNL Salesforce] （而非沙箱） [!DNL Salesforce])。 由於整合的建置方式，只要一次 [!DNL Marketo Measure] 帳戶已連線至生產環境 [!DNL Salesforce]，您不能「後退」並連線至沙箱 [!DNL Salesforce] 組織
+>* 完成測試後，請更新 [!DNL Marketo Measure] 指向生產環境的帳戶 [!DNL Salesforce] （而非沙箱） [!DNL Salesforce])。 由於整合的建置方式，只要一次 [!DNL Marketo Measure] 帳戶已連線至生產環境 [!DNL Salesforce]，您不能「後退」並連線至沙箱 [!DNL Salesforce] 組織
 
 ## API積分使用情況 {#api-credits-usage}
 
-Marketo Measure採用CRM整合工作，透過整合使用者與客戶的Salesforce介面。 透過此使用者進行的所有資料交換都會利用Salesforce API積分。 您有能力將評分配額分配給整合使用者，這會用來規管過度的API呼叫。 此配額或限制每24小時重設一次。
+Marketo Measure採用CRM整合工作，透過整合使用者與客戶的Salesforce介面。 透過此使用者進行的所有資料交換都使用Salesforce API積分。 您有能力將評分配額分配給整合使用者，這會用來規管過度的API呼叫。 此配額或限制每24小時重設一次。
 
 您可以在Marketo Measure中透過以下方式存取此限制： **我的帳戶** > **設定** > **CRM** > **一般** > **每日CRM API限制**，並可為租使用者設定。
 
@@ -55,7 +55,7 @@ Marketo Measure採用CRM整合工作，透過整合使用者與客戶的Salesfor
 
 1. 瀏覽至 **我的帳戶** > **設定**.
 
-1. 在CRM底下，按一下 **一般**. 您將會看到 **每日CRM API限制** 選項。
+1. 在CRM底下，按一下 **一般**. 您會看到 **每日CRM API限制** 選項。
 
 1. 按一下「鎖定」圖示以進行編輯。
 

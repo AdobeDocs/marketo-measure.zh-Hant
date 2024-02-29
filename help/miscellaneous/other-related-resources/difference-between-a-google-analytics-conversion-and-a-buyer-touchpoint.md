@@ -1,10 +1,10 @@
 ---
 unique-page-id: 18874648
-description: Google Analytics轉換與購買者接觸點之間的差異 —  [!DNL Marketo Measure]  — 產品檔案
+description: Google Analytics轉換與購買者接觸點之間的差異 —  [!DNL Marketo Measure]
 title: Google Analytics轉換與購買者接觸點之間的差異
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
    <td>已載入5個頁面或熒幕</td> 
   </tr> 
   <tr> 
-   <td>Event</td> 
+   <td>事件</td> 
    <td>定義為事件的動作會觸發</td> 
    <td>社交推薦、視訊播放、廣告點選</td> 
   </tr> 

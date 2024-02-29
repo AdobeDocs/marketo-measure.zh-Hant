@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874686
-description: 多種行銷活動記錄型別的設定 —  [!DNL Marketo Measure]  — 產品檔案
+description: 多種行銷活動記錄型別的設定 —  [!DNL Marketo Measure]
 title: 多種行銷活動記錄型別的設定
 exl-id: 10499556-a591-4630-9149-ae676e6494af
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874606
-description: UTM引數 —  [!DNL Marketo Measure]  — 產品檔案
+description: UTM引數 —  [!DNL Marketo Measure]
 title: UTM引數
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 標籤URL是擷取數位行銷工作相關資料的簡單有效方式。 是將引數新增至收集及記錄資料之URL結尾的程式。 最常使用的引數是Google支援的Urchin追蹤模組(UTM)。 可用的主要UTM引數有五個：媒體、來源、促銷活動、內容和詞語。 下一節將更詳細地討論這些內容。
 
-UTM引數可以手動新增至URL，或透過特定平台（例如AdWords）的自動標籤進行附加。 自動標籤會自動執行將引數附加至URL的程式。 還有一個選項 [URL建置器](https://ga-dev-tools.appspot.com/campaign-url-builder/){target="_blank"} 以手動加速標籤URL。 使用URL產生器時，您只需要指定要用於每個引數的值，產生器就會為您設定URL格式。
+UTM引數可以手動新增至URL，或透過特定平台（例如AdWords ）的自動標籤進行附加。 自動標籤會自動執行將引數附加至URL的程式。 還有一個選項 [URL建置器](https://ga-dev-tools.web.app/campaign-url-builder/){target="_blank"} 以手動加速標籤URL。 使用URL產生器時，您只需指定要用於每個引數的值，產生器就會格式化您的URL。
 
 ## 什麼是UTM引數？ {#what-are-utm-parameters}
 
@@ -27,7 +27,7 @@ UTM引數可以手動新增至URL，或透過特定平台（例如AdWords）的�
 
 `http://www.adobe.com?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
 
-如您所見，第二個連結包含更多文字。 UTM引數一律位於最上層網域（此範例中為.com）後面，並以問號開頭。 之後，引數的順序並不重要，但建議遵循一致的命名慣例。 必須在每個引數之間放置&amp;符號，以分隔每個UTM。 現在，我們可以更詳細地瞭解每個引數代表什麼。
+第二個連結包含更多文字。 UTM引數一律位於最上層網域（此範例中為.com）後面，並以問號開頭。 之後，引數的順序並不重要，但建議遵循一致的命名慣例。 必須在每個引數之間放置&amp;符號，以分隔每個UTM。 現在，我們可以更詳細地瞭解每個引數代表什麼。
 
 瞭解 [設定UTM引數的最佳實務](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md).
 
@@ -48,7 +48,7 @@ UTM引數可以手動新增至URL，或透過特定平台（例如AdWords）的�
    * 在此範例中， [!DNL Facebook] 是來源值。 其他範例為Twitter和Instagram。 如果UTM媒體為 [!DNL Paid Search]，另一方面，UTM來源可以是AdWords或BingAds。
 
 * 此引數對應至 [!DNL Marketo Measure] SFDC中的「接觸點來源」欄位。
-* _[!DNL Marketo Measure]最佳實務：_ 此引數會追蹤您流量的來源，因此不適宜用來指出廣告型別，例如重新目標定位、贊助等。 它最適合用於追蹤較高層級的子管道。 請記住，您回答的問題為「我的流量來自何處？」 您在尋找反向連結。 在此範例中，UTM來源是廣告所在的位置（而非實際網頁，因為系統會自動在標籤外部追蹤該網頁）。 如果您追蹤的是滴答式電子郵件行銷活動，則滴答式電子郵件為來源。
+* _[!DNL Marketo Measure]最佳實務：_ 此引數會追蹤流量的來源，因此不適用來指示廣告型別，例如重新目標定位、贊助等。 它最好用於追蹤較高層級的子管道。 請記住，您回答的問題為「我的流量來自何處？」 您在尋找反向連結。 在此範例中，UTM來源是廣告所在的位置（而非實際網頁，因為系統會自動在標籤外部追蹤該網頁）。 如果您追蹤的是滴答式電子郵件行銷活動，則滴答式電子郵件為來源。
 
 **utm_campaign**
 

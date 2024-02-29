@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37357059
-description: OAuth與 [!DNL Azure Active Directory] 適用於Dynamics CRM - [!DNL Marketo Measure]  — 產品檔案
+description: OAuth與 [!DNL Azure Active Directory] 適用於Dynamics CRM - [!DNL Marketo Measure]
 title: OAuth與 [!DNL Azure Active Directory] 適用於Dynamics CRM
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---

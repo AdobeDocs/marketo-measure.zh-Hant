@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874680
-description: '"[!DNL Facebook] API - [!DNL Marketo Measure]  — 產品檔案」'
-title: "[!DNL Facebook] API"
+description: "[!DNL Facebook] API - [!DNL Marketo Measure]"
+title: '"[!DNL Facebook] API」'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 啟用整合後， [!DNL Marketo Measure] 將開始將廣告層級成本下載至 [!DNL Marketo Measure Marketing ROI] 控制面板。
 
-為了讓整合正常運作，您需要在您的電腦上啟用自動標籤 [!DNL Facebook] 帳戶。 這可讓我們的系統在所有廣告連結上新增_bf引數。 此程式會將新引數新增至您已新增至的任何其他追蹤引數之上 [!DNL Facebook] 廣告。
+為了讓整合正常運作，您必須在您的上啟用自動標籤 [!DNL Facebook] 帳戶。 這可讓我們的系統在所有廣告連結上新增_bf引數。 此程式會將新引數新增至您已新增至的任何其他追蹤引數之上 [!DNL Facebook] 廣告。
 
 ![](assets/3.gif)
 
@@ -120,7 +120,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td><p>Account_Unique_ID (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook] 帳戶 #]</p></td> 
+   <td><p>[[!DNL Facebook] 帳戶#]</p></td> 
   </tr> 
   <tr> 
    <td><p>Account_Name (Data Warehouse)</p></td> 

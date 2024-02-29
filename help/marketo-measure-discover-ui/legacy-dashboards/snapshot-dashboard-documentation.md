@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762600
-description: 快照儀表板檔案 —  [!DNL Marketo Measure]  — 產品檔案
+description: 快照儀表板檔案 —  [!DNL Marketo Measure]
 title: 快照儀表板檔案
 exl-id: 4dfc92d2-ccab-4726-a869-3ae32aa89a5f
 feature: Reporting
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---

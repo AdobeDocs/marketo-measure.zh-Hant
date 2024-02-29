@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874793
-description: 使用自訂收入金額欄位 —  [!DNL Marketo Measure]  — 產品檔案
+description: 使用自訂收入金額欄位 —  [!DNL Marketo Measure]
 title: 使用自訂收入金額欄位
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -100,10 +100,10 @@ ht-degree: 0%
 
    ![](assets/using-a-custom-revenue-amount-field-15.png)
 
-1. 系統會將您帶回工作流程的彙總頁面，請確定「啟動」，然後您就可以開始使用了。 若要啟動，請按一下 **[!UICONTROL Edit]** ，然後按一下 **[!UICONTROL Activate]**.
+1. 系統會將您帶回工作流程的彙總頁面，請務必選取「啟動」，然後您就可以開始使用了。 若要啟動，請按一下 **[!UICONTROL Edit]** ，然後按一下 **[!UICONTROL Activate]**.
 
    完成這些步驟後，將必須更新機會，才能觸發工作流程以從取得新值 [!UICONTROL custom opportunity] 欄位。
 
-   您可以透過SFDC內的Data Loader執行您的機會，來達成此目標。 請尋找在中使用資料載入器的詳細資訊 [本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
+   您可以透過SFDC內的Data Loader執行您的機會，來達成此目標。 尋找有關在中使用資料載入器的詳細資訊 [本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
 
 如果過程中有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或 [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

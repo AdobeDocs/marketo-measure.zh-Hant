@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874578
-description: 行銷活動和行銷活動成員 —  [!DNL Marketo Measure]  — 產品檔案
+description: 行銷活動和行銷活動成員 —  [!DNL Marketo Measure]
 title: 行銷活動和行銷活動成員
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-source-git-commit: 38c721d10ac33ae85da1d425b6af53b9e3dfd0a1
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 * 僅包括「已回應」行銷活動成員 — 只有行銷活動成員狀態為「已回應」的潛在客戶或聯絡人會收到與該行銷活動相關聯的接觸點。
 * 排除所有行銷活動成員 — 沒有潛在客戶或聯絡人會收到與該行銷活動相關聯的接觸點。
 
-請注意，行銷活動會員必須擁有與其記錄相關聯的電子郵件地址，才能使用 [!DNL Marketo Measure] 以建立接觸點。 如果沒有電子郵件地址， [!DNL Marketo Measure] 不會將接觸點指派給行銷活動成員。
+請注意，行銷活動成員必須擁有與其記錄相關聯的電子郵件地址，才能 [!DNL Marketo Measure] 以建立接觸點。 如果沒有電子郵件地址， [!DNL Marketo Measure] 不會將接觸點指派給行銷活動成員。
 
 ## Campaign同步日期 {#campaign-sync-dates}
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 接觸點結束日期的使用案例 {#use-case-for-touchpoint-end-date}
 
-如果在使用之前 [!DNL Marketo Measure]，您使用行銷自動化平台來追蹤銷售機會的數位互動（IE表單提交），然後將這些銷售機會上傳至 [!DNL Saleforce] 促銷活動，您可以利用接觸點結束日期欄位。 您會使用將接觸點結束日期設定為開始日期 [!DNL Marketo Measure] 並啟用「購買者接觸點」，則每個銷售機會的數位互動都會建立為接觸點。 您使用將接觸點結束日期設定為開始日期的原因 [!DNL Marketo Measure] 這是因為，往後，我們會透過javascript追蹤這些數位互動。
+如果在使用之前 [!DNL Marketo Measure]，您使用行銷自動化平台來追蹤銷售機會的數位互動（IE表單提交），然後將這些銷售機會上傳至 [!DNL Saleforce] 促銷活動，您可以使用接觸點結束日期欄位。 您會使用將接觸點結束日期設定為開始日期 [!DNL Marketo Measure] 並啟用「購買者接觸點」，則每個銷售機會的數位互動都會建立為接觸點。 您使用將接觸點結束日期設定為開始日期的原因 [!DNL Marketo Measure] 這是因為，往後，我們會透過javascript追蹤這些數位互動。
 
 ![](assets/3.png)
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874652
-description: '"[!DNL Marketo Measure] 透過歸因常見問題集進行檢視 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] 透過歸因常見問題集進行檢視 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 瀏覽歸因常見問題集」'
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---

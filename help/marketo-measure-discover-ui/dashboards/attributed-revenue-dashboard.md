@@ -3,7 +3,7 @@ description: 已歸因的收入儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 已歸因的收入儀表板
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 顯示每個月/季/年總歸因收入（依管道分段）的棧疊長條圖。
 
-* 運用向下鑽研和向上鑽研功能，依月、季或年對資料進行分類。
+* 使用向下鑽研和向上功能來依月、季或年分類資料。
 * 將滑鼠指標暫留在長條圖區段或長條圖之間的空白處，即可顯示詳細資訊。
 
 **圖表回答的問題：**

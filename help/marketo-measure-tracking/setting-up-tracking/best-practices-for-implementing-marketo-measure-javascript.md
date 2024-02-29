@@ -1,11 +1,11 @@
 ---
-description: 實作的最佳作法 [!DNL Marketo Measure] JavaScript - [!DNL Marketo Measure]  — 產品檔案
+description: 實作的最佳作法 [!DNL Marketo Measure] JavaScript - [!DNL Marketo Measure]
 title: 實作的最佳作法 [!DNL Marketo Measure] JavaScript
 exl-id: 0359ad27-81e8-4902-a23a-49a5646a44d0
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 實作及管理您的 [!DNL Marketo Measure] JavaScript，請記住以下最佳實務。
 
 * 確認您的所有網域都列在中 [!DNL Marketo Measure] 帳戶
-   * 如果您對網域有任何疑慮，請聯絡支援人員
+   * 如果您對網域有任何疑慮，請聯絡支援服務
 * 在所有頁面上部署JavaScript。
    * 僅將JavaScript放在某些頁面上會導致工作階段資料中斷，進而導致不正確 [!DNL Marketo Measure] 資料
 * 對於您網站上不想從中建立接觸點的表單，請務必新增 [!DNL Marketo Measure] 排除指令碼

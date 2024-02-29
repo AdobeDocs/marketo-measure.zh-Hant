@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874767
-description: 設定回力艙階段 —  [!DNL Marketo Measure]  — 產品檔案
+description: 設定回力艙階段 —  [!DNL Marketo Measure]
 title: 設定回車族階段
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能僅針對第3級客戶啟用。 若要要求更高的帳戶層級，請聯絡Adobe帳戶團隊（您的帳戶經理）。
+>Boomerang功能僅針對第3級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
 
-若要啟用 [!UICONTROL Boomerang] 您的帳戶階段，您必須是帳戶管理員。 或者，您也可以透過連絡以啟用 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. 啟用此功能後，請依照這些指示進行設定。
+若要啟用 [!UICONTROL Boomerang] 您的帳戶階段，您必須是帳戶管理員。 或者，您也可以透過連絡以啟用 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. 啟用功能後，請依照這些指示進行設定。
 
 ## 迴旋鏢階段設定 {#boomerang-stage-setup}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >請允許24到48小時根據這些變更重新處理您的資料。
+   >允許24到48小時根據這些變更重新處理您的資料。
 
 ## 使用自訂模型歸因的Boomerang階段設定 {#boomerang-stage-setup-with-custom-model-attribution}
 
@@ -53,10 +53,10 @@ ht-degree: 0%
 
    ![](assets/6-1.png)
 
-1. 設定歸因百分比，您要將其配置給已納入自訂模型中的「回車族階段」 。 請確定所有階段的歸因總數為100%。 按一下 **[!UICONTROL Save and Process]**.
+1. 設定歸因百分比，您要將其配置給已納入自訂模型中的「回車族階段」 。 確定所有階段的歸因總數為100%。 按一下 **[!UICONTROL Save and Process]**.
 
    ![](assets/7-1.png)
 
    >[!NOTE]
    >
-   >請允許24到48小時根據這些變更重新處理您的資料。
+   >允許24到48小時根據這些變更重新處理您的資料。

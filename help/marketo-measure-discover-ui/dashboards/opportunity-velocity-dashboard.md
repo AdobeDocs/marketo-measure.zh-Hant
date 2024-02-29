@@ -2,7 +2,7 @@
 description: 機會Velocity控制面板 —  [!DNL Marketo Measure]  — 產品
 title: 機會Velocity控制面板
 feature: Reporting
-source-git-commit: 35d2dfb0e2b3e0d04c942312fe9c83863064e3f4
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Velocity儀表板可動態檢視潛在客戶在銷售漏斗中的移動速度，
 
 時間序列折線圖會顯示指定時間範圍內每個銷售階段所花費的平均時間（以天為單位）。
 
-* 運用向下鑽研和向上鑽研功能，依月、季或年對資料進行分類。
+* 使用向下鑽研和向上功能來依月、季或年分類資料。
 * 將滑鼠指標暫留線上上以顯示詳細資訊。
 
 圖表回答的問題：

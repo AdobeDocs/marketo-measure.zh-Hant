@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874610
-description: Dynamics行銷活動和行銷清單 —  [!DNL Marketo Measure]  — 產品檔案
+description: Dynamics行銷活動和行銷清單 —  [!DNL Marketo Measure]
 title: Dynamics行銷活動和行銷清單
 exl-id: 7b3d4032-5edf-489d-b86b-1e2a5755b258
 feature: Microsoft Dynamics
-source-git-commit: 38c721d10ac33ae85da1d425b6af53b9e3dfd0a1
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,4 @@ Dynamics客戶無法使用此功能
 
 **我們可以在行銷活動中使用行銷活動回應和行銷清單嗎？**
 
-有。
+是。

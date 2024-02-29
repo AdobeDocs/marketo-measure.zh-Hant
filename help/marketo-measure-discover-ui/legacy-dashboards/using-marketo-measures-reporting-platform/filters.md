@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874656
-description: 篩選器 —  [!DNL Marketo Measure]  — 產品檔案
+description: 篩選器 —  [!DNL Marketo Measure]
 title: 篩選器
 exl-id: 249266c8-9ff5-4895-979c-4f377423d031
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ _用於：概述、成長、廣告ROI、CMO、付費媒體、內容行銷、Velo
 
 使用您在中建立的類別和區段，將區段篩選器套用至展示板 [!DNL Marketo Measure] 設定。 您建立的類別清單會顯示在篩選功能表中，因此如果尚未設定類別，功能表中就不會有類別篩選器。 並非所有層級都提供「區段類別」，而可用類別數量也因層級而異。
 
-**管道**
+**頻道**
 
 _用於：概述、成長、行銷支出、廣告ROI、網路流量、CMO、付費媒體、內容行銷、Velocity、Passport_
 
@@ -73,7 +73,7 @@ _用於：概述、成長、行銷支出、廣告ROI、帳戶型行銷、網路�
 
 選擇您要使用的日期型別，繫結至日期篩選器。 預設日期型別會因主機板而異。 「接觸點日期」是指行銷活動發生的日期，「建立日期」是潛在客戶或聯絡人或商機在CRM中建立的日期，「關閉日期」是商機的關閉日期。
 
-**維度**
+**Dimension**
 
 _使用位置：付費媒體_
 

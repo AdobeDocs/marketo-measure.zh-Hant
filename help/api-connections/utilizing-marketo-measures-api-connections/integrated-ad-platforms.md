@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874594
-description: 整合式廣告平台 —  [!DNL Marketo Measure]  — 產品檔案
+description: 整合式廣告平台 —  [!DNL Marketo Measure]
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ## 如何啟用 [!DNL Marketo Measure] Adwords的自動標籤 {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
-啟用前 [!DNL Marketo Measure] 自動標籤， **請確定您已在Adwords帳戶中的帳戶、行銷活動或廣告群組層級啟用追蹤範本。 此為任何Adwords帳戶的要求，該帳戶將會 [!DNL Marketo Measure] 已啟用自動標籤。** 啟用追蹤範本可防止廣告效益歷史記錄資料發生任何遺失。 請注意，在「關鍵字」、「網站連結」或「廣告」層級啟用追蹤範本，將會使廣告經過審查和核准程式，並可能重新啟動廣告的績效歷史記錄。 如果完全沒有啟用追蹤範本， [!DNL Marketo Measure] 將會附加 [!DNL Marketo Measure] 直接追蹤引數至廣告的「最終URL」，也可能會導致遺失廣告紀錄資料。
+啟用前 [!DNL Marketo Measure] 自動標籤， **確保已在Adwords帳戶中的帳戶、行銷活動或廣告群組層級啟用追蹤範本。 此為任何Adwords帳戶的要求，該帳戶將會 [!DNL Marketo Measure] 已啟用自動標籤。** 啟用追蹤範本可防止廣告效益歷史記錄資料發生任何遺失。 請注意，在「關鍵字」、「網站連結」或「廣告」層級啟用追蹤範本，將導致廣告經過稽核和核准程式，並可能重新啟動廣告的績效歷史記錄。 如果完全沒有啟用追蹤範本， [!DNL Marketo Measure] 將會附加 [!DNL Marketo Measure] 直接追蹤引數至廣告的「最終URL」，也可能會導致遺失廣告紀錄資料。
 
 設定好追蹤範本後，請依照下列指示啟用 [!DNL Marketo Measure] 自動標籤。 注意： [!DNL Marketo Measure] 也會在您的帳戶中自動標籤任何暫停的廣告。
 
@@ -133,7 +133,7 @@ Bing Ads的自動標籤也會新增下列自訂引數：
 
 請務必注意 [!DNL Bing Ads] 可讓您在最終URL中使用引數的自訂標籤，以取得更精細的粒度（如果您想要的話），進而新增更多引數。
 
-如有需要，可以使用追蹤範本，但並非必要 [!DNL Bing Ads] 和 [!DNL Marketo Measure] 以整合。 這是因為 [!DNL Bing] 允許在不變更歷史記錄的情況下編輯廣告，因此 [!DNL Marketo Measure] 能夠更新目的地URL。
+需要時可以使用追蹤範本，但並非必要 [!DNL Bing Ads] 和 [!DNL Marketo Measure] 以整合。 這是因為 [!DNL Bing] 允許在不變更歷史記錄的情況下編輯廣告，因此 [!DNL Marketo Measure] 能夠更新目的地URL。
 
 自動標籤應透過以下方式啟用： [!DNL Marketo Measure] 這樣自訂 [!DNL Marketo Measure] 引數可自動附加。 使用Bing Ads不會發生失去過去廣告績效歷史記錄的風險。
 
@@ -147,7 +147,7 @@ Bing Ads的自動標籤也會新增下列自訂引數：
 
 請注意，您可以連線至 [!DNL Facebook] 帳戶可隨時透過 [!DNL Marketo Measure] 不會遺失任何應用程式與資料，但只有在啟用自動標籤時，才會清除效能歷史記錄。
 
-[請參閱本文](https://www.facebook.com/business/help/393890194130036){target="_blank"} facebook以取得匯出的詳細資訊 [!DNL Facebook] 廣告報表。
+另請參閱 [本文](https://www.facebook.com/business/help/393890194130036){target="_blank"} facebook以取得匯出的詳細資訊 [!DNL Facebook] 廣告報表。
 
 ## linkedIn贊助內容 {#linkedin-sponsored-content}
 

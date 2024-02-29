@@ -1,11 +1,11 @@
 ---
-description: API連線的最佳作法 —  [!DNL Marketo Measure]  — 產品檔案
+description: API連線的最佳作法 —  [!DNL Marketo Measure]
 title: API連線的最佳作法
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 0%
 * 此人已不在公司
 * API的更新
 
-如果您的團隊經歷過上述任何情況，請在 [!DNL Marketo Measure] 應用程式以確定他們不需要重新授權。
+如果您的團隊經歷過上述任何情況，請在「 」中檢視您的API連線 [!DNL Marketo Measure] 應用程式以確定他們不需要重新授權。
 
 >[!MORELIKETHIS]
 >

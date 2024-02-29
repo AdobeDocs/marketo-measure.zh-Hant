@@ -4,9 +4,9 @@ description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Mark
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 互動
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 3be29892b58852cf080828e9eeff969ac08cc62b
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1263'
 ht-degree: 19%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 19%
 
 ## Salesforce和 [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-一旦 [!DNL Marketo Measure] 帳戶已建立且 [!DNL Salesforce] 已連線， [!DNL Marketo Measure] 只要符合下列條件，就會開始將行銷資料推送到CRM執行個體： [!DNL Marketo Measure] 已安裝Managed套件，且 [!DNL Marketo Measure] Salesforce使用者擁有編輯許可權。
+一旦 [!DNL Marketo Measure] 帳戶已建立且 [!DNL Salesforce] 已連線， [!DNL Marketo Measure] 開始推送行銷資料至CRM執行個體，只要 [!DNL Marketo Measure] 已安裝Managed套件，且 [!DNL Marketo Measure] Salesforce使用者擁有編輯許可權。
 
 如果您未安裝 [!DNL Marketo Measure] Salesforce套件， [!DNL Marketo Measure] 不會將任何資料寫入您的Salesforce執行個體。
 
@@ -31,11 +31,11 @@ ht-degree: 19%
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-修改此設定時，請牢記，較小的批次大小將使用來自CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時，才減少批次大小。
+修改此設定時，請記住，較小的批次大小會消耗您CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時，才減少批次大小。
 
 ## Salesforce標準物件與存取 {#salesforce-standard-objects-and-access}
 
-這會列出 [!DNL Salesforce] 符合以下條件的標準物件： [!DNL Marketo Measure] 會與互動，也會在建立連線後新增至這些物件的自訂欄位，以及 [!DNL Marketo Measure] 已安裝套件。 立即可用， [!DNL Marketo Measure] 不會寫入任何標準 [!DNL Salesforce] 物件欄位。
+這會列出 [!DNL Salesforce] 符合以下條件的標準物件： [!DNL Marketo Measure] 會與互動，在建立連線後，我們將自訂欄位新增到這些物件， [!DNL Marketo Measure] 已安裝套件。 立即可用， [!DNL Marketo Measure] 不會寫入任何標準 [!DNL Salesforce] 物件欄位。
 
 **銷售機會**
 
@@ -806,7 +806,7 @@ ht-degree: 19%
 
 ## [!DNL Marketo Measure] 中的自訂物件 [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
 
-除了在SFDC的標準物件上建立自訂欄位之外， [!DNL Marketo Measure] 封裝已安裝，它會建立一些自訂物件。 以下是這些「自訂物件」的清單，以及代表以下欄位的表格： [!DNL Marketo Measure] 將寫入。
+除了在SFDC的標準物件上建立自訂欄位之外， [!DNL Marketo Measure] 安裝套裝軟體，會建立一些自訂物件。 以下是這些「自訂物件」的清單，以及代表以下欄位的表格： [!DNL Marketo Measure] 將寫入。
 
 **購買者接觸點**
 

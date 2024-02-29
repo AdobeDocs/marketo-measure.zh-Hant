@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874664
-description: 鑽研 —  [!DNL Marketo Measure]  — 產品檔案
+description: 鑽研 —  [!DNL Marketo Measure]
 title: 鑽研
 exl-id: c9ce5a51-e8f9-40ff-aa10-6b059e4998d3
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '3849'
+source-wordcount: '3847'
 ht-degree: 0%
 
 ---
@@ -505,7 +505,7 @@ _按月劃分的總收入，依周或日期劃分。_
 
 定義：提供的曝光數總計花費除以曝光總數。
 
-**點擊數**
+**點按次數**
 
 定義：依月份透過長條圖和表格的點按總數。 從那裡，可以按周、日或時間鑽研至單一月或劃分一個月。
 

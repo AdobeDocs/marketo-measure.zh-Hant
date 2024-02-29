@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874660
-description: 常見問題集 —  [!DNL Marketo Measure]  — 產品檔案
+description: 常見問題集 —  [!DNL Marketo Measure]
 title: 常見問題集
 exl-id: f1896bf8-2216-427e-ac3e-98d87efede76
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 **篩選器運運算元中的「符合使用者屬性」是什麼？**
 
-使用者屬性會套用至使用者，例如企業ID、名字或姓氏，但由於我們的使用者是您（我們的客戶），而非您的客戶，因此使用者屬性實際上無法用於 [!DNL Marketo Measure Discover] 體驗。 請忽略此選項。 我們正在開發更好的自訂篩選器體驗，此體驗會移除不適用於客戶的篩選器。
+使用者屬性會套用至使用者，例如企業ID、名字或姓氏，但由於我們的使用者是您（我們的客戶），而非您的客戶，因此使用者屬性實際上無法用於 [!DNL Marketo Measure Discover] 體驗。 我們正在開發更好的自訂篩選器體驗，此體驗會移除不適用於客戶的篩選器。
 
 **某些預設日期範圍在隨後的第一個月如何過？**
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 **我的造訪、不重複造訪和Forms圖磚在成長板上為何空白？**
 
-如果您檢視中的這些圖磚剛好為0或空白，表示系統沒有為您的帳戶布建圖磚。 如果有任何相關問題，請洽詢您的成功案例經理。
+如果您檢視中的這些圖磚剛好為0或空白，表示系統沒有為您的帳戶布建圖磚。 如果有任何相關問題，請洽詢您的Success Manager。
 
 **對於一段時間內的潛在客戶與一段時間內的連絡人，參考的計數為何？**
 

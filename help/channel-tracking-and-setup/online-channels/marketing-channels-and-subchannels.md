@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874682
-description: 行銷管道和子管道 —  [!DNL Marketo Measure]  — 產品檔案
+description: 行銷管道和子管道 —  [!DNL Marketo Measure]
 title: 行銷管道和子管道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---

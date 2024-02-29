@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874592
-description: 呼叫追蹤整合 —  [!DNL Marketo Measure]  — 產品檔案
+description: 呼叫追蹤整合 —  [!DNL Marketo Measure]
 title: 呼叫追蹤整合
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ CallTrackingMetrics必須在其末端執行一些開發工作，才能順利運�
 
 首先，檢查任務以確定有 [!DNL BizibleId] 已填入。 如果沒有值，則我們將不會也無法為其建立接觸點。 這必須使用CallTrackingMetrics上報。
 
-請注意，如果有任何值，我們只會將所有網頁工作階段視為30分鐘。 如果Google廣告是在中午12:17 （網站上的工作階段開始）點選，但直到下午1:05才發生電話呼叫，則我們不會合併網頁工作階段和電話呼叫。 而是 [!DNL Marketo Measure] 將建立一個單獨的 [!DNL Salesforce Task] 用於追蹤電話通話的接觸點，但不會有任何Web工作階段資料。
+請注意，如果有值，我們只會將所有網路工作階段視為30分鐘。 如果Google廣告是在中午12:17 （網站上的工作階段開始）點選，但直到下午1:05才發生電話呼叫，則我們不會合併網頁工作階段和電話呼叫。 而是 [!DNL Marketo Measure] 將建立一個單獨的 [!DNL Salesforce Task] 用於追蹤電話通話的接觸點，但不會有任何Web工作階段資料。
 
 ![](assets/6.png)
 

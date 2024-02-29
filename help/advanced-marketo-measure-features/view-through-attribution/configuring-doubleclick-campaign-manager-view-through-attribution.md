@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874781
-description: 透過歸因設定Doubleclick Campaign Manager檢視 —  [!DNL Marketo Measure]  — 產品檔案
+description: 透過歸因設定Doubleclick Campaign Manager檢視 —  [!DNL Marketo Measure]
 title: 透過歸因設定Doubleclick Campaign Manager檢視
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 透過追蹤開始從檢視中獲得更細微的深入分析 [!DNL Doubleclick Campaign Manager]，則需要設定追蹤畫素。
 
-請 [按一下這裡](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md) 以取得有關 [!DNL Marketo Measure] 透過歸因功能檢視。
+如需關於的詳細資訊 [!DNL Marketo Measure] 透過歸因功能檢視，請參閱 [透過Attribution常見問題集檢視Marketo Measure](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md).
 
 [!DNL Marketo Measure] 由於是透過DCM廣告標籤的第三方呼叫，因此會被視為隨附標籤。 揹帶標籤不適用於影像標籤，只有iframe或javascript標籤。 根據DCM支援，這種情況最近並沒有改變，而且一直都是如此。 標準標籤已於2017年10月2日淘汰，但不會影響的功能 [!DNL Marketo Measure] 以追蹤曝光。
 
-若您在DCM中善用父項和子項階層，我們需要將標籤套用至曝光追蹤的所有層級。
+若您在DCM中使用父項和子項階層，我們需要將標籤套用至曝光追蹤的所有層級。
 
 ## 如何新增影像標籤 {#how-to-add-the-image-tag}
 
-您將標籤新增至 [!DNL Doubleclick] 在「廣告商」設定下，您會想要建立「曝光事件」標籤。
+將標籤新增至「廣告商」設定下的Doubleclick中，並建立曝光事件標籤。
 
 1. 將下列程式碼新增為1x1影像畫素。
 

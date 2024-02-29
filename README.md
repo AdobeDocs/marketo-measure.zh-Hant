@@ -1,61 +1,61 @@
 ---
-source-git-commit: a5648e73c470f61720741a5dd828e00fa532c4d5
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '401'
+ht-degree: 82%
 
 ---
-# 貢獻文章
+# 投稿文章
 
-我們歡迎來自我們的社群，以及來自檔案團隊以外的Adobe員工貢獻心力。
+我們歡迎社群以及文件團隊外部的 Adobe 員工投稿。
 
 
-## Adobe開放原始碼行為准則
+## Adobe 開放原始碼行為準則
 
 本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
 
-## 關於您對Adobe內容的貢獻
+## 關於您對 Adobe 內容的貢獻
 
-請參閱 [Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+請參閱 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
-您的投稿方式取決於您的身分，以及您要投稿的變更類型：
+如何做貢獻取決於您的身份以及您想促成的變更類型：
 
-### 微幅變更
+### 微小變更
 
-如果您出於好意要貢獻微幅更新，請造訪文章，然後按一下 **編輯** 文章中的連結，會前往文章的GitHub來源。 然後，只要使用GitHub UI進行更新即可。 請參閱一般 [Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得更多資訊。
+如果您想善意促成微小的更新，請瀏覽相關文章，然後按一下文章中的&#x200B;**編輯**&#x200B;連結以進入文章的 GitHub 原始碼。然後，直接使用 GitHub UI 進行更新。如需詳細資訊，請參閱一般的 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
-您在此存放庫中針對檔案和程式碼範例提交的微幅更正或釐清，皆受Adobe使用條款所涵蓋。
+Adobe 使用條款舉例說明了如何提交對此存放庫中文件及代碼的輕微修正或澄清。
 
-### 社群成員的重大變更或新文章
+### 來自社群成員的重大變更或新文章
 
-如果您是Adobe社群的一員，且想建立新文章或提交重大變更，請使用Git存放庫中的「問題」索引標籤來提交問題，以開始與檔案團隊對話。 在您同意計畫後，您需要與員工合作，透過公共和私人存放庫中的組合工作，協助帶入新內容。
+如果您是Adobe社群的一分子，且想建立新文章或提交重大變更，請使用Git存放庫中的「問題」索引標籤，提交問題以便與檔案團隊開始對話。 一旦您同意了計畫，就需要與員工合作，透過結合公共和私有存放庫的工作來幫助引入新內容。
 
 <!--
-If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
+If you submit a pull request with significant changes to documentation and code examples, you will see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### 來自Adobe員工的重大更改
+### 來自 Adobe 員工的重大變更
 
-若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用的私人存放庫，位於 `https://git.corp.adobe.com/AdobeDocs`.
+如果您是技術文件撰寫人、方案經理或者 Adobe Experience Cloud 解決方案產品團隊的開發者，並且您的工作是參與或創作技術文章，則應使用 `https://git.corp.adobe.com/AdobeDocs` 上的私有存放庫。
 
 <!--Employees from other parts of the Adobe world should use the public repository for minor updates.-->
 
 ## 工具與設定
 
-社群投稿人可使用GitHub UI進行基本編輯，或取用存放庫來進行重大投稿。
+社群貢獻者可使用 GitHub UI 基本編輯或複刻存放庫以進行重大變更。
 
-請參閱 [Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+如需詳細資訊，請參閱 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
-## 如何使用Markdown來設定主題格式
+## 如何使用 Markdown 設定主題格式
 
-此存放庫中的所有文章都使用GitHub精選的Markdown。 如果您不熟悉Markdown，請參閱：
+此存放庫中的所有文章皆使用 GitHub 風格的 Markdown。如果您不熟悉 Markdown，請參閱：
 
-* [Markdown基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [可列印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown 基本知識](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
+* [可列印的 Markdown 清單](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 標籤
 
-在公開存放庫中，自動化標籤會指派給提取請求，以協助我們管理提取請求工作流程，並協助您了解提取請求的執行狀況：
+在公共存放庫中，自動化標籤分配到提取請求以協助我們管理提取請求工作流程，以及讓您知道您的提取請求發生了什麼：
 
-* **傳送至作者的變更**:提交人已收到擱置提取請求的通知。
-* **準備合併**:準備由我們的提取請求審核團隊審核。
+* **Change sent to author**(變更已傳送給作者)：作者已收到待處理提取請求的通知。
+* **ready-to-merge**(可以合併)：可供我們的提取請求團隊審查。

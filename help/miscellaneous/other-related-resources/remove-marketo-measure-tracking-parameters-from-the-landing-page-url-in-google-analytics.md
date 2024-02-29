@@ -1,19 +1,19 @@
 ---
 unique-page-id: 18874736
-description: 移除 [!DNL Marketo Measure] 從Google Analytics的登陸頁面URL追蹤引數 —  [!DNL Marketo Measure]  — 產品檔案
+description: 移除 [!DNL Marketo Measure] 從Google Analytics的登陸頁面URL追蹤引數 —  [!DNL Marketo Measure]
 title: 移除 [!DNL Marketo Measure] 從Google Analytics中的登陸頁面URL追蹤引數
 exl-id: ec81ba4a-bb10-49fd-b62e-5a1bc9e1a023
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
 # 移除 [!DNL Marketo Measure] 從Google Analytics中的登陸頁面URL追蹤引數 {#remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics}
 
-有時當在中檢視登入頁面時 [!DNL Google Analytics]，您會想要從URL中移除追蹤引數。 否則，它們將會分割成個別列。
+有時當在中檢視登入頁面時 [!DNL Google Analytics]，您將會想要從URL中移除追蹤引數。 否則，它們將會分割成個別列。
 
 幸運的是，這是一個簡單的修正。
 

@@ -1,10 +1,10 @@
 ---
-description: 錯誤通知 —  [!DNL Marketo Measure]  — 產品檔案
+description: 錯誤通知 —  [!DNL Marketo Measure]
 title: 錯誤通知
 feature: Fundamentals
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>INVALID_ADOBE_ANALYTICS_CONFIGURATION</td>
-      <td>Adobe Analytics匯出期間發生錯誤： INVALID_ANALYTICS_CONFIGURATION_ADOBE：錯誤：不允許上傳。 請先確認資料來源結構描述，然後再上傳。 資料來源Id：1234</td>
+      <td>Adobe Analytics匯出期間發生錯誤： INVALID_ANALYTICS_CONFIGURATION_ADOBE：錯誤：不允許上傳。 上傳前先確認資料來源結構描述。 資料來源Id：1234</td>
       <td>Adobe Analytics整合的設定不正確。</td>
       <td>請參閱下列說明文章，以確保設定正確無誤：
         <ul>
@@ -139,7 +139,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>不支援的_CRM_PACKAGE_VERSION</td>
-      <td>Crm匯入期間發生錯誤：UNSUPPORTED_CRM_PACKAGE_VERSION ：請更新您的CRM套件</td>
+      <td>Crm匯入期間發生錯誤： UNSUPPORTED_CRM_PACKAGE_VERSION ：更新您的CRM套件</td>
       <td>不再支援偵測到的目前套件。</td>
       <td>將您的套件升級至最新版本：
         <ul>

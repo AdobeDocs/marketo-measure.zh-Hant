@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874779
-description: 自訂歸因模型與設定 —  [!DNL Marketo Measure]  — 產品檔案
+description: 自訂歸因模型與設定 —  [!DNL Marketo Measure]
 title: 自訂歸因模型與設定
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    登入 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 前往 [!UICONTROL My Account] > [!UICONTROL Settings] >並在CRM區段下，選取 **[!UICONTROL Stage Mapping]**.
 
-   在此之後，您需要透過選取 **[!UICONTROL Include in Model]** 方塊。
+   接著，選取下列專案，選擇要包含的Leads/Contacts與Opportunity階段 **[!UICONTROL Include in Model]** 方塊。
 
    >[!NOTE]
    >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    如果還有其他階段要納入模型中，但它們不在 [!UICONTROL Lead/Contact Status] 或 [!UICONTROL Opportunity Stage] 清單中，您可以根據CRM中的欄位定義自己的自訂階段。
 
-   在以下範例中，使用日期欄位定義自訂「MQL」階段。 此規則只會指出，如果「MQL日期」欄位不是空白，則應將其視為MQL並應包含在自訂模型中。 請注意，自訂階段建立後，對自訂階段進行排序也很重要，以便遵循銷售週期的進度。
+   在以下範例中，使用日期欄位定義自訂「MQL」階段。 此規則只會指出，如果「MQL日期」欄位不是空白，則應將其視為MQL並應包含在自訂模型中。 自訂階段建立後，對自訂階段進行排序也很重要，以便追蹤銷售週期的進度。
 
    ![](assets/2-1.png)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
    >
    >別忘了啟用自訂欄位的歷程記錄追蹤。
 
-如果您的自訂模型中正在使用自訂欄位，則必須在CRM中啟用欄位歷史記錄追蹤。 如需如何啟用欄位歷史記錄追蹤的說明， [請按這裡](/help/advanced-marketo-measure-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md).
+如果您的自訂模型中使用了自訂欄位，則必須在CRM中啟用欄位歷史記錄追蹤。 如需啟用欄位歷史記錄追蹤的說明，請參閱 [自訂模型設定：啟用欄位歷史記錄追蹤](/help/advanced-marketo-measure-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md).
 
 1. 決定自訂模型的歸因百分比。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    在標示為&#39;&#39;的最右欄&#x200B;**[!UICONTROL Custom]**，」您可以在自訂歸因模型中設定每個階段的百分比加權。 只需在「自訂」欄下輸入每個階段的值。 則 **[!UICONTROL Save and Reprocess]** 完成後。
 
-   「自訂」欄的左側為 **[!DNL Marketo Measure]機器學習模型**. 「機器學習」模型會根據贏得交易的相對重要性（取決於每個自訂階段所發生的情況），計算歸因加權。 如需機器學習模型的詳細資訊， [請按這裡](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
+   左側 _自訂_ 欄是 **[!DNL Marketo Measure]機器學習模型**. 「機器學習」模型會根據贏得交易的相對重要性（取決於每個自訂階段所發生的情況），計算歸因加權。 有關機器學習模型的詳細資訊，請參閱 [機器學習模型常見問題集](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
 
    ![](assets/3.png)
 

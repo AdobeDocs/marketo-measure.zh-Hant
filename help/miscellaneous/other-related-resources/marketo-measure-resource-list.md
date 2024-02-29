@@ -1,13 +1,13 @@
 ---
 unique-page-id: 37356962
-description: '"[!DNL Marketo Measure] 資源清單 —  [!DNL Marketo Measure]  — 產品檔案」'
+description: "[!DNL Marketo Measure] 資源清單 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 資源清單」'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 1%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 * [建立自訂報表型別，使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) （如果您需要報告自訂銷售機會/連絡人/商機欄位）
 * [字彙表 [!DNL Marketo Measure] 欄位](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
-**疑難排解**
+**疑難排除**
 
 * [授予 [!DNL Marketo Measure] 支援存取SFDC](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
 * 連絡人： [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 **[[!DNL Marketo Measure] SFDC中的報告](https://universityonline.marketo.com/courses/bizible-and-salesforce/) （30-45分鐘）**
 
-本課程系列旨在介紹 [!DNL Marketo Measure] 已安裝至Salesforce的Stock報表。 這些報表是您進行大部分報表的基礎 [!DNL Marketo Measure] 資料。
+本課程系列旨在介紹 [!DNL Marketo Measure] 已安裝至Salesforce的Stock報表。 這些報表可作為您多使用報表的基礎 [!DNL Marketo Measure] 資料。
 
 涵蓋的主題：
 

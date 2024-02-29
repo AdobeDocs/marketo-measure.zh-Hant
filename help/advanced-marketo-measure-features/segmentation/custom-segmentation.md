@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874604
-description: 自訂分段 —  [!DNL Marketo Measure]  — 產品檔案
+description: 自訂分段 —  [!DNL Marketo Measure]
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 * 對「商機」區段規則重複此程式
 * 「其他」類別是將擷取任何未定義接觸點的預設區段。 您可以變更預設區段名稱
 * 按一下垃圾桶圖示可刪除整個類別或類別中的個別規則。 或者，按一下鉛筆圖示來編輯類別或規則
-* 您會注意到您有一個&quot;[!UICONTROL Save]」按鈕和「儲存並處理」按鈕。 使用「儲存」按鈕來儲存您所做的工作和隨時間發生的變更。 只有在您確定下列專案後，才使用「儲存並處理」按鈕：
+* 請注意，您有一個&quot;[!UICONTROL Save]」按鈕和「儲存並處理」按鈕。 使用「儲存」按鈕來儲存您所做的工作和隨時間發生的變更。 只有在您確定下列專案後，才使用「儲存並處理」按鈕：
 
    * 您的對應是準確的
    * 您已新增所有要在類別中追蹤的區段

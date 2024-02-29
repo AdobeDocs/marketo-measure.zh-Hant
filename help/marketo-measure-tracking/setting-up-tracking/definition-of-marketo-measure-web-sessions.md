@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874564
-description: 定義 [!DNL Marketo Measure] 網路工作階段 —  [!DNL Marketo Measure]  — 產品檔案
+description: 定義 [!DNL Marketo Measure] 網路工作階段 —  [!DNL Marketo Measure]
 title: 定義 [!DNL Marketo Measure] Web工作階段
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
