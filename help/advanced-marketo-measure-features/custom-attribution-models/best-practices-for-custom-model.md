@@ -3,9 +3,9 @@ description: 自訂模型的最佳實務 —  [!DNL Marketo Measure]
 title: 自訂模型的最佳實務
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ ht-degree: 0%
 * 請勿使用公式欄位來定義自訂階段
    * 布林值欄位是最佳實務建議
 * 請勿將自訂階段合併到自訂模型中 [!DNL Marketo Measure] 里程碑接觸點位置（FT、LC、OC、已結束的勝利/失敗）
-   * 如果您這麼做，這些位置將一律同時發生，並可能導致漏斗部分獲得膨脹的歸因評分。
+   * 如果您這麼做，這些位置一律會同時發生，並可能導致漏斗部分獲得膨脹的歸因評分。
 * 與您的Sales Opp團隊合作
-   * 引進與階段最接近的團隊及其含義，將確保您使用正確的階段，且其定義正確
+   * 引進與階段工作最接近的團隊，以及他們的意思可確保您使用正確的階段，且他們已正確定義
 
 ## 維護最佳實務 {#best-practice-for-maintenance}
 

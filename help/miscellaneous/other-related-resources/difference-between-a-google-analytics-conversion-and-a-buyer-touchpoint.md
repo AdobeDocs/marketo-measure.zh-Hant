@@ -4,10 +4,10 @@ description: Google Analytics轉換與購買者接觸點之間的差異 —  [!D
 title: Google Analytics轉換與購買者接觸點之間的差異
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 0%
+source-wordcount: '493'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 **Google Analytics的轉換有哪些？**
 
-[!UICONTROL Google Analytics] 轉換完全取決於行銷人員或Web開發人員如何編寫特定網站上「目標」完成的程式碼。 Google認為，Goals可視為「進行購買（針對電子商務網站）、完成遊戲層級（針對行動遊戲應用程式）或提交聯絡資訊表單（針對行銷或潛在客戶產生網站）」。 大多數時候，行銷人員會將目標/轉換視為填寫資訊表單的人。
+[!UICONTROL Google Analytics] 轉換次數取決於行銷人員或Web開發人員在特定網站上編碼「目標」完成次數的方式。 根據Google的說法，目標可視為「進行購買（針對電子商務網站）、完成遊戲層級（針對行動遊戲應用程式）或提交聯絡資訊表單（針對行銷或潛在客戶產生網站）」。 大多數時候，行銷人員會將目標/轉換視為填寫資訊表單的人。
 
-但是，無法以目標編碼來管理非常特定的行為。 而是有網頁開發人員可以設定的目標型別。 以下是其中一些範例：
+但是，無法以編碼方式管理特定行為。 而是有網頁開發人員可以設定的目標型別。 以下是其中一些範例：
 
 <table> 
  <colgroup> 
@@ -58,21 +58,21 @@ ht-degree: 0%
 
 大部分行銷人員將其轉換設定為「目的地目標」，這表示他們通常會在表單後面建立感謝頁面，以視為正式轉換。
 
-這表示，Google會將「感謝您」頁面檢視視為轉換。 從Google Analytics的觀點來看，這是大部分行銷人員都接受的實現。
+這表示Google將「感謝您」頁面檢視視為轉換。 從Google Analytics的觀點來看，這是大部分行銷人員都接受的實現。
 
-不過，購買者接觸點的行為非常不同。
+不過，購買者接觸點的作用不同。
 
 **購買者接觸點有何不同？**
 
 [!DNL Marketo Measure] JavaScript會追蹤特定網站所有形式的工作階段資料與表單提交。 不需要從將目標編碼 [!DNL Marketo Measure] 觀點。 此程式是自動的。 對於表單提交， [!DNL Marketo Measure] 每當匿名使用者填寫特定表單上的資訊欄位並按一下表單提交按鈕時，都會報告表單完成情況。 [!DNL Marketo Measure] 不需要感謝頁面來記錄表單提交。
 
-[!DNL Marketo Measure] 會在下列情況下建立表單接觸點：
+[!DNL Marketo Measure] 建立表單接觸點，當：
 
 * 與這些轉換相關聯的銷售機會/聯絡人會出現在您的CRM中。
 * 此 [!DNL Marketo Measure] JS存在於包含表單的網頁上。
-* 在30分鐘工作階段內提交表單。
+* 表單會在30分鐘工作階段中提交。
 
-[!DNL Marketo Measure] 發生下列情況時，將忽略目的地Google Analytics轉換：
+[!DNL Marketo Measure] 發生下列情況時，會忽略目的地Google Analytics轉換：
 
 * 機器人在網站上提交表單（這些機器人通常無法將其變成客戶的CRM）。
 * 使用者在首次提交表單後提交更多表單。 [!DNL Marketo Measure] 只會從該工作階段推送第一次轉換。
@@ -80,4 +80,4 @@ ht-degree: 0%
 * 使用者多次重新載入感謝頁面。
 * 使用者正在使用任何廣告封鎖工具。
 
-如您所見，GA和 [!DNL Marketo Measure] 將轉換視為。 因此，轉換次數與表單接觸點數量可能會有所不同。
+如您所見，GA和 [!DNL Marketo Measure] 將轉換視為。 因此，轉換次數與形式接觸點數量可能會有所不同。

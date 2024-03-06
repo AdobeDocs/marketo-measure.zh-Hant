@@ -4,9 +4,9 @@ description: 呼叫追蹤整合 —  [!DNL Marketo Measure]
 title: 呼叫追蹤整合
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 之前和之後 {#before-and-after}
 
-請檢視下方的流程圖，瞭解運作方式 [!DNL Marketo Measure] 用於處理通話，但未與CallTrackingMetrics整合。 所發生的電話通話遭取消追蹤，因此被視為網路工作階段，且未為其建立接觸點。 直到使用者下一次完成表單的造訪時，接觸點才會最終填入。
+請看下方的流程圖，瞭解運作方式 [!DNL Marketo Measure] 用於處理通話，但未與CallTrackingMetrics整合。 所發生的電話通話遭取消追蹤，因此被視為網路工作階段，且未為其建立接觸點。 直到使用者下一次完成表單的造訪時，接觸點才會最終填入。
 
 透過整合，您可以看到網頁工作階段實際上繫結至一個電話。 下一個表單填寫最終成為PostLC觸控，並且仍在歷程中受到追蹤。
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ## 運作方式 {#how-it-works}
 
-CallTrackingMetrics必須在其末端執行一些開發工作，才能順利運作。 CallTrackingMetrics可透過其放置於您網站上的Javascript從擷取_biz_uid [!DNL Marketo Measure] Cookie。 此&quot;[!DNL BizibleId]&quot;會由CallTrackingMetrics儲存。
+CallTrackingMetrics必須在其終端執行一些開發工作，才能正常運作。 CallTrackingMetrics可透過其放置於您網站上的JavaScript從擷取_biz_uid [!DNL Marketo Measure] Cookie。 此&quot;[!DNL BizibleId]&quot;會由CallTrackingMetrics儲存。
 
-訪客造訪您的網站並撥打電話時，CallTrackingMetrics的職責是將該資料推送至 [!DNL Salesforce]  通常 [!DNL Salesforce Task] 建立時會填入電話號碼、主旨、型別等資料，而現在則會填入 [!DNL BizibleId]
+訪客造訪您的網站並撥打電話時，CallTrackingMetrics的職責是將該資料推送至 [!DNL Salesforce].  通常 [!DNL Salesforce Task] 建立時會填入電話號碼、主旨、型別等資料，而現在則會填入 [!DNL BizibleId]
 
 此 [!DNL BizibleId] 是隨6.7+版安裝的 [!DNL Marketo Measure] 行銷歸因套件。
 
@@ -45,7 +45,7 @@ CallTrackingMetrics必須在其末端執行一些開發工作，才能順利運�
 
 ## 接觸點 {#the-touchpoint}
 
-時間 [!DNL Marketo Measure] 可以匯入/下載工作，我們會隨著網頁作業階段處理該詳細資訊。 在大多數情況下，可與反向連結或廣告合併。 在以下範例中，訪客透過付費Google廣告找到業務並撥打電話。
+時間 [!DNL Marketo Measure] 可以匯入/下載工作，我們會隨著網頁作業階段處理該詳細資訊。 通常可與反向連結或廣告合併。 在下列範例中，訪客透過付費Google廣告找到企業並撥打電話。
 
 此 [!UICONTROL Touchpoint] 型別「Call」是從上方熒幕擷圖的「任務」提取，建立任務時也會由CallTrackingMetrics填入。
 
@@ -53,7 +53,7 @@ CallTrackingMetrics必須在其末端執行一些開發工作，才能順利運�
 
 ## 報告 {#reporting}
 
-接觸點型別 [!DNL Marketo Measure] 推播通常是「網頁瀏覽」、「網頁表單」或「網頁聊天」，但若是CallTrackingMetrics接觸點，接觸點型別將會是「電話」。 這可協助行銷人員檢視哪些頻道吸引的電話次數最多，並為其組織帶來收入。
+接觸點型別 [!DNL Marketo Measure] 推播通常是「網頁瀏覽」、「網頁表單」或「網頁聊天」，但若是CallTrackingMetrics接觸點，接觸點型別則為「電話」。 這可協助行銷人員檢視哪些頻道吸引的電話次數最多，並為其組織帶來收入。
 
 ![](assets/5.png)
 
@@ -65,13 +65,13 @@ CallTrackingMetrics必須在其末端執行一些開發工作，才能順利運�
 
 **接觸點會從電話中填入哪些其他欄位？**
 
-「接觸點型別」和「媒體」都會包含從Task.Type中擷取的資料。 所有其他資料點都會從網路追蹤和JavaScript資料中提取。
+「接觸點型別」和「媒體」都包含從Task.Type中擷取的資料。 所有其他資料點都會從網路追蹤和JavaScript資料中提取。
 
 **為什麼這個電話未與網路工作階段繫結？**
 
-首先，檢查任務以確定有 [!DNL BizibleId] 已填入。 如果沒有值，則我們將不會也無法為其建立接觸點。 這必須使用CallTrackingMetrics上報。
+首先，檢查任務以確定有 [!DNL BizibleId] 已填入。 如果沒有值，我們就無法為其建立接觸點。 需要以CallTrackingMetrics將此問題呈報。
 
-請注意，如果有值，我們只會將所有網路工作階段視為30分鐘。 如果Google廣告是在中午12:17 （網站上的工作階段開始）點選，但直到下午1:05才發生電話呼叫，則我們不會合併網頁工作階段和電話呼叫。 而是 [!DNL Marketo Measure] 將建立一個單獨的 [!DNL Salesforce Task] 用於追蹤電話通話的接觸點，但不會有任何Web工作階段資料。
+請注意，如果有值，我們只會將所有網路工作階段視為30分鐘。 如果Google廣告是在中午12:17 （網站上的工作階段開始）點選，但直到下午1:05才發生電話呼叫，則不會合併網頁工作階段和電話呼叫。 而是 [!DNL Marketo Measure] 建立單獨的 [!DNL Salesforce Task] 用於追蹤電話通話的接觸點，但不會有任何Web工作階段資料。
 
 ![](assets/6.png)
 

@@ -3,9 +3,9 @@ description: 已歸因的收入儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 已歸因的收入儀表板
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此儀表板目前是Beta版。 在此過渡階段中，目前和新的儀表板皆可存取。 一旦我們完全轉換並確保最佳功能，目前的儀表板將被棄用。
+>此儀表板為測試版。 在此過渡階段中，目前和新的儀表板皆可存取。 在我們完全轉換並確保最佳功能後，目前的儀表板將被棄用。
 
 **展示板回答的問題：**
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 **樹狀檢視**
 
 * 樹狀檢視可提供更具互動性和更精細的資料探索，讓行銷人員找出趨勢、異常或行銷工作中表現突出的表現。
-* 按一下分支可深入探究後續的階層圖層。
+* 按一下分支，以更深入地探究後續的階層圖層。
 
 ![](assets/attributed-revenue-dashboard-3.png)
 

@@ -2,9 +2,10 @@
 description: 探索儀表板基本知識 —  [!DNL Marketo Measure]  — 產品
 title: 探索儀表板基本知識
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ ht-degree: 0%
   </tr>
    <tr> 
    <td><b>清除篩選器按鈕</b></td>
-   <td>若要清除濾鏡，請按一下位於每個濾鏡右上角的橡皮擦圖示。
+   <td>若要清除濾鏡，請按一下每個濾鏡右上角的橡皮擦圖示。
    <p><img src="assets/discover-dashboard-basics-3.png"></td>
   </tr>
   <tr> 
@@ -105,6 +106,6 @@ ht-degree: 0%
 
 ### 工具提示 {#tooltips}
 
-工具提示提供所顯示資料的補充詳細資料。 只要將滑鼠指標暫留在視覺元素上，內容工具提示就會隨即顯示，提供與該特定資料點相關的深入分析或說明。
+工具提示提供所顯示資料的補充詳細資料。 將游標暫留在視覺元素上，內容工具提示隨即出現，提供與該特定資料點相關的深入分析或說明。
 
 ![](assets/discover-dashboard-basics-13.gif)

@@ -4,9 +4,9 @@ description: 歸因對應方法 —  [!DNL Marketo Measure]
 title: 歸因對應方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 機會主要連絡人角色對應 {#opportunity-primary-contact-role-mapping}
 
-除了單純檢視商機的聯絡人角色以外， [!DNL Marketo Measure] 可以更集中地只檢視商機上的主要聯絡人。 有了這項設定， [!DNL Marketo Measure] 只會抓住與機會上主要聯絡人相關聯的行銷接觸點，並將該資訊推送至該特定機會的歸因故事。 請參閱下圖。
+除了單純檢視商機的聯絡人角色以外， [!DNL Marketo Measure] 可以更集中地只檢視商機上的主要聯絡人。 有了這項設定， [!DNL Marketo Measure] 僅會擷取與機會上主要聯絡人相關聯的行銷接觸點，並將該資訊推送至該特定機會的歸因故事。 請參閱下圖。
 
 ![](assets/3.png)
 

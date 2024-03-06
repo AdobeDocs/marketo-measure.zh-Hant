@@ -4,9 +4,9 @@ description: 瞭解 [!DNL Marketo Measure] AdWords標籤 —  [!DNL Marketo Meas
 title: 瞭解 [!DNL Marketo Measure] AdWords標籤
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 不過，如果找不到追蹤範本， [!DNL Marketo Measure] 將：
 
 * 掃描我們的所有Ad目的地URL [!DNL Marketo Measure] 引數。
-* 如果找到，就立即開始。
+* 如果找到，則表示一切準備就緒。
 * 如果找不到， [!DNL Marketo Measure] 會將其引數附加至廣告目的地URL的結尾。 若為新廣告， [!DNL Marketo Measure] 會在建立後的兩小時內，將其引數附加至廣告目的地URL。
 * 啟用自動標籤之前，請務必先建立追蹤範本，以便 [!DNL Marketo Measure] 可以附加至該網站，並防止廣告歷史記錄重設。
 

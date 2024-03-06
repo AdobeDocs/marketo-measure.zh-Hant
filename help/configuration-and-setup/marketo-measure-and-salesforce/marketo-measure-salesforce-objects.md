@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] Salesforce物件 —  [!DNL Marketo Measure
 title: '"[!DNL Marketo Measure] Salesforce物件」'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ BAT物件會顯示在 [!UICONTROL Opportunity]， [!UICONTROL Contact]、和 [!U
 
 ![](assets/5.png)
 
-此 [!DNL Marketo Measure] A/B測試物件會顯示為 [!UICONTROL Leads]， [!UICONTROL Contacts] 和 [!UICONTROL Opportunity] 頁面。 清單會顯示您正在最佳化或VWO中執行的所有實驗和變數，並可讓您檢視與特定潛在客戶或聯絡人相關的實驗/變數。
+此 [!DNL Marketo Measure] A/B測試物件會顯示為 [!UICONTROL Leads]， [!UICONTROL Contacts] 和 [!UICONTROL Opportunity] 頁面。 清單會顯示您透過Optimizly或VWO執行的所有實驗與變化，並可讓您檢視與特定潛在客戶及聯絡人相關的實驗/變化。
 
 ## [!DNL Marketo Measure] 活動 {#marketo-measure-events}
 

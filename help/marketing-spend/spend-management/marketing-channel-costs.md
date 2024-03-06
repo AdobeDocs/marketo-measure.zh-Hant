@@ -4,20 +4,20 @@ description: 行銷管道成本 —  [!DNL Marketo Measure]
 title: 行銷管道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
 
 # 行銷管道成本 {#marketing-channel-costs}
 
-使用最基本的好處之一 [!DNL Marketo Measure] 是將行銷工作直接連結至對收入之影響的能力，並擁有所需詳細程度。 您可以在接觸點層級看到投資報酬率。 若要利用這項優點，只需將管道成本上傳至 [!DNL Marketo Measure] 應用程式。 ROI報告會自動建立，並可在以下位置使用： **行銷ROI控制面板** 在 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
+使用最基本的好處之一 [!DNL Marketo Measure] 是將行銷工作直接連結至對收入之影響的能力，並擁有所需詳細程度。 您可以在接觸點層級看到投資報酬率。 若要利用此權益，管道成本必須上傳至 [!DNL Marketo Measure] 應用程式。 ROI報告會自動建立，並可在以下位置使用： **行銷ROI控制面板** 在 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 [按一下這裡直接導覽至指示。](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 
-此 [!DNL Marketo Measure] 「行銷支出」功能可讓客戶跨所有管道、子管道和行銷活動上傳其支出。 客戶新增的資料越多，我們就能在收入歸因控制面板中顯示越多的ROI報表。
+此 [!DNL Marketo Measure] 「行銷支出」功能可讓客戶跨所有管道、子管道和行銷活動上傳其支出。 客戶新增的資料越多，收入歸因控制面板中呈現的ROI報表就越多。
 
 從直接廣告連線中報告和匯入的成本會在最精細的層級自動提取，無需上傳。 這包括我們目前與Google AdWords、Bing Ads、Doubleclick和Facebook的整合。
 
@@ -27,23 +27,23 @@ ht-degree: 0%
 
 **依據行銷活動的支出**
 
-在最精細的層級，客戶可以依個別行銷活動輸入支出，並在其個別頻道中分組。 對於CRM Campaigns， [!DNL Marketo Measure] 已將Campaign ID提取至單獨的欄，以協助您將離線行銷活動支出從CRM對應至此表格。 在此層級新增支出，可讓客戶檢視Campaign ROI並依Campaign最佳化效能。
+在最精細的層級，客戶可以輸入個別行銷活動的花費，並在其各自的管道中分組。 對於CRM Campaigns， [!DNL Marketo Measure] 已將Campaign ID提取至單獨的欄，以協助您將離線行銷活動支出從CRM對應至此表格。 在此層級新增支出，可讓客戶檢視Campaign ROI並依Campaign最佳化效能。
 
 所有行銷活動的總計不需要加總至在子管道或管道輸入的任何值，但不能超過在子管道或管道輸入的任何值。 如果總和小於在子頻道或頻道中輸入的值， [!DNL Marketo Measure] 會自動為「其他」新增一列，以彌補差異並填滿任何間隙。
 
 **依據子管道的支出**
 
-在更高的層級，客戶可以按子管道輸入支出，分組在它的管道下。 在此層級新增支出，可讓客戶檢視子管道ROI，並依子管道最佳化效能。
+在更高的層級，客戶可以按子管道輸入支出，這些支出會分組在它的管道下。 在此層級新增支出，可讓客戶檢視次管道ROI，並依次管道最佳化效能。
 
 所有子管道的總和不需要加總為在「管道」輸入的任何值，但不能超過在「管道」輸入的任何值。 如果總和小於在頻道輸入的值， [!DNL Marketo Measure] 會自動為「其他」新增一列，以彌補差異並填滿任何間隙。
 
 **依據管道的支出**
 
-最高層級的客戶可以依管道輸入支出。 在此層級增加支出，可讓客戶檢視管道ROI，並依管道最佳化效能。
+最高層級的客戶可以透過管道輸入花費。 在此層級新增支出，可讓客戶檢視頻道ROI，並依頻道最佳化效能。
 
 **日期選取器**
 
-預設日期範圍將從您的開始日期開始，包含 [!DNL Marketo Measure] 直到當月。 為確保成本保持正確，您無法輸入未來月份的成本，但您可在與合作之前輸入月份的成本 [!DNL Marketo Measure].
+預設日期範圍將從您的開始日期開始，包含 [!DNL Marketo Measure] 直到當月。 為確保成本保持正確，您無法輸入未來月份的成本，但可以在與合作之前輸入幾個月的成本 [!DNL Marketo Measure].
 
 **篩選**
 
@@ -55,13 +55,13 @@ ht-degree: 0%
 
 **下載目前成本**
 
-下載的CSV將從您目前的畫面提取結果，這表示任何套用的日期、篩選器或搜尋都將依原樣下載。
+下載的CSV會從您目前的畫面提取結果，這表示任何套用的日期、篩選器或搜尋都會依原樣下載。
 
 **上傳CSV**
 
 無論瀏覽器中的檢視是什麼，如果它是篩選檢視或包含所有日期和管道的預設檢視，您都可以上傳任何CSV。
 
-我們面臨的最常見錯誤是日期欄的格式，如果日期格式改變，就會發生此錯誤，而且在Excel和/或Google工作表之間移動時可能會有意發生。 請記住，日期應為MM-YY，因此Sep-12而非9-12，或May-12而非05-12。
+最常見的錯誤是日期欄的格式，如果日期格式改變則會發生，且在Excel和/或Google工作表之間移動時可能會有意發生。 請記住，日期應為MM-YY，因此Sep-12而非9-12，或May-12而非05-12。
 
 ## 開始之前 {#before-you-begin}
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 **步驟1：導覽至「 」中的「行銷支出」頁面 [!DNL Marketo Measure] 應用程式。**
 
-前往 **[!UICONTROL My Account]** 功能表，按一下 **[!UICONTROL Settings]** 然後導覽至 **[!UICONTROL Marketing Spend]** 左側邊欄中的選項 **[!UICONTROL Reporting]** 區段。
+前往 **[!UICONTROL My Account]** 功能表，按一下 **[!UICONTROL Settings]**，然後導覽至 **[!UICONTROL Marketing Spend]** 左側邊欄中的選項 **[!UICONTROL Reporting]** 區段。
 
 ![](assets/1.png)
 
@@ -117,11 +117,11 @@ _其他附註_：
 
 **為什麼數字會出現在CSV中**
 
-如果未在較高層級（如頻道或子頻道）輸入值， [!DNL Marketo Measure] 會自動為您加總子項層級，您的檔案上傳後就會顯示子項層級。 此外，如果子系的總和小於為父系輸入的值， [!DNL Marketo Measure] 將新增「其他」列以顯示總數中的差異。
+如果未在較高層級（如頻道或子頻道）輸入值， [!DNL Marketo Measure] 會自動為您加總子項層級，您的檔案上傳後就會顯示子項層級。 此外，如果子系的總和小於為父系輸入的值， [!DNL Marketo Measure] 新增「其他」列以顯示總數中的差異。
 
 **我看到的清單是如何決定行銷活動的？**
 
-目前，我們的結果會列出我們已看到獲得接觸點評分的行銷活動。 如果行銷活動中有活動，我們會根據發生的接觸點日期顯示該行銷活動。
+目前，我們的結果會列出我們已看到獲得接觸點評分的行銷活動。 如果促銷活動中有活動，我們會根據發生的接觸點日期來顯示促銷活動。
 
 **要篩選的列和欄太多 — 我可以合併檢視嗎？**
 

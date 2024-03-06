@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] 101報表概觀 —  [!DNL Marketo Measure]
 title: '"[!DNL Marketo Measure] 101報表總覽」'
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -55,4 +55,4 @@ _如果您找不到「購買者接觸點報表」資料夾或六個&quot;_[!DNL 
 
 「購買者接觸點報告」資料夾旨在協助您開始使用 [!DNL Marketo Measure] 報表，若要使用可操作的報表，您必須自訂這些報表，以便根據您的報表需求量身打造。 您將需要新增必要的篩選器，以確保報告內的記錄（及其相關接觸點）與您的報告目標一致。
 
-在您熟悉「_[!DNL Marketo Measure]101..._「報告」，您可能會想要從自訂報告型別重新建立它們，以滿足更多自訂報告需求。 建立 [[!DNL Marketo Measure] 自訂報表型別](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) 可讓您提取其他CRM報表中常用的自訂欄位。 這將幫助您完成以下任務 [!DNL Marketo Measure] 報告至下一個層級！
+當您熟悉&quot;_[!DNL Marketo Measure]101..._「報告」，您可能會想要從自訂報告型別重新建立它們，以滿足更多自訂報告需求。 建立 [[!DNL Marketo Measure] 自訂報表型別](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) 可讓您提取其他CRM報表中常用的自訂欄位。 這將幫助您完成以下任務 [!DNL Marketo Measure] 報告至下一個層級！

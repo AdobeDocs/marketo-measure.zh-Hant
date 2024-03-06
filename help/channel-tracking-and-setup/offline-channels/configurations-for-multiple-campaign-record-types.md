@@ -4,9 +4,9 @@ description: 多種行銷活動記錄型別的設定 —  [!DNL Marketo Measure]
 title: 多種行銷活動記錄型別的設定
 exl-id: 10499556-a591-4630-9149-ae676e6494af
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---

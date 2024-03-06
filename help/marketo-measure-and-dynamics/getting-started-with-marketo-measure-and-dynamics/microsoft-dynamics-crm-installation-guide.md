@@ -4,9 +4,9 @@ description: '"[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo Measure —
 title: '"[!DNL Microsoft Dynamics] CRM安裝指南」'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 建立 [!DNL Marketo Measure] 使用者 {#creating-a-marketo-measure-user}
 
-建議您在Dynamics中建立專屬的Marketo Measure使用者作為「應用程式使用者」，以便我們透過匯出和匯入資料，進而避免您的CRM中其他使用者發生任何問題。 記下使用者名稱和密碼，以及端點URL，以便在建立 [!DNL Marketo Measure] 帳戶。
+建議您在Dynamics中建立專用的Marketo Measure使用者作為「應用程式使用者」，透過匯出和匯入資料，以避免與您CRM中的其他使用者發生任何問題。 記下建立時所使用的使用者名稱和密碼，以及端點URL [!DNL Marketo Measure] 帳戶。
 
 ## 安全性角色 {#security-roles}
 
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->即將關閉商機的使用者也需要完整許可權。
+>關閉商機的使用者也需要完整許可權。
 
 ![](assets/4.png)
 
-若為Dynamics標準實體，請參閱 [!DNL Marketo Measure] 動態結構描述檔案。 在高層面上， [!DNL Marketo Measure] 只需讀取特定實體，即可收集適當的資料，並寫入自訂欄位，以隨受管理的解決方案一併安裝。 我們不會建立新的標準記錄，也不會更新任何標準欄位。
+若為Dynamics標準實體，請參閱 [!DNL Marketo Measure] 動態結構描述檔案。 在高層面上， [!DNL Marketo Measure] 讀取特定實體以收集適當的資料，並寫入隨受管理解決方案安裝的自訂欄位。 不會建立標準記錄，也不會更新標準欄位。
 
 ## 在頁面配置中加入接觸點： {#include-touchpoints-on-page-layouts}
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 
    ![](assets/5.png)
 
-1. 版面配置：請先新增&quot;[!UICONTROL One Column]「在您想要接觸點存在的區段拼貼。 在該新欄中，我們需要在您的Account、Opportunity、Contact和Lead實體內的每個表單中新增一個子網格。
+1. 版面配置：請先新增&quot;[!UICONTROL One Column]「在您想要接觸點存在的區段拼貼。 在該新欄中，我們需要在您的Account、Opportunity、Contact和Lead實體內的每個表單中新增一個子格線。
 
    ![](assets/6.png)
 
    ![](assets/7.png)
 
-1. 選取應在子格線中呈現的物件（「購買者歸因接觸點」或「購買者接觸點」），這取決於物件關係。 或者，按一下「編輯」按鈕來變更顯示的欄。 受管理的解決方案已設定預設版面。
+1. 選取應在子格線中呈現的物件（「購買者歸因接觸點」或「購買者接觸點」），這取決於物件關係。 或者，按一下編輯按鈕來變更顯示的欄。 預設版面配置是由受管理的解決方案所設定。
 
    購買者歸因接觸點子格線 — 帳戶、商機和連絡人\
    購買者接觸點子格線 — 銷售機會與聯絡人
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 **關閉日期**
 
-[!DNL Marketo Measure] 指向立即可用的實際關閉日期欄位。 如果您未使用此欄位或同時使用預估關閉日期欄位，請向您的解決方案工程師或成功經理說明您的流程。 可能需要使用自訂工作流程來說明這兩個欄位。
+[!DNL Marketo Measure] 指向立即可用的實際關閉日期欄位。 如果您未使用此欄位或同時使用預估關閉日期欄位，請向您的解決方案工程師或成功經理說明您的流程。 可能需要自訂工作流程來說明這兩個欄位。
 
 ## 設定連線和資料提供者 {#configuring-your-connections-and-data-providers}
 
@@ -150,13 +150,13 @@ ht-degree: 0%
 
 **[!DNL Marketo Measure]Javascript**
 
-為了 [!DNL Marketo Measure] 若要追蹤您的網路活動，設定需執行多個步驟。
+的 [!DNL Marketo Measure] 若要追蹤您的網路活動，設定需執行多個步驟。
 
 1. 按一下 **[!UICONTROL My Account]** 下拉式清單並選取 **[!UICONTROL Account Configuration]**.
 
    ![](assets/microsoft-dynamics-crm-installation-guide-23.png)
 
-1. 輸入您的電話號碼。 針對網站，輸入您的主要根網域，此網域將用於 [!DNL Marketo Measure] 在您的網站上進行追蹤。 按一下 **[!UICONTROL Save]** 完成時。
+1. 輸入您的電話號碼。 針對網站，輸入您用於以下專案的主要根網域： [!DNL Marketo Measure] 在您的網站上進行追蹤。 按一下 **[!UICONTROL Save]** 完成時。
 
    ![](assets/microsoft-dynamics-crm-installation-guide-24.png)
 
@@ -164,13 +164,13 @@ ht-degree: 0%
    >
    >若要新增多個根網域，請聯絡您的 [!DNL Marketo Measure] 客戶代表。
 
-1. 此 [[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md) 然後需要跨整個網站和登入頁面放置。 我們建議您在登入頁面標題中以硬式編碼撰寫指令碼，或透過Tag Management系統新增，例如 [Google Tag Manager](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md).
+1. 此 [[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md) 然後必須橫跨整個網站和登入頁面。 我們建議您在登入頁面標題中以硬式編碼撰寫指令碼，或透過Tag Management系統新增，例如 [Google Tag Manager](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md).
 
    >[!NOTE]
    >
    >根據預設， [!DNL Marketo Measure] 每次工作將資料傳送至您的CRM時，都會匯出每個API評分200筆記錄。 對於大多數客戶而言，這可提供以下專案所耗用的API積分之間的最佳平衡 [!DNL Marketo Measure] 和CRM的CPU資源需求。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此， [!DNL Marketo Measure] 允許客戶設定CRM匯出批次大小。 此設定位於「 」中的「設定> CRM >一般」頁面 [!DNL Marketo Measure] Web應用程式和客戶可以選擇批次大小200 （預設）、100、50或25。
    >
-   >修改此設定時，請記住，較小的批次大小將使用來自CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時，才減少批次大小。
+   >修改此設定時，請記住，較小的批次大小會消耗您CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時才減少批次大小。
 
    >[!NOTE]
    >

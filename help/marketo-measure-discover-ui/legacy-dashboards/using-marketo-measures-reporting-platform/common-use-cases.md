@@ -4,9 +4,9 @@ description: 常見使用案例 —  [!DNL Marketo Measure]
 title: 常見使用案例
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 付費搜尋ROI {#paid-search-roi}
 
-如果您希望獲得有關付費搜尋工作的行銷活動甚至關鍵字層級ROI的深入分析，請導覽至Discover中「以角色為基礎的檢視」下的「廣告ROI」儀表板。 此儀表板也會提供付費廣告的收入、支出、Pipeline收入、銷售機會、聯絡人、機會和交易的相關資訊。
+如果您希望獲得有關付費搜尋活動的深入分析，甚至是關鍵字層級的ROI，請導覽至Discover中「以角色為基礎的檢視」下的「廣告ROI」儀表板。 此儀表板也會提供付費廣告的收入、支出、Pipeline收入、銷售機會、聯絡人、機會和交易的相關資訊。
 
 此外，「角色型檢視」底下的「付費媒體」控制面板會顯示所有付費媒體管道的曝光數、點按數、頁面檢視和造訪。
 

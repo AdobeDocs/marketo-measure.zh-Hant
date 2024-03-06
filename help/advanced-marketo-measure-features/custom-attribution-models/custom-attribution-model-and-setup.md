@@ -4,7 +4,7 @@ description: 自訂歸因模型與設定 —  [!DNL Marketo Measure]
 title: 自訂歸因模型與設定
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
    前往 **[!UICONTROL Attribution Settings]** 在 [!DNL Marketo Measure] 應用程式；自訂階段會出現在歸因表格中。 歸因表格會顯示所有 [!DNL Marketo Measure] 歸因模型，以及每個模型的歸因加權。 前五個模型的歸因百分比是固定的，無法變更。
 
-   在標示為&#39;&#39;的最右欄&#x200B;**[!UICONTROL Custom]**，」您可以在自訂歸因模型中設定每個階段的百分比加權。 只需在「自訂」欄下輸入每個階段的值。 則 **[!UICONTROL Save and Reprocess]** 完成後。
+   在標示為&#39;&#39;的最右欄&#x200B;**[!UICONTROL Custom]**，」您可以在自訂歸因模型中設定每個階段的百分比加權。 在自訂欄下輸入每個階段的值，然後按一下 **[!UICONTROL Save and Reprocess]** 完成時。
 
    左側 _自訂_ 欄是 **[!DNL Marketo Measure]機器學習模型**. 「機器學習」模型會根據贏得交易的相對重要性（取決於每個自訂階段所發生的情況），計算歸因加權。 有關機器學習模型的詳細資訊，請參閱 [機器學習模型常見問題集](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
 

@@ -3,9 +3,9 @@ description: 線上管道的最佳作法 —  [!DNL Marketo Measure]
 title: 線上管道的最佳作法
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 最佳實務 {#best-practice}
 
-無論您是第一次設定規則，還是隻檢閱規則以檢查準確性，請記住以下最佳實務。
+無論是第一次設定規則，還是檢閱規則以檢查準確性，請記住以下最佳實務。
 
 請花點時間思考行銷活動的組織方式，以及這些組織如何適合 [!DNL Marketo Measure] 框架。 決定線上頻道中應該顯示哪些頻道和子頻道，以及哪些促銷活動、UTM引數或反向連結網站將這些頻道彼此區分開來。
 

@@ -4,7 +4,7 @@ description: "[!DNL Marketo Measure] 透過歸因常見問題集進行檢視 —
 title: '"[!DNL Marketo Measure] 瀏覽歸因常見問題集」'
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 為什麼是 [!UICONTROL View Through Attribution] 重要事項？ {#why-is-view-through-attribution-important}
 
-過去，行銷人員很難在歸因分析中說明重新鎖定目標或曝光數廣告。 潛在客戶可能會不時接觸到重新定位的廣告，但他們不太可能在實際上按一下這些廣告之一，並在相同工作階段中填寫表格。 我們的「透過歸因檢視」解決方案現在能夠追蹤某人是否接觸到曝光廣告。 此接觸點將會附加至個別記錄，並持續進行到潛在客戶成為客戶為止。 有了這些資訊，行銷人員現在就能更深入瞭解重新鎖定目標廣告的效能。
+過去，行銷人員很難在歸因分析中說明重新鎖定目標或曝光數廣告。 潛在客戶可能會不時接觸到重新定位的廣告，但他們不太可能在同一個工作階段中實際按一下這些廣告之一并填寫表格。 我們的「透過歸因檢視」解決方案現在能夠追蹤某人是否接觸到曝光廣告。 此接觸點將會附加至個別記錄，並持續進行到潛在客戶成為客戶為止。 有了這些資訊，行銷人員現在就能更深入瞭解重新鎖定目標廣告的效能。
 
 ## 設定此專案涉及哪些內容？ {#what-is-involved-in-setting-this-up}
 

@@ -3,9 +3,9 @@ description: 網域管理 —  [!DNL Marketo Measure]
 title: 網域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ![](assets/domain-management-2.png)
 
-在 **[!UICONTROL Integration]** > **[!UICONTROL Domains]** 頁面中，使用者會看見已在Admin Console中註冊的所有網域，以及其狀態。 每個網域都可以啟用或停用。 如果已啟用網域， [!DNL Marketo Measure] 追蹤會收集在該網域上看到的任何流量。 如果網域已停用， [!DNL Marketo Measure] 會忽略任何從該網域看到的流量，而不會建立接觸點或其他資料。 [!DNL Marketo Measure] 確認網域停用，並警告後果：
+在 **[!UICONTROL Integration]** > **[!UICONTROL Domains]** 頁面中，使用者會看見已在Admin Console中註冊的所有網域，以及其狀態。 每個網域都可以啟用或停用。 如果已啟用網域， [!DNL Marketo Measure] 追蹤會收集在該網域上看到的任何流量。 如果網域已停用， [!DNL Marketo Measure] 會忽略來自該網域的任何流量，且不會建立接觸點或其他資料。 [!DNL Marketo Measure] 確認網域停用，並警告任何後果：
 
 ![](assets/domain-management-3.png)
 
@@ -55,7 +55,7 @@ Admin Console狀態會依下列方式分類：
 
 **移除Admin Console中的網域時會發生什麼事？**
 
-在Admin Console中移除網域時， [!DNL Marketo Measure] 將網域標籤為已刪除。 [!DNL Marketo Measure] 將會立即停止追蹤此網域上的流量，但不會移除任何先前收集的資料。
+在Admin Console中移除網域時， [!DNL Marketo Measure] 將網域標籤為已刪除。 [!DNL Marketo Measure] 會立即停止追蹤此網域上的流量，但不會移除任何先前收集的資料。
 
 **為什麼我無法啟用網域？**
 

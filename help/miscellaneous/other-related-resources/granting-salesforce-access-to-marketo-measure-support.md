@@ -4,9 +4,9 @@ description: 授予 [!DNL Salesforce] 存取目標 [!DNL Marketo Measure] 支援
 title: 授予 [!DNL Salesforce] 存取Marketo Measure支援
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 授與登入存取權 [!DNL Salesforce] 閃電 {#granting-login-access-in-salesforce-lightning}
 
-1. 按一下畫面右上方的顯示圖片，然後選取 **[!UICONTROL Settings]**.
+1. 按一下畫面右上方的顯示圖片，然後選取「 」 **[!UICONTROL Settings]**.
 1. 按一下 **[!UICONTROL Grant Account Login Access]**.
 1. 設定&#39;&#39;的存取到期日[!UICONTROL Marketo Measure Support].」 如需技術疑難排解，建議您授予 [!DNL Marketo Measure] 支援存取至少一週。
 1. 按一下 **[!UICONTROL Save]**.

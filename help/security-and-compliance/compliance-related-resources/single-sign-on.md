@@ -3,16 +3,16 @@ unique-page-id: 18874761
 description: 單一登入 —  [!DNL Marketo Measure]
 title: 單一登入
 exl-id: a328e9cb-8352-4693-8a44-533e08f1a29c
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1257'
 ht-degree: 0%
 
 ---
 
 # 單一登入 {#single-sign-on}
 
-SSO （單一登入）的SAML （安全性宣告標籤語言）讓使用者可以在登入時透過公司的身分提供者進行驗證 [!DNL Marketo Measure] 應用程式。 SSO僅允許使用者驗證一次，無需驗證個別應用程式。 企業客戶必須使用SAML，因為並非所有使用者都會 [!DNL Salesforce] 或 [!DNL Google] 組織內的帳戶。 若要進行縮放， [!DNL Marketo Measure] 已開發可支援公司身分提供者的SAML解決方案。
+SSO （單一登入）的SAML （安全性宣告標籤語言）讓使用者可以在登入時透過公司的身分提供者進行驗證 [!DNL Marketo Measure] 應用程式。 SSO可讓使用者驗證一次，而不需要驗證個別應用程式。 企業客戶必須使用SAML，因為並非所有使用者都會 [!DNL Salesforce] 或 [!DNL Google] 組織內的帳戶。 若要縮放， [!DNL Marketo Measure] 已開發可支援公司身分提供者的SAML解決方案。
 
 >[!CAUTION]
 >
@@ -35,7 +35,7 @@ SSO （單一登入）的SAML （安全性宣告標籤語言）讓使用者可�
 
 ## 程式 {#process}
 
-[!DNL Marketo Measure] 單一登入需要依照一系列重要的步驟來設定您的驗證設定，以免您遭鎖定在外 [!DNL Marketo Measure] 帳戶。
+[!DNL Marketo Measure] 「單一登入」需要透過一系列步驟來設定您的驗證設定，這樣您就不會有被鎖定在外部的風險 [!DNL Marketo Measure] 帳戶。
 
 設定 [!DNL Marketo Measure] 您的身分提供者中的應用程式。 如需逐步說明，請參閱下列外部檔案。
 
@@ -121,7 +121,7 @@ SSO （單一登入）的SAML （安全性宣告標籤語言）讓使用者可�
 
 依預設，所有帳戶都可以存取 [!DNL Marketo Measure] 使用其CRM憑證的應用程式。 有時候，帳戶擁有者需要限制特定角色的存取權，而不是將其開放給具有有效CRM授權的所有使用者。 進階設定可讓您將您的CRM角色和群組對應至 [!DNL Marketo Measure] 使用者許可權。
 
-如果未對應任何角色或群組，預設設定為您CRM中的所有使用中授權都將具有標準使用者存取權。
+如果未對應任何角色或群組，預設設定為您CRM中的所有使用中授權都具有標準使用者存取權。
 
 * [!DNL Marketo Measure] 標準使用者：為應具備唯讀存取許可權的使用者提供角色或群組值。 [!DNL Marketo Measure] 應用程式。
 * [!DNL Marketo Measure] 帳戶管理員使用者：為應具有管理員存取許可權的使用者提供角色或群組值。 [!DNL Marketo Measure] 應用程式。 這表示該角色有權變更與您的帳戶相關的組態和設定。
@@ -144,7 +144,7 @@ SSO （單一登入）的SAML （安全性宣告標籤語言）讓使用者可�
 
 **Google使用者**
 
-設定自訂SSO後， [!UICONTROL Users] 頁面將更新為僅顯示已新增Google登入的外部使用者。 由於所有具有存取權的使用者都是透過SSO設定來定義，因此此處列出其他外部使用者。
+設定自訂SSO後， [!UICONTROL Users] 頁面已更新，僅顯示已新增Google登入的外部使用者。 由於所有具有存取權的使用者都是透過SSO設定來定義，因此此處列出其他外部使用者。
 
 ![](assets/9.png)
 
@@ -152,7 +152,7 @@ SSO （單一登入）的SAML （安全性宣告標籤語言）讓使用者可�
 
 ## 外部連結 {#external-links}
 
-* [Okta](http://developer.okta.com/standards/SAML/setting_up_a_saml_application_in_okta)
-* [Ping身分](http://docs.pingidentity.com/bundle/p1_enterpriseConfigSsoSaml_cas/page/enableAppWithoutURL.html)
-* [OneLogin](http://onelogin.service-now.com/support?id=kb_article&amp;sys_id=b2c91143db109700d5505eea4b9619d5)
-* [主動式目錄](http://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-custom-apps)
+* [Okta](https://developer.okta.com/standards/SAML/setting_up_a_saml_application_in_okta)
+* [Ping身分](https://docs.pingidentity.com:443/bundle/p1_enterpriseConfigSsoSaml_cas/page/enableAppWithoutURL.html)
+* [OneLogin](https://onelogin.service-now.com/support?id=kb_article&amp;sys_id=b2c91143db109700d5505eea4b9619d5)
+* [主動式目錄](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-custom-apps)

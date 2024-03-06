@@ -3,9 +3,9 @@ description: Data Warehouse存取 — 直接共用 — 產品檔案
 title: Data Warehouse存取 — 直接共用
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 需求 {#requirements}
 
-為了 [!DNL Marketo Measure] 若要設定直接共用至Data Warehouse，您必須符合下列需求。
+的 [!DNL Marketo Measure] 若要設定直接共用至Data Warehouse，您必須符合下列需求。
 
 * 您有自己的Snowflake例項。
 * 您的Snowflake執行個體位於Azure East US 2Snowflake區域。
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 限制 {#limitations}
 
-[!DNL Marketo Measure] 由於目前的Snowflake直接共用限制，將只能以Azure East US 2中的帳戶設定Snowflake直接共用。 如果您要求將您的資料開放在其他Snowflake地區使用，建議您在Azure East US 2的Snowflake帳戶中製作資料副本，並運用 [Snowflake資料庫復寫](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} 功能，可在您選擇的Snowflake地區/帳戶中複製您的資料。
+[!DNL Marketo Measure] 由於目前的Snowflake直接共用限制，將只能以Azure East US 2中的帳戶設定Snowflake直接共用。 如果您要求將您的資料開放在其他Snowflake地區使用，建議您在Azure East US 2的Snowflake帳戶中製作資料副本，並使用 [Snowflake資料庫復寫](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} 功能，可在您選擇的Snowflake地區/帳戶中複製您的資料。
 
 ## 輸入Snowflake帳戶ID {#enter-snowflake-account-id}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 存取共用 {#accessing-the-share}
 
-為提供的帳戶ID建立共用後，您必須完成 [設定步驟](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} 在您的Snowflake例項中以便存取資料。
+為提供的帳戶ID建立共用後，您必須完成 [設定步驟](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} 存取Snowflake例項中的資料。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 USE ROLE ACCOUNTADMIN
 ```
 
-* 檢視可用的共用（這會顯示授與的共用名稱）
+* 檢視可用的共用（這會顯示已授與的共用名稱）
 
 ```
 SHOW SHARES

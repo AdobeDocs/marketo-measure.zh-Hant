@@ -4,9 +4,9 @@ description: 離線自訂頻道設定 —  [!DNL Marketo Measure]
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ SFDC促銷活動型別會出現在離線頻道的標籤中，列於下方 [!DNL 
 
 >[!TIP]
 >
->想要決定 _當_ a [!DNL Salesforce] 行銷活動型別被提取到 [!DNL Marketo Measure] 頻道對應？ 只要移至 **[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**. 然後您可以檢視哪些值在挑選清單中，以及哪些為非作用中。 非作用中專案不會顯示為我們的&quot;[!UICONTROL Offline Channels]「 」區段。 請注意，此程式可能需要幾分鐘到48小時的時間。
+>想要決定 _當_ a [!DNL Salesforce] 行銷活動型別被提取到 [!DNL Marketo Measure] 頻道對應？ 前往 **[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**. 然後您可以檢視哪些值在挑選清單中，以及哪些為非作用中。 非作用中專案不會顯示為我們的&quot;[!UICONTROL Offline Channels]「 」區段。 請注意，此程式可能需要幾分鐘到48小時的時間。
 
 按一下 **[!UICONTROL Save]** 當您完成並 [!DNL Marketo Measure] 將上傳變更並重新處理資料。
 

@@ -4,9 +4,9 @@ description: Dynamics中的Stock報表和控制面板 —  [!DNL Marketo Measure
 title: Dynamics中的Stock報表和控制面板
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 >
 >您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-此 [!DNL Marketo Measure] Managed Solution隨附許多庫存儀表板和報表，旨在滿足您檢視時的基本需求 [!DNL Marketo Measure] dynamics中的資料。 以下是完整清單和一些常見的使用案例。
+此 [!DNL Marketo Measure] Managed Solution隨附數個Stock控制面板和報表，可因應您檢視時的基本需求 [!DNL Marketo Measure] dynamics中的資料。 以下是完整清單和一些常見的使用案例。
 
 ## 儀表板（共9個） {#dashboards-total}
 
@@ -157,7 +157,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>依AdWords名稱(LC)的銷售機會</td> 
-   <td>衡量每個AdWords促銷活動中的潛在客戶建立接觸產生了多少潛在客戶。</td> 
+   <td>測量每個AdWords促銷活動中的潛在客戶建立接觸產生了多少潛在客戶。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 

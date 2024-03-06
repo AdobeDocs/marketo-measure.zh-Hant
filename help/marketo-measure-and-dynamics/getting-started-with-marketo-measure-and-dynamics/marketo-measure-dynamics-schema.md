@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] 動態結構描述 —  [!DNL Marketo Measu
 title: '"[!DNL Marketo Measure] 動態結構描述」'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1070'
 ht-degree: 22%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 22%
 >
 >您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-在下方，您會找到開始使用所需的Dynamics結構描述 [!DNL Marketo Measure]. 列出所有實體和欄位，以及必要的讀取和/或寫入許可權。
+以下是開始使用所需的Dynamics結構描述 [!DNL Marketo Measure]. 列出所有實體和欄位，以及必要的讀取和/或寫入許可權。
 
 ## 購買者接觸點 {#buyer-touchpoints}
 
@@ -912,7 +912,7 @@ ht-degree: 22%
 
 ## Dynamics標準實體 {#dynamics-standard-entities}
 
-此清單會提供符合下列條件的Dynamics Standard實體： [!DNL Marketo Measure] 會與之互動，也會與我們新增至這些實體的自訂欄位互動。
+此清單提供符合下列條件的Dynamics Standard實體： [!DNL Marketo Measure] 會與之互動，以及我們新增至這些實體的自訂欄位。
 
 **銷售機會**
 

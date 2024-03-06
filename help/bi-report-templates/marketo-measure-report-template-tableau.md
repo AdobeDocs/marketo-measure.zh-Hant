@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] 報表範本 — Tableau - [!DNL Marketo Me
 title: '"[!DNL Marketo Measure] 報表範本 — Tableau」'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 資料轉換 {#data-transformations}
 
-有一些轉換已套用到中的資料 [!DNL Tableau] 從Snowflake的原始狀態。 這些轉換中的大多數都套用到自訂SQL查詢中，這些查詢會在以下位置產生表格： [!DNL Tableau] 模型。 若要檢視用來產生表格的自訂SQL，請在表格名稱上按一下滑鼠右鍵，然後選取[編輯自訂SQL查詢]。 以下概述一些特定轉換。
+有一些轉換已套用到中的資料 [!DNL Tableau] 從Snowflake的原始狀態。 這些轉換中的大多數都套用到自訂SQL查詢中，這些查詢會在以下位置產生表格： [!DNL Tableau] 模型。 若要檢視用來產生表格的自訂SQL，請在表格名稱上按一下滑鼠右鍵，然後選取「編輯自訂SQL查詢」。 以下概述一些特定轉換。
 
 ![](assets/marketo-measure-report-template-tableau-4.png)
 

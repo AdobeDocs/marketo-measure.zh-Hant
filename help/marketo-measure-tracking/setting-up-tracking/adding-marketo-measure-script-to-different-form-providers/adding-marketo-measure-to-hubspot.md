@@ -4,9 +4,9 @@ description: 新增 [!DNL Marketo Measure] 至 [!DNL Hubspot] - [!DNL Marketo Me
 title: 新增 [!DNL Marketo Measure] 至 [!DNL Hubspot]
 exl-id: 633e7ef7-7959-461e-881f-dcc543595b66
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Hubspot與其他行銷自動化系統有些不同，因為它可以託管您的�
 
 1. 按一下 **[!UICONTROL Content Settings]**.
 
-1. 範圍 [!UICONTROL Content Settings]，按一下「網站標題」HTML（請參閱下圖）。
+1. 範圍 [!UICONTROL Content Settings]，按一下網站標題HTML（請參閱下圖）。
 
 1. 在您的中新增以下指令碼 `<header>`：
 

@@ -4,16 +4,16 @@ description: "[!DNL Marketo Engage] 活動整合 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 活動整合」'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Engage] 活動整合 {#marketo-engage-activities-integration}
 
-作為整體的一部分 [!DNL Marketo Measure] 和 [!DNL Marketo Engage] 整合，這種提取Marketo活動的努力扮演了重要的角色。 透過Marketo活動，系統會追蹤事件，例如按一下電子郵件、變更分數或進度中的變更狀態 — 這些活動型別可以精簡並定義，以選取符合接觸點資格的子集。 在這些活動上建立接觸點後，即會在參與歷程中進行追蹤，並與您的其他行銷管道一起測量，例如付費搜尋或合作夥伴行銷。
+作為整體的一部分 [!DNL Marketo Measure] 和 [!DNL Marketo Engage] 整合，這種提取Marketo活動的努力扮演了重要的角色。 透過Marketo活動，系統會追蹤如下事件 `Click Email`， `Change Score` 或 `Change Status in Progression`  — 這些活動型別可以縮小並定義以選取適用於接觸點的子集。 在這些活動上建立接觸點後，即會在參與歷程中進行追蹤，並與您的其他行銷管道一起測量，例如付費搜尋或合作夥伴行銷。
 
 ## 需求 {#requirements}
 
@@ -32,17 +32,17 @@ ht-degree: 0%
 
    ![](assets/two-1.png)
 
-   首先需要選取您計畫建立規則的活動型別清單。 不需要固定數量的活動型別，但我們也建議您不要讓接觸點過載，並淡化重要里程碑的重要性。 話雖如此，您不需要超過5個活動型別即可追蹤相關參與。
+   首先需要選取您計畫建立規則的活動型別清單。 不需要固定數量的活動型別，但建議您不要讓接觸點超載，並稀釋重要里程碑的重要性。 話雖如此，您未必需要超過五個活動型別才能追蹤相關參與。
 
 1. 按一下下方的下拉式功能表 [!UICONTROL Select Activities Types] 以開始選擇各種型別。
 
    ![](assets/three-1.png)
 
-1. 選取所有需要的活動後，您也會看到它們已填入至 [!UICONTROL Selected Activities List] 以及在 [!UICONTROL Define Rules].
+1. 選取所有需要的活動後，您會看到它們已填入至 [!UICONTROL Selected Activities List] 和下 [!UICONTROL Define Rules].
 
    ![](assets/four-1.png)
 
-1. 對於每個活動型別，您將需要定義一或多個規則來決定哪些記錄適用於接觸點。 例如，我們會新增「變更分數」活動型別的規則，以便在Marketo人員達到90分或以上時系統建立接觸點。
+1. 對於每個「活動型別」，您必須定義一或多個規則來決定哪些記錄適用於接觸點。 在此範例中，我們會新增「變更分數」活動型別的規則，以便在Marketo人員達到90分或更高的分數時，系統建立接觸點。
 
 1. 首先，視活動型別而定，您可能需要設定 [!DNL Marketo Measure] 稍後可用於管道對應的促銷活動名稱。 [!DNL Marketo Measure] 行銷活動名稱可在多個規則中重複使用。 這有助於在單一管道規則中使用更廣泛的名稱。 並非所有活動型別都包含Marketo程式，因此第一個步驟需要名稱。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    ![](assets/five-1.png)
 
-1. 在「變更分數」範例中，我們不需要輸入行銷活動名稱，因為我們可以從Marketo方案提取該資訊。 現在您可以建立規則運算式。 依照我們的範例，我們要選取欄位&quot;[!UICONTROL New Value]「 」加上運運算元「[!UICONTROL is greater than]」的URL區段。
+1. 在「變更分數」範例中，由於促銷活動名稱是從Marketo方案提取的，因此需要輸入該資訊。 現在建立規則運算式。 在此範例後，選取「 」欄位[!UICONTROL New Value]「 」加上運運算元「[!UICONTROL is greater than]」的URL區段。
 
    您可以展開規則，並新增「and」或「or」陳述式來縮小結果範圍，藉此新增其他篩選器或條件。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
    ![](assets/seven-1.png)
 
-1. 最後，選擇我們應該使用什麼作為接觸點日期。 所有可用的日期或日期/時間欄位將會從Marketo顯示在這裡。 除非您有自訂日期欄位，否則您將會看到「[!UICONTROL Activity Date].」
+1. 最後，選擇要用來作為接觸點日期的專案。 所有可用的日期或日期/時間欄位都會從Marketo顯示在這裡。 除非您有自訂日期欄位，否則您會看到「[!UICONTROL Activity Date].」
 
    ![](assets/eight-1.png)
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ## 活動型別 {#activity-types}
 
-有些活動型別會提供方案ID和方案名稱，因此可輕鬆將其對應至購買者接觸點上的促銷活動ID和促銷活動名稱。 其他人則沒有程式關聯，因此部分規則定義會要求您建立 [!DNL Marketo Measure] 行銷活動名稱。 以下是每個類別的清單：
+有些活動型別會提供方案ID和方案名稱，因此很容易將其對應到購買者接觸點上的促銷活動ID和促銷活動名稱。 其他人則沒有程式關聯，因此部分規則定義需要您建立 [!DNL Marketo Measure] 行銷活動名稱。 以下是每個類別的清單：
 
 **具有計畫ID的活動型別**
 
@@ -154,7 +154,7 @@ SFDC活動(26)\
 
 ## 頻道對應 {#channel-mapping}
 
-若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您將需要確定您的頻道已正確設定 [如這裡指示](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
+若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用「方案頻道」來對應到您的自訂離線頻道，因此您需要確定您的頻道已正確設定 [如這裡指示](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
 
 對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您的自訂線上頻道 [已在此處佈局](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
@@ -162,13 +162,13 @@ SFDC活動(26)\
 
 ## 計畫成本 {#program-costs}
 
-透過Marketo程式的資料匯入，成本會自動從期間成本下載，Marketo中的報告成本會在整個指派的月份中分發。 例如，如果在2021年1月報告$1000，則會將$1000分割為31天。 成本可在下列位置找到： [!DNL Marketo Measure Discover].
+透過Marketo方案的資料匯入，成本會自動從期間成本下載，Marketo中報告的成本會在整個指派的月份中分發。 例如，如果在2021年1月報告$1000，則會將$1000分割為31天。 成本可在下列位置找到： [!DNL Marketo Measure Discover].
 
 ## Cookie對應 {#cookie-mapping}
 
 由於 [!DNL Marketo Measure] 與Marketo整合， [!DNL Marketo Measure] Cookie ID現在也已對應並與 [!DNL Marketo Munchkin Id]. 這有助於縮短將匿名首次接觸歸因於網路工作階段的差距，而非將FT和LC接觸均歸因於Marketo活動。 想像一下這種情況：
 
-Mark在Facebook廣告上點選後進入wayneenterprises.com ，在那裡他受到了 [!DNL Marketo Measure] Id 123和 [!DNL Marketo Munchkin Id] 456. 沒有表單填寫。
+Mark按一下Facebook廣告並登陸wayneenterprises.com，在那裡他獲得一個Cookie [!DNL Marketo Measure] Id 123和 [!DNL Marketo Munchkin Id] 456. 沒有表單填寫。
 
 Wayne企業行銷團隊會傳送電子郵件爆炸訊息給特定的目標銷售機會，其中一個是 `mark@email.com`.
 
@@ -188,11 +188,11 @@ Wayne Enterprises行銷團隊會建立Marketo活動規則，以產生「按一�
 
 **如何知道要建立Marketo方案規則或Marketo活動規則？**
 
-此 [!DNL Marketo Engage] 方案整合是根據某人是否為方案的方案成員來產生接觸點的簡單方法。 如果您有興趣根據人員變更為特定計畫狀態的時間來定義規則， [!DNL Marketo Engage] 活動整合將是您想要的設定，尤其是「進度變更狀態」活動型別，好讓您的接觸點日期可以對應至系統產生的活動日期。
+此 [!DNL Marketo Engage] 方案整合是根據某人是否為方案的方案成員來產生接觸點的簡單方法。 如果您想要根據人員變更至特定計畫狀態的時間來定義規則，請 [!DNL Marketo Engage] 「活動整合」將是您想要的設定，尤其是「進度變更狀態」活動型別，好讓您的接觸點日期可以對應至系統產生的活動日期。
 
 **為什麼我的接觸點型別名稱會遭到截斷？**
 
-「接觸點型別」欄位建立於 [!DNL Marketo Measure] 包含16個字元的套件。 不幸的是，變更欄位的字元限制需要取代現有欄位並建立新欄位。 「接觸點型別」的值是「活動型別」，也設定在「媒體」欄位中。
+「接觸點型別」欄位建立於 [!DNL Marketo Measure] 包含16個字元的套件。 不幸的是，變更欄位的字元限制需要取代現有欄位並建立一個。 「接觸點型別」的值是「活動型別」，也設定在「媒體」欄位中。
 
 **為什麼我的自訂活動型別沒有出現在可用活動清單中？**
 
@@ -200,7 +200,7 @@ Wayne Enterprises行銷團隊會建立Marketo活動規則，以產生「按一�
 
 **如何決定要為哪些活動型別產生接觸點？**
 
-雖然您可以建立的活動型別數目沒有限制，我們通常建議不要超過5個活動型別。 判斷哪些行銷活動足夠相關以成為接觸點歷程的一部分需要時間。 例如，「取消訂閱電子郵件」可能不是要追蹤的重要接觸點，但包含其他篩選器的「按一下電子郵件」可能很好。 這因每個組織和每個團隊而異，因此我們建議您與團隊合作，一起腦力激盪最佳方法。
+雖然您可以建立的活動型別數目沒有限制，我們通常建議不要超過五種活動型別。 判斷哪些行銷活動足夠相關以成為接觸點歷程的一部分需要時間。 例如，「取消訂閱電子郵件」可能不是要追蹤的重要接觸點，但包含其他篩選器的「按一下電子郵件」可能很好。 這因每個組織和每個團隊而異，因此我們建議您與團隊合作，一起腦力激盪最佳方法。
 
 **我的瀏覽器名稱為何遭到截斷？**
 

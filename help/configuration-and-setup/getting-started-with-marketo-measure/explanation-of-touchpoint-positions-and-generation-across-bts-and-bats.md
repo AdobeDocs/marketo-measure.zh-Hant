@@ -3,9 +3,9 @@ description: 跨BT和BAT的接觸點位置和產生方式說明 —  [!DNL Marke
 title: 跨BT和的接觸點位置和產生方式說明 [!DNL BATs]
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 **產生接觸點位置並流經購買者歷程**
 
-瞭解購買者接觸點位置及其觸發方式，對於成功使用報告至關重要 [!DNL Marketo Measure] 資料。 您會想要清楚瞭解潛在客戶在買家歷程中的行為，進而瞭解在接觸點資料中會是什麼樣子。 如需有關本主題的詳細資訊，建議您檢閱 [[!UICONTROL Touchpoint Generation & Mapping]](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md) 文章。
+瞭解購買者接觸點位置及其觸發方式，對於成功使用報告至關重要 [!DNL Marketo Measure] 資料。 您想要清楚瞭解潛在客戶在購買者歷程中的行為，進而瞭解在接觸點資料中會是什麼樣子。 如需有關本主題的詳細資訊，建議您檢閱 [[!UICONTROL Touchpoint Generation & Mapping]](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md) 文章。
 
-[!DNL Marketo Measure] 具有由購買者歷程中的不同步驟觸發的各種接觸點位置。 報告時 [!DNL Marketo Measure] 資料有兩組接觸點資料：購買者接觸點(BT)和購買者歸因接觸點(BAT)。 您可能會注意到這些資料集在與不同物件相關的位置稍有不同。 如需有關本主題的詳細資訊，建議您檢閱 [購買者接觸點(BT)和購買者歸因接觸點(BAT)之間的差異](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md) 文章。
+[!DNL Marketo Measure] 有多種由購買者歷程中不同步驟觸發的接觸點位置。 報告時 [!DNL Marketo Measure] 資料有兩組接觸點資料：購買者接觸點(BT)和購買者歸因接觸點(BAT)。 您可能會注意到這些資料集在與不同物件相關的位置稍有不同。 如需有關本主題的詳細資訊，建議您檢閱 [購買者接觸點(BT)和購買者歸因接觸點(BAT)之間的差異](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md) 文章。
 
 **購買者接觸點(BT)**：這些是與個人及其歷程相關聯的接觸點，將是該個人專屬的。 下列現成可用的報表是根據購買者接觸點資料所建立。
 
@@ -37,12 +37,12 @@ ht-degree: 0%
   <tr>
    <td>首次接觸(FT)</td> 
    <td>網頁造訪</td> 
-   <td>個人與您的品牌進行的第一個行銷互動</td> 
+   <td>個人與您品牌的第一次行銷互動</td> 
   </tr>
   <tr>
    <td>銷售機會建立(LC)</td> 
    <td>表單填寫 <strong>或</strong> 行銷活動/方案包含</td> 
-   <td>個人填寫的第一個表單具有（通常是表單提交，但也可能是行銷活動/方案包含）</td> 
+   <td>第一個表單會填入個人擁有（通常是表單提交，但也可能是行銷活動/方案包含）</td> 
   </tr>
   <tr>
    <td>Post LC</td> 
@@ -52,7 +52,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-**購買者歸因接觸點(BATS)**：這些是與機會及其歷程相關聯的接觸點。 這些接觸點將連線至收入，因為它們會連線至商機及其連絡人。 下列現成可用的報表是根據購買者歸因接觸點資料所建立。
+**購買者歸因接觸點(BATS)**：這些是與機會及其歷程相關聯的接觸點。 這些接觸點與收入相關聯，因為它們與機會及其聯絡人相關聯。 下列現成可用的報表是根據購買者歸因接觸點資料所建立。
 
 * [!DNL Marketo Measure] 101：依ID排列商機
 * [!DNL Marketo Measure] 101：依ID管道的商機
@@ -92,7 +92,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-[!DNL Marketo Measure] 這兩組接觸點資料可讓您清楚瞭解個人的歷程以及機會。 這兩個接觸點資料集為您提供從漏斗頂部到漏斗底部的清晰發生情況地圖。
+[!DNL Marketo Measure] 這兩組接觸點資料可讓您清楚瞭解個人的歷程和機會。 這兩個接觸點資料集為您提供從漏斗頂部到漏斗底部的清晰發生情況地圖。
 
 下列範例顯示從購買者接觸點(BT)到購買者歸因接觸點(BAT)的資料流程。 在此範例中，人員A和人員B都是建立日期為2020年3月7日而結束日期為2020年6月5日的相同機會的一部分。
 

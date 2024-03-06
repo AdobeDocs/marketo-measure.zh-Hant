@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] CRM無封裝整合 —  [!DNL Marketo Measu
 title: '"[!DNL Marketo Measure] CRM無封裝整合」'
 exl-id: a4f31d82-63ec-4bb2-bc8b-d3495e61af4f
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ A [!DNL Marketo Measure] CRM無封裝整合仍需要存取標準CRM物件，例�
 
 [!DNL Microsoft Dynamics] 客戶點按 [此處](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md).
 
-完成上述步驟後，您就可以開始了。 如果您在此過程中遇到任何問題，請隨時與聯絡 [!DNL Marketo Measure] 代表或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+完成這些步驟後，整合應該可正常運作。 如果您遇到任何問題，請聯絡您的 [!DNL Marketo Measure] 代表或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!NOTE]
 >

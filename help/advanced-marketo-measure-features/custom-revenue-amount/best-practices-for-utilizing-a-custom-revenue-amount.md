@@ -3,9 +3,9 @@ description: 使用自訂收入金額的最佳實務 —  [!DNL Marketo Measure]
 title: 使用自訂收入金額的最佳實務
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 每年檢閱您的收入金額設定，即可確保您的歸因資料正確無誤，並與組織其他收入報表保持一致。
 
-如果您使用「自訂收入金額」，請依照以下步驟檢查收入設定。
+如果您使用自訂收入金額，請依照以下方式檢查收入設定。
 
 * 在您的 [!DNL Marketo Measure] 帳戶，前往「[!UICONTROL Opportunities]&#39;區段在CRM底下
 * 識別 [!UICONTROL Custom Opportunity Amount] 欄位，此處為您的 [!UICONTROL custom revenue amount API] 欄位應列出

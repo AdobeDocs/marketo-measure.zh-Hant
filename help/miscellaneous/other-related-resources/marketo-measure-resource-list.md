@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] 資源清單 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 資源清單」'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ ht-degree: 0%
 * [將SFDC行銷活動與購買者接觸點同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
 * [上傳行銷支出](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 * [重新連線Ad帳戶](/help/api-connections/utilizing-marketo-measures-api-connections/reauthorizing-connected-accounts.md)
-* [新增 [!DNL Marketo Measure] Javascript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
+* [新增 [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
    * [排除Forms](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
 
 **報告**
 
-* [建立自訂報表型別，使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) （如果您需要報告自訂銷售機會/連絡人/商機欄位）
+* [建立自訂報表型別，使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md) （如果您必須報告自訂銷售機會/連絡人/商機欄位）
 * [字彙表 [!DNL Marketo Measure] 欄位](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 **疑難排除**
@@ -47,12 +47,12 @@ ht-degree: 0%
 
 ## 影片 {#videos}
 
-以下兩段影片可協助您快速上手：
+以下影片可協助您快速上手：
 
-* [[!DNL Marketo Measure] 介紹培訓](https://embed.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4) （22分鐘）
-* [[!DNL Marketo Measure] SFDC中的報告](https://universityonline.marketo.com/courses/bizible-and-salesforce/) （30-45分鐘）
+* [[!DNL Marketo Measure] 介紹培訓](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) （22分鐘）
+* [[!DNL Marketo Measure] SFDC中的報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）
 
-**[[!DNL Marketo Measure] 101](https://universityonline.marketo.com/courses/bizible-101/) （~30分鐘）**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （~30分鐘）**
 
 本課程系列旨在概略介紹您需要掌握的基本概念 [!DNL Marketo Measure]. 它提供了歸因概念的簡介，以及歸因的 [!DNL Marketo Measure] 作為工具，以及在其上使用 [!DNL Marketo Measure] 運作。
 
@@ -64,9 +64,9 @@ ht-degree: 0%
 * 接觸點
 * 歸因模型
 
-**[[!DNL Marketo Measure] SFDC中的報告](https://universityonline.marketo.com/courses/bizible-and-salesforce/) （30-45分鐘）**
+**[[!DNL Marketo Measure] SFDC中的報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）**
 
-本課程系列旨在介紹 [!DNL Marketo Measure] 已安裝至Salesforce的Stock報表。 這些報表可作為您多使用報表的基礎 [!DNL Marketo Measure] 資料。
+本課程系列旨在介紹 [!DNL Marketo Measure] 已安裝至Salesforce的Stock報表。 這些報表是您進行大部分報表的基礎 [!DNL Marketo Measure] 資料。
 
 涵蓋的主題：
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 * 依ID列出的商機報表
 * 依據管道的機會報表
 
-**[頻道管理](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/)**
+**[頻道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
 
 本課程涵蓋您可以自訂的各種方式 [!DNL Marketo Measure]，適用於線上和離線追蹤。 此課程較為進階，可能並非適用於所有使用者。
 
@@ -89,4 +89,4 @@ ht-degree: 0%
 * 行銷活動和行銷活動成員欄位
 * 離線管道管理
 
-全部在這裡 [入門電子教學影片](https://universityonline.marketo.com/#/library/bySubject/new-to-bizible/trails?_k=d1454j).
+全部在這裡 [入門電子教學影片](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html).

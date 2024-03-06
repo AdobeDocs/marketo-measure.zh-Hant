@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] 與Adobe Analytics的整合 —  [!DNL Mark
 title: "[!DNL Marketo Measure] 與整合 [!DNL Adobe Analytics]"
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -30,19 +30,19 @@ B2B客戶屬性整合可讓共同使用者 [!DNL Marketo Measure] 和Adobe Analy
 
 1. 建立客戶屬性資料來源後，請導覽至「 」以繼續設定程式。 **[!UICONTROL Integrations]** > **[!UICONTROL Connections]** 中的畫面 [!DNL Marketo Measure] 管理功能表。
 
-1. 按一下 **[!UICONTROL Set Up New Customer Attributes Connection]** 按鈕並依照指示設定客戶屬性整合。 UI會提示您輸入在核心服務主控台中建立客戶屬性來源時所取得的別名ID和FTP連線資訊，並選取您要同步至您的的一組帳戶屬性 [!DNL Adobe Analytics] 帳戶。
+1. 按一下 **[!UICONTROL Set Up New Customer Attributes Connection]** 按鈕並依照指示設定客戶屬性整合。 UI會提示您輸入在核心服務主控台中建立客戶屬性來源時取得的別名ID和FTP連線資訊。 選取您要同步至您的帳號屬性集 [!DNL Adobe Analytics] 帳戶。
 
-   您也需要輸入Adobe IMS組織ID。 此ID會顯示在Adobe Experience CloudAdmin Console的右下角。 如需尋找此ID的詳細協助，請洽詢Adobe帳戶團隊（您的帳戶管理員）。
+   輸入您的Adobe IMS組織ID。 此ID會顯示在Adobe Experience CloudAdmin Console的右下角。 如需尋找此ID的詳細協助，請洽詢Adobe帳戶團隊（您的帳戶管理員）。
 
-1. 一旦您完成在中建立連線， [!DNL Marketo Measure] 帳戶，您必須前往Experience Cloud主控台 [驗證結構](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). 您不須擔心FTP檔案上傳， [!DNL Marketo Measure] 已為您自動化該部分。 您只需要前往在步驟1建立的客戶屬性來源的「檢視/編輯」結構描述畫面，告訴Adobe每個屬性的資料型別為何， [!DNL Marketo Measure] 已代表您上傳。 您也可以視需要為上傳的屬性建立新的顯示易記名稱。
+1. 在您完成下列專案中的連線建立之後： [!DNL Marketo Measure] 帳戶，您必須前往Experience Cloud主控台 [驗證結構](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en). 您不須擔心FTP檔案上傳， [!DNL Marketo Measure] 已為您自動化該部分。 前往您在步驟1建立的客戶屬性來源的「檢視/編輯」結構描述畫面，告訴Adobe每個屬性的資料型別 [!DNL Marketo Measure] 已代表您上傳。 您也可以視需要為上傳的屬性建立新的顯示易記名稱。
 
    如果您選擇從CRM帳戶物件同步屬性，強烈建議您為這些屬性選擇新的顯示名稱，如 [!DNL Marketo Measure] 只會填入這些屬性的API層級名稱，這些名稱通常對報表不友好。
 
-1. 最後一個步驟是為您想要在其中使用屬性的Experience Cloud應用程式設定屬性訂閱。 您可以設定訂閱 [!DNL Adobe Analytics] 或 [!DNL Adobe Target].  如何執行此動作的詳細資訊 [可在此處找到](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/subscription.html).
+1. 最後一個步驟是為您想要在其中使用屬性的Experience Cloud應用程式設定屬性訂閱。 您可以設定訂閱 [!DNL Adobe Analytics] 或 [!DNL Adobe Target].  如何執行此動作的詳細資訊 [可在此處找到](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html).
 
 ## 屬性說明 {#attribute-descriptions}
 
-當您建立新的B2B客戶屬性連線時， [!DNL Marketo Measure] 將會自動為您建立一組標準的B2B客戶屬性。 下表說明這些屬性。
+建立B2B客戶屬性連線時， [!DNL Marketo Measure] 會自動為您建立一組標準的B2B客戶屬性。 下表說明這些屬性。
 
 除了下列屬性之外，您也可以上傳附加至CRM中帳戶物件的任何屬性。 如果有一個以上的帳戶繫結至指定的使用者， [!DNL Marketo Measure] 會以分號分隔的清單填入所有相符的帳戶屬性值。
 
@@ -64,7 +64,7 @@ B2B客戶屬性整合可讓共同使用者 [!DNL Marketo Measure] 和Adobe Analy
   <tr> 
    <td>已歸因的收入 — 「模型」</td> 
    <td>根據客戶與您CRM中成功交易的機會的關聯性而歸屬於此客戶的收入，計算方式為 [!DNL Marketo Measure] 歸因引擎。<br/>
-   您所使用的每個歸因模型都會有一個屬性， [!DNL Marketo Measure] 訂閱可允許（例如「歸因收入 — 完整路徑」）。</td>
+   您所使用的每個歸因模型都會有以下其中一項屬性： [!DNL Marketo Measure] 訂閱可允許（例如「歸因收入 — 完整路徑」）。</td>
   </tr>
   <tr> 
    <td>最深漏斗階段</td> 
@@ -79,7 +79,7 @@ B2B客戶屬性整合可讓共同使用者 [!DNL Marketo Measure] 和Adobe Analy
 
 **關於屬性限制的附註**
 
-透過這項整合呈現的屬性仍會計入您的合約屬性限制(在 [!DNL Adobe Analytics] 和 [!DNL Adobe Target]. 僅限透過「屬性訂閱」顯示的屬性（中的步驟5） [設定整合](#configuring-the-integration))將計算在您訂閱應用程式的限制中。
+透過這項整合而顯現的屬性會計入您的合約屬性限制(在 [!DNL Adobe Analytics] 和 [!DNL Adobe Target]. 僅限透過「屬性訂閱」顯示的屬性（中的步驟5） [設定整合](#configuring-the-integration))計數在您已訂閱之應用程式的限制中。
 
 ## 常見問題 {#faqs}
 

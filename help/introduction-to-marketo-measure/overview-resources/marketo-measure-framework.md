@@ -4,9 +4,9 @@ description: Marketo Measure架構 — Marketo Measure — 產品檔案
 title: Marketo Measure框架
 exl-id: fa6de27c-cdd2-4fd9-ac35-7286fe2752d8
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Marketo Measure會與CRM整合，以存放及組織Marketo Measure JS擷取的�
 
 ![](assets/1-2.png)
 
-透過在CRM中呈現Marketo Measure資料，您將能夠檢視與每個接觸點相關的精細資訊，並產生報表以瞭解您的管道表現如何。
+透過在CRM中呈現Marketo Measure資料，您可以檢視與每個接觸點相關的精細資訊，並產生報表以瞭解管道的表現。
 
 ## 協力廠商應用程式 {#third-party-applications}
 

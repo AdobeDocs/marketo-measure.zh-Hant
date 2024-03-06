@@ -3,9 +3,9 @@ description: 隱私權請求 —  [!DNL Marketo Measure]
 title: 隱私權請求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 讓我們看看如何建立存取和刪除請求。
 
-## 傳送Marketo Measure請求所需的設定 {#required-setup-to-send-requests-for-marketo-measure}
+## 傳送Marketo Measure請求的必要設定 {#required-setup-to-send-requests-for-marketo-measure}
 
 請求存取和刪除以下專案的資料 [!DNL Marketo Measure]，您必須：
 

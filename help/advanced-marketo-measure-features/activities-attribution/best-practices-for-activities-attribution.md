@@ -3,9 +3,9 @@ description: 活動歸因的最佳實務 —  [!DNL Marketo Measure]
 title: 活動歸因的最佳實務
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 此功能最常見的使用案例是製作規則，將銷售互動整合到您的購買者接觸點資料中。 活動歸因可讓您將銷售和行銷資料整合到一個歷程中。
 
-針對許多 [!DNL Salesforce] 例項中，活動物件可存放各種記錄型別，因此您的活動規則必須是針對您嘗試轉譯為接觸點的記錄而量身打造的特定規則，這點很重要。 以下最佳實務可協助您透過活動歸因建立有意義且有價值的接觸點。
+針對許多 [!DNL Salesforce] 例項中，活動物件可存放各種記錄型別，因此您的活動規則必須是針對您嘗試轉換為接觸點的記錄而量身打造的特定規則，這點很重要。 以下最佳實務可協助您透過活動歸因建立有意義且有價值的接觸點。
 
 ## 最佳實務 {#best-practice}
 

@@ -4,9 +4,9 @@ description: 在Marketo Measure Js中確保GDPR的同意 — Marketo Measure —
 title: 在Marketo Measure Js中確保GDPR的同意
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 GDPR的目的是加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對其個人資料的使用和保護方式的權利。 「個人資料」是指與已識別或可識別的自然人相關的任何資訊。 GDPR適用於歐盟內或歐盟以外任何向歐盟及EEA內的資料主體行銷商品或服務及/或追蹤其行為的組織。 如果您與歐洲資料主體有業務往來，涉及處理其個人資料，此法規即適用於您。 違規者將受到嚴厲的處罰，違規者會被處以鉅額罰款；單次違規的最高罰款為2,000萬歐元，或全球每年營業額的4%，以金額較大者為準。
 
-根據預設， [!DNL bizible.js] 收集使用者的analytics資料，除非其明確設定為等待同意。 時間 [!DNL bizible.js] 設為等待使用者同意，在取得同意前不會建立任何cookie或傳送任何analytics資料。
+根據預設， [!DNL bizible.js] 收集使用者的analytics資料，除非將其設定為等待同意。 時間 [!DNL bizible.js] 設為等待使用者同意，在取得同意前不會建立任何cookie或傳送任何analytics資料。
 
 ## 如何等待同意 {#how-to-wait-for-consent}
 
@@ -36,11 +36,11 @@ GDPR的目的是加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對其個�
 
 >[!NOTE]
 >
->在這種情況下， [!DNL bizible.js] 將附加按一下事件至ID為「ConsentButtonId」的HTML元素。
+>在這種情況下， [!DNL bizible.js] 附加點按事件至ID為「ConsentButtonId」的HTML元素。
 
-當按一下此HTML元素時， [!DNL bizible.js] 將會建立Cookie以記住已收到使用者的同意，並照常開始收集分析資料。
+當按一下此HTML元素時， [!DNL bizible.js] 建立Cookie以記住已收到使用者的同意，並照常開始收集分析資料。
 
-**-或-**
+**— 或 —**
 
 選項2 — 取代預設值 [!DNL bizible.js] 指令碼標籤：
 
@@ -50,7 +50,7 @@ GDPR的目的是加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對其個�
 
 *視窗[&#39;Bizible&#39;] = window[&#39;Bizible&#39;] || { _queue： []，推播：函式(o， p) {這個。_queue.push({ type： o， data： p })； } }；*
 
-*Bizible.Push(&#39;Consent&#39;， true)；*
+*Bizible。 Push(&#39;Consent&#39;， true)；*
 
 **如果您使用 [!DNL Google Tag Manager] 安裝指令碼**，請記住GTM會移除資料屬性，因此請改用下列指令碼：
 
@@ -67,4 +67,4 @@ GDPR的目的是加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對其個�
 
 `Bizible.Push('Consent', false);`
 
-此程式碼執行時，會刪除符合以下條件的所有Cookie： [!DNL bizible.js] 之前已建立，且只會在使用者同意後繼續收集analytics資料。
+此程式碼執行時，會刪除符合以下條件的所有Cookie： [!DNL bizible.js] 之前已建立，且僅在使用者同意時才會恢復analytics資料的收集。

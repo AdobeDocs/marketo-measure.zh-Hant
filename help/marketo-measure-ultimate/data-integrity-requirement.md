@@ -3,7 +3,7 @@ description: 『[!DNL Marketo Measure] 終極資料完整性需求 —  [!DNL Ma
 title: 『[!DNL Marketo Measure] 終極資料完整性要求
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 17%
@@ -12,7 +12,7 @@ ht-degree: 17%
 
 # [!DNL Marketo Measure] 終極資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
 
-[!DNL Marketo Measure] 驗證傳入的AEP資料集，確保資料充足且一致，以實現歸因。 若未符合資料完整性要求，資料集將會遭到 [!DNL Marketo Measure] 系統。 本檔案詳細說明資料完整性需求、提供資料檢查的查詢範例，並建議具有null值的必填欄位的解決方案。
+[!DNL Marketo Measure] 驗證傳入的AEP資料集，確保資料充足且一致以供歸因使用。 若未符合資料完整性要求，資料集將遭到 [!DNL Marketo Measure] 系統。 本檔案詳細說明資料完整性需求、提供資料檢查的查詢範例，並建議具有null值的必填欄位的解決方案。
 
 ## 實體物件 {#entity-object}
 

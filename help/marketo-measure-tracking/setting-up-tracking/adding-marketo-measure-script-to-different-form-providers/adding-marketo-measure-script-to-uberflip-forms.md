@@ -4,9 +4,9 @@ description: 新增 [!DNL Marketo Measure] 編寫指令碼至 [!DNL Uberflip] FO
 title: 新增 [!DNL Marketo Measure] 編寫指令碼至 [!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
    `window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };`
 
-   您會將此序言新增至 [!DNL Hubs.onLoad] 和 [!DNL Hubs.onPageChange] AJAX Javascript事件鉤點如下。 (注意：在這些事件鉤點中，您也可能有其他程式碼。 請務必也加入前言。)
+   將此序言新增到兩者 [!DNL Hubs.onLoad] 和 [!DNL Hubs.onPageChange] AJAX JavaScript事件鉤點如下。 (注意：在這些事件勾點中，您也可能有其他程式碼。 請務必也加入前言。)
 
    `Hubs.onLoad = function () {`
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
    `}`
 
-1. 建立並定義函式，在表單CTA提交時推送資料至Bizible。 這將會放入 [!UICONTROL Custom Code>Javascript] 區段。 （注意：此函式僅需要Uberflip提供的ctaData引數，但您可以包含其他引數ctaId和ctaName ，以防使用者想要自訂其程式碼以一併傳遞此資料）。
+1. 建立並定義在提交表單CTA時將資料推送到Bizible的函式。 這將會放入 [!UICONTROL Custom Code>JavaScript] 區段。 （注意：此函式僅需要Uberflip提供的ctaData引數，但您可以包含其他引數ctaId和ctaName ，以防使用者想要自訂其程式碼以一併傳遞此資料）。
 
    `function bizibleFormCode(ctaId, ctaData, ctaName) {`
    `var email = ctaData["email"];`
@@ -48,7 +48,7 @@ ht-degree: 0%
 
    `}`
 
-1. 表單CTA提交時，請確保 [!DNL Marketo Measure] 函式執行於下方。 這是在「 」中完成的 [!UICONTROL Custom Code>JS] 區段。 （注意：您可能在Hubs.onCtaFormSubmitSuccess javascript事件勾點中有其他程式碼，只要確定您也包含此函式呼叫即可）。
+1. 表單CTA提交時，請確保 [!DNL Marketo Measure] 函式執行於下方。 這是在「 」中完成的 [!UICONTROL Custom Code>JS] 區段。 （注意：您可能在Hubs.onCtaFormSubmitSuccess JavaScript事件勾點中有其他程式碼，請確定您也包含此函式呼叫）。
 
    `Hubs.onCtaFormSubmitSuccess = function (ctaId, ctaData, ctaName) {`
    `bizibleFormCode(ctaId, ctaData, ctaName);`\

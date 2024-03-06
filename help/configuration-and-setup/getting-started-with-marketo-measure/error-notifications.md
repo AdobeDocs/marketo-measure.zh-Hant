@@ -2,9 +2,9 @@
 description: 錯誤通知 —  [!DNL Marketo Measure]
 title: 錯誤通知
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
       <td>API_DISABLED</td>
       <td>Crm匯入期間發生錯誤： API_DISABLED ：已針對此使用者停用API呼叫</td>
       <td>已為Marketo Measure使用者停用API許可權。</td>
-      <td>請參閱以下Salesforce檔案： <a href="https://help.salesforce.com/s/articleView?id=sf.branded_apps_commun_api_permset.htm&amp;type=5">如何啟用API存取</a>.</td>
+      <td>請參閱以下Salesforce檔案： <a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">如何啟用API存取</a>.</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -73,7 +73,7 @@ ht-degree: 0%
       <p>
       廣告匯入期間發生錯誤： INVALID_CURRENCY_ISO_CODE ： Marketo Measure不支援帳戶1234的貨幣XXX。</td>
       <td>發生不支援的貨幣。</td>
-      <td>在通知中指出的來源系統中(Ad、Crm、Marketo)，請確定與記錄關聯的貨幣具有支援的有效貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
+      <td>在通知(廣告、Crm、Marketo)中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
@@ -127,7 +127,7 @@ ht-degree: 0%
           Crm匯入期間發生錯誤： NULL_EMPTY_CURRENCY_ISO_CODE：為RecordId 1234啟用MultiCurrency時，貨幣ISO代碼為NULL或空白
       </td>
       <td>貨幣必須是支援的ISO貨幣代碼。</td>
-      <td>在通知中指出的來源系統中(Ad、Crm、Marketo)，請確定與記錄關聯的貨幣具有支援的有效貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
+      <td>在通知(廣告、Crm、Marketo)中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
     </tr>
     <tr>
       <td>OPERATION_TO_LARGE</td>

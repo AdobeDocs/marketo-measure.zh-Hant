@@ -4,9 +4,9 @@ description: 接觸點欄位 —  [!DNL Marketo Measure]
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 啟用功能 {#enabling-the-feature}
 
-從 [!DNL Marketo Measure] 設定功能表，導覽至「接觸點欄位」頁面。 從那裡，您可以透過選取 **是** 在 **啟用計算欄位**. 啟用後，您就可以自由建立接觸點欄位。
+從 [!DNL Marketo Measure] 設定功能表，導覽至「接觸點欄位」頁面。 從那裡，您可以透過選取 **是** 在 **啟用計算欄位**. 啟用此功能後，您可以建立接觸點欄位。
 
 ![](assets/one.png)
 
@@ -221,7 +221,7 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 
 **如何驗證我的擷取運算式是否有效並提取正確的值？**
 
-有一個線上工具([[!DNL https]：//regex101.com/](https://regex101.com/){target="_blank"})來執行並測試運算式。 如果運算式有效，則顯示綠色，如果無效則顯示紅色。 此外， [!UICONTROL explanation] 右上方的方塊很有幫助，會告訴您正在擷取的內容。
+有一個線上工具([[!DNL https]：//regex101.com/](https://regex101.com/){target="_blank"})來執行並測試運算式。 如果運算式有效，則顯示綠色；如果運算式無效，則顯示紅色。 此外， [!UICONTROL explanation] 右上方的方塊很有幫助，會告訴您正在擷取的內容。
 
 ![](assets/twelve.png)
 

@@ -4,7 +4,7 @@ description: 整合式廣告平台 —  [!DNL Marketo Measure]
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%
@@ -89,7 +89,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >如果您收到指出追蹤範本無效的錯誤，請嘗試清除瀏覽器快取，然後再試一次 — 這通常可以解決問題。
+   >如果您收到指出追蹤範本無效的錯誤，請嘗試清除瀏覽器快取，然後再試一次 — 這通常可解決此問題。
 
 ## 如何自動為產生UTM標籤 [!DNL Google AdWords] {#how-to-automatically-generate-utm-tags-for-google-adwords}
 
@@ -97,7 +97,7 @@ UTM標籤一開始可能很難建立，但有許多工具可用來輕鬆使用UT
 
 **[!DNL Google URL]產生器**
 
-Google URL Builder是使用UTM標籤建置格式正確的URL的標準工具。 只需輸入URL和每個引數的所需值，然後按一下「[!UICONTROL Generate URL]「。 如果要標籤的URL不多，這是理想的工具。 存取工具 [此處](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}.
+Google URL Builder是使用UTM標籤建置格式正確的URL的標準工具。 輸入URL和每個引數的所需值，然後按一下「[!UICONTROL Generate URL]「。 如果要標籤的URL不多，這是理想的工具。 存取工具 [此處](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}.
 
 **EpikOne產生的Google試算表**
 
