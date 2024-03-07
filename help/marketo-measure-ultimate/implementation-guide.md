@@ -2,9 +2,9 @@
 description: 『[!DNL Marketo Measure] Ultimate Implementation指南 —  [!DNL Marketo Measure]『
 title: 『[!DNL Marketo Measure] Ultimate Implementation指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -131,12 +131,13 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
 >[!NOTE]
 >
+>* 建議每個資料流僅包含一個資料集。
 >* 來自指定來源之指定實體（例如帳戶）的資料只能進入一個資料集。 每個資料集只能包含在一個資料流程中。 違規會在執行階段停止資料流。
 >* 刪除AEP中的整個目的地，以刪除「測量」中的資料。 停用會停止匯出新資料並保留舊資料。
 >* 「測量」組態看起來大多相同，但有些零件（例如「階段對應」）看起來會不同。
 >* 新資料流需要幾個小時才能產生資料流執行，然後會以固定的每小時間隔進行。
 
-在測量中，預設貨幣必須在「貨幣」區段中設定
+在測量中，預設貨幣必須在「貨幣」區段中設定。
 
 * 如果您使用多貨幣，則必須在AEP中填入貨幣轉換率結構描述，我們才能讀取及使用它進行轉換。
 
