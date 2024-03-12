@@ -3,9 +3,9 @@ description: Passport儀表板 —  [!DNL Marketo Measure]  — 產品
 title: Passport儀表板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 88dfdac366d29bed29ed39979cb76cad7aee4025
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,6 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 此儀表板配備了下列設定和篩選器：
 
 * 日期（根據轉換日期）
-* 歸因模型
 * 頻道、子頻道
 * Campaign
 * 區段
@@ -60,4 +59,3 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 >
 >* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
 >* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
-
