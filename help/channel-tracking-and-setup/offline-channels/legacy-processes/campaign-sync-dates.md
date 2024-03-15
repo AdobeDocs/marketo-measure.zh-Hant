@@ -4,9 +4,9 @@ description: Campaign同步日期 —  [!DNL Marketo Measure]
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: b84909fbb34a1d8f739ebeea3400ef8816e17d32
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,3 @@ ht-degree: 0%
 如果您是新手 [!DNL Marketo Measure] 客戶，您可能有興趣透過SFDC Campaigns帶回部分您一直在追蹤的行銷資料。 不過，如果您要啟用線上SFDC行銷活動的接觸點，則可能會遇到重複計算歸因的問題，因為 [!DNL Marketo Measure] 會自動建立用於線上行銷工作的接觸點。 為避免重複計算資料，您可以使用Campaign接觸點結束日期，對建立的接觸點日期設定限制 [!DNL Marketo Measure] SFDC促銷活動上的資訊。 例如，如果您想要為一直在SFDC中追蹤的Social促銷活動新增追溯轉換，但您瞭解您已新增 [!DNL Marketo Measure] 7月1日的JavaScript （會建立線上接觸點）則可編輯Social SFDC促銷活動，使其包含等於7月1日的接觸點結束日期，並啟用該促銷活動的購買者接觸點。
 
 接觸點結束日期可能有許多其他使用案例。 如果您需要協助瞭解特定情況，請隨時與 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
-
->[!MORELIKETHIS]
->
->[[!DNL Marketo Measure] 大學：促銷活動和促銷活動成員欄位](https://learn.bizible.com/2-bizible-customization/137720https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c63007334d9f0367662b758)
