@@ -3,9 +3,9 @@ description: 錯誤通知 —  [!DNL Marketo Measure]
 title: 錯誤通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 9efdafadd8714237f27dfd722df533c5411f5fe0
+source-git-commit: 2b13a518d1be768a5c312ea4abdf2039aa22cf08
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ ht-degree: 0%
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>在Crm匯出期間發生錯誤： INACTIVE_OWNER_OR_USER ：實體型別「連絡人」： CRM錯誤碼： INACTIVE_OWNER_OR_USER， CRM錯誤訊息：以非作用中使用者[1234]作為連絡人執行操作，記錄識別碼： 0123456</td>
       <td>Marketo Measure缺少「以非作用中擁有者更新記錄」許可權。</td>
-      <td>授予Marketo Measure "<a href="/">更新非作用中擁有者的記錄</a>「許可權。</td>
+      <td>授予Marketo Measure "<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">更新非作用中擁有者的記錄</a>「許可權。</td>
     </tr>
     <tr>
       <td>UNFFECTED_ACCESS_OR_READONLY</td>
