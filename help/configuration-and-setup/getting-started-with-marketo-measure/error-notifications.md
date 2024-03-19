@@ -3,9 +3,9 @@ description: 錯誤通知 —  [!DNL Marketo Measure]
 title: 錯誤通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 2b13a518d1be768a5c312ea4abdf2039aa22cf08
+source-git-commit: 20f886a0c6f448956ad2fda2d21a25f8d9a5a6af
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # 錯誤通知 {#error-notifications}
 
 以下是您可透過應用程式內通知或電子郵件收到的錯誤清單。 如果您收到任何這些訊息，請依照各自的疑難排解步驟進行。 如果這些步驟沒有解決問題，請連絡 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support).
+
+若要在中檢視完整通知訊息 [!DNL Marketo Measure]，按一下 **檢視全部** 在「通知」標籤底部。
+
+![](assets/error-notifications-1.png)
 
 <table>
   <tbody>
@@ -49,7 +53,7 @@ ht-degree: 0%
             </li>
           </ul>
           <p>
-           <img src="assets/error-notifications-1.png">
+           <img src="assets/error-notifications-2.png">
           </p>
       </td>
     </tr>
@@ -87,27 +91,17 @@ ht-degree: 0%
       <td>DUPLICATES_DETECTED</td>
       <td>Crm匯出期間發生錯誤： DUPLICATES_DETECTED ：實體型別「Contact」： CRM錯誤碼： DUPLICATES_DETECTED， CRM ErrorMessage：您正在建立重複的記錄。 我們建議您改用現有記錄。RecordId： 0123456</td>
       <td>匯入至Salesforce組織的記錄已經存在。</td>
-      <td>
-        <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">停用「重複規則」設定</a> 以允許重複專案。
-          </li>
-          <li>從中排除Marketo Measure專用使用者 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>.
-          </li>
-        </ul>
-      </td>
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">停用「重複規則」設定</a> 以允許重複專案。
+          <p>
+          從中排除Marketo Measure專用使用者 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>.</td>
     </tr>
     <tr>
       <td>DUPLICATE_VALUE</td>
       <td>Crm匯出期間發生錯誤： DUPLICATE_VALUE ：實體型別「銷售機會」： CRM錯誤碼： DUPLICATE_VALUE， CRM錯誤訊息：發現重複值： Email_Unique__c重複識別碼為123的記錄上的值，記錄識別碼： 456</td>
       <td>匯入至Salesforce組織的欄位不允許重複值。</td>
-      <td>
-        <ul>
-          <li>取消核取 <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">「不重複核取方塊」</a> （位於Salesforce）。
-          </li>
-          <li>從中排除Marketo Measure專用使用者 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>.
-          </li>
-        </ul>
-      </td>
+      <td>取消核取 <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">「不重複核取方塊」</a> （位於Salesforce）。
+          <p>
+          從中排除Marketo Measure專用使用者 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>.</td>
     </tr>
     <tr>
       <td>實體_IS_LOCKED</td>
