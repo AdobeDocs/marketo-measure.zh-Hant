@@ -4,10 +4,10 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: '"[!DNL Marketo Measure] 可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」'
-source-git-commit: 00a362a2e143749e1a132672b847eb06dcab6b9c
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 1%
+source-wordcount: '794'
+ht-degree: 0%
 
 ---
 
@@ -164,20 +164,6 @@ ht-degree: 1%
       + [收入總覽儀表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
       + [ROI控制面板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
       + [網站流量儀表板](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
-
-   + 舊式儀表板 {#legacy-dashboards}
-      + [同類群組歷程儀表板檔案](marketo-measure-discover-ui/legacy-dashboards/cohort-journey-dashboard-documentation.md)
-      + [Passport Dashboard檔案](marketo-measure-discover-ui/legacy-dashboards/passport-dashboard-documentation.md)
-      + [快照儀表板檔案](marketo-measure-discover-ui/legacy-dashboards/snapshot-dashboard-documentation.md)
-      + 使用 [!DNL Marketo Measure]的報表平台 {#using-marketo-measures-reporting-platform}
-         + [常見使用案例](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/common-use-cases.md)
-         + [定義與百科全書](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/definitions-and-encyclopedia.md)
-         + [鑽研](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/drill-throughs.md)
-         + [篩選器](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/filters.md)
-         + [常見問題集](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/faq.md)
-         + [參與路徑](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/engagement-path.md)
-         + [行銷操作圖磚](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/marketing-ops-tiles.md)
-         + [概觀展示板圖磚](marketo-measure-discover-ui/legacy-dashboards/using-marketo-measures-reporting-platform/overview-board-tiles.md)
 + [!DNL Marketo Measure] 和Adobe {#marketo-measure-and-adobe}
    + [[!DNL Marketo Measure] Adobe Analytics的整合](marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md)
    + [[!DNL Marketo Measure] 整合Adobe Launch](marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-launch.md)

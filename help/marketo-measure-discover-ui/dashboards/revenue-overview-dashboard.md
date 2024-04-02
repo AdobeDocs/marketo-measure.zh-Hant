@@ -3,9 +3,9 @@ description: 收入總覽儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 收入總覽儀表板
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # 收入總覽儀表板 {#revenue-overview-dashboard}
 
 收入概觀儀表板提供從CRM衍生的總收入的深入分析，讓您更清楚瞭解行銷策略的角色。 它概略說明行銷如何影響您的整體收入，以及如何協助成功完成交易。
-
->[!NOTE]
->
->此儀表板目前是Beta版。 在此過渡階段中，目前和新的儀表板皆可存取。 一旦我們完全轉換並確保最佳功能，目前的儀表板將被棄用。
 
 **展示板回答的問題：**
 
