@@ -3,9 +3,9 @@ description: 『[!DNL Marketo Measure] 與Adobe Launch整合 —  [!DNL Marketo 
 title: 『[!DNL Marketo Measure] 與Adobe Launch的整合
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 6aaf6fd26f19e9382cc559e54558e1c5d84cfd6d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,6 @@ Adobe Launch擴充功能是專為現有的 [!DNL Marketo Measure] 已在網站�
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-5.png)
 
-   >[!NOTE]
-   >
-   >此欄位不是Business_Prod.Business表格中的「帳戶ID」。 來自指定URL的所有網頁活動(例如， `adobe.com`)對應至 [!DNL Marketo Measure] 租使用者。
-
 1. 按一下 **[!UICONTROL Save]**.
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-6.png)
@@ -79,3 +75,4 @@ Adobe Launch擴充功能是專為現有的 [!DNL Marketo Measure] 已在網站�
 1. 按一下 **[!UICONTROL Save]**.
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-12.png)
+
