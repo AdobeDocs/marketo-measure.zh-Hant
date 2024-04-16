@@ -2,9 +2,10 @@
 description: 潛在客戶速度控制面板 —  [!DNL Marketo Measure]  — 產品
 title: 銷售機會速度控制面板
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
+source-git-commit: de7239abaedaf1a59b3760f12736a225d71027a1
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -20,14 +21,16 @@ Velocity儀表板可動態檢視潛在客戶在銷售漏斗中的移動速度，
 
 ## 控制面板元件 {#dashboard-components}
 
+是否顯示「銷售機會」或「連絡人」取決於在「設定>歸因設定>預設儀表板物件」中設定的偏好設定。
+
 ### 依階段的銷售機會/接觸速度 {#lead-contact-velocity-by-stage}
 
 長條圖顯示銷售機會/聯絡人在特定時間範圍內在每個銷售階段所花費的平均持續時間（以天為單位）。
 
 圖表回答的問題：
 
-潛在客戶/聯絡人的時間通常在哪個銷售階段最長？
-「首次接觸」階段與「MQL」階段相比如何？
+* 潛在客戶/聯絡人的時間通常在哪個銷售階段最長？
+* 「首次接觸」階段與「MQL」階段相比如何？
 
 ![](assets/lead-velocity-dashboard-1.png)
 
