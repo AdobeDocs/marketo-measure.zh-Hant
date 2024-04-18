@@ -4,9 +4,9 @@ description: 整合式廣告平台 —  [!DNL Marketo Measure]
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,13 @@ Rafflecopter建立的試算表是經過修改的 [!DNL EpikOne's] 試算表。 �
 ## Bing Ads {#bing-ads}
 
 Bing Ads是整合平台，可讓您啟用URL的自動標籤或使用協力廠商工具，例如 [!DNL Marketo Measure]，以標籤廣告。 [!DNL Bing Ads] 也仰賴UTM引數。
+
+我們的整合支援以下廣告型別：
+
+* 文字廣告
+* 行動裝置廣告
+* 展開的文字廣告
+
 
 Bing Ads的自動標籤功能新增下列UTM引數：
 

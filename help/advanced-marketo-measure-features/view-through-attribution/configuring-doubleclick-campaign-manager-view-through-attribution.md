@@ -4,9 +4,9 @@ description: 透過歸因設定Doubleclick Campaign Manager檢視 —  [!DNL Mar
 title: 透過歸因設定Doubleclick Campaign Manager檢視
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 透過歸因設定Doubleclick Campaign Manager檢視 {#configuring-doubleclick-campaign-manager-view-through-attribution}
 
 ## 透過歸因測量檢視 {#measuring-view-through-attribution}
+
+>[!IMPORTANT]
+>
+>基於隱私權疑慮，第三方Cookie即將推出。 Google Chrome在2024年第3季度宣佈淘汰第三方Cookie，這實際上標誌著這種追蹤形式的結束。 因此，Adobe淘汰依賴第三方Cookie的Marketo Measure功能；特別是跨網域追蹤和瀏覽歸因，後者使用Google/DoubleClick曝光數Cookie。 Marketo Measure的其他功能將不會受到影響。 第一方Cookie使用量也不受影響。 根據Google排程，上述兩個功能的預計淘汰日期為2024年6月1日。 在此日期之前收集的相關資料仍可供Adobe客戶使用。
 
 >[!NOTE]
 >
