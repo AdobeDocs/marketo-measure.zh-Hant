@@ -2,9 +2,10 @@
 description: 參與儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 參與儀表板
 feature: Reporting
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
+source-git-commit: db71635a77d6e2555c442fb45371fd5a93e3c502
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -12,6 +13,14 @@ ht-degree: 0%
 # 參與儀表板 {#engagement-dashboard}
 
 參與儀表板會謹慎追蹤使用者參與量度。 它會顯示接觸點、參與人數和每個人的平均接觸點。 利用時間序列長條圖進行每月、每季或每年檢視，並利用長條圖進行詳細的管道、子管道和促銷活動深入分析。 此工具對於瞭解參與模式及微調參與策略至關重要。
+
+我們會以使用者接觸點(UT) （即「原始」收集到的資料點）的形式追蹤每個客戶互動，這些資料點構成了控制面板上參與量度的基礎。 並非所有UT都會演化為購買者接觸點(BT)或購買者歸因接觸點(BAT)，因為這些是將特定客戶互動歸因到收入相關活動的選定結果。 請務必注意，隱藏規則不會影響UT或參與儀表板。
+
+* **使用者接觸點**：從所有參與建立的接觸點。
+* **購買者接觸點**：為Lead和Contact歸因選取的接觸點。 BT未連結至Opportunities，因此沒有相關的收入。
+* **購買者歸因接觸點**：針對機會歸因選取的接觸點。 BAT連結至「商機」，因此會影響收入。
+
+僅使用BT或BAT來測量參與度，會低估客戶互動的真實程度，因為參與度不只是歸因。
 
 控制面板回答的問題：
 
