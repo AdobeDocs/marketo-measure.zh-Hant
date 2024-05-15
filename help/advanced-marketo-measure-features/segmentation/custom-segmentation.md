@@ -4,9 +4,9 @@ description: 自訂分段 —  [!DNL Marketo Measure]
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: e1ad563aac12ceb6bea6c28621ebd1cb7ec0a923
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 0%
 自訂分段可用於檢視特定記錄型別的資料。 對應篩選器邏輯後，您應該可以在 [!DNL Marketo Measure] 控制面板的「需求瀑布圖」檢視，也就是您在CRM中看到的相同資料。
 
 **該如何設定？**
+
+>[!NOTE]
+>
+>更新區段規則將會重新處理歷史資料。
 
 步驟1 — 決定您要檢視的資訊。
 
