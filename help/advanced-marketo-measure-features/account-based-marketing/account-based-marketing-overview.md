@@ -4,9 +4,9 @@ description: 瞭解Account-Based Marketing (ABM)，以及AdobeMarketo Measure如
 title: 帳戶型行銷概觀
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: e2165fea3e76baeedf9b22247d005578d6c6da5d
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,22 @@ ht-degree: 0%
 
 ## 銷售線索與帳戶的對應 {#lead-to-account-mapping}
 
-銷售線索與帳戶的對映是有效業餘資產管理方法的重要部分。 透過銷售線索與帳戶對應，潛在客戶或潛在客戶在與您的品牌互動時分組到相同的公司帳戶中。 這可讓您以一致的方式鎖定目標，並銷售給來自相同公司的個人。 不需額外付費 [!DNL Salesforce] 開始受益於此功能所需的設定。 此 [!DNL Marketo Measure] 銷售線索帳戶對應五種不同的比對方法：
+銷售線索與帳戶的對映是有效業餘資產管理方法的重要部分。 透過銷售線索與帳戶對應，潛在客戶或潛在客戶在與您的品牌互動時分組到相同的公司帳戶中。 這可讓您以一致的方式鎖定目標，並銷售給來自相同公司的個人。 不需額外付費 [!DNL Salesforce] 開始受益於此功能所需的設定。 此 [!DNL Marketo Measure] 潛在客戶帳戶對應不同的比對方法：
 
 * 將網站引向帳戶網站
 * 帳戶網站網域的潛在客戶電子郵件網域
 * 潛在客戶公司名稱與帳戶名稱
 * 將公司導向帳戶網站網域
-* 透過連絡人的電子郵件地址將潛在客戶電子郵件地址上的網域與帳戶進行比對
+* 潛在客戶網站至帳戶連絡人的電子郵件網域
+* 潛在客戶電子郵件網域至帳戶連絡人的電子郵件網域
+* 潛在客戶網站至客戶潛在客戶的電子郵件網域
+* 潛在客戶電子郵件網域至帳戶潛在客戶的電子郵件網域
+
+帳戶的銷售機會/聯絡人會透過其電子郵件/網站網域進行驗證，並和銷售機會電子郵件/網站的網域或子網域相符。 會使用最符合的帳戶。
 
 >[!NOTE]
 >
->每個Lead會依照上述方法的優選順序，嘗試和一個Account進行比對。 進行比對後，會立即在潛在客戶上設定AccountId，且不會使用其他方法進行比對。 如果潛在客戶已有有效的AccountId，則會略過該潛在客戶。
+>每個Lead會依照上述方法的優選順序，嘗試和一個Account進行比對。 進行比對後，會立即在潛在客戶上設定AccountId，且不會使用其他方法進行比對。
 
 ## 預測性參與分數 {#predictive-engagement-score}
 
