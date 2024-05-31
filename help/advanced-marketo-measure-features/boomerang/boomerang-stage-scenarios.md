@@ -4,9 +4,9 @@ description: 迴旋舞台情境 —  [!DNL Marketo Measure]
 title: 迴旋舞步舞台情境
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1763'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能僅針對第3級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
+>Boomerang功能僅針對2級和3級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
 
 以下是「迴旋曲棍球階段」的一些範例，可讓您瞭解如何 [!DNL Marketo Measure] 會在每種情況下建立接觸點。
 

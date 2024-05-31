@@ -4,9 +4,9 @@ description: 回力郎舞台和接觸點 —  [!DNL Marketo Measure]
 title: 回味郎舞台和接觸點
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能僅針對第3級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
+>Boomerang功能僅針對2級和3級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
 
 [!DNL Marketo Measure] 已發行迴旋舞台功能！ 建立迴旋舞台功能是為了更清楚地顯示客戶的歷程 [!DNL Marketo Measure] 銷售週期長的客戶。 此功能可讓行銷人員為Opportunity歷程中發生的所有階段轉變建立接觸點（例如當聯絡MQL時），然後移至SAL，再移回MQL階段。 當連絡人「重新進入MQL階段」或「重新進入MQL的階段」時，MQL會被視為回圈階段。 「迴旋舞台」功能可與 [!DNL Marketo Measure] 自訂階段。
 

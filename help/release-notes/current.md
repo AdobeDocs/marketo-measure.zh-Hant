@@ -3,9 +3,9 @@ description: 最新發行說明 —  [!DNL Marketo Measure]
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 88edec8ec5d015fb4152b9e822cb1bfa68ed85c2
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Marketo Measure Ultimate現在提供Marketo EngageCookie同步功能。 若要�
 1. 在「AEP綱要」頁面上，編輯「B2B人員」綱要，並新增欄位群組「Marketo Engage人員詳細資訊」。
 1. 將資料內嵌至MMU時，請將欄位群組中的Cookie ID欄位對應至Marketo Engage中的Cookie欄位。
 
-**為第2級與第3級客戶啟用回波廊階段**
+**為第2級客戶啟用回溯階段功能**
 
-自2024年6月7日起，所有2級和3級客戶將可使用Boomerang Stage功能。 如需有關此功能的詳細資訊，請參閱以下檔案。
+以前只有第3級客戶可以使用Boomerang Stage功能，但自2024年6月7日起，所有第2級客戶也可以使用。 如需有關此功能的詳細資訊，請參閱以下檔案。
 
 * [回味郎舞台和接觸點](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
 * [設定回車族階段](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
