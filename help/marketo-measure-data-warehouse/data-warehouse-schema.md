@@ -4,7 +4,7 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
 source-wordcount: '21110'
 ht-degree: 3%
@@ -33,24 +33,14 @@ Data Warehouse可讓您視需要追蹤更多內容、隨處報告歸因資料，
 _按一下完整版本的影像_
 
 <table style="table-layout:auto"> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
  <tbody> 
   <tr> 
-   <td><strong>Data Warehouse資料模型</strong></td> 
-   <td><strong>廣告維度資料模型</strong></td> 
+   <th>Data Warehouse資料模型</th> 
+   <th>廣告維度資料模型</th> 
   </tr> 
   <tr> 
-   <td> 
-    <div> 
-     <p><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></p> 
-    </div></td>
-   <td> 
-    <div> 
-     <p><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></p>
-    </div></td> 
+   <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td> 
   </tr> 
  </tbody> 
 </table>
@@ -121,7 +111,7 @@ _按一下完整版本的影像_
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>是否刪除來源系統中的記錄。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
@@ -211,7 +201,7 @@ _按一下完整版本的影像_
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>是否將記錄視為已刪除。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -321,7 +311,7 @@ _按一下完整版本的影像_
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>是否將記錄視為已刪除來源系統。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>AD_FORM_ID</td>
@@ -426,13 +416,13 @@ _按一下完整版本的影像_
       <td>IS_ACTIVE</td>
       <td>布林值</td>
       <td>廣告在來源系統中是否仍然有效。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>廣告是否已在來源系統中刪除。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -458,7 +448,7 @@ _按一下完整版本的影像_
       <td>是否需要更新廣告 [!DNL Marketo Measure] 標籤。
       <p>（診斷欄位，由內部處理使用。）
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>GROUPING_KEY</td>
@@ -613,13 +603,13 @@ _按一下完整版本的影像_
       <td>IS_ACTIVE</td>
       <td>布林值</td>
       <td>廣告商在來源系統中是否仍為作用中。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>是否已在來源系統中刪除廣告商。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -645,7 +635,7 @@ _按一下完整版本的影像_
       <td>是否需要更新廣告商 [!DNL Marketo Measure] 標籤。
       <p>（診斷欄位，由內部處理使用。）
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>GROUPING_KEY</td>
@@ -811,7 +801,7 @@ _按一下完整版本的影像_
         <p>廣告帳戶在來源系統中是否仍然有效。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -825,7 +815,7 @@ _按一下完整版本的影像_
         <p>廣告帳戶是否已在來源系統中刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -872,7 +862,7 @@ _按一下完整版本的影像_
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -1209,7 +1199,7 @@ _按一下完整版本的影像_
         <p>促銷活動在來源系統中是否仍為作用中。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -1223,7 +1213,7 @@ _按一下完整版本的影像_
         <p>是否已在來源系統中刪除行銷活動。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -1272,7 +1262,7 @@ _按一下完整版本的影像_
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -1457,7 +1447,7 @@ _按一下完整版本的影像_
         <p>已從來源系統刪除狀態。 如果狀態為「草稿」、「已封存」或「已取消」，則設為「已刪除」。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -1738,7 +1728,7 @@ _按一下完整版本的影像_
         <p>廣告帳戶在來源系統中是否仍然有效。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -1752,7 +1742,7 @@ _按一下完整版本的影像_
         <p>廣告帳戶是否已在來源系統中刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -1801,7 +1791,7 @@ _按一下完整版本的影像_
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -2026,7 +2016,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>BAT所屬商機的識別碼。</p>
+        <p>BAT所屬商機的ID。</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2036,7 +2026,7 @@ _按一下完整版本的影像_
       <td>CONTACT_ID</td>
       <td>varchar</td>
       <td>
-        <p>與BAT關聯的連絡人ID。</p>
+        <p>與BAT相關聯的連絡人ID。</p>
       </td>
       <td>
         <p>0030Z00003K5bpKQAR</p>
@@ -2054,7 +2044,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>BAT所屬帳戶的ID。</p>
+        <p>BAT歸因的帳戶ID。</p>
       </td>
       <td>
         <p>0013100001otbIAAY</p>
@@ -2751,7 +2741,7 @@ _按一下完整版本的影像_
         <p>此接觸點是否被視為機會歷程的第一次接觸。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -2765,7 +2755,7 @@ _按一下完整版本的影像_
         <p>此接觸點是否被視為機會歷程的潛在客戶建立接觸點。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -2779,7 +2769,7 @@ _按一下完整版本的影像_
         <p>此接觸點是否被視為機會歷程的機會建立接觸點。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -2793,7 +2783,7 @@ _按一下完整版本的影像_
         <p>此接觸點是否被視為機會歷程的封閉式接觸。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -2815,7 +2805,7 @@ _按一下完整版本的影像_
         <p>工作階段期間，此接觸點是否有表單填入。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -2829,7 +2819,7 @@ _按一下完整版本的影像_
         <p>此接觸點是否被視為機會歷程的第一次印象接觸</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -2921,7 +2911,7 @@ _按一下完整版本的影像_
         <p>此接觸點是否已刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -3315,7 +3305,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>告知促銷活動會員是否從狀態選擇器標示為「已回應」。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -3425,7 +3415,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否將記錄視為已刪除來源系統。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -3660,13 +3650,13 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>是否刪除來源系統中的記錄。</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>IS_DUPLICATE</td>
       <td>布林值</td>
       <td>若已設定CRM和Marketo整合，則用於去除重複記錄。 如果有重複專案，Marketo聯絡人會標示為true。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
@@ -3774,7 +3764,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_CURRENT</td>
       <td>布林值</td>
       <td>此欄位的語意已損毀。 請勿使用。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>CREATED_DATE</td>
@@ -3792,7 +3782,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>是否將記錄視為已刪除來源系統。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -3897,7 +3887,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>CHANNEL_IS_AGGREGATABLE_COST</td>
       <td>布林值</td>
       <td>表示該列是否包含可由管道加總的成本。 （亦即，若要取得管道成本，加總此欄等於true的列。）</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>ADVERTISER_UNIQUE_ID</td>
@@ -3915,7 +3905,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>ADVERTISER_IS_AGGREGATABLE_COST</td>
       <td>布林值</td>
       <td>表示該列是否包含可由廣告商加總的成本。 （也就是若要取得廣告商成本，請加總此欄等於true的列）。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -3952,7 +3942,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示資料列是否包含可由「科目」加總的「成本」。 （亦即，若要取得帳戶成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -3990,7 +3980,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示該列是否包含可由「促銷活動」加總的「成本」。 （也就是若要取得促銷活動成本，請加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -4028,7 +4018,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示該列是否包含可由「廣告群組」加總的成本。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4066,7 +4056,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否包含可加總為廣告的成本。 （也就是若要取得廣告成本，請加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4104,7 +4094,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否包含可由Creative加總的成本。 （亦即若要取得創意成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4142,7 +4132,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指示列是否包含可加總為關鍵字的成本。 （亦即，若要取得關鍵字成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4180,7 +4170,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指示列是否包含可由「位置」加總的「成本」。 （亦即，若要取得版位成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4218,7 +4208,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否包含可加總為網站的成本。 （亦即，若要取得網站成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4232,7 +4222,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否將記錄視為已刪除來源系統。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4473,7 +4463,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>無論創意內容在來源系統中是否仍為作用中。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -4487,7 +4477,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否已在來源系統中刪除Creative。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4536,7 +4526,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4649,7 +4639,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>創意內容是否使用升級的URL。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -4912,7 +4902,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>是否將記錄視為已刪除來源系統。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -5075,7 +5065,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>是否將記錄視為已刪除來源系統。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -5134,14 +5124,14 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>布林值</td>
       <td>指定貨幣是否為公司貨幣。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
       <td>IS_ENABLED</td>
       <td>布林值</td>
       <td>指定在來源系統中是否啟用貨幣。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -5322,7 +5312,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>記錄是否已刪除，用於診斷和稽核。</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -5433,7 +5423,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>記錄是否已刪除，用於診斷和稽核。</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -5766,14 +5756,14 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否將該記錄視為已刪除，用於診斷和稽核。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
       <td>IS_IGNORE</td>
       <td>布林值</td>
       <td>表示電子郵件或訪客ID是否被視為雜訊或垃圾郵件，用於內部處理。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -6293,7 +6283,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示商機是否已移至分類為成功的階段。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6307,7 +6297,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示商機是否已移至分類為已關閉的階段。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6406,7 +6396,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>指出列是否包含可加總為廣告的成本。 （也就是若要取得廣告成本，請加總此欄等於true的列。）</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -6418,7 +6408,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>表示該列是否包含可由廣告商加總的成本。 （也就是若要取得廣告商成本，請加總此欄等於true的列）。</p>
       </td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>
@@ -6431,7 +6421,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示資料列是否包含可由「科目」加總的「成本」。 （亦即，若要取得帳戶成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6445,7 +6435,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示該列是否包含可由「廣告群組」加總的成本。 （也就是若要取得廣告群組成本，請加總此欄等於true的列）。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6459,7 +6449,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示該列是否包含可由「促銷活動」加總的「成本」。 （也就是若要取得促銷活動成本，請加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -6472,7 +6462,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>表示該列是否包含可由管道加總的成本。 （亦即，若要取得管道成本，加總此欄等於true的列。）</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -6485,7 +6475,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否包含可由Creative加總的成本。 （亦即若要取得創意成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6499,7 +6489,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指示列是否包含可加總為關鍵字的成本。 （亦即，若要取得關鍵字成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6513,7 +6503,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指示列是否包含可由「位置」加總的「成本」。 （亦即，若要取得版位成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6527,7 +6517,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否包含可加總為網站的成本。 （亦即，若要取得網站成本，加總此欄等於true的列。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6541,7 +6531,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否刪除記錄，以做為稽核軌跡。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6740,7 +6730,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>表示該記錄是否被視為重複。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -6752,7 +6742,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>用於內部處理。</td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -6989,7 +6979,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>表示該記錄是否被視為重複。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -7001,7 +6991,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>用於內部處理。</td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -7616,7 +7606,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>Keyword在來源系統中是否仍然有效。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -7630,7 +7620,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否已在來源系統中刪除Keyword。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -7677,7 +7667,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -7754,7 +7744,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>用於內部處理的診斷欄位。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8162,7 +8152,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>Lead是否已轉換為Contact。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -8298,7 +8288,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否刪除來源系統中的記錄。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8323,7 +8313,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_DUPLICATE</td>
       <td>布林值</td>
       <td>若已設定CRM和Marketo整合，則用於去除重複記錄。 如果有重複專案，Marketo銷售機會會標示為true。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
@@ -8513,7 +8503,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>顯示是否將接觸點視為待定狀態且尚未關閉。 這僅會針對擁有完整路徑歸因模型的客戶顯示。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8527,7 +8517,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否繫結至里程碑階段轉變。 例如，如果有3個階段/專案(FT、LC、MQL)和4個接觸點，則上面沒有階段的1個接觸點會視為「非過渡」，因此值會等於true。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8575,7 +8565,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否將轉變記錄視為已刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8672,7 +8662,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示商機是否已移至被視為勝出的階段。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8686,7 +8676,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示商機是否已移至被視為已關閉的階段。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -8825,7 +8815,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>是否刪除來源系統中的記錄。</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -8908,7 +8898,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>轉變的唯一ID。</p>
       </td>
       <td>
-        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec56e757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e757</p>
       </td>
     </tr>
     <tr>
@@ -9054,7 +9044,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>顯示是否將接觸點視為待定狀態且尚未關閉。 這僅會針對擁有完整路徑歸因模型的客戶顯示。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -9068,7 +9058,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指出列是否繫結至里程碑階段轉變。 例如，如果有3個階段/專案(FT、LC、MQL)和4個接觸點，則上面沒有階段的1個接觸點會視為「非過渡」，因此值會等於true。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -9116,7 +9106,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否將轉變記錄視為已刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -9310,7 +9300,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>布林值</p>
       </td>
       <td>表示該記錄是否被視為重複。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -9320,7 +9310,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>布林值</p>
       </td>
       <td>用於內部處理。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>
@@ -9398,7 +9388,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>HAS_USER_CONSENT</td>
       <td>布林值</td>
       <td>表示使用者是否已同意追蹤。 False表示已收集頁面檢視，因為不需要使用者同意。 True表示已收集頁面檢視，且使用者已同意被追蹤。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -9541,7 +9531,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>在來源系統中，「位置」是否仍為作用中。</p>
       </td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>
@@ -9553,7 +9543,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>是否已在來源系統中刪除「位置」。</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -9594,7 +9584,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否需要更新位置 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -9776,13 +9766,13 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_ACTIVE</td>
       <td>布林值</td>
       <td>指出類別是否正在使用中。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>布林值</td>
       <td>表示是否刪除記錄。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -9875,7 +9865,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_FIRST_SESSION</td>
       <td>布林值</td>
       <td>指出這是否為訪客ID的第一個工作階段。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>
@@ -9996,7 +9986,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>工作階段是否包含表單填入，</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -10010,7 +10000,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>工作階段是否包含網頁聊天。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -10024,7 +10014,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>工作階段是否有電子郵件地址。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -10038,7 +10028,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>工作階段是否來自CRM活動記錄。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -10460,7 +10450,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>判斷此工作階段是否已與另一個工作階段合併，且應將其刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -10688,7 +10678,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>網站在來源系統中是否仍為作用中。</p>
       </td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>
@@ -10700,7 +10690,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>是否已在來源系統中刪除網站。</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -10741,7 +10731,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否需要更新網站 [!DNL Marketo Measure] 標籤。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>
@@ -10759,7 +10749,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>此表格的主要物件或實體。 在此案例中，「網站」。</p>
       </td>
-      <td>網站</td>
+      <td>地點</td>
     </tr>
     <tr>
       <td>
@@ -11148,7 +11138,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>表示是否將「階段」視為非使用中。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -11162,7 +11152,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示是否選取要在自訂模型中追蹤的「舞台」。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -11176,7 +11166,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>表示是否選取「舞台」作為迴音符號舞台進行追蹤。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -11188,7 +11178,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>指示是否選取「舞台」來追蹤轉變。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -11214,7 +11204,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>指示Stage是否從外部來源系統匯入。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -11226,7 +11216,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>指示「舞台」是否設為預設值。</td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -11254,7 +11244,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否已經刪除「舞台」。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -11315,7 +11305,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>EMAIL</p>
       </td>
       <td>varchar</td>
-      <td>與BT關聯的電子郵件地址。</td>
+      <td>與BT相關聯的電子郵件地址。</td>
       <td>
         <p>person@adobe.com</p>
       </td>
@@ -12041,7 +12031,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否被視為機會歷程的第一次接觸。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -12055,7 +12045,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否被視為機會歷程的潛在客戶建立接觸點。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -12069,7 +12059,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否被視為機會歷程的機會建立接觸點。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -12083,7 +12073,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否被視為機會歷程的封閉式接觸。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -12103,7 +12093,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>工作階段期間，此接觸點是否有表單填入。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -12117,7 +12107,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否被視為機會歷程的第一次印象接觸</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -12208,7 +12198,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否已刪除。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -12525,7 +12515,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_FIRST_KNOWN_TOUCH</td>
       <td>布林值</td>
       <td>此接觸點是否被視為機會歷程的第一次接觸。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>VISITOR_ID</td>
@@ -13068,7 +13058,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>工作階段期間，此接觸點是否有表單填入。</p>
       </td>
       <td>
-        <p>True</p>
+        <p>真</p>
       </td>
     </tr>
     <tr>
@@ -13082,7 +13072,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>此接觸點是否被視為機會歷程的第一次印象接觸。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -13096,7 +13086,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>是否刪除接觸點。</p>
       </td>
       <td>
-        <p>False</p>
+        <p>假</p>
       </td>
     </tr>
     <tr>
@@ -13318,13 +13308,13 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>IS_DUPLICATED</td>
       <td>布林值</td>
       <td>表示該記錄是否被視為重複。</td>
-      <td>False</td>
+      <td>假</td>
     </tr>
     <tr>
       <td>IS_PROCESSED</td>
       <td>布林值</td>
       <td>用於內部處理。</td>
-      <td>True</td>
+      <td>真</td>
     </tr>
     <tr>
       <td>MAPPING_TYPE</td>
@@ -13367,7 +13357,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ## 範例查詢 {#sample-queries}
 
-**上個月每個管道/子管道有多少個購買者接觸點(BT)？**
+**上個月每個管道/子管道有幾個購買者接觸點(BT)？**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.

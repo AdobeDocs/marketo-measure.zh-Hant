@@ -4,9 +4,9 @@ description: 常見問題集（多貨幣） - [!DNL Marketo Measure]
 title: 常見問題集（多貨幣）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 請記住，此功能有兩個不同的功能位元。 兩者都位於 [!UICONTROL General] 「設定：多種貨幣和進階貨幣」中CRM區段的「 」標籤。 如果客戶使用多種單一貨幣，則應啟用多幣別，而如果客戶使用，則可啟用其他功能位元「進階貨幣」 [!DNL Salesforce]的「進階貨幣管理」功能，使用者可在此功能中設定轉換率的時間型範圍。
 
-不幸的是，我們不知道客戶何時在「簡單」或「進階」之間切換（如果「進階」已經開啟）。 因此，客戶需要手動保持進階貨幣設定與其CRM設定一致。 如果轉換不正確，客戶應該可清楚看到這點，這表示我們不知道要套用哪個轉換層級。
+Marketo Measure會自動從客戶的CRM提取貨幣設定。 不再需要在Marketo Measure中手動設定以符合CRM。 您可以在「CRM」底下的「一般」頁面中找到貨幣設定。
 
 **為什麼我的廣告帳戶會給我警告訊息？**
 

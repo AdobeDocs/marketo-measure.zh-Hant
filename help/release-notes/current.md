@@ -3,9 +3,9 @@ description: 最新發行說明 —  [!DNL Marketo Measure]
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 97a82ae0649ae5b1349d025a7a7cf433bc64bc7e
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **提醒： Salesforce欄位淘汰 — 6月14日**
 
-如去年所宣佈，我們將逐步淘汰對Lead/Contact物件的匯出工作，以簡化整合，並免除匯出至Salesforce標準物件的需要。 您可以依照下列步驟，從接觸點物件取得相同的資料 [在此處記錄](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. 我們也會分享有關建立工作流程的檔案，以將此資料新增至銷售機會/聯絡人物件。 淘汰將於2024年6月14日生效。
+如去年所宣佈，我們將 [逐步淘汰將工作匯出至銷售機會/連絡人物件](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} 以簡化整合，並免除匯出至Salesforce標準物件的需求。 您可以依照下列步驟，從接觸點物件取得相同的資料 [在此處記錄](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. 我們也會分享有關建立工作流程的檔案，以將此資料新增至銷售機會/聯絡人物件。 淘汰將於2024年6月14日生效。
 
 此變更將帶來兩個主要優點：
 
