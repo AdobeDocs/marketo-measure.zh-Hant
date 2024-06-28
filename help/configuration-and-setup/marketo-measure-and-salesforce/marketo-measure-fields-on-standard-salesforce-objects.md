@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] 標準欄位 [!DNL Salesforce] 物件 —  
 title: '"[!DNL Marketo Measure] 標準欄位 [!DNL Salesforce] 物件」'
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -22,30 +22,6 @@ ht-degree: 0%
 ## 帳戶 {#account}
 
 預測性參與分數：此欄位與我們的ABM功能搭配使用，以提供與帳戶參與程度相關的分數，並會考量許多因素，例如頁面檢視的造訪間隔、與帳戶相關聯的聯絡人數量，是否有已關閉的營業等。
-
-## 案例 {#case}
-
-我們將欄位新增至與首次接觸和銷售機會建立接觸里程碑相關的Case物件。 這是為了使用Case物件來取代Lead或Contact的客戶，也用於另一種檢視資料的方式，以防客戶不希望我們建立接觸點記錄。
-
-接觸點來源(FT)：這是首次接觸互動的來源。
-
-接觸點來源(LC)：這是潛在客戶建立接觸互動的來源。
-
-行銷管道(FT)：這是首次接觸互動的行銷管道。
-
-行銷管道(LC)：這是潛在客戶建立接觸互動的行銷管道。
-
-廣告行銷活動名稱(FT)：這是UTM行銷活動、來自廣告網路的廣告行銷活動，或 [!DNL Salesforce] 首次接觸互動的行銷活動。
-
-廣告行銷活動名稱(LC)：這是UTM行銷活動、來自廣告網路的廣告行銷活動，或 [!DNL Salesforce] 的促銷活動 [!UICONTROL lead creation] 觸控互動。
-
-登陸頁面(FT)：這是首次接觸互動的登陸頁面。
-
-登陸頁面(LC)：這是的登陸頁面 [!UICONTROL lead creation] 觸控互動。
-
-接觸點日期(FT)：這是首次接觸互動的日期。
-
-接觸點日期(LC)：這是銷售機會建立接觸互動的日期。
 
 ## Campaign {#campaign}
 
@@ -75,61 +51,13 @@ UniqueID：此欄位供我們內部使用，以追蹤與同步的不同行銷活
 
 接觸點狀態日期：此為填入診斷欄位的日期。
 
-購買者接觸點日期：此日期與 [!UICONTROL Bulk Update Touchpoint date] 按鈕。 使用時，我們會套用定義的接觸點日期至促銷活動會員。
+Buyer Touchpoint日期：此日期與 [!UICONTROL Bulk Update Touchpoint date] 按鈕。 使用時，我們會套用定義的接觸點日期至促銷活動會員。
 
 OnCampaignMemberDelete：立即可用， [!DNL Salesforce] 刪除行銷活動成員時不會顯示，這可能會造成精確歸因報表的問題。 刪除行銷活動會員時，系統會觸發此動作以通知 [!DNL Marketo Measure] 以移除與該不存在的行銷活動成員相關的接觸點。
 
-## 連絡人 {#contact}
-
-我們會將欄位新增至與首次接觸和銷售機會建立接觸里程碑相關的聯絡人物件。 這適用於偏好將歸因直接報告至欄位，而非建立接觸點記錄的客戶。 我們大部分的客戶都採用接觸點記錄路徑，但也會在其自動化平台中使用這些欄位。
-
-接觸點來源(FT)：這是首次接觸互動的來源。
-
-接觸點來源(LC)：這是潛在客戶建立接觸互動的來源。
-
-行銷管道(FT)：這是首次接觸互動的行銷管道。
-
-行銷管道(LC)：這是潛在客戶建立接觸互動的行銷管道。
-
-廣告行銷活動名稱(FT)：這是UTM行銷活動、來自廣告網路的廣告行銷活動，或 [!DNL Salesforce] 首次接觸互動的行銷活動。
-
-廣告行銷活動名稱(LC)：這是UTM行銷活動、來自廣告網路的廣告行銷活動，或 [!DNL Salesforce] 的促銷活動 [!UICONTROL lead creation] 觸控互動。
-
-登陸頁面(FT)：這是首次接觸互動的登陸頁面。
-
-登陸頁面(LC)：這是的登陸頁面 [!UICONTROL lead creation] 觸控互動。
-
-接觸點日期(FT)：這是首次接觸互動的日期。
-
-接觸點日期(LC)：這是銷售機會建立接觸互動的日期。
-
-BizibleID：這是用於關聯聯絡人與接觸點的活動歸因和calltrackingmetrics整合。
-
 ## 銷售機會 {#lead}
 
-我們將欄位新增到與首次接觸和潛在客戶建立接觸里程碑相關的Lead物件。 這適用於偏好將歸因直接報告至欄位，而非建立接觸點記錄的客戶。 我們大部分的客戶都採用接觸點記錄路徑，但也會在其自動化平台中使用這些欄位。
-
-接觸點來源(FT)：這是首次接觸互動的來源。
-
-接觸點來源(LC)：這是潛在客戶建立接觸互動的來源。
-
-行銷管道(FT)：這是首次接觸互動的行銷管道。
-
-行銷管道(LC)：這是潛在客戶建立接觸互動的行銷管道。
-
-廣告行銷活動名稱(FT)：這是UTM行銷活動、來自廣告網路的廣告行銷活動，或 [!DNL Salesforce] 首次接觸互動的行銷活動。
-
-廣告行銷活動名稱(LC)：這是UTM行銷活動、來自廣告網路的廣告行銷活動，或 [!DNL Salesforce] 潛在客戶建立接觸互動的行銷活動。
-
-登陸頁面(FT)：這是首次接觸互動的登陸頁面。
-
-登陸頁面(LC)：這是潛在客戶建立接觸互動的登陸頁面。
-
-接觸點日期(FT)：這是首次接觸互動的日期。
-
-接觸點日期(LC)：這是銷售機會建立接觸互動的日期。
-
-BizibleID：用於關聯銷售機會與接觸點的活動歸因和calltrackingmetrics整合。
+Bizible Account欄位用於ABM功能的Lead to Account對應。 我們會填入此欄位，以建立兩個物件之間的查閱關係。
 
 ## 帳戶 {#account-1}
 
@@ -137,10 +65,10 @@ BizibleID：用於關聯銷售機會與接觸點的活動歸因和calltrackingme
 
 ## 機會 {#opportunity}
 
-[!DNL Marketo Measure] 商機金額：此欄位用於商機使用自訂金額欄位的案例中。 我們將該自訂欄位值對應至 [!DNL Marketo Measure] 使用工作流程的「機會金額」，然後針對「購買者歸因」接觸點物件上的「收入」歸因欄位，讀取此欄位。
+[!DNL Marketo Measure] 商機金額：此欄位用於商機使用自訂金額欄位的案例中。 我們將該自訂欄位值對應至 [!DNL Marketo Measure] 使用工作流程檢視機會金額，然後針對Buyer Attribution Touchpoint物件上的收入歸因欄位讀取此欄位。
 
 ## 活動 {#activity}
 
 BizibleID：這是供我們將接觸點關聯到活動歸因和呼叫追蹤量度整合的活動。
 
-購買者接觸點日期：此欄位可透過工作流程填入，以作為活動歸因的日期，並會填入供我們的calltrackingmetrics整合知道互動發生的時間。
+Buyer Touchpoint日期：此欄位可透過工作流程填入，以作為活動歸因的日期，並將填入供我們的calltrackingmetrics整合得知互動發生的時間。
