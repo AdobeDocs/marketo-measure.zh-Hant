@@ -3,9 +3,9 @@ description: '[!DNL Marketo Measure]最終資料完整性需求 —  [!DNL Marke
 title: '[!DNL Marketo Measure]最終資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
+source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1611'
 ht-degree: 15%
 
 ---
@@ -886,6 +886,8 @@ ht-degree: 15%
     </tr>
   </tbody>
 </table>
+
+## 貨幣轉換資料需求 {#currency-conversion-data-requirements}
 
 **預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如，USD至USD），其轉換率為1。
 
