@@ -1,41 +1,52 @@
 ---
 unique-page-id: 18874672
-description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Marketo Measure — 產品檔案
-title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 互動
+description: ' [!DNL Marketo Measure] 與 [!DNL Salesforce] 如何互動 — Marketo Measure — 產品檔案'
+title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
+source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 19%
+source-wordcount: '1237'
+ht-degree: 18%
 
 ---
 
-# 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 互動 {#how-marketo-measure-and-salesforce-interact}
+# [!DNL Marketo Measure]和[!DNL Salesforce]如何互動 {#how-marketo-measure-and-salesforce-interact}
 
 >[!NOTE]
 >
->您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
+>您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-讓我們來深入瞭解一下兩者之間的關係 [!DNL Marketo Measure] 和Salesforce。
+讓我們來深入瞭解[!DNL Marketo Measure]與Salesforce之間的關係。
 
-## Salesforce和 [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
+## Salesforce和[!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-一旦 [!DNL Marketo Measure] 帳戶已建立且 [!DNL Salesforce] 已連線， [!DNL Marketo Measure] 開始推送行銷資料至CRM執行個體，只要 [!DNL Marketo Measure] 已安裝Managed套件，且 [!DNL Marketo Measure] Salesforce使用者擁有編輯許可權。
+建立[!DNL Marketo Measure]帳戶並連線[!DNL Salesforce]後，只要已安裝[!DNL Marketo Measure]受管理的套件且[!DNL Marketo Measure] Salesforce使用者擁有編輯許可權，[!DNL Marketo Measure]就會開始將行銷資料推送至CRM執行個體。
 
-如果您未安裝 [!DNL Marketo Measure] Salesforce套件， [!DNL Marketo Measure] 不會將任何資料寫入您的Salesforce執行個體。
+如果您未安裝[!DNL Marketo Measure] Salesforce套件，[!DNL Marketo Measure]不會將任何資料寫入您的Salesforce執行個體。
 
 ![](assets/1-3.png)
 
-根據預設， [!DNL Marketo Measure] 每次工作將資料傳送至您的CRM時，都會匯出每個API評分200筆記錄。 對於大多數客戶而言，這可提供以下專案所耗用的API積分之間的最佳平衡 [!DNL Marketo Measure] 和CRM的CPU資源需求。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此， [!DNL Marketo Measure] 允許客戶設定CRM匯出批次大小。 此設定可在 [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] 中的頁面 [!DNL Marketo Measure] Web應用程式和客戶可以選擇批次大小200 （預設）、100、50或25。
+依預設，每次工作將資料傳送至您的CRM時，[!DNL Marketo Measure]會針對每個API點數匯出200筆記錄。 對於大多數客戶而言，這會在[!DNL Marketo Measure]所消耗的API點數與CRM上的CPU資源需求之間提供最佳平衡。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此，[!DNL Marketo Measure]允許客戶設定CRM匯出批次大小。 此設定可在[!DNL Marketo Measure] Web應用程式的[!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General]頁面上使用，客戶可以選擇批次大小200 （預設）、100、50或25。
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
 修改此設定時，請記住，較小的批次大小會消耗您CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時才減少批次大小。
 
+## Salesforce連線使用者許可權 {#salesforce-connected-user-permissions}
+
+**專用使用者的Marketo Measure管理員許可權集**：允許SFDC管理員對Marketo Measure物件執行CRUD作業。
+
+**檢視和編輯轉換的潛在客戶許可權集**：這可讓Marketo Measure在潛在客戶轉換為聯絡人後加以裝飾。
+
+**Salesforce行銷使用者核取方塊**：允許使用者建立行銷活動並使用Campaign匯入精靈。
+* 需要Campaign「建立」的其他許可權。
+
+**Marketo Measure Standard使用者**：讓使用者能夠從Marketo Measure物件讀取記錄。
+
 ## Salesforce標準物件與存取 {#salesforce-standard-objects-and-access}
 
-這會列出 [!DNL Salesforce] 符合以下條件的標準物件： [!DNL Marketo Measure] 會與互動，在建立連線後，我們將自訂欄位新增到這些物件， [!DNL Marketo Measure] 已安裝套件。 立即可用， [!DNL Marketo Measure] 不會寫入任何標準 [!DNL Salesforce] 物件欄位。
+這會列出[!DNL Marketo Measure]互動的[!DNL Salesforce]標準物件，以及在建立連線並安裝[!DNL Marketo Measure]套件後新增到這些物件的自訂欄位。 [!DNL Marketo Measure]不會立即寫入任何標準[!DNL Salesforce]物件欄位。
 
 **銷售機會**
 
@@ -177,7 +188,7 @@ ht-degree: 19%
  </tbody> 
 </table>
 
-**案例**
+**個案例**
 
 <table> 
  <tbody> 
@@ -410,7 +421,7 @@ ht-degree: 19%
  </tbody> 
 </table>
 
-**Campaign**
+**行銷活動**
 
 <table> 
  <colgroup> 
@@ -636,13 +647,13 @@ ht-degree: 19%
 >* 任務
 
 
-## [!DNL Marketo Measure] 中的自訂物件 [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
+## [!DNL Salesforce]中的[!DNL Marketo Measure]個自訂物件 {#marketo-measure-custom-objects-in-salesforce}
 
-除了在SFDC的標準物件上建立自訂欄位之外， [!DNL Marketo Measure] 安裝套裝軟體，會建立一些自訂物件。 以下是這些「自訂物件」的清單，以及代表以下欄位的表格： [!DNL Marketo Measure] 將寫入。
+除了在SFDC的標準物件上建立自訂欄位之外，在安裝[!DNL Marketo Measure]套件之後，它會建立幾個自訂物件。 以下是這些「自訂物件」的清單，以及表示[!DNL Marketo Measure]將寫入其中的欄位的表格。
 
 **Buyer Touchpoint**
 
-Buyer Touchpoint是 [!DNL Marketo Measure] 自訂物件，封裝聯絡人、銷售機會和案例的行銷互動。
+Buyer Touchpoint是[!DNL Marketo Measure]自訂物件，可封裝聯絡人、銷售機會和案例的行銷互動。
 
 <table> 
  <tbody> 
@@ -907,9 +918,9 @@ Buyer Touchpoint是 [!DNL Marketo Measure] 自訂物件，封裝聯絡人、銷�
  </tbody> 
 </table>
 
-**[!DNL Marketo Measure]個人**
+**[!DNL Marketo Measure]人員**
 
-此 [!DNL Marketo Measure] 個人是 [!DNL Marketo Measure] 與Lead、Contact和Case物件都相關的自訂物件。
+[!DNL Marketo Measure]個人是[!DNL Marketo Measure]自訂物件，與銷售機會、連絡人和案例物件都有關。
 
 <table> 
  <tbody> 
@@ -948,7 +959,7 @@ Buyer Touchpoint是 [!DNL Marketo Measure] 自訂物件，封裝聯絡人、銷�
 
 ## Buyer Attribution Touchpoint {#buyer-attribution-touchpoint}
 
-Buyer Attribution Touchpoint是 [!DNL Marketo Measure] 自訂物件，可封裝行銷對機會的影響。
+Buyer Attribution Touchpoint是[!DNL Marketo Measure]自訂物件，可封裝行銷對機會的影響。
 
 **Buyer Attribution Touchpoint**
 
@@ -1304,3 +1315,7 @@ Buyer Attribution Touchpoint是 [!DNL Marketo Measure] 自訂物件，可封裝�
   </tr> 
  </tbody> 
 </table>
+
+>[!MORELIKETHIS]
+>
+>[整合許可權總覽](/help/api-connections/utilizing-marketo-measures-api-connections/integration-permissions-overview.md){target="_blank"}

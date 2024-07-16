@@ -1,18 +1,18 @@
 ---
-description: 『[!DNL Marketo Measure] 終極資料完整性需求 —  [!DNL Marketo Measure]『
-title: 『[!DNL Marketo Measure] 終極資料完整性要求
+description: '[!DNL Marketo Measure]最終資料完整性需求 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]最終資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: db71cbfaf7deb5b724ac4babc38e835c04fadac7
+source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 17%
+source-wordcount: '1607'
+ht-degree: 15%
 
 ---
 
-# [!DNL Marketo Measure] 終極資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
+# [!DNL Marketo Measure]最終資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
 
-[!DNL Marketo Measure] 驗證傳入的AEP資料集，確保資料充足且一致以供歸因使用。 若未符合資料完整性要求，資料集將遭到 [!DNL Marketo Measure] 系統。 本文詳細說明資料完整性需求，提供資料檢查的查詢範例，並建議具有null值的必要欄位的解決方案。
+[!DNL Marketo Measure]會驗證傳入的AEP資料集，以確保資料充足且一致可歸因。 若未符合資料完整性要求，資料集將遭到[!DNL Marketo Measure]系統拒絕。 本文詳細說明資料完整性需求，提供資料檢查的查詢範例，並建議具有null值的必要欄位的解決方案。
 
 ## 實體物件 {#entity-object}
 
@@ -22,13 +22,13 @@ ht-degree: 17%
     <th>xdm欄位群組</th>
     <th>XDM路徑</th>
     <th>XDM型別</th>
-    <th>資料來源欄位</th>
+    <th>資料Source欄位</th>
     <th>必填？</th>
     <th>附註</th>
   </tr>
   <tbody>
     <tr>
-      <td colspan="7"><strong>帳戶</strong> (Marketo的Salesforce、公司和/或具名帳戶的帳戶)</td>
+      <td colspan="7"><strong>帳戶</strong> (Marketo的Salesforce、公司和/或具名帳戶)</td>
     </tr>
     <tr>
       <td rowspan="6">XDM商業帳戶</td>
@@ -89,7 +89,7 @@ ht-degree: 17%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>Campaign</strong> (適用於Salesforce的Campaign、適用於Marketo的方案)</td>
+      <td colspan="7"><strong>行銷活動</strong> (Salesforce的行銷活動、Marketo的方案)</td>
     </tr>
     <tr>
       <td rowspan="8">XDM商業活動</td>
@@ -201,7 +201,7 @@ ht-degree: 17%
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>促銷活動會員</strong> (Salesforce的Campaign會員、Marketo的計畫會員資格)</td>
+      <td colspan="7"><strong>行銷活動成員</strong> (Salesforce的行銷活動成員、Marketo的方案成員)</td>
     </tr>
     <tr>
       <td rowspan="14">XDM商業活動會員</td>
@@ -356,10 +356,10 @@ ht-degree: 17%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>個人</strong> (Salesforce、Marketo人員的聯絡人或銷售線索)</td>
+      <td colspan="7"><strong>人員</strong> (Salesforce的聯絡人或銷售機會、Marketo的人員)</td>
     </tr>
     <tr>
-      <td>XDM 設定檔</td>
+      <td>XDM 輪廓</td>
       <td rowspan="11">XDM商業人士細節</td>
       <td>b2b.personKey.sourceKey</td>
       <td>字串</td>
@@ -491,7 +491,7 @@ ht-degree: 17%
       <td>例如 — Marketo</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>商機</strong> (Salesforce的機會、Marketo的機會)</td>
+      <td colspan="7"><strong>機會</strong> (Salesforce的機會、Marketo的機會)</td>
     </tr>
     <tr>
       <td rowspan="13">XDM商業機會</td>
@@ -887,6 +887,16 @@ ht-degree: 17%
   </tbody>
 </table>
 
+**預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如，USD至USD），其轉換率為1。
+
+**轉換率**：每個（來源貨幣、目標貨幣）配對可以在不同的日期期間有多個轉換率。 根據Salesforce DatedConversionRate物件，費率必須涵蓋從0001-01-01到9999-12-31的整個時間範圍。
+
+**日期範圍**：
+* 在（來源貨幣、目標貨幣）匯率集中沒有重疊的日期範圍（例如，2023-01-01到2023-02-01和2023-01-01到2024-01-01）。
+* 日期範圍之間沒有間隙。 開始日期不含，結束日期不含。
+
+<p>
+
 ## ExperienceEvent {#experienceevent}
 
 <table style="table-layout:auto">
@@ -895,7 +905,7 @@ ht-degree: 17%
     <th>xdm欄位群組</th>
     <th>XDM路徑</th>
     <th>XDM型別</th>
-    <th>資料來源欄位</th>
+    <th>資料Source欄位</th>
     <th>必填？</th>
     <th>附註</th>
   </tr>
