@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 歸因對應方法 {#attribution-mapping-methodology}
 
-歸因對應方法是指在CRM中查詢特定物件（聯絡人、商機、帳戶）的程式，以便在關聯的商機中建立歸因接觸點。 換言之，這是 [!DNL Marketo Measure] 根據您目前的CRM流程，瞭解歸因模型中要包含哪些接觸點的方式。
+歸因對應方法是指在CRM中查詢特定物件（聯絡人、商機、帳戶）的程式，以便在關聯的商機中建立歸因接觸點。 換言之，這是[!DNL Marketo Measure]種方式，讓您根據目前CRM的流程，瞭解要納入歸因模型的接觸點。
 
 ## 帳戶ID對應 {#account-id-mapping}
 
-立即可用， [!DNL Marketo Measure] 提供帳戶ID對應。 這表示 [!DNL Marketo Measure] 檢視Account及其Contacts行銷資訊，以建立與商機相關聯的歸因接觸點。 以下是此程式的簡單表示。
+[!DNL Marketo Measure]可立即提供帳戶ID對應。 這表示[!DNL Marketo Measure]檢視帳戶及其連絡人行銷資訊，以建立與商機關聯的歸因接觸點。 以下是此程式的簡單表示。
 
 ![](assets/1-1.png)
 
-請記住 **並非全部** 來自您連絡人的接觸點會作為Attribution接觸點推送到Opportunity中。 Opportunity的時間表（其首次接觸日期 — 關閉日期）會決定接觸點是否計為Opportunity的影響者。 因此，如果聯絡人A上的接觸點在商機關閉後發生成功/失敗， [!DNL Marketo Measure] 不會將該接觸點推送至商機。 所有其他歸因物件對應都會遵循此時間表程式。
+請記住，並非來自您連絡人的&#x200B;**所有**&#x200B;接觸點都會推送至Opportunity做為歸因接觸點。 Opportunity的時間表（其首次接觸日期 — 關閉日期）會決定接觸點是否計為Opportunity的影響者。 因此，如果聯絡A上的接觸點在商機關閉後發生成功/失敗，[!DNL Marketo Measure]將不會將該接觸點推送至商機。 所有其他歸因物件對應都會遵循此時間表程式。
 
 優點：這種歸因方法對大多數公司都非常有效。 行銷團隊不需要依賴銷售團隊將所有連絡人與特定機會建立關聯（這通常是問題）。 此外，即使銷售團隊與聯絡人角色建立關聯，也可能會遺漏許多其他聯絡人與行銷資料的互動。 最後，此方法可協助ABM策略，該策略會努力影響帳戶的整體性，而非特定影響者。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 機會聯絡人角色對應 {#opportunity-contact-role-mapping}
 
-雖然大多數使用者端使用帳戶ID對應， [!DNL Marketo Measure] 可以在機會中查詢聯絡人角色（與機會相關聯的聯絡人），以劃分歸因流程。 這表示 [!DNL Marketo Measure] 僅會以購買者歸因接觸點的形式推播與機會上聯絡人角色相關聯的行銷互動。 以下是此程式的表示方式。
+雖然大多數使用者端都使用帳戶ID對應，但[!DNL Marketo Measure]可以在機會中查詢聯絡人角色（與機會相關聯的聯絡人），以劃分歸因程式。 這表示[!DNL Marketo Measure]將只會推送與商機上的聯絡人角色相關聯的行銷互動，做為購買者歸因接觸點。 以下是此程式的表示方式。
 
 ![](assets/2-1.png)
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 機會主要連絡人角色對應 {#opportunity-primary-contact-role-mapping}
 
-除了單純檢視商機的聯絡人角色以外， [!DNL Marketo Measure] 可以更集中地只檢視商機上的主要聯絡人。 有了這項設定， [!DNL Marketo Measure] 僅會擷取與機會上主要聯絡人相關聯的行銷接觸點，並將該資訊推送至該特定機會的歸因故事。 請參閱下圖。
+除了僅檢視商機的聯絡人角色之外，[!DNL Marketo Measure]還可以更專注地檢視商機的主要聯絡人。 有了此設定，[!DNL Marketo Measure]只會擷取與商機上的主要聯絡人相關聯的行銷接觸點，並將該資訊推送至該特定商機的歸因故事。 請參閱下圖。
 
 ![](assets/3.png)
 

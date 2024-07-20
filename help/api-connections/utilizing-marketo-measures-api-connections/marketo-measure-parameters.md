@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874608
-description: "[!DNL Marketo Measure] 引數 —  [!DNL Marketo Measure]"
-title: '"[!DNL Marketo Measure] 引數」'
+description: '[!DNL Marketo Measure]引數 —  [!DNL Marketo Measure]'
+title: "[!DNL Marketo Measure]引數"
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 引數 {#marketo-measure-parameters}
+# [!DNL Marketo Measure]引數 {#marketo-measure-parameters}
 
-## [!DNL Marketo Measure] 引數說明 {#marketo-measure-parameters-explained}
+## [!DNL Marketo Measure]引數說明 {#marketo-measure-parameters-explained}
 
-若要進一步瞭解如何使用UTM， [!DNL Marketo Measure] 將自訂引數附加至中的廣告 [!DNL Google] adwords、Bing Ads和 [!DNL Facebook] 廣告。 [!DNL Marketo Measure] 與這些平台整合，以自動化大部分的設定程式。 如果您選取使用自動標籤， [!DNL Marketo Measure] 會自動將其引數附加至廣告的URL。 [!DNL Marketo Measure] 系統也會自動從平台下載行銷成本，並將其載入至 [!DNL Marketo Measure] 應用程式。
+為了進一步瞭解如何使用UTM，[!DNL Marketo Measure]會將自訂引數附加至[!DNL Google] AdWords、Bing Ads和[!DNL Facebook]廣告中的廣告。 [!DNL Marketo Measure]與這些平台整合，以自動化大部分的設定程式。 如果您選取使用自動標籤，[!DNL Marketo Measure]會自動將其引數附加至廣告的URL。 [!DNL Marketo Measure]也會自動從平台下載行銷成本，並將其載入至[!DNL Marketo Measure]應用程式。
 
 沒有引數的URL範例：
 
 `http://adobe.com/landing-page?myParam=foo`
 
-具有的URL範例 [!DNL Marketo Measure] 引數：
+具有[!DNL Marketo Measure]引數的URL範例：
 
 `http://adobe.com/landing-page?myParam=foo&_bt={creative}&_bk={keyword}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需比對型別的詳細資訊， [以下是相關的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
+>如需相符型別的詳細資訊，[這裡有相關的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}。
 
 * `_bn={network}`
-   * 代表廣告網路型別 —  [顯示或搜尋](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
-   * 這類似於UTM來源引數。
+   * 代表廣告網路型別 — [顯示或搜尋](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}。
+   * 這類似於UTM Source引數。
 
 * `_bg={adgroupID}`
    * 代表廣告所屬廣告群組的ID

@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874743
-description: 正在連線 [!DNL Marketo Measure] 若要取消退回指令碼管理員 —  [!DNL Marketo Measure]
-title: 正在連線 [!DNL Marketo Measure] 至彈回指令碼管理員
+description: 正在連線 [!DNL Marketo Measure] 至解除退回指令碼管理員 —  [!DNL Marketo Measure]
+title: 正在連線 [!DNL Marketo Measure] 至解除退回指令碼管理員
 exl-id: c3212bc3-1d8f-4da5-bb2d-11ffd2fb4e98
 feature: Tracking
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# 正在連線 [!DNL Marketo Measure] 至彈回指令碼管理員 {#connecting-marketo-measure-to-unbounce-script-manager}
+# 正在將[!DNL Marketo Measure]連線到解除指令碼管理員 {#connecting-marketo-measure-to-unbounce-script-manager}
 
-[!DNL Marketo Measure] 直接與「反彈」整合，好讓您直接在中追蹤登陸頁面轉換的數位行銷來源 [!DNL Salesforce]. 若要建立連線，只需新增 [!DNL Marketo Measure] 編寫指令碼至您的退信指令碼管理員。 方法如下。
+[!DNL Marketo Measure]直接與「取消退回」整合，可讓您直接在[!DNL Salesforce]中追蹤登陸頁面轉換的數位行銷來源。 若要建立連線，只需將[!DNL Marketo Measure]指令碼新增至您的「彈回指令碼管理員」即可。 方法如下。
 
-1. 登入您的 [!DNL Unbounce] 帳戶。
-1. 按一下 **[!UICONTROL Settings]** > **[!UICONTROL Script Manager]** > **[!UICONTROL Add Script]**.
-1. 在快顯視窗中選取 [!UICONTROL Custom Script] 並將其命名為&quot;[!DNL Marketo Measure Marketing Analytics].」 按一下 **[!UICONTROL Add Script Details]**.
-1. 選取Head中的位置。 在主要登陸頁面和表單確認對話方塊中包含指令碼。 貼上 [!DNL Marketo Measure] 下方指令碼放入方塊中。
+1. 登入您的[!DNL Unbounce]帳戶。
+1. 按一下&#x200B;**[!UICONTROL Settings]** > **[!UICONTROL Script Manager]** > **[!UICONTROL Add Script]**。
+1. 在快顯視窗中，選取[!UICONTROL Custom Script]並將其命名為&quot;[!DNL Marketo Measure Marketing Analytics]&quot;。 按一下&#x200B;**[!UICONTROL Add Script Details]**。
+1. 選取Head中的位置。 在主要登陸頁面和表單確認對話方塊中包含指令碼。 將下方的[!DNL Marketo Measure]指令碼貼到方塊中。
 
    `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
-1. 按一下 **[!UICONTROL Save]**.
+1. 按一下&#x200B;**[!UICONTROL Save]**。
 
-此 [!DNL Marketo Measure] 整合適用於反彈登陸頁面，前提是這些登陸頁面託管於您的網域(例如landing.mysite.com)，而非使用unbounce.com網域的網域。
+[!DNL Marketo Measure]整合適用於彈回登陸頁面，前提是這些頁面託管於您的網域(例如landing.mysite.com)上，而非使用unbounce.com網域的網域。

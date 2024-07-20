@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874634
-description: 我的報告中的重複記錄 —  [!DNL Marketo Measure]
+description: 我的報告中有重複的記錄 —  [!DNL Marketo Measure]
 title: 我的報告中的重複記錄
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍請參閱&quot;[!DNL Bizible]」（在您的CRM中）。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
+>您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;[!DNL Bizible]&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-當您深入瞭解 [!DNL Marketo Measure] 中的報表 [!DNL Salesforce]，您可能會開始在報表中找到「重複」記錄。 您可能在檢閱時體驗到這種感覺 [!DNL Marketo Measure] 現成可用的報表。
+當您在[!DNL Salesforce]中深入探討[!DNL Marketo Measure]報告時，您可能會開始在報告中找到「重複」記錄。 當您檢閱[!DNL Marketo Measure]個現成可用的報表時，可能會有這種感覺。
 
-使用「採購員接觸點」物件或「採購員歸因接觸點」物件進行報告時，請務必瞭解您不再報告銷售機會、聯絡人或商機的數量，而是報告與這些標準物件（銷售機會、聯絡人、商機）相關的「採購員接觸點」或「採購員歸因接觸點」的數量。
+使用「採購員接觸點」物件或Buyer Attribution Touchpoint物件進行報告時，請務必瞭解您不再報告銷售機會、聯絡人或商機的數量，而是報告與這些標準物件（銷售機會、聯絡人、商機）相關的「採購員接觸點」或「採購員歸因接觸點」的數量。
 
 以下列報表為例：
 
-這是 **與購買者接觸點的連絡人** 報告。 同樣地，這表示我們檢視的是與個別聯絡人相關聯的接觸點計數。
+這是具有購買者接觸點的&#x200B;**聯絡人**&#x200B;報告。 同樣地，這表示我們檢視的是與個別聯絡人相關聯的接觸點計數。
 
 ![](assets/1.gif)
 

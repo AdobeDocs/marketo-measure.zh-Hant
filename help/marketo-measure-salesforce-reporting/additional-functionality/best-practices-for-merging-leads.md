@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # 合併潛在客戶的最佳實務 {#best-practices-for-merging-leads}
 
-合併銷售機會時 [!DNL Salesforce]時，請務必謹慎，以免資料遺失。
+在[!DNL Salesforce]中合併Lead時，最好永遠保持謹慎，以確保不會遺失任何資料。
 
-以下為劃分以供您參考 [如何合併銷售機會](https://help.salesforce.com/s/articleView?id=leads_merge.htm&amp;language=en_US&amp;type=5) 從 [!DNL Salesforce] 支援。
+為方便您參考，這裡提供[!DNL Salesforce]支援中[如何合併銷售機會](https://help.salesforce.com/s/articleView?id=leads_merge.htm&amp;language=en_US&amp;type=5)的劃分。
 
-位置 [!DNL Marketo Measure] 需要選擇填入合併記錄中的欄位時進入。 選取主要記錄時，驗證 [!DNL Marketo Measure] 已選取欄位以延續至新記錄。
+[!DNL Marketo Measure]的進入時間是時候選取填入合併記錄上的欄位。 選取主要記錄後，驗證是否已選取[!DNL Marketo Measure]欄位以延續至新記錄。
 
-如果有多個記錄 [!DNL Marketo Measure] 資料，請確定Master Record具有針對第一個建立的Lead所選取的欄位。 其他 [!DNL Marketo Measure] 資料將顯示在深入分析區段中。 此外，請確保追蹤的Lead的電子郵件地址是保留的電子郵件地址，因為它可讓我們使用任何新的歸因資料繼續更新該Lead。
+如果有包含[!DNL Marketo Measure]資料的多筆記錄，請確定Master Record具有針對先建立之Lead的選取欄位。 其他[!DNL Marketo Measure]資料將顯示在深入分析區段中。 此外，請確保追蹤的Lead的電子郵件地址是保留的電子郵件地址，因為它可讓我們使用任何新的歸因資料繼續更新該Lead。
 
-從那裡，您應該可以自由地合併潛在客戶和 [!DNL Marketo Measure] 資料將傳送到新記錄。
+從那裡，您應該可以自由地合併銷售機會，並且[!DNL Marketo Measure]資料將傳送到新記錄中。
 
-如有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 ![](assets/1.jpg)

@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
+>您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-此 [!DNL Marketo Measure] Managed Solution隨附數個Stock控制面板和報表，可因應您檢視時的基本需求 [!DNL Marketo Measure] dynamics中的資料。 以下是完整清單和一些常見的使用案例。
+[!DNL Marketo Measure]受管理的解決方案包含數個庫存儀表板和報表，設計用於在Dynamics中檢視[!DNL Marketo Measure]資料時滿足您的基本需求。 以下是完整清單和一些常見的使用案例。
 
 ## 儀表板（共9個） {#dashboards-total}
 
@@ -97,12 +97,12 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>依據參與分數的帳戶</td> 
-   <td>從下列專案群組所有具有A、B、C、D、N/A等級的科目： [!DNL Marketo Measure] 預測性參與分數。</td> 
+   <td>從[!DNL Marketo Measure]預測性參與分數中，以A、B、C、D、N/A等級將所有帳戶分組。</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 
    <td>具有潛在客戶與聯絡人的帳戶</td> 
-   <td>檢視所有潛在客戶與連絡人，並排檢視彼此依帳戶群組的所有潛在客戶與連絡人，使用 [!DNL Marketo Measure] 銷售線索與帳戶的比對。</td> 
+   <td>使用[!DNL Marketo Measure]銷售線索與帳戶的比對，檢視依帳戶群組的所有銷售線索與連絡人。</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 
@@ -141,7 +141,7 @@ ht-degree: 3%
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>[!DNL Marketo Measure] 依社交來源歸因</td> 
+   <td>[!DNL Marketo Measure] 依社交Source的歸因</td> 
    <td>透過您的社交管道檢視收入歸因並評估其效益。</td> 
    <td>全部</td> 
   </tr> 
@@ -161,12 +161,12 @@ ht-degree: 3%
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>潛在客戶依據 [!DNL Marketo Measure] 行銷管道(FT)</td> 
+   <td>由[!DNL Marketo Measure]行銷管道(FT)銷售機會</td> 
    <td>測量每個行銷管道中有多少潛在客戶首次接觸。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>潛在客戶依據 [!DNL Marketo Measure] 行銷管道(LC)</td> 
+   <td>由[!DNL Marketo Measure]行銷管道(LC)銷售機會</td> 
    <td>測量從每個行銷管道透過潛在客戶建立接觸產生了多少潛在客戶。</td> 
    <td>全部</td> 
   </tr> 
@@ -191,12 +191,12 @@ ht-degree: 3%
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>依社交來源的銷售機會(FT)</td> 
+   <td>社交Source的銷售機會(FT)</td> 
    <td>測量有多少潛在客戶是首次接觸社交管道。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>依社交來源的銷售機會(LC)</td> 
+   <td>社交Source (LC)的銷售機會</td> 
    <td>測量透過社交管道中的潛在客戶建立接觸產生了多少潛在客戶。</td> 
    <td>全部</td> 
   </tr> 

@@ -19,40 +19,40 @@ ht-degree: 0%
 
 GDPR的目的是加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對其個人資料的使用和保護方式的權利。 「個人資料」是指與已識別或可識別的自然人相關的任何資訊。 GDPR適用於歐盟內或歐盟以外任何向歐盟及EEA內的資料主體行銷商品或服務及/或追蹤其行為的組織。 如果您與歐洲資料主體有業務往來，涉及處理其個人資料，此法規即適用於您。 違規者將受到嚴厲的處罰，違規者會被處以鉅額罰款；單次違規的最高罰款為2,000萬歐元，或全球每年營業額的4%，以金額較大者為準。
 
-根據預設， [!DNL bizible.js] 收集使用者的analytics資料，除非將其設定為等待同意。 時間 [!DNL bizible.js] 設為等待使用者同意，在取得同意前不會建立任何cookie或傳送任何analytics資料。
+根據預設，[!DNL bizible.js]會收集使用者的分析資料，除非將其設定為等待同意。 當[!DNL bizible.js]設定為等待使用者同意時，它不會建立任何Cookie或傳送任何分析資料，直到取得同意為止。
 
 ## 如何等待同意 {#how-to-wait-for-consent}
 
-有兩種設定方式 [!DNL bizible.js] 以等待同意。
+有兩種方式可設定[!DNL bizible.js]以等待同意。
 
-選項1 — 取代預設值 [!DNL bizible.js] 指令碼標籤：
+選項1 — 將預設[!DNL bizible.js]指令碼標籤取代為：
 
 `<script id="bizible-settings" type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async="" data-consent-button-id="ConsentButtonId"></script>`
 
-**如果您使用 [!DNL Google Tag Manager] 安裝指令碼**，請記住GTM會移除資料屬性，因此請改用下列指令碼：
+**如果您使用[!DNL Google Tag Manager]安裝指令碼**，請記住GTM會移除資料屬性，因此請改用下列指令碼：
 
 `<span id="bizible-settings" data-consent-button-id="ConsentButtonId"></span>`
 `<script type="text/javascript" src=https://cdn.bizible.com/scripts/bizible.js async=""></script>`
 
 >[!NOTE]
 >
->在這種情況下， [!DNL bizible.js] 附加點按事件至ID為「ConsentButtonId」的HTML元素。
+>在這種情況下，[!DNL bizible.js]會將點按事件附加至ID為「ConsentButtonId」的HTML元素。
 
-當按一下此HTML元素時， [!DNL bizible.js] 建立Cookie以記住已收到使用者的同意，並照常開始收集分析資料。
+按一下此HTML元素時，[!DNL bizible.js]會建立Cookie以記住已收到該使用者的同意，並照常開始收集分析資料。
 
-**— 或 —**
+**或 —**
 
-選項2 — 取代預設值 [!DNL bizible.js] 指令碼標籤：
+選項2 — 將預設[!DNL bizible.js]指令碼標籤取代為：
 
 `<script id="bizible-settings" type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async="" data-requires-user-consent="true"></script>`
 
-這會告訴 [!DNL bizible.js] 達到同意前不會追蹤，這可以用下列JS API完成：
+這會告知[!DNL bizible.js]在達成同意之前不要追蹤，此動作可使用下列JS API完成：
 
-*視窗[&#39;Bizible&#39;] = window[&#39;Bizible&#39;] || { _queue： []，推播：函式(o， p) {這個。_queue.push({ type： o， data： p })； } }；*
+*window[&#39;Bizible&#39;] = window[&#39;Bizible&#39;] || { _queue： []，推播：函式(o， p) {這個。_queue.push({ type： o， data： p })； } }；*
 
 *Bizible。 Push(&#39;Consent&#39;， true)；*
 
-**如果您使用 [!DNL Google Tag Manager] 安裝指令碼**，請記住GTM會移除資料屬性，因此請改用下列指令碼：
+**如果您使用[!DNL Google Tag Manager]安裝指令碼**，請記住GTM會移除資料屬性，因此請改用下列指令碼：
 
 `<span id="bizible-settings" data-requires-user-consent="true"></span>`
 `<script type="text/javascript" src=https://cdn.bizible.com/scripts/bizible.js async=""></script>`
@@ -67,4 +67,4 @@ GDPR的目的是加強歐盟(EU)和歐洲經濟區(EEA)內資料主體對其個�
 
 `Bizible.Push('Consent', false);`
 
-此程式碼執行時，會刪除符合以下條件的所有Cookie： [!DNL bizible.js] 之前已建立，且僅在使用者同意時才會恢復analytics資料的收集。
+此程式碼執行時，會刪除[!DNL bizible.js]先前建立的所有Cookie，並在使用者同意後恢復分析資料的收集。

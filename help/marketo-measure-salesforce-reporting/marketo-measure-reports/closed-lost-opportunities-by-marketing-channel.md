@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874632
-description: 行銷管道的已關閉失去的機會 —  [!DNL Marketo Measure]
+description: 行銷管道的已關閉的遺失機會 —  [!DNL Marketo Measure]
 title: 依據行銷管道的已關閉失去的機會
 exl-id: 010169fc-f7e7-4ab2-92fe-87e4250dd536
 feature: Channels, Reporting
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 雖然此報表可能會視您的機會階段而定，但此報表將揭示哪些行銷管道促成了未結束的成功機會。
 
-1. 按一下 **[!UICONTROL Reports]** 索引標籤並選取 **[!UICONTROL New Report]**.
+1. 在Salesforce中按一下您的&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤並選取&#x200B;**[!UICONTROL New Report]**。
 
    ![](assets/1-3.jpg)
 
-1. 在「Bizible歸因」中的快速尋找型別中，選取 **[!UICONTROL Bizible Attribution Touchpoint with Opportunity]** 報表型別，然後選取 **[!UICONTROL Create]**.
+1. 在「Bizible歸因」中的快速尋找型別中，選取&#x200B;**[!UICONTROL Bizible Attribution Touchpoint with Opportunity]**&#x200B;報表型別，然後選取&#x200B;**[!UICONTROL Create]**。
 
    ![](assets/2-3.jpg)
 
-1. 從報表頂端開始，顯示&quot;[!UICONTROL All Bizible Attribution Touchpoints]」並根據您要報告的時間範圍調整日期欄位。 在我們的範例中，我們會一直檢視「All Time」。 此外，將報表格式從「表格」變更為「摘要」。
+1. 從報表頂端開始，顯示&quot;[!UICONTROL All Bizible Attribution Touchpoints]&quot;，並根據您要報告的時間範圍調整日期欄位。 在我們的範例中，我們會一直檢視「All Time」。 此外，將報表格式從「表格」變更為「摘要」。
 
    ![](assets/3-3.jpg)
 
@@ -47,4 +47,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Tutorials：其他SFDC報表](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] Tutorials：其他SFDC報告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

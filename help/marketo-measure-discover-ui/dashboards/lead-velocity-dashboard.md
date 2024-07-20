@@ -1,5 +1,5 @@
 ---
-description: 潛在客戶速度控制面板 —  [!DNL Marketo Measure]  — 產品
+description: 銷售機會Velocity儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 銷售機會速度控制面板
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d

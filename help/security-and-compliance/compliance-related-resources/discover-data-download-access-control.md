@@ -1,6 +1,6 @@
 ---
-description: '"[!UICONTROL Discover Data Download] 存取控制 — Marketo Measure — 產品檔案'
-title: '"[!UICONTROL Discover Data Download] 存取控制」'
+description: '[!UICONTROL Discover Data Download]存取控制 — Marketo Measure — 產品檔案'
+title: '[!UICONTROL Discover Data Download]存取控制'
 exl-id: fa9f2245-4bb0-4b58-849c-1941c108e1c1
 feature: Discover
 source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Discover Data Download] 存取控制 {#discover-data-download-access-control}
+# [!UICONTROL Discover Data Download]存取控制 {#discover-data-download-access-control}
 
-[!UICONTROL Discover Data Download] 控制項啟用 [!DNL Marketo Measure] 管理員可根據使用者的角色，為Discover儀表板設定資料下載原則。 控制項涵蓋Discover控制面板上的所有資料下載動作。
+[!UICONTROL Discover Data Download]控制項可讓[!DNL Marketo Measure]管理員根據使用者的角色，設定Discover儀表板的資料下載原則。 控制項涵蓋Discover控制面板上的所有資料下載動作。
 
-1. 按一下 **[!UICONTROL Data Access]** 在 [!UICONTROL Security].
+1. 按一下[!UICONTROL Security]下的&#x200B;**[!UICONTROL Data Access]**。
 
    ![](assets/discover-data-download-access-control-1.png)
 
@@ -37,7 +37,7 @@ ht-degree: 0%
     </tr>
    </table>
 
-1. 按一下 **[!UICONTROL Save]** 完成時。
+1. 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/discover-data-download-access-control-3.png)
 

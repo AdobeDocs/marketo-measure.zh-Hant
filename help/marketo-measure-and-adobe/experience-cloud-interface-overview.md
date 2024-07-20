@@ -16,7 +16,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 ## 使用者流程 {#user-flow}
 
-如果您已登入Adobe Experience Cloud產品，請按一下功能表圖示並選取 **[!DNL Marketo Measure]**.
+如果您已登入Adobe Experience Cloud產品，請按一下功能表圖示並選取&#x200B;**[!DNL Marketo Measure]**。
 
 ![](assets/unified-shell-overview-4.png)
 
@@ -24,7 +24,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 >
 >您的下拉式功能表可能會根據您訂閱的Adobe Experience Cloud產品而有所不同。
 
-如果您是 _非_ 已登入Adobe Experience Cloud產品，請直接登入 [!DNL Marketo Measure] 此處： [https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure).
+如果您&#x200B;_尚未_&#x200B;登入Adobe Experience Cloud產品，請直接登入這裡： [https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure)的[!DNL Marketo Measure]。
 
 ## 新功能 {#new-features}
 
@@ -32,13 +32,13 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 **網域管理**
 
-[管理您的 [!DNL Marketo Measure] 網域](/help/marketo-measure-and-adobe/domain-management.md) 不需要 [!DNL Marketo Measure].
+[管理您的 [!DNL Marketo Measure] 網域](/help/marketo-measure-and-adobe/domain-management.md)，不需要[!DNL Marketo Measure]的協助。
 
 ![](assets/unified-shell-overview-5.png)
 
 **整合式說明中心**
 
-搜尋支援文章、提交票證、提供意見回饋，所有這些操作都可在 [!DNL Marketo Measure] 應用程式。
+搜尋支援文章、提交票證、提供意見回饋，所有這些都是從[!DNL Marketo Measure]應用程式中進行。
 
 ![](assets/unified-shell-overview-6.png)
 
@@ -58,7 +58,7 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 **Adobe設定**
 
-若要變更您的語言或其他全Adobe偏好設定，請按一下您的設定檔圖示。 您也可以 [!DNL Marketo Measure] — 特定變更，按一下 **我的設定**.
+若要變更您的語言或其他全Adobe偏好設定，請按一下您的設定檔圖示。 您也可以按一下&#x200B;**我的設定**，進行[!DNL Marketo Measure]特定的變更。
 
 ![](assets/unified-shell-overview-10.png)
 
@@ -68,10 +68,10 @@ Adobe Experience Cloud介面可協調Adobe Experience Cloud應用程式和服務
 
 書籤會被重新導向。 例如，如果您要導覽至https://apps.marketo-measure.com/Discover/391 ，您將在完成驗證後重新導向至https://experience.adobe.com/marketo-measure/Discover/391 。
 
-**我無法登入 [!DNL Marketo Measure] 透過Experience Cloud介面。 可能有哪些問題？**
+**我無法透過Experience Cloud介面登入[!DNL Marketo Measure]。 可能有哪些問題？**
 
-如果您可登入Adobe Experience Cloud，但看到類似以下頁面，則問題可能出在 [!DNL Marketo Measure] 側：
+如果您可登入Adobe Experience Cloud，但看到類似以下頁面，則問題可能在[!DNL Marketo Measure]端：
 
 ![](assets/unified-shell-overview-11.png)
 
-如果您收到上述錯誤， [聯絡支援人員](https://nation.marketo.com/t5/support/ct-p/Support) 以取得協助。
+如果您收到上述錯誤，[請連絡支援](https://nation.marketo.com/t5/support/ct-p/Support)以取得協助。

@@ -16,9 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此儀表板為測試版。 在此過渡階段中，目前和新的儀表板皆可存取。 在我們完全轉換並確保最佳功能後，目前的儀表板將被棄用。
+>此儀表板位於Beta中。 在此過渡階段中，目前和新的儀表板皆可存取。 在我們完全轉換並確保最佳功能後，目前的儀表板將被棄用。
 
-**展示板回答的問題**：
+**面板回答的問題**：
 
 * 哪些管道、子管道或行銷活動在歸因收入方面排名最高？
 * 我們歸因的收入總額與已歸因的已結束交易的計數是多少？
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 ### KPI動態磚 {#kpi-tiles}
 
-* **已歸因的收入**：根據所選歸因模型，來自具有接觸點的商機的總收入貢獻。
-* **已歸因的交易**：具有接觸點的「成功結案」機會數目。
+* **已歸因的收入**：根據已選擇的歸因模型，來自具有接觸點的商機的收入貢獻總計。
+* **已歸因的交易**：具有接觸點的「成功結案」商機數目。
 
 ### 依管道隨時間變化的已歸因收入圖表 {#attributed-revenue-by-channel-over-time-chart}
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 依管道、子管道和促銷活動劃分的總歸因收入，以表格和樹狀結構格式呈現。 按一下右上角的按鈕，在檢視之間切換。
 
-**展示板回答的問題**：
+**面板回答的問題**：
 
 * 歸因的收入分配在管道內不同子管道之間有何差異？
 * 特定子管道下的哪些行銷活動帶來最多歸因的收入？
@@ -79,6 +79,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [探索儀表板基本資訊](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [儀表板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
 

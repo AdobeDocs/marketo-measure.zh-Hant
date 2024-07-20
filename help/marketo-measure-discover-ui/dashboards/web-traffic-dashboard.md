@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 控制面板元件 {#dashboard-components}
 
-**KPI動態磚**
+**KPI圖磚**
 
 <table>
 <thead>

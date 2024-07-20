@@ -1,8 +1,9 @@
 ---
-description: 機會Velocity控制面板 —  [!DNL Marketo Measure]  — 產品
+description: 商機Velocity儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 機會Velocity控制面板
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Velocity儀表板可動態檢視潛在客戶在銷售漏斗中的移動速度，
 
 ### KPI動態磚 {#kpi-tile}
 
-* **成交速度**：從第一個階段開始的「成功結案」商機的平均關閉天數。
+* **已結束交易速度**： 「已結束的贏家」商機從第一個階段到結束的平均天數。
 
 ### 各階段機會速度 {#opportunity-velocity-by-stage}
 

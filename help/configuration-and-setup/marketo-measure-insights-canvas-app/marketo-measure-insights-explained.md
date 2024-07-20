@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874676
-description: "[!DNL Marketo Measure] 深入分析說明 —  [!DNL Marketo Measure]"
-title: '"[!DNL Marketo Measure] 已說明的深入分析」'
+description: '[!DNL Marketo Measure]深入分析說明 —  [!DNL Marketo Measure]'
+title: "[!DNL Marketo Measure]深入分析已說明"
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 已說明的深入分析 {#marketo-measure-insights-explained}
+# [!DNL Marketo Measure]深入分析說明 {#marketo-measure-insights-explained}
 
-瞭解 [!DNL Marketo Measure] 前瞻分析檢視於 [!DNL Salesforce]，包括不同圖示代表什麼以及如何使用功能。 此功能非常有助於檢視潛在客戶、聯絡人或帳戶的前20個工作階段。
+瞭解[!DNL Salesforce]中的[!DNL Marketo Measure]深入分析檢視，包括不同的圖示代表什麼以及如何使用功能。 此功能非常有助於檢視潛在客戶、聯絡人或帳戶的前20個工作階段。
 
-一旦某人由 [!DNL Marketo Measure] JavaScript並在您的網站上填寫表單，該人員就會成為您系統中的銷售機會，其數位行銷資料會傳送至您的Salesforce (SFDC)組織。 發生此情況時，您會看到內填入的接觸點資料 [!DNL Marketo Measure] 潛在客戶/聯絡人/商機/帳戶物件的潛在客戶深入分析區段（畫布應用程式） 。
+在[!DNL Marketo Measure] JavaScript追蹤某人並在您的網站上填寫表單後，該人員就會成為您系統中的銷售機會，其數位行銷資料會傳送至您的Salesforce (SFDC)組織。 發生此情況時，您會看到接觸點資料已填入Lead/Contact/Opportunity/Account Objects的[!DNL Marketo Measure] Lead Insights區段(Canvas App)中。
 
 首先，您可在深入分析的中間部分中看到訪客在您網站上的工作階段數量。 您可以隨意捲動這些工作階段並導覽。
 
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 ![](assets/4.png)
 
-在每個工作階段的右側，您可以看到推送 [!DNL Marketo Measure] SFDC中的欄位 在此範例中，您可以看到廣告群組、廣告內容、促銷活動、關鍵字、媒體。 您也可以向下捲動以檢視更多 [!DNL Marketo Measure] 我們提供的資料。
+在每個工作階段的右側，您可以看到推送SFDC中[!DNL Marketo Measure]欄位的更多精細行銷資料。 在此範例中，您可以看到廣告群組、廣告內容、促銷活動、關鍵字、Medium。 您也可以向下捲動，檢視我們提供的[!DNL Marketo Measure]資料。
 
-最後，某人擁有大量工作階段後，您便可以在內使用部分篩選器 [!UICONTROL Insights] 以尋找他們在您網站上的參與的特定部分。 篩選依據 [!UICONTROL Touchpoint Position] 例如。
+最後，某人擁有大量工作階段後，您就可以在[!UICONTROL Insights]中使用一些篩選器，尋找其在您網站上的特定參與部分。 例如，您可以依[!UICONTROL Touchpoint Position]篩選。
 
 您也可以依頁面檢視、AB測試或Forms來搜尋。

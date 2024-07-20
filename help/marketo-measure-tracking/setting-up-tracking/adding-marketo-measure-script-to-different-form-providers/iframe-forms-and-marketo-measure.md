@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# IFrame Forms和 [!DNL Marketo Measure] {#iframe-forms-and-marketo-measure}
+# IFrame Forms和[!DNL Marketo Measure] {#iframe-forms-and-marketo-measure}
 
-替換為 [!DNL Marketo Measure] 其中一項核心功能就是透過您網站上的工作階段和表單提交，追蹤您的數位行銷工作。 一般而言，在網站上放置Marketo JavaScript時，我們會自動附加至網站上的所有表單。 但是，如果表單包含在IFrame中，則此功能會有限制。
+透過[!DNL Marketo Measure]核心功能之一，就是透過您網站上的工作階段以及表單提交來追蹤您的數位行銷工作。 一般而言，在網站上放置Marketo JavaScript時，我們會自動附加至網站上的所有表單。 但是，如果表單包含在IFrame中，則此功能會有限制。
 
 將IFrame想像為頁面內的頁面，因此就像我們要求將指令碼新增至您網站的所有頁面一樣，我們需要將指令碼放置在IFrame中，以確保我們進行追蹤。
 
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 ![](assets/1-1.png)
 
-如果您對將JavaScript新增至IFrame表單有任何疑問，請聯絡Adobe客戶團隊（您的客戶經理）或 [Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如果您對將我們的JavaScript新增到IFrame表單有任何疑問，請聯絡Adobe客戶團隊（您的客戶經理）或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。

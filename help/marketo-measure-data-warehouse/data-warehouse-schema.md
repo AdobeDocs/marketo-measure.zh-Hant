@@ -22,13 +22,13 @@ Data Warehouse可讓您視需要追蹤更多內容、隨處報告歸因資料，
 
 >[!NOTE]
 >
->[按一下這裡](#sample-queries) 以在本文章底部檢視範例查詢。
+>[按一下這裡](#sample-queries)檢視本文底部的範例查詢。
 
 ## 實體關係圖 {#entity-relationship-diagrams}
 
-此 _Data Warehouse資料模型_ ERD會顯示Data Warehouse中資料的流動及連結方式。 此圖表不包含Data Warehouse中可用的所有表格，因為其中有些表格代表對應表格、已有其他表格的檢視，或我們不建議再使用已棄用的表格。 請參閱下列Data Warehouse中呈現之表格和欄的詳細說明。 這些表格中有許多包含反正規化的欄位，不過，此圖表是建議的資料模型，會改用維度表格的資料。
+_Data Warehouse資料模型_ ERD會顯示資料倉儲中的資料如何流動及連結在一起。 此圖表不包含Data Warehouse中可用的所有表格，因為其中有些表格代表對應表格、已有其他表格的檢視，或我們不建議再使用已棄用的表格。 請參閱下列Data Warehouse中呈現之表格和欄的詳細說明。 這些表格中有許多包含反正規化的欄位，不過，此圖表是建議的資料模型，會改用維度表格的資料。
 
-其他 _廣告維度資料模型_ ERD提供如何以最佳方式將廣告特定維度的表格連結回主要資料模型中的表格的檢視。 雖然在其他表格中，廣告維度也會反正規化，但這是連結這些維度的建議模型。
+其他&#x200B;_廣告維度資料模型_ ERD提供如何以最佳方式將廣告特定維度的表格連結回主要資料模型中的表格的檢視。 雖然在其他表格中，廣告維度也會反正規化，但這是連結這些維度的建議模型。
 
 _按一下完整版本的影像_
 
@@ -92,13 +92,13 @@ _按一下完整版本的影像_
     <tr>
       <td>ENGAGEMENT_RATING</td>
       <td>varchar</td>
-      <td>由產生的字母等級(A、B、C、D、N/A)。 [!DNL Marketo Measure] 機器學習模型。 如果停用ABM，則為空值。</td>
+      <td>從[!DNL Marketo Measure]機器學習模型產生的字母等級(A、B、C、D、N/A)。 如果停用ABM，則為空值。</td>
       <td>B</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_SCORE</td>
       <td>數字(38,19)</td>
-      <td>由計算的數值分數 [!DNL Marketo Measure] 機器學習，用於產生預測性參與分數(Engagement_Rating)。 如果停用ABM，則為空值。</td>
+      <td>由[!DNL Marketo Measure]機器學習所計算的數值分數，以產生預測性參與分數(Engagement_Rating)。 如果停用ABM，則為空值。</td>
       <td>0.1417350147058800000</td>
     </tr>
     <tr>
@@ -116,7 +116,7 @@ _按一下完整版本的影像_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Account_Type__c"： "Security"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -138,13 +138,13 @@ _按一下完整版本的影像_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td><b>∗</b> 產業</td>
+      <td><b>∗</b>產業</td>
       <td>varchar</td>
       <td>帳戶的主要業務。</td>
       <td>零售、電信</td>
     </tr>
     <tr>
-      <td><b>∗</b> 國家</td>
+      <td><b>∗</b>國家</td>
       <td>varchar</td>
       <td>帳戶地址的國家/地區部分。</td>
       <td>美國、加拿大</td>
@@ -176,7 +176,7 @@ _按一下完整版本的影像_
     <tr>
       <td>ACCOUNT_ID</td>
       <td>varchar</td>
-      <td>來源系統帳戶ID。</td>
+      <td>Source系統帳戶ID。</td>
       <td>0013100001phrBAAY</td>
     </tr>
     <tr>
@@ -290,7 +290,7 @@ _按一下完整版本的影像_
       </td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>Source_SYSTEM</td>
       <td>varchar</td>
       <td>識別來源系統型別。</td>
       <td>Marketo</td>
@@ -445,7 +445,7 @@ _按一下完整版本的影像_
     <tr>
       <td>NEEDS_UPDATE</td>
       <td>布林值</td>
-      <td>是否需要更新廣告 [!DNL Marketo Measure] 標籤。
+      <td>是否需要更新廣告以進行[!DNL Marketo Measure]標籤。
       <p>（診斷欄位，由內部處理使用。）
       </td>
       <td>假</td>
@@ -487,7 +487,7 @@ _按一下完整版本的影像_
     <tr>
       <td>URL_REQUESTED</td>
       <td>varchar</td>
-      <td>要裝飾哪個URL [!DNL Marketo Measure] 引數。
+      <td>哪個URL會以[!DNL Marketo Measure]引數裝飾。
       <p>（診斷欄位，用於內部處理。）
       </td>
       <td></td>
@@ -632,7 +632,7 @@ _按一下完整版本的影像_
     <tr>
       <td>NEEDS_UPDATE</td>
       <td>布林值</td>
-      <td>是否需要更新廣告商 [!DNL Marketo Measure] 標籤。
+      <td>是否需要更新廣告商以進行[!DNL Marketo Measure]標籤。
       <p>（診斷欄位，由內部處理使用。）
       </td>
       <td>假</td>
@@ -858,7 +858,7 @@ _按一下完整版本的影像_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新廣告商 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新廣告商以進行[!DNL Marketo Measure]標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -929,7 +929,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>從utm_medium的URL剖析。</td>
@@ -1258,7 +1258,7 @@ _按一下完整版本的影像_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新行銷活動 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新Campaign以進行[!DNL Marketo Measure]標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -1581,9 +1581,9 @@ _按一下完整版本的影像_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>SOURCE_ID</td>
+      <td>Source_ID</td>
       <td>varchar</td>
-      <td>記錄來源的ID。</td>
+      <td>記錄來源的Source識別碼。</td>
       <td>aw.3284209</td>
     </tr>
   </tbody>
@@ -1787,7 +1787,7 @@ _按一下完整版本的影像_
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新廣告商 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新廣告商以進行[!DNL Marketo Measure]標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -1993,7 +1993,7 @@ _按一下完整版本的影像_
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>購買者歸因接觸點(BAT)的唯一ID。</p>
+        <p>Buyer Attribution Touchpoint (BAT)的唯一ID。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000lFHtOQAW_</p>
@@ -2071,7 +2071,7 @@ _按一下完整版本的影像_
         <p>接觸點的日期。</p>
       </td>
       <td>
-        <p>2017-06-20 01:05:20.00</p>
+        <p>2017-06-20 01:05:20.000</p>
       </td>
     </tr>
     <tr>
@@ -2098,7 +2098,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>根據中的自訂管道定義，接觸點所屬的管道 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的自訂管道定義中所定義，接觸點所屬的管道。 在CRM中稱為「行銷管道 — 路徑」。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -2110,7 +2110,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第一個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第一個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>ABC</p>
@@ -2122,7 +2122,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第二個類別的區段值，如內的區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第二個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>是</p>
@@ -2134,7 +2134,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第三個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第三個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>中小型企業</p>
@@ -2145,7 +2145,7 @@ _按一下完整版本的影像_
         <p>類別4</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬第4個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第四個類別的區段值。 在CRM中稱為「區段」。</td>
       <td>
         <p>新業務</p>
       </td>
@@ -2155,7 +2155,7 @@ _按一下完整版本的影像_
         <p>類別5</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬的第5個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第五個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2163,7 +2163,7 @@ _按一下完整版本的影像_
         <p>類別6</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬的第6個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第6個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2171,7 +2171,7 @@ _按一下完整版本的影像_
         <p>類別7</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬第7個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第七個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2179,7 +2179,7 @@ _按一下完整版本的影像_
         <p>類別8</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬的第8個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第8個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2187,7 +2187,7 @@ _按一下完整版本的影像_
         <p>類別9</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬第9個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第九個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2195,7 +2195,7 @@ _按一下完整版本的影像_
         <p>類別10</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第10個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第10個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2203,7 +2203,7 @@ _按一下完整版本的影像_
         <p>類別11</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第11個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第11個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2211,7 +2211,7 @@ _按一下完整版本的影像_
         <p>類別12</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第12個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第十二個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2219,7 +2219,7 @@ _按一下完整版本的影像_
         <p>類別13</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第13個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第十三個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2227,7 +2227,7 @@ _按一下完整版本的影像_
         <p>類別14</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第14個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第14個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2235,7 +2235,7 @@ _按一下完整版本的影像_
         <p>類別15</p>
       </td>
       <td>varchar</td>
-      <td>此接觸點所屬的第15個類別的區段值，定義見內的區段定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第十五個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -2247,7 +2247,7 @@ _按一下完整版本的影像_
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
       </td>
       <td>
-        <p>鉻黃</p>
+        <p>Chrome</p>
       </td>
     </tr>
     <tr>
@@ -2408,11 +2408,11 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
+        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"cpc"或"display"之類的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -2424,7 +2424,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的來源。 如果是從CRM同步，或從utm_source的URL剖析，一般會設定為「CRM Campaign」 [!DNL Marketo Measure] 能夠解析廣告，可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點來源」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般地設為"CRM Campaign"；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"Google AdWords"或"Facebook"之類的值。 在CRM中稱為「接觸點Source」。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -2448,7 +2448,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
+        <p>廣告平台[!DNL Marketo Measure]通常可以從我們的整合合作夥伴中解析。</p>
       </td>
       <td>
         <p>Google</p>
@@ -3069,7 +3069,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
     <td>轉換事件的原始MM事件ID 
-    <br>對應到使用者接觸點或階段轉變</td>
+    <br>對應到使用者接觸點或階段轉換</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
   <tr>
@@ -3087,14 +3087,14 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
   <tr>
     <td>CONVERSION_LEAD_ID</td>
     <td>varchar</td>
-    <td>轉換事件的原始MM銷售機會ID <br>大部分時間可能為空</td>
+    <td>轉換事件<br>的原始MM潛在客戶ID在大部分時間內可能為Null</td>
     <td>00Q0Z000013dw4GUAQ</td>
   </tr>
   <tr>
     <td>CONVERSION_CONTACT_ID</td>
     <td>varchar</td>
     <td>轉換事件的原始MM聯絡人ID
-    <br>大部分時間可能為空</td>
+    <br>可能大部分時間為空</td>
     <td>00331000032hMxRAAU</td>
   </tr>
   <tr>
@@ -3374,7 +3374,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>稽核欄位，說明是否已為Lead產生「購買者接觸點」。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
+        <p>稽核欄位，說明是否已為Lead產生Buyer Touchpoint。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
       </td>
       <td>
         <p>無接觸點：模型外的日期</p>
@@ -3386,7 +3386,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>稽核欄位，說明是否為聯絡人產生購買者接觸點。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
+        <p>稽核欄位，說明是否為聯絡人產生Buyer Touchpoint。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
       </td>
       <td>
         <p>已建立的接觸點</p>
@@ -3398,7 +3398,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>稽核欄位，說明是否已為Opportunity產生「購買者歸因」接觸點。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
+        <p>稽核欄位，說明是否已針對此機會產生Buyer Attribution Touchpoint。 如果未建立接觸點，則會說明它不符合資格的原因。</p>
       </td>
       <td>
         <p>已建立的接觸點</p>
@@ -3421,7 +3421,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Campaign_Type__c"："Dinners"，"Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -3447,7 +3447,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ### 商業管道(_C) {#biz-channels}
 
-行銷管道，建立於 [!DNL Marketo Measure] 應用程式。
+在[!DNL Marketo Measure]應用程式中建立的行銷管道。
 
 <table>
   <tbody>
@@ -3580,11 +3580,11 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>潛在客戶來源</p>
+        <p>LEAD_SOURCE</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>建立Lead的來源。</p>
+        <p>建立Lead的Source。</p>
       </td>
       <td>
         <p>廣告</p>
@@ -3596,7 +3596,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>連絡人的目前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
+        <p>連絡人的目前階段，識別為可在[!DNL Marketo Measure]應用程式中建立的自訂階段。</p>
       </td>
       <td>
         <p>已排程示範</p>
@@ -3608,7 +3608,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>連絡人的所有先前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
+        <p>連絡人的所有先前階段，識別為可在[!DNL Marketo Measure]應用程式中建立的自訂階段。</p>
       </td>
       <td>
         <p>開啟 — 連絡人</p>
@@ -3634,7 +3634,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
+        <p>[!DNL Marketo Measure] Cookie ID用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -3659,7 +3659,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>假</td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>Source_SYSTEM</td>
       <td>varchar</td>
       <td>指出記錄是否來自CRM或Marketo整合。</td>
       <td>Crm</td>
@@ -3673,7 +3673,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -3737,7 +3737,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>7493833133899044458</td>
     </tr>
     <tr>
-      <td>來源ISO代碼</td>
+      <td>Source_ISO_CODE</td>
       <td>varchar</td>
       <td>來自來源系統的貨幣ISO代碼。</td>
       <td>美元</td>
@@ -3838,7 +3838,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>來源</td>
       <td>varchar</td>
-      <td>報告的成本的來源。</td>
+      <td>報告成本的Source。</td>
       <td>[AdWords顯示]</td>
     </tr>
     <tr>
@@ -3874,13 +3874,13 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CHANNEL_UNIQUE_ID</td>
       <td>varchar</td>
-      <td>行銷管道的ID，建立者： [!DNL Marketo Measure].</td>
+      <td>行銷管道的ID，由[!DNL Marketo Measure]建立。</td>
       <td>Display.Google</td>
     </tr>
     <tr>
       <td>頻道名稱</td>
       <td>varchar</td>
-      <td>行銷管道的名稱，由客戶在 [!DNL Marketo Measure] 應用程式。</td>
+      <td>行銷管道的名稱，由客戶在[!DNL Marketo Measure]應用程式中建立。</td>
       <td>Display.Google</td>
     </tr>
     <tr>
@@ -4232,9 +4232,9 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>美元</td>
     </tr>
     <tr>
-      <td>SOURCE_ID</td>
+      <td>Source_ID</td>
       <td>varchar</td>
-      <td>記錄來源的ID。</td>
+      <td>記錄來源的Source識別碼。</td>
       <td>aw.3284209</td>
     </tr>
     <tr>
@@ -4522,7 +4522,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新創意 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新Creative以進行[!DNL Marketo Measure]標籤。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>
@@ -4603,7 +4603,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>要裝飾哪個URL [!DNL Marketo Measure] 引數。</p>
+        <p>哪個URL會以[!DNL Marketo Measure]引數裝飾。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -4851,7 +4851,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
+        <p>[!DNL Marketo Measure] Cookie ID用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -4908,7 +4908,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Contact_Type__c"："CMO"，"Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -5026,7 +5026,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
+        <p>[!DNL Marketo Measure] Cookie ID用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5071,7 +5071,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -5136,7 +5136,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次修改記錄的日期 [!DNL Marketo Measure].</td>
+      <td>上次在[!DNL Marketo Measure]中修改記錄的日期。</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
@@ -5337,7 +5337,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ### BIZ_CUSTOMER_EVENTS {#biz-customer-events}
 
-已使用Javascript中的自訂事件記錄的網頁事件。 若符合下列條件，此表格將為空白： [!DNL Marketo Measure] 未啟用事件。
+已使用Javascript中的自訂事件記錄的網頁事件。 如果未啟用[!DNL Marketo Measure]個事件，此資料表將會是空的。
 
 <table>
   <tbody>
@@ -5788,11 +5788,11 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ### 商務資訊(_I) {#biz-facts}
 
-將曝光數、頁面檢視數、造訪數、表單提交數、使用者接觸點、接觸點(BT)、歸因接觸點(BAT)和成本資料結合在一起。 用於內部支援 [!DNL Marketo Measure] 報告。
+將曝光數、頁面檢視數、造訪數、表單提交數、使用者接觸點、接觸點(BT)、歸因接觸點(BAT)和成本資料結合在一起。 內部使用以支援[!DNL Marketo Measure]報告。
 
 >[!IMPORTANT]
 >
->Marketo Measure將在2024年中淘汰此表格。 如果您想在您這邊建立它，請執行 [此SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
+>Marketo Measure將在2024年中淘汰此表格。 如果您想在您端建立它，請執行[這個SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
 
 <table>
   <tbody>
@@ -6113,7 +6113,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>型別</td>
       <td>number(38,0)</td>
-      <td>表示列的事實型別。 1 =採購員歸因接觸點2 =成本3 =採購員接觸點4 =使用者接觸點5 =頁面檢視6 =工作階段7 =表單提交8 =曝光數</td>
+      <td>表示列的事實型別。 1 = Buyer Attribution Touchpoint 2 =成本3 = Buyer Touchpoint 4 =使用者接觸點5 =頁面檢視6 =工作階段7 =表單提交8 =曝光數</td>
       <td>3</td>
     </tr>
     <tr>
@@ -7064,7 +7064,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
+        <p>廣告平台[!DNL Marketo Measure]通常可以從我們的整合合作夥伴中解析。</p>
       </td>
       <td>Google</td>
     </tr>
@@ -7329,7 +7329,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
       </td>
       <td>
-        <p>鉻黃</p>
+        <p>Chrome</p>
       </td>
     </tr>
     <tr>
@@ -7663,7 +7663,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要為更新關鍵字 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新[!DNL Marketo Measure]標籤的關鍵字。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td>
@@ -7730,7 +7730,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>URL_REQUESTED</td>
       <td>varchar</td>
       <td>
-        <p>登陸頁面的URL，具有 [!DNL Marketo Measure] 引數。</p>
+        <p>具有[!DNL Marketo Measure]引數的登入頁面URL。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -7798,7 +7798,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>varchar</td>
-      <td>URL追蹤範本 [!DNL Marketo Measure] 已新增至關鍵字。</td>
+      <td>URL追蹤範本[!DNL Marketo Measure]已新增至關鍵字。</td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
       </td>
@@ -8131,11 +8131,11 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>潛在客戶來源</p>
+        <p>LEAD_SOURCE</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>建立Lead的來源。</p>
+        <p>建立Lead的Source。</p>
       </td>
       <td>
         <p>廣告</p>
@@ -8209,7 +8209,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>Lead的目前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
+        <p>Lead的目前階段，識別為可在[!DNL Marketo Measure]應用程式中建立的自訂階段。</p>
       </td>
       <td>
         <p>已排程示範</p>
@@ -8221,7 +8221,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>潛在客戶的所有先前階段，識別為可在中建立的自訂階段 [!DNL Marketo Measure] 應用程式。</p>
+        <p>潛在客戶的所有先前階段，識別為可在[!DNL Marketo Measure]應用程式中建立的自訂階段。</p>
       </td>
       <td>
         <p>MQL</p>
@@ -8271,7 +8271,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] Cookie ID可用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
+        <p>[!DNL Marketo Measure] Cookie ID用來從整合合作夥伴填入，以將離線事件對應至網頁工作階段。 需求：啟用呼叫追蹤： True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -8306,7 +8306,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Lead_Type__c"："Sales Created"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -8316,7 +8316,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>真</td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>Source_SYSTEM</td>
       <td>varchar</td>
       <td>指出記錄是否來自CRM或Marketo整合。</td>
       <td>Crm</td>
@@ -8410,7 +8410,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>和轉換相關聯的購買者接觸點ID。</p>
+        <p>和轉變連結的Buyer Touchpoint識別碼。</p>
       </td>
       <td>
         <p>TP2_Person_00Q3100001Fx6AlEAJ_2018-08-28:14-41-06-1674260.d00ceb09fbd3</p>
@@ -8460,7 +8460,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>number(38,0)</p>
       </td>
       <td>
-        <p>階段的數值排名，如 [!DNL Marketo Measure] 階段對應設定。</p>
+        <p>階段的數值排名，如[!DNL Marketo Measure]階段對應設定中所排序。</p>
       </td>
       <td>
         <p>5</p>
@@ -8787,7 +8787,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>機會的目前階段，如 [!DNL Marketo Measure] 應用程式。</p>
+        <p>機會的目前階段，如[!DNL Marketo Measure]應用程式中所定義。</p>
       </td>
       <td>
         <p>DM示範</p>
@@ -8799,7 +8799,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>Opportunity先前經歷的所有階段的字串，如 [!DNL Marketo Measure] 應用程式。</p>
+        <p>Opportunity先前經歷的所有階段的字串，如[!DNL Marketo Measure]應用程式中所定義。</p>
       </td>
       <td>
         <p>合格的探索，已排程示範</p>
@@ -8846,7 +8846,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>自訂屬性 [!DNL Marketo Measure] 已以JSON格式從來源系統匯入。</td>
+      <td>[!DNL Marketo Measure]已從來源系統匯入的自訂屬性（JSON格式）。</td>
       <td>{"Opportunity_Location__c"："Seattle"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -8868,7 +8868,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td><b>∗</b> 機會型別</td>
+      <td><b>∗</b>機會型別</td>
       <td>varchar</td>
       <td>機會型別，例如新業務、續約等。</td>
       <td>續約，潛在客戶</td>
@@ -8953,7 +8953,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>和轉變相關聯的購買者歸因接觸點ID。</p>
+        <p>和轉變連結的Buyer Attribution Touchpoint識別碼。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
@@ -9003,7 +9003,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>number(38,0)</p>
       </td>
       <td>
-        <p>階段的數值排名，如 [!DNL Marketo Measure] 階段對應設定。</p>
+        <p>階段的數值排名，如[!DNL Marketo Measure]階段對應設定中所排序。</p>
       </td>
       <td>
         <p>4</p>
@@ -9581,7 +9581,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新位置 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要為[!DNL Marketo Measure]標籤更新位置。</p>
         <p>（診斷欄位，由內部處理使用。）</p>
       </td>
       <td>假</td>
@@ -9649,7 +9649,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ### BIZ_SEGMENTS {#biz-segments}
 
-區段值(定義於 [!DNL Marketo Measure] 應用程式。
+在[!DNL Marketo Measure]應用程式中定義的區段值。
 
 <table>
   <tbody>
@@ -9873,7 +9873,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>歸因於「工作階段」的管道，如 [!DNL Marketo Measure] 應用程式。</p>
+        <p>歸屬於工作階段的管道，如[!DNL Marketo Measure]應用程式中設定的管道定義所定義。</p>
       </td>
       <td>
         <p>付費Search.AdWords</p>
@@ -9969,7 +9969,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生工作階段的來源。 如果符合下列條件，則可從utm_source的URL剖析此專案，或將其設定為廣告提供者 [!DNL Marketo Measure] 能夠解析廣告。</p>
+        <p>用於定義產生工作階段的來源。 這可以從utm_source的URL中剖析，或設定為廣告提供者（如果[!DNL Marketo Measure]能夠解析廣告）。</p>
       </td>
       <td>
         <p>Google AdWords</p>
@@ -10049,7 +10049,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 由我們的整合合作夥伴解決。</p>
+        <p>廣告平台[!DNL Marketo Measure]通常是我們的整合合作夥伴之一。</p>
       </td>
       <td>
         <p>Google</p>
@@ -10353,7 +10353,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10728,7 +10728,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>是否需要更新網站 [!DNL Marketo Measure] 標籤。</p>
+        <p>是否需要更新[!DNL Marketo Measure]標籤的網站。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td>假</td>
@@ -11059,7 +11059,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>要裝飾哪個URL [!DNL Marketo Measure] 引數。</p>
+        <p>哪個URL會以[!DNL Marketo Measure]引數裝飾。</p>
         <p>（診斷欄位，用於內部處理。）</p>
       </td>
       <td></td>
@@ -11087,7 +11087,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ### BIZ_STAGE_DEFINITIONS {#biz-stage-definitions}
 
-匯入或定義的階段清單 [!DNL Marketo Measure] 應用程式。
+在[!DNL Marketo Measure]應用程式中匯入或定義的階段清單。
 
 <table>
   <tbody>
@@ -11187,7 +11187,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>「階段」的狀態，如 [!DNL Marketo Measure] 應用程式階段對應。</p>
+        <p>在[!DNL Marketo Measure]應用程式階段對應中定義的階段狀態。</p>
       </td>
       <td>
         <p>開啟</p>
@@ -11284,7 +11284,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>購買者接觸點(BT)的唯一ID。</p>
+        <p>Buyer Touchpoint (BT)的唯一ID。</p>
       </td>
       <td>
         <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
@@ -11402,7 +11402,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>根據中的自訂管道定義，接觸點所屬的管道 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的自訂管道定義中所定義，接觸點所屬的管道。 在CRM中稱為「行銷管道 — 路徑」。</p>
       </td>
       <td>Social.LinkedIn</td>
     </tr>
@@ -11412,7 +11412,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第一個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第一個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>ABC</td>
     </tr>
@@ -11422,7 +11422,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第二個類別的區段值，如內的區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第二個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>是</p>
@@ -11434,7 +11434,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第三個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第三個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>其他</p>
@@ -11446,7 +11446,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬第4個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第四個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td>
         <p>合作夥伴</p>
@@ -11458,7 +11458,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第5個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第五個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -11468,7 +11468,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>接觸點所屬的第6個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第6個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -11477,7 +11477,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別7</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬第7個類別的區段值，如「 」中的區段定義所定義 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第七個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11485,7 +11485,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別8</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬的第8個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第8個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11493,7 +11493,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別9</p>
       </td>
       <td>varchar</td>
-      <td>接觸點所屬第9個類別的區段值，如內部區段定義中所定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第九個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11501,7 +11501,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別10</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第10個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第10個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11509,7 +11509,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別11</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第11個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第11個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11517,7 +11517,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別12</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第12個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第十二個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11525,7 +11525,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>類別13</p>
       </td>
       <td>varchar</td>
-      <td>如內部區段定義中所定義，接觸點所屬的第13個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</td>
+      <td>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第十三個類別的區段值。 在CRM中稱為「區段」。</td>
       <td></td>
     </tr>
     <tr>
@@ -11534,7 +11534,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>如內部區段定義中所定義，接觸點所屬的第14個類別的區段值 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所在的第14個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -11544,7 +11544,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>此接觸點所屬的第15個類別的區段值，定義見內的區段定義。 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「區段」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的區段定義所定義，接觸點所屬的第十五個類別的區段值。 在CRM中稱為「區段」。</p>
       </td>
       <td></td>
     </tr>
@@ -11556,7 +11556,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>從javascript和IP位址中，偵測到使用者在工作階段期間所在的瀏覽器。</p>
       </td>
-      <td>鉻黃</td>
+      <td>Chrome</td>
     </tr>
     <tr>
       <td>
@@ -11706,11 +11706,11 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
+        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"cpc"或"display"之類的值。</p>
       </td>
       <td>
         <p>Social</p>
@@ -11722,7 +11722,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的來源。 如果是從CRM同步，或從utm_source的URL剖析，一般會設定為「CRM Campaign」 [!DNL Marketo Measure] 能夠解析廣告，可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點來源」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般地設為"CRM Campaign"；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"Google AdWords"或"Facebook"之類的值。 在CRM中稱為「接觸點Source」。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -11746,7 +11746,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
+        <p>廣告平台[!DNL Marketo Measure]通常可以從我們的整合合作夥伴中解析。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -12553,7 +12553,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>根據中的自訂管道定義，接觸點所屬的管道 [!DNL Marketo Measure] 應用程式。 在CRM中稱為「行銷管道 — 路徑」。</p>
+        <p>如[!DNL Marketo Measure]應用程式內的自訂管道定義中所定義，接觸點所屬的管道。 在CRM中稱為「行銷管道 — 路徑」。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -12729,11 +12729,11 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能夠解析廣告，可能是「cpc」或「display」之類的值。</p>
+        <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"cpc"或"display"之類的值。</p>
       </td>
       <td>
         <p>付費</p>
@@ -12745,7 +12745,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的來源。 如果是從CRM同步，或從utm_source的URL剖析，一般會設定為「CRM Campaign」 [!DNL Marketo Measure] 能夠解析廣告，可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點來源」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般地設為"CRM Campaign"；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"Google AdWords"或"Facebook"之類的值。 在CRM中稱為「接觸點Source」。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -12769,7 +12769,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告平台 [!DNL Marketo Measure] 能夠從（通常是我們的整合合作夥伴）解決問題。</p>
+        <p>廣告平台[!DNL Marketo Measure]通常可以從我們的整合合作夥伴中解析。</p>
       </td>
       <td>
         <p>Google</p>
@@ -12984,7 +12984,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
-        <p>瞭解為什麼250多家公司選擇 [!DNL Marketo Measure] 用於行銷歸因。 取得示範！</p>
+        <p>瞭解為什麼250多家公司選擇[!DNL Marketo Measure]作為行銷歸因。 取得示範！</p>
       </td>
     </tr>
     <tr>
@@ -13190,7 +13190,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-將表格對應到對應 [!DNL Marketo Measure] AdobeECID和Munckin Id的工作階段Id。
+對應表格以將[!DNL Marketo Measure]工作階段ID對應至AdobeECID和Munckin ID。
 
 <table>
   <tbody>
@@ -13213,7 +13213,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>COOKIE_ID</p>
       </td>
       <td>varchar</td>
-      <td>此 [!DNL Marketo Measure] 記錄的Cookie ID。</td>
+      <td>[!DNL Marketo Measure]記錄的Cookie ID。</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -13229,7 +13229,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>SESSION_ID</p>
       </td>
       <td>varchar</td>
-      <td>此 [!DNL Marketo Measure] 工作階段ID。</td>
+      <td>[!DNL Marketo Measure]工作階段識別碼。</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
     <tr>
@@ -13319,7 +13319,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     <tr>
       <td>MAPPING_TYPE</td>
       <td>varchar</td>
-      <td>已對應至的ID型別 [!DNL Marketo Measure] Cookie ID。</td>
+      <td>對應至[!DNL Marketo Measure] Cookie Id的識別碼型別。</td>
       <td>Adobe_OrgId_Ecid</td>
     </tr>
     <tr>
@@ -13357,7 +13357,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
 
 ## 範例查詢 {#sample-queries}
 
-**上個月每個管道/子管道有幾個購買者接觸點(BT)？**
+**每個頻道/子頻道上個月有多少購買者接觸點(BT)？**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
@@ -13379,7 +13379,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1,2
 ```
 
-**對於完整路徑歸因模型，每個管道在過去一個月中關閉的歸因收入為多少？**
+**對於完整路徑歸因模型，每個管道在過去一個月關閉的歸因收入多少？**
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
@@ -13406,7 +13406,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**一個人的整個歷程是怎樣的？  （顯示單一電子郵件地址的所有接觸點。）**
+**一個人的整個歷程是多少？  （顯示單一電子郵件地址的所有接觸點。）**
 
 ```
 select ut.touchpoint_date

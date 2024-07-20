@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # AJAX表單處理 {#ajax-form-handling}
 
-若要手動報告客戶轉換至 [!DNL Marketo Measure]，有一個您可以使用的簡單API。 如果您的網站上設有追蹤程式碼，便會自動提供這兩個JavaScript API。 無需執行任何特殊操作即可存取。
+若要手動將客戶轉換報告給[!DNL Marketo Measure]，您可以使用一個簡單的API。 如果您的網站上具有追蹤程式碼，這兩個JavaScript API都可在您的網站上自動使用。 無需執行任何特殊操作即可存取。
 
 ## 案例1 — 具有AJAX提交的HTML表單 {#scenario-html-form-with-an-ajax-submit}
 
-使用包含AJAX （或其他機制）的表單將轉換日期從使用者端提交至我們的伺服器時， [!DNL Marketo Measure] 可能不知道客戶透過我們監控的任何標準路徑進行的轉換。 在這個案例中，我們可以使用簡單的API （如下所示）。
+使用包含AJAX （或其他機制）的表單將轉換日期從使用者端提交至我們的伺服器時，[!DNL Marketo Measure]可能不知道客戶透過我們監控的任何標準路徑進行的轉換。 在這個案例中，我們可以使用簡單的API （如下所示）。
 
-如果您處理自己的表單提交，可以明確呼叫 [!DNL Marketo Measure] 從JavaScript。 [!DNL Marketo Measure] 會從表單收集所有相關資訊，並以非同步方式張貼至我們的伺服器。
+如果您處理自己的表單提交，可以明確從JavaScript呼叫[!DNL Marketo Measure]。 [!DNL Marketo Measure]會從表單收集所有相關資訊，並以非同步方式張貼至我們的伺服器。
 
 **以下是使用JQuery的程式碼範例（假設表單上的ID為「formId」）：**
 
@@ -45,7 +45,7 @@ Bizible.Push('Form','MyFormID');
 
 ## 案例2 — 以非HTML表單收集的潛在客戶資訊 {#scenario-lead-information-collected-in-a-non-html-form}
 
-如果轉換的潛在客戶的資訊是使用JavaScript或沒有html表單的簡單文字欄位來收集的，此解決方案便適合您。 以下共用是此情境使用的API：
+如果轉換的潛在客戶的資訊是使用JavaScript或沒有html表單的簡單文字欄位收集而來，此解決方案即適合您。 以下共用是此情境使用的API：
 
 ```jquery
 ///////////////////////////////////////////////////////////////////////  
@@ -58,11 +58,11 @@ eMail: 'user@gmail.com' // required
 });  
 ```
 
-在此程式碼中， [!UICONTROL email] 欄位為必填。 [!DNL Marketo Measure] 以非同步方式將此資料張貼至我們的伺服器。
+在此程式碼中，[!UICONTROL email]欄位為必填。 [!DNL Marketo Measure]以非同步方式將此資料張貼至我們的伺服器。
 
 ## 案例3 — 從感謝頁面報告使用者資訊 {#scenario-report-user-information-from-the-thank-you-page}
 
-有時候，將銷售機會資訊報告給會更方便 [!DNL Marketo Measure] 在表格送出後，從感謝頁面中存取。 報告此資訊最簡單的方式是將隱藏元素新增至頁面，該頁面包含來自表單提交的資訊，並且 [!DNL Bizible.js] 會在「感謝您」頁面載入時閱讀此資訊。
+有時，在提交表單後，從感謝頁面將潛在客戶資訊報告給[!DNL Marketo Measure]會更方便。 報告此資訊最簡單的方法是將隱藏元素新增至包含表單提交資訊的頁面，當「感謝您」頁面載入時，[!DNL Bizible.js]會讀取此資訊。
 
 **例如：**
 
@@ -71,4 +71,4 @@ eMail: 'user@gmail.com' // required
 data-email="user@gmail.com">  
 ```
 
-隱藏元素是div、指令碼或任何其他標籤型別並不重要。 [!DNL Marketo Measure] 尋找id=&quot;bizible.reportUser&quot;以讀取資訊。
+隱藏元素是div、指令碼或任何其他標籤型別並不重要。 [!DNL Marketo Measure]會尋找id=&quot;bizible.reportUser&quot;以讀取資訊。

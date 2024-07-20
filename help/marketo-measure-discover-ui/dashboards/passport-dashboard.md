@@ -1,5 +1,5 @@
 ---
-description: Passport儀表板 —  [!DNL Marketo Measure]  — 產品
+description: Passport Dashboard - [!DNL Marketo Measure]  — 產品
 title: Passport儀表板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時，動態檢視潛在客戶、聯絡人和機會。 透過篩選特定日期，使用者也可以取得當天的記錄快照。
 
-**展示板回答的問題：**
+**面板回答的問題：**
 
 * 每個非終端機階段中，所選日期上有多少銷售機會、聯絡人或銷售機會？
 * 在指定的期間內，有多少不同的潛在客戶或聯絡人會進行到每個暫時的階段？
-   * _範例_：如果銷售機會A在2023年1月1日處於階段1，並在2023年3月31日之前進入階段5，則2023年第1季的Passport分析會將銷售機會A計入階段1到5。
+   * _範例_：如果銷售機會A在2023年1月1日處於階段1，並於2023年3月31日進入階段5，則2023年第1季的Passport分析會將銷售機會A計入階段1到5。
 * 在指定的時間範圍內，每個暫時階段傳遞了多少個不重複的機會？
 
 ## 控制面板元件 {#dashboard-components}
@@ -53,5 +53,5 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 
 >[!MORELIKETHIS]
 >
->* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [探索儀表板基本資訊](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [儀表板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}

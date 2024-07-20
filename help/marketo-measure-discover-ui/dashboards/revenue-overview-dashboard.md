@@ -1,5 +1,5 @@
 ---
-description: 收入總覽儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 收入概觀儀表板 —  [!DNL Marketo Measure]  — 產品
 title: 收入總覽儀表板
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 收入概觀儀表板提供從CRM衍生的總收入的深入分析，讓您更清楚瞭解行銷策略的角色。 它概略說明行銷如何影響您的整體收入，以及如何協助成功完成交易。
 
-**展示板回答的問題：**
+**面板回答的問題：**
 
 * 我們的行銷活動佔收入的%為何？
 * 我們的「成功交易」中，有百分之多少受到行銷活動的影響？
@@ -23,10 +23,10 @@ ht-degree: 0%
 
 ### KPI動態磚 {#kpi-tiles}
 
-* **總收入**：來自「成功的已關閉」商機的總收入，包括沒有接觸點的商機。
-* **交易總數**：「成功的已關閉」商機數目，包括沒有接觸點的商機。
-* **已歸因的收入**：包含接觸點的「已結束的勝利」商機的總收入。
-* **已歸因的交易**：具有接觸點的「成功結案」機會數目。
+* **總收入**：「已結束的已獲勝」商機的總收入，包括沒有接觸點的商機。
+* **交易總數**：「成功結案」商機數目，包括沒有接觸點的商機。
+* **已歸因的收入**：具有接觸點的「已結束的勝利」商機的總收入。
+* **已歸因的交易**：具有接觸點的「成功結案」商機數目。
 
 ### 收入與已歸因收入圖表 {#revenue-and-attributed-revenue-chart}
 
@@ -60,5 +60,5 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [探索儀表板基本知識](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [控制面板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [探索儀表板基本資訊](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [儀表板資料可見性原則](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}

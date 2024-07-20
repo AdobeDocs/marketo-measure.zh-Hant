@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 活動歸因常見問題集 {#activities-attribution-faq}
 
-[!DNL Marketo Measure] 活動會匯入您的所有活動記錄並為它們產生接觸點，以允許這些活動接收歸因評分。 最常見的使用案例是追蹤銷售團隊的活動，因為這些活動通常會建立傳送給潛在客戶的電話或電子郵件記錄。 其他可以追蹤的獨特專案包括內容互動，例如資產下載或視訊檢視。
+[!DNL Marketo Measure]活動會匯入您的所有活動記錄並為其產生接觸點，以允許這些活動接收歸因評分。 最常見的使用案例是追蹤銷售團隊的活動，因為這些活動通常會建立傳送給潛在客戶的電話或電子郵件記錄。 其他可以追蹤的獨特專案包括內容互動，例如資產下載或視訊檢視。
 
 **這跟離線行銷活動有何不同？**
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基本上同時涵蓋任務和事件。 任務通常用於記錄快速的一次性專案，例如電話或電子郵件。 事件通常用於可能有開始或結束日期的事情，例如會議或會議。
 
-**如果我有具有相同遞回Task的Lead或Contact，我是否會看到所有這些的Buyer接觸點？**
+**如果我有具有相同遞回任務的Lead或Contact，我是否會看到所有這些專案的購買者接觸點？**
 
 有。您的同步活動與建立的接觸點之間會維持1:1關係。
 
@@ -31,44 +31,44 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 建議先在CRM中使用Activity物件設定您的篩選器。 根據篩選規則，您會很好瞭解有多少記錄符合該條件，然後您可以視需要加以調整。 這並不需要，但這是讓使用者瞭解在設定活動規則後將會建立多少活動接觸點的有用方法。
 
-**什麼是 [!DNL Marketo Measure] 促銷活動名稱？**
+**什麼是[!DNL Marketo Measure]行銷活動名稱？**
 
-由於這些活動會產生接觸點， [!DNL Marketo Measure] 必須知道他們屬於哪個管道和子管道。 您必須為每個規則提供 [!DNL Marketo Measure] 行銷活動名稱。 建立之後，請使用線上頻道CSV來對應該專案 [!DNL Marketo Measure] 行銷活動名稱至其適當的頻道。 此 [!DNL Marketo Measure] 促銷活動名稱也會出現在內的接觸點上 [!UICONTROL Ad Campaign Name] 欄位。
+由於這些活動會產生接觸點，[!DNL Marketo Measure]必須知道他們屬於哪個管道和子管道。 您必須為每個規則提供[!DNL Marketo Measure]行銷活動名稱。 建立之後，請使用線上頻道CSV將該[!DNL Marketo Measure]行銷活動名稱對應到其適當的頻道。 [!DNL Marketo Measure]行銷活動名稱也會出現在接觸點本身的[!UICONTROL Ad Campaign Name]欄位中。
 
-**會填入哪些其他接觸點欄位？**
+**已填入哪些其他接觸點欄位？**
 
 | **接觸點欄位** | **值** |
 |---|---|
 | 銷售機會/聯絡人 | 所有活動都與潛在客戶或聯絡人有關 |
 | Campaign | Channel.Subchannel [[!DNL Marketo Measure]] |
-| 接觸點來源 | CRM活動 |
+| 接觸點Source | CRM活動 |
 | 中 | Activity.Type |
 | 接觸點型別 | Activity.Type |
-| 廣告行銷活動名稱 | [!DNL Marketo Measure] 行銷活動名稱 |
+| 廣告行銷活動名稱 | [!DNL Marketo Measure]行銷活動名稱 |
 | 廣告內容 | 活動主題 |
 | 廣告ID | 活動外部Id |
-| 接觸點日期 | [自訂 — 在應用程式中設定] |
+| 接觸點日期 | [自訂 — 設定於應用程式] |
 
-**如果我必須為每位銷售代表建立不同的規則，該怎麼辦？ 我是否需要建立不同的 [!DNL Marketo Measure] 針對每個促銷活動？**
+**如果我必須為每位銷售代表建立不同的規則，該怎麼辦？ 我是否需要為每個建立不同的[!DNL Marketo Measure]行銷活動？**
 
-不可以。 「動態行銷活動名稱」可讓您填入 [!DNL Marketo Measure] 促銷活動名稱，使用參考活動物件欄位的「取代引數」。 例如，如果您擁有 [!DNL Marketo Measure] 促銷活動名稱為「傳出呼叫」，但您想要讓銷售代表在結尾處，請接受CRM欄位名稱並呼叫 [!DNL Marketo Measure] 行銷活動名稱「傳出呼叫」 {AssignedTo}「或」傳出呼叫 {CreatedBy}.」
+不可以。 「動態行銷活動名稱」可讓您使用參考活動物件欄位的「取代引數」，填入[!DNL Marketo Measure]行銷活動名稱的一部分（或全部）。 例如，如果您有[!DNL Marketo Measure]促銷活動名稱標題為&quot;Outbound Call&quot;，但您想要讓銷售代表在結尾處，請接受CRM欄位名稱並呼叫[!DNL Marketo Measure]促銷活動名稱&quot;Outbound Call {AssignedTo}&quot;或&quot;Outbound Call {CreatedBy}&quot;。
 
-**如何在中設定活動 [!DNL Marketo Measure] 應用程式？**
+**如何在[!DNL Marketo Measure]應用程式中設定活動？**
 
-關於如何在中設定活動的指示 [!UICONTROL Marketo] 量值應用程式可在以下位置找到： [!DNL Marketo Measure] 活動支援文章。
+您可在[!DNL Marketo Measure]活動支援文章中找到如何設定[!UICONTROL Marketo]量值應用程式內活動的指示。
 
 **不同的運運算元代表什麼意思？**
 
 * 等於：與值完全相符（亦稱為： social）
-* 包含：文字位於中間(亦稱為： &#42;社交&#42;)
-* 開頭為：值開頭為文字(亦稱為： social&#42;)
-* 結尾為：值結尾為文字(亦即： &#42;social)
-* 符合任何：可新增多個以逗號分隔的值。 如果 [!UICONTROL starts with]， [!UICONTROL ends with]，或必須套用包含運運算元，請使用萬用字元(&#42;)
+* 包含：文字位於中間（亦即： &#42;social&#42;）
+* 開頭為：值開頭為文字（亦即： social&#42;）
+* 結尾為：值結尾為文字（亦即： &#42;social）
+* 符合任何：可新增多個以逗號分隔的值。 如果必須套用[!UICONTROL starts with]、[!UICONTROL ends with]或包含運運算元，請使用萬用字元(&#42;)
 * 大於：用於數值欄位或日期/時間欄位
 * 小於：用於數值欄位或日期/時間欄位
 
-**這些活動屬於哪個管道？**
+**這些活動是根據哪個管道？**
 
-當活動規則及其對應的 [!DNL Marketo Measure] 行銷活動名稱已建立，請使用「線上管道」定義，將這些行銷活動放置在正確的行銷管道下。 [!DNL Marketo Measure] 不僅可使用媒體和來源，還可使用行銷活動來定義管道。
+建立活動規則及其對應的[!DNL Marketo Measure]行銷活動名稱時，請使用線上管道定義，將這些行銷活動放置在正確的行銷管道下。 [!DNL Marketo Measure]不僅可以使用媒體和來源，而且可以使用行銷活動來定義管道。
 
-在上述範例中，若要將「傳出呼叫{指派給}」行銷活動指派給BDR頻道，請在BDR頻道的線上頻道CSV中插入一列，其行銷活動定義為「傳出呼叫」&#42;「 — 星號表示萬用字元值，因此所有以「傳出呼叫」開頭的行銷活動都會落在BDR頻道下，而不必為每個行銷活動名稱建立個別的列。
+在上述範例中，若要將「傳出呼叫{指派給}」行銷活動指派給BDR頻道，請在您的線上頻道CSV中為BDR頻道插入一列，其行銷活動定義為「傳出呼叫&#42;」（星號代表萬用字元值），因此所有以「傳出呼叫」開頭的行銷活動都將落在BDR頻道之下，而不必為每個行銷活動名稱建立個別的列。

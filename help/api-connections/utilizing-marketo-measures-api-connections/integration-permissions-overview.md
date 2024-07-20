@@ -2,7 +2,8 @@
 description: 整合許可權概述 —  [!DNL Marketo Measure]
 title: 整合許可權概述
 feature: APIs, Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -49,13 +50,13 @@ ht-degree: 1%
 建立的接觸點和其他資料會寫入帳戶、行銷活動、CampaignMember、Case、Contact、Lead和Opportunity的自訂雙機碼欄位中。</td>
     <td><b>Salesforce連線使用者許可權（必要）</b>
     <p>
-    <b>為專用使用者設定的Marketo Measure管理員許可權：</b> 允許SFDC管理員在Marketo測量物件上執行CRUD操作。
+    <b>專用使用者的Marketo Measure管理員許可權集：</b>允許SFDC管理員對marketo測量物件執行CRUD作業。
     <br>
-    <b>檢視和編輯轉換的潛在客戶許可權集：</b> 這可讓Marketo Measure在銷售機會轉換為聯絡人後裝飾銷售機會。
+    <b>檢視和編輯轉換的潛在客戶許可權集：</b>這可讓Marketo Measure在潛在客戶轉換為聯絡人後加以裝飾。
     <br>
-    <b>Salesforce行銷使用者核取方塊：</b> 「行銷使用者」核取方塊可讓使用者建立行銷活動並使用「行銷活動匯入精靈」。
+    <b>Salesforce行銷使用者核取方塊：</b>行銷使用者核取方塊可讓使用者建立行銷活動並使用行銷活動匯入精靈。
     <br>
-    <b>Marketo Measure Standard使用者：</b> 讓使用者能從Marketo Measure物件讀取記錄。
+    <b>Marketo Measure Standard使用者：</b>讓使用者能夠從Marketo Measure物件讀取記錄。
     <p>
     <b>Salesforce標準欄位許可權</b>
     <br>
@@ -104,9 +105,9 @@ ht-degree: 1%
 <br>
 針對Marketo Measure自訂實體，我們需要所有實體的完整許可權。
 <p>
-<b>Dynamics Standard欄位許可權</b>
+<b>Dynamics標準欄位許可權</b>
 <br>
-<a href="/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">Marketo Measure Dynamics結構</a>
+<a href="/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">Marketo Measure Dynamics結構描述</a>
 <p>
 <b>Dynamics自訂欄位許可權</b>
 <br>
@@ -130,7 +131,7 @@ Marketo Measure會追蹤帳戶、行銷活動、廣告群組、廣告、篩選�
     <td><li>需要有ads_management許可權才能建立行銷活動、管理廣告或擷取廣告量度。</li>
 <li>使用者必須具備電子郵件許可權，才能登入其Facebook電子郵件。</li>
 <p>
-<b>範圍</b>
+<b>領域</b>
 <br>
 <a href="https://developers.facebook.com/docs/permissions/reference/ads_management/">ads_management</a>
 <br>
@@ -154,11 +155,11 @@ Marketo Measure會追蹤帳戶、行銷活動、廣告群組、廣告、篩選�
     <br>
     <li>超級管理員（頁面管理員角色，範圍列2）或贊助的內容海報（付費媒體管理員角色，範圍列3）是Marketo Measure操控自動標籤的必要專案</li>
     <p>
-    <b>範圍</b>
+    <b>領域</b>
     <br>
-    <a href="https://www.linkedin.com/campaignmanager/accounts">在入口網站中設定使用者角色(需要登入LinkedIn帳戶)</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">使用者角色概觀</a>：使用者角色、檢視及管理使用者許可權、指派角色，例如帳戶管理員或行銷活動管理員
+    <a href="https://www.linkedin.com/campaignmanager/accounts">在入口網站中設定使用者角色(需要登入LinkedIn帳戶)</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">使用者角色總覽</a>：使用者角色，檢視和管理使用者許可權，指派帳戶管理員或行銷活動經理之類的角色
     <p>
-    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">設定頁面管理員角色 —  <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">頁面管理員角色定義</a>：頁面管理員角色，在需要的管理員頁面上
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">設定頁面管理員角色 — <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">頁面管理員角色定義</a>：頁面管理員角色，在想要的管理員頁面上
     <p>
     <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">設定付費媒體管理員角色（尋找付費媒體管理員） - <a href="https://www.linkedin.com/help/linkedin/answer/a554540">付費媒體管理員定義</a>：付費媒體管理員角色</td>
   </tr>
@@ -172,11 +173,11 @@ Marketo Measure會追蹤帳戶、行銷活動、廣告群組、廣告、篩選�
 <li>檢視和管理DoubleClick廣告商報告</li>
 <li>檢視和管理DoubleClick行銷活動經理顯示廣告行銷活動</li>
 <p>
-    <b>範圍</b>
+    <b>領域</b>
     <br>
     <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>：檢視您的主要Google帳戶電子郵件地址
     <p>
-     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>：檢視及管理廣告商的DoubleClick報表
+     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>：檢視並管理廣告商報表的DoubleClick
     <p>
      <a href="https://www.googleapis.com/auth/dfatrafficking">https://www.googleapis.com/auth/dfatrafficking</a>：檢視及管理您的DoubleClick Campaign Manager (DCM)顯示廣告行銷活動</td>
   </tr>
@@ -192,7 +193,7 @@ Marketo Measure會追蹤帳戶、行銷活動、廣告群組、廣告、篩選�
 Marketo Measure會追蹤促銷活動、廣告群組、創意、網站連結和關鍵字。</td>
     <td><li>需要使用者的主要Google帳戶電子郵件地址</li>
 <p>
-    <b>範圍</b>
+    <b>領域</b>
     <br>
     <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>：檢視您的主要Google帳戶電子郵件地址</td>
   </tr>
@@ -200,25 +201,25 @@ Marketo Measure會追蹤促銷活動、廣告群組、創意、網站連結和�
     <td>Bing</td>
     <td>廣告平台資料</td>
     <td>Marketo Measure會追蹤帳戶、行銷活動、廣告群組、創意和關鍵字。</td>
-    <td><li>使用者必須透過其Microsoft帳戶授予「離線存取權」(即使未登入，也會授予Marketo Measure對一般使用者UserInfo的存取權)。 另請參閱 <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的頁面</a> 操作說明。</li>
+    <td><li>使用者必須透過其Microsoft帳戶授予「離線存取權」(即使未登入，也會授予Marketo Measure對一般使用者UserInfo的存取權)。 請參閱<a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的頁面</a>以瞭解如何操作。</li>
 <p>
-    <b>範圍</b>
+    <b>領域</b>
     <br>
-    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>：保留您已授予許可權之資料的存取權。</td>
+    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>：繼續存取您已授與許可權的資料。</td>
   </tr>
   <tr>
     <td>Marketo Engage</td>
     <td>B2B系統資料</td>
-    <td>Marketo整合可讓Marketo Measure收集Marketo活動、人員、計畫和計畫成員資格。 此外，Marketo Measure會追蹤Marketo Cookie (Munchkin ID)，將Marketo網路活動連結至Marketo Measure主要接觸點， <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">如此處所述</a>：
+    <td>Marketo整合可讓Marketo Measure收集Marketo活動、人員、計畫和計畫成員資格。 此外，Marketo Measure會追蹤Marketo Cookie (Munchkin ID)，以將連結Marketo網路活動至Marketo Measure主要接觸點，<a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">，如此處所述</a>：
     <p>
-    <i>由於Marketo Measure與Marketo整合，Marketo Measure Cookie ID現在也與Marketo Munchkin ID對應及同步。 這有助於縮短將匿名首次接觸歸因於網路工作階段的差距，而非將FT和LC接觸均歸因於Marketo活動。</i>
+    <i>由於Marketo Measure與Marketo整合，Marketo Measure Cookie ID現在也與Marketo Munchkin ID對應及同步。 這有助於縮短將匿名首次接觸歸因於網頁工作階段的差距，而非將FT和LC接觸均歸因於Marketo活動。</i>
     </td>
-    <td>客戶必須建立專用的Marketo Engage API使用者，並向Marketo Measure提供認證。 不需要其他許可權設定。 <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md#configuring-the-integration">瞭解更多</a>.</td>
+    <td>客戶必須建立專用的Marketo Engage API使用者，並向Marketo Measure提供認證。 不需要其他許可權設定。 <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md#configuring-the-integration">深入瞭解</a>。</td>
   </tr>
   <tr>
     <td>Adobe Analytics</td>
     <td>B2B系統資料</td>
-    <td>B2B客戶屬性整合可讓Marketo Measure和Adobe Analytics的共同使用者透過衍生自Marketo Measure歸因引擎的寶貴中繼資料，以及透過其與CRM (Microsoft Dynamics和Salesforce)的同步功能，擴充其Adobe Analytics使用者設定檔。 <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">瞭解更多</a>.</td>
+    <td>B2B客戶屬性整合可讓Marketo Measure和Adobe Analytics的共同使用者透過衍生自Marketo Measure歸因引擎的寶貴中繼資料，以及透過其與CRM (Microsoft Dynamics和Salesforce)的同步功能，擴充其Adobe Analytics使用者設定檔。 <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">深入瞭解</a>。</td>
     <td>客戶必須向Marketo Measure提供別名ID和FTP伺服器認證，才能將資料上傳至其Analytics執行個體。
     <p>
     請記下下列資訊，因為您將需要這些資訊來完成程式中的後續步驟：
@@ -231,7 +232,7 @@ Marketo Measure會追蹤促銷活動、廣告群組、創意、網站連結和�
   <tr>
     <td>Bizible Javascript</td>
     <td></td>
-    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">bizible.js收集哪些資料</a>.</td>
+    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">bizible.js收集哪些資料</a>。</td>
     <td></td>
   </tr>
 </tbody>

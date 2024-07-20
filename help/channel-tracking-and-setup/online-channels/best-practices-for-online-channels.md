@@ -1,5 +1,5 @@
 ---
-description: 線上管道的最佳作法 —  [!DNL Marketo Measure]
+description: 線上頻道的最佳實務 —  [!DNL Marketo Measure]
 title: 線上管道的最佳作法
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-以取得精確的 [!DNL Marketo Measure] 報告，您的行銷管道必須正確設定。 行銷管道欄位會顯示接觸點可屬於的最高層級行銷活動群組（例如，付費搜尋、直接、社交等）。
+若要產生準確的[!DNL Marketo Measure]報表，您的行銷管道必須正確設定。 行銷管道欄位會顯示接觸點可屬於的最高層級行銷活動群組（例如，付費搜尋、直接、社交等）。
 
-設定行銷管道有兩個層面：線上和離線。 本檔案著重於 [!DNL Marketo Measure] 設定及維護線上管道的最佳實務建議。
+設定行銷管道有兩個層面：線上和離線。 本檔案著重於設定及維護線上管道的[!DNL Marketo Measure]最佳實務建議。
 
-線上頻道規則為操作指引 [!DNL Marketo Measure] 對應您的數位接觸點，亦即任何透過 [!DNL Marketo Measure] 您網站上的JS。 如果這些規則不完整，或未正確排序，則會將接觸點歸因於錯誤的管道，因此會降低報表的正確性。 確保您的線上管道規則正確且為最新狀態，將可保證您的數位資料已歸因至您系統中的正確管道和子管道。 [!DNL Marketo Measure] 報表。
+線上管道規則是[!DNL Marketo Measure]如何對應您的數位接觸點（即透過您網站上的[!DNL Marketo Measure] JS追蹤和建立的任何接觸點）的准則。 如果這些規則不完整，或未正確排序，則會將接觸點歸因於錯誤的管道，因此會降低報表的正確性。 確保您的線上管道規則正確且為最新狀態，將可保證您的數位資料已歸因至[!DNL Marketo Measure]報表中的正確管道和子管道。
 
 ## 最佳實務 {#best-practice}
 
 無論是第一次設定規則，還是檢閱規則以檢查準確性，請記住以下最佳實務。
 
-請花點時間思考行銷活動的組織方式，以及這些組織如何適合 [!DNL Marketo Measure] 框架。 決定線上頻道中應該顯示哪些頻道和子頻道，以及哪些促銷活動、UTM引數或反向連結網站將這些頻道彼此區分開來。
+請花點時間思考行銷活動的組織方式，以及行銷活動如何融入[!DNL Marketo Measure]框架。 決定線上頻道中應該顯示哪些頻道和子頻道，以及哪些促銷活動、UTM引數或反向連結網站將這些頻道彼此區分開來。
 
 注意事項：
 
@@ -32,17 +32,17 @@ ht-degree: 0%
    * 如果頻道沒有促使人們進入您的網站，則不是線上頻道
 * 一個管道/子管道可以有多個規則
    * 您可以將多個規則視為「投射更寬的網路」，以確保每個接觸點都正確對應。 通常可以不正確新增或完全遺漏引數，因此擁有多個規則來擷取管道/子管道是確保對應正確性的好方法。
-* [!DNL Marketo Measure] 邏輯會從試算表的上方列開始，依遞減順序排列接觸點對應的優先順序，並向下進行
-   * [!DNL Marketo Measure] 讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
+* [!DNL Marketo Measure]邏輯會從試算表的上方列開始，依遞減順序排列接觸點對應的優先順序，並向下進行
+   * [!DNL Marketo Measure]讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
    * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
-* 維護括弧內的規則，請勿編輯或新增至括弧內的規則(例如； [AdWords付費搜尋] 或 [facebook已付費] )
-   * 這些是現成可用的 [!DNL Marketo Measure] 具有內建邏輯的規則，這些邏輯與 [!DNL Marketo Measure] 整合。 將這些規則設為該管道/子管道區段的最高優先順序，以確保 [!DNL Marketo Measure] 整合功能能夠如預期運作。
+* 維護括弧內的規則，請勿編輯或新增至括弧內的規則(例如，[AdWords付費搜尋]或[Facebook付費])
+   * 這些是內建邏輯且與[!DNL Marketo Measure]整合繫結的開箱[!DNL Marketo Measure]規則。 讓這些規則成為該管道/子管道區段的最高優先順序，以確保[!DNL Marketo Measure]整合能夠如預期般運作。
 * 上傳檔案後，您七天內無法變更任何規則
-   * [!DNL Marketo Measure] 利用此時間處理和更新接觸點，因此請務必在上傳前仔細檢查規則。
+   * [!DNL Marketo Measure]利用這個時間處理和更新接觸點，因此請務必在上傳之前仔細檢查您的規則。
 
 ## 維護最佳實務 {#best-practice-for-maintenace}
 
-儲存及處理線上管道規則後，這些規則會持續運作以儲存您的數位接觸點。 不過，某些變更或情況會導致您檢閱線上頻道設定。 [!DNL Marketo Measure] 建議您每六個月檢閱一次線上管道規則。 這可確保 [!DNL Marketo Measure] 資料會與您線上頻道/子頻道的內部定義以及UTM的使用方式保持一致。
+儲存及處理線上管道規則後，這些規則會持續運作以儲存您的數位接觸點。 不過，某些變更或情況會導致您檢閱線上頻道設定。 [!DNL Marketo Measure]建議您每六個月檢閱一次線上頻道規則。 這可確保您的[!DNL Marketo Measure]資料符合線上頻道/子頻道的內部定義以及UTM的使用方式。
 
 可能觸發您的團隊進行線上頻道維護的其他專案包括....
 
@@ -51,11 +51,11 @@ ht-degree: 0%
 * 管道組織或命名慣例的變更
 * 您行銷團隊中的營業額
 
-如果您的團隊最近經歷過上述任何情況 [!DNL Marketo Measure] 建議您檢閱線上管道規則，並進行適當的變更。
+如果您的團隊最近經歷過上述任何情況，[!DNL Marketo Measure]建議您檢閱線上頻道規則並進行適當的變更。
 
 >[!MORELIKETHIS]
 >
 >* [線上頻道設定](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
 >* [UTM引數](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
 >* [行銷管道和子管道](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
->* [UTM最佳作法](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
+>* [UTM最佳實務](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)

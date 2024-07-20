@@ -1,33 +1,33 @@
 ---
 unique-page-id: 18874523
-description: "[!DNL Marketo Measure] 動態結構描述 —  [!DNL Marketo Measure]"
-title: '"[!DNL Marketo Measure] 動態結構描述」'
+description: '[!DNL Marketo Measure]動態結構描述 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]動態結構描述'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
-# [!DNL Marketo Measure] 動態結構描述 {#marketo-measure-dynamics-schema}
+# [!DNL Marketo Measure]動態結構描述 {#marketo-measure-dynamics-schema}
 
 >[!NOTE]
 >
->您可能會看到指定&#39;&#39;的說明[!DNL Marketo Measure]&quot;，但仍在您的CRM中看到「Bizible」。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
+>您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-以下是開始使用所需的Dynamics結構描述 [!DNL Marketo Measure]. 列出所有實體和欄位，以及必要的讀取和/或寫入許可權。
+以下是開始使用[!DNL Marketo Measure]所需的Dynamics結構描述。 列出所有實體和欄位，以及必要的讀取和/或寫入許可權。
 
 ## 購買者接觸點 {#buyer-touchpoints}
 
-購買者接觸點是 [!DNL Marketo Measure] 封裝聯絡人和潛在客戶行銷互動的自訂實體。
+Buyer Touchpoint是[!DNL Marketo Measure]自訂實體，可封裝聯絡人和潛在客戶的行銷互動。
 
-## 購買者接觸點關係 {#buyer-touchpoint-relationships}
+## Buyer Touchpoint關係 {#buyer-touchpoint-relationships}
 
-此圖表是動態庫存實體與購買者接觸點之間關係的高層級視覺效果。
+此圖表是Dynamics Stock實體與Buyer Touchpoint之間關係的高階視覺效果。
 
-## 購買者接觸點 {#buyer-touchpoint}
+## Buyer Touchpoint {#buyer-touchpoint}
 
 <table> 
  <tbody> 
@@ -304,13 +304,13 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-## 購買者歸因接觸點 {#buyer-attribution-touchpoint}
+## Buyer Attribution Touchpoint {#buyer-attribution-touchpoint}
 
-購買者歸因接觸點為 [!DNL Marketo Measure] 封裝行銷對機會之影響的自訂實體。
+Buyer Attribution Touchpoint是[!DNL Marketo Measure]自訂實體，可封裝行銷對機會的影響。
 
-## 購買者歸因接觸點關係 {#buyer-attribution-touchpoint-relationships}
+## Buyer Attribution Touchpoint關係 {#buyer-attribution-touchpoint-relationships}
 
-此圖表是動態庫存實體與購買者歸因接觸點之間關係的高層級視覺效果。
+此圖表是Dynamics Stock實體與Buyer Attribution Touchpoint之間關係的高階視覺效果。
 
 ## 購買者歸因接觸點 {#buyer-attribution-touchpoints}
 
@@ -800,7 +800,7 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 活動 {#marketo-measure-events}
+## [!DNL Marketo Measure]個事件 {#marketo-measure-events}
 
 <table> 
  <tbody> 
@@ -867,7 +867,7 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 歷史記錄 {#marketo-measure-history}
+## [!DNL Marketo Measure]歷史記錄 {#marketo-measure-history}
 
 <table> 
  <tbody> 
@@ -912,7 +912,7 @@ ht-degree: 22%
 
 ## Dynamics標準實體 {#dynamics-standard-entities}
 
-此清單提供符合下列條件的Dynamics Standard實體： [!DNL Marketo Measure] 會與之互動，以及我們新增至這些實體的自訂欄位。
+此清單提供[!DNL Marketo Measure]互動的Dynamics Standard實體，以及我們新增到這些實體的自訂欄位。
 
 **銷售機會**
 
@@ -1176,7 +1176,7 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-**Campaign**
+**行銷活動**
 
 <table> 
  <tbody> 
@@ -1438,7 +1438,7 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-**電話通話**
+**電話**
 
 <table> 
  <tbody> 
@@ -1505,4 +1505,4 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-[] =僅限V1舊客戶
+[] =僅限V1舊版客戶
