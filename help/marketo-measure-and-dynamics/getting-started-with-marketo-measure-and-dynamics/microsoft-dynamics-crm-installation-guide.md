@@ -4,9 +4,9 @@ description: '[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo Measure — 
 title: "[!DNL Microsoft Dynamics] CRM安裝指南"
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ ht-degree: 0%
 安全性角色位於此處： **[!UICONTROL Settings]** > **[!UICONTROL Security]** > **[!UICONTROL Security Roles]**。
 
 對於[!DNL Marketo Measure]個自訂實體，我們需要所有實體的完整許可權。
+
+除了標準實體的讀取/寫入許可權外，還需要行銷活動「建立」許可權。
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: '[!DNL Marketo Measure]動態結構描述 —  [!DNL Marketo Measur
 title: '[!DNL Marketo Measure]動態結構描述'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1084'
 ht-degree: 23%
 
 ---
@@ -1177,6 +1177,8 @@ Buyer Attribution Touchpoint是[!DNL Marketo Measure]自訂實體，可封裝行
 </table>
 
 **行銷活動**
+
+除了下方的讀取/寫入許可權外，還需要行銷活動「建立」許可權。
 
 <table> 
  <tbody> 
