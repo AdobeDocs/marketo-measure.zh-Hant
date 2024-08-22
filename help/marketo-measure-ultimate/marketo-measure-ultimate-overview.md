@@ -3,16 +3,16 @@ description: '[!DNL Marketo Measure] Ultimate總覽 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate概觀'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 36688972c241f5a79c1730237598510cd44f032d
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 0%
+source-wordcount: '683'
+ht-degree: 4%
 
 ---
 
 # [!DNL Marketo Measure] Ultimate概觀 {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] （前身為Bizible）可協助行銷人員深入瞭解哪些行銷手法最能有效提升公司營收，實現投資報酬最大化。 [!DNL Marketo Measure]是行銷歸因解決方案，可自動追蹤並報告管道效能，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
+[!DNL Marketo Measure] (之前稱為 Bizible) 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收並取得最大的投資報酬率。[!DNL Marketo Measure]是行銷歸因解決方案，可自動追蹤並報告管道效能，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
 
 [!DNL Marketo Measure Ultimate]包含其他功能：
 
@@ -111,4 +111,6 @@ Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 
 >[!MORELIKETHIS]
 >
->[Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>* [Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>
+>* [影片： Marketo Measure Ultimate概觀](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
