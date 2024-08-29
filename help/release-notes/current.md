@@ -3,7 +3,7 @@ description: 最新發行說明 —  [!DNL Marketo Measure]
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9d1001306a3e98ca85af5839ad4ea3ff662d1886
+source-git-commit: 24cb14c0f5db13c791966d21b4a1145b655ecc1b
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 為協助您適應這項變更，我們已建立新功能的相關檔案，並透過完整的疑難排解步驟來清除錯誤說明。
 
-* 新檔案： CRM匯出的錯誤處理設定
+* 新檔案： [處理CRM匯出的設定時發生錯誤](/help/configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
 * [錯誤通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md)
 
 ## 第3季發行 {#q3-release}
