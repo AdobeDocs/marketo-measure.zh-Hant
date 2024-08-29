@@ -4,10 +4,10 @@ product: Bizible
 audience: end-user
 user-guide-title: 「[!DNL Marketo Measure] 指南」
 user-guide-description: 「[!DNL Marketo Measure]可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」
-source-git-commit: 5759615376954806d6f0682378ce4bbc786bc43a
+source-git-commit: 8fa33a363b9e853dd074848032e1810b72fe169c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 0%
+source-wordcount: '802'
+ht-degree: 1%
 
 ---
 
@@ -57,6 +57,7 @@ ht-degree: 0%
       + [連線 [!DNL Marketo Measure] 至Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
       + [ [!DNL Marketo Measure] CRM封裝的最佳作法](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] Salesforce物件](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
+      + [CRM匯出的錯誤處理](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [ [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]物件與欄位分類法](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
       + [標準 [!DNL Salesforce] 物件上的[!DNL Marketo Measure]欄位](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
       + [從Google Analytics中的登陸頁面URL移除 [!DNL Marketo Measure] 追蹤引數](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
       + [正在從完整圓圈轉換為 [!DNL Marketo Measure] ](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
    + [測試](miscellaneous/test.md)
-+ 發行說明{#release-notes}
++ 發行說明 {#release-notes}
    + [最新發行說明](release-notes/current.md)
    + 舊版{#previous-releases}
       + [發行說明：2023年](release-notes/previous-releases/2023.md)
