@@ -2,9 +2,9 @@
 description: 瞭解如何處理CRM匯出中的錯誤
 title: CRM匯出的錯誤處理
 feature: Salesforce
-source-git-commit: 24cb14c0f5db13c791966d21b4a1145b655ecc1b
+source-git-commit: ce5170330fb1d9f944762f401d29be4da5c0bd43
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 
 您可以在&#x200B;**我的帳戶** > **設定** > **CRM** > **一般**&#x200B;下找到設定。
 
+![匯出錯誤時暫停](assets/stop-progress.png)
+
 >[!NOTE]
 >
 >只有在您已啟用「匯出至CRM」功能時，此功能才會顯示。
@@ -22,6 +24,8 @@ ht-degree: 0%
 啟用此功能後，匯出作業會停止前進並保留在錯誤發生的記錄上，直到問題解決為止。 這些錯誤通常是因為缺少許可權、未正確套用自訂驗證規則，或工作流程/觸發程式中有問題。 工作將繼續依排程執行，並自動重新嘗試匯出失敗的記錄，直到成功為止。
 
 如果您選擇停用此功能，則會出現警告快顯視窗，通知您這可能會導致資料不一致。 您有責任解決因這些不一致而可能出現的任何問題。
+
+![資料不一致性警告](assets/data-inconsistency.png)
 
 在這兩種情況下，不論功能是開啟或關閉，所有遇到的記錄層級錯誤都會記錄到`ExportErrors`表格中，`CRMExport_ExportError`工作將會每天自動嘗試重新匯出這些記錄。 如此一來，便不需要請求支援人員來啟動重新匯出，因為這將自動執行，無需任何開發人員介入。
 
