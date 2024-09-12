@@ -1,19 +1,17 @@
 ---
 description: 瞭解從 [!DNL Marketo Measure] 階層訂閱移轉至 [!DNL Marketo Measure] Ultimate時的移轉程式。
-hide: true
-hidefromtoc: true
 title: 從階層移轉至 [!DNL Marketo Measure] Ultimate
 feature: Integration, Tracking, Attribution
-source-git-commit: 0c94276bec390bb67dafe5dd679c1a0378a05c85
+source-git-commit: 9c3c3c75a9a505bb078da18e13f210add8699c24
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '281'
 ht-degree: 1%
 
 ---
 
 # 從第1-2層移轉至[!DNL Marketo Measure]旗艦版 {#migration-from-tier-to-marketo-measure-ultimate}
 
-本文概述從第1級或第2級訂閱移轉至Marketo Measure Ultimate的使用者移轉程式。
+本文概述從第1或第2層訂閱移轉至[!DNL Marketo Measure] Ultimate的使用者移轉程式。
 
 >[!IMPORTANT]
 >
