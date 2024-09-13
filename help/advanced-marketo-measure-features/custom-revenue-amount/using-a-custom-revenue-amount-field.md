@@ -4,9 +4,9 @@ description: 使用自訂收入金額欄位 —  [!DNL Marketo Measure]
 title: 使用自訂收入金額欄位
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 3794aaa8460fe3e4d366b833c933d10beda7da96
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 依預設，「購買者歸因接觸點」會從下列兩個欄位之一提取「商機金額」：
 
-* 金額（SFDC預設值）
+* 金額(SFDC預設)
 * [!DNL Marketo Measure]機會金額（自訂）
 
-如果您在您的Opportunities上使用自訂「金額」欄位，則需要設定工作流程以計算Buyer Touchpoint收入。 這需要更深入的[!DNL Salesforce]知識，因此可能需要您的SFDC管理員協助。
+如果您在您的Opportunities上使用自訂「金額」欄位，則需要設定工作流程以計算Buyer Touchpoint收入。 這需要[!DNL Salesforce]的進階知識，因此可能需要您的SFDC管理員協助。
 
 開始之前，我們需要以下資訊：
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 在Salesforce Lightning中建立工作流程 {#create-the-workflow-in-salesforce-lightning}
 
-以下步驟適用於Salesforce Lightning使用者。 如果您仍使用Salesforce Classic，這些步驟[會列在下方](#create-the-workflow-in-salesforce-classic)。
+以下步驟適用於Salesforce Lightning使用者。 如果您仍使用Salesforce Classic，這些步驟[將列在下方](#create-the-workflow-in-salesforce-classic)。
 
 1. 從[設定]中，在[快速尋找]方塊中輸入[流量]，然後選取&#x200B;**[!UICONTROL Flows]**&#x200B;以啟動[流量產生器]。 從右側面板按一下&#x200B;**[!UICONTROL New Flow]**&#x200B;按鈕。
 
@@ -62,8 +62,8 @@ ht-degree: 0%
    * 輸入標籤 — 將自動產生API名稱
    * 在[如何尋找記錄以更新並設定其值]下，選取&#x200B;**[!UICONTROL Use the opportunity record that triggered the flow]**。
    * 在&quot;[!UICONTROL Set Filter Conditions]&quot;區段中，選取&#x200B;**[!UICONTROL Always Update Record]**&#x200B;作為更新記錄的條件需求。
-   * 在&quot;[!UICONTROL Set Field Values for the Campaign Record]&quot;中，從欄位選取Marketo Measure機會金額和來源值。 然後選取您的自訂金額欄位。
-   * 按一下&#x200B;**[!UICONTROL Done]**。
+   * 在&quot;[!UICONTROL Set Field Values for the Campaign Record]&quot;的「 from 」欄位中，選取Marketo Measure機會金額(**bizible2__Bizible_Opportunity_Amount__c**)和來源值。 然後選取您的自訂金額欄位。
+   * 按一下「**[!UICONTROL Done]**」。
 
    ![](assets/using-a-custom-revenue-amount-field-7.png)
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ## 在Salesforce Classic中建立工作流程 {#create-the-workflow-in-salesforce-classic}
 
-以下步驟適用於Salesforce Classic使用者。 如果您已切換至Salesforce Lightning，這些步驟[可在上方](#create-the-workflow-in-salesforce-lightning)找到。
+下列步驟適用於Salesforce Classic使用者。 如果您已切換至Salesforce Lightning，這些步驟[可在上找到](#create-the-workflow-in-salesforce-lightning)。
 
 1. 導覽至&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Workflow & Approvals]** > **[!UICONTROL Workflow Rules]**。
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 1. 新增工作流程動作。 將此挑選清單設為&quot;[!UICONTROL New Field Update]&quot;。
    ![](assets/using-a-custom-revenue-amount-field-14.png)
 
-1. 您將在這裡填寫欄位資訊。 在「名稱」欄位中，我們建議使用此命名：「[!DNL Marketo Measure] Opp數量」。 「唯一名稱」將會根據「名稱」欄位自動填入。 在「要更新的欄位」選擇清單中，選取「[!DNL Marketo Measure]機會金額」。 選取欄位後，選取「欄位變更後重新評估工作流程規則」方塊。 在「指定新欄位值」中，選取「使用公式來設定新值」。 在空白方塊中，拖放自訂金額欄位的API名稱。 按一下&#x200B;**[!UICONTROL Save]**。
+1. 您將在這裡填寫欄位資訊。 在「名稱」欄位中，我們建議使用此命名：「[!DNL Marketo Measure] Opp數量」。 「唯一名稱」將會根據「名稱」欄位自動填入。 在「要更新的欄位」選擇清單中，選取「[!DNL Marketo Measure]機會金額」。 選取欄位後，選取「欄位變更後重新評估工作流程規則」方塊。 在「指定新欄位值」中，選取「使用公式來設定新值」。 在空白方塊中，拖放自訂金額欄位的API名稱。 按一下「**[!UICONTROL Save]**」。
 
    ![](assets/using-a-custom-revenue-amount-field-15.png)
 
@@ -104,6 +104,6 @@ ht-degree: 0%
 
    完成這些步驟後，需要更新機會，才能觸發工作流程從[!UICONTROL custom opportunity]欄位取得新值。
 
-   您可以透過SFDC內的Data Loader執行您的機會，來達成此目標。 在[本文章](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)中尋找有關使用資料載入器的詳細資料。
+   您可以透過SFDC中的資料載入器執行您的機會，藉此達成上述目標。 在[本文章](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)中尋找有關使用資料載入器的詳細資料。
 
 如果過程中有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或[[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
