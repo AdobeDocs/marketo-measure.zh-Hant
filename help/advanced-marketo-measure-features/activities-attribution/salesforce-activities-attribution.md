@@ -4,10 +4,10 @@ description: Salesforce活動歸因 —  [!DNL Marketo Measure]
 title: Salesforce活動歸因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
@@ -17,13 +17,17 @@ ht-degree: 0%
 
 ![](assets/1.png)
 
+>[!AVAILABILITY]
+>
+>此功能僅對第2層客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
+
 首先，我們推出名為「[!DNL Marketo Measure]」行銷活動的新概念。 對於您定義的每個規則，您會將記錄儲存至您可命名的[!DNL Marketo Measure]行銷活動中。 視需要新增多個行銷活動。 想像一下在付費媒體行銷活動旁邊測量對外銷售行銷活動的成效！
 
 您即將使用此[!DNL Marketo Measure]行銷活動名稱，告訴我們應將其對應至哪個管道。 如果您仍在考慮「傳出銷售」，或許所有「傳出銷售」行銷活動都應該位於BDR管道中。
 
 熟悉此階層：
 
-* 管道
+* Channel
    * 子管道
       * Campaign
       * Campaign

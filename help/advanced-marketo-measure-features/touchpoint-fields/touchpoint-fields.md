@@ -4,9 +4,9 @@ description: 接觸點欄位 —  [!DNL Marketo Measure]
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->現在可於第2級與第3級中完整細分。
+>可在第2層訂閱中取得完整細分。
 
 >[!NOTE]
 >

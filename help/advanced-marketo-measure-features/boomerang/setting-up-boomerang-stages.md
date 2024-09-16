@@ -4,9 +4,9 @@ description: 正在設定迴旋移動階段 —  [!DNL Marketo Measure]
 title: 設定回車族階段
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能僅針對2級和3級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
+>Boomerang功能僅針對第2級客戶啟用。 若要要求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
 
 若要啟用帳戶的[!UICONTROL Boomerang]階段，您必須是帳戶管理員。 或者，您可以連絡[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}來啟用它。 啟用功能後，請依照這些指示進行設定。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    ![](assets/2-2.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下「**[!UICONTROL Save]**」。
 
    >[!NOTE]
    >
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    ![](assets/6-1.png)
 
-1. 設定歸因百分比，您要將其配置給已納入自訂模型中的「回車族階段」 。 確定所有階段的歸因總數為100%。 按一下&#x200B;**[!UICONTROL Save and Process]**。
+1. 設定歸因百分比，您要將其配置給已納入自訂模型中的「回車族階段」 。 確定所有階段的歸因總數為100%。 按一下「**[!UICONTROL Save and Process]**」。
 
    ![](assets/7-1.png)
 
