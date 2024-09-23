@@ -4,9 +4,9 @@ description: ' [!DNL Marketo Measure] 與 [!DNL Salesforce] 如何互動 — Mar
 title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
+source-git-commit: dec80278958e51c1f0449173d45fe74425fb047e
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1314'
 ht-degree: 18%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 18%
 
 建立[!DNL Marketo Measure]帳戶並連線[!DNL Salesforce]後，只要已安裝[!DNL Marketo Measure]受管理的套件且[!DNL Marketo Measure] Salesforce使用者擁有編輯許可權，[!DNL Marketo Measure]就會開始將行銷資料推送至CRM執行個體。
 
-如果您未安裝[!DNL Marketo Measure] Salesforce套件，[!DNL Marketo Measure]不會將任何資料寫入您的Salesforce執行個體。
+如果您未安裝[!DNL Marketo Measure] Salesforce套件，[!DNL Marketo Measure]將不會將任何資料寫入您的Salesforce執行個體。
 
 ![](assets/1-3.png)
 
@@ -33,14 +33,17 @@ ht-degree: 18%
 
 修改此設定時，請記住，較小的批次大小會消耗您CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時才減少批次大小。
 
-## Salesforce連線使用者許可權 {#salesforce-connected-user-permissions}
+## Salesforce已連線使用者許可權 {#salesforce-connected-user-permissions}
 
 **專用使用者的Marketo Measure管理員許可權集**：允許SFDC管理員對Marketo Measure物件執行CRUD作業。
 
 **檢視和編輯轉換的潛在客戶許可權集**：這可讓Marketo Measure在潛在客戶轉換為聯絡人後加以裝飾。
 
-**Salesforce行銷使用者核取方塊**：允許使用者建立行銷活動並使用Campaign匯入精靈。
-* 需要Campaign「建立」的其他許可權。
+**Salesforce行銷使用者核取方塊**：可讓使用者建立行銷活動，並使用行銷活動匯入精靈。
+
+* 我們需要CRM中Campaign的「建立」和「更新」額外許可權。
+
+* 從網路活動建立接觸點時，我們需要將其連結至促銷活動。 由於網站活動沒有對應的CRM行銷活動，因此我們需要建立一個行銷活動以建立此連結。 這同時適用於銷售機會和銷售機會接觸點。 需要更新許可權，因為我們使用的呼叫是「upsert」 — 如果記錄存在，我們會更新記錄；如果沒有，我們會建立記錄。 這僅適用於我們建立的行銷活動。
 
 **Marketo Measure Standard使用者**：讓使用者能夠從Marketo Measure物件讀取記錄。
 
@@ -339,7 +342,7 @@ ht-degree: 18%
    <td> </td> 
   </tr> 
   <tr> 
-   <td>階段名稱</td> 
+   <td>StageName</td> 
    <td>標準</td> 
    <td>x</td> 
    <td> </td> 
@@ -421,7 +424,7 @@ ht-degree: 18%
  </tbody> 
 </table>
 
-**行銷活動**
+**Campaign**
 
 <table> 
  <colgroup> 
@@ -635,13 +638,13 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->為了確保Marketo Measure擷取Salesforce帳戶內刪除事件的精確性，以下物件需要可複製的許可權。 可復寫許可權與下列物件一起提供標準許可權：
+>為了確保Marketo Measure擷取您Salesforce帳戶內刪除事件的精確性，以下物件需要可複製的許可權。 可復寫許可權與下列物件一起提供標準許可權：
 >
 >* 帳戶
 >* Campaign
 >* 促銷活動會員
 >* 連絡人
->* 事件
+>* 活動
 >* 銷售機會
 >* 機會
 >* 任務
@@ -649,7 +652,7 @@ ht-degree: 18%
 
 ## [!DNL Salesforce]中的[!DNL Marketo Measure]個自訂物件 {#marketo-measure-custom-objects-in-salesforce}
 
-除了在SFDC的標準物件上建立自訂欄位之外，在安裝[!DNL Marketo Measure]套件之後，它會建立幾個自訂物件。 以下是這些「自訂物件」的清單，以及表示[!DNL Marketo Measure]將寫入其中的欄位的表格。
+除了在SFDC的標準物件上建立自訂欄位之外，在安裝[!DNL Marketo Measure]套件之後，它會建立一些自訂物件。 以下是這些「自訂物件」的清單，以及表示[!DNL Marketo Measure]將寫入其中的欄位的表格。
 
 **Buyer Touchpoint**
 
