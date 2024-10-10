@@ -4,9 +4,9 @@ description: 接觸點欄位 —  [!DNL Marketo Measure]
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
+source-git-commit: 3424f8a63da40f8762defae1e6ae22ebe60530d0
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 若要建立計算欄位，請記住，使用者可執行三種不同的動作：擷取、對應至和串連。 這些也稱為定義計算欄位的運運算元。
 
-擷取
+### 擷取 {#extracts}
 
-[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}擷取自訂引數。 [然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]運運算元從其他位置提取欄位中的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面擷取自訂引數。 然後放置到接觸點欄位上。
 
 **範例#1**
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ![](assets/five.png)
 
-**對應至**
+### 將對應至 {#maps-to}
 
 [!UICONTROL maps to]運運算元會建立需要轉譯或分段為其他值的值表。 這通常採取鍵值的形式，其中程式碼代表好記的名稱，需要對應到該好記名稱。
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 ![](assets/seven.png)
 
-**串連**
+### 串連 {#concatenates}
 
 [!UICONTROL concatenates]運運算元將來自多個欄位的值結合為單一欄位。 這對於建立可跨不同欄位提取資料的自訂值很有用，以便
 
