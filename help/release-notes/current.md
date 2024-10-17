@@ -3,9 +3,9 @@ description: 最新發行說明 —  [!DNL Marketo Measure]
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: c576d2b125ac1699486e60240729a7f4d8908272
+source-git-commit: 9a5e267b4b268d067fbbe89a00a4da96752a44db
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 請參閱下文，瞭解2024年發行版本的所有新功能和更新功能。
 
 ## 第4季發行 {#q4-release}
+
+### 新工作階段管道結轉行為
+
+如果新工作階段在閒置30分鐘後的7天內開始，則上一個工作階段的管道現在會結轉，僅套用至直接造訪（無反向連結或內部反向連結）。 七天未使用後，工作階段會預設為「直接/其他」。 先前的工作階段資料不會覆寫非直接管道。
+
+此外，使用社交登入(Google、Microsoft或Apple)的工作階段現在已合併為一個連續的的工作階段，以確保更順暢的體驗。 如果沒有此傳遞切換，社交登入會因外部反向連結差異而建立個別的工作階段。
+
+對於新客戶，工作階段管道結轉現在是預設行為。 現有客戶可透過在「設定→每次接觸歸因」下方開啟「工作階段管道結轉」切換來啟用此功能。 此設定一經啟用即無法復原。
+
+檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+
+### 關鍵字ROI控制面板
+
+新的關鍵字ROI儀表板提供付費搜尋行銷活動績效的詳細深入分析，提供關鍵字層級成本、已歸因收入以及產生的潛在客戶和商機的完整檢視。 此儀表板可協助您評估Google Adwords、LinkedIn和Bing Ads等產品的每個關鍵字投資報酬率。
+
+檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增強型區段規則
 
@@ -51,7 +67,7 @@ ht-degree: 0%
 
 **提醒： Salesforce欄位淘汰 — 6月14日**
 
-如去年所宣佈，我們將[逐步淘汰匯出至Lead/Contact物件的工作](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}，以簡化整合，並免除匯出至Salesforce標準物件的需要。 您可以依照此處說明的步驟[從接觸點物件取得相同的資料](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我們也會分享有關建立工作流程的檔案，以將此資料新增至銷售機會/聯絡人物件。 淘汰將於2024年6月14日生效。
+如去年所宣佈，我們將[逐步淘汰匯出至Lead/Contact物件的工作](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}，以簡化整合，並免除匯出至Salesforce標準物件的需求。 您可以依照此處說明的步驟[從接觸點物件取得相同的資料](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我們也會分享有關建立工作流程的檔案，以將此資料新增至銷售機會/聯絡人物件。 淘汰將於2024年6月14日生效。
 
 此變更將帶來兩個主要優點：
 
