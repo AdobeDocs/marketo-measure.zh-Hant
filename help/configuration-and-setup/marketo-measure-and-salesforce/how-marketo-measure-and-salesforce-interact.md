@@ -4,10 +4,10 @@ description: ' [!DNL Marketo Measure] 與 [!DNL Salesforce] 如何互動 — Mar
 title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: dec80278958e51c1f0449173d45fe74425fb047e
+source-git-commit: 9ef6d16a73ef25846b90902eb22a544432c33931
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 18%
+source-wordcount: '1281'
+ht-degree: 17%
 
 ---
 
@@ -188,49 +188,6 @@ ht-degree: 18%
    <td>x</td> 
    <td> </td> 
   </tr>
- </tbody> 
-</table>
-
-**個案例**
-
-<table> 
- <tbody> 
-  <tr> 
-   <th>欄位</th> 
-   <th>標準/自訂</th> 
-   <th>讀取</th> 
-   <th>寫入</th> 
-  </tr> 
-  <tr> 
-   <td>ID</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>CreatedDate</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>LastModifiedDate</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>提供的電子郵件</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>IsDeleted</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td>
-  </tr> 
  </tbody> 
 </table>
 
@@ -466,30 +423,6 @@ ht-degree: 18%
   </tr> 
   <tr> 
    <td>LastModifiedDate</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>ConvertedDate</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>ConvertedContactId</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>ConvertedOpportunityId</td> 
-   <td>標準</td> 
-   <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>IsConverted</td> 
    <td>標準</td> 
    <td>x</td> 
    <td> </td> 
