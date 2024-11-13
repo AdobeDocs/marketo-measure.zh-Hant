@@ -4,7 +4,7 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
+source-git-commit: 3ad812a05671f277d3dd3f9bc58e3b2ea3606e71
 workflow-type: tm+mt
 source-wordcount: '21110'
 ht-degree: 3%
@@ -32,11 +32,11 @@ _Data Warehouse資料模型_ ERD會顯示資料倉儲中的資料如何流動及
 
 _按一下完整版本的影像_
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <tbody> 
   <tr> 
-   <th>Data Warehouse資料模型</th> 
-   <th>廣告維度資料模型</th> 
+   <th>Data Warehouse資料模型</th>
+   <th>廣告維度資料模型</th>
   </tr> 
   <tr> 
    <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
@@ -80,7 +80,7 @@ _按一下完整版本的影像_
     <tr>
       <td>名稱</td>
       <td>varchar</td>
-      <td>來源系統中的「帳戶名稱」。</td>
+      <td>來源系統的帳戶名稱。</td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ _按一下完整版本的影像_
       <td>0013100001phrBAAY</td>
     </tr>
     <tr>
-      <td>EMAIL</td>
+      <td>電子郵件</td>
       <td>varchar</td>
       <td>已透過「連絡人」關係或「銷售線索與帳戶」對應，對應至「帳戶」的電子郵件地址。</td>
       <td>person@adobe.com</td>
@@ -579,25 +579,25 @@ _按一下完整版本的影像_
       <td>AD_GROUP_UNIQUE_ID</td>
       <td>varchar</td>
       <td>預期為Null，因為廣告商上方沒有任何廣告群組。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>ad_GROUP_NAME</td>
       <td>varchar</td>
       <td>預期為Null，因為廣告商上方沒有任何廣告群組。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>AD_CAMPAIGN_UNIQUE_ID</td>
       <td>varchar</td>
       <td>預期為Null，因為廣告商上方沒有任何廣告促銷活動。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>AD_CAMPAIGN_NAME</td>
       <td>varchar</td>
       <td>預期為Null，因為任何廣告階層中的廣告廣告商上方沒有促銷活動。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>IS_ACTIVE</td>
@@ -720,7 +720,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>預期為Null，因為這是廣告階層中「廣告帳戶」的記錄。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -728,7 +728,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>預期為Null，因為這是廣告階層中「廣告帳戶」的記錄。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -738,7 +738,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為空，因為任何廣告階層中的廣告帳戶上方沒有廣告商。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -748,7 +748,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為空，因為任何廣告階層中的廣告帳戶上方沒有廣告商。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -758,7 +758,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -768,7 +768,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -778,7 +778,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告行銷活動。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -788,7 +788,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為Null，因為任何廣告階層中的廣告帳戶上方沒有廣告行銷活動。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -924,7 +924,7 @@ _按一下完整版本的影像_
       <td>varchar</td>
       <td>從utm_source的URL剖析。</td>
       <td>
-        <p>Social</p>
+        <p>社交</p>
       </td>
     </tr>
     <tr>
@@ -1155,7 +1155,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為任何廣告階層中的行銷活動上方沒有廣告群組。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1166,7 +1166,7 @@ _按一下完整版本的影像_
       <td>
         <p>預期為Null，因為任何廣告階層中的行銷活動上方沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -1654,7 +1654,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為Doubleclick廣告階層中沒有「廣告群組」。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1666,7 +1666,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為Doubleclick廣告階層中沒有「廣告群組」。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1678,7 +1678,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為這是階層中「廣告群組」的記錄。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1690,7 +1690,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為這是階層中「廣告群組」的記錄。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -2033,7 +2033,7 @@ _按一下完整版本的影像_
       </td>
     </tr>
     <tr>
-      <td>EMAIL</td>
+      <td>電子郵件</td>
       <td>varchar</td>
       <td>與BAT相關聯的電子郵件地址。</td>
       <td>person@adobe.com</td>
@@ -2792,7 +2792,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>此欄位已棄用。 使用Stage_Transitions表格來取得階段資訊。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -3558,7 +3558,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -4902,7 +4902,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
       <td>是否將記錄視為已刪除來源系統。</td>
       <td>
-        <p>假</p>
+        <p>False</p>
       </td>
     </tr>
     <tr>
@@ -5703,7 +5703,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -6123,7 +6123,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>2018-08-28</td>
     </tr>
     <tr>
-      <td>TIMESTAMP</td>
+      <td>時間戳記</td>
       <td>timestamp_ntz</td>
       <td>事件發生日期和時間。</td>
       <td>2018-08-28 19:39:15.000</td>
@@ -6357,7 +6357,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       </td>
     </tr>
     <tr>
-      <td>EMAIL</td>
+      <td>電子郵件</td>
       <td>varchar</td>
       <td>記錄的電子郵件地址。</td>
       <td>personb@adobe.com</td>
@@ -6747,7 +6747,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -7189,7 +7189,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>預期為Null，因為Doubleclick階層中沒有廣告群組可供曝光</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7201,7 +7201,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>預期為Null，因為Doubleclick階層中沒有廣告群組可供曝光</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7237,7 +7237,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7248,7 +7248,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7258,7 +7258,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7268,7 +7268,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7278,7 +7278,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7288,7 +7288,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7298,7 +7298,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7308,7 +7308,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7318,7 +7318,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -7532,7 +7532,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7544,7 +7544,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8097,7 +8097,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -8250,7 +8250,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>（已棄用）</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8262,7 +8262,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>（已棄用）</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8372,7 +8372,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -8700,7 +8700,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>（已棄用）</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8727,7 +8727,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>請注意，此欄位未設定，且所有客戶的Snowflake會傳回null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8740,7 +8740,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>請注意，此欄位未設定，且所有客戶的Snowflake會傳回null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8937,7 +8937,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -9350,7 +9350,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
@@ -9489,7 +9489,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為在任何廣告階層中的位置上方沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -9499,7 +9499,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為在任何廣告階層中的位置上方沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -9602,7 +9602,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>此表格的主要物件或實體。 在此範例中，為「Placement」。</p>
       </td>
-      <td>位置</td>
+      <td>產品建議放置環境</td>
     </tr>
     <tr>
       <td>
@@ -10360,7 +10360,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>從utm_medium的URL剖析。</p>
       </td>
       <td>
-        <p>Social</p>
+        <p>社交</p>
       </td>
     </tr>
     <tr>
@@ -10634,7 +10634,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為任何廣告階層中的網站上方都沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -10644,7 +10644,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>
         <p>預期為Null，因為任何廣告階層中的網站上方都沒有廣告群組。</p>
       </td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -11302,7 +11302,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>與BT相關聯的電子郵件地址。</td>
@@ -11713,7 +11713,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
         <p>用於定義產生接觸點的媒體。 這可以從utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"cpc"或"display"之類的值。</p>
       </td>
       <td>
-        <p>Social</p>
+        <p>社交</p>
       </td>
     </tr>
     <tr>
@@ -12080,7 +12080,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
       <td>STAGES_TOUCHED</td>
       <td>varchar</td>
       <td>此欄位已棄用。 使用Stage_Transitions表格來取得階段資訊。</td>
-      <td>null</td>
+      <td>Null</td>
     </tr>
     <tr>
       <td>
@@ -12437,7 +12437,7 @@ Attribution AI整合產生的資料。 這些欄位僅會填入Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>EMAIL</p>
+        <p>電子郵件</p>
       </td>
       <td>varchar</td>
       <td>
