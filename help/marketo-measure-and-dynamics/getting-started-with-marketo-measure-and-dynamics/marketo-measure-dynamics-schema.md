@@ -800,7 +800,7 @@ Buyer Attribution Touchpoint是[!DNL Marketo Measure]自訂實體，可封裝行
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure]個事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活動 {#marketo-measure-events}
 
 <table> 
  <tbody> 
@@ -1176,7 +1176,7 @@ Buyer Attribution Touchpoint是[!DNL Marketo Measure]自訂實體，可封裝行
  </tbody> 
 </table>
 
-**行銷活動**
+**Campaign**
 
 除了下方的讀取/寫入許可權外，還需要行銷活動「建立」許可權。
 

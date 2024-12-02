@@ -2,12 +2,12 @@
 cloud: Experience Cloud
 product: Bizible
 audience: end-user
-user-guide-title: 「[!DNL Marketo Measure] 指南」
-user-guide-description: 「[!DNL Marketo Measure]可讓行銷人員深入瞭解哪些行銷手法最能有效提升公司營收。」
+user-guide-title: '[!DNL Marketo Measure] 指南'
+user-guide-description: '[!DNL Marketo Measure] 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收。'
 source-git-commit: dec80278958e51c1f0449173d45fe74425fb047e
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -52,11 +52,11 @@ ht-degree: 1%
       + [BT和 [!DNL BATs]的接觸點位置和產生方式說明](configuration-and-setup/getting-started-with-marketo-measure/explanation-of-touchpoint-positions-and-generation-across-bts-and-bats.md)
       + [[!DNL Marketo Measure] CRM無封裝整合](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
    + [!DNL Marketo Measure]與Salesforce {#marketo-measure-and-salesforce}
-      + [[!DNL Marketo Measure] Salesforce封裝安裝及設定](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
+      + [[!DNL Marketo Measure] Salesforce套件安裝與設定](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
       + [[!DNL Salesforce]封裝合併](configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md)
       + [連線 [!DNL Marketo Measure] 至Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
       + [ [!DNL Marketo Measure] CRM封裝的最佳作法](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
-      + [[!DNL Marketo Measure] Salesforce物件](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
+      + [[!DNL Marketo Measure]個Salesforce物件](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
       + [CRM匯出的錯誤處理](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [ [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]物件與欄位分類法](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
@@ -67,8 +67,8 @@ ht-degree: 1%
       + [[!DNL Marketo Measure]許可權集](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
       + [為 [!DNL Marketo Measure] 連線使用者建議的 [!DNL Salesforce] 許可權](configuration-and-setup/marketo-measure-and-salesforce/recommended-salesforce-permissions-for-marketo-measure-connected-user.md)
    + 沙箱測試{#sandbox-testing}
-      + [正在測試 [!DNL Marketo Measure] 與Salesforce沙箱的整合](configuration-and-setup/sandbox-testing/testing-the-marketo-measure-integration-with-a-salesforce-sandbox.md)
-      + [Salesforce沙箱移轉至生產環境](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
+      + [測試 [!DNL Marketo Measure] 與Salesforce沙箱的整合](configuration-and-setup/sandbox-testing/testing-the-marketo-measure-integration-with-a-salesforce-sandbox.md)
+      + [Salesforce沙箱移轉至生產](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
    + [!DNL Marketo Measure]深入分析（畫布應用程式） {#marketo-measure-insights-canvas-app}
       + [[!DNL Marketo Measure]深入分析說明](configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-explained.md)
       + [[!DNL Marketo Measure]深入分析設定](configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-configuration.md)
@@ -153,7 +153,7 @@ ht-degree: 1%
       + [探索報告](advanced-marketo-measure-features/multi-currency/discover-reporting.md)
       + [常見問題集（多貨幣）](advanced-marketo-measure-features/multi-currency/faq-multi-currency.md)
 + [!DNL Marketo Measure]探索UI {#marketo-measure-discover-ui}
-   + 儀表板{#dashboards}
+   + 儀表板 {#dashboards}
       + [探索儀表板基本知識](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
       + [新增Discover儀表板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [控制面板資料可見性原則](marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md)

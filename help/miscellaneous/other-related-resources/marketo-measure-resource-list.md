@@ -7,7 +7,7 @@ feature: Fundamentals
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 * [什麼是行銷歸因？](/help/introduction-to-marketo-measure/overview-resources/marketing-attribution.md)
 * [[!DNL Marketo Measure]歸因模型](/help/introduction-to-marketo-measure/overview-resources/marketo-measure-attribution-models.md)
 
-**組態**
+**設定**
 
 * [行銷管道設定，最佳實務](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
 * [線上頻道設定](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 **疑難排解**
 
-* [授予 [!DNL Marketo Measure] SFDC的支援存取權](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
+* [正在授予 [!DNL Marketo Measure] 對SFDC的支援存取權](/help/miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
 * 連絡人： [[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}
 
 ## 影片 {#videos}
@@ -50,7 +50,7 @@ ht-degree: 0%
 以下是一些影片    協助您快速上手：
 
 * [[!DNL Marketo Measure] 簡介訓練](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) （22分鐘）
-* [[!DNL Marketo Measure] 在SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)中報告（30-45分鐘）
+* [[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）
 
 **[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （~30分鐘）**
 
@@ -64,9 +64,9 @@ ht-degree: 0%
 * 接觸點
 * 歸因模型
 
-**[[!DNL Marketo Measure] 在SFDC](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)中報告（30-45分鐘）**
+**[[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）**
 
-此課程系列是設計為Salesforce中已安裝的[!DNL Marketo Measure]庫存報告的簡介。 這些報表是您使用[!DNL Marketo Measure]資料進行大部分報表的基礎。
+本課程系列旨在介紹已安裝到Salesforce中的[!DNL Marketo Measure]庫存報告。 這些報表是您使用[!DNL Marketo Measure]資料進行大部分報表的基礎。
 
 涵蓋的主題：
 

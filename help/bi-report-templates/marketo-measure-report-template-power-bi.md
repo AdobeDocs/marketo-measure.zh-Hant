@@ -1,6 +1,6 @@
 ---
 description: '[!DNL Marketo Measure]報告範本 — Power BI- [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]報告範本 — Power BI"
+title: '[!DNL Marketo Measure]報告範本 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -54,10 +54,10 @@ QueryFilterStartDate和QueryFilterEndDate引數是用來限制匯入的資料量
 * 歸因接觸點
 * 成本
 * 網站表單
-* 工作階段
+* Session
 * 促銷活動會員
 * 任務
-* 事件
+* 活動
 * 銷售機會/聯絡人階段轉換
 * 機會階段轉換
 
@@ -70,7 +70,7 @@ QueryFilterStartDate和QueryFilterEndDate引數是用來限制匯入的資料量
 * 機會
 * 銷售機會
 * 階段
-* 管道
+* Channel
 
 ## 資料轉換 {#data-transformations}
 

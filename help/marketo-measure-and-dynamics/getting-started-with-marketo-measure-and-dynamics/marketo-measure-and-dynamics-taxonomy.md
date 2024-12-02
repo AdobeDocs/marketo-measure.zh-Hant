@@ -1,6 +1,6 @@
 ---
-description: '[!DNL Marketo Measure]和Dynamics分類法 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]和動態分類法"
+description: '[!DNL Marketo Measure]和Dynamics分類 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]和Dynamics分類'
 exl-id: 5d211710-3937-4d86-a570-8115e62b934f
 feature: Microsoft Dynamics
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5

@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874582
-description: '[!DNL Marketo Measure] Salesforce物件 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] Salesforce物件'
+description: '[!DNL Marketo Measure]個Salesforce物件 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]個Salesforce物件'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Salesforce物件 {#marketo-measure-salesforce-objects}
+# [!DNL Marketo Measure]個Salesforce物件 {#marketo-measure-salesforce-objects}
 
 >[!NOTE]
 >
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-當[!DNL Marketo Measure]安裝在[!DNL Salesforce] (SFDC)中時，會新增數個自訂[!DNL Marketo Measure]物件。 本文說明其中幾個自訂[!DNL Marketo Measure]物件。 [!DNL Marketo Measure]新增至[!DNL Salesforce]的部分物件包括：
+當[!DNL Marketo Measure]安裝在[!DNL Salesforce] (SFDC)中時，幾個自訂[!DNL Marketo Measure]物件已新增。 本文說明其中幾個自訂[!DNL Marketo Measure]物件。 [!DNL Marketo Measure]新增至[!DNL Salesforce]的部分物件包括：
 
 * [Buyer Touchpoint](#touchpoint)
 * [Buyer Attribution Touchpoint](#attribution)
 * [[!DNL Marketo Measure]人](#person)
 * [[!DNL Marketo Measure] A/B測試](#ab)
-* [[!DNL Marketo Measure]個事件](#events)
+* [[!DNL Marketo Measure] 活動](#events)
 
 由您要追蹤的專案所擷取的接觸點，會寫入到安裝[!DNL Bizible Salesforce]套件所建立的自訂物件。
 
@@ -55,7 +55,7 @@ BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Accoun
 
 ## [!DNL Marketo Measure]人 {#marketo-measure-person}
 
-[!DNL Marketo Measure]個人物件將潛在客戶與連絡人物件關聯在一起。 Salesforce不會提供立即可用選項，讓您使用相同報表中的Lead和Contact物件來建立報表。 透過關聯潛在客戶與連絡人物件，[!DNL Marketo Measure]人員可讓您在同一份報表中報告兩個物件。 當Lead已轉換為Contact時，這會特別有用。 在[!DNL Marketo Measure]個人記錄中，您將會看到對應銷售機會和/或聯絡人記錄的查閱、與個人相連結的接觸點相關清單，以及個人ID （永遠是銷售機會/聯絡人的電子郵件地址）。 由於[!DNL Marketo Measure]個人與銷售機會和聯絡人物件有關，因此將永遠沒有與Buyer Attribution Touchpoint繫結的[!DNL Marketo Measure]個人記錄。 以下是Salesforce中[!DNL Marketo Measure]個人記錄的範例：
+[!DNL Marketo Measure]個人物件將潛在客戶與連絡人物件關聯在一起。 現成可用的Salesforce不會提供選項，讓您使用相同報表中的Lead和Contact物件來建立報表。 透過關聯潛在客戶與連絡人物件，[!DNL Marketo Measure]人員可讓您在同一份報表中報告兩個物件。 當Lead已轉換為Contact時，這會特別有用。 在[!DNL Marketo Measure]個人記錄中，您將會看到對應銷售機會和/或聯絡人記錄的查閱、與個人相連結的接觸點相關清單，以及個人ID （永遠是銷售機會/聯絡人的電子郵件地址）。 由於[!DNL Marketo Measure]個人與銷售機會和聯絡人物件有關，因此將永遠沒有與Buyer Attribution Touchpoint繫結的[!DNL Marketo Measure]個人記錄。 以下是Salesforce中[!DNL Marketo Measure]個人記錄的範例：
 
 ![](assets/4.png)
 
@@ -67,7 +67,7 @@ BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Accoun
 
 [!DNL Marketo Measure] A/B測試物件在[!UICONTROL Leads]、[!UICONTROL Contacts]和[!UICONTROL Opportunity]頁面上顯示為相關清單。 清單會顯示您透過Optimizly或VWO執行的所有實驗與變化，並可讓您檢視與特定潛在客戶及聯絡人相關的實驗/變化。
 
-## [!DNL Marketo Measure]個事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活動 {#marketo-measure-events}
 
 [!DNL Marketo Measure]事件物件可讓您追蹤網站上發生的特定事件。 若要追蹤您網站上發生的特定事件，除了[!DNL Marketo Measure] Javascript之外，您還必須將自訂程式碼新增至您的頁面。 擷取的資訊將顯示在[!DNL Marketo Measure]物件相關清單中，可在[!UICONTROL Leads]、[!UICONTROL Contacts]和[!UICONTROL Opportunity]頁面上找到。 [!DNL Marketo Measure]事件物件&#x200B;*未*&#x200B;繫結至歸因資料。 此物件的目的是檢視使用者是否在您的網站上執行特定動作。
 

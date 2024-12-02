@@ -1,5 +1,5 @@
 ---
-description: '[!DNL Marketo Measure]與Adobe Analytics - [!DNL Marketo Measure]的整合'
+description: '[!DNL Marketo Measure]與Adobe Analytics的整合 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]與 [!DNL Adobe Analytics]的整合'
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
@@ -81,7 +81,7 @@ B2B客戶屬性整合可讓[!DNL Marketo Measure]和Adobe Analytics的共同使�
 
 透過此整合呈現的屬性會針對[!DNL Adobe Analytics]和[!DNL Adobe Target]中的合約屬性限制進行計數。 只有透過屬性訂閱（[設定整合專案](#configuring-the-integration)中的步驟5）浮現的屬性才會計入您訂閱應用程式的限制。
 
-## 常見問題 {#faqs}
+## 常見問題集 {#faqs}
 
 **我要如何透過這項整合變更要共用的屬性集？**
 

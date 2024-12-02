@@ -1,6 +1,6 @@
 ---
 description: '[!DNL Marketo Measure]報告範本 — Tableau - [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]報告範本 — Tableau"
+title: '[!DNL Marketo Measure]報告範本 — Tableau'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772

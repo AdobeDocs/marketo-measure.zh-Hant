@@ -1,5 +1,5 @@
 ---
-description: '[!DNL Marketo Measure] Salesforce套件安裝與設定 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Salesforce封裝安裝及設定 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] [!DNL Salesforce] 封裝安裝及設定'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Salesforce封裝安裝及設定 {#marketo-measure-salesforce-package-installation-and-set-up}
+# [!DNL Marketo Measure] Salesforce套件安裝與設定 {#marketo-measure-salesforce-package-installation-and-set-up}
 
 在安裝[!DNL Marketo Measure] [!DNL Salesforce]基本套件之前，您必須先判斷您是否先在[!DNL Salesforce]沙箱中安裝它，然後再移至您的Salesforce生產執行個體。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 1. 指派下列許可權：
 
 * [!DNL Marketo Measure]管理員許可權集
-   * Managed許可權集可讓SFDC管理員從[!DNL Marketo Measure]物件建立、讀取、寫入、刪除記錄。
+   * Managed許可權集可讓SFDC管理員從[!DNL Marketo Measure]物件建立、讀取、寫入和刪除記錄。
 * 「檢視和編輯轉換的潛在客戶許可權集」
    * 這可讓[!DNL Marketo Measure]在銷售機會轉換為聯絡人後裝飾銷售機會。 如果未啟用此許可權集，可能會出現嚴重的資料追蹤差距。
 

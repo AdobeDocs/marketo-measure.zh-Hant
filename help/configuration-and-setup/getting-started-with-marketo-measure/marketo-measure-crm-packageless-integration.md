@@ -39,4 +39,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您從[!DNL Marketo Measure] CRM無封裝整合開始，您稍後可以安裝Salesforce套件或Microsoft Dynamics管理的解決方案。
+>如果您從[!DNL Marketo Measure] CRM無封裝整合開始，您稍後可以安裝Salesforce封裝或Microsoft Dynamics管理的解決方案。

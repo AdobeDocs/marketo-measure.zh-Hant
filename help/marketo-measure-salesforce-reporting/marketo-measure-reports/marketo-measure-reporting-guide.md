@@ -1,6 +1,6 @@
 ---
 description: '[!DNL Marketo Measure]報告指南 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]報告指南"
+title: '[!DNL Marketo Measure]報告指南'
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
 source-git-commit: 3119b1754bba49139c1a6756851ada580e09c1ef

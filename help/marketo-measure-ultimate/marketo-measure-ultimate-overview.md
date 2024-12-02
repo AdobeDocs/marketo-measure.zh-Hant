@@ -1,5 +1,5 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate總覽 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate概觀 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate概觀'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
@@ -74,7 +74,7 @@ ht-degree: 4%
 * 潛在客戶已轉換
 * 機會遺失
 * 商機已開啟
-* 已贏得機會
+* 已贏得的機會
 
 「失敗」、「成功」和「已轉換」區段不允許自訂階段。 不過，您可以更新對應規則，將Source資料對應至內建的「失敗/成功/已轉換」階段。
 
@@ -86,7 +86,7 @@ ht-degree: 4%
 * 潛在客戶開啟
 * 機會遺失
 * 商機已開啟
-* 已贏得機會
+* 已贏得的機會
 
 規則條件為資料集所專屬。 必須針對所有資料集和所有階段（「銷售機會遺失」和「銷售機會已轉換」除外）建立階段對應規則。
 
@@ -102,7 +102,7 @@ Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 
 歸因接觸點不會寫入CRM，因為Ultimate沒有直接CRM連線。
 
-[!DNL Marketo Measure] ABM ML服務（銷售線索與帳戶的比對與預測性參與分數）不適用於[!DNL Marketo Measure Ultimate]。 RT-CDP B2B版本中會免費提供這類服務。
+[!DNL Marketo Measure] ABM ML服務（銷售線索與帳戶的比對與預測性參與分數）不適用於[!DNL Marketo Measure Ultimate]。 RT-CDP B2B edition中免費提供此類服務。
 
 ## 限制 {#limitations}
 
@@ -113,4 +113,4 @@ Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 >
 >* [Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
 >
->* [影片： Marketo Measure Ultimate概觀](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
+>* [影片： Marketo Measure Ultimate概觀](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

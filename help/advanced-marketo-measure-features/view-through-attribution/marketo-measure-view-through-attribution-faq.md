@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874652
-description: '[!DNL Marketo Measure]檢視歸因常見問題集 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]透過歸因常見問題集檢視"
+description: '[!DNL Marketo Measure]透過歸因常見問題集檢視 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]透過歸因常見問題集檢視'
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
 source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 1%
    <td>自訂</td> 
   </tr> 
   <tr> 
-   <td><strong>中間</strong></td> 
+   <td><strong>靠中間</strong></td> 
    <td>0%</td> 
    <td>0%</td> 
    <td>20%</td> 

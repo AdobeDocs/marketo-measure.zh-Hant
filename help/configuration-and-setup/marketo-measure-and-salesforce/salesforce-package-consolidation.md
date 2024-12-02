@@ -6,7 +6,7 @@ feature: Salesforce
 source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 0%
 有兩個新欄位可增強您的報告功能：
 
 * form_name：此欄位現在可在BT/BAT物件中使用，可讓使用者根據表單名稱建立報表。
-* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數（ Salesforce中的`bizible2__User_Touchpoint_V2__c`）的報告。
+* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數( Salesforce中的`bizible2__User_Touchpoint_V2__c`)的報告。
 
 ## 支援與轉換 {#support-and-transition}
 
 [支援團隊](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}可以回答任何問題，並協助確保順利轉換至新的整合套件。
 
-## 必要動作 {#retired-actions}
+## 必要的動作 {#retired-actions}
 
 * 如果您已安裝V2套件，則必須將其更新至新的整合版本。
 * 如果您有來自任何報告套件的報告或儀表板，則可以輕鬆地重新建立它們，而無需進行任何修改，因為所有欄位都存在於合併套件中。
@@ -61,8 +61,8 @@ ht-degree: 0%
 
 **V1和V2_EXT封裝中的欄位是否可以在整合封裝中使用？**
 
-有。整合套件包含的V1欄位與透過「接觸點」欄位的V2_EXT欄位與物件進一步劃分的欄位相同。
+可以。整合套件包含的V1欄位與透過「接觸點」欄位的V2_EXT欄位與物件進一步劃分的欄位相同。
 
 **使用V2_EXT欄位的報告可以在合併封裝中重新建立嗎？**
 
-有。請依照[必要動作](#retired-actions)區段中的步驟操作。
+可以。請依照[必要動作](#retired-actions)區段中的步驟操作。

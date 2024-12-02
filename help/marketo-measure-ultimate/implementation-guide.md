@@ -1,12 +1,12 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate Implementation指南 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] Ultimate實作指南'
+description: '[!DNL Marketo Measure]最終實作指南 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]最終實作指南'
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
 source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[資料集總覽](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}：所有成功擷取至AEP的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合的儲存和管理結構，通常是包含方案（欄）和欄位（列）的表格。
+[資料集總覽](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hant){target="_blank"}：所有成功擷取至AEP的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合的儲存和管理結構，通常是包含方案 (欄) 和欄位 (列) 的表格。 
 
 ## 建立結構描述 {#creating-a-schema}
 
@@ -66,7 +66,7 @@ Ultimate不再提供直接CRM和Marketo Engage連線。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-3.png)
 
-## 資料流程 {#dataflows}
+## 資料流 {#dataflows}
 
 >[!IMPORTANT]
 >

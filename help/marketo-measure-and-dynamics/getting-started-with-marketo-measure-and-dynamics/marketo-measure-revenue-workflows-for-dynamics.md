@@ -1,7 +1,7 @@
 ---
 unique-page-id: 37356132
-description: "[!DNL Marketo Measure] Dynamics的收入工作流程 —  [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] Dynamics的收入工作流程"
+description: Dynamics的[!DNL Marketo Measure]收入工作流程 —  [!DNL Marketo Measure]
+title: Dynamics的[!DNL Marketo Measure]收入工作流程
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce

@@ -1,7 +1,7 @@
 ---
 unique-page-id: 42762749
 description: '[!DNL Marketo Engage]活動整合 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Engage]活動整合'
+title: '[!DNL Marketo Engage]個活動整合'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -79,7 +79,7 @@ ht-degree: 0%
    可對應欄位：
 
    * 城市
-   * 國家
+   * 國家/地區
    * 區域
    * 登陸頁面
    * 反向連結頁面
@@ -92,7 +92,7 @@ ht-degree: 0%
    >
    >此清單中不提供「廣告內容」或「關鍵字」等廣告欄位，因為這些欄位是為我們的廣告平台整合而保留。
 
-## 活動型別 {#activity-types}
+## 活動類型 {#activity-types}
 
 有些活動型別會提供方案ID和方案名稱，因此可輕鬆將其對應至Buyer Touchpoint上的促銷活動ID和促銷活動名稱。 其他人則沒有方案關聯，因此部分規則定義需要您建立[!DNL Marketo Measure]行銷活動名稱。 以下是每個類別的清單：
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 按一下連結(3)\
 新銷售機會(12)\
-同步處理銷售機會至SFDC (19)\
+將銷售機會同步至SFDC (19)\
 轉換銷售機會(21)\
 變更擁有者(23)\
 從清單移除(25)\
@@ -137,7 +137,7 @@ SFDC活動(26)\
 按一下銷售電子郵件(41)\
 新增至SFDC Campaign (42)\
 從SFDC Campaign移除(43)\
-變更SFDC Campaign中的狀態(44)\
+在SFDC Campaign中變更狀態(44)\
 接收銷售電子郵件(45)\
 請求行銷活動(47)\
 銷售電子郵件已退回(48)\

@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874680
 description: '[!DNL Facebook] API - [!DNL Marketo Measure]'
-title: "[!DNL Facebook] API"
+title: '[!DNL Facebook] API'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
 source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
@@ -87,7 +87,7 @@ ht-degree: 0%
    <td><p>"[!DNL Facebook]"或[utm_source] （若提供）</p></td> 
   </tr> 
   <tr> 
-   <td><p>中</p></td> 
+   <td><p>媒體</p></td> 
    <td><p>"Social"，或[utm_medium] （若提供）</p></td> 
   </tr> 
   <tr> 

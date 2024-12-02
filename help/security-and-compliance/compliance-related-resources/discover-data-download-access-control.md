@@ -32,7 +32,7 @@ ht-degree: 0%
      <td>只有管理員使用者可以下載資料，包括PDF和CSV格式。</td>
     </tr>
     <tr>
-     <td><strong>無</strong></td>
+     <td><strong>None</strong></td>
      <td>沒有人可以下載資料，包括PDF和CSV格式。</td>
     </tr>
    </table>

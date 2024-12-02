@@ -1,7 +1,7 @@
 ---
 unique-page-id: 37356395
 description: '[!DNL Marketo Engage]人員整合 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Engage]人員整合"
+title: '[!DNL Marketo Engage]人員整合'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
@@ -71,7 +71,7 @@ Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，�
    <td><p>createdAt</p></td> 
   </tr> 
   <tr> 
-   <td><p>EMAIL</p></td> 
+   <td><p>電子郵件</p></td> 
    <td><p>電子郵件</p></td> 
   </tr> 
   <tr> 

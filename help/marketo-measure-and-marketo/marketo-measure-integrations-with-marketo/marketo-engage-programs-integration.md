@@ -1,7 +1,7 @@
 ---
 unique-page-id: 42762729
 description: '[!DNL Marketo Engage]方案整合 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Engage]個計畫整合'
+title: '[!DNL Marketo Engage]個方案整合'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -22,7 +22,7 @@ ht-degree: 0%
 ## 需求 {#requirements}
 
 * 生產Marketo執行個體
-* Production Salesforce或Microsoft Dynamics例項
+* 生產Salesforce或Microsoft Dynamics例項
 * 任何付費的[!DNL Marketo Measure]訂閱
 * Marketo人員同步已啟用（[!DNL Marketo Measure]設定）
 * 已啟用Marketo程式（[!DNL Marketo Measure]設定）

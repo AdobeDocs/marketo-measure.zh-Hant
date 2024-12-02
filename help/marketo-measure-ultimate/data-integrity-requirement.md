@@ -6,7 +6,7 @@ exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
 source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
 workflow-type: tm+mt
 source-wordcount: '1611'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 15%
   </tr>
   <tbody>
     <tr>
-      <td colspan="7"><strong>帳戶</strong> (Marketo的Salesforce、公司和/或具名帳戶)</td>
+      <td colspan="7"><strong>帳戶</strong> (Salesforce的帳戶、公司和/或Marketo的指定帳戶)</td>
     </tr>
     <tr>
       <td rowspan="6">XDM商業帳戶</td>
@@ -153,7 +153,7 @@ ht-degree: 15%
       <td>campaignType</td>
       <td>字串</td>
       <td>CampaignType</td>
-      <td>否</td>
+      <td>無</td>
       <td>用於頻道對應</td>
     </tr>
     <tr>
@@ -162,7 +162,7 @@ ht-degree: 15%
       <td>channelname</td>
       <td>字串</td>
       <td>頻道名稱</td>
-      <td>否</td>
+      <td>無</td>
       <td>用於頻道對應</td>
     </tr>
     <tr>
@@ -170,7 +170,7 @@ ht-degree: 15%
       <td>campaignStartDate</td>
       <td>日期時間</td>
       <td>開始日期</td>
-      <td>否</td>
+      <td>無</td>
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
@@ -178,7 +178,7 @@ ht-degree: 15%
       <td>campaignEndDate</td>
       <td>日期時間</td>
       <td>結束日期</td>
-      <td>否</td>
+      <td>無</td>
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
@@ -186,7 +186,7 @@ ht-degree: 15%
       <td>actualCost.amount</td>
       <td>數字</td>
       <td>成本</td>
-      <td>否</td>
+      <td>無</td>
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
@@ -197,7 +197,7 @@ ht-degree: 15%
         <p>^[A-Z]{3}$</p>
       </td>
       <td>CurrencyIsoCode</td>
-      <td>否</td>
+      <td>無</td>
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
@@ -352,14 +352,14 @@ ht-degree: 15%
       <td>firstRespondedDate</td>
       <td>日期時間</td>
       <td>FirstRespondedDate</td>
-      <td>否</td>
+      <td>無</td>
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>人員</strong> (Salesforce的聯絡人或銷售機會、Marketo的人員)</td>
+      <td colspan="7"><strong>人員</strong> (Salesforce的聯絡人或潛在客戶、Marketo的人員)</td>
     </tr>
     <tr>
-      <td>XDM 輪廓</td>
+      <td>XDM 個人輪廓</td>
       <td rowspan="11">XDM商業人士細節</td>
       <td>b2b.personKey.sourceKey</td>
       <td>字串</td>
@@ -447,7 +447,7 @@ ht-degree: 15%
       <td>extendedWorkDetails.jobTitle</td>
       <td>字串</td>
       <td></td>
-      <td>否</td>
+      <td>無</td>
       <td></td>
     </tr>
     <tr>
@@ -456,7 +456,7 @@ ht-degree: 15%
       <td>personComponents.sourceAccountKey.sourceKey</td>
       <td>字串</td>
       <td></td>
-      <td>否</td>
+      <td>無</td>
       <td>
         <p>例如 — 123@999-abc-888.Marketo。</p>
         <p>sourceAccountKey欄位集僅對真正的連絡人記錄為「必要」，定義為連結至帳戶的人員記錄。 缺少它不會導致資料集遭到拒絕，但歸因結果將會關閉。</p>
@@ -468,7 +468,7 @@ ht-degree: 15%
       <td>personComponents.sourceAccountKey.sourceID</td>
       <td>字串</td>
       <td>帳戶 ID</td>
-      <td>否</td>
+      <td>無</td>
       <td>
         <p>例如 — 123。</p>
         <p>帳戶的外部索引鍵</p>
@@ -479,7 +479,7 @@ ht-degree: 15%
       <td>personComponents.sourceAccountKey.sourceInstanceID</td>
       <td>字串</td>
       <td></td>
-      <td>否</td>
+      <td>無</td>
       <td>例如 — 999-abc-888</td>
     </tr>
     <tr>
@@ -487,7 +487,7 @@ ht-degree: 15%
       <td>personComponents.sourceAccountKey.sourceType</td>
       <td>字串</td>
       <td></td>
-      <td>否</td>
+      <td>無</td>
       <td>例如 — Marketo</td>
     </tr>
     <tr>
@@ -598,7 +598,7 @@ ht-degree: 15%
       <td>機會型別</td>
       <td>字串</td>
       <td></td>
-      <td>否</td>
+      <td>無</td>
       <td></td>
     </tr>
     <tr>
@@ -764,7 +764,7 @@ ht-degree: 15%
       <td>personRole</td>
       <td>字串</td>
       <td>角色</td>
-      <td>否</td>
+      <td>無</td>
       <td></td>
     </tr>
     <tr>
@@ -891,7 +891,7 @@ ht-degree: 15%
 
 **預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如，USD至USD），其轉換率為1。
 
-**轉換率**：每個（來源貨幣、目標貨幣）配對可以在不同的日期期間有多個轉換率。 根據Salesforce DatedConversionRate物件，費率必須涵蓋從0001-01-01到9999-12-31的整個時間範圍。
+**轉換率**：每個（來源貨幣、目標貨幣）配對可以在不同的日期期間有多個轉換率。 根據Salesforce DatedConversionRate物件，匯率必須涵蓋從0001-01-01到9999-12-31的整個時間範圍。
 
 **日期範圍**：
 * 在（來源貨幣、目標貨幣）匯率集中沒有重疊的日期範圍（例如，2023-01-01到2023-02-01和2023-01-01到2024-01-01）。
@@ -926,7 +926,7 @@ ht-degree: 15%
     </tr>
     <tr>
       <td></td>
-      <td>eventtype</td>
+      <td>eventType</td>
       <td>字串</td>
       <td>活動型別</td>
       <td>是</td>
@@ -934,7 +934,7 @@ ht-degree: 15%
     </tr>
     <tr>
       <td></td>
-      <td>timestamp</td>
+      <td>時間戳記</td>
       <td>日期時間</td>
       <td>活動日期</td>
       <td>是</td>
@@ -1064,7 +1064,7 @@ ht-degree: 15%
 
 <table style="table-layout:auto">
   <tr>
-    <th>事件型別</th>
+    <th>事件類型</th>
     <th>XDM事件型別</th>
     <th>說明</th>
   </tr>

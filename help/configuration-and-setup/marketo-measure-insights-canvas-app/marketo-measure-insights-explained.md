@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874676
 description: '[!DNL Marketo Measure]深入分析說明 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]深入分析已說明"
+title: '[!DNL Marketo Measure]深入分析說明'
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ![](assets/4.png)
 
-在每個工作階段的右側，您可以看到推送SFDC中[!DNL Marketo Measure]欄位的更多精細行銷資料。 在此範例中，您可以看到廣告群組、廣告內容、促銷活動、關鍵字、Medium。 您也可以向下捲動，檢視我們提供的[!DNL Marketo Measure]資料。
+在每個工作階段的右側，您可以看到更多在SFDC中推送[!DNL Marketo Measure]欄位的精細行銷資料。 在此範例中，您可以看到廣告群組、廣告內容、促銷活動、關鍵字、Medium。 您也可以向下捲動，檢視我們提供的[!DNL Marketo Measure]資料。
 
 最後，某人擁有大量工作階段後，您就可以在[!UICONTROL Insights]中使用一些篩選器，尋找其在您網站上的特定參與部分。 例如，您可以依[!UICONTROL Touchpoint Position]篩選。
 

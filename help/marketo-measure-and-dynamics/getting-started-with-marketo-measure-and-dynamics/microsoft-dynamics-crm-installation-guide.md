@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874763
 description: '[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo Measure — 產品檔案'
-title: "[!DNL Microsoft Dynamics] CRM安裝指南"
+title: '[!DNL Microsoft Dynamics] CRM安裝指南'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
 source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
@@ -124,7 +124,7 @@ ht-degree: 0%
 
    ![](assets/microsoft-dynamics-crm-installation-guide-19.png)
 
-1. 選取[!UICONTROL Credentials]或[!UICONTROL OAuth]。
+1. 選取「[!UICONTROL Credentials]」或「[!UICONTROL OAuth]」。
 
    ![](assets/microsoft-dynamics-crm-installation-guide-20.png)
 
