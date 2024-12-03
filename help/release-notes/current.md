@@ -3,9 +3,9 @@ description: 最新發行說明 —  [!DNL Marketo Measure]
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9a5e267b4b268d067fbbe89a00a4da96752a44db
+source-git-commit: 9ea72d0e1cf0f754cc8fe844944b93705fb2b12f
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 此外，使用社交登入(Google、Microsoft或Apple)的工作階段現在已合併為一個連續的的工作階段，以確保更順暢的體驗。 如果沒有此傳遞切換，社交登入會因外部反向連結差異而建立個別的工作階段。
 
-對於新客戶，工作階段管道結轉現在是預設行為。 現有客戶可透過在「設定→每次接觸歸因」下方開啟「工作階段管道結轉」切換來啟用此功能。 此設定一經啟用即無法復原。
+對於新客戶，工作階段管道結轉現在是預設行為。 現有客戶可透過在「設定>每次接觸歸因」下開啟「工作階段管道結轉」切換來啟用此功能。 此設定一經啟用即無法復原。
 
 檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 除了「接觸點」和「聯絡人」欄位外，您現在可以使用「促銷活動」和「促銷活動成員」欄位建立區段。 此增強功能可讓您在Discover中更有效地分析和剖析資料。
 
-![成員的區段規則](assets/campaign-member.png)
+![增強型區段規則](assets/mm-q4-release-1.png)
 
 ### 更新： CRM匯出的錯誤處理設定
 
-我們聽取了您對於停止工作方法的意見反應，並將在使用者介面中推出新功能。 從今天開始，您可以選擇發生錯誤時是否應該暫停匯出工作。 在&#x200B;**我的帳戶** > **設定** → **CRM** → **一般**&#x200B;中使用新的切換按鈕。 此開關預設為開啟，以增強資料完整性和可見性。 但是，如果您不想使用此功能，可以在UI中將其關閉，匯出作業將繼續。 此更新旨在增強資料管理流程的可靠性，同時讓您擁有更優異的控制力。
+我們聽取了您對於停止工作方法的意見反應，並將在使用者介面中推出新功能。 從今天開始，您可以選擇發生錯誤時是否應該暫停匯出工作。 在&#x200B;**我的帳戶** > **設定** > **CRM** > **一般**&#x200B;中使用新的切換按鈕。 此開關預設為開啟，以增強資料完整性和可見性。 但是，如果您不想使用此功能，可以在UI中將其關閉，匯出作業將繼續。 此更新旨在增強資料管理流程的可靠性，同時讓您擁有更優異的控制力。
 
 #### 主要日期和分階段推出
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 <p>
 
-**提醒： Salesforce欄位淘汰 — 6月14日**
+### 提醒： Salesforce欄位淘汰 — 6月14日
 
 如去年所宣佈，我們將[逐步淘汰匯出至Lead/Contact物件的工作](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}，以簡化整合，並免除匯出至Salesforce標準物件的需求。 您可以依照此處說明的步驟[從接觸點物件取得相同的資料](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我們也會分享有關建立工作流程的檔案，以將此資料新增至銷售機會/聯絡人物件。 淘汰將於2024年6月14日生效。
 
@@ -74,18 +74,18 @@ ht-degree: 0%
 * **降低Salesforce API成本**：客戶可預期將其Salesforce API成本降低約10%。
 * **簡化整合**：我們的匯出工作中的錯誤數目最多與這些程式有關。 移除這些元素將大幅簡化我們的整合。
 
-**已歸因的機會儀表板**
+### 已歸因的機會儀表板
 
 我們很高興介紹全新的[已歸因的機會儀表板](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}，其設計可讓您全面瞭解您的行銷工作如何對新興和成熟的管道機會作出貢獻。 此儀表板可讓您深入瞭解歸因於您策略的每個開啟和關閉商機的詳細資訊，並靈活地按商機階段篩選。 它提供哪些管道、子管道或行銷活動在歸因商機金額方面排名最高的深入分析，並顯示歸因商機金額總計以及歸因的未完成與已結束商機計數。
 
-適用於Marketo Measure Ultimate的&#x200B;**Marketo EngageCookie同步**
+### 適用於Marketo Measure Ultimate的Marketo EngageCookie同步
 
 Marketo Measure Ultimate現在提供Marketo EngageCookie同步功能。 若要使用此功能：
 
 1. 在「AEP綱要」頁面上，編輯「B2B人員」綱要，並新增欄位群組「Marketo Engage人員詳細資訊」。
 1. 將資料內嵌至MMU時，請將欄位群組中的Cookie ID欄位對應至Marketo Engage中的Cookie欄位。
 
-為第2級客戶啟用&#x200B;**回溯站階段**
+### 為第2級客戶啟用回溯階段功能
 
 以前只有第3級客戶可以使用Boomerang Stage功能，但自2024年6月13日起，所有第2級客戶也可以使用。 如需有關此功能的詳細資訊，請參閱以下檔案。
 
@@ -99,14 +99,14 @@ Marketo Measure Ultimate現在提供Marketo EngageCookie同步功能。 若要�
 
 <p>
 
-**因應第三方Cookie淘汰而淘汰Marketo Measure功能**
+### 第三方Cookie淘汰後淘汰Marketo Measure功能
 
 為回應日益增長的隱私權顧慮，第三方Cookie正在逐步淘汰，Google Chrome於2024年第三季的最後期限表示淘汰。 Marketo Measure將淘汰依賴第三方Cookie的某些功能，尤其是跨網域追蹤和瀏覽歸因，這些依賴於Google/DoubleClick曝光數Cookie。 此變更不會影響其他Marketo Measure功能或第一方Cookie的使用。 根據Google的時間表，這些功能預計在6月1日前淘汰，不過客戶仍然可以存取在此日期之前收集的資料。
 
 * [在Marketo Measure中調整為使用第三方Cookie](https://nation.marketo.com/t5/employee-blogs/adapting-to-third-party-cookie-deprecation-in-marketo-measure/ba-p/345110){target="_blank"}
 * [Marketo Measure Cookie](/help/marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md){target="_blank"}
 
-**分階段推出我們的增強錯誤處理**
+### 分階段推出我們的增強錯誤處理
 
 我們將分階段推出匯出工作的增強錯誤處理功能，從許可權錯誤的立即應用程式內脈衝通知開始，並轉換到匯出工作將在錯誤點暫停的新方式。 這項變更旨在改善資料完整性和可見度，確保使用者有更流暢、更可靠的資料管理流程。 為確保順利轉換並將營運中斷降至最低，我們分兩個階段實作這些變更：
 
@@ -125,7 +125,6 @@ _支援您的轉換_
 
 <br>
 
-**LinkedIn整合所需的動作**
+### linkedIn整合所需動作
 
 linkedIn最近發佈了其Lead Sync API的更新版本。 請在5月20日前重新驗證Marketo Measure執行個體中的LinkedIn連線，以避免任何服務中斷。
-
