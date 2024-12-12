@@ -4,7 +4,7 @@ description: 購買者接觸點和購買者歸因接觸點之間的差異 —  [
 title: 購買者接觸點和購買者歸因接觸點之間的差異
 exl-id: 19109271-7b59-44c0-b1ff-e3b0bba9f5ce
 feature: Touchpoints
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: bdc32fdfe24d57fd7770654f1238896c7b59acf6
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -66,10 +66,10 @@ Buyer Touchpoint的接觸點位置只有首次接觸(FT)、銷售機會建立(LC
 
 以下是[!DNL Salesforce]中BT的熒幕擷圖：
 
-![](assets/1.png)
+![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-1.png){width="600" zoomable="yes"}
 
 **Buyer Attribution Touchpoint在Salesforce中看起來像什麼？**
 
 以下是[!DNL Salesforce]中BAT的熒幕擷圖：
 
-![](assets/2.png)
+![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-2.png){width="600" zoomable="yes"}
