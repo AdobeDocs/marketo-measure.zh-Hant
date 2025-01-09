@@ -4,7 +4,7 @@ description: 設定Marketo連線 —  [!DNL Marketo Measure]
 title: 設定Marketo連線
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
 feature: Integration
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->[為[!DNL Marketo Measure]/Marketo Engage連線建立僅API使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html)。
+>[為[!DNL Marketo Measure]/Marketo Engage連線建立僅API使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html){target="_blank"}。
 
 1. 在[!DNL Marketo Measure]中，按一下&#x200B;**[!UICONTROL My Account]**&#x200B;下拉式清單並選取&#x200B;**[!UICONTROL Settings]**。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
    ![](assets/set-up-marketo-connection-2.png)
 
-1. 按一下&#x200B;**[!UICONTROL Set Up New CRM Connection]**。
+1. 按一下「**[!UICONTROL Set Up New CRM Connection]**」。
 
    ![](assets/set-up-marketo-connection-3.png)
 

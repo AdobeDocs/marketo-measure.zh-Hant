@@ -4,7 +4,7 @@ description: '[!DNL Marketo Engage]方案整合 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]個方案整合'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 0%
@@ -99,16 +99,12 @@ ht-degree: 0%
 
 **欄位對應**
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
+<table><thead>
   <tr> 
    <th>biz_ad_campaigns</th> 
    <th>Marketo</th> 
-  </tr> 
+  </tr></thead>
+<tbody>
   <tr> 
    <td>ID</td> 
    <td>ID</td> 
@@ -118,24 +114,60 @@ ht-degree: 0%
    <td>（透過API檢查程式是否仍然存在）</td> 
   </tr> 
   <tr> 
-   <td><p>名稱</p></td> 
+   <td>名稱</td> 
    <td>名稱</td> 
   </tr> 
  </tbody> 
 </table>
 
-| biz_campaign_members | Marketo |
-|---|---|
-| ID | 「MarketoProgramMembership」_ProgramId_Lead Id |
-| MODIFIED_DATE | 更新時間 |
-| CREATED_DATE | membershipDate |
-| 銷售機會ID | Id （清單成員資格） |
-| 潛在客戶電子郵件 | 電子郵件（清單成員資格） |
-| 狀態 | progressionstatus |
-| HAS_RESPONDED | 到達狀態 |
-| 促銷活動名稱 | programName |
-| CAMPAIGN_ID | programId |
-| 行銷活動型別 | 頻道 |
+<table><thead>
+  <tr>
+    <th>biz_campaign_members</th>
+    <th>Marketo</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>ID</td>
+    <td>「MarketoProgramMembership」_ProgramId_Lead Id</td>
+  </tr>
+  <tr>
+    <td>MODIFIED_DATE</td>
+    <td>更新時間</td>
+  </tr>
+  <tr>
+    <td>CREATED_DATE</td>
+    <td>membershipDate</td>
+  </tr>
+  <tr>
+    <td>銷售機會ID</td>
+    <td>Id （清單成員資格）</td>
+  </tr>
+  <tr>
+    <td>潛在客戶電子郵件</td>
+    <td>電子郵件（清單成員資格）</td>
+  </tr>
+  <tr>
+    <td>狀態</td>
+    <td>progressionstatus</td>
+  </tr>
+  <tr>
+    <td>HAS_RESPONDED</td>
+    <td>到達狀態</td>
+  </tr>
+  <tr>
+    <td>促銷活動名稱</td>
+    <td>programName</td>
+  </tr>
+  <tr>
+    <td>CAMPAIGN_ID</td>
+    <td>programId</td>
+  </tr>
+  <tr>
+    <td>行銷活動型別</td>
+    <td>頻道</td>
+  </tr>
+</tbody>
+</table>
 
 ## Cookie對應 {#cookie-mapping}
 

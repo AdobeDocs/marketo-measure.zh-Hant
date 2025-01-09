@@ -4,7 +4,7 @@ description: '[!DNL Marketo Engage]人員整合 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]人員整合'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，�
 * 生產Marketo執行個體
 * 生產[!DNL Salesforce]或[!DNL Microsoft Dynamics]執行個體
 * 任何付費的[!DNL Marketo Measure]訂閱
-* SOLR已啟用(請聯絡[Marketo支援](https://nation.marketo.com/t5/Support/ct-p/Support)以啟用此功能)
+* SOLR已啟用(請聯絡[Marketo支援](https://nation.marketo.com/t5/Support/ct-p/Support){target="_blank"}以啟用此功能)
 
 ## 運作方式 {#how-it-works}
 
