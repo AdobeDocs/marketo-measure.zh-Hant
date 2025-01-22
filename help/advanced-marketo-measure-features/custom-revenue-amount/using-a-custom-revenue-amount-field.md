@@ -4,7 +4,7 @@ description: 使用自訂收入金額欄位 —  [!DNL Marketo Measure]
 title: 使用自訂收入金額欄位
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 3794aaa8460fe3e4d366b833c933d10beda7da96
+source-git-commit: 03342bde87b75ab702eea4c63b581479a7e303c1
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -104,6 +104,6 @@ ht-degree: 0%
 
    完成這些步驟後，需要更新機會，才能觸發工作流程從[!UICONTROL custom opportunity]欄位取得新值。
 
-   您可以透過SFDC中的資料載入器執行您的機會，藉此達成上述目標。 在[本文章](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)中尋找有關使用資料載入器的詳細資料。
+   您可以透過SFDC中的資料載入器執行您的機會，藉此達成上述目標。 在[本文章](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md){target="_blank"}中尋找有關使用資料載入器的詳細資料。
 
 如果過程中有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或[[!DNL Marketo] 支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
