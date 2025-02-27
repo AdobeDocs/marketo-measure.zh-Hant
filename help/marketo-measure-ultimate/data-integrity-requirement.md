@@ -1,18 +1,18 @@
 ---
-description: '[!DNL Marketo Measure]最終資料完整性需求 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure]最終資料完整性需求'
+description: '[!DNL Marketo Measure] Ultimate資料完整性需求 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] Ultimate資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
+source-git-commit: 4f504bd940e2d28603af65b75151d8143cdcbea8
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 16%
 
 ---
 
-# [!DNL Marketo Measure]最終資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
+# [!DNL Marketo Measure] Ultimate資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
 
-[!DNL Marketo Measure]會驗證傳入的AEP資料集，以確保資料充足且一致可歸因。 若未符合資料完整性要求，資料集將遭到[!DNL Marketo Measure]系統拒絕。 本文詳細說明資料完整性需求，提供資料檢查的查詢範例，並建議具有null值的必要欄位的解決方案。
+[!DNL Marketo Measure]會驗證傳入的AEP資料集，確保資料充足且一致地可歸因。 若未符合資料完整性要求，資料集將遭到[!DNL Marketo Measure]系統拒絕。 本文詳細說明資料完整性需求，提供資料檢查的查詢範例，並建議具有null值的必要欄位的解決方案。
 
 ## 實體物件 {#entity-object}
 
@@ -1121,7 +1121,7 @@ ht-degree: 16%
 
 ## 資料檢查的查詢範例 {#query-examples-for-data-inspection}
 
-以下是檢查AEP資料湖中擷取資料集的查詢範例清單。 若要對您的資料集使用這些資料集，請將下列查詢範例中的表格名稱取代為您實際的資料集表格名稱。
+以下是檢查AEP Data Lake中擷取資料集的查詢範例清單。 若要對您的資料集使用這些資料集，請將下列查詢範例中的表格名稱取代為您實際的資料集表格名稱。
 
 我們預期所有計數均為0。
 
@@ -1322,13 +1322,13 @@ select 'addToCampaign campaign instance id', count(*) from marketo_activity wher
 union all
 select 'addToCampaign campaign key', count(*) from marketo_activity where eventType = 'leadOperation.addToCampaign' and leadOperation.addToCampaign.campaignKey.sourceKey is null
 union all
-select 'statusInCampaignProgressionChanged campaign id', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceId is null
+select 'statusInCampaignProgressionChanged campaign id', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceId is null
 union all
-select 'statusInCampaignProgressionChanged campaign type', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceType is null
+select 'statusInCampaignProgressionChanged campaign type', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceType is null
 union all
-select 'statusInCampaignProgressionChanged campaign instance id', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceInstanceId is null
+select 'statusInCampaignProgressionChanged campaign instance id', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceInstanceId is null
 union all
-select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
+select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
 ```
 
 ```
