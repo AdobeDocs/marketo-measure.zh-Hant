@@ -4,9 +4,9 @@ description: '[!DNL Marketo Engage]方案整合 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]個方案整合'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
+source-git-commit: c0fca7f9a91763aeb211973630bbe7a5fd3dc880
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,10 @@ ht-degree: 0%
 ## 計畫成本 {#program-costs}
 
 透過Marketo程式的資料匯入，成本會自動從期間成本下載，Marketo中的報告成本會在整個指派的月份中分發。 例如，如果在2021年1月報告$1000，則會將$1000分割為31天。 可以在[!DNL Marketo Measure Discover]中找到成本。
+
+>[!NOTE]
+>
+>Marketo Measure每月僅支援一個期間成本專案。 為確保所有成本都已匯入，請將每月總成本彙總至單一專案。 不支援同一月份的多重期間成本專案。
 
 ## 運作方式 {#how-it-works}
 
