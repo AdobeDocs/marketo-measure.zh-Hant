@@ -159,9 +159,9 @@ SFDC活動(26)\
 
 ## 頻道對應 {#channel-mapping}
 
-若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您需要確定您的頻道已依照此處](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的指示正確設定[。
+若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您需要確定您的頻道已依照此處[&#128279;](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的指示正確設定。
 
-對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您在此佈局的自訂線上頻道[](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
+對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您在此佈局的自訂線上頻道[&#128279;](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
 
 如果您的Marketo活動管道未正確設定，則您的新接觸點可能會落在「其他」管道下。
 

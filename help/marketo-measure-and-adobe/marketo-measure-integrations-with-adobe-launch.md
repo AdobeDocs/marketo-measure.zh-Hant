@@ -26,7 +26,7 @@ Adobe Launch擴充功能是專為已在網站上使用Adobe Launch的現有[!DNL
 >* [Adobe啟動概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
 >* [Adobe啟動擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html){target="_blank"}
 
-1. 依照本文](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}中的步驟[建立屬性。
+1. 依照本文[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}中的步驟建立屬性。
 
 1. 按一下您建立的屬性。
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]會透過[!DNL Marketo Measure]應用程式中連線的[!DNL Salesforce]使用者傳送及接收資料。
 
-若要將接觸點資料推送至您的[!DNL Salesforce]執行個體，連線的使用者必須能存取[!DNL Marketo Measure]個自訂物件(即Buyer Touchpoint和Buyer Attribution Touchpoint)以及銷售機會和聯絡人等標準[!DNL Salesforce]物件。 請參閱Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)中的[[!DNL Marketo Measure] 。
+若要將接觸點資料推送至您的[!DNL Salesforce]執行個體，連線的使用者必須能存取[!DNL Marketo Measure]個自訂物件(即Buyer Touchpoint和Buyer Attribution Touchpoint)以及銷售機會和聯絡人等標準[!DNL Salesforce]物件。 請參閱Salesforce[&#128279;](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)中的[!DNL Marketo Measure] 。
 
 [!DNL Salesforce]管理員使用者授權可作為已連線的使用者，因為他們通常預設擁有必要的資料許可權。 不過，您的團隊可能偏好使用整合使用者或專用的[!DNL Salesforce]使用者授權，以追蹤[!DNL Marketo Measure]對您執行個體的影響。
 

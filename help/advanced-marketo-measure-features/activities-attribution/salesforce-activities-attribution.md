@@ -72,11 +72,11 @@ ht-degree: 1%
 >
 >開頭為（傳出&#42; ）
 >
-包含（ &#42;傳出&#42; ）
+>包含（ &#42;傳出&#42; ）
 >
-結尾為（ &#42;傳出）
+>結尾為（ &#42;傳出）
 >
-無萬用字元基本上表示「等於」，因此請務必視需要使用它們。
+>無萬用字元基本上表示「等於」，因此請務必視需要使用它們。
 
 | **運運算元** | **使用案例** |
 |---|---|
@@ -93,4 +93,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
-[活動歸因常見問題集](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
+>[活動歸因常見問題集](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)

@@ -134,7 +134,7 @@ ht-degree: 3%
       + [使用自訂收入金額的最佳實務](advanced-marketo-measure-features/custom-revenue-amount/best-practices-for-utilizing-a-custom-revenue-amount.md)
       + [使用自訂收入金額欄位](advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
       + [使用資料載入器更新 [!DNL Marketo Measure] 自訂金額欄位](advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
-   + 透過歸因{#view-through-attribution}檢視
+   + 透過歸因檢視{#view-through-attribution}
       + [[!DNL Marketo Measure]透過歸因常見問題集檢視](advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md)
       + [透過歸因設定Doubleclick Campaign Manager檢視](advanced-marketo-measure-features/view-through-attribution/configuring-doubleclick-campaign-manager-view-through-attribution.md)
    + 接觸點欄位{#touchpoint-fields}
@@ -182,7 +182,7 @@ ht-degree: 3%
    + 動態報告{#dynamics-reporting}
       + [ [!DNL Dynamics]中的Stock報告和儀表板](marketo-measure-and-dynamics/dynamics-reporting/stock-reports-and-dashboards-in-dynamics.md)
 + [!DNL Marketo Measure]與Marketo {#marketo-measure-and-marketo}
-   + [!DNL Marketo Measure]與Marketo {#marketo-measure-integrations-with-marketo}的整合
+   + [!DNL Marketo Measure]與Marketo的整合 {#marketo-measure-integrations-with-marketo}
       + [設定 [!DNL Marketo] 連線](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md)
       + [Marketo Engage活動整合](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-activities-integration.md)
       + [Marketo Engage人員整合](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-people-integration.md)

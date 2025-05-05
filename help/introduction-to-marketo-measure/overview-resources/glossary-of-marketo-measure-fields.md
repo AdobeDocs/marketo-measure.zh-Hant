@@ -17,7 +17,7 @@ ht-degree: 0%
 
 如需每個Marketo Measure欄位都相關的物件地圖，[請按一下這裡](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)。
 
-[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) · [R 25} · [S](#s) · [T](#t) · [U](#u) · [V](#v) · W · X · Y · Z](#r)
+[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) · [&#128279;](#r)R 25&rbrace; · [S](#s) · [T](#t) · [U](#u) · [V](#v) · W · X · Y · Z
 
 ## A {#a}
 
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 [按一下這裡返回頁面頂端](#top)
 
-## 第{#d}天
+## 第天{#d}
 
 報告日期 | Marketo Measure ABTest， Marketo Measure活動
 

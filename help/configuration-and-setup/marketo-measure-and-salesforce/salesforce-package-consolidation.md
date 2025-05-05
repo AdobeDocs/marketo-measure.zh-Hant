@@ -57,7 +57,7 @@ ht-degree: 1%
 
 **如何從目前的套件回填資料？**
 
-您可以填寫支援票證[](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新處理BT/BAT資料，以填寫接觸點ID和表單ID欄位。
+您可以填寫支援票證[&#128279;](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新處理BT/BAT資料，以填寫接觸點ID和表單ID欄位。
 
 **V1和V2_EXT封裝中的欄位是否可以在整合封裝中使用？**
 

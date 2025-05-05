@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 設定[!DNL Marketo Measure] A/B測試整合 {#configuring-the-marketo-measure-a-b-test-integration}
 
-新增潛在客戶、連絡人、案例和機會的[!DNL Marketo Measure]個A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[VWO](https://vwo.com/){target="_blank"}和[VWO{target="_blank"}網站實驗的收入影響。](https://www.optimizely.com/)
+新增潛在客戶、連絡人、案例和機會的[!DNL Marketo Measure]個A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[VWO](https://vwo.com/){target="_blank"}和[VWO網站實驗的收入影響。](https://www.optimizely.com/){target="_blank"}
 
 1. 確認您正在使用封裝[[!DNL Marketo Measure] v3.9或更新版本](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}。
 1. 將&quot;[!DNL Marketo Measure] ABTests&quot;相關清單新增至您的頁面配置，然後按一下&#x200B;**設定** （扳手）按鈕。

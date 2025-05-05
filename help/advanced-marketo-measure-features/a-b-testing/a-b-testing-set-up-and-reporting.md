@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 設定 {#set-up}
 
-新增潛在客戶、連絡人、案例和機會的[!DNL Marketo Measure]個A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[VWO](https://vwo.com/){target="_blank"}和[VWO{target="_blank"}網站實驗的收入影響。](https://www.optimizely.com/)
+新增潛在客戶、連絡人、案例和機會的[!DNL Marketo Measure]個A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[VWO](https://vwo.com/){target="_blank"}和[VWO網站實驗的收入影響。](https://www.optimizely.com/){target="_blank"}
 
 1. 請確認您正在使用封裝[!DNL Marketo Measure] v3.9或更新版本。 您可以前往「[!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages]」進行此作業。
 1. 編輯銷售機會頁面配置，並將&#x200B;**[!DNL Marketo Measure]A/B測試**&#x200B;相關清單新增至頁面。
