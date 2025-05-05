@@ -50,9 +50,9 @@ ht-degree: 1%
 以下是一些影片    協助您快速上手：
 
 * [[!DNL Marketo Measure] 簡介訓練](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?) （22分鐘）
-* [[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）
+* [[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant) （30-45分鐘）
 
-**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （~30分鐘）**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant) （~30分鐘）**
 
 此課程系列是設計為您瞭解[!DNL Marketo Measure]的基本概念的一般簡介。 它介紹歸因的概念、[!DNL Marketo Measure]作為工具的作用，以及[!DNL Marketo Measure]操作的一般架構。
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 * 接觸點
 * 歸因模型
 
-**[[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）**
+**[[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant) （30-45分鐘）**
 
 本課程系列旨在介紹已安裝到Salesforce中的[!DNL Marketo Measure]庫存報告。 這些報表是您使用[!DNL Marketo Measure]資料進行大部分報表的基礎。
 
@@ -77,7 +77,7 @@ ht-degree: 1%
 * 依ID列出的商機報表
 * 依據管道的機會報表
 
-**[頻道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
+**[頻道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant)**
 
 本課程涵蓋您自訂[!DNL Marketo Measure]的各種方式，包括線上和離線追蹤。 此課程較為進階，可能並非適用於所有使用者。
 
@@ -89,4 +89,4 @@ ht-degree: 1%
 * 行銷活動和行銷活動成員欄位
 * 離線管道管理
 
-以下是[所有初學者電子學習影片](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)。
+以下是[所有初學者電子學習影片](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant)。

@@ -16,10 +16,10 @@ ht-degree: 0%
 
 您可以透過兩種方式提交個別請求，以從[!DNL Marketo Measure]存取和刪除消費者資料：
 
-* 透過[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}。
-* 透過&#x200B;**[!DNL Privacy Service]API**。 請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"}和API參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
+* 透過[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hant){target="_blank"}。
+* 透過&#x200B;**[!DNL Privacy Service]API**。 請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant){target="_blank"}和API參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
 
-[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}支援兩種型別的請求：資料存取和資料刪除。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant){target="_blank"}支援兩種型別的請求：資料存取和資料刪除。
 
 讓我們看看如何建立存取和刪除請求。
 

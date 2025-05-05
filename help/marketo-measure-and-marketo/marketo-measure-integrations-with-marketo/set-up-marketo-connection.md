@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->[為[!DNL Marketo Measure]/Marketo Engage連線建立僅API使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html){target="_blank"}。
+>[為[!DNL Marketo Measure]/Marketo Engage連線建立僅API使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html?lang=zh-Hant){target="_blank"}。
 
 1. 在[!DNL Marketo Measure]中，按一下&#x200B;**[!UICONTROL My Account]**&#x200B;下拉式清單並選取&#x200B;**[!UICONTROL Settings]**。
 

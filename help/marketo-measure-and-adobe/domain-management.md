@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![](assets/domain-management-1.png)
 
-您可以在[Admin Console檔案](https://helpx.adobe.com/enterprise/using/add-domains-directories.html)中找到新增網域的指示。 新增網域後，它必須是[連結到目錄](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
+您可以在[Admin Console檔案](https://helpx.adobe.com/tw/enterprise/using/add-domains-directories.html)中找到新增網域的指示。 新增網域後，它必須是[連結到目錄](https://helpx.adobe.com/tw/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
 
 ## 在[!DNL Marketo Measure]中管理網域 {#managing-domains-in-marketo-measure}
 

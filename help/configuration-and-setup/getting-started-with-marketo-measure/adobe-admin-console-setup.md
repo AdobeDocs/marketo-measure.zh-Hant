@@ -18,7 +18,7 @@ ht-degree: 0%
 
 作為Adobe套裝中的產品，[!DNL Marketo Measure]使用適用於Identity Management的Adobe Admin Console的完整功能。 更多資源可在[這裡](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)找到。
 
-建議您檢閱可用於[Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html)的資源、最佳實務和選項。
+建議您檢閱可用於[Identity Management](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)的資源、最佳實務和選項。
 
 如需在Adobe Admin Console中設定Identity Management的指引和檢閱，請聯絡您的[!DNL Marketo Measure]客戶代表。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 | 管理員 | 這些是[!DNL Marketo Measure]應用程式的管理員和進階使用者，具有更新和管理[!DNL Marketo Measure]特定組態選項的完整能力 |
 | 使用者 | 這些是[!DNL Marketo Measure]應用程式的標準使用者，在[!DNL Marketo Measure]應用程式內具有唯讀許可權 |
 
-將使用者新增至其個別群組時，您會看到列出其[身分型別](https://helpx.adobe.com/enterprise/using/set-up-identity.html)。
+將使用者新增至其個別群組時，您會看到列出其[身分型別](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)。
 
 >[!NOTE]
 >
