@@ -4,9 +4,9 @@ description: ' [!DNL Marketo Measure] 與 [!DNL Salesforce] 如何互動 — Mar
 title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 9ef6d16a73ef25846b90902eb22a544432c33931
+source-git-commit: ec5172286951f482905f97268f33f063d1860694
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1287'
 ht-degree: 17%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 讓我們來深入瞭解[!DNL Marketo Measure]與Salesforce之間的關係。
 
-## Salesforce和[!DNL Marketo Measure] {#salesforce-and-marketo-measure}
+## Salesforce和[!DNL Marketo Measure]  {#salesforce-and-marketo-measure}
 
 建立[!DNL Marketo Measure]帳戶並連線[!DNL Salesforce]後，只要已安裝[!DNL Marketo Measure]受管理的套件且[!DNL Marketo Measure] Salesforce使用者擁有編輯許可權，[!DNL Marketo Measure]就會開始將行銷資料推送至CRM執行個體。
 
@@ -27,11 +27,11 @@ ht-degree: 17%
 
 ![](assets/1-3.png)
 
-依預設，每次工作將資料傳送至您的CRM時，[!DNL Marketo Measure]會針對每個API點數匯出200筆記錄。 對於大多數客戶而言，這會在[!DNL Marketo Measure]所消耗的API點數與CRM上的CPU資源需求之間提供最佳平衡。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此，[!DNL Marketo Measure]允許客戶設定CRM匯出批次大小。 此設定可在[!DNL Marketo Measure] Web應用程式的[!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General]頁面上使用，客戶可以選擇批次大小200 （預設）、100、50或25。
+依預設，每次工作將資料傳送至您的CRM時，[!DNL Marketo Measure]會針對每個API點數匯出200筆記錄。 對於大多數客戶而言，這會在[!DNL Marketo Measure]所使用的API點數與CRM上的CPU資源需求之間提供最佳平衡。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此，[!DNL Marketo Measure]允許客戶設定CRM匯出批次大小。 此設定可在[!DNL Marketo Measure] Web應用程式的[!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General]頁面上使用，客戶可以選擇批次大小200 （預設）、100、50或25。
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-修改此設定時，請記住，較小的批次大小會消耗您CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或CPU負載過高時才減少批次大小。
+修改此設定時，請記住，較小的批次大小會消耗您CRM的更多API積分。 建議您只有在CRM中遇到CPU逾時或高CPU負載時，才縮小批次大小。
 
 ## Salesforce已連線使用者許可權 {#salesforce-connected-user-permissions}
 
@@ -449,7 +449,19 @@ ht-degree: 17%
    <td>類型</td> 
    <td>標準</td> 
    <td>x</td> 
-   <td><br></td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>開始日期</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>結束日期</td> 
+   <td>標準</td> 
+   <td>x</td> 
+   <td> </td> 
   </tr>
   <tr> 
    <td>名稱</td> 
@@ -576,14 +588,14 @@ ht-degree: 17%
 >* 帳戶
 >* Campaign
 >* 促銷活動會員
->* 連絡人
+>* 聯絡人
 >* 活動
 >* 銷售機會
 >* 機會
 >* 任務
 
 
-## [!DNL Salesforce]中的[!DNL Marketo Measure]個自訂物件 {#marketo-measure-custom-objects-in-salesforce}
+## [!DNL Salesforce]中的[!DNL Marketo Measure]個自訂物件  {#marketo-measure-custom-objects-in-salesforce}
 
 除了在SFDC的標準物件上建立自訂欄位之外，在安裝[!DNL Marketo Measure]套件之後，它會建立一些自訂物件。 以下是這些「自訂物件」的清單，以及表示[!DNL Marketo Measure]將寫入其中的欄位的表格。
 
