@@ -4,9 +4,9 @@ description: 歸因對應方法 —  [!DNL Marketo Measure]
 title: 歸因對應方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
+source-git-commit: 90d0d6481e5b338d08a56f555ca3addea8bdd304
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 缺點：如果有強大的行銷和銷售SLA定義誰應該獲得功勞，則此方法可能會產生問題。 此外，如果人們不使用帳戶階層來定義較大帳戶內的特定業務單位(例如：IBM)，則特定於一個業務單位的行銷互動可能會散佈到其他業務單位機會。
 
 ## 機會聯絡人角色對應 {#opportunity-contact-role-mapping}
+
+>[!NOTE]
+>
+>連絡人角色對應方法僅適用於使用Salesforce做為CRM的使用者。 由於該CRM中缺少連絡人角色物件，因此無法供Microsoft Dynamics使用者使用。
 
 雖然大多數使用者端都使用帳戶ID對應，但[!DNL Marketo Measure]可以在機會中查詢聯絡人角色（與機會相關聯的聯絡人），以劃分歸因程式。 這表示[!DNL Marketo Measure]將只會推送與商機上的聯絡人角色相關聯的行銷互動，做為購買者歸因接觸點。 以下是此程式的表示方式。
 
