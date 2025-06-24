@@ -4,10 +4,10 @@ description: '[!DNL Marketo Measure] Cookie - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 0ba036e7ebba77d870931704a59b19011e84271e
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->基於隱私權疑慮，第三方Cookie即將推出。 Google Chrome於2024年第3季度宣佈淘汰第三方Cookie，實際標誌著此追蹤形式的結束。 因此，Adobe淘汰依賴第三方Cookie的Marketo Measure功能；特別是跨網域追蹤和瀏覽歸因，後者使用Google/DoubleClick曝光數Cookie。 Marketo Measure的其他功能將不會受到影響。 第一方Cookie使用量也不受影響。 根據Google排程，上述兩個功能的預計淘汰日期為2024年6月1日。 在此日期之前收集的相關資料仍可供Adobe客戶使用。
+>基於隱私權疑慮，第三方Cookie即將推出。 Google Chrome於2024年第3季度宣佈淘汰第三方Cookie，實際標誌著此追蹤形式的結束。 因此，Adobe將淘汰依賴第三方Cookie的Marketo Measure功能；特別是跨網域追蹤和瀏覽歸因，後者使用Google/DoubleClick曝光數Cookie。 Marketo Measure的其他功能將不會受到影響。 第一方Cookie使用量也不受影響。 根據Google排程，上述兩個功能的預計淘汰日期為2024年6月1日。 在此日期之前收集的相關資料仍可供Adobe客戶使用。
 
 <table>
 <thead>
@@ -106,7 +106,7 @@ ht-degree: 9%
   </tr>
   <tr>
     <td>_BUID</td>
-    <td>協力廠商，網域=。<a href="http://bizibly.com/">bizibly.com</a></td>
+    <td>協力廠商，網域=。<a href="https://bizibly.com/">bizibly.com</a></td>
     <td>租使用者網域上的Marketo Measure Cookie ID與其Doubleclick曝光度Cookie ID之間的對應。</td>
     <td>1 年</td>
     <td>是</td>
