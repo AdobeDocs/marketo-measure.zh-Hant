@@ -4,9 +4,9 @@ description: Boomerang階段案例 —  [!DNL Marketo Measure]
 title: 迴旋舞步舞台情境
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: ce54eb497c55c4ab8da55e9b2803dc59a87c7267
+source-git-commit: 855ae5abe6f8782ed1883f85be545c11bf86e7ce
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ Opportunity上的FT和LC接觸點來自Lead 1 （藍色），因為它們發生�
 
 來自Lead 2的MQL-01 （最後一個）將成為Opportunity上的第一個MQL。 Lead 1的MQL-01不會顯示為Opportunity上的接觸點，因為Lead 2的MQL會先發生。 但是，銷售機會1的MQL-02和MQL-03將會出現在商機中。
 
-正在使用自訂階段追蹤SQL階段，而不是使用自行式階段。 雖然Lead 1和Lead 2之間有三次SQL階段，但只有最後一次SQL發生次數會作為接觸點包含在Opportunity中。
+正在以自訂階段追蹤SQL階段，而不是以回溯階段追蹤。 雖然Lead 1和Lead 2之間有三次SQL階段，但只有最後一次SQL發生次數會作為接觸點包含在Opportunity中。
 
-來自Lead 1的SAL-01 （最後一個）接觸點會移轉為Opportunity上的接觸點。 然後Lead 1會轉換為具有商機的聯絡人，這視為OC接觸。 潛在客戶2的SAL-01 （上一個）接觸點將建立為接觸點，因為此階段轉換發生在&#x200B;_OC接觸_&#x200B;之後。
+來自Lead 1的SAL-01 （最後一個）接觸點會移轉為Opportunity上的接觸點。 然後Lead 1會轉換為具有商機的聯絡人，這視為OC接觸。 潛在客戶2的SAL-01 （上一個）接觸點將不會建立為接觸點，因為此階段轉換發生在&#x200B;_OC接觸_&#x200B;之後。
 
 Lead 3的FT、LC和MQL、SQL、SAL接觸點（橙色）都發生在Opportunity上的OC接觸點之後。 這些接觸點包含在Opportunity中，但視為「中間接觸」。
 
