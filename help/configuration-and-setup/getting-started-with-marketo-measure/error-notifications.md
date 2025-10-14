@@ -30,7 +30,7 @@ ht-degree: 0%
       <td>API_DISABLED</td>
       <td>Crm匯入期間發生錯誤： API_DISABLED ：已針對此使用者停用API呼叫</td>
       <td>已為Marketo Measure使用者停用API許可權。</td>
-      <td>請參閱下列Salesforce檔案，瞭解如何啟用<a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">API存取</a>。</td>
+      <td>請參閱下列Salesforce檔案，瞭解如何啟用<a href="https://help.salesforce.com/s/articleView?language=en_US&id=sf.branded_apps_commun_api_permset.htm&type=5">API存取</a>。</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -79,7 +79,7 @@ ht-degree: 0%
       物件缺少許可權。</td>
       <td>檢閱導致插入/更新失敗的觸發程式碼。 如需有關觸發器的更多詳細資訊，請參閱以下Salesforce檔案：
         <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&amp;type=5">Apex觸發器</a>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&type=5">Apex觸發器</a>
           </li>
           <li><a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">流程觸發程式</a>
           </li>
@@ -92,7 +92,7 @@ ht-degree: 0%
       <td>DUPLICATES_DETECTED</td>
       <td>Crm匯出期間發生錯誤： DUPLICATES_DETECTED ：實體型別「Contact」： CRM錯誤碼： DUPLICATES_DETECTED， CRM ErrorMessage：您正在建立重複的記錄。 我們建議您改用現有記錄。RecordId： 0123456</td>
       <td>匯入至Salesforce組織的記錄已經存在。</td>
-      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">停用「重複規則」設定</a>以允許重複專案。
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">停用「重複規則」設定</a>以允許重複專案。
           <p>
           從<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>中排除Marketo Measure專用使用者。</td>
     </tr>
@@ -100,7 +100,7 @@ ht-degree: 0%
       <td>DUPLICATE_VALUE</td>
       <td>Crm匯出期間發生錯誤： DUPLICATE_VALUE ：實體型別「銷售機會」： CRM錯誤碼： DUPLICATE_VALUE， CRM錯誤訊息：發現重複值： Email_Unique__c重複識別碼為123的記錄上的值，記錄識別碼： 456</td>
       <td>匯入至Salesforce組織的欄位不允許重複值。</td>
-      <td>在Salesforce中取消勾選<a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">「唯一核取方塊」</a>。
+      <td>在Salesforce中取消勾選<a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">「唯一核取方塊」</a>。
           <p>
           從<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>中排除Marketo Measure專用使用者。</td>
     </tr>
@@ -120,7 +120,7 @@ ht-degree: 0%
       <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
       <td>Crm匯出期間發生錯誤： FIELD_FILTER_VALIDATION_EXCEPTION ：實體型別「銷售機會」： CRM錯誤碼： FIELD_FILTER_VALIDATION_EXCEPTION，欄位： User__C， CRM ErrorMessage：值不存在或不符合篩選條件。 請選取角色為「Account Executive， Inside Sales」的使用者；記錄ID：0123456</td>
       <td>已修改的記錄不再滿足物件上定義的查閱篩選器。</td>
-      <td>檢查Marketo Measure嘗試修改的物件上的篩選器。 請參閱<a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">此Salesforce文章</a>，瞭解如何檢查物件上的篩選器。</td>
+      <td>檢查Marketo Measure嘗試修改的物件上的篩選器。 請參閱<a href="https://help.salesforce.com/s/articleView?id=000384756&type=1">此Salesforce文章</a>，瞭解如何檢查物件上的篩選器。</td>
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
@@ -129,7 +129,7 @@ ht-degree: 0%
       <td>這種情況最常見的原因是未遵循Salesforce組織中設定的州/國家/地區命名標準，因為「州/國家」欄位已標準化，僅接受某些挑選清單值。 若要解決此問題，您可以：
         <ul>
           <li>更新記錄，以遵循組織對該欄位的接受值。 請連絡您的SFDC管理員以取得接受的值清單。</li>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">停用州/國家/地區選擇清單</a>。
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&type=5">停用州/國家/地區選擇清單</a>。
           </li>
         </ul>
       </td>
@@ -138,7 +138,7 @@ ht-degree: 0%
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>在Crm匯出期間發生錯誤： INACTIVE_OWNER_OR_USER ：實體型別「連絡人」： CRM錯誤碼： INACTIVE_OWNER_OR_USER， CRM錯誤訊息：以非作用中使用者[1234]作為連絡人執行操作，記錄識別碼： 0123456</td>
       <td>Marketo Measure缺少「以非作用中擁有者更新記錄」許可權。</td>
-      <td>授予Marketo Measure非作用中擁有者的「<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">更新記錄</a>」許可權。</td>
+      <td>授予Marketo Measure非作用中擁有者的「<a href="https://help.salesforce.com/s/articleView?id=000386699&type=1">更新記錄</a>」許可權。</td>
     </tr>
     <tr>
       <td>UNFFECTED_ACCESS_OR_READONLY</td>
@@ -255,7 +255,7 @@ ht-degree: 0%
       <td>要更新的記錄不符合Salesforce組織中設定的驗證規則。</td>
       <td>從<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自訂驗證規則</a>中排除Marketo Measure專用使用者。
       <p>
-      更新您的<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">驗證規則</a>。</td>
+      更新您的<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&type=5">驗證規則</a>。</td>
     </tr>
     <tr>
       <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>

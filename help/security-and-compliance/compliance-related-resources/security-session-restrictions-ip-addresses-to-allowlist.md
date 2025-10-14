@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 安全性工作階段限制：允許清單的IP位址 {#security-session-restrictions-ip-addresses-to-allowlist}
 
-如果已經有[工作階段安全性設定](https://help.salesforce.com/articleView?id=admin_sessions.htm&amp;type=0){target="_blank"}防止特定IP位址推送/提取資料到您的[!DNL Salesforce]執行個體，我們需要下列IP範圍加入允許清單，以允許[!DNL Marketo Measure]推送資料到[!DNL Salesforce]：
+如果已經有[工作階段安全性設定](https://help.salesforce.com/articleView?id=admin_sessions.htm&type=0){target="_blank"}防止特定IP位址推送/提取資料到您的[!DNL Salesforce]執行個體，我們需要下列IP範圍加入允許清單，以允許[!DNL Marketo Measure]推送資料到[!DNL Salesforce]：
 
 * 52.162.84.192 - 52.162.84.207
 * 23.100.229.112 - 23.100.229.127

@@ -35,7 +35,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 管理員</strong></span></td> 
-   <td><span>讓SFDC管理員能從[!DNL Marketo Measure]物件建立、讀取、寫入及刪除記錄。 [!DNL Marketo Measure]將資料推送至SFDC的授權應啟用此許可權集。 此外，建議此授權能夠編輯轉換的銷售機會，在[!DNL Marketo Measure]將資料套用至記錄之前轉換的銷售機會。 這可確保Salesforce與[!DNL Marketo Measure]之間報表的正確性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">在此閱讀更多資訊</a>。</span></td> 
+   <td><span>讓SFDC管理員能從[!DNL Marketo Measure]物件建立、讀取、寫入及刪除記錄。 [!DNL Marketo Measure]將資料推送至SFDC的授權應啟用此許可權集。 此外，建議此授權能夠編輯轉換的銷售機會，在[!DNL Marketo Measure]將資料套用至記錄之前轉換的銷售機會。 這可確保Salesforce與[!DNL Marketo Measure]之間報表的正確性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&type=5&release=206&language=en_us">在此閱讀更多資訊</a>。</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 行銷使用者</strong></span></td> 

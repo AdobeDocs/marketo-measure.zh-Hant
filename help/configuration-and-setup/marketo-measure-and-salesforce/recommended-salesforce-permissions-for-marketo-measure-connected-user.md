@@ -27,7 +27,7 @@ Managed許可權集可讓SFDC管理員從[!DNL Marketo Measure]物件建立、�
 
 * 檢視和編輯轉換的潛在客戶許可權集
 
-這可讓[!DNL Marketo Measure]在銷售機會轉換為聯絡人後裝飾銷售機會。 如果未啟用此許可權集，可能會出現嚴重的資料追蹤差距。 您可以在[[!DNL Salesforce Trailblazer] 社群](https://help.salesforce.com/s/articleView?language=en_US&amp;id=leads_view_edit_converted.htm&amp;type=5)中找到更多資訊。
+這可讓[!DNL Marketo Measure]在銷售機會轉換為聯絡人後裝飾銷售機會。 如果未啟用此許可權集，可能會出現嚴重的資料追蹤差距。 您可以在[[!DNL Salesforce Trailblazer] 社群](https://help.salesforce.com/s/articleView?language=en_US&id=leads_view_edit_converted.htm&type=5)中找到更多資訊。
 
 * [!DNL Salesforce]行銷使用者核取方塊
 

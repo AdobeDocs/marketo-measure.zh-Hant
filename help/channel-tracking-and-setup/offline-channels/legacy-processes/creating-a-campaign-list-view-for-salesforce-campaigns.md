@@ -44,4 +44,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[排解清單檢視內嵌編輯的常見問題](http://help.salesforce.com/articleView?id=000003911&amp;language=en_US&amp;type=1){target="_blank"}
+>[排解清單檢視內嵌編輯的常見問題](http://help.salesforce.com/articleView?id=000003911&language=en_US&type=1){target="_blank"}

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在[!DNL Salesforce]中合併Lead時，最好永遠保持謹慎，以確保不會遺失任何資料。
 
-為方便您參考，這裡提供[!DNL Salesforce]支援中[如何合併銷售機會](https://help.salesforce.com/s/articleView?id=leads_merge.htm&amp;language=en_US&amp;type=5)的劃分。
+為方便您參考，這裡提供[!DNL Salesforce]支援中[如何合併銷售機會](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5)的劃分。
 
 [!DNL Marketo Measure]的進入時間是時候選取填入合併記錄上的欄位。 選取主要記錄後，驗證是否已選取[!DNL Marketo Measure]欄位以延續至新記錄。
 

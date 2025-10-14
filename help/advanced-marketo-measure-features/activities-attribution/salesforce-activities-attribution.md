@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ![](assets/5.png)
 
-您可能會想要將這些新的接觸點放入其適當的[行銷管道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}。 使用剛建立的新行銷活動對應來定義頻道，以執行此操作。
+您可能會想要將這些新的接觸點放入其適當的[行銷管道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}。 使用剛建立的新行銷活動對應來定義頻道，以執行此操作。
 
 >[!TIP]
 >
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 ![](assets/6.png)
 
-最後，您可以選擇輸入新管道的成本。 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}可讓您在頻道層級、子頻道層級或行銷活動層級輸入支出。 使用新的[!DNL Marketo Measure]行銷活動，您可以按月新增這些相關成本，然後檢視每個行銷活動的ROI！
+最後，您可以選擇輸入新管道的成本。 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}可讓您在頻道層級、子頻道層級或行銷活動層級輸入支出。 使用新的[!DNL Marketo Measure]行銷活動，您可以按月新增這些相關成本，然後檢視每個行銷活動的ROI！
 
 ![](assets/7.png)
 

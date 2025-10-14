@@ -29,4 +29,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[Salesforce — 隱藏未使用的報表型別](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&amp;type=5&amp;language=en_us)
+>[Salesforce — 隱藏未使用的報表型別](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)
