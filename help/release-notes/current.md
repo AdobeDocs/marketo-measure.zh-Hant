@@ -24,13 +24,13 @@ ht-degree: 0%
 
 對於新客戶，工作階段管道結轉現在是預設行為。 現有客戶可透過在「設定>每次接觸歸因」下開啟「工作階段管道結轉」切換來啟用此功能。 此設定一經啟用即無法復原。
 
-檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 關鍵字ROI控制面板
 
 新的關鍵字ROI儀表板提供付費搜尋行銷活動績效的詳細深入分析，提供關鍵字層級成本、已歸因收入以及產生的潛在客戶和商機的完整檢視。 此控制面板可幫助您評估Google Adwords、LinkedIn和Bing Ads等產品中每個關鍵字的ROI。
 
-檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增強型區段規則
 
