@@ -24,13 +24,13 @@ ht-degree: 0%
 
 對於新客戶，工作階段管道結轉現在是預設行為。 現有客戶可透過在「設定>每次接觸歸因」下開啟「工作階段管道結轉」切換來啟用此功能。 此設定一經啟用即無法復原。
 
-檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 關鍵字ROI控制面板
 
-新的關鍵字ROI儀表板提供付費搜尋行銷活動績效的詳細深入分析，提供關鍵字層級成本、已歸因收入以及產生的潛在客戶和商機的完整檢視。 此儀表板可協助您評估Google Adwords、LinkedIn和Bing Ads等產品的每個關鍵字投資報酬率。
+新的關鍵字ROI儀表板提供付費搜尋行銷活動績效的詳細深入分析，提供關鍵字層級成本、已歸因收入以及產生的潛在客戶和商機的完整檢視。 此控制面板可幫助您評估Google Adwords、LinkedIn和Bing Ads等產品中每個關鍵字的ROI。
 
-檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增強型區段規則
 
@@ -78,11 +78,11 @@ ht-degree: 0%
 
 我們很高興介紹全新的[已歸因的機會儀表板](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}，其設計可讓您全面瞭解您的行銷工作如何對新興和成熟的管道機會作出貢獻。 此儀表板可讓您深入瞭解歸因於您策略的每個開啟和關閉商機的詳細資訊，並靈活地按商機階段篩選。 它提供哪些管道、子管道或行銷活動在歸因商機金額方面排名最高的深入分析，並顯示歸因商機金額總計以及歸因的未完成與已結束商機計數。
 
-### 適用於Marketo Measure Ultimate的Marketo EngageCookie同步
+### 適用於Marketo Measure Ultimate的Marketo Engage Cookie Sync
 
-Marketo Measure Ultimate現在提供Marketo EngageCookie同步功能。 若要使用此功能：
+Marketo Engage Cookie Sync現在可供Marketo Measure Ultimate使用。 若要使用此功能：
 
-1. 在「AEP綱要」頁面上，編輯「B2B人員」綱要，並新增欄位群組「Marketo Engage人員詳細資訊」。
+1. 在「AEP綱要」頁面上，編輯「B2B人員」綱要並新增欄位群組「Marketo Engage人員詳細資訊」。
 1. 將資料內嵌至MMU時，請將欄位群組中的Cookie ID欄位對應至Marketo Engage中的Cookie欄位。
 
 ### 為第2級客戶啟用回溯階段功能
@@ -125,6 +125,6 @@ _支援您的轉換_
 
 <br>
 
-### linkedIn整合所需動作
+### LinkedIn整合所需動作
 
-linkedIn最近發佈了其Lead Sync API的更新版本。 請在5月20日前重新驗證Marketo Measure執行個體中的LinkedIn連線，以避免任何服務中斷。
+LinkedIn最近發行了更新版的Lead Sync API。 請在5月20日前重新驗證Marketo Measure執行個體中的LinkedIn連線，以避免任何服務中斷。
