@@ -1,29 +1,28 @@
 ---
-unique-page-id: 18874574
-description: 標準 [!DNL Salesforce] 物件上的[!DNL Marketo Measure]欄位 —  [!DNL Marketo Measure]
-title: 標準 [!DNL Salesforce] 物件上的[!DNL Marketo Measure]欄位
+description: 標準[!DNL Marketo Measure]物件上的 [!DNL Salesforce] 欄位 —  [!DNL Marketo Measure]
+title: 標準[!DNL Marketo Measure]物件上的 [!DNL Salesforce] 欄位
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
 
 ---
 
-# 標準[!DNL Salesforce]物件上的[!DNL Marketo Measure]欄位 {#marketo-measure-fields-on-standard-salesforce-objects}
+
+# 標準[!DNL Marketo Measure]物件上的[!DNL Salesforce]欄位 {#marketo-measure-fields-on-standard-salesforce-objects}
 
 >[!NOTE]
->
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-瞭解新增到[!DNL Salesforce]標準物件的各種[!DNL Marketo Measure]欄位。
+瞭解新增到[!DNL Marketo Measure]標準物件的各種[!DNL Salesforce]欄位。
 
 ## 帳戶 {#account}
 
 預測性參與分數：此欄位與我們的ABM功能搭配使用，以提供與帳戶參與程度相關的分數，並會考量許多因素，例如頁面檢視的造訪間隔、與帳戶相關聯的聯絡人數量，是否有已關閉的營業等。
 
-## Campaign {#campaign}
+## 行銷活動 {#campaign}
 
 僅新增4個欄位、1個按鈕和1個驗證規則。
 
@@ -55,7 +54,7 @@ Buyer Touchpoint日期：這與Campaign物件的[!UICONTROL Bulk Update Touchpoi
 
 OnCampaignMemberDelete：刪除行銷活動成員時，[!DNL Salesforce]不會立即顯示，這可能會造成精確歸因報表發生問題。 刪除行銷活動成員時，會觸發此動作，通知[!DNL Marketo Measure]移除與該不存在的行銷活動成員相關的接觸點。
 
-## 銷售機會 {#lead}
+## 商機 {#lead}
 
 Bizible Account欄位用於ABM功能的Lead to Account對應。 我們會填入此欄位，以建立兩個物件之間的查閱關係。
 

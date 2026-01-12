@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874682
 description: 行銷管道和子管道 —  [!DNL Marketo Measure]
 title: 行銷管道和子管道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 0ba036e7ebba77d870931704a59b19011e84271e
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
+
 
 # 行銷管道和子管道 {#marketing-channels-and-subchannels}
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 * 媒體
 * 來源
-* Campaign
+* 行銷活動
 * 登陸頁面
 * 引用網站
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 在此情況下，使用者嘗試存取的內容是B2B行銷歸因簡介指南。 [!DNL Marketo Measure]將使用此組織中設定的管道規則來分析導向此內容的URL，並使用它們「貯存」此銷售機會至行銷管道「付費社交」和子管道「LinkedIn」。
 
-![](assets/1.jpg)
+![從標籤URL連結行銷管道、子管道和內容的圖表](assets/1.jpg)
 
 更多範例……
 

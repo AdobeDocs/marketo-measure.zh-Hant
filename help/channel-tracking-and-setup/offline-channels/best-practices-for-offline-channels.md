@@ -3,12 +3,13 @@ description: 離線頻道的最佳作法 —  [!DNL Marketo Measure]
 title: 離線管道的最佳作法
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
 
 ---
+
 
 # 離線管道的最佳作法 {#best-practices-for-offline-channels}
 
@@ -47,7 +48,7 @@ ht-degree: 0%
 
 * 確定每個CRM行銷活動的「型別」欄位都準確
    * 「型別」會針對在同步後源自促銷活動之任何接觸點，決定行銷管道和子管道
-* 不論是使用CRM型Campaign同步方法（啟用購買者接觸點）還是[!DNL Marketo Measure]應用程式型同步方法（在您[!UICONTROL Marketo Measure]帳戶設定的&#39;[!UICONTROL Campaigns]&#39;標籤內的「自訂Campaign同步」），只有在促銷活動成員與Campaign和您的品牌有實際的離線參與時，才應該建立離線接觸點：
+* 不論是使用CRM型Campaign同步方法（啟用購買者接觸點）還是[!DNL Marketo Measure]應用程式型同步方法（在您[!UICONTROL Campaigns]帳戶設定的&#39;[!UICONTROL Marketo Measure]&#39;標籤內的「自訂Campaign同步」），只有在促銷活動成員與Campaign和您的品牌有實際的離線參與時，才應該建立離線接觸點：
    * 對於離線頻道，例如活動或網路研討會：「註冊」通常透過網站上的表單提交和[!DNL Marketo Measure]線上功能進行追蹤。 因此，狀態為「已註冊」的Campaign成員不應收到Campaign的離線接觸點，以避免重複計算。 離線接觸點僅能代表活動或網路研討會的「出席情況」。
    * 某些離線頻道（例如內容整合）較為直接簡單，因為每個行銷活動會員都有相同的「已回應」狀態，這表示他們確實已回應行銷活動，在此情況下，就是從協力廠商網站下載內容，因此應該會收到離線接觸點
 * 在[!DNL Marketo Measure]應用程式中使用「自訂促銷活動同步」方法時，請確定「接觸點日期」欄位是根據「促銷活動」或「促銷活動成員」的日期欄位，最能指出實際發生接觸點互動的時間
@@ -69,12 +70,11 @@ ht-degree: 0%
 如果您的團隊最近遇到上述任何問題，[!DNL Marketo Measure]建議您檢閱離線管道對應和離線行銷活動，以進行適當的變更並確保它們已正確同步。
 
 >[!MORELIKETHIS]
->
->* [離線頻道設定](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
->* [自訂Campaign同步 — 應用程式同步](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
->* [正在同步處理離線行銷活動 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
->* [離線行銷活動與行銷活動成員 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
->* [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
->* 多個行銷活動記錄型別的[設定](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
->* [建立行銷活動清單檢視](/help/channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
->* [正在同步處理歷史資料](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)
+> [離線頻道設定](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
+> [自訂Campaign同步 — 應用程式同步](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
+> [正在同步處理離線行銷活動 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
+> [離線Campaign與Campaign成員 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+> [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
+> [多個行銷活動記錄型別的設定](/help/channel-tracking-and-setup/offline-channels/configurations-record-types.md)
+> [建立行銷活動清單檢視](/help/channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+> [正在同步處理歷史資料](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)

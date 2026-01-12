@@ -1,21 +1,21 @@
 ---
-unique-page-id: 18874734
 description: 合併潛在客戶的最佳實務 —  [!DNL Marketo Measure]
 title: 合併潛在客戶的最佳實務
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
+
 
 # 合併潛在客戶的最佳實務 {#best-practices-for-merging-leads}
 
 在[!DNL Salesforce]中合併Lead時，最好永遠保持謹慎，以確保不會遺失任何資料。
 
-為方便您參考，這裡提供[!DNL Salesforce]支援中[如何合併銷售機會](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5)的劃分。
+為方便您參考，這裡提供[支援中](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5)如何合併銷售機會[!DNL Salesforce]的劃分。
 
 [!DNL Marketo Measure]的進入時間是時候選取填入合併記錄上的欄位。 選取主要記錄後，驗證是否已選取[!DNL Marketo Measure]欄位以延續至新記錄。
 
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 如有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
-![](assets/1.jpg)
+![Salesforce合併銷售機會對話方塊中保留Marketo Measure欄位](assets/1.jpg)

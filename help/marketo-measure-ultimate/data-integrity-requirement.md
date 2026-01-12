@@ -3,12 +3,13 @@ description: '[!DNL Marketo Measure] Ultimate資料完整性需求 —  [!DNL Ma
 title: '[!DNL Marketo Measure] Ultimate資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 4f504bd940e2d28603af65b75151d8143cdcbea8
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 16%
+source-wordcount: '1610'
+ht-degree: 17%
 
 ---
+
 
 # [!DNL Marketo Measure] Ultimate資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
 
@@ -299,7 +300,7 @@ ht-degree: 16%
       <td></td>
       <td>campaignKey.sourceID</td>
       <td>字串</td>
-      <td>行銷活動ID</td>
+      <td>行銷活動 ID</td>
       <td>是</td>
       <td>
         <p>例如 — 55555。</p>
@@ -894,10 +895,9 @@ ht-degree: 16%
 **轉換率**：每個（來源貨幣、目標貨幣）配對可以在不同的日期期間有多個轉換率。 根據Salesforce DatedConversionRate物件，匯率必須涵蓋從0001-01-01到9999-12-31的整個時間範圍。
 
 **日期範圍**：
+
 * 在（來源貨幣、目標貨幣）匯率集中沒有重疊的日期範圍（例如，2023-01-01到2023-02-01和2023-01-01到2024-01-01）。
 * 日期範圍之間沒有間隙。 開始日期不含，結束日期不含。
-
-<p>
 
 ## ExperienceEvent {#experienceevent}
 
@@ -993,7 +993,7 @@ ht-degree: 16%
       <td></td>
       <td>leadOperation.addToCampaign.campaignKey.sourceId</td>
       <td>字串</td>
-      <td>行銷活動ID</td>
+      <td>行銷活動 ID</td>
       <td>是（僅適用於leadOperation.addToCampaign型別）</td>
       <td>
         <p>例如 — 55555。</p>
@@ -1032,7 +1032,7 @@ ht-degree: 16%
       <td></td>
       <td>leadOperation.campaignProgression.campaignKey.sourceId</td>
       <td>字串</td>
-      <td>行銷活動ID</td>
+      <td>行銷活動 ID</td>
       <td>是（僅適用於leadOperation.campaignProgression型別）</td>
       <td>
         <p>例如 — 55555。</p>
@@ -1080,7 +1080,7 @@ ht-degree: 16%
       <td>當行銷線索轉換為指派給銷售使用者的符合銷售條件的聯絡人時使用</td>
     </tr>
     <tr>
-      <td>有趣的時刻</td>
+      <td>關鍵時刻</td>
       <td>leadOperation.interestingMoment</td>
       <td>用於追蹤潛在客戶的高價值活動</td>
     </tr>
@@ -1100,7 +1100,7 @@ ht-degree: 16%
       <td>若有人開啟行銷電子郵件時，可用於擷取詳細資訊</td>
     </tr>
     <tr>
-      <td>按一下電子郵件</td>
+      <td>點按電子郵件</td>
       <td>directMarketing.emailClicked</td>
       <td>若有人點選行銷電子郵件中的連結時，可用於擷取詳細資訊</td>
     </tr>
@@ -1133,7 +1133,7 @@ ht-degree: 16%
 
 ### XDM商業帳戶 {#xdm-business-account}
 
-```
+```sql
 select 'account source id', count(*) from salesforce_account where accountKey.sourceId is null
 union all
 select 'account source type', count(*) from salesforce_account where accountKey.sourceType is null
@@ -1151,7 +1151,7 @@ select 'last updated date', count(*) from salesforce_account where extSourceSyst
 
 ### XDM商業活動 {#xdm-business-campaign}
 
-```
+```sql
 select 'campaign source id', count(*) from salesforce_campaign where campaignKey.sourceId is null
 union all
 select 'campaign source type', count(*) from salesforce_campaign where campaignKey.sourceType is null
@@ -1169,7 +1169,7 @@ select 'last updated date', count(*) from salesforce_campaign where extSourceSys
 
 ### XDM商業活動會員 {#xdm-business-campaign-member}
 
-```
+```sql
 select 'campaign member source id', count(*) from salesforce_campaign_member where campaignMemberKey.sourceId is null
 union all
 select 'campaign member source type', count(*) from salesforce_campaign_member where campaignMemberKey.sourceType is null
@@ -1207,7 +1207,7 @@ select 'last updated date', count(*) from salesforce_campaign_member where extSo
 
 ### XDM業務人員 {#xdm-business-person}
 
-```
+```sql
 select 'person source id', count(*) from marketo_person where b2b.personKey.sourceId is null
 union all
 select 'person source type', count(*) from marketo_person where b2b.personKey.sourceType is null
@@ -1229,7 +1229,7 @@ union all
 select 'last updated date', count(*) from marketo_person where extSourceSystemAudit.lastUpdatedDate is null;
 ```
 
-```
+```sql
 select 'person source id', count(*) from salesforce_contact where b2b.personKey.sourceId is null
 union all
 select 'person source type', count(*) from salesforce_contact where b2b.personKey.sourceType is null
@@ -1261,7 +1261,7 @@ select 'last updated date', count(*) from salesforce_contact where extSourceSyst
 
 ### XDM商業機會 {#xdm-business-opportunity}
 
-```
+```sql
 select 'opportunity source id', count(*) from salesforce_opportunity where opportunityKey.sourceId is null
 union all
 select 'opportunity source type', count(*) from salesforce_opportunity where opportunityKey.sourceType is null
@@ -1299,7 +1299,7 @@ select 'last updated date', count(*) from salesforce_opportunity where extSource
 
 ### XDM ExperienceEvent {#xdm-experienceevent}
 
-```
+```sql
 select 'id', count(*) from marketo_activity where _id is null
 union all
 select 'event type', count(*) from marketo_activity where eventType is null
@@ -1331,7 +1331,7 @@ union all
 select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
 ```
 
-```
+```sql
 select 'id', count(*) from salesforce_task where _id is null
 union all
 select 'event type', count(*) from salesforce_task where eventType is null
@@ -1349,7 +1349,7 @@ select 'person source key', count(*) from salesforce_task where personKey.source
 
 ### 轉換 {#conversion}
 
-```
+```sql
 select 'conversion rate', count(*) from currency_conversion_rate where conversionRate is null
 union all
 select 'end date', count(*) from currency_conversion_rate where endDate is null
@@ -1377,8 +1377,8 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 
 我們建議在欄位對應中使用計算欄位，以將欄位預設為非NULL值。 以下是兩個範例：
 
-* 如果某些機會記錄的opportunityName為Null，請在欄位對應中建立並使用下列計算欄位
+* 如果某些機會記錄中的`opportunityName`為Null，請在欄位對應中建立並使用下列計算欄位
    * `iif(name != null && trim(name) != "", name, "Unknown")`
 
-* 如果部分experienceevent記錄的leadOperation.campaignProgression.campaignID為Null，請在欄位對應中建立並使用以下計算欄位
+* 如果某些體驗事件記錄中的`leadOperation.campaignProgression.campaignID`為Null，請在欄位對應中建立並使用下列計算欄位
    * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`

@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874596
 description: 線上自訂頻道設定 —  [!DNL Marketo Measure]
 title: 線上自訂頻道設定
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
+
 
 # 線上自訂頻道設定 {#online-custom-channel-setup}
 
@@ -32,15 +32,15 @@ ht-degree: 0%
 
 第一步是從[!DNL Marketo Measure]應用程式下載自訂管道試算表。 瀏覽至&#x200B;**我的帳戶**&#x200B;標籤下的&#x200B;**設定**&#x200B;並選取&#x200B;**線上**。 您可以選取&#x200B;**下載原始範本**&#x200B;或&#x200B;**下載目前的規則**。
 
-![](assets/1.png)
+![設定頁面顯示線上頻道設定，其中包含[下載原始範本]和[下載目前的規則]選項](assets/1.png)
 
 試算表有七欄：
 
-![](assets/2.png)
+![自訂管道試算表顯示七欄：「管道」、「子管道」、「促銷活動」、「Medium」、「Source」、「登陸頁面」和「反向連結網站」](assets/2.png)
 
 * **管道：**&#x200B;在此新增您的各種行銷管道
 * **子管道：**&#x200B;在此新增對應的子管道
-* **行銷活動：**&#x200B;在此處新增行銷活動名稱，無論值來自UTM或Salesforce Campaigns for the [!DNL Marketo Measure]活動功能
+* **行銷活動：**&#x200B;在此處新增行銷活動名稱，無論值來自UTM或[!DNL Marketo Measure]活動功能的Salesforce行銷活動
 * **Medium：**&#x200B;媒體資料行代表utm_medium引數的值
 * **Source：**&#x200B;來源資料行代表utm_source引數的值
 * **登陸頁面：**&#x200B;在此新增登陸頁面
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 第八欄會記下您無法從試算表刪除的規則為「請勿移除」。 試算表頂端有預設的管道規則，即使您未使用這些管道，[!DNL Marketo Measure]也建議不要變更或移除這些規則。 [!DNL Marketo Measure]與這些平台有深入的整合，所以預設會包含這些平台。
 
-這些列代表規則和[!DNL Marketo Measure]排列資料優先順序的順序。 第一列的優先順序高於第二列，第二列的優先順序高於第三列，依此類推。 在決定要將接觸點貯入哪個行銷管道和子管道時，[!DNL Marketo Measure]會由上到下、由左到右閱讀，直到找到符合接觸點條件的列為止。 (如果接觸點有`utm_source=Facebook`，則由於熒幕擷取畫面中的規則15，該接觸點會分組到Social.Facebook頻道)。
+這些列代表規則和[!DNL Marketo Measure]排列資料優先順序的順序。 第一列的優先順序高於第二列，第二列的優先順序高於第三列，依此類推。 在決定要將接觸點貯入哪個行銷管道和子管道時，[!DNL Marketo Measure]會由上到下、由左到右閱讀，直到找到符合接觸點條件的列為止。 （如果接觸點有`utm_source=Facebook`，由於熒幕擷取畫面中的規則15，該接觸點會分組到Social.Facebook頻道）。
 
-![](assets/3.png)
+![管道規則試算表顯示由上而下的優先順序，其中Social.Facebook規則範例強調顯示](assets/3.png)
 
 [!DNL Marketo Measure]隨附12個預設管道供您使用。 這些管道與[!DNL Marketo Measure]完全整合的平台相關。 無論您是否使用它們，請勿移除它們。 如果您使用其中一個平台（例如Bing Ads），但偏好對頻道或子頻道使用不同的命名慣例，則可以更新名稱。 下方影像顯示範例。
 
-![](assets/4.png)
+![預設管道規則顯示12個整合平台，具有可自訂的管道和子管道名稱](assets/4.png)
 
 規則的結構也很重要。 規則看起來可能像是重複的資訊和遺失的資料，但此結構是刻意為之。 為了進行準確的資料排序，必須分別將每個個別來源對應到適當的管道，即使是共用子管道和管道的來源也不例外。 規則越詳細細微，結果就越能深入人心。 基本上，最佳實務是為您要追蹤的每一項行銷活動撰寫詳細規則。
 
@@ -62,13 +62,13 @@ ht-degree: 0%
 
 規則的每個引數或元件會個別對應至通道。 例如，當[!DNL Marketo Measure]有[!DNL Facebook]個要排序的資料時，它會尋找與[!DNL Facebook]相關的規則。 它會從上到下掃描。 在下圖範例中，[!DNL Marketo Measure]會瞭解對於第一個[!DNL Facebook]子管道，它只需要讀取來源引數，即可將資料放入該規則的儲存貯體。
 
-![](assets/5.png)
+![Facebook管道規則範例，顯示有多列對應到子管道的不同引數](assets/5.png)
 
-下一個規則只會要求媒體引數，因此具有該引數的任何資料都會貯存在此管道中。 最後，[!DNL Facebook]會將來自Facebook URL的任何資料放在最後一個Facebook貯體中。
+下一個規則只會要求媒體引數，因此具有該引數的任何資料都會貯存在此管道中。 最後，如果是[!DNL Facebook]，來自Facebook URL的任何資料都會放在最後一個Facebook貯體中。
 
 預設管道「其他」存在，用於擷取不符合任何規則條件的資料。 請注意，「其他」管道中的某些值區包含星號(&#42;)。 這些星號代表萬用字元，可充當萬用字元。
 
-![](assets/6.png)
+![其他管道規則將萬用字元星號顯示為不相符資料的全方位值區](assets/6.png)
 
 由於[!DNL Marketo Measure]邏輯是從上到下運作，以星號(&#42;)標示的萬用字元規則應放置在規則工作表的最尾端。 所有未依其他規則擷取或排序的資料都會新增至此萬用字元貯體。
 

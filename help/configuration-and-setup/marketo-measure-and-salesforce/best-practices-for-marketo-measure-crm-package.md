@@ -3,22 +3,22 @@ description: ' [!DNL Marketo Measure] CRM封裝的最佳實務 —  [!DNL Market
 title: ' [!DNL Marketo Measure] CRM封裝的最佳作法'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
+
 # [!DNL Marketo Measure] CRM封裝的最佳實務 {#best-practices-for-marketo-measure-crm-package}
 
 >[!NOTE]
->
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 此專案已更新，品牌重塑將很快反映在您的CRM中。
 
 ## 概觀 {#overview}
 
-[!DNL Marketo Measure]與[!DNL Salesforce]和[!DNL Microsoft Dynamics]整合，本檔案著重於針對[!DNL Salesforce]設計的CRM套件的[!DNL Marketo Measure]最佳做法。
+[!DNL Marketo Measure]與[!DNL Salesforce]和[!DNL Microsoft Dynamics]整合，本檔案著重於針對[!DNL Marketo Measure]設計的CRM套件的[!DNL Salesforce]最佳做法。
 
 實施期間，下列兩個套件會安裝在您的[!DNL Salesforce]執行個體中。
 
@@ -49,12 +49,10 @@ ht-degree: 0%
 * 檢查您是否已在[!DNL Salesforce]中安裝最新版本的購買者接觸點套件
 
 >[!NOTE]
->
->當您停用Marketo Measure將資料匯出至Salesforce時，並不會刪除任何現有的資料。 若要移除它，請依照[此Salesforce說明文章](https://help.salesforce.com/s/articleView?language=en_US&id=sf.c360_a_delete_data_stream_records.htm&type=5){target="_blank"}中的步驟操作。
+>當您停用Marketo Measure將資料匯出至Salesforce時，並不會刪除任何現有資料。 若要移除它，請依照[此Salesforce說明文章](https://help.salesforce.com/s/articleView?language=en_US&id=sf.c360_a_delete_data_stream_records.htm&type=5){target="_blank"}中的步驟操作。
 
 >[!MORELIKETHIS]
->
->* [更新Buyer Touchpoint封裝](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
->* [[!DNL Marketo Measure] 許可權集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
->* [共用報告和儀表板資料夾](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
->* [將Marketo Measure連線至Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
+> [更新Buyer Touchpoint封裝](/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)
+> [[!DNL Marketo Measure] 許可權集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
+> [共用報告和儀表板資料夾](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
+> [將Marketo Measure連線至Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)

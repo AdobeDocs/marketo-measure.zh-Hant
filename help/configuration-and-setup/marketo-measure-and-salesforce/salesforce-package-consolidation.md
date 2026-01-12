@@ -3,12 +3,13 @@ description: '[!DNL Salesforce]封裝合併 —  [!DNL Marketo Measure]'
 title: '[!DNL Salesforce]封裝合併'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
+
 
 # [!DNL Salesforce]封裝合併 {#salesforce-package-consolidation}
 
@@ -29,7 +30,7 @@ ht-degree: 1%
 
 ## 支援與轉換 {#support-and-transition}
 
-[支援團隊](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}可以回答任何問題，並協助確保順利轉換至新的整合套件。
+[支援團隊](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}可以回答任何問題，並協助確保順利過渡到新的整合套件。
 
 ## 必要的動作 {#retired-actions}
 
@@ -41,15 +42,15 @@ ht-degree: 1%
       * V2_EXT查詢：
          * bizible2_ext__Ad_Content_FT__c包含外聯
 
-![](assets/package-consolidation-1.png)
+![使用V2_EXT廣告內容FT欄位的範例報告篩選器](assets/package-consolidation-1.png)
 
 * 整合封裝中的對應查詢：
    * bizible2__Touchpoint_Position__c包含FT AND
    * bizible2__Ad_Content__c包含外聯
 
-![](assets/salesforce-package-consolidation-2.png)
+使用合併接觸點欄位的![對等報告篩選器](assets/salesforce-package-consolidation-2.png)
 
-## 常見問題集 {#faq}
+## 常見問題 {#faq}
 
 **合併封裝會與我現有封裝中的欄位衝突嗎？**
 
@@ -57,7 +58,7 @@ ht-degree: 1%
 
 **如何從目前的套件回填資料？**
 
-您可以填寫支援票證[&#128279;](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新處理BT/BAT資料，以填寫接觸點ID和表單ID欄位。
+您可以填寫票證[並取得支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}，以回填和重新處理BT/BAT資料以填寫接觸點ID和表單ID欄位。
 
 **V1和V2_EXT封裝中的欄位是否可以在整合封裝中使用？**
 

@@ -1,19 +1,19 @@
 ---
-unique-page-id: 18874732
 description: 設定UTM引數的最佳實務 —  [!DNL Marketo Measure]
 title: 設定UTM引數的最佳作法
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
+
 # 設定UTM引數的最佳作法 {#best-practices-for-setting-up-utm-parameters}
 
-UTM引數是切分行銷資料的絕佳方式。 [!DNL Marketo Measure]使用並擷取所有UTM引數，以填入Salesforce和[!DNL Marketo Measure]應用程式中的欄位。 有了這些資訊，您就能更詳細地瞭解您的銷售機會、商機以及已結/已贏的交易來自何處。
+UTM引數是切分行銷資料的絕佳方式。 [!DNL Marketo Measure]使用和擷取所有UTM引數，以填入Salesforce和[!DNL Marketo Measure]應用程式中的欄位。 有了這些資訊，您就能更詳細地瞭解您的銷售機會、商機以及已結/已贏的交易來自何處。
 
 您可以使用[Google URL產生器](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}來設定您的UTM引數，並在行銷工作中將其新增至您的連結。 如果您想要以更簡單的方式追蹤所有UTM連結，請使用此[Google試算表](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"}。
 

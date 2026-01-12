@@ -1,32 +1,30 @@
 ---
-unique-page-id: 35586140
-description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
+description: Data Warehouse結構描述
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: e9861f8032475d3e60a3bb3ebf67dfee520bbb75
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '21110'
+source-wordcount: '21106'
 ht-degree: 3%
 
 ---
+
 
 # Data Warehouse結構描述 {#data-warehouse-schema}
 
 Data Warehouse可讓您視需要追蹤更多內容、隨處報告歸因資料，並將資料插入其他資料集。
 
 >[!IMPORTANT]
->
->* 具有_DELETED_DATE值的列將保留7天，然後從Snowflake中移除。
->* snowflake使用的時區遵循世界協調時間(UTC)。
+> 具有_DELETED_DATE值的列將保留7天，然後從Snowflake中移除。
+> Snowflake中使用的時區遵循世界協調時間(UTC)。
 
 >[!NOTE]
->
 >[按一下這裡](#sample-queries)檢視本文底部的範例查詢。
 
 ## 實體關係圖 {#entity-relationship-diagrams}
 
-_Data Warehouse資料模型_ ERD會顯示資料倉儲中的資料如何流動及連結在一起。 此圖表不包含Data Warehouse中可用的所有表格，因為其中有些表格代表對應表格、已有其他表格的檢視，或我們不建議再使用已棄用的表格。 請參閱下列Data Warehouse中呈現之表格和欄的詳細說明。 這些表格中有許多包含反正規化的欄位，不過，此圖表是建議的資料模型，會改用維度表格的資料。
+_Data Warehouse資料模型_ ERD會顯示Data Warehouse中的資料如何流動及連結在一起。 此圖表不包含Data Warehouse中可用的所有表格，因為其中有些表格代表對應表格、已有其他表格的檢視，或我們不建議再使用已棄用的表格。 請參閱下列Data Warehouse中呈現之表格和欄的詳細說明。 這些表格中有許多包含反正規化的欄位，不過，此圖表是建議的資料模型，會改用維度表格的資料。
 
 其他&#x200B;_廣告維度資料模型_ ERD提供如何以最佳方式將廣告特定維度的表格連結回主要資料模型中的表格的檢視。 雖然在其他表格中，廣告維度也會反正規化，但這是連結這些維度的建議模型。
 
@@ -40,9 +38,9 @@ _按一下完整版本的影像_
   </tr> 
   <tr> 
    <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
-   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td> 
-  </tr> 
- </tbody> 
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## 檢視 {#views}
@@ -122,7 +120,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -206,7 +204,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -322,7 +320,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -509,7 +507,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -664,7 +662,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1048,7 +1046,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1282,7 +1280,7 @@ _按一下完整版本的影像_
         <p>此表格的主要物件或實體。 在此範例中，為「Campaign」。</p>
       </td>
       <td>
-        <p>Campaign</p>
+        <p>行銷活動</p>
       </td>
     </tr>
     <tr>
@@ -1364,7 +1362,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1565,7 +1563,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1891,7 +1889,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1960,7 +1958,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -2424,7 +2422,7 @@ _按一下完整版本的影像_
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般地設為"CRM Campaign"；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"Google AdWords"或"Facebook"之類的值。 在CRM中稱為「接觸點Source」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般設定為「CRM Campaign」；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點Source」。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -2468,7 +2466,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>帳戶名稱</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -2624,11 +2622,11 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的廣告帳戶中的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的Creative ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.182716179597</p>
@@ -2636,11 +2634,11 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>創意名稱</p>
+        <p>Creative名稱</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的Creative名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>B2B行銷歸因</p>
@@ -2648,11 +2646,11 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從搜尋廣告中Creative的第一行（從解決廣告的來源廣告帳戶提取）。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>下載CMO指南</p>
@@ -2660,11 +2658,11 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>來自搜尋廣告的Creative第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>瞭解歸因如何透過將行銷活動與收入關聯來衡量ROI</p>
@@ -2672,7 +2670,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -2684,7 +2682,7 @@ _按一下完整版本的影像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -3001,7 +2999,7 @@ _按一下完整版本的影像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>number(38,0)</td>
       <td></td>
       <td></td>
@@ -3015,7 +3013,7 @@ _按一下完整版本的影像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3068,7 +3066,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
   <tr>
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
-    <td>轉換事件的原始MM事件ID 
+    <td>轉換事件的原始MM事件ID
     <br>對應到使用者接觸點或階段轉換</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
@@ -3172,7 +3170,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
   <tr>
     <td>_CREATED_DATE</td>
     <td>時間戳記(_N)</td>
-    <td>以Snowflake建立記錄的日期</td>
+    <td>在Snowflake中建立記錄的日期</td>
     <td>2020-01-01 01:01:00.000</td>
   </tr>
   <tr>
@@ -3427,7 +3425,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3496,7 +3494,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3685,7 +3683,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3787,7 +3785,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3921,7 +3919,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>帳戶名稱</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -4061,11 +4059,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從廣告連線提取的創意ID。</p>
+        <p>從廣告連線提取的Creative識別碼。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.51749608028.266050115160</p>
@@ -4073,11 +4071,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>創意名稱</p>
+        <p>Creative名稱</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從廣告連線提取的創意名稱。</p>
+        <p>從廣告連線提取的Creative名稱。</p>
       </td>
       <td>
         <p>Gartner 2019年魔力象限</p>
@@ -4085,13 +4083,13 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_IS_AGGREGATABLE_COST</p>
+        <p>Creative_IS_AGGREGATABLE_COST</p>
       </td>
       <td>
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由Creative加總的成本。 （亦即若要取得創意成本，加總此欄等於true的列。）</p>
+        <p>指出列是否包含可由Creative加總的成本。 (也就是若要取得Creative Cost，加總此欄等於true的列)。</p>
       </td>
       <td>
         <p>假</p>
@@ -4290,7 +4288,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>number(38,0)</td>
       <td></td>
       <td></td>
@@ -4312,7 +4310,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4346,7 +4344,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>創意的唯一ID。</p>
+        <p>Creative的唯一ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -4357,7 +4355,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>DISPLAY_ID</p>
       </td>
       <td>varchar</td>
-      <td>來源系統中的創作ID。</td>
+      <td>來源系統中的Creative ID。</td>
       <td>
         <p>10426699711</p>
       </td>
@@ -4368,7 +4366,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>從中匯入創意的廣告帳戶ID。</p>
+        <p>Creative匯入來源廣告帳戶ID。</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -4378,7 +4376,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>從中匯入創意的廣告帳戶名稱。</p>
+        <p>從中匯入Creative的廣告帳戶名稱。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -4390,7 +4388,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告商ID，特別適用於Doubleclick。</p>
+        <p>Creative的廣告商ID，特別適用於Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -4402,7 +4400,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>廣告商的名稱，適用於Creative （尤其是Doubleclick）。</p>
+        <p>Creative的廣告商名稱，特別適用於Doubleclick。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing Analytics</p>
@@ -4414,7 +4412,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>適用於創意的廣告群組ID。</p>
+        <p>Creative的廣告群組ID。</p>
       </td>
       <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
@@ -4424,7 +4422,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>創意內容的廣告群組名稱。</p>
+        <p>Creative的廣告群組名稱。</p>
       </td>
       <td>廣告B的廣告集</td>
     </tr>
@@ -4434,7 +4432,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>創意內容促銷活動ID。</p>
+        <p>Creative促銷活動ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866</p>
@@ -4446,7 +4444,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>創意內容的行銷活動名稱。</p>
+        <p>Creative的行銷活動名稱。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4460,7 +4458,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>無論創意內容在來源系統中是否仍為作用中。</p>
+        <p>Creative在來源系統中是否仍為作用中。</p>
       </td>
       <td>
         <p>真</p>
@@ -4474,7 +4472,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>是否已在來源系統中刪除Creative。</p>
+        <p>無論是否在來源系統中刪除了Creative。</p>
       </td>
       <td>
         <p>假</p>
@@ -4508,7 +4506,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>來源系統中的創意名稱。</p>
+        <p>來源系統中的Creative名稱。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4543,7 +4541,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>此表格的主要物件或實體。 在此案例中，「創意」。</p>
+        <p>此表格的主要物件或實體。 在此案例中，「Creative」。</p>
       </td>
       <td>
         <p>Creative</p>
@@ -4555,7 +4553,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>創意內容的廣告提供者名稱。</p>
+        <p>Creative的廣告提供者名稱。</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -4580,7 +4578,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>顯示在Creative上的簡短易記URL。</p>
+        <p>Creative上顯示的簡短易記URL。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4613,7 +4611,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>URL_SHORTED</p>
       </td>
       <td>varchar</td>
-      <td>顯示在Creative上的簡短易記URL。 (僅適用於LinkedIn Ads)。</td>
+      <td>Creative上顯示的簡短易記URL。 （僅適用於LinkedIn廣告）。</td>
       <td></td>
     </tr>
     <tr>
@@ -4622,7 +4620,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>創意型別，可以是文字或顯示</p>
+        <p>Creative的型別，可為文字或顯示</p>
       </td>
       <td>
         <p>文字</p>
@@ -4720,7 +4718,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>共用Id。 (僅適用於LinkedIn Ads)。</p>
+        <p>共用Id。 （僅適用於LinkedIn廣告）。</p>
       </td>
       <td>
         <p>urn:li:共用：6376987561897848832</p>
@@ -4739,7 +4737,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4914,7 +4912,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5041,7 +5039,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>來源系統中的活動型別名稱。</p>
       </td>
       <td>
-        <p>呼叫</p>
+        <p>號召</p>
       </td>
     </tr>
     <tr>
@@ -5077,7 +5075,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5178,7 +5176,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5317,7 +5315,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5428,7 +5426,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5638,7 +5636,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_ID</p>
+        <p>Creative_DISPLAY_ID</p>
       </td>
       <td>varchar</td>
       <td></td>
@@ -5663,7 +5661,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5768,7 +5766,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5791,8 +5789,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
 將曝光數、頁面檢視數、造訪數、表單提交數、使用者接觸點、接觸點(BT)、歸因接觸點(BAT)和成本資料結合在一起。 內部使用以支援[!DNL Marketo Measure]報告。
 
 >[!IMPORTANT]
->
->Marketo Measure將在2024年中淘汰此表格。 如果您想在您端建立它，請執行[這個SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
+>Marketo Measure將在2024年中淘汰此表格。 如果您想在您端建立它，請執行[這個SQL查詢](/help/data-warehouse/assets/BIZ_FACTS.sql)。
 
 <table>
   <tbody>
@@ -5952,7 +5949,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_KEY</p>
+        <p>Creative_KEY</p>
       </td>
       <td>
         <p>number(38,0)</p>
@@ -6111,7 +6108,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>8817975702393619368</td>
     </tr>
     <tr>
-      <td>型別</td>
+      <td>類型</td>
       <td>number(38,0)</td>
       <td>表示列的事實型別。 1 = Buyer Attribution Touchpoint 2 =成本3 = Buyer Touchpoint 4 =使用者接觸點5 =頁面檢視6 =工作階段7 =表單提交8 =曝光數</td>
       <td>3</td>
@@ -6472,7 +6469,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由Creative加總的成本。 （亦即若要取得創意成本，加總此欄等於true的列。）</p>
+        <p>指出列是否包含可由Creative加總的成本。 (也就是若要取得Creative Cost，加總此欄等於true的列)。</p>
       </td>
       <td>
         <p>假</p>
@@ -6543,7 +6540,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6664,7 +6661,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>提交表單的URL，包括任何查詢引數。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6681,7 +6678,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>型別</p>
+        <p>類型</p>
       </td>
       <td>varchar</td>
       <td>指示事件的型別。</td>
@@ -6812,7 +6809,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6918,7 +6915,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>
         <p>提供曝光的URL，包括任何查詢引數。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -6932,7 +6929,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>型別</p>
+        <p>類型</p>
       </td>
       <td>varchar</td>
       <td>指示事件的型別。</td>
@@ -7080,7 +7077,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>帳戶名稱</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -7230,11 +7227,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>
         <p>Null</p>
@@ -7242,51 +7239,51 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>創意名稱</p>
+        <p>Creative名稱</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>Null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>Null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>Null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>Null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>預期為Null，因為曝光的Doubleclick階層中沒有Creative。</p>
+        <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>Null</td>
     </tr>
@@ -7439,7 +7436,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>number(38,0)</td>
       <td></td>
       <td></td>
@@ -7453,7 +7450,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -7818,7 +7815,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8037,7 +8034,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8330,7 +8327,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8571,7 +8568,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8724,7 +8721,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>varchar</td>
       <td>
         <p>已轉換為此機會的相關銷售機會的ID。</p>
-        <p>請注意，此欄位未設定，且所有客戶的Snowflake會傳回null。</p>
+        <p>請注意，此欄位未設定，並在Snowflake中為所有客戶傳回null。</p>
       </td>
       <td>
         <p>Null</p>
@@ -8737,7 +8734,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>varchar</td>
       <td>
         <p>已轉換為此Opportunity之相關Lead的電子郵件。</p>
-        <p>請注意，此欄位未設定，且所有客戶的Snowflake會傳回null。</p>
+        <p>請注意，此欄位未設定，並在Snowflake中為所有客戶傳回null。</p>
       </td>
       <td>
         <p>Null</p>
@@ -8852,7 +8849,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9112,7 +9109,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9248,7 +9245,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>型別</p>
+        <p>類型</p>
       </td>
       <td>varchar</td>
       <td>指示事件的型別。</td>
@@ -9333,7 +9330,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>「頁面檢視」源自的URL，包括任何查詢引數。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9393,7 +9390,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9479,7 +9476,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>
         <p>專為Doubleclick放置的廣告商名稱。</p>
       </td>
-      <td>[!DNL Marketo Measure] Analytics</td>
+      <td>[!DNL Marketo Measure] 分析</td>
     </tr>
     <tr>
       <td>
@@ -9635,13 +9632,13 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的記錄修改日期</td>
+      <td>Snowflake記錄的修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>如果記錄已刪除，則為Snowflake的記錄刪除日期</td>
+      <td>Snowflake的記錄刪除日期（如果已刪除）</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9698,7 +9695,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9777,7 +9774,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9888,7 +9885,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>網頁的名稱。</p>
       </td>
       <td>
-        <p>SalesforceGoogle Analytics | [!DNL Marketo Measure]</p>
+        <p>Salesforce Google Analytics | [!DNL Marketo Measure]</p>
       </td>
     </tr>
     <tr>
@@ -9912,7 +9909,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>工作階段第一個頁面檢視的URL，包括任何查詢引數。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -10069,7 +10066,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>帳戶名稱</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10196,7 +10193,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>從中解析廣告的廣告群組的名稱。 這僅適用於Google Adwords。</p>
       </td>
       <td>
-        <p>Salesforce -Google Analytics</p>
+        <p>SALESFORCE - GOOGLE ANALYTICS</p>
       </td>
     </tr>
     <tr>
@@ -10221,11 +10218,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的Creative的ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.83558988035</p>
@@ -10233,11 +10230,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>創意名稱</p>
+        <p>Creative名稱</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>解析廣告的來源創意內容名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的Creative名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>整合GA與Salesforce</p>
@@ -10245,11 +10242,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從搜尋廣告中Creative的第一行（從解決廣告的來源廣告帳戶提取）。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>將Salesforce與Analytics整合至</p>
@@ -10257,11 +10254,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>來自搜尋廣告的Creative第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>針對收入最佳化。 瞭解如何操作。</p>
@@ -10269,7 +10266,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10281,7 +10278,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10522,7 +10519,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>number(38,0)</td>
       <td></td>
       <td></td>
@@ -10536,7 +10533,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -10778,7 +10775,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -11073,13 +11070,13 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的記錄修改日期</td>
+      <td>Snowflake記錄的修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>如果記錄已刪除，則為Snowflake的記錄刪除日期</td>
+      <td>Snowflake的記錄刪除日期（如果已刪除）</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11250,7 +11247,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -11613,7 +11610,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>產生接觸點的工作階段第一個登陸頁面。 原始登陸頁面將在URL中包含所有查詢引數。 在CRM中稱為「登陸頁面 — 原始」。</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -11722,7 +11719,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般地設為"CRM Campaign"；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"Google AdWords"或"Facebook"之類的值。 在CRM中稱為「接觸點Source」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般設定為「CRM Campaign」；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點Source」。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -11766,7 +11763,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>帳戶名稱</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -11914,11 +11911,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的廣告帳戶中的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的Creative ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>li.502664737.138949954.66452504</p>
@@ -11926,11 +11923,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>創意名稱</p>
+        <p>Creative名稱</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的Creative名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>瀝蘇03151846</p>
@@ -11938,11 +11935,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從搜尋廣告中Creative的第一行（從解決廣告的來源廣告帳戶提取）。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>潛在客戶一般已完成</p>
@@ -11950,11 +11947,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>來自搜尋廣告的Creative第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>下載管道行銷的最終指南：https://lnkd.in/e9xYj5M</p>
@@ -11962,7 +11959,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -11974,7 +11971,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -12296,7 +12293,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>number(38,0)</td>
       <td></td>
       <td></td>
@@ -12310,7 +12307,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12385,7 +12382,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12628,7 +12625,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>產生接觸點的工作階段第一個登陸頁面。 原始登陸頁面將在URL中包含所有查詢引數。 在CRM中稱為「登陸頁面 — 原始」。</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12676,7 +12673,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>產生接觸點的工作階段中記錄的第一個表單。 後續提交的表單不會顯示在Attribution_Touchpoints表格中，而是顯示在Form_Submit表格中。 原始表單頁面可能在URL中包含查詢引數。 在CRM中稱為「表單URL — 原始」。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guide</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
       </td>
     </tr>
     <tr>
@@ -12745,7 +12742,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>
-        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般地設為"CRM Campaign"；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是"Google AdWords"或"Facebook"之類的值。 在CRM中稱為「接觸點Source」。</p>
+        <p>用於定義產生接觸點的來源。 如果是從CRM同步的，則可以從utm_source的URL中剖析出來，一般設定為「CRM Campaign」；或者，如果[!DNL Marketo Measure]能夠解析廣告，則可能是「Google AdWords」或「Facebook」之類的值。 在CRM中稱為「接觸點Source」。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -12789,7 +12786,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>帳戶名稱</p>
+        <p>ACCOUNT_NAME</p>
       </td>
       <td>varchar</td>
       <td>
@@ -12941,11 +12938,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的廣告帳戶中的創意ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的Creative ID。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.195329631298</p>
@@ -12953,11 +12950,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>創意名稱</p>
+        <p>Creative名稱</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>從中解析廣告的廣告帳戶中的創意名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從中解析廣告的廣告帳戶中的Creative名稱。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 官方網站</p>
@@ -12965,11 +12962,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>來自搜尋廣告的創意的第一行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>從搜尋廣告中Creative的第一行（從解決廣告的來源廣告帳戶提取）。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>收入規劃和歸因</p>
@@ -12977,11 +12974,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜尋廣告的創意第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
+        <p>來自搜尋廣告的Creative第二行，提取自解決廣告的來源廣告帳戶。 此功能適用於Google AdWords和Bing Ads （搜尋）。</p>
       </td>
       <td>
         <p>瞭解為什麼250多家公司選擇[!DNL Marketo Measure]作為行銷歸因。 取得示範！</p>
@@ -12989,7 +12986,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -13001,7 +12998,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -13156,7 +13153,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>number(38,0)</td>
       <td></td>
       <td></td>
@@ -13170,7 +13167,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -13190,7 +13187,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-對應表格以將[!DNL Marketo Measure]工作階段ID對應至AdobeECID和Munckin ID。
+對應表格以將[!DNL Marketo Measure]工作階段ID對應至Adobe ECID和Munckin ID。
 
 <table>
   <tbody>
@@ -13265,7 +13262,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>varchar</td>
       <td>「頁面檢視」的URL，包括任何查詢引數。</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>
@@ -13277,7 +13274,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
     </tr>
     <tr>
-      <td>型別</td>
+      <td>類型</td>
       <td>varchar</td>
       <td>指示事件的型別。</td>
       <td>
@@ -13331,13 +13328,13 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     <tr>
       <td>MAPPING_COOKIE_ID</td>
       <td>varchar</td>
-      <td>特定組織ID的ECIDAdobe。</td>
+      <td>特定組織ID的Adobe ECID。</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake建立記錄的日期。</td>
+      <td>在Snowflake中建立記錄的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -13357,11 +13354,11 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
 
 ## 範例查詢 {#sample-queries}
 
-**每個頻道/子頻道上個月有多少購買者接觸點(BT)？**
+**每個頻道/子頻道上個月有多少個購買者接觸點(BT)？**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
- 
+
 select trim(split(ch.name,'.')[0])  as channel
       ,trim(split(ch.name,'.')[1])  as subchannel
       ,count(bt.id)                 as buyer_touchpoint_count
@@ -13383,7 +13380,7 @@ group by 1,2
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
- 
+
 select trim(split(ch.name,'.')[0])  as channel
       ,sum(opp.amount*(bat.full_path_percentage/100))   as attributed_revenue
   from biz_user_touchpoints         ut
@@ -13450,7 +13447,6 @@ order by 1
 **顯示單一機會的所有購買者歸因接觸點(BAT)及其歸因收入。**
 
 >[!NOTE]
->
 >此查詢會傳回w形模型的歸因收入。 更新已歸因收入計算中的欄位以變更模型。
 
 ```

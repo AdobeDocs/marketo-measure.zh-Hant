@@ -1,14 +1,15 @@
 ---
-description: Data Warehouse存取 — 直接共用 — 產品檔案
+description: Data Warehouse存取 — 直接共用
 title: Data Warehouse存取 — 直接共用
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: bff10626589aba8c3dfe995dabde6eac1fc7809f
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
+
 
 # Data Warehouse存取 — 直接共用 {#data-warehouse-access-direct-share}
 
@@ -28,14 +29,13 @@ ht-degree: 0%
 
 開啟Marketo Measure應用程式中的&#x200B;**設定**&#x200B;區段，並導覽至&#x200B;**Data Warehouse**&#x200B;頁面。 在&#x200B;**直接共用**&#x200B;區段中，在提供的方塊中輸入您的[Snowflake帳戶識別碼](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"}，然後按一下&#x200B;**連線**。
 
-![](assets/data-warehouse-access-direct-share-1.png)
+![Marketo Measure Data Warehouse設定顯示Snowflake Direct Share表單](assets/data-warehouse-access-direct-share-1.png)
 
 ## 存取共用 {#accessing-the-share}
 
 為提供的帳戶ID建立共用後，您必須在Snowflake執行個體中完成[設定步驟](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}才能存取資料。
 
 >[!NOTE]
->
 >您可以選擇任何想要的資料庫名稱。 只要許可權存在於您的Snowflake執行個體中，您就可以將許可權指派給任何您選擇的角色。
 
 * 使用帳戶管理員角色

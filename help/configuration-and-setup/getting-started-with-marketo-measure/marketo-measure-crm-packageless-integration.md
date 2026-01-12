@@ -1,15 +1,15 @@
 ---
-unique-page-id: 37356027
 description: '[!DNL Marketo Measure] CRM無封裝整合 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] CRM無封裝整合'
 exl-id: a4f31d82-63ec-4bb2-bc8b-d3495e61af4f
 feature: Integration
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
+
 
 # [!DNL Marketo Measure] CRM無封裝整合 {#marketo-measure-crm-packageless-integration}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 透過標準[!DNL Marketo Measure]安裝，您必須安裝[!DNL Salesforce]封裝或[!DNL Microsoft Dynamics]受管理解決方案。 安裝包括新增到CRM的自訂物件/實體和自訂欄位，然後[!DNL Marketo Measure]可以將資料寫入其中。
 
-與[!DNL Marketo Measure]的無封裝整合適用於不想在CRM中建立自訂物件/實體或自訂欄位的客戶。 對於使用外部Data Warehouse的客戶來說，這也是個不錯的選擇。
+與[!DNL Marketo Measure]的無封裝整合適用於不想在CRM中建立自訂物件/實體或自訂欄位的客戶。 對於使用外部Data Warehouse的客戶來說，這也是個不錯的選項。
 
 ## 權限 {#permissions}
 
@@ -31,12 +31,11 @@ ht-degree: 0%
 
 在以下指南中，請略過安裝[!DNL Salesforce]套件或[!DNL Microsoft Dynamics]受管理解決方案的步驟，並僅遵循許可權和整合指示。
 
-[!DNL Salesforce]客戶按一下[這裡](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)。
+[!DNL Salesforce]客戶按一下[這裡](/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)。
 
-[!DNL Microsoft Dynamics]客戶按一下[這裡](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)。
+[!DNL Microsoft Dynamics]客戶按一下[這裡](/help/marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)。
 
 完成這些步驟後，整合應該可正常運作。 如果您遇到任何問題，請聯絡您的[!DNL Marketo Measure]代表或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 >[!NOTE]
->
 >如果您從[!DNL Marketo Measure] CRM無封裝整合開始，您稍後可以安裝Salesforce封裝或Microsoft Dynamics管理的解決方案。

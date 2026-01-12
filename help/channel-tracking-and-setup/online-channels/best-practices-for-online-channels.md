@@ -3,12 +3,13 @@ description: 線上頻道的最佳實務 —  [!DNL Marketo Measure]
 title: 線上管道的最佳作法
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
+
 
 # 線上管道的最佳作法 {#best-practices-for-online-channels}
 
@@ -35,7 +36,7 @@ ht-degree: 0%
 * [!DNL Marketo Measure]邏輯會從試算表的上方列開始，依遞減順序排列接觸點對應的優先順序，並向下進行
    * [!DNL Marketo Measure]讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
    * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
-* 維護括弧內的規則，請勿編輯或新增至括弧內的規則(例如，[AdWords付費搜尋]或[Facebook付費])
+* 維護括弧內的規則，請勿編輯或新增至括弧內的規則（例如，[AdWords付費搜尋]或[Facebook付費]）
    * 這些是內建邏輯且與[!DNL Marketo Measure]整合繫結的開箱[!DNL Marketo Measure]規則。 讓這些規則成為該管道/子管道區段的最高優先順序，以確保[!DNL Marketo Measure]整合能夠如預期般運作。
 * 上傳檔案後，您七天內無法變更任何規則
    * [!DNL Marketo Measure]利用這個時間處理和更新接觸點，因此請務必在上傳之前仔細檢查您的規則。
@@ -54,8 +55,7 @@ ht-degree: 0%
 如果您的團隊最近經歷過上述任何情況，[!DNL Marketo Measure]建議您檢閱線上頻道規則並進行適當的變更。
 
 >[!MORELIKETHIS]
->
->* [線上頻道設定](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
->* [UTM引數](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
->* [行銷管道和子管道](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
->* [UTM最佳實務](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
+> [線上頻道設定](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
+> [UTM引數](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
+> [行銷管道和子管道](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
+> [UTM最佳作法](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
