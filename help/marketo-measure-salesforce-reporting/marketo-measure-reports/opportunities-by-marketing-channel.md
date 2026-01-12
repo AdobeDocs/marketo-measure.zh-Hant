@@ -34,4 +34,4 @@ ht-degree: 0%
    這是行銷管道彙總的「機會」報表。 此報表著重於所有Opp，但您可以依據階段/機會型別來篩選。 此外，您也可以在任何想要報告的欄位中新增。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教學課程： Stock SFDC報告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Stock SFDC報告](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

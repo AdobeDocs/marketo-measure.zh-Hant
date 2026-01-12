@@ -46,4 +46,4 @@ ht-degree: 0%
    此機會報表由行銷管道摘要，用於測量各個管道的已關閉的遺失機會。 此報表可讓您瞭解哪些管道的表現可能不佳。 歡迎您新增任何想要報告的篩選器或欄位。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教學課程：其他SFDC報告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] 教學課程：其他SFDC報告](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

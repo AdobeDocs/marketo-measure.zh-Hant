@@ -71,5 +71,5 @@ ht-degree: 0%
 一旦選擇其中一個選項，[!DNL Marketo Measure]就會將接觸點指派給每個行銷活動成員（若適用）。 新增至行銷活動&#x200B;_的銷售機會或聯絡人必須_&#x200B;擁有與其記錄關聯的電子郵件地址，才能讓[!DNL Marketo Measure]建立接觸點。 若沒有電子郵件地址，[!DNL Marketo Measure]就不會將接觸點指派給行銷活動成員。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
->[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}

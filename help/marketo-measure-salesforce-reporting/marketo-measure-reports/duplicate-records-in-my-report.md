@@ -33,4 +33,4 @@ ht-degree: 0%
 如果您想要瞭解「聯絡人計數」，則可以使用「計數 — 首次接觸」、「計數 — 銷售機會建立接觸」或「計數 — U形」欄位，瞭解有多少聯絡人曾經進行行銷互動。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教學課程： Stock SFDC報告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Stock SFDC報告](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
