@@ -25,11 +25,11 @@ ht-degree: 0%
 
 1. 選取「**[!UICONTROL Layout Template]**」。
 
-   ![ 3](assets/1-3.png)
+   ![&#x200B; 3](assets/1-3.png)
 
 1. 決定適當的配置範本，然後按一下右側的&#x200B;**[!UICONTROL Edit]**。
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. 將[!DNL Marketo Measure] JavaScript程式碼複製並貼到HTML頁面中結尾標頭標籤的前面。
 

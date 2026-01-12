@@ -15,7 +15,7 @@ ht-degree: 0%
 
 以下是一個流程圖，代表[!DNL Marketo Measure]自訂物件與[!DNL Salesforce]標準物件的關係。
 
-![ 2](assets/1-2.png)
+![&#x200B; 2](assets/1-2.png)
 
 如需完整大小的影像，[請按一下這裡](assets/bizible-object-and-field-taxonomy-graph-full.png)。
 

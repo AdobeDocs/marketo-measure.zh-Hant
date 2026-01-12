@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 按一下以下標示為橘色X的報告，讓您的報告清單看起來與下方影像相同。
 
-   ![ 4](assets/1-4.png)
+   ![&#x200B; 4](assets/1-4.png)
 
 >[!MORELIKETHIS]
 >[Salesforce — 隱藏未使用的報表型別](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)

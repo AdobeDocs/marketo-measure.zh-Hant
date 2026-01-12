@@ -52,4 +52,4 @@ ht-degree: 0%
 * 在您的[!DNL Marketo Measure]報表中看到不正確的收入資料
 
 >[!MORELIKETHIS]
->[ Funnel階段和自訂模型階段之間的差異](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)
+>[&#x200B; Funnel階段和自訂模型階段之間的差異](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)

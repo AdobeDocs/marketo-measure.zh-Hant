@@ -17,16 +17,16 @@ ht-degree: 0%
 
 1. 移至[!UICONTROL Setup]並展開[!UICONTROL Manage Users]群組以選取設定檔。
 
-   ![ 2](assets/1-2.png)
+   ![&#x200B; 2](assets/1-2.png)
 
 1. 選取我們所連線之使用者的設定檔。
 
 1. 搜尋許可權以檢視和編輯轉換的潛在客戶。
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. 核取方塊以啟用檢視和編輯轉換的潛在客戶的許可權。
 
-   ![ 1](assets/3-1.png)
+   ![&#x200B; 1](assets/3-1.png)
 
 而您已完成！

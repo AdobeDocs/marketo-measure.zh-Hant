@@ -39,7 +39,7 @@ ht-degree: 1%
 
    ![顯示REST API端點與身分URL的Marketo Web Services頁面](assets/set-up-marketo-connection-5.png)
 
-1. 仍然在Marketo Engage中，在左側的樹狀結構中選取&#x200B;**LaunchPoint**。 尋找您要連線至Marketo Measure的自訂服務，然後按一下[檢視詳細資料]。****
+1. 仍然在Marketo Engage中，在左側的樹狀結構中選取&#x200B;**LaunchPoint**。 尋找您要連線至Marketo Measure的自訂服務，然後按一下[檢視詳細資料]。**&#x200B;**
 
    ![LaunchPoint功能表包含自訂服務和檢視詳細資料選項](assets/set-up-marketo-connection-6.png)
 

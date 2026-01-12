@@ -24,7 +24,7 @@ ht-degree: 17%
 
 如果您未安裝[!DNL Marketo Measure] Salesforce套件，[!DNL Marketo Measure]將不會將任何資料寫入您的Salesforce執行個體。
 
-![ 3](assets/1-3.png)
+![&#x200B; 3](assets/1-3.png)
 
 依預設，每次工作將資料傳送至您的CRM時，[!DNL Marketo Measure]會針對每個API點數匯出200筆記錄。 對於大多數客戶而言，這會在[!DNL Marketo Measure]所使用的API點數與CRM上的CPU資源需求之間提供最佳平衡。 不過，對於具有複雜CRM設定（例如工作流程和觸發器）的客戶，較小的批次大小可能有助於改善CRM效能。 為此，[!DNL Marketo Measure]允許客戶設定CRM匯出批次大小。 此設定可在[!UICONTROL Settings] Web應用程式的[!UICONTROL CRM] > [!UICONTROL General] > [!DNL Marketo Measure]頁面上使用，客戶可以選擇批次大小200 （預設）、100、50或25。
 

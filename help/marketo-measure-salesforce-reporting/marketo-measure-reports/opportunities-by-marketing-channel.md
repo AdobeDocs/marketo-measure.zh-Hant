@@ -19,15 +19,15 @@ ht-degree: 0%
 
 1. 在「Bizible歸因」中的快速尋找型別中，選取&#x200B;**[!UICONTROL Bizible Attribution Touchpoint with Opportunity]**&#x200B;報表型別並選取&#x200B;**[!UICONTROL Create]**。
 
-   ![ 2](assets/1-2.jpg)
+   ![&#x200B; 2](assets/1-2.jpg)
 
 1. 從報表頂端開始，顯示&#x200B;**[!UICONTROL All Bizible Attribution Touchpoints]**，並根據您要報告的時間範圍調整日期欄位。 在我們的範例中，我們會一直檢視「All Time」。 此外，將報告格式從[!UICONTROL Tabular]變更為&#x200B;**[!UICONTROL Summary]**。
 
-   ![ 2](assets/2-2.jpg)
+   ![&#x200B; 2](assets/2-2.jpg)
 
 1. 現在新增欄位至報表。 在左側的快速尋找中，輸入「行銷管道」並將其新增到報表中的摘要分組。
 
-   ![ 2](assets/3-2.jpg)
+   ![&#x200B; 2](assets/3-2.jpg)
 
 1. 現在，執行報告並分析！
 

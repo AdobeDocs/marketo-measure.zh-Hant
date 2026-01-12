@@ -36,7 +36,7 @@ ht-degree: 0%
 
 您的上傳日期會晚於會議日期三週。 若要修正此差異，可以使用[!UICONTROL Bulk Update Touchpoint Date]按鈕來設定適當的日期。 按鈕如下圖所示。
 
-![ 3](assets/1-3.png)
+![&#x200B; 3](assets/1-3.png)
 
 在這種情況下，上傳日期會回填三週。 此步驟應在設定&quot;[!UICONTROL Enable Buyer Touchpoints]&quot;欄位之前完成。
 
@@ -47,17 +47,17 @@ ht-degree: 0%
 >[!CAUTION]
 >請務必在&#x200B;_之前更新接觸點日期_&#x200B;為所有行銷活動成員啟用接觸點。
 
-![ 3](assets/2-3.png)
+![&#x200B; 3](assets/2-3.png)
 
 ## 如何建立行銷活動並同步購買者接觸點 {#how-to-create-a-campaign-and-sync-buyer-touchpoints}
 
 若要在[!DNL Salesforce]中建立行銷活動，請導覽至[!UICONTROL Campaigns]索引標籤並選取&#39;[!UICONTROL New]&#39;，如下圖所示。 視您的[!DNL Salesforce]設定而定，您可能需要按一下加號(+)圖示，將行銷活動新增至頂端列。
 
-![ 3](assets/3-3.png)
+![&#x200B; 3](assets/3-3.png)
 
 建立此行銷活動時，按一下「[!UICONTROL Enable Buyer Touchpoints]」欄位，然後從選擇清單中選取下列其中一個選項：
 
-![ 3](assets/4-3.png)
+![&#x200B; 3](assets/4-3.png)
 
 * **包含所有行銷活動成員**
    * 此選項可讓[!DNL Marketo Measure]將接觸點歸因於每個行銷活動成員。

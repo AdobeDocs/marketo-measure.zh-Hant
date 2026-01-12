@@ -21,10 +21,10 @@ ht-degree: 0%
 
 1. 在[!UICONTROL OAuth]原則區段下，將「允許的使用者」設定變更為「管理員核准的使用者已預先授權」。 出現快顯視窗，按一下&#x200B;**[!UICONTROL OK]**，然後按&#x200B;**[!UICONTROL Save]**。
 
-   ![ 1](assets/1-1.png)
+   ![&#x200B; 1](assets/1-1.png)
 
 1. 儲存頁面後，您就可以按一下&#x200B;**[!UICONTROL Manage Profiles]**&#x200B;按鈕。
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. 選取所有應能存取[!DNL Marketo Measure]深入分析的設定檔，然後按一下&#x200B;**[!UICONTROL Save]**。

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 _範例報告： [!DNL Marketo Measure]具有購買者接觸點的人員。_
 
-![ 1](assets/1-1.png)
+![&#x200B; 1](assets/1-1.png)
 
 您可以在kelsey@adobe.com的[!DNL Marketo Measure]人員ID中看到該電子郵件地址同時存在潛在客戶和聯絡人。 在此報表中，已報告2個首次接觸、2個銷售機會建立接觸，以及兩個PostLC互動。 這些重複的記錄會共用接觸點日期和接觸點資訊，因此可以得出結論：儘管是同一個人，但他們是兩個不同的人。
 

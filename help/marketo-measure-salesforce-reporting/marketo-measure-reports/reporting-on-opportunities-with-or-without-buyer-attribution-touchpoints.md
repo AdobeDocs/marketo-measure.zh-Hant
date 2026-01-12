@@ -20,11 +20,11 @@ ht-degree: 0%
 
 1. 前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
-   ![ 1](assets/1-1.jpg)
+   ![&#x200B; 1](assets/1-1.jpg)
 
 1. 選取「**[!UICONTROL New Custom Report Type]**」。
 
-   ![ 1](assets/2-1.jpg)
+   ![&#x200B; 1](assets/2-1.jpg)
 
 1. 將主要物件設為&quot;[!UICONTROL Opportunities]&quot;。
 
@@ -32,11 +32,11 @@ ht-degree: 0%
    * 對報表型別名稱使用相同的命名。 在說明輸入中，「是否含有購買者歸因接觸點的商機」。
    * 將報告儲存在&quot;[!UICONTROL Other]&quot;內並將報告設定為&quot;[!UICONTROL Deployed]&quot;。
 
-   ![ 1](assets/3-1.jpg)
+   ![&#x200B; 1](assets/3-1.jpg)
 
 1. 從那裡，您將會將「機會物件」連結到「購買者歸因接觸點物件」。 確保您選擇按鈕「&#39;A&#39;記錄可能有也可能沒有相關&#39;B&#39;記錄」。 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
-   ![ 1](assets/4-1.jpg)
+   ![&#x200B; 1](assets/4-1.jpg)
 
 >[!MORELIKETHIS]
 >[[!DNL Marketo Measure] 教學課程：其他SFDC報告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

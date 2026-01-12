@@ -44,7 +44,7 @@ ht-degree: 0%
 >[!NOTE]
 >如果您啟用自動標籤，我們會重設所有已標籤廣告的轉換歷史記錄和社交證明。 強烈建議您在啟用自動標籤前[將此資料匯出為CSV](https://www.facebook.com/business/help/205067636197240)。
 
-![ 2](assets/2-2.png)
+![&#x200B; 2](assets/2-2.png)
 
 啟用整合後，[!DNL Marketo Measure]將開始將廣告層級成本下載至[!DNL Marketo Measure Marketing ROI]儀表板。
 
