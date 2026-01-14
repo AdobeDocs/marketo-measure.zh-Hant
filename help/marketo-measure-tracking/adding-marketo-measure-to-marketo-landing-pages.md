@@ -1,21 +1,21 @@
 ---
-description: 正在新增 [!DNL Marketo Measure] 至 [!DNL Marketo] 登陸頁面 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者新增 [!DNL Marketo Measure] 至Marketo登陸頁面指引
 title: 正在新增 [!DNL Marketo Measure] 至Marketo登陸頁面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
-
 
 # 正在新增[!DNL Marketo Measure]至Marketo登陸頁面 {#adding-marketo-measure-to-marketo-landing-pages}
 
 瞭解如何在[!DNL Marketo Engage]登陸頁面需要其他處理時新增追蹤。 登陸頁面和[!DNL Marketo Measure]表單本身都必須有[!DNL Marketo Engage] JavaScript。 若要這麼做，您必須依照下列指示，將[!DNL Marketo Measure] JavaScript載入[!DNL Marketo Engage]。
 
 >[!NOTE]
+>
 >如果您是透過[!DNL Google Tag Manager]等標籤管理提供者部署JavaScript，則不需要手動新增[!DNL Marketo Measure] JS至[!DNL Marketo Engage]。
 
 ## 如何將[!DNL Marketo Measure]指令碼新增至[!DNL Marketo Engage]登陸頁面 {#how-to-add-marketo-measure-script-to-marketo-engage-landing-pages}
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. 按一下「**[!UICONTROL Save]**」。
 
-   將Bizible指令碼新增到head的![Marketo登陸頁面編輯器](assets/adding-bizible-to-marketo-landing-pages-1.png)
+   ![](assets/adding-pages-1.png)
 
 ## 其他附註 {#additional-notes}
 
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 * 您可能有多個登陸頁面範本正在使用中，請務必新增程式碼至所有包含表單的範本。
 
-* 有時當您編輯登入頁面的範本時，必須重新核准登入頁面所使用的頁面。 本文說明[如何大量核准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hant){target="_blank"}。
+* 有時當您編輯登入頁面的範本時，必須重新核准登入頁面所使用的頁面。 本文說明[如何大量核准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。

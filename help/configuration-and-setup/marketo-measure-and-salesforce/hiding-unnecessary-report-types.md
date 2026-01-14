@@ -1,15 +1,14 @@
 ---
-description: 隱藏不必要的報表型別 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者隱藏不必要的報表型別指引
 title: 隱藏不必要的報表型別
 exl-id: 7c181340-c154-49ca-a852-243bce71c7a0
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
-
 
 # 隱藏不必要的報表型別 {#hiding-unnecessary-report-types}
 
@@ -25,7 +24,8 @@ ht-degree: 0%
 
 1. 按一下以下標示為橘色X的報告，讓您的報告清單看起來與下方影像相同。
 
-   ![&#x200B; 4](assets/1-4.png)
+   ![](assets/bizible-full-1.png)
 
 >[!MORELIKETHIS]
+>
 >[Salesforce — 隱藏未使用的報表型別](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)

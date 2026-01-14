@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate概觀 —  [!DNL Marketo Measure]'
+description: '''[!DNL Marketo Measure] Ultimate總覽 —  [!DNL Marketo Measure]'''
 title: '[!DNL Marketo Measure] Ultimate概觀'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '683'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Marketo Measure] Ultimate概觀 {#marketo-measure-ultimate-overview}
 
@@ -30,11 +29,11 @@ ht-degree: 4%
 
 **[!DNL Marketo Measure]層級1-3**
 
-![顯示Marketo Measure階層1-3資料流程和連線的架構圖](assets/marketo-measure-ultimate-overview-1.png)
+![](assets/marketo-overview-1.png)
 
 **[!DNL Marketo Measure Ultimate]**
 
-![顯示Marketo Measure Ultimate與AEP整合的架構圖](assets/marketo-measure-ultimate-overview-2.png)
+![](assets/marketo-overview-3.png)
 
 ## [!DNL Marketo Measure Ultimate]的新增功能 {#whats-new-in-marketo-measure-ultimate}
 
@@ -42,26 +41,27 @@ ht-degree: 4%
 
 行銷人員應透過AEP匯入B2B資料（例如，帳戶、商機、聯絡人、銷售機會、促銷活動、促銷活動會員、活動）。 Ultimate不再提供直接CRM和Marketo Engage連線。 行銷人員繼續透過直接連線引進廣告平台資料，並透過[!DNL Marketo Measure] JavaScript追蹤網頁活動。
 
-![資料流程圖顯示透過AEP平台匯入的B2B資料](assets/marketo-measure-ultimate-overview-3.png)
+![](assets/marketo-overview-2.png)
 
 **預設貨幣設定**
 
 [!DNL Marketo Measure Ultimate]將預設貨幣設定為USD，直到使用者變更為止。 設定新的預設貨幣會更新資料，而不會重新處理。 只要選取的貨幣以目標ISO代碼的形式存在，就不需要提交轉換率。
 
-![預設貨幣設定介麵包含USD貨幣選項](assets/marketo-measure-ultimate-overview-4.png)
+![](assets/marketo-overview-7.png)
 
 **[!DNL Marketo Measure Ultimate]沙箱**
 
 在AEP中建立[!DNL Marketo Measure Ultimate]目的地資料流程之前，[!DNL Marketo Measure]執行個體必須對應至AEP沙箱。
 
 >[!NOTE]
+>
 >[!DNL Marketo Measure Ultimate]生產執行個體必須對應至AEP生產沙箱，而[!DNL Marketo Measure Ultimate]開發人員執行個體必須對應至AEP開發人員沙箱。
 
 一旦沙箱對應選擇儲存後，您就無法在應用程式中變更它。 若要變更，請連絡[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 來自指定資料來源之指定實體（例如帳戶）的資料只能進入一個資料集。 每個資料集只能包含在一個資料流程中。 違規會在執行階段停止資料流。
 
-![沙箱對應設定顯示資料集和資料流關係](assets/marketo-measure-ultimate-overview-5.png)
+![](assets/marketo-overview-6.png)
 
 **階段對應**
 
@@ -92,13 +92,13 @@ ht-degree: 4%
 
 funnel與迴旋鏢與自訂模型沒有選擇。 針對funnel、迴旋加速器及自訂模型選取所有階段。 我們支援的階段數量有所限制：15個自訂階段加6個內建階段。
 
-![顯示內建和自訂階段設定的階段對應介面](assets/marketo-measure-ultimate-overview-6.png)
+![](assets/marketo-overview-4.png)
 
 Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 
-![依資料集設定行銷活動會員接觸點規則](assets/marketo-measure-ultimate-overview-7.png)
+![](assets/marketo-overview-5.png)
 
-![依資料集設定活動接觸點規則](assets/marketo-measure-ultimate-overview-8.png)
+![](assets/marketo-overview-8.png)
 
 歸因接觸點不會寫入CRM，因為Ultimate沒有直接的CRM連線。
 
@@ -110,5 +110,7 @@ Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 * 現有第1/2/3層使用者沒有移轉路徑。 需要新的實施，但我們會協助從現有執行個體移轉追蹤的網頁活動資料。
 
 >[!MORELIKETHIS]
-> [Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=zh-Hant){target="_blank"}
-> [影片： Marketo Measure Ultimate概觀](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
+>
+>* [Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>
+>* [影片： Marketo Measure Ultimate概觀](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

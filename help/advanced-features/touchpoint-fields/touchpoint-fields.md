@@ -1,41 +1,40 @@
 ---
-description: 接觸點欄位 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的接觸點欄位指引
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
-
 
 # 接觸點欄位 {#touchpoint-fields}
 
 過去，當客戶使用[!DNL Marketo Measure]上線時，在我們沒有直接標籤整合的情況下，我們的客戶成功團隊會教育我們的客戶如何適當地標籤其登陸頁面，以便他們使用正確的UTM格式，並且我們可以解決其廣告。 這些客戶中有些不使用UTM，而是使用自己的標籤引數，這表示透過[!DNL Marketo Measure]強制執行的新標籤結構編輯其所有廣告網路中的所有登入頁面可能相當費時。 為了適應它們的標籤結構，我們現在接受可以使用我們的規則定義對應的自訂引數。 目標是要因應客戶對其自訂追蹤引數的使用方式，因此我們不需要要求他們變更其URL結構。
 
 >[!AVAILABILITY]
->現在可於第2級與第3級中完整細分。
 >
->可在第2層訂閱中取得完整細分。
+>現在可於第2級與第3級中完整細分。
 
 >[!NOTE]
+>
 >這是進階功能，僅由Professional Services設定。
 
 ## 啟用功能 {#enabling-the-feature}
 
 從「[!DNL Marketo Measure]設定」功能表，導覽至「接觸點欄位」頁面。 從那裡，您可以選取&#x200B;**啟用計算欄位**&#x200B;下的&#x200B;**是**&#x200B;來啟用此功能。 啟用此功能後，您可以建立接觸點欄位。
 
-具有[啟用計算欄位]選項的![接觸點欄位設定頁面](assets/one.png)
+![](assets/touchpoint-fields-1.png)
 
 ## 操作說明 {#how-to}
 
 若要建立計算欄位，請記住，使用者可執行三種不同的動作：擷取、對應至和串連。 這些也稱為定義計算欄位的運運算元。
 
-### 擷取 {#extracts}
+擷取
 
-[!UICONTROL extracts]運運算元從其他位置提取欄位中的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面擷取自訂引數。 然後放置到接觸點欄位上。
+[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面[擷取自訂引數。 ](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
 
 **範例#1**
 
@@ -52,7 +51,7 @@ ht-degree: 0%
    * **)**&#x200B;標籤擷取的結尾
    * **。&#42;**&#x200B;告訴我們我們正在擷取完整的字串
 
-Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
+![](assets/touchpoint-fields-10.png)
 
 **範例#2**
 
@@ -72,7 +71,7 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
    * **+**&#x200B;將會擷取引數的完整值，而且字元數沒有限制
    * 請注意，您使用的是正斜線，而不是反斜線
 
-![折扣代碼欄位組態從URL](assets/three.png)擷取促銷引數
+![](assets/touchpoint-fields-11.png)
 
 **範例#3**
 
@@ -90,7 +89,7 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
    * **\d**&#x200B;告訴我們正在擷取「數字」
    * **{6}**&#x200B;是我們正在擷取的字元數
 
-![Adobe Campaign ID欄位擷取6位數的cid引數](assets/four.png)
+![](assets/touchpoint-fields-12.png)
 
 **範例#4**
 
@@ -119,9 +118,9 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
    * **\d**&#x200B;告訴我們正在擷取「數字」
    * **{6}**&#x200B;是我們正在擷取的字元數
 
-![多個計算欄位擷取國家/地區和行銷活動ID引數](assets/five.png)
+![](assets/touchpoint-fields-13.png)
 
-### 將對應至 {#maps-to}
+**對應至**
 
 [!UICONTROL maps to]運運算元會建立需要轉譯或分段為其他值的值表。 這通常採取鍵值的形式，其中程式碼代表好記的名稱，需要對應到該好記名稱。
 
@@ -129,7 +128,7 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
 
 您針對跨多個管道執行的「夏季促銷活動結束」和「黑色星期五」促銷活動所建立的行銷活動數。 除了其他可能的值外，您想要建立名為「方案」的計算欄位，並將任何具有「夏季促銷活動結束」或「黑色星期五促銷活動」的接觸點對應到「方案」值，例如「促銷活動」。
 
-![方案欄位將行銷活動對應到促銷活動類別](assets/six.png)
+![](assets/touchpoint-fields-2.png)
 
 **範例#2**
 
@@ -151,6 +150,8 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
    * **\d**&#x200B;告訴我們正在擷取「數字」
    * **{2}**&#x200B;是我們正在擷取的字元數
 
+
+
 * 按一下[!UICONTROL Save]。 您必須先儲存新欄位，才能用於下一個規則！
 * 接下來，我們要將第一個數字的所有可能值對應到其易記名稱
 * 建立計算欄位並加上標籤「Region_Name」
@@ -165,9 +166,9 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
    * 若要擷取03，您可將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-**(\d{2})**-\d{2}」
    * 若要擷取10，您可將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-**(\d{2})**」
 
-![區域名稱對應資料表，具有區域名稱的數字代碼](assets/seven.png)
+![](assets/touchpoint-fields-3.png)
 
-### 串連 {#concatenates}
+**串連**
 
 [!UICONTROL concatenates]運運算元將來自多個欄位的值結合為單一欄位。 這對於建立可跨不同欄位提取資料的自訂值很有用，以便
 
@@ -175,7 +176,7 @@ Campaign Source欄位擷取的![計算欄位設定](assets/two.png)
 
 Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它們合併到接觸點物件上的單一欄位以進行報告。 串連欄位後，您會看到Enterprise_A或Mid-Market_B之類的值。
 
-![串連組態，結合區段和等級欄位](assets/eight.png)
+![](assets/touchpoint-fields-4.png)
 
 ## 接觸點欄位和區段 {#touchpoint-fields-and-segments}
 
@@ -183,17 +184,17 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 
 此產品版本提供使用接觸點欄位建立區段的功能。 之前無法使用接觸點欄位來建置區段。
 
-![區段建立介面顯示可用的接觸點欄位](assets/nine.png)
+![](assets/touchpoint-fields-5.png)
 
 為了更輕鬆建立區段，現在可以從建立的接觸點欄位建立動態區段。 例如，如果您建立了剖析地理區域的接觸點欄位，而非針對每個可能區域建立區段，您可以設定一個區段，而我們會為每個例項建立區段，此時會出現新值。 如果屬性（例如郵遞區號）需要剖析並作為區段使用，這會非常有用！
 
 您的設定看起來會類似於下面的熒幕擷圖。 「區段名稱」會使用大括弧以動態拉入接觸點欄位值，藉此搜尋您的欄位。
 
-![具有大括弧欄位參考的動態區段設定](assets/ten.png)
+![](assets/touchpoint-fields-6.png)
 
 規則會參考相同的接觸點欄位，並搜尋「不等於null」的值。
 
-不等於null條件的![區段規則](assets/eleven.png)
+![](assets/touchpoint-fields-7.png)
 
 ## 常見問題 {#faq}
 
@@ -206,6 +207,7 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 建立規則後，別忘了儲存規則。 如果您沒有看到新欄位，請檢查您是否儲存。 您必須先儲存新欄位，才能用於下一個規則。
 
 >[!NOTE]
+>
 >由於複雜程度，使用「對應」運運算元的接觸點欄位無法用於其他接觸點欄位。
 
 **我要使用哪個運算式從單一登陸頁面擷取多個引數？**
@@ -220,6 +222,6 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 
 有一個線上工具([[!DNL https]：//regex101.com/](https://regex101.com/){target="_blank"})，您可以執行並測試運算式。 如果運算式有效，則顯示綠色；如果運算式無效，則顯示紅色。 另外，右上方的[!UICONTROL explanation]方塊很有幫助，會告訴您正在擷取的內容。
 
-![以綠色顯示有效運算式的Regex驗證工具](assets/twelve.png)
+![](assets/touchpoint-fields-8.png)
 
-![Regex驗證工具以紅色顯示無效的運算式](assets/thirteen.png)
+![](assets/touchpoint-fields-9.png)

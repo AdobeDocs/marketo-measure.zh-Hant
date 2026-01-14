@@ -1,15 +1,14 @@
 ---
-description: Data Warehouse存取 — 直接共用
+description: 瞭解在Snowflake中啟用Marketo Measure資料倉儲直接共用存取權的需求和步驟
 title: Data Warehouse存取 — 直接共用
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
 
 ---
-
 
 # Data Warehouse存取 — 直接共用 {#data-warehouse-access-direct-share}
 
@@ -23,42 +22,43 @@ ht-degree: 0%
 
 ## 限制 {#limitations}
 
-[!DNL Marketo Measure]將只能以Azure East US 2中的帳戶設定Snowflake直接共用(這是Marketo Measure的限制，不能使用Snowflake)。 如果您需要讓您的資料在其他Snowflake地區可用，建議您在Azure US 2東部的Snowflake帳戶中製作資料復本，並使用[Snowflake資料庫復寫](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能，在您選擇的Snowflake地區/帳戶中複製您的資料。
+由於目前的Snowflake Direct Share限制，[!DNL Marketo Measure]將只能以Azure East US 2中的帳戶設定Snowflake Direct Share。 如果您需要讓您的資料在其他Snowflake地區可用，建議您在Azure US 2東部的Snowflake帳戶中製作資料復本，並使用[Snowflake資料庫復寫](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能，在您選擇的Snowflake地區/帳戶中複製您的資料。
 
 ## 輸入Snowflake帳戶ID {#enter-snowflake-account-id}
 
 開啟Marketo Measure應用程式中的&#x200B;**設定**&#x200B;區段，並導覽至&#x200B;**Data Warehouse**&#x200B;頁面。 在&#x200B;**直接共用**&#x200B;區段中，在提供的方塊中輸入您的[Snowflake帳戶識別碼](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"}，然後按一下&#x200B;**連線**。
 
-![Marketo Measure Data Warehouse設定顯示Snowflake Direct Share表單](assets/data-warehouse-access-direct-share-1.png)
+![](assets/data-share-1.png)
 
 ## 存取共用 {#accessing-the-share}
 
 為提供的帳戶ID建立共用後，您必須在Snowflake執行個體中完成[設定步驟](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}才能存取資料。
 
 >[!NOTE]
+>
 >您可以選擇任何想要的資料庫名稱。 只要許可權存在於您的Snowflake執行個體中，您就可以將許可權指派給任何您選擇的角色。
 
 * 使用帳戶管理員角色
 
-```
+```sql
 USE ROLE ACCOUNTADMIN
 ```
 
 * 檢視可用的共用（這會顯示已授與的共用名稱）
 
-```
+```sql
 SHOW SHARES
 ```
 
 * 為共用建立資料庫
 
-```
+```sql
 CREATE DATABASE <database_name> FROM SHARE <provider_account>.<share_name>
 ```
 
 * 授與共用資料庫的許可權
 
-```
+```sql
 GRANT IMPORTED PRIVILEGES ON DATABASE <database_name> TO ROLE <role_name>
 GRANT IMPORTED PRIVILEGES ON ALL SCHEMAS IN DATABASE <database_name> TO ROLE <role_name>
 ```

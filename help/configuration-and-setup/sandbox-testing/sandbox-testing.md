@@ -1,19 +1,19 @@
 ---
-description: 測試Marketo Measure與Salesforce沙箱的整合 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者測試Marketo Measure與Salesforce沙箱指引的整合
 title: 測試Marketo Measure與Salesforce沙箱的整合
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
 
-
 # 測試Marketo Measure與Salesforce沙箱的整合 {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
 
 >[!NOTE]
+>
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
 [!DNL Marketo Measure]核心功能之一，是能夠透過網站上的動作追蹤您的數位行銷工作，然後透過Leads和Contacts將該資料推送至您的產品[!DNL Salesforce org]。 不過，在沙箱整合中，通常不會從您的網站建立傳入銷售機會，因此對資料的關注將從純粹離線角度進行。

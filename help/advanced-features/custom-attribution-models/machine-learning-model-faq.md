@@ -1,11 +1,10 @@
 ---
-description: 機器學習模型常見問題集 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的機器學習模型常見問題集指南
 title: 機器學習模型常見問題集
-exl-id: 2fc142b2-8ac4-4c48-a8f1-398e29ccfe97
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ ht-degree: 0%
 
 自訂階段的最終權重計算方式如下：
 
-**_模型百分比=模型準確度x轉換率x接觸點唯一性權重_**
+`Model Percentage = Model Accuracy x Conversion Rate x Touchpoint Uniqueness Weight`
 
 最後，所有自訂舞台權重都會標準化並轉換為%，如下所示。
 

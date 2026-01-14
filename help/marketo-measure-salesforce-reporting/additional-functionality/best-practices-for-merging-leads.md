@@ -1,15 +1,14 @@
 ---
-description: 合併潛在客戶的最佳實務 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者合併銷售機會指引的最佳作法
 title: 合併潛在客戶的最佳實務
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # 合併潛在客戶的最佳實務 {#best-practices-for-merging-leads}
 
@@ -25,4 +24,4 @@ ht-degree: 0%
 
 如有任何問題，請隨時聯絡Adobe客戶團隊（您的客戶經理）或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
-![Salesforce合併銷售機會對話方塊中保留Marketo Measure欄位](assets/1.jpg)
+![](assets/additional-functionality-8.jpg)

@@ -1,15 +1,15 @@
 ---
-description: 正在授予 [!DNL Salesforce] 對 [!DNL Marketo Measure] 支援的存取權 —  [!DNL Marketo Measure]
+description: 授予Marketo Measure使用者 [!DNL Salesforce] 對Marketo Measure支援指導的存取權
 title: 授予 [!DNL Salesforce] 對Marketo Measure支援的存取權
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '166'
 ht-degree: 2%
 
 ---
-
 
 # 授予[!DNL Salesforce]對Marketo Measure支援的存取權 {#granting-salesforce-access-to-marketo-measure-support}
 

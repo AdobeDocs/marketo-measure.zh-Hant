@@ -1,21 +1,21 @@
 ---
-description: 行銷活動同步日期 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的Campaign同步日期指引
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
-
 
 # Campaign同步日期 {#campaign-sync-dates}
 
 瞭解Campaign同步日期功能的功能，並提供此功能的一些使用案例。
 
 >[!NOTE]
+>
 >本文會介紹過時的程式。 我們鼓勵使用者使用[新的、改良的應用程式內程式](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 需要&#x200B;**[!DNL Marketo Measure]個套件： 6.9或更高**
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 在特定行銷活動上啟用購買者接觸點後，Campaign同步日期將允許您在個別行銷活動上設定接觸點日期引數。 因此，如果您要新增接觸點結束日期2017年3月1日，則[!DNL Marketo Measure]將只會在該日期之前新增至行銷活動的行銷活動成員上建立接觸點。 [!DNL Marketo Measure]不會為2017年3月1日之後新增的行銷活動成員建立接觸點。
 
-![顯示接觸點開始日期和結束日期欄位的Salesforce行銷活動](assets/1.gif)
+![](assets/legacy-processes-3.gif)
 
 同樣地，如果您要在行銷活動上新增接觸點開始日期（假設2017年1月1日），則[!DNL Marketo Measure]不會在2017年1月1日之前新增至行銷活動的行銷活動成員上建立接觸點。 如果您新增接觸點結束日期，則不需要新增接觸點開始日期，反之亦然。
 

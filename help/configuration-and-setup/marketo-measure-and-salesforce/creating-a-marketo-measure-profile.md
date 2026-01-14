@@ -1,15 +1,14 @@
 ---
-description: 正在建立 [!DNL Marketo Measure] 設定檔 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者建立 [!DNL Marketo Measure] 設定檔指南
 title: 建立 [!DNL Marketo Measure] 設定檔
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # 建立[!DNL Marketo Measure]設定檔 {#creating-a-marketo-measure-profile}
 
@@ -21,6 +20,7 @@ ht-degree: 0%
    * 啟用檢視和編輯已轉換潛在客戶的許可權
 
    >[!NOTE]
+   >
    >此設定檔可以是[!DNL System Admin]設定檔的複製
 
 1. 已建立專用的[!DNL Marketo Measure]使用者：

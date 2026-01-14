@@ -1,15 +1,14 @@
 ---
-description: 正在從完整圓圈轉換為 [!DNL Marketo Measure]  - [!DNL Marketo Measure]
+description: '從Marketo Measure使用者的完整圓圈指南轉換為 [!DNL Marketo Measure] '
 title: '正在從完整圓圈轉換為 [!DNL Marketo Measure] '
 exl-id: fd471771-33e2-413a-b155-02ba6e32e10c
 feature: Attribution, Fundamentals
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
-
 
 # 正在從完整圓圈轉換為[!DNL Marketo Measure] {#transitioning-to-marketo-measure-from-full-circle}
 

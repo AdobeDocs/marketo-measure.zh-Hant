@@ -1,15 +1,14 @@
 ---
-description: CRM促銷活動成本
+description: 適用於Marketo Measure使用者的CRM Campaign成本指引
 title: CRM促銷活動成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # CRM促銷活動成本 {#crm-campaign-costs}
 
@@ -31,7 +30,7 @@ ht-degree: 0%
 
 若要讓[!DNL Marketo Measure]決定行銷活動在月份間的分佈，會使用行銷活動的開始和結束日期來平均分配每天的金額。
 
-按月份![的](assets/1.jpg)CRM行銷活動成本分配範例
+![](assets/spend-management-3.jpg)
 
 在此範例中，促銷活動持續109天，所以如果總成本為$18,000，每日支出則約為$165.14。
 

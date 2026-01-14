@@ -1,15 +1,14 @@
 ---
-description: 接觸點移除與接觸點抑制 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的接觸點移除與接觸點隱藏指南
 title: 接觸點移除與接觸點抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
-
 
 # 接觸點移除與接觸點抑制 {#touchpoint-removal-and-touchpoint-suppression}
 
@@ -34,38 +33,41 @@ ht-degree: 0%
 
 從與下一組值相關的運運算元清單中選擇，您將在下一欄新增這些值。
 
-![&#x200B; 1](assets/1-1.png)
+![](assets/touchpoint-settings-10.png)
 
 >[!TIP]
+>
 >若要在欄位中新增多個值，請使用「符合任何」運運算元，並以逗號分隔每個值。
 
 >[!TIP]
+>
 >若要在欄位中說明空白或NULL值，只需將[!UICONTROL Value]方塊留空即可。 這將考慮到各種情況，例如針對沒有表單URL的接觸點進行評估。
 
 >[!NOTE]
+>
 >公式欄位無法在規則中使用，也不會出現在選擇清單中。 因為公式會在背景計算且不會修改記錄，[!DNL Marketo Measure]無法偵測記錄是否符合規則。
 
 `2)`在相同的群組內新增規則，以在您的陳述式中使用「AND」邏輯。
 或者，在群組外新增陳述式，以在陳述式中使用「OR」邏輯。
 
-![隱藏規則產生器顯示分組的AND/OR邏輯](assets/2.png)
+![](assets/touchpoint-settings-11.png)
 
 `3)`如果您的規則變得複雜，而且您需要重新建立群組並對每個陳述式進行微幅變更，請使用[!UICONTROL Clone]選項來簡化程式。
 
-複製隱藏規則群組的![複製選項](assets/3.png)
+![](assets/touchpoint-settings-6.png)
 
 如果您犯錯，請不要擔心。 您也可以刪除陳述式的個別列或完整群組。
 
-![刪除個別陳述式與規則群組的圖示](assets/4.png)
+![](assets/touchpoint-settings-7.png)
 
 `4)`如果您想要將購買者歸因接觸點套用至這兩個物件，請設定購買者歸因接觸點的規則。 我們的彈性可讓您為一個物件或兩個物件設定規則，也可以選擇為兩個物件設定規則（如果適用）。
 
-![購買者歸因接觸點隱藏規則設定](assets/5.png)
+![](assets/touchpoint-settings-8.png)
 
 若要完成，[!UICONTROL Save and Process]您的規則。 如果您要進行許多變更，請務必儲存變更。 在您按一下之前，[!DNL Marketo Measure]實際上不會開始移除您的接觸點
 [!UICONTROL **儲存並處理**]。
 
-| 運算子 | 使用案例 |
+| **運運算元** | **使用案例** |
 |---|---|
 | 等於 | 單一值 — 完全相符 |
 | 包含 | 單一值 — 包含值 |

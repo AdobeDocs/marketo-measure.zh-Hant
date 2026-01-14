@@ -1,15 +1,15 @@
 ---
-description: 離線自訂頻道設定 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的離線自訂頻道設定指南
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
-
 
 # 離線自訂頻道設定 {#offline-custom-channel-setup}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 試算表包含三欄：
 
-![顯示Salesforce行銷活動型別、管道和子管道三欄的試算表範本](assets/1-2.png)
+![](assets/offline-channels-1.png)
 
 **[!UICONTROL Salesforce]行銷活動型別** — 在此新增[!DNL Salesforce]中識別的行銷活動型別
 
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 SFDC行銷活動型別將顯示在離線頻道的標籤中，列在「[!DNL Salesforce]行銷活動型別」下。 請注意，[!DNL Marketo Measure]只能為具有相關聯購買者接觸點的行銷活動匯入SFDC行銷活動型別。
 
-顯示Salesforce行銷活動型別清單的![離線管道索引標籤](assets/2-2.png)
+![](assets/offline-channels-10.jpg)
 
 您可以在此處在[!DNL Marketo Measure]應用程式中建立管道/子管道對應。 這可能需要在[!DNL Marketo Measure]應用程式中建立新的管道和子管道，這項作業會在應用程式的「建立管道」區段中完成，如下圖所示。 需要為[!DNL Marketo Measure]建立新的管道和子管道，以瞭解要推送接觸點的位置。 您可以決定要如何對應行銷活動型別。
 
-![建立管道區段，顯示建立新管道和子管道的介面](assets/3-2.png)
+![](assets/offline-channels-11.png)
 
 ## 管道對應範例 {#channel-mapping-example}
 
@@ -49,11 +49,11 @@ SFDC行銷活動型別將顯示在離線頻道的標籤中，列在「[!DNL Sale
 
 以下是[!DNL Marketo Measure]無法讀取的邏輯範例：
 
-![顯示對應到不同子頻道的相同行銷活動型別的頻道對應不正確](assets/4-2.png)
+![](assets/offline-channels-12.png)
 
 在上述案例中，您將需要建立唯一的促銷活動型別，因為您無法將相同的促銷活動型別對應至兩個不同的子管道。 而是要設定如下的唯一型別：
 
-![正確的管道對應，顯示不同子管道的獨特行銷活動型別](assets/5-2.png)
+![](assets/offline-channels-13.png)
 
 管道地圖中必須包含任何現有的行銷活動型別，且應將「NULL」新增為管道。
 
@@ -67,20 +67,24 @@ SFDC行銷活動型別將顯示在離線頻道的標籤中，列在「[!DNL Sale
 
 處理線上活動行銷活動的另一個秘訣是將行銷活動型別[!DNL Salesforce]對應至NULL。 若要這麼做，請先在標題為NULL的[!DNL Marketo Measure]應用程式中建立頻道，如下圖所示。 您可以在[!DNL Marketo Measure]建立管道&#x200B;**區段下的**&#x200B;應用程式中找到此專案。 在不應同步的行銷活動意外同步時，此方法將有所幫助。 透過檢視一切在NULL下分組，很容易找到行銷活動並更正同步狀態。
 
-![建立管道區段，顯示線上行銷活動的NULL管道建立](assets/6-2.png)
+![](assets/offline-channels-14.png)
 
 ## 在應用程式中輸入離線管道規則 {#entering-your-offline-channel-rules-to-the-app}
 
 當您使用自訂規則編輯並更新試算表後，下一步就是在[!DNL Marketo Measure]應用程式中重新建立此管道對應 — 您實際上並不會上傳離線管道的試算表。 而是要在選取清單方塊中輸入資訊，如下圖所示。 按一下&#x200B;**[!UICONTROL Offline Channels]**&#x200B;區段下的&#x200B;**[!UICONTROL Channels]**&#x200B;即可找到此專案。
 
-![離線管道介面，其中包含輸入管道對應規則的選擇清單方塊](assets/7-2.png)
+![](assets/offline-channels-20.png)
 
 >[!TIP]
+>
 >想要決定&#x200B;_何時_&#x200B;將[!DNL Salesforce]行銷活動型別提取到[!DNL Marketo Measure]管道對應中？ 前往「**[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**」。 然後您可以檢視哪些值在挑選清單中，以及哪些為非作用中。 非作用中專案不會在&quot;[!UICONTROL Offline Channels]&quot;區段中顯示為可選取的型別。 請注意，此程式可能需要幾分鐘到48小時的時間。
 
 完成時按一下「**[!UICONTROL Save]**」，[!DNL Marketo Measure]將上傳變更並重新處理資料。
 
 >[!MORELIKETHIS]
-> [[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
-> [[!DNL Marketo Measure] 教學課程：同步處理離線行銷活動](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
-> [Marketo Engage程式整合](/help/marketo-measure-and-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}
+>
+>* [[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>
+>* [[!DNL Marketo Measure] 教學課程：同步處理離線行銷活動](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
+>
+>* [Marketo Engage程式整合](/help/marketo-measure-and-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}

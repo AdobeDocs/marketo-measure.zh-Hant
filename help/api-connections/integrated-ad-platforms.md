@@ -1,15 +1,15 @@
 ---
-description: 整合式廣告平台 —  [!DNL Marketo Measure]
+description: 適用於Marketo Measure使用者的整合式廣告平台指引
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
-
 
 # 整合式廣告平台 {#integrated-ad-platforms}
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 如下圖所示，您會看到一個按鈕，可用來設定新的廣告連線。
 
-![設定新Ads連線按鈕的連線頁面](assets/2.png)
+![](assets/bizible-guide-1.png)
 
 按一下[!UICONTROL Set up New Ads Connection]按鈕後，會出現一個視窗（如下所示），其中包含4種廣告[!UICONTROL connect]離子型別。 按一下連線，就會出現另一個視窗要求認證。 輸入認證，然後按一下[!UICONTROL authorize]以連線帳戶至[!DNL Marketo Measure]。
 
-![可用帳戶型別的Marketo Measure ads連線模式](assets/select-account-type.png)
+![](assets/five-five-1.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -56,15 +56,15 @@ ht-degree: 0%
 
 1. 前往「[!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections]」。
 
-   ![與現有ads帳戶的連線清單](assets/4.png)
+   ![](assets/utilizing-connections-8.png)
 
 1. 按一下將啟用[!DNL Marketo Measure]自動標籤的Adwords帳戶旁的鉛筆圖示。
 
-   ![具有自動標籤切換的廣告帳戶設定面板](assets/5.png)
+   ![](assets/utilizing-connections-9.png)
 
 1. 在右上角，將&#x200B;**[!UICONTROL Autotagging]**&#x200B;切換至&#x200B;**[!UICONTROL Yes]**。 在頁面底部，按一下&#x200B;**[!UICONTROL Learn More]**&#x200B;以展開文字方塊並按一下&#x200B;**[!UICONTROL Save]**。 自動標籤設定完成。
 
-   ![在Marketo Measure中自動標籤確認強制回應視窗](assets/6.png)
+   ![](assets/utilizing-connections-10.png)
 
 ## 如何使用[!DNL Marketo Measure]引數在AdWords中設定追蹤範本 {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
@@ -88,6 +88,7 @@ ht-degree: 0%
    為避免在手動標籤URL時發生錯誤，通常建議自動產生UTM引數。 這並不一定意味著使用AdWords或[!DNL Marketo Measure]引數自動標籤，有多種工具可依據您提供的資訊自動產生URL的引數，藉此簡化程式。
 
    >[!TIP]
+   >
    >如果您收到指出追蹤範本無效的錯誤，請嘗試清除瀏覽器快取，然後再試一次 — 這通常可解決此問題。
 
 ## 如何自動產生[!DNL Google AdWords]的UTM標籤 {#how-to-automatically-generate-utm-tags-for-google-adwords}
@@ -121,6 +122,7 @@ Bing Ads是整合平台，可讓您啟用URL的自動標籤，或使用協力廠
 * 文字廣告
 * 行動裝置廣告
 * 展開的文字廣告
+
 
 Bing Ads的自動標籤功能新增下列UTM引數：
 

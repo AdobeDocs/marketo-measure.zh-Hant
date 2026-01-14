@@ -1,15 +1,15 @@
 ---
-description: 已歸因的機會儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 涵蓋Attributed Opportunity儀表板，該儀表板會依管道子管道和促銷活動顯示一段時間內的機會金額和計數
 title: 已歸因的機會儀表板
 feature: Reporting
 exl-id: b98cc45a-9483-42a5-8b75-b235273f867b
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
-
 
 # 已歸因的機會儀表板 {#attributed-opportunity-dashboard}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 * 哪些管道每季產生最多歸因的機會金額？
 * 上個月依管道劃分的歸因機會金額分析為何？
 
-![依據管道隨時間變化的歸因機會金額](assets/attributed-opportunity-dashboard-1.png)
+![](assets/attributed-dashboard-3.png)
 
 ### 已歸因的機會金額表格 {#attributed-opportunity-amount-table}
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 按一下每個頻道旁的&#x200B;**+**&#x200B;圖示，以顯示依子頻道和促銷活動的劃分。
 
-![依據管道和行銷活動的歸因機會數量表格式檢視](assets/attributed-opportunity-dashboard-2.png)
+![](assets/attributed-dashboard-1.png)
 
 #### 樹狀檢視 {#tree-view}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 按一下分支可深入探究後續的階層圖層。
 
-![已歸因的機會金額樹狀結構檢視階層](assets/attributed-opportunity-dashboard-3.png)
+![](assets/attributed-dashboard-2.png)
 
 ### 篩選窗格
 

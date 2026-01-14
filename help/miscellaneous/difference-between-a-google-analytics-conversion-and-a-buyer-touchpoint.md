@@ -1,15 +1,14 @@
 ---
-description: Google Analytics轉換與Buyer Touchpoint之間的差異
+description: Google Analytics轉換與適用於Marketo Measure使用者的Buyer Touchpoint指引之間的差異
 title: Google Analytics轉換與Buyer Touchpoint之間的差異
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
-
 
 # Google Analytics轉換與Buyer Touchpoint之間的差異 {#difference-between-a-google-analytics-conversion-and-a-buyer-touchpoint}
 
@@ -21,39 +20,39 @@ ht-degree: 1%
 
 但是，無法以編碼方式管理特定行為。 而是有網頁開發人員可以設定的目標型別。 以下是其中一些範例：
 
-<table>
- <colgroup>
-  <col>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <td><strong>目標型別</strong></td>
-   <td><p><strong>說明</strong></p></td>
-   <td><strong>範例</strong></td>
-  </tr>
-  <tr>
-   <td><p>目標</p></td>
-   <td>特定位置載入</td>
-   <td><em>感謝您註冊！</em>網頁或應用程式畫面</td>
-  </tr>
-  <tr>
-   <td>持續時間</td>
-   <td>持續特定時間或更長的工作階段</td>
-   <td>在支援網站上逗留10分鐘或更長時間</td>
-  </tr>
-  <tr>
-   <td>每個工作階段的頁面/Screens</td>
-   <td>使用者檢視特定數量的頁面或畫面</td>
-   <td>已載入5個頁面或熒幕</td>
-  </tr>
-  <tr>
-   <td>事件</td>
-   <td>定義為事件的動作會觸發</td>
-   <td>社交推薦、視訊播放、廣告點選</td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <td><strong>目標型別</strong></td> 
+   <td><p><strong>說明</strong></p></td> 
+   <td><strong>範例</strong></td> 
+  </tr> 
+  <tr> 
+   <td><p>目標</p></td> 
+   <td>特定位置載入</td> 
+   <td><em>感謝您註冊！</em>網頁或應用程式畫面</td> 
+  </tr> 
+  <tr> 
+   <td>持續時間</td> 
+   <td>持續特定時間或更長的工作階段</td> 
+   <td>在支援網站上逗留10分鐘或更長時間</td> 
+  </tr> 
+  <tr> 
+   <td>每個工作階段的頁面/Screens</td> 
+   <td>使用者檢視特定數量的頁面或畫面</td> 
+   <td>已載入5個頁面或熒幕</td> 
+  </tr> 
+  <tr> 
+   <td>事件</td> 
+   <td>定義為事件的動作會觸發</td> 
+   <td>社交推薦、視訊播放、廣告點選</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 大部分行銷人員將其轉換設定為「目的地目標」，這表示他們通常會在表單後面建立感謝頁面，以視為正式轉換。

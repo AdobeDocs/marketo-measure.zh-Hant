@@ -1,21 +1,21 @@
 ---
-description: 正在建立 [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]的行銷活動清單檢視
+description: 為Marketo Measure使用者的 [!DNL Salesforce] 行銷活動指引建立行銷活動清單檢視
 title: 建立 [!DNL Salesforce] 行銷活動的行銷活動清單檢視
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
-
 
 # 建立[!DNL Salesforce]行銷活動的行銷活動清單檢視 {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 瞭解如何針對您要與購買者接觸點同步的促銷活動建立「清單檢視」 。
 
 >[!NOTE]
+>
 >本文會介紹過時的程式。 我們鼓勵使用者使用[新的、改良的應用程式內程式](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 可建立的行銷活動清單檢視可讓您擁有「前往」位置來檢視及管理「型別」和「啟用購買者接觸點」欄位，以確保通知您離線行銷管道的每個[!DNL Salesforce]行銷活動皆已正確設定。
@@ -42,4 +42,5 @@ ht-degree: 0%
    * 確定具有欄位的許可權
 
 >[!MORELIKETHIS]
+>
 >[疑難排解清單檢視內嵌編輯的常見問題](http://help.salesforce.com/articleView?id=000003911&language=en_US&type=1){target="_blank"}

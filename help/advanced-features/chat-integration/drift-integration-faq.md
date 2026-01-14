@@ -1,15 +1,14 @@
 ---
-description: 漂移整合常見問題集 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的Drift整合常見問題集指南
 title: 漂移整合常見問題集
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # 漂移整合常見問題集 {#drift-integration-faq}
 
@@ -41,4 +40,4 @@ ht-degree: 0%
 
 如果已有活動規則可建立「漂流」聊天互動的接觸點，則必須將額外的邏輯新增至規則。 使用「任務建立日期」欄位新增邏輯，以防止建立重複的接觸點（IE CrmTask.CreatedDate小於啟用功能位元的日期）。 如需範例，請參閱下方的熒幕擷圖。
 
-![為Drift聊天接觸點設定的CRM活動規則範例](assets/activity-rule-drift.png)
+![](assets/chat-integration-1.png)

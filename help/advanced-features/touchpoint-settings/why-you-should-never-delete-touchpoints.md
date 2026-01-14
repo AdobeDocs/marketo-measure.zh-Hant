@@ -1,15 +1,14 @@
 ---
-description: 為什麼您絕不應該刪除接觸點 —  [!DNL Marketo Measure]
+description: 為何絕不應該刪除Marketo Measure使用者的接觸點指引
 title: 為何您絕不應該刪除接觸點
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
-
 
 # 為何您絕不應該刪除接觸點 {#why-you-should-never-delete-touchpoints}
 
@@ -19,6 +18,6 @@ ht-degree: 0%
 
 刪除接觸點時，會在歸因資料中建立一個洞。 通常，這會出現在機會上的歸因接觸點中。 在下圖中，原本會收到Opportunity Creation接觸的接觸點已刪除。 因此，此機會缺少OC接觸點，且此Opp的歸因百分比加總不會達到100%。
 
-![機會在刪除後遺失機會建立接觸點](assets/1.png)
+![](assets/touchpoint-settings-10.png)
 
 如果從SFDC中刪除了接觸點，請聯絡[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以請求重新匯入您的資料。

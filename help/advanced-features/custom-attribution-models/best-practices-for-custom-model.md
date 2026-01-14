@@ -1,15 +1,14 @@
 ---
-description: 自訂模型的最佳實務 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者自訂模型指引的最佳作法
 title: 自訂模型的最佳實務
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
-
 
 # 自訂模型的最佳實務 {#best-practices-for-custom-model}
 
@@ -24,6 +23,7 @@ ht-degree: 0%
 **自訂階段**&#x200B;可讓使用者定義與他們的業務和程式相關的funnel。 自訂階段應該在整個購買者的歷程中代表「里程碑」，非常類似於Stock歸因模型中的[!DNL Marketo Measure]里程碑（首次接觸、潛在客戶建立接觸、機會建立接觸和已關閉的已成交接觸）。 您的自訂階段必須正確定義並在帳戶內對應，以確保[!DNL Marketo Measure]可正確追蹤階段轉換。 這是為了識別哪些接觸點應該與每個階段相關聯，並適當地屬性化評分。 自訂階段對應基本上是標準「階段對應」的延伸，應遵循相同實務。
 
 >[!NOTE]
+>
 >如需詳細資訊，請參閱階段對應最佳實務資源
 
 **自訂歸因模型**&#x200B;定義於您選取自訂階段funnel之後。 然後，使用者就可以控制每個自訂階段以及[!DNL Marketo Measure]里程碑階段應該指派多少歸因評分。 使用者可以依其認為適當的方式指派評分給每個階段，或參考[!DNL Marketo Measure]機器學習模型（根據歷史資料當作「建議模型」）。
@@ -68,6 +68,7 @@ ht-degree: 0%
 * 檢視已填入與您的組織funnel無關的接觸點位置
 
 >[!MORELIKETHIS]
-> [自訂歸因模型與設定](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md)
-> [啟用自訂模型](/help/advanced-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md)的欄位記錄追蹤
-> [機器學習模型](/help/advanced-features/custom-attribution-models/machine-learning-model-faq.md)
+>
+>* [自訂歸因模型與設定](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md)
+>* [啟用自訂模型的欄位歷程記錄追蹤](/help/advanced-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md)
+>* [機器學習模型](/help/advanced-features/custom-attribution-models/machine-learning-model-faq.md)

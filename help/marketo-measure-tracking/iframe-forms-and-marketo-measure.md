@@ -1,15 +1,14 @@
 ---
-description: IFrame Forms和 [!DNL Marketo Measure] - [!DNL Marketo Measure]
+description: 適用於Marketo Measure使用者的IFrame Forms和 [!DNL Marketo Measure] 指南
 title: IFrame Forms和 [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # IFrame Forms和[!DNL Marketo Measure] {#iframe-forms-and-marketo-measure}
 
@@ -21,6 +20,6 @@ ht-degree: 0%
 
 建議將JavaScript放在IFrame標題內，我們就會從此自動附加至該框架內的表單。
 
-![HTML代碼](assets/1-1.png)
+![](assets/adding-pages-1.png)
 
 如果您對將我們的JavaScript新增到IFrame表單有任何疑問，請聯絡Adobe客戶團隊（您的客戶經理）或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。

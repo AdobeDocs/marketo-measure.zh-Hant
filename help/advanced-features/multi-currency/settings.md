@@ -1,15 +1,14 @@
 ---
-description: 設定 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的設定指南
 title: 設定
 exl-id: 704dc52d-fa21-4475-878b-073e2e65c566
 feature: Multi-Currency
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '129'
 ht-degree: 1%
 
 ---
-
 
 # 設定 {#settings}
 
@@ -21,4 +20,4 @@ ht-degree: 1%
 
 在[!UICONTROL User Settings]應用程式的[!DNL Marketo Measure]底下，我們將顯示公司貨幣和從CRM提取的任何支援貨幣。 因為這些值都是從CRM提取，所以這些欄位是唯讀的，無法變更。 儀表板貨幣是每次載入儀表板時的預設貨幣。 您可以視需要返回並變更貨幣。
 
-![貨幣](assets/one-1.png)
+![](assets/multi-currency-1.png)

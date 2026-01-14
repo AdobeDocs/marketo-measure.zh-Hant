@@ -1,15 +1,14 @@
 ---
-description: Dynamics的[!DNL Marketo Measure]收入工作流程 —  [!DNL Marketo Measure]
+description: 用於調整Marketo Measure報表之Dynamics收入和關閉日期欄位的工作流程
 title: Dynamics的[!DNL Marketo Measure]收入工作流程
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
-
 
 # Dynamics的[!DNL Marketo Measure]收入工作流程 {#marketo-measure-revenue-workflows-for-dynamics}
 
@@ -20,11 +19,13 @@ ht-degree: 0%
 步驟1：在Dynamics中建立自訂機會金額欄位
 
 >[!NOTE]
+>
 >所有Dynamics收入欄位都有基本欄位和一般欄位。 忽略基本欄位。
 
 步驟2：建立工作流程，以更新在步驟1建立的自訂機會金額欄位和[!DNL Marketo Measure]機會金額欄位。
 
 >[!NOTE]
+>
 >我們無法指向使用Dynamics帳戶探索中的[!DNL Marketo Measure]機會金額(bizible2_bizible_opportunity_amount)欄位。 Dynamics客戶必須建立自訂機會金額欄位，[!DNL Marketo Measure]才能指向Discover。 完成之後，客戶必須建立工作流程，以更新&#x200B;**兩個** [!DNL Marketo Measure]機會金額(bizible2_bizible_opportunity_amount) **和**&#x200B;自訂機會金額欄位。 [!DNL Marketo Measure]機會金額欄位隨附在套件中，但必須建立自訂欄位。
 
 金額工作流程指示：
@@ -65,6 +66,8 @@ ht-degree: 0%
 1. 檢查匯入檔案是否失敗。
 
 >[!NOTE]
+>
 >本檔案概述的工作流程只是更新欄位的一種方式，這樣[!DNL Marketo Measure]就能在Discover中顯示正確的資料。 如果您有其他方法完成相同的工作，您可以繼續進行。 基本上，我們需要的是某種工作流程，能達成下列目標：
+>
 > * 如果Opp =開啟，請分別更新自訂結案日期欄位、自訂opp金額欄位和[!DNL Marketo Measure]個opp金額欄位以等於「預估結案日期」和「預估收入」。
 > * 如果Opp = Closed Won，請將自訂結案日期欄位、自訂結案金額欄位及[!DNL Marketo Measure] Opp金額欄位分別更新為等於Actual Close Date與Actual Revenue。

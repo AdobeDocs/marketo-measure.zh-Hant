@@ -1,15 +1,14 @@
 ---
-description: 使用自訂收入金額的最佳實務 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者使用自訂收入金額指引的最佳實務
 title: 使用自訂收入金額的最佳實務
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
-
 
 # 使用自訂收入金額的最佳實務 {#best-practices-for-utilizing-a-custom-revenue-amount}
 
@@ -50,7 +49,8 @@ ht-degree: 0%
 * 組織變更收入報告方式
 
 >[!MORELIKETHIS]
-> [使用自訂收入金額欄位](/help/advanced-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
-> [使用資料載入器更新自訂金額欄位](/help/advanced-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
-> [多貨幣](/help/advanced-features/multi-currency/overview.md)的總覽
-> [多貨幣設定](/help/advanced-features/multi-currency/settings.md)
+>
+>* [使用自訂收入金額欄位](/help/advanced-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
+>* [使用資料載入器更新自訂金額欄位](/help/advanced-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
+>* [多幣別總覽](/help/advanced-features/multi-currency/overview.md)
+>* [多重貨幣設定](/help/advanced-features/multi-currency/settings.md)

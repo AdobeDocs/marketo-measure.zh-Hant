@@ -1,15 +1,14 @@
 ---
-description: 購買者接觸點和購買者歸因接觸點之間的差異 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者之購買者接觸點和購買者歸因接觸點指引之間的差異
 title: 購買者接觸點和購買者歸因接觸點之間的差異
 exl-id: 19109271-7b59-44c0-b1ff-e3b0bba9f5ce
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
-
 
 # 購買者接觸點和購買者歸因接觸點之間的差異 {#difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints}
 
@@ -21,31 +20,31 @@ ht-degree: 0%
 
 BT與BAT的差異：
 
-<table>
- <colgroup>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <td>Buyer Touchpoint (BT)</td>
-   <td>Buyer Attribution Touchpoint (BAT)</td>
-  </tr>
-  <tr>
-   <td>
-    <ul>
-     <li>與Lead、Contact和Case物件相關</li>
-     <li>與機會物件無關</li>
-     <li>收入與Buyer Touchpoint沒有關聯</li>
-    </ul></td>
-   <td>
-    <ul>
-     <li>與連絡人、帳戶和機會物件相關</li>
-     <li>與Lead物件無關</li>
-     <li>由於Buyer Attribution Touchpoint與Opportunity相關聯，因此所有BAT都有與其相關聯的收入</li>
-    </ul></td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <td>Buyer Touchpoint (BT)</td> 
+   <td>Buyer Attribution Touchpoint (BAT)</td> 
+  </tr> 
+  <tr> 
+   <td> 
+    <ul> 
+     <li>與Lead、Contact和Case物件相關</li> 
+     <li>與機會物件無關</li> 
+     <li>收入與Buyer Touchpoint沒有關聯</li> 
+    </ul></td> 
+   <td> 
+    <ul> 
+     <li>與連絡人、帳戶和機會物件相關</li> 
+     <li>與Lead物件無關</li> 
+     <li>由於Buyer Attribution Touchpoint與Opportunity相關聯，因此所有BAT都有與其相關聯的收入</li> 
+    </ul></td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## 常見問題 {#faq}
@@ -66,10 +65,10 @@ Buyer Touchpoint的接觸點位置只有首次接觸(FT)、銷售機會建立(LC
 
 以下是[!DNL Salesforce]中BT的熒幕擷圖：
 
-![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-1.png){width="600" zoomable="yes"}
+![](assets/adobe-setup-1.png)
 
 **Buyer Attribution Touchpoint在Salesforce中看起來像什麼？**
 
 以下是[!DNL Salesforce]中BAT的熒幕擷圖：
 
-![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-2.png){width="600" zoomable="yes"}
+![](assets/adobe-setup-2.png)

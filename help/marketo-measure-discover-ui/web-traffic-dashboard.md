@@ -1,15 +1,15 @@
 ---
-description: 網站流量儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 說明一段時間內造訪訪訪客頁面檢視表單與管道效能的網站流量儀表板
 title: 網站流量儀表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
-
 
 # 網站流量儀表板 {#web-traffic-dashboard}
 
@@ -25,36 +25,14 @@ ht-degree: 2%
 
 **KPI圖磚**
 
-<table>
-<thead>
-  <tr>
-    <td>造訪</td>
-    <td>從外部頁面（包含已知和匿名使用者）開始的總網站造訪（工作階段）。</td>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>訪客</td>
-    <td>不重複訪客的總數。</td>
-  </tr>
-  <tr>
-    <td>頁面檢視</td>
-    <td>跨網站頁面的檢視總數。</td>
-  </tr>
-  <tr>
-    <td>表單</td>
-    <td>提交表單的總數，包括LinkedIn Lead Gen Forms。</td>
-  </tr>
-  <tr>
-    <td>來自Forms的不重複電子郵件</td>
-    <td>來自表單提交的不重複電子郵件總數。</td>
-  </tr>
-  <tr>
-    <td>從Forms建立的銷售機會</td>
-    <td>根據表單提交內容建立的新潛在客戶總數。</td>
-  </tr>
-</tbody>
-</table>
+| KPI | 定義 |
+| --- | --- |
+| 造訪 | 從外部頁面（包含已知和匿名使用者）開始的總網站造訪（工作階段）。 |
+| 訪客 | 不重複訪客的總數。 |
+| 頁面檢視 | 跨網站頁面的檢視總數。 |
+| 表單 | 提交表單的總數，包括LinkedIn Lead Gen Forms。 |
+| 來自Forms的不重複電子郵件 | 來自表單提交的不重複電子郵件總數。 |
+| 從Forms建立的銷售機會 | 根據表單提交內容建立的新潛在客戶總數。 |
 
 ## 一段時間的網站流量 {#web-traffic-over-time}
 
@@ -68,7 +46,7 @@ ht-degree: 2%
 * 在顯示的時間範圍內，瀏覽總數的趨勢與不重複訪客和表單提交相比如何？
 * 網站在哪個時段內檢視的不重複訪客相對瀏覽總數和表單提交總數而言是最高的？
 
-![造訪、訪客和表單提交之一段時間內的網路流量](assets/web-traffic-dashboard-1.png)
+![](assets/web-dashboard-1.png)
 
 ## 網站流量摘要表格 {#web-traffic-summary-table}
 
@@ -85,7 +63,7 @@ ht-degree: 2%
 * 來自表單的不重複電子郵件
 * 從表單建立銷售機會
 
-依頁面標題和URL的![網頁流量摘要表格](assets/web-traffic-dashboard-2.png)
+![](assets/web-dashboard-2.png)
 
 ## 反向連結表格 {#referrer-table}
 
@@ -97,7 +75,7 @@ ht-degree: 2%
 * 造訪
 * 不重複訪客
 
-![顯示造訪和不重複訪客的反向連結表格](assets/web-traffic-dashboard-3.png)
+![](assets/web-dashboard-3.png)
 
 ## 依據管道的造訪/訪客 {#visits-visitors-by-channel}
 
@@ -111,7 +89,7 @@ ht-degree: 2%
 * 哪個管道/子管道/促銷活動吸引的造訪或不重複訪客數量最高？
 * 特定管道/子管道/促銷活動中的不重複訪客數與造訪總數相比如何？
 
-![依據管道長條圖的造訪和不重複訪客](assets/web-traffic-dashboard-4.png)
+![](assets/web-dashboard-4.png)
 
 ## 篩選窗格 {#filter-pane}
 

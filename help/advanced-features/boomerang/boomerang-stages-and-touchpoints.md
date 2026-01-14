@@ -1,19 +1,19 @@
 ---
-description: Boomerang階段和接觸點 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的Boomerang階段與接觸點指引
 title: 回味郎舞台和接觸點
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-
 # 回味郎舞台和接觸點 {#boomerang-stages-and-touchpoints}
 
 >[!AVAILABILITY]
+>
 >Boomerang功能僅針對2級和3級客戶啟用。 若要請求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
 
 [!DNL Marketo Measure]已發行Boomerang Stage功能！ 建立「迴旋舞台」功能是為了讓[!DNL Marketo Measure]個銷售週期長的客戶更清楚地瞭解客戶的歷程。 此功能可讓行銷人員為Opportunity歷程中發生的所有階段轉變建立接觸點（例如當聯絡MQL時），然後移至SAL，再移回MQL階段。 當連絡人「重新進入MQL階段」或「重新進入MQL的階段」時，MQL會被視為回圈階段。 「迴旋移動階段」功能可與[!DNL Marketo Measure]自訂階段搭配使用。
@@ -26,13 +26,14 @@ ht-degree: 0%
 * 如果您是「自訂模型」使用者，便能決定歸因加權和要分配至每個階段的評分百分比(例如： 將歸因權重指定給第一個或最後一個MQL發生次數，或在所有發生次數之間平均分配歸因權重)
 
 >[!NOTE]
+>
 >[如何設定Boomerang階段的相關說明](/help/advanced-features/boomerang/setting-up-boomerang-stages.md)。
 
 ## Boomerang階段和接觸點在您的CRM中看起來是什麼樣子 {#what-boomerang-stages-and-touchpoints-look-like-in-your-crm}
 
 如果沒有Boomerang階段（「之前」），您只會看到與Lead/Contact記錄相關聯的最新MQL或最新SQL接觸點。
 
-![機會記錄只顯示沒有迴旋曲調的最新階段接觸點](assets/1.png)
+![](assets/boomerang-boomerang-18.png)
 
 使用Boomerang階段和接觸點，您會看到每個階段轉換中發生的接觸點。 這些迴旋接觸點的命名慣例如下：
 
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 以下列範例為例，此[!DNL Marketo Measure]帳戶已將MQL和SQL納入boomerang階段，並已選擇每個階段顯示2個boomerang接觸點。
 
-![針對多個MQL和SQL階段轉換列出的Boomerang接觸點](assets/2.png)
+![](assets/boomerang-boomerang-19.png)
 
 **MQL-01**&#x200B;是第一個MQL階段轉換。
 

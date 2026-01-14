@@ -1,15 +1,14 @@
 ---
-description: 安全性工作階段限制 — 允許清單的IP位址
+description: 列出Salesforce IP範圍以允許清單，以便在執行工作階段限制時Marketo Measure可以連線
 title: 安全性工作階段限制 — 允許清單的IP位址
 exl-id: aaf5190f-893c-4872-8d03-93f516e70a59
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
-
 
 # 安全性工作階段限制：允許清單的IP位址 {#security-session-restrictions-ip-addresses-to-allowlist}
 
@@ -21,4 +20,4 @@ ht-degree: 0%
 
 若要將[!DNL Marketo Measure]個IP新增至Salesforce中的受信任IP範圍，請按一下&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Administration Setup]** > **[!UICONTROL Security Controls]** > **[!UICONTROL Network Access]** > **[!UICONTROL New]**。
 
-新增信任IP範圍的![Salesforce網路存取頁面](assets/1.png)
+![](assets/compliance-resources-1.png)

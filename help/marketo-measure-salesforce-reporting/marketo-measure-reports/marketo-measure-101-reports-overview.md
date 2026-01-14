@@ -3,22 +3,22 @@ description: '[!DNL Marketo Measure] 101報表總覽 —  [!DNL Marketo Measure]
 title: '[!DNL Marketo Measure] 101報表總覽'
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
-
 # [!DNL Marketo Measure] 101報表總覽 {#marketo-measure-101-reports-overview}
 
 >[!NOTE]
+>
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
 所有使用[!DNL Marketo Measure]和[!DNL Marketo Measure]的[!DNL Salesforce]客戶都可以存取其SFDC執行個體中的「購買者接觸點報告」資料夾。 此資料夾包含許多預先建立的報告，可幫助您開始使用Buyer Touchpoint資料製作報告。
 
-![Marketo Measure 101](assets/bizible-101-reports-overview-1.png)中的Salesforce購買者接觸點報告資料夾
+![](assets/bizible-guide-1.png)
 
 雖然這些報表中有許多已建立特定的報告目標，但共有六個&quot;_[!DNL Marketo Measure]101..._&quot;由三種主要報告型別代表，涵蓋大部分的報告需求。
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 * [!DNL Marketo Measure]個人具有購買者接觸點
 * 具有機會的購買者歸因接觸點
 
-![Salesforce中的Marketo Measure 101報告清單範例](assets/bizible-101-reports-overview-2.png)
+![](assets/bizible-guide-2.png)
 
 這些報告為您提供您想要建立的任何[!DNL Marketo Measure]相關報告所需的基本欄位和基礎結構。 我們鼓勵所有客戶（新老客戶）在探索行銷歸因問題時，從這些報表開始。 在下方，您將會找到六個「_[!DNL Marketo Measure]101..._」報告的說明。
 

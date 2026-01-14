@@ -1,15 +1,14 @@
 ---
-description: 正在新增 [!DNL Marketo Measure] 指令碼至Sitecore頁面 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者新增 [!DNL Marketo Measure] Script至Sitecore頁面指南
 title: 正在新增 [!DNL Marketo Measure] 指令碼至Sitecore頁面
 exl-id: 87ce1857-7532-45a7-8c39-255c6118b50a
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
-
 
 # 正在新增[!DNL Marketo Measure]指令碼至Sitecore頁面 {#adding-marketo-measure-script-to-sitecore-pages}
 

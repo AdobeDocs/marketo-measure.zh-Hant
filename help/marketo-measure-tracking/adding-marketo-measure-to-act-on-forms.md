@@ -1,15 +1,14 @@
 ---
-description: 正在新增 [!DNL Marketo Measure] 至實際執行Forms - [!DNL Marketo Measure]
+description: 新增 [!DNL Marketo Measure] 至Marketo Measure使用者的實際Forms指引
 title: 正在新增 [!DNL Marketo Measure] 至實際執行Forms
 exl-id: 3d246e6a-ad3b-4683-b2b7-ab3f0f4c5ab2
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
-
 
 # 正在新增[!DNL Marketo Measure]至Act-On Forms {#adding-marketo-measure-to-act-on-forms}
 
@@ -23,5 +22,7 @@ ht-degree: 0%
 `script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
 >[!NOTE]
+>
 >此區域可能已有其他追蹤程式碼片段，例如[!DNL Google Analytics]程式碼。 請務必使用分號`;`和單一空格來分隔，如下所示：
->`<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>*; **<script async="true" type="someothercode" src="someotherfile.js" ></script>`
+>
+>`<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>**; **<script async="true" type="someothercode" src="someotherfile.js" ></script>`

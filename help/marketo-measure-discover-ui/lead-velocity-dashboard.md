@@ -1,15 +1,14 @@
 ---
-description: 銷售機會Velocity儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 使用「銷售機會速度」儀表板來測量每個funnel階段中的時間，並比較一段時間內每個管道的進度
 title: 銷售機會速度控制面板
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
-
 
 # 銷售機會速度控制面板 {#lead-velocity-dashboard}
 
@@ -33,7 +32,7 @@ Velocity儀表板可動態檢視潛在客戶在銷售funnel中的移動速度，
 * 潛在客戶/聯絡人的時間通常在哪個銷售階段最長？
 * 「首次接觸」階段與「MQL」階段相比如何？
 
-![銷售階段長條圖的銷售機會或聯絡速度](assets/lead-velocity-dashboard-1.png)
+![](assets/lead-dashboard-1.png)
 
 ### 一段時間的銷售機會/聯絡速度 {#lead-contact-velocity-over-time}
 
@@ -47,7 +46,7 @@ Velocity儀表板可動態檢視潛在客戶在銷售funnel中的移動速度，
 * 在觀察的月份中，潛在客戶/聯絡人的每個階段逗留時間有何趨勢？
 * 潛在客戶/聯絡人在哪個月的銷售階段進展最快？
 
-![潛在客戶速度趨勢與時間線圖](assets/lead-velocity-dashboard-2.png)
+![](assets/lead-dashboard-2.png)
 
 ### 各管道的銷售機會/聯絡速度 {#lead-contact-velocity-by-channel}
 
@@ -60,7 +59,7 @@ Velocity儀表板可動態檢視潛在客戶在銷售funnel中的移動速度，
 * 哪個管道會顯示在funnel階段中最快速的銷售機會進度？
 * 「MQL」階段中的潛在客戶速度如何因不同管道而異？
 
-![依據管道比較圖表的潛在客戶速度](assets/lead-velocity-dashboard-3.png)
+![](assets/lead-dashboard-3.png)
 
 ## 篩選窗格 {#filter-pane}
 

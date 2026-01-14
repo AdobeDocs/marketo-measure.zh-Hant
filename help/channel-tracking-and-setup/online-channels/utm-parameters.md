@@ -1,15 +1,15 @@
 ---
-description: UTM引數 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的UTM引數指南
 title: UTM引數
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
-
 
 # UTM引數 {#utm-parameters}
 
@@ -74,7 +74,7 @@ UTM引數可以手動新增至URL，或透過特定平台（例如AdWords ）的
 
 以下是UTM引數[!DNL Marketo Measure]剖析與其繫結的對應接觸點欄點陣圖表：
 
-| UTM引數 | 對應的[!DNL Marketo Measure]欄位 |
+| **UTM引數** | **對應的[!DNL Marketo Measure]欄位** |
 |---|---|
 | utm_medium | 媒體 |
 | utm_source | 接觸點Source |

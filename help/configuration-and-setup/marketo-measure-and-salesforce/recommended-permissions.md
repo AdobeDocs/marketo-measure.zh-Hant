@@ -1,15 +1,14 @@
 ---
-description: 為 [!DNL Salesforce] 連線的使用者 —  [!DNL Marketo Measure] 建議的 [!DNL Marketo Measure]許可權
+description: Marketo Measure使用者 [!DNL Salesforce] 連線使用者指南的建議 [!DNL Marketo Measure] 許可權
 title: 為 [!DNL Salesforce] 連線使用者建議的 [!DNL Marketo Measure] 許可權
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # 為[!DNL Salesforce]個連線使用者建議的[!DNL Marketo Measure]許可權 {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
 

@@ -1,15 +1,15 @@
 ---
-description: 正在透過 [!DNL Marketo Measure] - [!DNL Google Tag Manager] 新增 [!DNL Marketo Measure]指令碼
+description: 正在透過 [!DNL Marketo Measure] 指南為Marketo Measure使用者新增 [!DNL Google Tag Manager] 指令碼
 title: 正在透過 [!DNL Marketo Measure] 新增 [!DNL Google Tag Manager]指令碼
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # 透過[!DNL Marketo Measure]新增[!DNL Google Tag Manager]指令碼 {#adding-marketo-measure-script-via-google-tag-manager}
 
@@ -18,6 +18,7 @@ ht-degree: 0%
 如果您決定透過GTM新增指令碼，請將[!DNL Marketo Measure]指令碼設為觸發順序中的最高優先順序，並確保[!DNL Marketo Measure]標籤前面沒有同步指令碼，以減少GTM延遲的影響。
 
 >[!NOTE]
+>
 >使用此[Google的支援文章](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}瞭解更多資訊。
 
 ## 如何透過[!DNL Marketo Measure]新增[!DNL Google Tag Manager] JS {#how-to-add-marketo-measure-js-via-google-tag-manager}

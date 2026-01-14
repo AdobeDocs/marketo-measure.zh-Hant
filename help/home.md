@@ -2,13 +2,12 @@
 description: 搜尋Adobe Marketo Measure的產品檔案和自助文章。
 title: Marketo Measure產品檔案
 exl-id: cc5d46e6-9dc6-493d-a6c4-13c5fe371b9a
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 2%
 
 ---
-
 
 # Marketo Measure說明檔案
 
@@ -18,13 +17,13 @@ Marketo Measure （前身為Bizible）將行為和廣告資料與銷售成果和
 
 ## 快速入門
 
-* [行銷歸因](/help/marketing-attribution.md)
+* [行銷歸因](/help/introduction/marketing-attribution.md)
 
-* [Marketo Measure歸因模型](/help/attribution-models.md)
+* [Marketo Measure歸因模型](/help/introduction/attribution-models.md)
 
-* [Marketo Measure框架](/help/marketo-measure-framework.md)
+* [Marketo Measure框架](/help/introduction/marketo-measure-framework.md)
 
-* [Marketo Measure欄位字彙表](/help/glossary.md)
+* [Marketo Measure欄位字彙表](/help/introduction/glossary.md)
 
 ## 受歡迎的文章
 

@@ -1,21 +1,21 @@
 ---
-description: 同步處理歷史資料 —  [!DNL Marketo Measure]
+description: 同步Marketo Measure使用者的歷史資料指引
 title: 同步歷史資料
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
-
 
 # 同步歷史資料 {#syncing-historical-data}
 
 [!DNL Marketo Measure]是提供最精細、可操作資料的解決方案。 不過，我們瞭解您可能有想要歸因的現有資料。 您可以產生歷史資料的接觸點，但在進行此程式前務必要考量數個因素。
 
 >[!NOTE]
+>
 >本文會介紹過時的程式。 我們鼓勵使用者使用[新的、改良的應用程式內程式](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 ## 要考量的因素 {#factors-to-consider}
@@ -50,11 +50,12 @@ b.將成員新增至促銷活動或標示為已回應的日期將用於接觸點
 
 若要同步處理線上歷史資料，您必須將資料整理到Salesforce Campaigns中，然後透過[!DNL Marketo Measure]應用程式中的[!DNL Salesforce] Campaign同步處理規則同步處理至[!DNL Marketo Measure]。 請務必確認，在您的JavaScript上線日期後，接觸點不會從這些行銷活動產生。 這是為了避免重複的接觸點。 JavaScript上線後，系統會自動追蹤線上工作，所以我們不想透過SFDC促銷活動追蹤他們。 若要避免此問題，請務必在規則中新增時間感。 「行銷活動會員建立日期小於[JavaScript上線日期]」之類的訊息。
 
-歷史資料的![Salesforce促銷活動同步規則範例](assets/syncing-historical-data-1.png)
+![](assets/dynamics-lists-1.png)
 
 線上歷史資料的管道對應元件可能會有點棘手。 我們希望它儘可能符合您目前的線上管道規則（來自線上規則表），以實現乾淨的報告。 以下是理想管道對應的範例。
 
 >[!NOTE]
+>
 >此管道對應已在[!UICONTROL Offline Channels]應用程式的[!DNL Marketo Measure]區段中完成，因為我們使用SFDC行銷活動。
 
 | Salesforce行銷活動型別 | 管道 | 子管道 |
@@ -89,13 +90,14 @@ b.將成員新增至促銷活動或標示為已回應的日期將用於接觸點
 
 如果資料存放於其他地方（例如仍留在Marketing Automation中），則需要將其推送至[!DNL Dynamics]，並組織至適當的行銷活動中。 之後，您需要說明接觸點日期，因為您想要它反映的是過去的日期，而不是您推送到[!DNL Dynamics]的日期。 若要覆寫此日期，您可以使用自訂「Buyer Touchpoint日期」欄位來變更日期。 您需要將此專案新增至行銷清單表單。
 
-![使用Buyer Touchpoint日期欄位設定Dynamics行銷清單](assets/syncing-historical-data-2.png)
+![](assets/dynamics-lists-10.png)
 
 因此，您可以為該行銷清單中的所有人整批設定用於接觸點日期的日期。 若要取得更準確的歷史日期，請為相同行銷活動建立多個行銷清單，每個清單都具有自己的接觸點日期。 如果行銷活動具有較短的時間範圍，或許每天建立行銷清單是值得的。 如果行銷活動具有較長的時間範圍，則每週建立行銷清單可能會有意義。
 
 如需同步行銷清單的詳細資訊，請前往： [[!DNL Dynamics] 行銷活動和行銷清單](/help/channel-tracking-and-setup/offline-channels/legacy-processes/dynamics-campaigns-and-marketing-lists.md)
 
 >[!NOTE]
+>
 >如果您有任何原因導致行銷活動追蹤的線上活動在JavaScript上線日期之後啟用，請務必將&quot;[!UICONTROL Touchpoint End Date]&quot;欄位設定為JS上線的日期。 這是為了避免相同互動出現重複的接觸點。
 
 考量事項：以這種方式新增的線上資料，其精細度原本會低於透過JavaScript進行的線上資料[!DNL Marketo Measure]追蹤。 例如，將不會填入表單URL、登陸頁面、反向連結頁面等欄位。 因此，建議儘可能將行銷活動拆分成每個來源。 以下是理想對應的範例。

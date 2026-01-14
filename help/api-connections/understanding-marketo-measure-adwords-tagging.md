@@ -1,15 +1,14 @@
 ---
-description: 瞭解 [!DNL Marketo Measure] AdWords標籤 —  [!DNL Marketo Measure]
+description: 瞭解適用於Marketo Measure使用者的 [!DNL Marketo Measure] AdWords標籤指南
 title: 瞭解 [!DNL Marketo Measure] AdWords標籤
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
-
 
 # 瞭解[!DNL Marketo Measure]個AdWords標籤 {#understanding-marketo-measure-adwords-tagging}
 
@@ -61,11 +60,11 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL All campaigns]**，然後在展開視窗中按一下&#x200B;**[!UICONTROL Settings]**。
 
-   ![Google AdWords導覽顯示具有設定選項的所有行銷活動功能表](assets/1.png)
+   ![](assets/utilizing-connections-13.png)
 
 1. 按一下頂端的&#x200B;**[!UICONTROL Account Settings]**，然後按&#x200B;**[!UICONTROL Tracking Template]**。 輸入[!DNL Marketo Measure]追蹤範本。
 
-   用於輸入Marketo Measure引數的![帳戶設定頁面（包含追蹤範本欄位）](assets/2-1.png)
+   ![](assets/bizible-guide-1.png)
 
 1. 按一下「**[!UICONTROL Save]**」。
 
@@ -73,11 +72,11 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL All campaigns]**，然後在展開視窗中按一下&#x200B;**[!UICONTROL Campaigns]**。
 
-   ![Google AdWords導覽顯示所有行銷活動功能表與行銷活動選項](assets/3.png)
+   ![](assets/utilizing-connections-12.png)
 
 1. 選取所有適用的行銷活動或&#x200B;**[!UICONTROL Select All]**，按一下&#x200B;**[!UICONTROL Edit]**，然後按一下&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
-   ![具有[編輯]功能表的行銷活動選擇頁面，其中顯示[變更追蹤範本]選項](assets/4-1.png)
+   ![](assets/five-five-1.png)
 
 1. 輸入[!DNL Marketo Measure]追蹤範本並按一下&#x200B;**[!UICONTROL Apply]**。
 
@@ -85,13 +84,13 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL All campaigns]**，然後在展開視窗中按一下&#x200B;**[!UICONTROL Ad Groups]**。
 
-   ![Google AdWords導覽顯示「所有行銷活動」功能表與「廣告群組」選項](assets/5-1.png)
+   ![](assets/four-four-1.png)
 
 1. 選取所有適用的廣告群組或選取全部，按一下&#x200B;**[!UICONTROL Edit]**，然後按一下&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
 1. 輸入[!DNL Marketo Measure]追蹤範本並按一下&#x200B;**[!UICONTROL Apply]**。
 
-   ![廣告群組選擇頁面，其中的[編輯]功能表顯示[變更追蹤範本]選項和[套用]按鈕](assets/6-1.png)
+   ![](assets/one-one-1.png)
 
 ## 常見問題 {#faq}
 
@@ -112,6 +111,7 @@ ht-degree: 0%
 答：我們無法擷取動態搜尋廣告的個別創意細節，但如果已啟用自動標籤，我們仍可取得創意ID和屬性收入。
 
 >[!NOTE]
+>
 >完成變更後，就表示您已完成。 如果在設定期間有任何問題，請隨時聯絡[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 [按一下這裡](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"}，取得Google建立帳戶層級追蹤範本的指示。

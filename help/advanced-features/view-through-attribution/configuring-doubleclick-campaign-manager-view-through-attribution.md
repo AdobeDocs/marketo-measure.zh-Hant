@@ -1,24 +1,25 @@
 ---
-description: 透過歸因設定Doubleclick Campaign Manager檢視 —  [!DNL Marketo Measure]
+description: 透過Marketo Measure使用者的歸因指南設定Doubleclick Campaign Manager檢視
 title: 透過歸因設定Doubleclick Campaign Manager檢視
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
-
 
 # 透過歸因設定Doubleclick Campaign Manager檢視 {#configuring-doubleclick-campaign-manager-view-through-attribution}
 
 ## 透過歸因測量檢視 {#measuring-view-through-attribution}
 
 >[!IMPORTANT]
+>
 >基於隱私權疑慮，第三方Cookie即將推出。 Google Chrome於2024年第3季度宣佈淘汰第三方Cookie，實際標誌著此追蹤形式的結束。 因此，Adobe將淘汰依賴第三方Cookie的Marketo Measure功能；特別是跨網域追蹤和瀏覽歸因，後者使用Google/DoubleClick曝光數Cookie。 Marketo Measure的其他功能將不會受到影響。 第一方Cookie使用量也不受影響。 根據Google排程，上述兩個功能的預計淘汰日期為2024年6月1日。 在此日期之前收集的相關資料仍可供Adobe客戶使用。
 
 >[!NOTE]
+>
 >如果您使用[!DNL Marketo Measure]和[!DNL DoubleClick Campaign Manager]整合，我們需要[API連線](/help/api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms)，這樣我們才能下載行銷活動的詳細資訊和創意來解析廣告。
 
 若要從檢視到使用[!DNL Doubleclick Campaign Manager]進行追蹤，開始獲得更精細的insight，需要設定我們的追蹤畫素。
@@ -47,7 +48,7 @@ ht-degree: 0%
    m = %m符合程式碼巨集\
    n = %n隨機數字巨集
 
-   ![DCM Floodlight標籤已設定Marketo Measure巨集](assets/1.png)
+   ![](assets/view-attribution-1.png)
 
 ## 常見問題 {#faq}
 

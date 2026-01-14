@@ -1,11 +1,11 @@
 ---
-description: 參與儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 探索Engagement儀表板，用於追蹤一段時間內使用者透過管道接觸的接觸點及參與度
 title: 參與儀表板
 feature: Reporting
 exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---

@@ -1,15 +1,15 @@
 ---
-description: Passport Dashboard - [!DNL Marketo Measure]  — 產品
+description: 說明Passport儀表板，其可追蹤潛在客戶聯絡人和商機如何隨著時間在階段中移動
 title: Passport儀表板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Passport儀表板 {#passport-dashboard}
 
@@ -31,7 +31,7 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 * 排除終端機階段，例如「已關閉的贏家」和「已關閉的輸家」。
 * 開始和結束日期皆包含。
 
-![Passport儀表板依階段名稱顯示階段中的機會](assets/passport-dashboard-1.png)
+![](assets/passport-dashboard-1.png)
 
 ### 依據階段名稱的階段中的潛在客戶或聯絡人 {#leads-or-contacts-in-stage-by-stage-name}
 
@@ -41,7 +41,7 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 * 排除終端機階段，例如「已關閉的贏家」和「已關閉的輸家」。
 * 開始和結束日期皆包含。
 
-![Passport儀表板顯示階段中依階段名稱的銷售機會或連絡人](assets/passport-dashboard-2.png)
+![](assets/passport-dashboard-2.png)
 
 ## 篩選窗格 {#filter-pane}
 
@@ -53,5 +53,6 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 * 區段
 
 >[!MORELIKETHIS]
-> [探索儀表板基本資訊](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [儀表板資料可見性原則](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [探索儀表板基本資訊](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [儀表板資料可見性原則](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}

@@ -3,13 +3,12 @@ description: '[!DNL Marketo Measure]深入分析說明 —  [!DNL Marketo Measur
 title: '[!DNL Marketo Measure]深入分析說明'
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Measure]深入分析說明 {#marketo-measure-insights-explained}
 
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 首先，您可在深入分析的中間部分中看到訪客在您網站上的工作階段數量。 您可以隨意捲動這些工作階段並導覽。
 
-![分析工作階段清單，顯示追蹤的工作階段數目](assets/1.png)
+![](assets/marketo-app-1.png)
 
 如果您按一下深入分析中上部的「全部」，您可以檢視所有工作階段的統計資料。 您可在此瞭解個別工作階段的日期、造成這些事件的頻道或來源，以及指定更多資訊的一組圖示。
 
@@ -27,15 +26,15 @@ ht-degree: 0%
 
 看起來像紙張的圖示表示頁面檢視發生在工作階段中。 每個工作階段都可能包含此圖示。
 
-![包含接觸點位置和管道詳細資訊的深入分析彙總檢視](assets/2.png)
+![](assets/marketo-app-2.png)
 
 看起來像燒杯的圖示表示已發生A/B測試實驗。 我們目前整合Optimizy和VWO。 透過這項整合，我們能夠推送使用者在其特定工作階段中看到的實驗與變數。
 
-![醒目提示A/B測試燒杯圖示的深入分析工作階段清單](assets/3.png)
+![](assets/marketo-app-3.png)
 
 如果按一下任何特定作業階段（按一下作業階段的實際日期或分組作業階段的中上部，即可執行此操作），您將能夠檢視作業階段詳細資訊。 在每個工作階段中，您可以看到使用者看見的所有特定頁面，依日期和時間排序。
 
-![顯示工作階段內頁面檢視的工作階段詳細資料面板](assets/4.png)
+![](assets/marketo-app-4.png)
 
 在每個工作階段的右側，您可以看到更多在SFDC中推送[!DNL Marketo Measure]欄位的精細行銷資料。 在此範例中，您可以看到廣告群組、廣告內容、促銷活動、關鍵字、Medium。 您也可以向下捲動，檢視我們提供的[!DNL Marketo Measure]資料。
 

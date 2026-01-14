@@ -1,15 +1,14 @@
 ---
-description: AJAX表單處理 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的AJAX表單處理指南
 title: AJAX表單處理
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
-
 
 # AJAX表單處理 {#ajax-form-handling}
 
@@ -23,22 +22,22 @@ ht-degree: 0%
 
 **以下是使用JQuery的程式碼範例（假設表單上的ID為「formId」）：**
 
-```jquery
+```javascript
 ///////////////////////////////////////////////////////////////////////  
 // Preamble for all API usage.  
 window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };  
-
+  
 // Give Marketo Measure the JQuery Selector for the form and we'll collect the data automatically.  
 Bizible.Push('Form',$('#*formId*'));
 ```
 
 **以下是未使用JQuery的程式碼範例（假設表單上的ID為「formId」）：**
 
-```jquery
+```javascript
 ///////////////////////////////////////////////////////////////////////  
 // Preamble for all API usage.  
 window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };  
-
+  
 // Give Marketo Measure the Form ID and we'll collect the data automatically.
 Bizible.Push('Form','MyFormID');
 ```
@@ -47,11 +46,11 @@ Bizible.Push('Form','MyFormID');
 
 如果轉換的潛在客戶的資訊是使用JavaScript或沒有html表單的簡單文字欄位收集而來，此解決方案即適合您。 以下共用是此情境使用的API：
 
-```jquery
+```javascript
 ///////////////////////////////////////////////////////////////////////  
 // Preamble for all API usage.  
 window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };  
-
+  
 // If your site is using Ajax, or you are running a secure site, it is best to send us the data directly.  
 Bizible.Push('User', {
 eMail: 'user@gmail.com' // required  

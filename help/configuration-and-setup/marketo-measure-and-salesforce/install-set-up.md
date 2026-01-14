@@ -1,21 +1,22 @@
 ---
-description: '[!DNL Marketo Measure] Salesforce封裝安裝及設定 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] [!DNL Salesforce] 封裝安裝及設定'
+description: Salesforce套件安裝與設定 —  [!DNL Marketo Measure]
+title: '[!DNL Salesforce]封裝安裝及設定'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Marketo Measure] Salesforce套件安裝與設定 {#marketo-measure-salesforce-package-installation-and-set-up}
+# Salesforce套件安裝{#marketo-measure-salesforce-package-installation}
 
 在安裝[!DNL Marketo Measure] [!DNL Salesforce]基本套件之前，您必須先判斷您是否先在[!DNL Salesforce]沙箱中安裝它，然後再移至您的Salesforce生產執行個體。
 
 >[!NOTE]
+>
 >一旦您的[!DNL Marketo Measure]帳戶連線至[!DNL Salesforce]生產執行個體後，您就無法回溯並連線至沙箱。 此外，[!DNL Marketo Measure]帳戶只能連線至一個[!DNL Salesforce]生產執行個體。
 
 [!DNL Marketo Measure]基底封裝包含：
@@ -36,15 +37,16 @@ ht-degree: 0%
 
 1. 為所有使用者選取&#x200B;**[!UICONTROL Install]**。
 
-   適用於Salesforce套件的![Marketo Measure AppExchange安裝對話方塊](assets/marketo-measure-salesforce-package-installation-and-set-up-1.png)
+   ![](assets/bizible-full-1.png)
 
 1. 安裝完成後，即可檢視。
 
-   在Salesforce中![已安裝Marketo Measure封裝詳細資訊頁面](assets/marketo-measure-salesforce-package-installation-and-set-up-2.png)
+   ![](assets/bizible-taxonomy-1.png)
 
 完成安裝之後，您可以視需要使用[[!DNL Salesforce] 欄位更新您的](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"}頁面配置[!DNL Marketo Measure]。
 
 >[!NOTE]
+>
 >瞭解已建立的[!DNL Marketo Measure]許可權集及[其使用方式](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md){target="_blank"}。
 
 ## 建立[!DNL Marketo Measure]設定檔和使用者 {#creating-a-marketo-measure-profile-and-user}
@@ -65,6 +67,7 @@ ht-degree: 0%
    * 這可讓[!DNL Marketo Measure]在銷售機會轉換為聯絡人後裝飾銷售機會。 如果未啟用此許可權集，可能會出現嚴重的資料追蹤差距。
 
 >[!NOTE]
+>
 >此設定檔可以是系統管理員設定檔的複製品。
 
 步驟2：建立專屬的[!DNL Marketo Measure]使用者，以便追蹤[!DNL Marketo Measure]對您的[!DNL Salesforce]執行個體的影響
@@ -88,5 +91,7 @@ ht-degree: 0%
 1. 按一下目前連線的[!DNL Salesforce]連線右側的鍵圖示，並選取&#x200B;**使用生產重新授權**。 使用新的使用者憑證再次登入（如果出現提示）。
 
 >[!MORELIKETHIS]
-> [整合許可權總覽](/help/api-connections/integration-permissions-overview.md){target="_blank"}
-> [Adobe Admin Console設定](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}
+>
+>* [整合許可權總覽](/help/api-connections/integration-permissions-overview.md){target="_blank"}
+>
+>* [Adobe Admin Console安裝程式](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}

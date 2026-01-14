@@ -1,22 +1,23 @@
 ---
-description: 正在新增 [!DNL Marketo Measure] 指令碼 —  [!DNL Marketo Measure]
+description: 正在新增Marketo Measure使用者的 [!DNL Marketo Measure] 指令碼指南
 title: 正在新增 [!DNL Marketo Measure] 指令碼
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
 
 # 正在新增[!DNL Marketo Measure]指令碼 {#adding-marketo-measure-script}
 
 您想要由[!DNL Marketo Measure]追蹤的[!DNL Marketo Measure]個JavaScript應儘快新增至所有Web屬性。 部署JavaScript後，[!DNL Marketo Measure]就會開始收集您的數位資料。 本文概述部署[!DNL Marketo Measure] JavaScript的方法以及其他考量事項。
 
 >[!NOTE]
->除了部署[&#x200B; JavaScript之外，請確定您已 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}申請[!DNL Marketo Measure]中的所有適當網域。
+>
+>除了部署[ JavaScript之外，請確定您已 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}申請[!DNL Marketo Measure]中的所有適當網域。
 
 開始使用[!DNL Marketo Measure]時，有兩種方式可將[!DNL Marketo Measure] JavaScript新增至您的網站：
 
@@ -32,7 +33,8 @@ ht-degree: 0%
 將JavaScript以硬式編碼方式編碼至頁面的`<head>`，以確保先載入[!DNL Marketo Measure]指令碼，且不會遺漏轉介資訊。 [!DNL Marketo Measure] JavaScript以非同步方式載入。 如果是硬式編碼，則必須手動將JavaScript新增至行銷自動化。
 
 >[!TIP]
->瞭解如何確定您的指令碼符合[GDPR](/help/security/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target="_blank"}。
+>
+>瞭解如何確認您的指令碼符合GDPR。
 
 ## Tag Management系統 {#tag-management-systems}
 
@@ -64,7 +66,7 @@ ht-degree: 0%
 
 如果在JavaScript設定期間觸發[!DNL Web Application Firewall (WAF)]警告，使用者可以停用該WAF規則或允許列出Cookie，如以下範例所示：
 
-![Marketo Measure指令碼的WAF警告提示範例](assets/adding-marketo-measure-script-1.png)
+![](assets/adding-script-1.png)
 
 ## Forms要特別注意 {#forms-to-pay-extra-attention-to}
 
@@ -79,6 +81,7 @@ ht-degree: 0%
 * 解決方案：將排除程式碼新增至帳戶/客戶/合作夥伴登入表單。
 
 >[!NOTE]
+>
 >我們建議您建立建立帳戶或試用版的接觸點。
 
 **下載資產**

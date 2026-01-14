@@ -1,15 +1,14 @@
 ---
-description: 活動歸因的最佳實務 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的活動歸因指引最佳實務
 title: 活動歸因的最佳實務
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # 活動歸因的最佳實務 {#best-practices-for-activities-attribution}
 
@@ -30,6 +29,7 @@ ht-degree: 0%
    * 如前所述，此功能的主要使用案例是建立追蹤銷售開發團隊功效的接觸點，尤其是「傳出電話」和「傳出電子郵件」
 
 >[!NOTE]
+>
 >**不**&#x200B;建議追蹤在建立Opportunity之後發生的銷售活動，因為追蹤銷售主管程式無法提供太多insight。 目標為追蹤銷售影響與行銷影響，主要是開發新的商機/管道開發
 
 * 請勿使用公式欄位來定義規則
@@ -51,5 +51,6 @@ ht-degree: 0%
 * 銷售啟用工具的變更或更新
 
 >[!MORELIKETHIS]
-> [活動歸因](/help/advanced-features/activities-attribution/salesforce-activities-attribution.md)
-> [銷售活動歸因常見問題集](/help/advanced-features/activities-attribution/activities-attribution-faq.md)
+>
+>* [活動歸因](/help/advanced-features/activities-attribution/salesforce-activities-attribution.md)
+>* [銷售活動歸因常見問題集](/help/advanced-features/activities-attribution/activities-attribution-faq.md)

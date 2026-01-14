@@ -1,23 +1,18 @@
 ---
-description: 活動歸因常見問題集 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的活動歸因常見問題集指南
 title: 活動歸因常見問題集
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
-
 # 活動歸因常見問題集 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活動會匯入您的所有活動記錄並為其產生接觸點，以允許這些活動接收歸因評分。 最常見的使用案例是追蹤銷售團隊的活動，因為這些活動通常會建立傳送給潛在客戶的電話或電子郵件記錄。 其他可以追蹤的獨特專案包括內容互動，例如資產下載或視訊檢視。
-
->[!AVAILABILITY]
->
->此功能僅對第2層客戶啟用。 若要請求更高的客戶層級，請聯絡Adobe客戶團隊（您的客戶經理）。
 
 **這跟離線行銷活動有何不同？**
 
@@ -41,7 +36,7 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 **已填入哪些其他接觸點欄位？**
 
-| 接觸點欄位 | 價值 |
+| **接觸點欄位** | **值** |
 |---|---|
 | 銷售機會/聯絡人 | 所有活動都與潛在客戶或聯絡人有關 |
 | 行銷活動 | Channel.Subchannel [[!DNL Marketo Measure]] |

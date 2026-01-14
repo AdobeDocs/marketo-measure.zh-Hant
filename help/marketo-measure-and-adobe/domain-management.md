@@ -1,15 +1,15 @@
 ---
-description: 網域管理 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的網域管理指引
 title: 網域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # 網域管理 {#domain-management}
 
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 有權存取Adobe Admin Console的IMS使用者可以新增及驗證他們擁有的網域。 網域驗證涉及為每個網域新增DNS記錄，然後允許Admin Console驗證該記錄。
 
-![Adobe Admin Console網域清單顯示驗證狀態](assets/domain-management-1.png)
+![](assets/domain-management-4.png)
 
-您可以在[Admin Console檔案](https://helpx.adobe.com/tw/enterprise/using/add-domains-directories.html)中找到新增網域的指示。 新增網域後，它必須是[連結到目錄](https://helpx.adobe.com/tw/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
+您可以在[Admin Console檔案](https://helpx.adobe.com/enterprise/using/add-domains-directories.html)中找到新增網域的指示。 新增網域後，它必須是[連結到目錄](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
 
 ## 在[!DNL Marketo Measure]中管理網域 {#managing-domains-in-marketo-measure}
 
 在Admin Console中新增網域後，[!DNL Marketo Measure]會定期將此記錄同步至資料庫。 此同步會在夜間進行，也可在使用者每次在&#x200B;**[!UICONTROL Domains]** UI中造訪[!DNL Marketo Measure]頁面時進行。 依預設，[!DNL Marketo Measure]匯入的任何記錄都會停用，租使用者必須手動啟用每個網域。
 
-![Marketo Measure網域頁面列出已啟用切換的已驗證網域](assets/domain-management-2.png)
+![](assets/domain-management-2.png)
 
 在「**[!UICONTROL Integration]** > **[!UICONTROL Domains]**」頁面上，使用者可以看到已在Admin Console中註冊的所有網域及其狀態。 每個網域都可以啟用或停用。 如果已啟用網域，[!DNL Marketo Measure]追蹤會收集在該網域上看到的任何流量。 如果網域已停用，[!DNL Marketo Measure]會忽略來自該網域的任何流量，而不會建立接觸點或其他資料。 [!DNL Marketo Measure]會確認網域已停用，並警告任何後果：
 
-在Marketo Measure中停用網域時![確認對話方塊](assets/domain-management-3.png)
+![](assets/domain-management-3.png)
 
 切換網域的影響是立即的，而且變更不會回溯。 將來，[!DNL Marketo Measure]會在設定的期間之後，從停用的網域中清除資料。
 

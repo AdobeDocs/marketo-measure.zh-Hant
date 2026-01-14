@@ -1,15 +1,14 @@
 ---
-description: 啟用許可權以編輯轉換的潛在客戶 —  [!DNL Marketo Measure]
+description: 啟用Marketo Measure使用者編輯已轉換潛在客戶指引的許可權
 title: 啟用許可權以編輯轉換的潛在客戶
 exl-id: 00f59d98-272e-47e8-bc20-9d805b1826be
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
-
 
 # 啟用許可權以編輯轉換的潛在客戶 {#enabling-the-permission-to-edit-converted-leads}
 
@@ -17,16 +16,16 @@ ht-degree: 0%
 
 1. 移至[!UICONTROL Setup]並展開[!UICONTROL Manage Users]群組以選取設定檔。
 
-   ![&#x200B; 2](assets/1-2.png)
+   ![](assets/additional-functionality-1.png)
 
 1. 選取我們所連線之使用者的設定檔。
 
 1. 搜尋許可權以檢視和編輯轉換的潛在客戶。
 
-   ![&#x200B; 1](assets/2-1.png)
+   ![](assets/additional-functionality-2.png)
 
 1. 核取方塊以啟用檢視和編輯轉換的潛在客戶的許可權。
 
-   ![&#x200B; 1](assets/3-1.png)
+   ![](assets/additional-functionality-3.png)
 
 而您已完成！

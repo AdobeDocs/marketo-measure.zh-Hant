@@ -1,19 +1,20 @@
 ---
-description: 建立自訂 [!DNL Marketo Measure] 報表型別
+description: 為Marketo Measure使用者建立自訂 [!DNL Marketo Measure] 報表型別指南
 title: 建立自訂 [!DNL Marketo Measure] 報表型別
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
 # 建立自訂[!DNL Marketo Measure]報表型別 {#creating-custom-marketo-measure-report-types}
 
 >[!NOTE]
+>
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;[!DNL Bizible]&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
 瞭解如何建立自訂[!DNL Marketo Measure] [!DNL Salesforce]報告型別。 我們建議建立三種不同的報表型別：具有購買者接觸點的銷售機會（自訂）、[!DNL Marketo Measure]具有購買者接觸點的人員（自訂）、具有Buyer Attribution Touchpoint的機會（自訂）。
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 1. 前往「**[!UICONTROL Setup]** > **[!UICONTROL Build]** > **[!UICONTROL Report Types]** > **[!UICONTROL New Custom Report Types]**」。
 
-   ![Salesforce設定功能表導覽至新自訂報表型別](assets/1.png)
+   ![](assets/new-types-1.png)
 
 1. 定義自訂報表型別。
 
@@ -31,7 +32,7 @@ ht-degree: 0%
    * [!UICONTROL Store in Category]：其他報告
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]：已部署
 
-   ![自訂報表型別定義表單，以Lead作為主要物件](assets/2.png)
+   ![](assets/new-types-10.jpg)
 
 1. 定義物件關係。
 
@@ -39,13 +40,13 @@ ht-degree: 0%
    * 確定已選取&quot;[!UICONTROL Each A/B record must have at least one B/C]&quot;記錄
    * [!UICONTROL Save]
 
-   ![物件關係圖顯示了Lead to Person to Touchpoint連線](assets/3.png)
+   ![](assets/new-types-11.png)
 
 ## [!DNL Marketo Measure]個人具有購買者接觸點（自訂） {#marketo-measure-person-with-buyer-touchpoints-custom}
 
 1. 前往「**[!UICONTROL Setup]** > **[!UICONTROL Build]** > **[!UICONTROL Report Types]** > **[!UICONTROL New Custom Report Types]**」。
 
-   ![Salesforce設定功能表導覽至新自訂報表型別](assets/4.png)
+   ![](assets/new-types-12.png)
 
 1. 定義自訂報表型別。
 
@@ -54,7 +55,7 @@ ht-degree: 0%
    * [!UICONTROL Store in Category]：其他報告
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]：已部署
 
-   ![以Marketo Measure人員為主要物件的自訂報表型別定義表單](assets/5.png)
+   ![](assets/new-types-13.jpg)
 
 1. 定義物件關係。
 
@@ -62,13 +63,13 @@ ht-degree: 0%
    * 確定已選取&quot;[!UICONTROL Each A record must have at least one B]&quot;記錄
    * [!UICONTROL Save]
 
-   ![物件關係圖表顯示個人與接觸點連線](assets/6.png)
+   ![](assets/new-types-9.png)
 
 ## Buyer Attribution Touchpoint商機（自訂） {#opportunities-with-buyer-attribution-touchpoint-custom}
 
 1. 前往「**[!UICONTROL Setup]** > **[!UICONTROL Build]** > **[!UICONTROL Report Types]** > **[!UICONTROL New Custom Report Types]**」。
 
-   ![Salesforce設定功能表導覽至新自訂報表型別](assets/7.png)
+   ![](assets/new-types-8.png)
 
 1. 定義自訂報表型別。
 
@@ -77,7 +78,7 @@ ht-degree: 0%
    * [!UICONTROL Store in Category]：其他報告
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]：已部署
 
-   ![自訂報表型別定義表單，以商機作為主要物件](assets/8.png)
+   ![](assets/new-types-14.jpg)
 
 1. 定義物件關係。
 
@@ -85,14 +86,14 @@ ht-degree: 0%
    * 確定已選取&quot;[!UICONTROL Each A record must have at least one B]&quot;記錄
    * [!UICONTROL Save]
 
-   ![物件關係圖表顯示歸因接觸點連線的機會](assets/9.png)
+   ![](assets/new-types-15.png)
 
 ## 新增自訂欄位至自訂報表型別 {#adding-custom-fields-to-custom-report-types}
 
 1. 建立報表後，您將被重新導向至報表型別的概觀。 按一下「**[!UICONTROL Edit Layout]**」。
 
-   ![報告型別概觀畫麵包含[編輯配置]按鈕](assets/10.png)
+   ![](assets/new-types-2.png)
 
 1. 確認您要新增至報表的自訂欄位會出現在欄位配置屬性區段中。 如果您想要新增任何其他欄位，請使用&quot;[!UICONTROL Add fields related via lookup]&quot;選項。
 
-   具有可用自訂欄位的![欄位配置屬性區段](assets/11.png)
+   ![](assets/new-types-3.png)

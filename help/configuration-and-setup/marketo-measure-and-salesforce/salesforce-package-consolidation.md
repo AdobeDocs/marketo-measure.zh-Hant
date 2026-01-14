@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Salesforce]封裝合併 —  [!DNL Marketo Measure]'
+description: '''[!DNL Salesforce]封裝合併 —  [!DNL Marketo Measure]'''
 title: '[!DNL Salesforce]封裝合併'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Salesforce]封裝合併 {#salesforce-package-consolidation}
 
@@ -42,13 +41,13 @@ ht-degree: 1%
       * V2_EXT查詢：
          * bizible2_ext__Ad_Content_FT__c包含外聯
 
-![使用V2_EXT廣告內容FT欄位的範例報告篩選器](assets/package-consolidation-1.png)
+![](assets/bizible-full-1.png)
 
 * 整合封裝中的對應查詢：
    * bizible2__Touchpoint_Position__c包含FT AND
    * bizible2__Ad_Content__c包含外聯
 
-使用合併接觸點欄位的![對等報告篩選器](assets/salesforce-package-consolidation-2.png)
+![](assets/bizible-taxonomy-1.png)
 
 ## 常見問題 {#faq}
 

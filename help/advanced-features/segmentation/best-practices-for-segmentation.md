@@ -1,15 +1,14 @@
 ---
-description: 細分的最佳實務 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者分段指引的最佳作法
 title: 細分的最佳實務
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
-
 
 # 細分的最佳實務 {#best-practices-for-segmentation}
 
@@ -49,4 +48,5 @@ ht-degree: 0%
 * 已建立區段的新增或變更
 
 >[!MORELIKETHIS]
+>
 >[如何設定自訂分段](/help/advanced-features/segmentation/custom-segmentation.md)

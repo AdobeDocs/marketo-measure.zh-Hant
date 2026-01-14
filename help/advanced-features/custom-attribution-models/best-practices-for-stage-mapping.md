@@ -1,15 +1,14 @@
 ---
-description: 階段對應的最佳實務 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者階段對應指引的最佳作法
 title: 階段對應的最佳實務
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
-
 
 # 階段對應的最佳實務 {#best-practices-for-stage-mapping}
 
@@ -52,4 +51,5 @@ ht-degree: 0%
 * 在您的[!DNL Marketo Measure]報表中看到不正確的收入資料
 
 >[!MORELIKETHIS]
->[&#x200B; Funnel階段和自訂模型階段之間的差異](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)
+>
+>[ Funnel階段和自訂模型階段之間的差異](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)

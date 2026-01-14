@@ -1,15 +1,15 @@
 ---
-description: 行銷管道成本
+description: Marketo Measure使用者的行銷管道成本指南
 title: 行銷管道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
-
 
 # 行銷管道成本 {#marketing-channel-costs}
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 
 前往&#x200B;**[!UICONTROL My Account]**&#x200B;功能表，按一下&#x200B;**[!UICONTROL Settings]**，然後導覽至&#x200B;**[!UICONTROL Marketing Spend]**&#x200B;區段下左側邊欄的&#x200B;**[!UICONTROL Reporting]**&#x200B;選項。
 
-在Marketo Measure中![行銷支出設定頁面](assets/1.png)
+![](assets/spend-management-4.png)
 
 **步驟2：下載目前的成本CSV**
 
 導覽至畫面右側，然後按一下&#x200B;**[!UICONTROL Download Current Costs]。**&#x200B;此選項可讓您下載CSV格式的試算表。
 
-在行銷支出頁面上![下載目前成本選項](assets/2.png)
+![](assets/spend-management-1.png)
 
 **步驟3：開啟CSV檔案並進行變更**
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 例如，若要將Facebook標示為子管道，將social標示為管道，則規則應如下所示：「Social.Facebook」。 同樣地，若要追蹤離線事件，管道語法應為：&quot;Events.Big Conference&quot;。 範例如下圖所示：
 
-![顯示頻道與子頻道成本專案的CSV範例](assets/3.png)
+![](assets/spend-management-2.png)
 
 _其他附註_：
 

@@ -1,15 +1,14 @@
 ---
-description: Salesforce沙箱移轉至生產環境 —  [!DNL Marketo Measure]
+description: Marketo Measure使用者的Salesforce沙箱至生產環境移轉指引
 title: Salesforce沙箱移轉至生產
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Salesforce沙箱移轉至生產 {#salesforce-sandbox-to-production-migration}
 
@@ -31,7 +30,7 @@ ht-degree: 0%
 * 按一下SFDC連線旁的垃圾桶圖示以刪除
 * 系統會提示您確認刪除。 請務必仔細閱讀提示，並瞭解刪除的後果
 
-  ![Marketo Measure連線頁面確認刪除Salesforce沙箱](assets/salesforce-sandbox-to-production-migration-1.png)
+  ![](assets/salesforce-migration-1.png)
 
    * 按照確認模式中的提示輸入企業的名稱，然後按一下「我瞭解後果，刪除此連線」
 * 這會觸發刪除程式，並需要一些時間才能完成

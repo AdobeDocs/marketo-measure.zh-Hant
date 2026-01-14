@@ -1,15 +1,15 @@
 ---
-description: 設定UTM引數的最佳實務 —  [!DNL Marketo Measure]
+description: 為Marketo Measure使用者設定UTM引數指引的最佳作法
 title: 設定UTM引數的最佳作法
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
-
 
 # 設定UTM引數的最佳作法 {#best-practices-for-setting-up-utm-parameters}
 

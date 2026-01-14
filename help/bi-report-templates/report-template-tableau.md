@@ -3,13 +3,12 @@ description: '[!DNL Marketo Measure]報告範本 — Tableau - [!DNL Marketo Mea
 title: '[!DNL Marketo Measure]報告範本 — Tableau'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Measure]報告範本 — Tableau {#marketo-measure-report-template-tableau}
 
@@ -21,17 +20,17 @@ ht-degree: 0%
 
 您需要將現有的連線資料更新為特定Snowflake連線資訊。 按一下「[!UICONTROL Edit Connection]」按鈕，並依照本檔案[[!UICONTROL Data Connection]](#data-connection)章節中概述的步驟操作。
 
-![顯示[編輯連線]按鈕的Tableau活頁簿](assets/marketo-measure-report-template-tableau-1.png)
+![](assets/marketo-tableau-7.png)
 
 ## 資料連線 {#data-connection}
 
-您需要設定與Snowflake執行個體的資料連線。 為此，您需要伺服器名稱以及您的使用者名稱和密碼。 如需尋找此資訊及重設密碼的詳細資訊，請參閱[此處](/help/data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
+您需要設定與Snowflake執行個體的資料連線。 為此，您需要伺服器名稱以及您的使用者名稱和密碼。 如需尋找此資訊及重設密碼的詳細資訊，請參閱[此處](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
 
-![使用伺服器和驗證欄位的Snowflake連線對話方塊](assets/marketo-measure-report-template-tableau-2.png)
+![](assets/marketo-tableau-5.png)
 
 您還需要輸入初始SQL命令。 這支援在此資料模型中使用自訂查詢。 要輸入的命令是「使用結構描述`<your schema name>`」。 您可以在[!UICONTROL data warehouse connections]頁面中找到您的結構描述名稱，請參閱上方參考的檔案。
 
-結構描述規格的![初始SQL命令欄位](assets/marketo-measure-report-template-tableau-3.png)
+![](assets/marketo-tableau-6.png)
 
 ### 自訂SQL查詢 {#custom-sql-queries}
 
@@ -39,11 +38,11 @@ ht-degree: 0%
 
 **篩選器已新增到資料Source**
 
-```
+```sql
 --A deleted session removes this row completely and the touchpoint data is lost. Select *
    From Touchpoint    tp
       join Session sn
-      on tp.session_id = sn.session_id
+      on tp.session_id = sn.session_id 
  Where tp._deleted_date is null
     and sn._deleted_date is null
 ```
@@ -52,11 +51,11 @@ ht-degree: 0%
 
 透過自訂SQL套用的&#x200B;**篩選器**
 
-```
+```sql
 --A deleted session only removes the session related data, and the touchpoint data is preserved. Select *
    From Touchpoint       tp
       join Session sn
-      on tp.session_id          = sn.session_id
+      on tp.session_id          = sn.session_id 
       and sn._deleted_date      is null
   Where tp._deleted_date is null
 ```
@@ -65,15 +64,16 @@ ht-degree: 0%
 
 [!DNL Tableau]中的資料已從Snowflake中的原始狀態套用一些轉換。 這些轉換中的大多數都套用到自訂SQL查詢，這些查詢會在[!DNL Tableau]模型中產生表格。 若要檢視用來產生表格的自訂SQL，請在表格名稱上按一下滑鼠右鍵，然後選取「編輯自訂SQL查詢」。 以下概述一些特定轉換。
 
-![顯示[編輯自訂SQL查詢]選項的內容功能表](assets/marketo-measure-report-template-tableau-4.png)
+![](assets/marketo-tableau-1.png)
 
-Tableau中的![自訂SQL查詢編輯器對話方塊](assets/marketo-measure-report-template-tableau-5.png)
+![](assets/marketo-tableau-2.png)
 
 ### 已移除的欄 {#removed-columns}
 
 為了簡化資料模型並移除多餘和不必要的資料，我們減少了從原始Snowflake表格匯入Tableau的欄數。 移除的欄包括不必要的外部索引鍵、透過與模型中其他表格的關係更適合使用的非正規化維度資料、稽核欄以及用於內部[!DNL Marketo Measure]處理的欄位。 您可以根據業務需求新增或移除欄，方法是編輯自訂SQL的「選取」區段中的匯入欄清單。
 
 >[!NOTE]
+>
 >Data Warehouse中的大多數表格都包含非正規化的維度資料。 我們已儘可能在[!DNL Tableau]中標準化並清理模型，以提高效能和資料準確度。 在事實表格中加入任何其他非正規化欄位時，請務必小心，這樣可能會破壞跨表格的維度篩選，並可能導致不準確的報告。
 
 ### 已重新命名欄 {#renamed-columns}
@@ -84,11 +84,11 @@ Tableau中的![自訂SQL查詢編輯器對話方塊](assets/marketo-measure-repo
 
 為了將貨幣轉換功能新增至模型中的計算，我們在「商機」和「成本」表格中新增了公司轉換率和目標轉換率欄。 這些資料欄中的值會在資料列層次新增，並透過聯結至日期與幣別ID的「兌換率」表格來評估。 由於Tableau不允許事實表格共用多個維度表格，因此轉換率會直接新增至使用它的表格。 如需此模型中貨幣轉換運作方式的詳細資訊，請參閱本檔案中的[貨幣轉換](#currency-conversion)一節。
 
-![轉換率資料行的機會資料表](assets/marketo-measure-report-template-tableau-6.png)
+![](assets/marketo-tableau-4.png)
 
 有些地方，來自[!DNL Snowflake]的兩個資料表已經與聯合結合，以便在[!DNL Tableau]資料模型中建立一個資料表。 在這些執行個體中，已新增「型別」欄，以指出它來自哪個[!DNL Snowflake]資料表，並指定資料列代表的實體。 如需已合併表格的詳細資訊，請參閱本檔案的「關係與資料流程」一節。
 
-![組合資料表，顯示實體識別的Type資料行](assets/marketo-measure-report-template-tableau-7.png)
+![](assets/marketo-tableau-3.png)
 
 ### 區段名稱 {#segment-names}
 
@@ -96,21 +96,21 @@ Tableau中的![自訂SQL查詢編輯器對話方塊](assets/marketo-measure-repo
 
 [!UICONTROL CATEGORY]欄列示類別編號，而SEGMENT_NAME欄具有其對應的自訂區段名稱。
 
-![顯示類別和自訂名稱的區段名稱對應表](assets/marketo-measure-report-template-tableau-8.png)
+![](assets/marketo-tableau-13.png)
 
 名稱可以兩種方式更新。 第一個選項是更新自訂SQL。 在此範例中，已根據「區段名稱」表格的對應重新命名類別1-6。
 
-![具有已重新命名區段類別的自訂SQL](assets/marketo-measure-report-template-tableau-9.png)
+![](assets/marketo-tableau-14.png)
 
 另一個選項是直接重新命名[!DNL Tableau]表格中的資料行。
 
-![區段資料行已重新命名的Tableau資料表](assets/marketo-measure-report-template-tableau-10.png)
+![](assets/marketo-tableau-9.png)
 
 ## 資料模型 {#data-model}
 
 按一下下方影像以取得其完整大小版本。
 
-[![顯示資料表關係的Tableau資料模型圖表](assets/marketo-measure-report-template-tableau-11.png)](/help/bi-report-templates/assets/tableau-data-model.png){target="_blank"}
+[![](assets/marketo-tableau-8.png)](/help/bi-report-templates/assets/tableau-model-1.png){target="_blank"}
 
 ### 關係和資料流程 {#relationships-and-data-flow}
 
@@ -122,11 +122,12 @@ Tableau中的![自訂SQL查詢編輯器對話方塊](assets/marketo-measure-repo
 
 成本和接觸點資料會共用「管道」和「促銷活動」維度。 不過，Tableau在事實表格之間建立共用維度模型的能力有限。 由於我們限制只能有一個共用維度表格，因此「管道」和「促銷活動」資料已合併至一個表格。 在Tableau中使用兩個維度的交叉聯結將它們合併到一個表格中：頻道和促銷活動。 此唯一ID是透過串連管道和促銷活動ID所建立。 這個相同的ID值會新增至「接觸點」和「成本」表格，以建立與此合併維度表格的關係。
 
-![合併的頻道與行銷活動維度資料表](assets/marketo-measure-report-template-tableau-12.png)
+![](assets/marketo-tableau-10.png)
 
 在此模型中，促銷活動和管道維度會連結至接觸點，因此這些維度的所有報表都會透過此連結進行，並代表事件資料的維度報表可能不完整。 這是因為許多事件在處理至接觸點之前，都沒有這些維度的連結。
 
 >[!NOTE]
+>
 >有些事件（例如工作階段）確實有促銷活動和管道維度的直接連結。 如果需要在工作階段層級報告這些維度，建議您為此建立個別的資料模型。
 
 成本資料儲存在Snowflake資料倉儲成本表格中的不同彙總層級。 對於所有廣告提供者，行銷活動層級資料可彙總至頻道層級。 因此，此模型會根據&quot;campaign_is_aggregatable_cost&quot;旗標提取成本資料。 自助式成本只能在管道層級提交，並且不需要具有行銷活動資料。 為了儘可能提供最準確的成本報告，會根據「channel_is_aggregatable_cost」旗標提取自我報告的成本。 匯入成本資料的查詢會以下列邏輯寫入：如果ad_provider = &quot;SelfReported&quot;，則channel_is_aggregatable_cost = true，否則為campaign_is_aggregatable_cost = true。
@@ -140,19 +141,19 @@ Tableau中的![自訂SQL查詢編輯器對話方塊](assets/marketo-measure-repo
 * 將原始值轉換為公司幣別值/公司兌換率=以公司幣別表示的值
 * 將值從公司轉換為選取的貨幣值（以公司貨幣表示） `*`選取貨幣的轉換率=選取貨幣的值
 
-Tableau中的![貨幣轉換計算欄位](assets/marketo-measure-report-template-tableau-13.png)
+![](assets/marketo-tableau-11.png)
 
 若無法識別兌換率，此模型中的貨幣兌換測量會以1.0值取代匯率。 已建立個別測量來顯示測量的貨幣值，並在計算包含多個貨幣值（即無法將值轉換為選取的貨幣）時發出警報。 這些測量（成本貨幣和收入貨幣）會包含在任何顯示成本或收入資料的視覺效果中，作為工具提示。
 
-![顯示貨幣轉換量值的工具提示](assets/marketo-measure-report-template-tableau-14.png)
+![](assets/marketo-tableau-12.png)
 
 ## 資料定義 {#data-definitions}
 
 已將引數、自訂欄和測量的定義新增至[!DNL Tableau model]。
 
-![Tableau模型中的欄位定義顯示說明](assets/marketo-measure-report-template-tableau-15.png)
+![](assets/marketo-tableau-15.png)
 
-若要檢視直接來自[!DNL Snowflake]之資料行的定義，請參閱[資料倉儲檔案](/help/data-warehouse/data-warehouse-schema.md){target="_blank"}。
+若要檢視直接來自[!DNL Snowflake]之資料行的定義，請參閱[資料倉儲檔案](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}。
 
 ## 範本和探索之間的差異 {#discrepancies-between-templates-and-discover}
 
@@ -161,6 +162,7 @@ Tableau中的![貨幣轉換計算欄位](assets/marketo-measure-report-template-
 潛在客戶接觸點和歸因接觸點會繼承原始接觸點的維度資料。 報表範本模型會從關係到接觸點收集所有繼承的維度資料，而在探索模型中，維度資料會反正規化為「銷售機會」和「歸因」接觸點記錄。 整體已歸因收入或已歸因的管道收入值應在兩個報表之間對齊。 不過，如果依維度資料（管道、子管道或促銷活動）劃分或篩選收入，可能會發現不一致之處。 如果範本和探索之間的維度收入量不相符，則範本報表資料集中可能缺少接觸點記錄。 當有「銷售機會」或「歸因」接觸點記錄，但資料集中的接觸點表格中沒有匯入報表的對應記錄時，就會發生這種情況。 由於這些表格是依修改日期篩選，因此「銷售機會/歸因接觸點」記錄的修改可能比接觸點記錄更晚，因此「銷售機會/歸因接觸點」已匯入資料集，而原始接觸點記錄則否。 若要修正此問題，請擴大接觸點表格的篩選日期範圍，或考慮一併移除日期限制。
 
 >[!NOTE]
+>
 >接觸點是大型表格，因此請考慮較完整的資料集和必須匯入的資料量之間的利弊。
 
 ### 成本 {#cost}
