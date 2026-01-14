@@ -305,7 +305,7 @@ Marketo Measure ABTest — 使用者參與您網站上的A/B測試的日期
 
 此欄位會顯示行銷管道，以及接觸點所屬的子管道。 在以下範例中，「行銷管道 — 路徑」是Social.Linkedin，其中行銷管道是Social，而子管道是LinkedIn。
 
-![ 3](assets/overview-resources-16.png)
+![&#x200B; 3](assets/overview-resources-16.png)
 
 **Medium** | Buyer Touchpoint、Buyer Attribution Touchpoint
 

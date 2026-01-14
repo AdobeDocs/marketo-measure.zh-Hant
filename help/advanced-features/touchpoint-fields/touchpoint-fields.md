@@ -34,7 +34,7 @@ ht-degree: 0%
 
 擷取
 
-[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面[擷取自訂引數。 ](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面[擷取自訂引數。 &#x200B;](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
 
 **範例#1**
 
