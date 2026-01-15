@@ -40,4 +40,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教學課程：其他SFDC報告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] 教學課程：其他SFDC報告](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
