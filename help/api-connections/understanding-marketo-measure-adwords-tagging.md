@@ -3,10 +3,10 @@ description: 瞭解適用於Marketo Measure使用者的 [!DNL Marketo Measure] A
 title: 瞭解 [!DNL Marketo Measure] AdWords標籤
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL All campaigns]**，然後在展開視窗中按一下&#x200B;**[!UICONTROL Settings]**。
 
-   ![](assets/utilizing-connections-13.png)
+   ![1. 按一下「所有行銷活動」，然後按一下展開](assets/utilizing-connections-13.png)中的「設定」
 
 1. 按一下頂端的&#x200B;**[!UICONTROL Account Settings]**，然後按&#x200B;**[!UICONTROL Tracking Template]**。 輸入[!DNL Marketo Measure]追蹤範本。
 
-   ![](assets/bizible-guide-1.png)
+   ![1. 按一下頂端的[帳戶設定]，然後按一下[追蹤]](assets/bizible-guide-1.png)
 
 1. 按一下「**[!UICONTROL Save]**」。
 
@@ -72,11 +72,11 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL All campaigns]**，然後在展開視窗中按一下&#x200B;**[!UICONTROL Campaigns]**。
 
-   ![](assets/utilizing-connections-12.png)
+   ![1. 按一下所有行銷活動，然後按一下擴展中的「行銷活動」](assets/utilizing-connections-12.png)
 
 1. 選取所有適用的行銷活動或&#x200B;**[!UICONTROL Select All]**，按一下&#x200B;**[!UICONTROL Edit]**，然後按一下&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
-   ![](assets/five-five-1.png)
+   ![1. 選取所有適用的行銷活動，或選取全部，按一下[編輯]，](../assets/marketo-engage-activities-05.png)
 
 1. 輸入[!DNL Marketo Measure]追蹤範本並按一下&#x200B;**[!UICONTROL Apply]**。
 
@@ -84,13 +84,13 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL All campaigns]**，然後在展開視窗中按一下&#x200B;**[!UICONTROL Ad Groups]**。
 
-   ![](assets/four-four-1.png)
+   ![1. 按一下「所有行銷活動」，然後按](assets/api-connections-01.png)中的「廣告群組」
 
 1. 選取所有適用的廣告群組或選取全部，按一下&#x200B;**[!UICONTROL Edit]**，然後按一下&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
 1. 輸入[!DNL Marketo Measure]追蹤範本並按一下&#x200B;**[!UICONTROL Apply]**。
 
-   ![](assets/one-one-1.png)
+   ![1. 輸入Marketo Measure追蹤範本，然後按一下[套用]。](../assets/marketo-engage-activities-01.png)
 
 ## 常見問題 {#faq}
 

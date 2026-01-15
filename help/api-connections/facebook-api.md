@@ -4,9 +4,9 @@ title: '[!DNL Facebook] API'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 連線帳戶 {#connecting-the-account}
 
-![](assets/utilizing-connections-2.gif)
+![正在連線帳戶{connecting-the-account}](assets/utilizing-connections-2.gif)
 
 ## 啟用自動標籤 {#enabling-autotagging}
 
@@ -46,87 +46,87 @@ ht-degree: 0%
 >
 >如果您啟用自動標籤，我們會重設所有已標籤廣告的轉換歷史記錄和社交證明。 強烈建議您在啟用自動標籤前[將此資料匯出為CSV](https://www.facebook.com/business/help/205067636197240)。
 
-![](assets/bizible-guide-1.png)
+![如果您啟用自動標籤，我們會重設轉換記錄和社交校訂](assets/bizible-guide-1.png)
 
 啟用整合後，[!DNL Marketo Measure]將開始將廣告層級成本下載至[!DNL Marketo Measure Marketing ROI]儀表板。
 
 為了讓整合正確運作，您必須在[!DNL Facebook]帳戶上啟用自動標籤。 這可讓我們的系統在所有廣告連結上新增_bf引數。 此程式會在您已經新增至[!DNL Facebook]廣告的任何其他追蹤引數之上，新增新的引數。
 
-![](assets/five-five-1.png)
+![為了讓整合正常運作，您必須在](../assets/marketo-engage-activities-05.png)上啟用自動標籤
 
 ## 欄位對應 {#field-mapping}
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
-  <tr> 
-   <th><p><strong>接觸點欄位</strong></p></th> 
-   <th><p><strong>價值</strong></p></th> 
-  </tr> 
-  <tr> 
-   <td><p>廣告行銷活動ID</p></td> 
-   <td><p>[[!DNL Facebook]行銷活動ID]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>廣告行銷活動名稱 </p></td> 
-   <td><p>[[!DNL Facebook]行銷活動名稱]，或是[utm_campaign] （若提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>廣告群組ID</p></td> 
-   <td><p>[[!DNL Facebook]廣告集Id]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>廣告群組名稱</p></td> 
-   <td><p>[!DNL Facebook]廣告集名稱</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>接觸點Source</p></td> 
-   <td><p>"[!DNL Facebook]"或[utm_source] （若提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>媒體</p></td> 
-   <td><p>"Social"，或[utm_medium] （若提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>廣告Id或Creative_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[從utm_content產生的自訂ID]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>廣告內容或Creative_Name (Data Warehouse)</p></td> 
-   <td><p>[utm_content] （若提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>關鍵字文字或Keyword_Name (Data Warehouse)</p></td> 
-   <td><p>[utm_term] （若提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]廣告識別碼]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Name (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]廣告名稱]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Keyword_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[從utm_term產生的自訂ID]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Provider (Data Warehouse)</p></td> 
-   <td><p>"[!DNL Facebook]"</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Account_Unique_ID (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]帳戶號碼]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>帳戶名稱(Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]帳戶名稱]</p></td> 
-  </tr> 
- </tbody> 
+<table>
+ <colgroup>
+  <col>
+  <col>
+ </colgroup>
+ <tbody>
+  <tr>
+   <th><p><strong>接觸點欄位</strong></p></th>
+   <th><p><strong>價值</strong></p></th>
+  </tr>
+  <tr>
+   <td><p>廣告行銷活動ID</p></td>
+   <td><p>[[!DNL Facebook]行銷活動ID]</p></td>
+  </tr>
+  <tr>
+   <td><p>廣告行銷活動名稱 </p></td>
+   <td><p>[[!DNL Facebook]行銷活動名稱]，或是[utm_campaign] （若提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>廣告群組ID</p></td>
+   <td><p>[[!DNL Facebook]廣告集Id]</p></td>
+  </tr>
+  <tr>
+   <td><p>廣告群組名稱</p></td>
+   <td><p>[!DNL Facebook]廣告集名稱</p></td>
+  </tr>
+  <tr>
+   <td><p>接觸點Source</p></td>
+   <td><p>"[!DNL Facebook]"或[utm_source] （若提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>媒體</p></td>
+   <td><p>"Social"，或[utm_medium] （若提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>廣告Id或Creative_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[從utm_content產生的自訂ID]</p></td>
+  </tr>
+  <tr>
+   <td><p>廣告內容或Creative_Name (Data Warehouse)</p></td>
+   <td><p>[utm_content] （若提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>關鍵字文字或Keyword_Name (Data Warehouse)</p></td>
+   <td><p>[utm_term] （若提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]廣告識別碼]</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Name (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]廣告名稱]</p></td>
+  </tr>
+  <tr>
+   <td><p>Keyword_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[從utm_term產生的自訂ID]</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Provider (Data Warehouse)</p></td>
+   <td><p>"[!DNL Facebook]"</p></td>
+  </tr>
+  <tr>
+   <td><p>Account_Unique_ID (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]帳戶號碼]</p></td>
+  </tr>
+  <tr>
+   <td><p>帳戶名稱(Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]帳戶名稱]</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## 常見問題 {#faq}

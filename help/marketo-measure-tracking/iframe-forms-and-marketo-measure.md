@@ -3,9 +3,9 @@ description: 適用於Marketo Measure使用者的IFrame Forms和 [!DNL Marketo M
 title: IFrame Forms和 [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 建議將JavaScript放在IFrame標題內，我們就會從此自動附加至該框架內的表單。
 
-![](assets/adding-pages-1.png)
+![建議將JavaScript放在](assets/adding-pages-1.png)的頭部
 
 如果您對將我們的JavaScript新增到IFrame表單有任何疑問，請聯絡Adobe客戶團隊（您的客戶經理）或[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。

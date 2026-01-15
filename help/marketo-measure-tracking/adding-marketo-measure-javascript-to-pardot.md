@@ -3,10 +3,10 @@ description: 正在為Marketo Measure使用者新增 [!DNL Marketo Measure] Java
 title: 正在新增 [!DNL Marketo Measure] JavaScript至 [!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 0%
+source-wordcount: '239'
+ht-degree: 1%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 1. 選取「**[!UICONTROL Layout Template]**」。
 
-   ![](assets/adding-providers-4.png)
+   ![1. 選取配置範本。](assets/adding-providers-4.png)
 
 1. 決定適當的配置範本，然後按一下右側的&#x200B;**[!UICONTROL Edit]**。
 
-   ![](assets/adding-pages-1.png)
+   ![1. 決定適當的配置範本，然後按一下[編輯]以顯示](assets/adding-pages-1.png)
 
 1. 將[!DNL Marketo Measure] JavaScript程式碼複製並貼到HTML頁面中結尾標頭標籤的前面。
 

@@ -4,9 +4,9 @@ title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 如下圖所示，您會看到一個按鈕，可用來設定新的廣告連線。
 
-![](assets/bizible-guide-1.png)
+![如下圖所示，您將會看到](assets/bizible-guide-1.png)按鈕
 
 按一下[!UICONTROL Set up New Ads Connection]按鈕後，會出現一個視窗（如下所示），其中包含4種廣告[!UICONTROL connect]離子型別。 按一下連線，就會出現另一個視窗要求認證。 輸入認證，然後按一下[!UICONTROL authorize]以連線帳戶至[!DNL Marketo Measure]。
 
-![](assets/five-five-1.png)
+![在您按一下[設定新廣告連線]按鈕後，請按](../assets/marketo-engage-activities-05.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -56,15 +56,15 @@ ht-degree: 0%
 
 1. 前往「[!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections]」。
 
-   ![](assets/utilizing-connections-8.png)
+   ![1. 移至[我的帳戶設定]整合連線。](assets/utilizing-connections-8.png)
 
 1. 按一下將啟用[!DNL Marketo Measure]自動標籤的Adwords帳戶旁的鉛筆圖示。
 
-   ![](assets/utilizing-connections-9.png)
+   ![1. 按一下將](assets/utilizing-connections-9.png)的Adwords帳戶旁的鉛筆圖示
 
 1. 在右上角，將&#x200B;**[!UICONTROL Autotagging]**&#x200B;切換至&#x200B;**[!UICONTROL Yes]**。 在頁面底部，按一下&#x200B;**[!UICONTROL Learn More]**&#x200B;以展開文字方塊並按一下&#x200B;**[!UICONTROL Save]**。 自動標籤設定完成。
 
-   ![](assets/utilizing-connections-10.png)
+   ![1. 在右上角，將自動標籤開關切換至](assets/utilizing-connections-10.png)
 
 ## 如何使用[!DNL Marketo Measure]引數在AdWords中設定追蹤範本 {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
