@@ -38,7 +38,7 @@ ht-degree: 4%
 
    ![1. 在新標籤中，登入您的Marketo Engage帳戶。](assets/set-connection-6.png)
 
-1. 仍然在Marketo Engage中，在左側的樹狀結構中選取&#x200B;**LaunchPoint**。 尋找您要連線至Marketo Measure的自訂服務，然後按一下[檢視詳細資料]。****
+1. 仍然在Marketo Engage中，在左側的樹狀結構中選取&#x200B;**LaunchPoint**。 尋找您要連線至Marketo Measure的自訂服務，然後按一下[檢視詳細資料]。**&#x200B;**
 
    ![1. 仍然在Marketo Engage中，選取](assets/set-connection-4.png)樹狀結構中的LaunchPoint
 

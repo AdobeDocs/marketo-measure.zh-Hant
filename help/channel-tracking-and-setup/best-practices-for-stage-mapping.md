@@ -52,4 +52,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[ Funnel階段和自訂模型階段之間的差異](/help/channel-tracking-and-setup/custom-attribution-model-and-setup.md)
+>[&#x200B; Funnel階段和自訂模型階段之間的差異](/help/channel-tracking-and-setup/custom-attribution-model-and-setup.md)

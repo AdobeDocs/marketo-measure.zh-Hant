@@ -96,7 +96,7 @@ ht-degree: 0%
 
 [!UICONTROL CATEGORY]欄列示類別編號，而SEGMENT_NAME欄具有其對應的自訂區段名稱。
 
-![ CATEGORY資料行列出類別編號與SEGMENTNAME資料行](assets/marketo-tableau-13.png)
+![&#x200B; CATEGORY資料行列出類別編號與SEGMENTNAME資料行](assets/marketo-tableau-13.png)
 
 名稱可以兩種方式更新。 第一個選項是更新自訂SQL。 在此範例中，已根據「區段名稱」表格的對應重新命名類別1-6。
 
