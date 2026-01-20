@@ -38,7 +38,7 @@ ht-degree: 1%
 **報告**
 
 * [使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md)建立自訂報告型別（如果您必須報告自訂銷售機會/連絡人/商機欄位）
-* [ [!DNL Marketo Measure] 欄位的字彙表](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
+* [&#x200B; [!DNL Marketo Measure] 欄位的字彙表](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 **疑難排解**
 

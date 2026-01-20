@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除了部署[ JavaScript之外，請確定您已 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}申請[!DNL Marketo Measure]中的所有適當網域。
+>除了部署[&#x200B; JavaScript之外，請確定您已 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}申請[!DNL Marketo Measure]中的所有適當網域。
 
 開始使用[!DNL Marketo Measure]時，有兩種方式可將[!DNL Marketo Measure] JavaScript新增至您的網站：
 

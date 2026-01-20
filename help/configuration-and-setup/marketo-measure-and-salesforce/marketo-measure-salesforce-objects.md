@@ -73,7 +73,7 @@ BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Accoun
 
 ## [!DNL Marketo Measure]欄位 {#marketo-measure-fields}
 
-由[!DNL Marketo Measure] JavaScript擷取的資料已推送到[!DNL Marketo Measure]物件內的自訂[!DNL Marketo Measure]欄位。 某些欄位僅存在於某些物件上。 您可以檢閱[[欄位][!DNL Marketo Measure]的](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)字彙表，以及相關[物件 [!DNL Marketo Measure] 的](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)視覺效果。
+由[!DNL Marketo Measure] JavaScript擷取的資料已推送到[!DNL Marketo Measure]物件內的自訂[!DNL Marketo Measure]欄位。 某些欄位僅存在於某些物件上。 您可以檢閱[[欄位]&#x200B;[!DNL Marketo Measure]的](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)字彙表，以及相關[物件 [!DNL Marketo Measure] 的](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)視覺效果。
 
 ## [!DNL Marketo Measure]個報告和儀表板 {#marketo-measure-reports-and-dashboards}
 
