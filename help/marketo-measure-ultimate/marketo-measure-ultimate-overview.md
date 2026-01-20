@@ -111,6 +111,6 @@ Campaign成員接觸點規則和活動接觸點規則是資料集專屬規則。
 
 >[!MORELIKETHIS]
 >
->* [Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>* [Marketo Measure Ultimate目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=zh-Hant){target="_blank"}
 >
 >* [影片： Marketo Measure Ultimate概觀](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

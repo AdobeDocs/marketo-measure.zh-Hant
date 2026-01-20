@@ -156,7 +156,7 @@ ht-degree: 0%
             <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Marketo Measure與Adobe Analytics的整合</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">建立客戶屬性來源及上傳資料檔案</a>
+            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hant">建立客戶屬性來源及上傳資料檔案</a>
           </li>
         </ul>
       </td>

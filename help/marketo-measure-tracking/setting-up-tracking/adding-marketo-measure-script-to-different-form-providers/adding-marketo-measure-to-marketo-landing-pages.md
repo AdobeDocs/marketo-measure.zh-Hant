@@ -42,4 +42,4 @@ ht-degree: 0%
 
 * 您可能有多個登陸頁面範本正在使用中，請務必新增程式碼至所有包含表單的範本。
 
-* 有時當您編輯登入頁面的範本時，必須重新核准登入頁面所使用的頁面。 本文說明[如何大量核准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。
+* 有時當您編輯登入頁面的範本時，必須重新核准登入頁面所使用的頁面。 本文說明[如何大量核准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hant){target="_blank"}。
