@@ -1,12 +1,12 @@
 ---
-unique-page-id: 18874594
-description: 整合式廣告平台 —  [!DNL Marketo Measure]
+description: 適用於Marketo Measure使用者的整合式廣告平台指引
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
+hidefromtoc: true
 source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->廣告平台連線數量上限為300個。
+>您可以連線的Ad Platform連線數目上限為300。
 
 在深入瞭解每個平台的具體資訊之前，我們將先探討如何將這些帳戶中的任何一個連結至[!DNL Marketo Measure]。 請先登入[!DNL Marketo Measure]，並導覽至畫面左上方的&#x200B;**[!UICONTROL My Account]**&#x200B;標籤下的&#x200B;**[!UICONTROL Settings]**&#x200B;選項。 接著，在左側的&#x200B;**[!UICONTROL Integrations]**&#x200B;區段下選取&#x200B;**[!UICONTROL Connections]**。
 
 如下圖所示，您會看到一個按鈕，可用來設定新的廣告連線。
 
-![](assets/2.png)
+![如下圖所示，您將會看到](assets/bizible-guide-1.png)按鈕
 
 按一下[!UICONTROL Set up New Ads Connection]按鈕後，會出現一個視窗（如下所示），其中包含4種廣告[!UICONTROL connect]離子型別。 按一下連線，就會出現另一個視窗要求認證。 輸入認證，然後按一下[!UICONTROL authorize]以連線帳戶至[!DNL Marketo Measure]。
 
-![](assets/select-account-type.png)
+![在您按一下[設定新廣告連線]按鈕後，請按](../assets/marketo-engage-activities-05.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -42,13 +42,13 @@ ht-degree: 0%
 [!DNL Marketo Measure]在您的[!DNL AdWords]帳戶中搜尋追蹤範本：
 
 * *選項A*：找到追蹤範本。[!DNL Marketo Measure] 將其引數新增至範本。
-* *選項B*：找到第三方重新導向。 如果在追蹤範本中找到協力廠商重新導向，[!DNL Marketo Measure]無法採取任何動作。 您必須手動將[!DNL Marketo Measure]標籤新增至協力廠商系統。 例如，Kenshoo或Marin之類的競標管理工具就是第三方重新導向的範例。 深入瞭解[競標管理工具如何影響 [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}。
+* *選項B*：找到第三方重新導向。 如果在追蹤範本中找到協力廠商重新導向，[!DNL Marketo Measure]無法採取任何動作。 您必須手動將[!DNL Marketo Measure]標籤新增至協力廠商系統。 例如，Kenshoo或Marin之類的競標管理工具就是第三方重新導向的範例。 深入瞭解[競標管理工具如何影響 [!DNL Marketo Measure]](/help/api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}。
 
 * *選項C*：找不到追蹤範本。[!DNL Marketo Measure] 將會掃描您所有的Ad Destination URL以取得[!DNL Marketo Measure]引數。 根據掃描，如果：
    * 找到引數：設定完成！
    * 找不到引數： [!DNL Marketo Measure]會將其引數附加至廣告目的地URL的結尾。[!DNL Marketo Measure] 會在新廣告建立後的兩小時內附加新廣告。 請記住，不會將引數新增至範本。
 
-深入瞭解[[!DNL AdWords] 自動標籤功能](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}。
+深入瞭解[[!DNL AdWords] 自動標籤功能](/help/api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}。
 
 ## 如何啟用Adwords的[!DNL Marketo Measure]自動標籤 {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
@@ -60,15 +60,15 @@ ht-degree: 0%
 
 1. 前往「[!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections]」。
 
-   ![](assets/4.png)
+   ![1. 移至[我的帳戶設定]整合連線。](assets/utilizing-connections-8.png)
 
 1. 按一下將啟用[!DNL Marketo Measure]自動標籤的Adwords帳戶旁的鉛筆圖示。
 
-   ![](assets/5.png)
+   ![1. 按一下將](assets/utilizing-connections-9.png)的Adwords帳戶旁的鉛筆圖示
 
 1. 在右上角，將&#x200B;**[!UICONTROL Autotagging]**&#x200B;切換至&#x200B;**[!UICONTROL Yes]**。 在頁面底部，按一下&#x200B;**[!UICONTROL Learn More]**&#x200B;以展開文字方塊並按一下&#x200B;**[!UICONTROL Save]**。 自動標籤設定完成。
 
-   ![](assets/6.png)
+   ![1. 在右上角，將自動標籤開關切換至](assets/utilizing-connections-10.png)
 
 ## 如何使用[!DNL Marketo Measure]引數在AdWords中設定追蹤範本 {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
