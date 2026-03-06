@@ -45,7 +45,7 @@ ht-degree: 2%
 
 下圖舉例說明根據具有下列URL之網頁的行銷管道、子管道和內容：
 
-* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
+* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
 
 在此情況下，使用者嘗試存取的內容是B2B行銷歸因簡介指南。[!DNL Marketo Measure] 將使用此組織中設定的管道規則來分析導向此內容的URL，並使用它們「貯體」此銷售機會至行銷管道「付費社交」和子管道「LinkedIn」。
 

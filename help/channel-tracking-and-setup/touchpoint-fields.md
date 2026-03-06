@@ -34,7 +34,7 @@ ht-degree: 0%
 
 擷取
 
-[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}擷取自訂引數。 [然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面[&#128279;](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}擷取自訂引數。 然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
 
 **範例#1**
 
@@ -106,7 +106,7 @@ ht-degree: 0%
    * **(**&#x200B;標籤擷取的開始
    * **)**&#x200B;標籤擷取的結尾
    * **\w**&#x200B;告訴我們正在擷取「word」
-   * ******是我們正在擷取的字元數
+   * **&#x200B;**&#x200B;**是我們正在擷取的字元數
 
 * 建立計算欄位並加上標籤「自訂行銷活動Id」
 * 從搜尋Touchpoint.Session.LandingPage欄位開始定義規則
@@ -148,7 +148,7 @@ ht-degree: 0%
 
       * 請注意，由於我們僅擷取4，因此只有第一個數字有右括弧
    * **\d**&#x200B;告訴我們正在擷取「數字」
-   * ******是我們正在擷取的字元數
+   * **&#x200B;**&#x200B;**是我們正在擷取的字元數
 
 
 
@@ -161,12 +161,12 @@ ht-degree: 0%
 * 根據對應和上述URL，使用此登陸頁面的接觸點「Region_Value」將是「EMEA」
 * 對其餘4組數字重複擷取和對應
 
-   * 若要擷取01，您可將值定義為&quot;BZ=\d-**(\d**)**-\d**-\d**-\d**-\d**&quot;
+   * 若要擷取01，您可將值定義為&quot;BZ=\d-**(\d**)**-\d**-\d&#x200B;**-\d**-\d**&quot;
    * 若要擷取09，您可將值定義為「BZ=\d **-\d**-**(\d**)**-\d**-\d**」
-   * 若要擷取03，您可將值定義為&quot;BZ=\d **-\d**-\d**-\d**(\d**)**-\d**&quot;
-   * 若要擷取10，您可將值定義為「BZ=\d **-\d**-\d**-\d**-\d**(\d**)**」
+   * 若要擷取03，您可將值定義為&quot;BZ=\d **-\d**-\d&#x200B;**-\d**(\d&#x200B;**)**-\d**&quot;
+   * 若要擷取10，您可將值定義為「BZ=\d **-\d**-\d&#x200B;**-\d**-\d&#x200B;**(\d**)**」
 
-![若要擷取10，您可以將值定義為「BZ=\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-(\d](assets/touchpoint-fields-3.png))」](assets/touchpoint-fields-3.png)
+![若要擷取10，您可以將值定義為「BZ=\d](assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-(\d&rbrack;(assets/touchpoint-fields-3.png))」&rbrack;(assets/touchpoint-fields-3.png)
 
 **串連**
 

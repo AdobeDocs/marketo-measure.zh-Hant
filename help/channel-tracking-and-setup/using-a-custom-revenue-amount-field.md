@@ -35,7 +35,7 @@ ht-degree: 3%
 
 1. 選取&#x200B;**[!UICONTROL Record-Triggered Flow]**&#x200B;並按一下右下角的&#x200B;**[!UICONTROL Create]**。
 
-   ![1. 選取記錄觸發的流量，然後按一下底部的[建立] ](assets/custom-amount-10.png)
+   ![1. 選取記錄觸發的流量，然後按一下底部的[建立] &#x200B;](assets/custom-amount-10.png)
 
 1. 在「設定開始」視窗中，選取Opportunity物件。 從[!UICONTROL Configure Trigger]區段中，選取&#x200B;**[!UICONTROL A record is created or updated]**。
 

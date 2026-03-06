@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ## 行銷活動成本 {#campaign-costs}
 
-在本文](/help/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本[。
+在本文[&#128279;](/help/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本。
 
 ## 行銷活動成員移除 {#campaign-member-removal}
 

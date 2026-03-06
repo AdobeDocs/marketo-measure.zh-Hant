@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # A/B測試設定與報告 {#a-b-testing-set-up-and-reporting}
 
-[!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[和VWO網站實驗對收入的影響。 ](https://www.optimizely.com/){target="_blank"}本文提供如何將[!DNL Marketo Measure]個A/B測試區段新增至銷售機會、[!UICONTROL Contact]、大小寫和[!UICONTROL Opportunity]頁面配置的指示。 也涵蓋一般報告實務和執行[!DNL Marketo Measure] A/B報告型別的建議。
+[!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[和VWO網站實驗對收入的影響。 &#x200B;](https://www.optimizely.com/){target="_blank"}本文提供如何將[!DNL Marketo Measure]個A/B測試區段新增至銷售機會、[!UICONTROL Contact]、大小寫和[!UICONTROL Opportunity]頁面配置的指示。 也涵蓋一般報告實務和執行[!DNL Marketo Measure] A/B報告型別的建議。
 
 ## 設定 {#set-up}
 
