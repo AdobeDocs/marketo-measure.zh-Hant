@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: '[!DNL Marketo Measure] 指南'
 user-guide-description: '[!DNL Marketo Measure] 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收。'
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+source-git-commit: 5eb42c797a34163504fe24fef19949d2c647793b
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '779'
 ht-degree: 5%
 
 ---
@@ -60,12 +60,12 @@ ht-degree: 5%
       + [CRM匯出的錯誤處理](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [&#x200B; [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何互動](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]物件與欄位分類法](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
-      + [標準[!DNL Marketo Measure]物件上的 [!DNL Salesforce] 欄位](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
+      + [標準 [!DNL Salesforce] 物件上的[!DNL Marketo Measure]欄位](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
       + [頁面配置指示](configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md)
       + [隱藏不必要的報表型別](configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
       + [建立 [!DNL Marketo Measure] 設定檔](configuration-and-setup/marketo-measure-and-salesforce/creating-a-marketo-measure-profile.md)
       + [[!DNL Marketo Measure]許可權集](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
-      + [為 [!DNL Salesforce] 連線使用者建議的 [!DNL Marketo Measure] 許可權](configuration-and-setup/marketo-measure-and-salesforce/recommended-salesforce-permissions-for-marketo-measure-connected-user.md)
+      + [為 [!DNL Marketo Measure] 連線使用者建議的 [!DNL Salesforce] 許可權](configuration-and-setup/marketo-measure-and-salesforce/recommended-salesforce-permissions-for-marketo-measure-connected-user.md)
    + 沙箱測試 {#sandbox-testing}
       + [測試 [!DNL Marketo Measure] 與Salesforce沙箱的整合](configuration-and-setup/sandbox-testing/testing-the-marketo-measure-integration-with-a-salesforce-sandbox.md)
       + [Salesforce沙箱移轉至生產](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
@@ -176,7 +176,7 @@ ht-degree: 5%
    + 開始使用[!DNL Marketo Measure]和Dynamics {#getting-started-with-marketo-measure-and-dynamics}
       + [[!DNL Marketo Measure]動態結構描述](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md)
       + [Microsoft Dynamics CRM安裝指南](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)
-      + [[!DNL Marketo Measure]的 [!DNL Dynamics]收入工作流程](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-revenue-workflows-for-dynamics.md)
+      + [&#x200B; [!DNL Dynamics]的[!DNL Marketo Measure]收入工作流程](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-revenue-workflows-for-dynamics.md)
       + [OAuth與Azure Active Directory （適用於 [!DNL Dynamics] CRM）](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md)
       + [[!DNL Marketo Measure]和Dynamics分類](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-and-dynamics-taxonomy.md)
    + 動態報告 {#dynamics-reporting}
@@ -233,7 +233,7 @@ ht-degree: 5%
       + [隱私權請求](miscellaneous/other-related-resources/privacy-requests.md)
       + [從Google Analytics中的登陸頁面URL移除 [!DNL Marketo Measure] 追蹤引數](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
       + [正在從完整圓圈轉換為 [!DNL Marketo Measure] &#x200B;](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
-   + [測試](miscellaneous/test.md)
+   + {hide-from-toc}[測試](miscellaneous/test.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](release-notes/current.md)
    + 先前發行版本 {#previous-releases}
