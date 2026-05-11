@@ -1,29 +1,30 @@
 ---
 solution: Marketo Measure
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 feature-set: Marketo Measure
 landing-page-name: marketo-measure
 landing-page-breadcrumb-title: Marketo Measure
 type: Documentation
-git-repo: https://github.com/AdobeDocs/marketo-measure.zh-Hant
+git-repo: https://github.com/AdobeDocs/marketo-measure.en
 index: true
-source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
+source-git-commit: 824b7114f9ab4184607d9ae4703d468fb1d139a7
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 0%
+source-wordcount: 125
+ht-degree: 94%
 
 ---
 
 
-# 內部使用的中繼資料
+# 僅限內部使用的中繼資料
 
-metadata.md檔案包含存放庫層級中繼資料，這些中繼資料會傳遞至存放庫中的使用手冊TOC.md檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何TOC.md檔案中進行變更。
+metadata.md 檔案包含存放庫層級的中繼資料，會將這些資料傳遞至存放庫中的使用者指南 TOC.md 檔案。 如果您想變更任何使用者指南的 metadata.md 內容，請在任何 TOC.md 檔案中進行變更。
 
-| 中繼資料 | 作用 |
+| 中繼資料 | 功能說明 |
 |--- |--- |
-| solution-title | 在文章標題中作為連結使用 |
-| solution-hub-url | 開啟Helpx中樞頁面 |
-| solution-image | 在解決方案標題旁邊顯示解決方案圖示。 尚未實作 |
-| getting-started-url | helpx快速入門頁面連結 |
-| tutorials-url | 教學課程影片（helpx或KT教學課程其中之一）的連結 |
-| mini-toc-levels | 決定顯示在右側欄中的標題層數。 預設為2 |
-| git-repo | 指定內部使用的主要存放庫位置 |
+| solution-title | 可用來當作文章標題中的連結 |
+| solution-hub-url | 開啟 HelpX 中心頁面 |
+| solution-image | 會在解決方案標題旁，顯示解決方案圖示。 尚未執行 |
+| getting-started-url | 連結至 HelpX 快速入門頁面 |
+| tutorials-url | 連結至影片教學課程，包含 HelpX 教學課程，或是 KT 教學課程 |
+| mini-toc-levels | 決定右側邊欄中顯示的標題層級數量。 預設值為 2 |
+| git-repo | 指定內部專用的主要存放庫位置 |
