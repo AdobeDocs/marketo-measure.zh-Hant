@@ -3,10 +3,13 @@ description: JavaScript所收集的資料 —  [!DNL Marketo Measure]
 title: JavaScript所收集的資料
 feature: Tracking
 exl-id: 83814168-9d3e-45ac-b514-df58f0b2e90b
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/QSbkXXjEjxmddR-dTrgjZiV0dXvO-iZKjHfSBJP2Jt0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 11%
+source-wordcount: 231
+ht-degree: 12%
 
 ---
 
@@ -36,7 +39,7 @@ Marketo Measure會為所有型別的請求收集以下常用資料：
 <tbody>
   <tr>
     <td>請求標頭</td>
-    <td>IP位址</td>
+    <td>IP 位址</td>
     <td>字串</td>
     <td>使用者的位置可透過GeoIP查詢推斷。 此資料為暫時性，不會永久儲存。</td>
   </tr>
@@ -61,7 +64,7 @@ Marketo Measure會為所有型別的請求收集以下常用資料：
   <tr>
     <td>查詢參數</td>
     <td>_biz_t</td>
-    <td>長</td>
+    <td>長整數</td>
     <td>活動時間戳記。</td>
   </tr>
   <tr>
@@ -119,7 +122,7 @@ Marketo Measure會為所有型別的請求收集以下常用資料：
     <td>/u</td>
     <td>mapType</td>
     <td>列舉</td>
-    <td>偵測到哪種使用者ID對應bizible.js (Marketo Munchkin ID和Adobe ECID)</td>
+    <td>偵測到哪種使用者ID對應bizible.js （Marketo Munchkin ID和Adobe ECID）</td>
   </tr>
   <tr>
     <td></td>

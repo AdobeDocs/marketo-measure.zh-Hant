@@ -3,9 +3,14 @@ description: 細分的最佳實務 —  [!DNL Marketo Measure]
 title: 細分的最佳實務
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: 449
 ht-degree: 0%
 
 ---
@@ -39,7 +44,7 @@ ht-degree: 0%
 
 ## 維護最佳實務 {#best-practice-for-maintenance}
 
-每年至少兩次檢閱您的細分，將確保您的細分是最新的。 根據最佳實務，建議您在[!UICONTROL Segments]帳戶設定的&#39;[!DNL Marketo Measure]&#39;標籤中檢閱規則，並在[!DNL Salesforce]中提取報表，以檢閱運作中的區段。 這些步驟可協助您和您的團隊對細分以及隨後的[!DNL Marketo Measure]報告充滿信心。
+每年至少兩次檢閱您的細分，將確保您的細分是最新的。 根據最佳實務，建議您在[!DNL Marketo Measure]帳戶設定的&#39;[!UICONTROL Segments]&#39;標籤中檢閱規則，並在[!DNL Salesforce]中提取報表，以檢閱運作中的區段。 這些步驟可協助您和您的團隊對細分以及隨後的[!DNL Marketo Measure]報告充滿信心。
 
 可能觸發審查您的區段的其他原因包括……
 

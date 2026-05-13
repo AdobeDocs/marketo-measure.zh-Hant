@@ -4,10 +4,15 @@ description: 有或沒有購買者歸因接觸點的機會報告 —  [!DNL Mark
 title: 有或沒有購買者歸因接觸點的機會報告
 exl-id: 3c658177-31e1-46b8-bc6b-e7a372ab187f
 feature: Touchpoints, Attribution, Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/F4X4FtvzKwcoj2j1f8rTDtg21f3uMqq173jrnZ379VY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: 176
+ht-degree: 2%
 
 ---
 
@@ -35,7 +40,7 @@ ht-degree: 0%
 
    ![](assets/3-1.jpg)
 
-1. 從那裡，您將會將「機會物件」連結到「購買者歸因接觸點物件」。 確保您選擇按鈕「&#39;A&#39;記錄可能有也可能沒有相關&#39;B&#39;記錄」。 完成時，按一下&#x200B;**[!UICONTROL Save]**。
+1. 從那裡，您將會將「機會物件」連結到「購買者歸因接觸點物件」。 確保您選擇按鈕「&#39;A&#39;記錄可能有也可能沒有相關&#39;B&#39;記錄」。 完成後請按一下 **[!UICONTROL Save]**。
 
    ![](assets/4-1.jpg)
 

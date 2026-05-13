@@ -4,9 +4,12 @@ description: Dynamics行銷活動和行銷清單 —  [!DNL Marketo Measure]
 title: Dynamics行銷活動和行銷清單
 exl-id: 7b3d4032-5edf-489d-b86b-1e2a5755b258
 feature: Microsoft Dynamics
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/zIWhbgftyAxhDcIuaf-E4gUzeYO-L2tHJ-RVTifWZFM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: 809
 ht-degree: 0%
 
 ---
@@ -93,7 +96,7 @@ Dynamics行銷活動會使用「行銷活動型別」欄位在您的自訂行銷
 
 Dynamics客戶無法使用此功能
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **我們是否可以在「行銷清單」上啟用接觸點，或僅在Dynamics中啟用行銷活動？**
 

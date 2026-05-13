@@ -3,16 +3,25 @@ description: '[!DNL Marketo Measure] Ultimate概觀 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate概觀'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/r69OlOPP6-xtu34YVk7FfAiwdGgvoPpbs9TcM4N609M
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 4%
+source-wordcount: 726
+ht-degree: 6%
 
 ---
 
 # [!DNL Marketo Measure] Ultimate概觀 {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] (之前稱為 Bizible) 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收並取得最大的投資報酬率。[!DNL Marketo Measure]是行銷歸因解決方案，可自動追蹤並報告管道效能，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
+[!DNL Marketo Measure] (之前稱為 Bizible) 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收並取得最大的投資報酬率。 [!DNL Marketo Measure]是行銷歸因解決方案，可自動追蹤並報告管道效能，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
 
 [!DNL Marketo Measure Ultimate]包含其他功能：
 
@@ -51,7 +60,7 @@ ht-degree: 4%
 
 **[!DNL Marketo Measure Ultimate]沙箱**
 
-在AEP中建立[!DNL Marketo Measure Ultimate]目的地資料流程之前，[!DNL Marketo Measure]執行個體必須對應至AEP沙箱。
+在AEP中建立[!DNL Marketo Measure]目的地資料流程之前，[!DNL Marketo Measure Ultimate]執行個體必須對應至AEP沙箱。
 
 >[!NOTE]
 >

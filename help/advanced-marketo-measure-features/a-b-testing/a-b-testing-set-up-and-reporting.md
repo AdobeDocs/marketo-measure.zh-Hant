@@ -4,10 +4,15 @@ description: A/B測試設定與報告 —  [!DNL Marketo Measure]
 title: A/B測試設定與報告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/lMtRvc6owu6vx-FsOjCyd40HGhQefpNIr48cnKP5CmM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 0%
+source-wordcount: 409
+ht-degree: 2%
 
 ---
 
@@ -17,7 +22,7 @@ ht-degree: 0%
 
 ## 設定 {#set-up}
 
-新增潛在客戶、連絡人、案例和機會的[!DNL Marketo Measure]個A/B測試區段。 [!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[和](https://www.optimizely.com/){target="_blank"}VWO[網站實驗對收入的影響。](https://vwo.com/){target="_blank"}
+新增潛在客戶、連絡人、案例和機會的[!DNL Marketo Measure]個A/B測試區段。[!DNL Marketo Measure] A/B測試整合可讓您追蹤[最佳化](https://www.optimizely.com/){target="_blank"}和[VWO](https://vwo.com/){target="_blank"}網站實驗對收入的影響。
 
 1. 請確認您正在使用封裝[!DNL Marketo Measure] v3.9或更新版本。 您可以前往「[!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages]」進行此作業。
 1. 編輯銷售機會頁面配置，並將&#x200B;**[!DNL Marketo Measure]A/B測試**&#x200B;相關清單新增至頁面。

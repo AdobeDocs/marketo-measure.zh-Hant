@@ -3,10 +3,21 @@ description: 錯誤通知 —  [!DNL Marketo Measure]
 title: 錯誤通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/SDJqtYTppmKWPpLQrhI9EkK-mYQ3f3Xh2BLoWzqIGx4
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+subfeature_v2:
+  - id: ec526b86-7a6d-4fae-87bd-f61c37b9b506
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 0%
+source-wordcount: 1915
+ht-degree: 1%
 
 ---
 
@@ -124,7 +135,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
-      <td>在Crm匯出期間發生錯誤： FIELD_INTEGRITY_EXCEPTION ：實體型別'Lead'： CRM ErrorCode： FIELD_INTEGRITY_EXCEPTION，欄位：國家/地區， CRM ErrorMessage：此國家/地區發生問題，即使它看起來可能正確。 請從有效國家/地區清單中選取國家/地區。：國家/地區，記錄ID：0123456</td>
+      <td>在Crm匯出期間發生錯誤： FIELD_INTEGRITY_EXCEPTION ：實體型別'Lead'： CRM ErrorCode： FIELD_INTEGRITY_EXCEPTION，欄位：國家/地區， CRM ErrorMessage：此國家/地區發生問題，即使它看起來可能正確。 請從有效國家/地區清單中選取國家/地區。國家/地區，記錄ID：0123456</td>
       <td>預期的記錄型別不符。</td>
       <td>這種情況最常見的例子不是遵循在Salesforce組織中設定的州/國家/地區命名標準，因為「州/國家」欄位已標準化，僅接受某些挑選清單值。 若要解決此問題，您可以：
         <ul>
@@ -167,19 +178,19 @@ ht-degree: 0%
       <p>
       廣告匯入期間發生錯誤： INVALID_CURRENCY_ISO_CODE ： Marketo Measure不支援帳戶1234的貨幣XXX。</td>
       <td>發生不支援的貨幣。</td>
-      <td>在通知(廣告、Crm、Marketo)中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
+      <td>在通知（廣告、Crm、Marketo）中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
     </tr>
     <tr>
       <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
-      <td>Crm匯出期間發生錯誤： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：實體型別「Campaign」： CRM錯誤碼： INVALID_FIELD_FOR_INSERT_UPDATE，欄位： bizible2__UniqueId__c， CRM錯誤訊息：無法建立/更新欄位： bizible2__UniqueId__c。請檢查此欄位的安全性設定，並確認您的設定檔或許可權集已讀取/寫入。</td>
+      <td>Crm匯出期間發生錯誤： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：實體型別「Campaign」： CRM錯誤碼： INVALID_FIELD_FOR_INSERT_UPDATE，欄位： bizible2__UniqueId__c， CRM錯誤訊息：無法建立/更新欄位： bizible2__UniqueId__c。 請檢查此欄位的安全性設定，並確認您的設定檔或許可權集已讀取/寫入。</td>
       <td>Marketo Measure缺少bizible欄位的許可權。</td>
-      <td>我們要求所有首碼為「bizible2__」的欄位具有讀取和寫入許可權。 您可以在此文章<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">中找到這些欄位的完整清單</a>。</td>
+      <td>我們要求所有首碼為「bizible2__」的欄位具有讀取和寫入許可權。 您可以在此文章</a>中找到這些欄位的完整清單<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">。</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Crm匯出期間發生錯誤： MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Marketo Measure缺少「檢視/編輯轉換的潛在客戶」許可權</td>
-      <td>請參閱下列Experience League檔案，以取得在您的CRM<br/>中啟用此許可權的相關協助
+      <td>如需在CRM中啟用此許可權的協助，請參閱下列Experience League檔案<br/>
           <a href="/help/marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md">啟用許可權以編輯轉換的潛在客戶</a></td>
     </tr>
     <tr>
@@ -239,7 +250,7 @@ ht-degree: 0%
           Crm匯入期間發生錯誤： NULL_EMPTY_CURRENCY_ISO_CODE：為RecordId 1234啟用MultiCurrency時，貨幣ISO代碼為NULL或空白
       </td>
       <td>貨幣必須是支援的ISO貨幣代碼。</td>
-      <td>在通知(廣告、Crm、Marketo)中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
+      <td>在通知（廣告、Crm、Marketo）中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
     </tr>
     <tr>
       <td>OPERATION_TO_LARGE</td>

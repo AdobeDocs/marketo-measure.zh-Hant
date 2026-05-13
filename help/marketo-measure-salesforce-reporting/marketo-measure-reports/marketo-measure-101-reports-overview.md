@@ -3,9 +3,14 @@ description: '[!DNL Marketo Measure] 101報表總覽 —  [!DNL Marketo Measure]
 title: '[!DNL Marketo Measure] 101報表總覽'
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/13R7Z5YTxgq5QdoT4O90MHzgva5e-cXf50V9jH75-TE
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: 930
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ ht-degree: 0%
 >
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;Bizible&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-所有使用[!DNL Marketo Measure]和[!DNL Marketo Measure]的[!DNL Salesforce]客戶都可以存取其SFDC執行個體中的「購買者接觸點報告」資料夾。 此資料夾包含許多預先建立的報告，可幫助您開始使用Buyer Touchpoint資料製作報告。
+所有使用[!DNL Marketo Measure]和[!DNL Salesforce]的[!DNL Marketo Measure]客戶都可以存取其SFDC執行個體中的「購買者接觸點報告」資料夾。 此資料夾包含許多預先建立的報告，可幫助您開始使用Buyer Touchpoint資料製作報告。
 
 ![](assets/bizible-101-reports-overview-1.png)
 
@@ -32,24 +37,24 @@ ht-degree: 0%
 
 _若您在該資料夾中找不到「購買者接觸點報告」資料夾或六個「_[!DNL Marketo Measure] 101..._」報告，請聯絡支援以尋求協助。_
 
-具有購買者接觸點的&#x200B;**銷售機會** | 以下兩種變化，報告銷售機會及其購買者接觸點。 雖然兩者使用相同的基本報表型別，但會依不同量度（銷售機會ID與行銷管道）分組，以提供兩種重要的資料檢視。 此報表型別是專為funnel報告頂端而設計，是探索潛在客戶與行銷活動互動方式的理想選擇。 在任何自訂作業之前，以下兩個報表會顯示下列內容：
+具有購買者接觸點的&#x200B;**銷售機會** |以下兩種變化，報告銷售機會及其購買者接觸點。 雖然兩者使用相同的基本報表型別，但會依不同量度（銷售機會ID與行銷管道）分組，以提供兩種重要的資料檢視。 此報表型別是專為funnel報告頂端而設計，是探索潛在客戶與行銷活動互動方式的理想選擇。 在任何自訂作業之前，以下兩個報表會顯示下列內容：
 
-**[!DNL Marketo Measure]101：管道的銷售機會** | 高階檢視您的行銷管道如何影響銷售機會的建立及其額外參與。
-**[!DNL Marketo Measure]101：依ID**&#x200B;的銷售機會 | 這會顯示「銷售機會」案例，且是更細微的報告，顯示每個個別「銷售機會」及其相關的「購買者接觸點」。
+**[!DNL Marketo Measure]101：管道的銷售機會** |行銷管道如何影響潛在客戶建立及其額外參與的高層級檢視。
+**[!DNL Marketo Measure]101：依ID**&#x200B;的銷售機會 |這個選項會顯示「銷售機會」案例，而且是更細微的報告，顯示每個個別銷售機會及其相關的購買者接觸點。
 
-有購買者接觸點的&#x200B;**銷售機會/聯絡人** | 這些報告通常稱為「[!DNL Marketo Measure]人員」報告。 他們使用[!DNL Marketo Measure]自訂物件&#x200B;_[!DNL Marketo Measure]Person_，與上述報告中的Lead物件相反。
+有購買者接觸點的&#x200B;**銷售機會/聯絡人** |這些報表通常稱為「[!DNL Marketo Measure]人員」報表。 他們使用[!DNL Marketo Measure]自訂物件&#x200B;_[!DNL Marketo Measure]Person_，與上述報告中的Lead物件相反。
 
 [!DNL Marketo Measure]個人物件將潛在客戶與連絡人物件關聯在一起。 [!DNL Salesforce]未提供立即可用選項，無法在同一份報表中使用Lead和Contact物件來建立報表。 透過使用個人的唯一識別碼（其電子郵件）將銷售線索與聯絡人物件建立關聯，[!DNL Marketo Measure]個人便可在相同報表中報告銷售線索與聯絡人相關的購買者接觸點。 此報告型別最適合用於驗證任何[!DNL Marketo Measure]帳戶設定，因為此為最內含的接觸點報告層級。
 
 以下兩個報表變數使用相同的報表型別，但依據不同的量度、人員ID （電子郵件）與行銷管道分組。 這些是funnel的頂端/funnel的中層報告，探索您的銷售機會和聯絡人如何與您的行銷活動互動時，這些報告會很棒。 在任何自訂作業之前，以下兩個報表會顯示下列內容：
 
-**[!DNL Marketo Measure]101：依據管道的銷售機會/聯絡人** | 概略瞭解行銷管道如何影響潛在客戶或聯絡人的建立及其額外參與。 如果您想要瞭解行銷管道的總參與度，以及哪些行銷管道在Salesforce執行個體中促成全新的名稱，此報表是您理想的選擇。
-**[!DNL Marketo Measure]101：依ID**&#x200B;的銷售機會/連絡人 | 這會顯示每個[!DNL Marketo Measure]個人的劇本，且是更細微的報告，可顯示每個個人及其購買者接觸點，無論該接觸點是在他們身為銷售機會或聯絡人時發生。
+**[!DNL Marketo Measure]101：依據管道的銷售機會/聯絡人** |行銷管道如何影響潛在客戶或聯絡人建立及其額外參與的高層級檢視。 如果您想要瞭解行銷管道的總參與度，以及哪些行銷管道在Salesforce執行個體中促成全新的名稱，此報表是您理想的選擇。
+**[!DNL Marketo Measure]101：依ID**&#x200B;的銷售機會/連絡人 |這會顯示每個[!DNL Marketo Measure]個人的劇本，且是更細微的報告，可顯示每個個人及其購買者接觸點，無論該接觸點是在他們身為銷售機會還是作為聯絡人時發生的。
 
-**有購買者歸因接觸點的機會** | 最後兩個「_[!DNL Marketo Measure]101..._」報告是funnel報告的底部，這些報告顯示與機會相關的Buyer Attribution Touchpoint資料。 這些報表的主要差異在於，這些報表是由&#x200B;_購買者歸因接觸點_&#x200B;所建置，這些接觸點與「機會」和「機會」層級的資料（例如收入）有關。 每當您想要檢視商機或歸因收入的報告時，都應使用此報告型別。 以下兩個報表使用相同的報表型別，但是它們會依不同的量度、機會ID與行銷管道分組。 在任何自訂作業之前，以下兩個報表會顯示下列內容：
+**有購買者歸因接觸點的機會** |最後兩個「_[!DNL Marketo Measure]101..._」報告是funnel報告的底部，這些報告顯示與商機相關的Buyer Attribution Touchpoint資料。 這些報表的主要差異在於，這些報表是由&#x200B;_購買者歸因接觸點_&#x200B;所建置，這些接觸點與「機會」和「機會」層級的資料（例如收入）有關。 每當您想要檢視商機或歸因收入的報告時，都應使用此報告型別。 以下兩個報表使用相同的報表型別，但是它們會依不同的量度、機會ID與行銷管道分組。 在任何自訂作業之前，以下兩個報表會顯示下列內容：
 
-**[!DNL Marketo Measure]101：依據管道的機會** | 概略瞭解行銷管道如何影響並帶動各商機的已歸因收入。
-**[!DNL Marketo Measure]101：依ID列出的商機** | 此精細的報告版本顯示商機的完整歷程。 在此報表中，您可以看到與機會相關聯的每個Buyer Attribution Touchpoint，以及透過各種歸因模型產生的歸因收入。
+**[!DNL Marketo Measure]101：依據管道的機會** |行銷管道如何影響並帶動您機會的歸因收入的高層級檢視。
+**[!DNL Marketo Measure]101：依ID列出的商機** |此精細的報告版本顯示您機會的完整歷程。 在此報表中，您可以看到與機會相關聯的每個Buyer Attribution Touchpoint，以及透過各種歸因模型產生的歸因收入。
 
 將&quot;_[!DNL Marketo Measure]101..._&quot;報告視為符合您報告需求的範本，這被視為最佳作法。 從上述其中一個報表開始，可以節省您的時間，並確保您使用的是與[!DNL Marketo Measure]資料相關的正確欄位。 每次對&quot;_[!DNL Marketo Measure]101..._&quot;範本進行自訂時，請務必確定您「另存新檔」，以保留報表的原始變數。
 

@@ -4,9 +4,12 @@ description: 同步離線行銷活動 —  [!DNL Marketo Measure]
 title: 同步離線行銷活動
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: 727
 ht-degree: 0%
 
 ---
@@ -31,7 +34,7 @@ ht-degree: 0%
 
 ## 大量更新接觸點日期 {#bulk-update-touchpoint-date}
 
-在[!DNL Salesforce]中，促銷活動成員物件上的建立日期欄位會記下促銷活動成員新增至促銷活動的日期。 為了讓同步程式順利進行，請確定Buyer Touchpoint日期欄位的日期與Salesforce促銷活動成員物件上的日期相同。 此步驟是使用[!UICONTROL Bulk Update Touchpoint Date button]之前&#x200B;_的「_」執行，您在「啟用購買者接觸點」欄位中選取[!UICONTROL picklist]選項。
+在[!DNL Salesforce]中，促銷活動成員物件上的建立日期欄位會記下促銷活動成員新增至促銷活動的日期。 為了讓同步程式順利進行，請確定Buyer Touchpoint日期欄位的日期與Salesforce促銷活動成員物件上的日期相同。 此步驟是使用&#x200B;_之前_&#x200B;的「[!UICONTROL Bulk Update Touchpoint Date button]」執行，您在「啟用購買者接觸點」欄位中選取[!UICONTROL picklist]選項。
 
 為什麼這很重要？ 想像一下，您的公司在1月的一次會議上贊助了一個展位。 在大會中，有100個人對您的產品表示興趣，並提供他們的連絡資訊以接收電子郵件更新。 三週後，您終於在[!DNL Salesforce]中建立了行銷活動以追蹤會議結果。
 

@@ -3,9 +3,14 @@ description: '[!DNL Marketo Measure]報告範本 — Power BI - [!DNL Marketo Me
 title: '[!DNL Marketo Measure]報告範本 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/xoNrfpeiDzwSGh1Ii3Anl1O78vaRrvmHlzYTrPG7k5I
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: 2551
 ht-degree: 0%
 
 ---
@@ -20,7 +25,7 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-report-template-power-bi-1.png)
 
-您可以在[!DNL Marketo Measure]資訊頁上的[!DNL Data Warehouse] UI中找到您特定的伺服器、倉儲和結構描述資訊。 有關如何找到此頁面的說明，請參閱[這裡](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
+您可以在[!DNL Data Warehouse]資訊頁上的[!DNL Marketo Measure] UI中找到您特定的伺服器、倉儲和結構描述資訊。 有關如何找到此頁面的說明，請參閱[這裡](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
 
 QueryFilterStartDate和QueryFilterEndDate引數是用來限制匯入的資料量。 這些引數必須採用SQL格式，因為它們是傳送給[!DNL Snowflake]的查詢中所使用的。 例如，如果您想要將資料限制在過去兩年，QueryFilterStartDate會是`dateadd` (year，-2，current_date())。 這些引數會與datetime資料型別進行比較，因此建議使用`dateadd` (day，1，current_date())讓QueryFilterEndDate將所有資料傳回目前時間。
 

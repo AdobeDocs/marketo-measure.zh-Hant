@@ -4,9 +4,14 @@ description: 頁面配置指示 —  [!DNL Marketo Measure]
 title: 頁面配置指示
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/KNYz3Z-pabPi2n-QEfpp-tUynRaO22WmEdY27r-amu8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: 764
 ht-degree: 2%
 
 ---
@@ -79,7 +84,7 @@ ht-degree: 2%
    >
    >選取每個區段的「一欄」格式。
 
-1. 將[!DNL Marketo Measure Insights]畫布應用程式拖曳到新建立的區段中。 按一下&#x200B;**「儲存」**。有時候在放入畫布應用程式之前必須先儲存頁面配置，因為Salesforce無法立即辨識它。 所以在建立區段後，儲存頁面版面配置，然後重新編輯，將畫布應用程式拖曳到該區段中。 這適用於每個物件。
+1. 將[!DNL Marketo Measure Insights]畫布應用程式拖曳到新建立的區段中。 按一下&#x200B;**「儲存」**。 有時候在放入畫布應用程式之前必須先儲存頁面配置，因為Salesforce無法立即辨識它。 所以在建立區段後，儲存頁面版面配置，然後重新編輯，將畫布應用程式拖曳到該區段中。 這適用於每個物件。
 
    >[!NOTE]
    >
@@ -160,7 +165,7 @@ ht-degree: 2%
 
 1. 排序依據： [!UICONTROL Touchpoint Date] > [!UICONTROL Ascending]。
 
-1. 在&#x200B;**[!UICONTROL New]**&#x200B;區段中取消選取[!UICONTROL Buttons]。
+1. 在[!UICONTROL Buttons]區段中取消選取&#x200B;**[!UICONTROL New]**。
 
 1. 按一下「**[!UICONTROL Save]**」。
 
@@ -186,7 +191,7 @@ ht-degree: 2%
 
 1. 依接觸點日期>升序排序。
 
-1. 在&#x200B;**[!UICONTROL New]**&#x200B;區段中取消選取[!UICONTROL Buttons]。
+1. 在[!UICONTROL Buttons]區段中取消選取&#x200B;**[!UICONTROL New]**。
 
 1. 按一下「**[!UICONTROL Save]**」。
 

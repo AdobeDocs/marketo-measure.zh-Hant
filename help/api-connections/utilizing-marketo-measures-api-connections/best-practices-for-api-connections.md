@@ -3,9 +3,18 @@ description: API連線的最佳實務 —  [!DNL Marketo Measure]
 title: API連線的最佳作法
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/3f-fqPIPf40brt2-xfiMLLO6McY6hlT7rKkBvXb2laA
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+subfeature_v2:
+  - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: 751
 ht-degree: 0%
 
 ---
@@ -35,7 +44,7 @@ ht-degree: 0%
 
 依照我們的最佳實務建議，[!DNL Marketo Measure] [!DNL Facebook] API將能夠：
 
-* 使用必要的[!DNL Facebook]引數[!DNL Marketo Measure]自動標籤所有`_bf ={creative}`廣告
+* 使用必要的[!DNL Marketo Measure]引數`_bf ={creative}`自動標籤所有[!DNL Facebook]廣告
 * 下載所有作用中[!DNL Facebook]廣告的廣告成本資訊
 
 >[!NOTE]
@@ -48,7 +57,7 @@ ht-degree: 0%
 
 依照我們的最佳實務建議，[!DNL Marketo Measure] AdWords API將能夠：
 
-* 使用[!DNL Marketo Measure]的`_bk={keyword}, _bt={creative}, _bm={matchtype}, _bn={network}, _bg={adgroupID}`引數自動標籤所有AdWords廣告
+* 使用`_bk={keyword}, _bt={creative}, _bm={matchtype}, _bn={network}, _bg={adgroupID}`的[!DNL Marketo Measure]引數自動標籤所有AdWords廣告
 * 下載所有作用中AdWords廣告的廣告成本資訊
 
 **Bing**：在帳戶層級實作追蹤範本並啟用自動標籤
@@ -74,7 +83,7 @@ ht-degree: 0%
 
 ## 維護最佳實務 {#best-practice-for-maintenance}
 
-雖然遵循我們的最佳實務可防止您因中斷連線而遺失資料，但我們仍建議您定期檢查連線，如有可能，請每月檢查。 這是對您[!UICONTROL Connections]應用程式中[!DNL Marketo Measure]區段的簡單視覺檢查，以確定沒有紅色按鍵圖示出現，表示帳戶已中斷連線。
+雖然遵循我們的最佳實務可防止您因中斷連線而遺失資料，但我們仍建議您定期檢查連線，如有可能，請每月檢查。 這是對您[!DNL Marketo Measure]應用程式中[!UICONTROL Connections]區段的簡單視覺檢查，以確定沒有紅色按鍵圖示出現，表示帳戶已中斷連線。
 
 當API連線帳戶中斷連線時，[!DNL Marketo Measure]無法提取支出資料或標籤新廣告。 這就是為什麼我們總是建議儘可能實作追蹤範本的原因。 範本可確保即使廣告帳戶中斷連線，[!DNL Marketo Measure]仍可標籤廣告並提取精細的廣告詳細資料。 重新連線後，支出資料將會回填，而您的付費管道報表的中斷將會降至最低。
 

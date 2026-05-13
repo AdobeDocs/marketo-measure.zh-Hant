@@ -4,9 +4,14 @@ description: 我的報告中有重複的記錄 —  [!DNL Marketo Measure]
 title: 我的報告中的重複記錄
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/jnfw-d0aoXenk-beBuQYFd2IbVZVK4ypvqaOkvpnYxk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: 288
 ht-degree: 0%
 
 ---
@@ -17,7 +22,7 @@ ht-degree: 0%
 >
 >您可能會在檔案中看到指定&quot;[!DNL Marketo Measure]&quot;的說明，但在您的CRM中仍會看到&quot;[!DNL Bizible]&quot;。 我們正致力於更新此專案，品牌重塑將很快反映在您的CRM中。
 
-當您在[!DNL Marketo Measure]中深入探討[!DNL Salesforce]報告時，您可能會開始在報告中找到「重複」記錄。 當您檢閱[!DNL Marketo Measure]個現成可用的報表時，可能會有這種感覺。
+當您在[!DNL Salesforce]中深入探討[!DNL Marketo Measure]報告時，您可能會開始在報告中找到「重複」記錄。 當您檢閱[!DNL Marketo Measure]個現成可用的報表時，可能會有這種感覺。
 
 使用「採購員接觸點」物件或Buyer Attribution Touchpoint物件進行報告時，請務必瞭解您不再報告銷售機會、聯絡人或商機的數量，而是報告與這些標準物件（銷售機會、聯絡人、商機）相關的「採購員接觸點」或「採購員歸因接觸點」的數量。
 

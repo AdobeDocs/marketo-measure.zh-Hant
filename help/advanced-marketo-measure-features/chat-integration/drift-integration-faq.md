@@ -4,10 +4,15 @@ description: 漂移整合常見問題集 —  [!DNL Marketo Measure]
 title: 漂移整合常見問題集
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RDhpeivSYllzKoOFPjVBH2u-tPPsMUtVT5bS5hME0J8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: 357
+ht-degree: 1%
 
 ---
 
@@ -21,7 +26,7 @@ ht-degree: 0%
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async="" id="bizible-settings" data-chatEnabled="false"></script>`
 
-對於使用[!DNL Google Tag Manager]載入[!DNL Marketo Measure]指令碼的使用者，如果您想要排除您的漂移聊天室符合接觸點資格，請在您的`<span>`指令碼之後新增至下列[!DNL Marketo Measure]：
+對於使用[!DNL Google Tag Manager]載入[!DNL Marketo Measure]指令碼的使用者，如果您想要排除您的漂移聊天室符合接觸點資格，請在您的[!DNL Marketo Measure]指令碼之後新增至下列`<span>`：
 
 `<span id="bizible-settings" data-chatEnabled="false"></span>`
 

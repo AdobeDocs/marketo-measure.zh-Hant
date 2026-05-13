@@ -3,10 +3,17 @@ description: '[!DNL Salesforce]封裝合併 —  [!DNL Marketo Measure]'
 title: '[!DNL Salesforce]封裝合併'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/tnukDAuF9C1oI2Req6SWqg3C9gLFJASkIWDDt-0HUm0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 1%
+source-wordcount: 446
+ht-degree: 4%
 
 ---
 
@@ -25,7 +32,7 @@ ht-degree: 1%
 有兩個新欄位可增強您的報告功能：
 
 * form_name：此欄位現在可在BT/BAT物件中使用，可讓使用者根據表單名稱建立報表。
-* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數( Salesforce中的`bizible2__User_Touchpoint_V2__c`)的報告。
+* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數（ Salesforce中的`bizible2__User_Touchpoint_V2__c`）的報告。
 
 ## 支援與轉換 {#support-and-transition}
 
@@ -49,7 +56,7 @@ ht-degree: 1%
 
 ![](assets/salesforce-package-consolidation-2.png)
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **合併封裝會與我現有封裝中的欄位衝突嗎？**
 
@@ -61,8 +68,8 @@ ht-degree: 1%
 
 **V1和V2_EXT封裝中的欄位是否可以在整合封裝中使用？**
 
-可以。整合套件包含的V1欄位與透過「接觸點」欄位的V2_EXT欄位與物件進一步劃分的欄位相同。
+是的。 整合套件包含的V1欄位與透過「接觸點」欄位的V2_EXT欄位與物件進一步劃分的欄位相同。
 
 **使用V2_EXT欄位的報告可以在合併封裝中重新建立嗎？**
 
-可以。請依照[必要動作](#retired-actions)區段中的步驟操作。
+是的。 請依照[必要動作](#retired-actions)區段中的步驟操作。

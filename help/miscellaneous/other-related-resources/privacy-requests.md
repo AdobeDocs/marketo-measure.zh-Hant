@@ -3,16 +3,23 @@ description: 隱私權要求 —  [!DNL Marketo Measure]
 title: 隱私請求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/y6cWoJaRD7Tf1o4-aCY9MJdcLGt4RVF-ATuiFpAxyWI
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 25%
+source-wordcount: 283
+ht-degree: 26%
 
 ---
 
 # 隱私請求 {#privacy-requests}
 
-本檔案概述如何管理您可透過[!DNL Marketo Measure] UI和[!DNL Privacy Service] API **[!DNL Privacy Service]傳送給**&#x200B;的個別資料隱私權請求。
+本檔案概述如何管理您可透過[!DNL Privacy Service] UI和&#x200B;**[!DNL Privacy Service]API**&#x200B;傳送給[!DNL Marketo Measure]的個別資料隱私權請求。
 
 您可以透過兩種方式提交個別請求，以從[!DNL Marketo Measure]存取和刪除消費者資料：
 
@@ -29,11 +36,11 @@ ht-degree: 25%
 
 1. 識別下列項目：
 
-   a. IMS組織ID
+   答： IMS 組織 ID
 
-   b.您要對其採取動作之人員的電子郵件地址
+   b. 您要對其採取動作之人員的電子郵件地址
 
-   IMS 組織 ID 是 24 個字元的英數字串，通常會加上 @AdobeOrg。如果您的行銷團隊或內部 Adobe 系統管理員不知道您組織的 IMS 組織 ID，請寄信至 gdprsupport@adobe.com 與 Adobe 客戶服務團隊連絡。您需先取得 IMS 組織 ID，才能向隱私權 API 提交請求。
+   IMS 組織 ID 是 24 個字元的英數字串，通常會加上 @AdobeOrg。 如果您的行銷團隊或內部 Adobe 系統管理員不知道您組織的 IMS 組織 ID，請寄信至 gdprsupport@adobe.com 與 Adobe 客戶服務團隊連絡。 您需先取得 IMS 組織 ID，才能向隱私權 API 提交請求。
 
 1. 在[!DNL Privacy Service]中，您可以將存取和刪除要求提交至[!DNL Marketo Measure]，並檢查現有要求的狀態。
 
@@ -54,7 +61,7 @@ ht-degree: 25%
 
 &quot;include&quot;：
 
-* **marketoMeasure** (適用於此請求的Adobe產品)
+* **marketoMeasure** （適用於此請求的Adobe產品）
 
 &quot;regulation&quot;：
 

@@ -3,9 +3,14 @@ description: ' [!DNL Marketo Measure] CRM封裝的最佳實務 —  [!DNL Market
 title: ' [!DNL Marketo Measure] CRM封裝的最佳作法'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/E8LQ0-uUC-xqhG9D7CSuprsjkABJ54azWFSEdiuFABk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: 415
 ht-degree: 0%
 
 ---
@@ -18,7 +23,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-[!DNL Marketo Measure]與[!DNL Salesforce]和[!DNL Microsoft Dynamics]整合，本檔案著重於針對[!DNL Marketo Measure]設計的CRM套件的[!DNL Salesforce]最佳做法。
+[!DNL Marketo Measure]與[!DNL Salesforce]和[!DNL Microsoft Dynamics]整合，本檔案著重於針對[!DNL Salesforce]設計的CRM套件的[!DNL Marketo Measure]最佳做法。
 
 實施期間，下列兩個套件會安裝在您的[!DNL Salesforce]執行個體中。
 

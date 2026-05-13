@@ -4,16 +4,24 @@ description: 整合式廣告平台 —  [!DNL Marketo Measure]
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+TQID: https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: 1763
 ht-degree: 0%
 
 ---
 
 # 整合式廣告平台 {#integrated-ad-platforms}
 
-[!DNL Marketo Measure]擁有與Google AdWords、Microsoft BingAds、[!DNL Facebook]個廣告和DoubleClick促銷活動管理員的API連線。 透過這些API連線，[!DNL Marketo Measure]能夠輕鬆提取資料，並將其連同外部購買者應用程式推播到您的CRM。 不需要手動上傳成本或資料。 您的帳戶只需要連線並授權至[!DNL Marketo Measure]應用程式即可。[!DNL Marketo Measure] 之後會自動從平台下載行銷成本，並將其載入至[!DNL Marketo Measure]應用程式。 如果您選取啟用AdWords、BingAds或[!DNL Facebook]廣告的自動標籤，[!DNL Marketo Measure]會自動將其引數附加至廣告的URL。
+[!DNL Marketo Measure]擁有與Google AdWords、Microsoft BingAds、[!DNL Facebook]個廣告和DoubleClick促銷活動管理員的API連線。 透過這些API連線，[!DNL Marketo Measure]能夠輕鬆提取資料，並將其連同外部購買者應用程式推播到您的CRM。 不需要手動上傳成本或資料。 您的帳戶只需要連線並授權至[!DNL Marketo Measure]應用程式即可。 然後[!DNL Marketo Measure]將自動從平台下載行銷成本，並將其載入至[!DNL Marketo Measure]應用程式。 如果您選取啟用AdWords、BingAds或[!DNL Facebook]廣告的自動標籤，[!DNL Marketo Measure]會自動將其引數附加至廣告的URL。
 
 ## 如何連結Ad平台 {#how-to-connect-ad-platforms}
 
@@ -41,12 +49,12 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]在您的[!DNL AdWords]帳戶中搜尋追蹤範本：
 
-* *選項A*：找到追蹤範本。[!DNL Marketo Measure] 將其引數新增至範本。
+* *選項A*：找到追蹤範本。 [!DNL Marketo Measure]將其引數新增至範本。
 * *選項B*：找到第三方重新導向。 如果在追蹤範本中找到協力廠商重新導向，[!DNL Marketo Measure]無法採取任何動作。 您必須手動將[!DNL Marketo Measure]標籤新增至協力廠商系統。 例如，Kenshoo或Marin之類的競標管理工具就是第三方重新導向的範例。 深入瞭解[競標管理工具如何影響 [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}。
 
-* *選項C*：找不到追蹤範本。[!DNL Marketo Measure] 將會掃描您所有的Ad Destination URL以取得[!DNL Marketo Measure]引數。 根據掃描，如果：
+* *選項C*：找不到追蹤範本。 [!DNL Marketo Measure]會掃描[!DNL Marketo Measure]引數的所有廣告目的地URL。 根據掃描，如果：
    * 找到引數：設定完成！
-   * 找不到引數： [!DNL Marketo Measure]會將其引數附加至廣告目的地URL的結尾。[!DNL Marketo Measure] 會在新廣告建立後的兩小時內附加新廣告。 請記住，不會將引數新增至範本。
+   * 找不到引數： [!DNL Marketo Measure]會將其引數附加至廣告目的地URL的結尾。 [!DNL Marketo Measure]會在建立新廣告後的兩小時內附加新廣告。 請記住，不會將引數新增至範本。
 
 深入瞭解[[!DNL AdWords] 自動標籤功能](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}。
 
@@ -119,7 +127,7 @@ Rafflecopter建立的試算表是[!DNL EpikOne's]試算表的修改版本。 它
 
 ## Bing Ads {#bing-ads}
 
-Bing Ads是整合平台，可讓您啟用URL的自動標籤，或使用協力廠商工具（例如[!DNL Marketo Measure]）來標籤廣告。[!DNL Bing Ads] 也仰賴UTM引數。
+Bing Ads是整合平台，可讓您啟用URL的自動標籤，或使用協力廠商工具（例如[!DNL Marketo Measure]）來標籤廣告。 [!DNL Bing Ads]也依賴UTM引數。
 
 我們的整合支援以下廣告型別：
 
@@ -152,7 +160,7 @@ Bing Ads的自動標籤也會新增下列自訂引數：
 
 ## Facebook廣告 {#facebook-ads}
 
-[!DNL Marketo Measure]與[!DNL Facebook]的整合可讓其自動下載廣告資訊，並使用其引數標籤URL。[!DNL Marketo Measure] 會透過我們的自動標籤提取行銷活動和廣告集資訊。 廣告集將填入我們的廣告群組名稱欄位。 如需在[!DNL Facebook]平台上設定URL標籤的詳細資訊，請造訪[!DNL Facebook] [企業](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"}頁面。
+[!DNL Marketo Measure]與[!DNL Facebook]的整合可讓其自動下載廣告資訊，並使用其引數標籤URL。 [!DNL Marketo Measure]將透過我們的自動標籤提取行銷活動和廣告集資訊。 廣告集將填入我們的廣告群組名稱欄位。 如需在[!DNL Facebook]平台上設定URL標籤的詳細資訊，請造訪[!DNL Facebook] [企業](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"}頁面。
 
 使用[!DNL Facebook Ads]啟用自動標籤之前，必須將先前的效能記錄匯出為CSV。 此時，當[!DNL Marketo Measure]使用其_bf引數標籤[!DNL Facebook Ads]時，[!DNL Facebook]會將廣告讀取為全新並清除效能記錄。 因此，如果對您和您的組織有價值，匯出先前績效的記錄很重要。
 
@@ -162,11 +170,11 @@ Bing Ads的自動標籤也會新增下列自訂引數：
 
 ## LinkedIn贊助內容 {#linkedin-sponsored-content}
 
-LinkedIn整合可讓[!DNL Marketo Measure]在[!DNL LinkedIn]贊助的內容上標籤目的地URL，這最終可讓[!DNL Marketo Measure]追蹤使用者的整個接觸點歷程，並將活動對應回特定的[!DNL LinkedIn]促銷活動和Creative。 這可提供客戶[!DNL LinkedIn]活動投資報酬率的深入分析。[!DNL Marketo Measure] 將會搜尋具有唯一[!DNL LinkedIn]共用的創意內容，並在其結尾新增`?_bl={creativeId}`引數。
+LinkedIn整合可讓[!DNL Marketo Measure]在[!DNL LinkedIn]贊助的內容上標籤目的地URL，這最終可讓[!DNL Marketo Measure]追蹤使用者的整個接觸點歷程，並將活動對應回特定的[!DNL LinkedIn]促銷活動和Creative。 這可提供客戶[!DNL LinkedIn]活動投資報酬率的深入分析。 [!DNL Marketo Measure]將搜尋具有唯一[!DNL LinkedIn]共用的創意內容，並在結尾新增`?_bl={creativeId}`引數。
 
 由於[!DNL LinkedIn]共用可用於多個行銷活動和創作，因此我們要求客戶不要複製/複製/複製現有創作，以便維持其唯一性。 如果找到「共用」且偵測到只使用在一個Creative上，[!DNL Marketo Measure]可以將「共用」標示為原樣，而不需要重新建立任何「創意」或「共用」，並且所有廣告歷史記錄（曝光數、點按數、共用）都將保留。
 
-一旦發現共用可跨多個創意內容共用，[!DNL Marketo Measure]就必須執行暫停、複製和重新標籤的程式，才能建立唯一集合。[!DNL Marketo Measure] 將會暫停並封存即時創意內容，這表示也會封存包含曝光數、點按數及社交分享的創意內容。
+一旦發現共用可跨多個創意內容共用，[!DNL Marketo Measure]就必須執行暫停、複製和重新標籤的程式，才能建立唯一集合。 [!DNL Marketo Measure]將暫停並封存即時創意內容，這表示也會封存包含曝光、點按和社交分享的創意內容。
 
 ## 非整合平台 {#non-integrated-platforms}
 

@@ -4,10 +4,17 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '21110'
-ht-degree: 3%
+source-wordcount: 21775
+ht-degree: 8%
 
 ---
 
@@ -180,7 +187,7 @@ _按一下完整版本的影像_
       <td>0013100001phrBAAY</td>
     </tr>
     <tr>
-      <td>電子郵件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>已透過「連絡人」關係或「銷售線索與帳戶」對應，對應至「帳戶」的電子郵件地址。</td>
       <td>person@adobe.com</td>
@@ -2033,7 +2040,7 @@ _按一下完整版本的影像_
       </td>
     </tr>
     <tr>
-      <td>電子郵件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>與BAT相關聯的電子郵件地址。</td>
       <td>person@adobe.com</td>
@@ -3558,7 +3565,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -4004,7 +4011,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>從廣告連線中拉取的廣告群組名稱。</p>
       </td>
       <td>
-        <p>歸因管理軟體 | 片語</p>
+        <p>歸因管理軟體 |片語</p>
       </td>
     </tr>
     <tr>
@@ -4091,7 +4098,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由Creative加總的成本。 (也就是若要取得Creative Cost，加總此欄等於true的列)。</p>
+        <p>指出列是否包含可由Creative加總的成本。 （也就是若要取得Creative Cost，加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>假</p>
@@ -4546,7 +4553,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>此表格的主要物件或實體。 在此案例中，「Creative」。</p>
       </td>
       <td>
-        <p>Creative</p>
+        <p>創意</p>
       </td>
     </tr>
     <tr>
@@ -5703,7 +5710,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -6357,7 +6364,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
     </tr>
     <tr>
-      <td>電子郵件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>記錄的電子郵件地址。</td>
       <td>personb@adobe.com</td>
@@ -6472,7 +6479,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由Creative加總的成本。 (也就是若要取得Creative Cost，加總此欄等於true的列)。</p>
+        <p>指出列是否包含可由Creative加總的成本。 （也就是若要取得Creative Cost，加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>假</p>
@@ -6747,7 +6754,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -7056,7 +7063,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       </td>
       <td>varchar</td>
       <td>預期為Null，因為欄位已過時。</td>
-      <td>空</td>
+      <td>NULL</td>
     </tr>
     <tr>
       <td>
@@ -8097,7 +8104,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -8372,7 +8379,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -8937,7 +8944,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -9350,7 +9357,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10424,7 +10431,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>varchar</td>
       <td>預期為Null，因為欄位已過時。</td>
       <td>
-        <p>空</p>
+        <p>NULL</p>
       </td>
     </tr>
     <tr>
@@ -11302,7 +11309,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>與BT相關聯的電子郵件地址。</td>
@@ -12437,7 +12444,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
     </tr>
     <tr>
       <td>
-        <p>電子郵件</p>
+        <p>EMAIL</p>
       </td>
       <td>varchar</td>
       <td>

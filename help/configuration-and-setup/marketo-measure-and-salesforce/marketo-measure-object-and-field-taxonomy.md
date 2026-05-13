@@ -4,9 +4,14 @@ description: '[!DNL Marketo Measure]物件和欄位分類法 —  [!DNL Marketo 
 title: '[!DNL Marketo Measure]物件與欄位分類法'
 exl-id: 67f1cac8-e2b4-45cc-b1c9-58bf4e1a760d
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/8YG-eHRcmSYy3yICJMViCjkGyPsgLxzoLIMHVMl7s74
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: 163
 ht-degree: 0%
 
 ---
@@ -19,9 +24,9 @@ ht-degree: 0%
 
 如需完整大小的影像，[請按一下這裡](assets/bizible-object-and-field-taxonomy-graph-full.png)。
 
-每個物件[!DNL Marketo Measure]中的[欄位定義可在此找到](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)。
+每個物件[中的[!DNL Marketo Measure]欄位定義可在此找到](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)。
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **箭號中的邏輯為何？**
 
@@ -29,7 +34,7 @@ ht-degree: 0%
 
 **什麼是[!DNL Marketo Measure]人員？**
 
-這是[!DNL Marketo Measure]中的自訂[!DNL Salesforce]物件，可將購買者接觸點連結至潛在客戶與聯絡人。
+這是[!DNL Salesforce]中的自訂[!DNL Marketo Measure]物件，可將購買者接觸點連結至潛在客戶與聯絡人。
 
 **什麼是[!DNL Bizible].JS？**
 
@@ -37,4 +42,4 @@ ht-degree: 0%
 
 **什麼是行銷ROI儀表板？**
 
-這是生活在[!DNL Marketo Measure]應用程式中的自訂行銷管道儀表板。 您可以前往[!DNL Marketo Measure]中的[!DNL Salesforce]索引標籤來存取它。
+這是生活在[!DNL Marketo Measure]應用程式中的自訂行銷管道儀表板。 您可以前往[!DNL Salesforce]中的[!DNL Marketo Measure]索引標籤來存取它。

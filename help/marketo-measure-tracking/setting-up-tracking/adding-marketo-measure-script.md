@@ -4,9 +4,15 @@ description: 正在新增 [!DNL Marketo Measure] 指令碼 —  [!DNL Marketo Me
 title: 正在新增 [!DNL Marketo Measure] 指令碼
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/N88BiNzKTpyS1gl0OyNXwnRk1QrZ1k6UykMd8VWf7dw
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -17,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除了部署[&#x200B; JavaScript之外，請確定您已 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}申請[!DNL Marketo Measure]中的所有適當網域。
+>除了部署[!DNL Marketo Measure] JavaScript之外，請確定您已[申請 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}中的所有適當網域。
 
 開始使用[!DNL Marketo Measure]時，有兩種方式可將[!DNL Marketo Measure] JavaScript新增至您的網站：
 
@@ -38,7 +44,7 @@ ht-degree: 0%
 
 ## Tag Management系統 {#tag-management-systems}
 
-如果無法透過硬式編碼新增[!DNL Marketo Measure]個JavaScript，另一個選項是使用Tag Management系統(例如[!DNL Marketo Measure] (GTM)或Tealium)新增[!DNL Google Tag Manager]指令碼。
+如果無法透過硬式編碼新增[!DNL Marketo Measure]個JavaScript，另一個選項是使用Tag Management系統(例如[!DNL Google Tag Manager] (GTM)或Tealium)新增[!DNL Marketo Measure]指令碼。
 
 使用標籤管理系統來部署[!DNL Marketo Measure] JS可能會因為指令碼載入時間延遲而導致5-10%的資料遺失。 基本上，如果標籤管理工具載入的速度不夠快，[!DNL Marketo Measure] JS也無法載入的速度夠快，可能會遺失第一個反向連結資訊。
 
@@ -104,7 +110,7 @@ ht-degree: 0%
 * 問題：如果頁面上託管多個表單，您可能無法分辨哪個特定表單已填入[!DNL Marketo Measure]表單URL欄位。
 * 解決方案：如果您必須知道已填寫哪個表單，請探索與您的網路團隊設定動態URL雜湊處理。
 
-以&#x200B;**格式組織的`<div>`Forms**
+以`<div>`格式組織的&#x200B;**Forms**
 
 * 問題： [!DNL Marketo Measure] JS難以辨識以`<div>`格式組織的表單，因此可能需要自訂程式碼。
 * 解決方案：您的網頁開發團隊可以使用這些[報表使用者範本](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"}來新增所需的程式碼。
@@ -116,7 +122,7 @@ ht-degree: 0%
 
 **第二個網域**
 
-* 問題： [!DNL Marketo Measure] JavaScript是網域所專屬的，因此對任何個別或國際網域必須採取額外步驟。 [!DNL Marketo Measure] JS可以在相同的根網域上處理子網域。
+* 問題： [!DNL Marketo Measure] JavaScript是網域所專屬的，因此對任何個別或國際網域必須採取額外步驟。[!DNL Marketo Measure] JS可以處理相同根網域上的子網域。
 * 解決方案：如果您擁有多個根網域，且您想要由[!DNL Marketo Measure]追蹤，請務必將JS新增至網域，並告知[!DNL Marketo Measure]顧問應將哪些網域手動關聯至您的[!DNL Marketo Measure]帳戶。
 
 ## 測試[!DNL Marketo Measure] JavaScript {#testing-marketo-measure-javascript}
@@ -129,12 +135,12 @@ ht-degree: 0%
 
 1. 請一律使用無痕瀏覽器，或清除每個表單提交測試之間的快取，並且每次都使用不同的電子郵件地址。
 
-   a.最佳做法是使用包含表示這是測試及當天時間的內容的假電子郵件。 例如： testing830am@test.com。
+   答： 最佳做法是使用包含表示這是測試及當天時間的內容的假電子郵件。 例如： testing830am@test.com。
 
 1. 紀錄您要提交表單的頁面URL及使用的電子郵件。
 
 1. 找出在您的CRM （潛在客戶或連絡人）中針對該表單提交所建立的記錄，並確認已正確建立接觸點。
 
-   a.您可以使用[!DNL Marketo Measure]庫存報告，例如「具有採購員接觸點的銷售機會」，或如果您選擇以[!DNL Marketo Measure]詳細資料更新您的版面配置，請檢視「銷售機會/聯絡人」頁面配置。
+   答： 您可以使用[!DNL Marketo Measure]庫存報告，例如「具有購買者接觸點的銷售機會」，或者如果您選擇以[!DNL Marketo Measure]詳細資料更新您的版面配置，請檢視「銷售機會/聯絡人」頁面配置。
 
-   b.可能需要一些時間來處理資料。
+   b. 這可能需要一些時間來處理資料。

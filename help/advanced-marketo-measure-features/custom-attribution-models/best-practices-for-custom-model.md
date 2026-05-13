@@ -3,9 +3,15 @@ description: 自訂模型的最佳實務 —  [!DNL Marketo Measure]
 title: 自訂模型的最佳實務
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/p-O-xH6MR0SrtGh8Wa57g1stQHMNCgftQ-2BVnSi01I
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: 851
 ht-degree: 0%
 
 ---
@@ -44,7 +50,7 @@ ht-degree: 0%
       * 歸因百分比越低，表示團隊監視的階段越不重要
 * 您必須根據「銷售機會」或「聯絡人」階段來定義funnel階段的最上層，而非同時根據兩者
    * 這表示您必須確保所有人員都會在相對物件上通過該舞台
-      * 例如：如果您從Lead物件定義MQL階段，則所有人員必須以Lead進入您的系統，並在其Lead記錄上標籤為MQL，以便[!DNL Marketo Measure]能夠準確反映哪個接觸與Lead轉換至MQL有關。 如果不是這種情況，並且某些人在成為MQL作為潛在客戶之前進度到聯絡，則[!DNL Marketo Measure]將無法準確地在您的接觸點資料中說明此問題，並且我們將必須假設該人員已經擁有MQL。[!DNL Marketo Measure]無法說明階段跳躍機制，因此我們將推斷階段已通過，即使階段尚未通過。
+      * 例如：如果您從Lead物件定義MQL階段，則所有人員必須以Lead進入您的系統，並在其Lead記錄上標籤為MQL，以便[!DNL Marketo Measure]能夠準確反映哪個接觸與Lead轉換至MQL有關。 如果不是這種情況，並且某些人在成為MQL作為潛在客戶之前進度到聯絡，則[!DNL Marketo Measure]將無法準確地在您的接觸點資料中說明此問題，並且我們將必須假設該人員已經擁有MQL。 [!DNL Marketo Measure]無法說明階段跳躍機制，因此我們將推斷階段已通過，即使階段尚未通過。
 * 確保為您納入用來定義自訂階段的所有欄位啟用欄位歷史記錄追蹤
 * 請勿使用公式欄位來定義自訂階段
    * 布林值欄位是最佳實務建議

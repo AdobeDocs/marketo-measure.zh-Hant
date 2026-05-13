@@ -4,9 +4,16 @@ description: '[!DNL Marketo Engage]人員整合 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]人員整合'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/h5Fe8tfw6VkKLRgKVdgKDRrhK91iVtkGSkrwU-W5SKw
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: 878
 ht-degree: 1%
 
 ---
@@ -20,7 +27,7 @@ Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，�
 * 生產Marketo執行個體
 * 生產[!DNL Salesforce]或[!DNL Microsoft Dynamics]執行個體
 * 任何付費的[!DNL Marketo Measure]訂閱
-* SOLR已啟用(請聯絡[Marketo支援](https://nation.marketo.com/t5/Support/ct-p/Support){target="_blank"}以啟用此功能)
+* SOLR已啟用（請聯絡[Marketo支援](https://nation.marketo.com/t5/Support/ct-p/Support){target="_blank"}以啟用此功能）
 
 ## 運作方式 {#how-it-works}
 
@@ -71,7 +78,7 @@ Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，�
    <td><p>createdAt</p></td> 
   </tr> 
   <tr> 
-   <td><p>電子郵件</p></td> 
+   <td><p>EMAIL</p></td> 
    <td><p>電子郵件</p></td> 
   </tr> 
   <tr> 
@@ -103,7 +110,7 @@ Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，�
 
 *在已知行為問題中，Marketo公司實體的欄位不會影響人員的updatedAt值，因此，如果更新網站或公司等相關欄位，[!DNL Marketo Measure]將無法得知這些值已修改，因為updatedAt日期/時間值未更新。 這會影響ABM功能，我們不會有新的資料來解決潛在客戶的帳戶。 目前沒有解決方法，但計畫未來解決此問題。
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **為什麼我的CRM與[!DNL Marketo Measure Discover]的潛在客戶計數不同？**
 

@@ -4,10 +4,15 @@ description: 正在建立 [!DNL Marketo Measure] 設定檔 —  [!DNL Marketo Me
 title: 建立 [!DNL Marketo Measure] 設定檔
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/7LvGF-KnE-FAkp1eLwawZUbFqac4cWAH9YmPKXaqKsM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 0%
+source-wordcount: 185
+ht-degree: 3%
 
 ---
 
@@ -33,8 +38,8 @@ ht-degree: 0%
 1. 登入您的[!DNL Marketo Measure]帳戶並重新授權與新使用者的[!DNL Salesforce]連線：
 
    * 前往[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}並使用新的使用者生產Salesforce憑證登入
-   * 在「[!UICONTROL Settings]」下拉式清單中選取「[!UICONTROL My Account]」
-   * 在「[!UICONTROL Connections]」群組中選取「[!UICONTROL Integrations]」
+   * 在「[!UICONTROL My Account]」下拉式清單中選取「[!UICONTROL Settings]」
+   * 在「[!UICONTROL Integrations]」群組中選取「[!UICONTROL Connections]」
    * 按一下目前連線的[!DNL Salesforce]連線右側的按鍵圖示，然後選取「使用生產重新授權」。 然後在出現提示時，使用新的使用者認證再次登入
 
    完成！

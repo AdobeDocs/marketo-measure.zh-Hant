@@ -3,9 +3,15 @@ description: '[!DNL Marketo Measure]報告範本 — Tableau - [!DNL Marketo Mea
 title: '[!DNL Marketo Measure]報告範本 — Tableau'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/yeKdQAe2ZyoFluQuk8CbqA-yWw3XeSdtGYvAFf2WROM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: 2287
 ht-degree: 0%
 
 ---
@@ -14,7 +20,7 @@ ht-degree: 0%
 
 ## 快速入門 {#getting-started}
 
-您可以在[!DNL Tableau]這裡[存取](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}報告範本。
+您可以在[這裡](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}存取[!DNL Tableau]報告範本。
 
 開啟[!DNL Adobe Marketo Measure]報表範本Tableau活頁簿檔案。
 
@@ -34,7 +40,7 @@ ht-degree: 0%
 
 ### 自訂SQL查詢 {#custom-sql-queries}
 
-由於[!DNL Tableau]將資料來源篩選器套用至整體查詢，而不是套用至篩選器所設定的個別資料表，因此我們選擇對模型中的每個資料表使用自訂SQL。 這可讓模型篩選掉表格層級中已刪除和重複的列。 例如，當套用為資料來源篩選器時，工作階段。_deleted_date is null將會新增到查詢的where子句中，導致下列查詢。
+由於[!DNL Tableau]將資料來源篩選器套用至整體查詢，而不是套用至篩選器所設定的個別資料表，因此我們選擇對模型中的每個資料表使用自訂SQL。 這可讓模型篩選掉表格層級中已刪除和重複的列。 例如，當套用為資料來源篩選時，session._deleted_date is null將會新增到查詢的where子句中，產生以下查詢。
 
 **篩選器已新增到資料Source**
 
@@ -191,7 +197,7 @@ ht-degree: 0%
 
 ### 參與路徑 {#engagement-path}
 
-[!UICONTROL Engagement Path]中的[!DNL Discover]報告與範本之間沒有直接比較。 [!DNL Discover]中的報表是根據接觸點建立模型，而範本中的報表是根據歸因接觸點建立模型。 範本僅聚焦於機會及其相關接觸點，而非顯示所有接觸點資料。
+[!DNL Discover]中的[!UICONTROL Engagement Path]報告與範本之間沒有直接比較。 [!DNL Discover]中的報表是根據接觸點建立模型，而範本中的報表是根據歸因接觸點建立模型。 範本僅聚焦於機會及其相關接觸點，而非顯示所有接觸點資料。
 
 ### 交易速度 {#deal-velocity}
 

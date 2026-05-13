@@ -3,9 +3,14 @@ description: 階段對應的最佳實務 —  [!DNL Marketo Measure]
 title: 階段對應的最佳實務
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: 479
 ht-degree: 0%
 
 ---
@@ -20,7 +25,7 @@ ht-degree: 0%
 
 本節所管理的額外功能是Funnel階段，可讓您新增階段至funnel而不套用歸因。 funnel階段會以接觸點形式受到追蹤，且會填入您CRM中的接觸點位置欄位。 這些Funnel階段也會在[!DNL Marketo Measure]探索中的各個歷程展示板中呈現。
 
-## 最佳實務 {#best-practices}
+## 最佳做法 {#best-practices}
 
 無論您是第一次評估階段對應，還是檢閱您的funnel訂單，請務必牢記以下最佳實務。
 

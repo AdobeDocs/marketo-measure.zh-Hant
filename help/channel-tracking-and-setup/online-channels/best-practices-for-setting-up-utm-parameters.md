@@ -4,10 +4,13 @@ description: 設定UTM引數的最佳實務 —  [!DNL Marketo Measure]
 title: 設定UTM引數的最佳作法
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/DtL-NA5HSr40pOEJ0iCge--9Aa-reP1PRyJIw3qfAqM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 0%
+source-wordcount: 453
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ UTM引數是切分行銷資料的絕佳方式。 [!DNL Marketo Measure]使用和
 
 **utm_campaign**：此欄位對應到廣告行銷活動名稱。 使用utm_campaign表示行銷活動的標題，如廣告平台中所有，或內部所參照。
 
-這也是一個表示地理位置、廣告網路型別（顯示v.搜尋）等的好引數。
+這也是表示地理位置、廣告網路型別(顯示v. 搜尋)，以此類推。
 
 建議您使用底線而非空格，並避免使用標點符號。 這能減少瀏覽器讀取引數時發生編碼錯誤的可能性。
 

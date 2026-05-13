@@ -4,9 +4,14 @@ description: 自訂分段 —  [!DNL Marketo Measure]
 title: 自訂分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/COqmO8TXqg0Du1FmW4MDfi6Wz33uO8S2pGywUoc40KM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: 740
 ht-degree: 0%
 
 ---
@@ -37,7 +42,7 @@ ht-degree: 0%
 
 * 前往[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}並登入
 * 在[!UICONTROL My Account]標籤下，選取[!UICONTROL Settings]
-* 從左側邊欄的[!UICONTROL Segments]區段下的選項中選取[!UICONTROL Reporting]
+* 從左側邊欄的[!UICONTROL Reporting]區段下的選項中選取[!UICONTROL Segments]
 
 步驟3 — 瞭解元件。
 

@@ -4,10 +4,17 @@ description: '[!DNL Microsoft Dynamics] CRM安裝指南 — Marketo Measure — 
 title: '[!DNL Microsoft Dynamics] CRM安裝指南'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/KMhrHYDuF9z18bdpdrjfj2O3NbIcMsvQyJBqTpLf1Xo
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 0%
+source-wordcount: 927
+ht-degree: 1%
 
 ---
 
@@ -138,7 +145,7 @@ ht-degree: 0%
 
 **廣告帳戶連線**
 
-若要將您的廣告帳戶與[!DNL Marketo Measure]連線，請先造訪[!UICONTROL Connections]應用程式中的[!DNL Marketo Measure]索引標籤。
+若要將您的廣告帳戶與[!DNL Marketo Measure]連線，請先造訪[!DNL Marketo Measure]應用程式中的[!UICONTROL Connections]索引標籤。
 
 1. 請依照上述&#x200B;_CRM as a Data Provider_&#x200B;區段中的步驟1和2操作。
 
@@ -158,7 +165,7 @@ ht-degree: 0%
 
    ![](assets/microsoft-dynamics-crm-installation-guide-23.png)
 
-1. 輸入您的電話號碼。 針對網站，輸入您的網站上用於[!DNL Marketo Measure]追蹤的主要根網域。 完成時，按一下&#x200B;**[!UICONTROL Save]**。
+1. 輸入您的電話號碼。 針對網站，輸入您的網站上用於[!DNL Marketo Measure]追蹤的主要根網域。 完成後請按一下 **[!UICONTROL Save]**。
 
    ![](assets/microsoft-dynamics-crm-installation-guide-24.png)
 
@@ -166,7 +173,7 @@ ht-degree: 0%
    >
    >若要新增多個根網域，請聯絡您的[!DNL Marketo Measure]客戶代表。
 
-1. 然後必須將[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)放置在整個網站和登入頁面上。 建議將指令碼硬式編碼於登入頁面的標題內，或透過Tag Management系統(例如[Google Tag Manager](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md))新增。
+1. 然後必須將[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)放置在整個網站和登入頁面上。 建議將指令碼硬式編碼於登入頁面的標題內，或透過Tag Management系統（例如[Google Tag Manager](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md)）新增。
 
    >[!NOTE]
    >

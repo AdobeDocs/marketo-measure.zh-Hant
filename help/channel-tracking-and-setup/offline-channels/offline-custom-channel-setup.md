@@ -4,9 +4,16 @@ description: 離線自訂頻道設定 —  [!DNL Marketo Measure]
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/L-mkNzo9yTir-EzNiX-a9ylKKZoKAs0nIXdu39YnLT4
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: 887
 ht-degree: 0%
 
 ---
@@ -65,13 +72,13 @@ SFDC行銷活動型別將顯示在離線頻道的標籤中，列在「[!DNL Sale
 
 行銷團隊通常會建立[!DNL Salesforce]個行銷活動以追蹤各種數位行銷工作。 此做法沒有問題；不過，請務必以不同方式處理這些行銷活動，例如直接郵件或會議等真正的離線行銷活動。 與數位事件（在您網站上發生的互動）相關的行銷活動不應與[!DNL Marketo Measure]同步。 同步這些行銷活動會導致接觸點重複，因為[!DNL Marketo Measure] JavaScript已在追蹤線上工作。
 
-處理線上活動行銷活動的另一個秘訣是將行銷活動型別[!DNL Salesforce]對應至NULL。 若要這麼做，請先在標題為NULL的[!DNL Marketo Measure]應用程式中建立頻道，如下圖所示。 您可以在[!DNL Marketo Measure]建立管道&#x200B;**區段下的**&#x200B;應用程式中找到此專案。 在不應同步的行銷活動意外同步時，此方法將有所幫助。 透過檢視一切在NULL下分組，很容易找到行銷活動並更正同步狀態。
+處理線上活動行銷活動的另一個秘訣是將行銷活動型別[!DNL Salesforce]對應至NULL。 若要這麼做，請先在標題為NULL的[!DNL Marketo Measure]應用程式中建立頻道，如下圖所示。 您可以在&#x200B;**建立管道**&#x200B;區段下的[!DNL Marketo Measure]應用程式中找到此專案。 在不應同步的行銷活動意外同步時，此方法將有所幫助。 透過檢視一切在NULL下分組，很容易找到行銷活動並更正同步狀態。
 
 ![](assets/6-2.png)
 
 ## 在應用程式中輸入離線管道規則 {#entering-your-offline-channel-rules-to-the-app}
 
-當您使用自訂規則編輯並更新試算表後，下一步就是在[!DNL Marketo Measure]應用程式中重新建立此管道對應 — 您實際上並不會上傳離線管道的試算表。 而是要在選取清單方塊中輸入資訊，如下圖所示。 按一下&#x200B;**[!UICONTROL Offline Channels]**&#x200B;區段下的&#x200B;**[!UICONTROL Channels]**&#x200B;即可找到此專案。
+當您使用自訂規則編輯並更新試算表後，下一步就是在[!DNL Marketo Measure]應用程式中重新建立此管道對應 — 您實際上並不會上傳離線管道的試算表。 而是要在選取清單方塊中輸入資訊，如下圖所示。 按一下&#x200B;**[!UICONTROL Channels]**&#x200B;區段下的&#x200B;**[!UICONTROL Offline Channels]**&#x200B;即可找到此專案。
 
 ![](assets/7-2.png)
 

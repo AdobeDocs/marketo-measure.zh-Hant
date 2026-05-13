@@ -3,9 +3,12 @@ description: Data Warehouse存取 — 直接共用 — 產品檔案
 title: Data Warehouse存取 — 直接共用
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/TT2LYCV4Zv1jdx-ZgzlnThNGVdUAJDwLlely6WgNfXY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: 308
 ht-degree: 0%
 
 ---
@@ -17,12 +20,12 @@ ht-degree: 0%
 若要讓[!DNL Marketo Measure]設定直接共用至資料倉儲，您必須符合下列要求。
 
 * 您有自己的Snowflake執行個體。
-* 您的Snowflake執行個體位於Azure East US 2 Snowflake區域。
+* 您的Snowflake執行個體位於Azure美國東部2 Snowflake區域。
 * 您提供[!DNL Marketo Measure]您的Snowflake帳戶識別碼。
 
 ## 限制 {#limitations}
 
-[!DNL Marketo Measure]將只能以Azure East US 2中的帳戶設定Snowflake直接共用(這是Marketo Measure的限制，不能使用Snowflake)。 如果您需要讓您的資料在其他Snowflake地區可用，建議您在Azure US 2東部的Snowflake帳戶中製作資料復本，並使用[Snowflake資料庫復寫](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能，在您選擇的Snowflake地區/帳戶中複製您的資料。
+[!DNL Marketo Measure]將只能以Snowflake East US 2中的帳戶設定Azure直接共用（這是Marketo Measure的限制，不能使用Snowflake）。 若需要讓您的資料在其他Snowflake地區可用，建議您在Azure美國東部2的Snowflake帳戶中製作資料副本，並使用[Snowflake資料庫復寫](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能，在您選擇的Snowflake地區/帳戶中複製您的資料。
 
 ## 輸入Snowflake帳戶ID {#enter-snowflake-account-id}
 

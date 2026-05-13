@@ -4,9 +4,14 @@ description: 行銷管道和子管道 —  [!DNL Marketo Measure]
 title: 行銷管道和子管道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/GsWMfMGV23mxLuH6pvKyy-avcg2Tmq3h9sq0pdARiE0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: 453
 ht-degree: 2%
 
 ---
@@ -39,7 +44,7 @@ ht-degree: 2%
 
 **子管道**
 
-子管道是劃分傳入的潛在客戶時的第二個拼圖。 子管道會訴說您行銷管道使用過&#x200B;_哪個_&#x200B;反複專案的故事。 例如，在付費社交行銷管道中，您可能會有&#x200B;**AdWords**、**BingAds**、**Facebook**&#x200B;等專案的子管道。 子管道通常對應於在您的URL中找到的utm_source引數值。
+子管道是劃分傳入的潛在客戶時的第二個拼圖。 子管道會訴說您行銷管道使用過&#x200B;_哪個_&#x200B;反複專案的故事。 例如，在付費社交行銷管道中，您可能會有&#x200B;**AdWords**、**BingAds**、**Facebook**&#x200B;等專案的子管道。子管道通常對應於在您的URL中找到的utm_source引數值。
 
 ## 使用案例範例 {#use-case-example}
 
@@ -64,7 +69,7 @@ ht-degree: 2%
 * PR
 * 轉介計畫
 
-**子管道(接觸點Source)**
+**子管道（接觸點Source）**
 
 * Google AdWords
 * BingAds
