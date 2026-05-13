@@ -3,10 +3,12 @@ description: Adobe Admin Console設定 — Marketo Measure — 產品檔案
 title: Adobe Admin Console設定
 feature: Installation
 exl-id: f9edacae-79e0-408c-ac37-bbe67c185f2d
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/0-n7qfW9O8qQHD1vMyJGdBF8XNo-Hpa2oFMrWUmUNWc
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
+source-wordcount: 396
+ht-degree: 5%
 
 ---
 
@@ -51,10 +53,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->若要成為[!DNL Marketo Measure]管理員(位於[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"})，使用者必須新增為使用者&#x200B;_和_ [!DNL Marketo Measure]產品卡中任何[!DNL Marketo Measure]產品設定檔的管理員。
+>若要成為[!DNL Marketo Measure]管理員（位於[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}），使用者必須新增為使用者&#x200B;_和_ [!DNL Marketo Measure]產品卡中任何[!DNL Marketo Measure]產品設定檔的管理員。
 
 **正在登入[!DNL Marketo Measure]**
 
-將使用者新增至產品設定檔後，他們便能在[!DNL Marketo Measure]experience.adobe.com/marketo-measure **中選擇**&#x200B;使用Adobe ID登入[選項來存取其](https://experience.adobe.com/marketo-measure){target="_blank"}執行個體。
+將使用者新增至產品設定檔後，他們便能在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}中選擇&#x200B;**使用Adobe ID登入**&#x200B;選項來存取其[!DNL Marketo Measure]執行個體。
 
 ![](assets/adobe-admin-console-setup-3.png)

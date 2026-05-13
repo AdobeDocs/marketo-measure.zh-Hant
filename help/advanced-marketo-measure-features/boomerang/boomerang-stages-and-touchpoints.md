@@ -4,9 +4,11 @@ description: Boomerang階段和接觸點 —  [!DNL Marketo Measure]
 title: 回味郎舞台和接觸點
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/mp1vsPh6lSoJuX4jvuENn7kuiYwIVCMrSw19y86u5UA
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: 722
 ht-degree: 0%
 
 ---
@@ -62,7 +64,7 @@ MQL-02 **（最後）**
 
 * 回饋式階段會為您的資料引入新的接觸點位置。 [!DNL Marketo Measure]正在變更接觸點位置的格式，以包含階段出現次數，例如&quot;MQL-01&quot;或&quot;MQL-05 （上一個）&quot;。 在此範例中，「迴旋移動階段」會影響任何使用「接觸點位置等於MQL」的報表。 若要調整這些報表，篩選器應改用「包含」運運算元。
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **我可以在歸因模型中包含多少個迴旋鏢階段？**
 

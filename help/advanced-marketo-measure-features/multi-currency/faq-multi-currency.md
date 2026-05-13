@@ -4,9 +4,12 @@ description: 常見問題集（多幣別） - [!DNL Marketo Measure]
 title: 常見問題集（多貨幣）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/VHUWJBPHzIn6aE0H6QmBqKWGKAYQF-HBN-O-gwa-nCs
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: 833
 ht-degree: 0%
 
 ---
@@ -37,7 +40,7 @@ Marketo Measure會自動從客戶的CRM提取貨幣設定。 不再需要在Mark
 
 **貨幣未以正確格式顯示。 如何變更此專案？**
 
-我們瞭解有些國家/地區有不同的格式化金額方式（例如1,234.00、1.234、1 234）。 但是如果我們不僅需要決定使用者的貨幣，還要決定其原籍國，則會引入另一個複雜程度，因為不同的國家和貨幣可以有不同的處理方式。 我們選擇的一致格式為1,234.00。無法變更此設定。
+我們瞭解有些國家/地區有不同的格式化金額方式（例如1,234.00、1.234、1 234）。 但是如果我們不僅需要決定使用者的貨幣，還要決定其原籍國，則會引入另一個複雜程度，因為不同的國家和貨幣可以有不同的處理方式。 我們選擇的一致格式為1,234.00。 無法變更此設定。
 
 **為什麼無法顯示我所選貨幣的貨幣符號？**
 

@@ -4,9 +4,12 @@ description: CRM行銷活動成本 —  [!DNL Marketo Measure]
 title: CRM促銷活動成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RxCP7bZJ9DND0BSpQ2PY5mOsSe-Kr45d24UKXWDmX6M
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: 1193
 ht-degree: 0%
 
 ---
@@ -23,9 +26,9 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]會先尋找已「啟用」接觸點的促銷活動，因此已建立相符的Campaign同步規則，或「啟用購買者接觸點」值為「包含所有促銷活動成員」或「包含「已回應」的促銷活動成員」。 此外，[!DNL Marketo Measure]必須匯入正確的值並知道如何分配成本，因此我們要求下列欄位包含值：
 
-**[!DNL Salesforce]**： `ActualCost`，`StartDate`，`EndDate`
+**[!DNL Salesforce]**: `ActualCost`, `StartDate`, `EndDate`
 
-**[!DNL Microsoft Dynamics]**： `totalactualcost`，`actualstart`，`actualend`
+**[!DNL Microsoft Dynamics]**: `totalactualcost`, `actualstart`, `actualend`
 
 如果3個欄位中有任一欄位缺少值，[!DNL Marketo Measure]將不會匯入成本。 您可以更新CRM中的Campaign記錄來更正此問題。 如果成本設為$0，則不會匯入成本，因為[!DNL Salesforce]會將空白和$0視為相同。
 
@@ -67,7 +70,7 @@ ht-degree: 0%
 
 對成本或分配所做的任何變更必須在CRM中完成，以便我們指向單一信任點。
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **我已對行銷活動進行變更 — 何時應該會在「行銷支出」表格或報表中看到變更？**
 

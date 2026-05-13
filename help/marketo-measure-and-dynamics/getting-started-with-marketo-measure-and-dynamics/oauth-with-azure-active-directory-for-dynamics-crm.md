@@ -1,12 +1,15 @@
 ---
 unique-page-id: 37357059
-description: Dynamics CRM - [!DNL Azure Active Directory] 的OAuth （含 [!DNL Marketo Measure]）
+description: Dynamics CRM - [!DNL Marketo Measure]的OAuth （含 [!DNL Azure Active Directory] ）
 title: 'OAuth與Dynamics CRM的 [!DNL Azure Active Directory] '
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/fwFE85VMaQdXhF-w28PofUHxOLR39lb60zLMzEo2GnM
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: 769
 ht-degree: 0%
 
 ---
@@ -15,7 +18,7 @@ ht-degree: 0%
 
 ## 受影響者 {#who-s-affected}
 
-此設定適用於使用Dynamics CRM搭配[!DNL Marketo Measure] (AAD)帳戶的新[!DNL Azure Active Directory]客戶，或想要從舊版使用者名稱和密碼移轉至[!DNL Azure Active Directory]搭配OAuth的客戶。
+此設定適用於使用Dynamics CRM搭配[!DNL Azure Active Directory] (AAD)帳戶的新[!DNL Marketo Measure]客戶，或想要從舊版使用者名稱和密碼移轉至[!DNL Azure Active Directory]搭配OAuth的客戶。
 
 >[!NOTE]
 >
@@ -25,7 +28,7 @@ ht-degree: 0%
 
 1. 登入您的[Azure入口網站](https://portal.azure.com/#home)。
 
-1. 選擇Azure AD租使用者，方法是按一下頁面右上角的帳戶，然後按一下[切換目錄]導覽，然後選取適當的租使用者。 如果您的帳戶下只有一個Azure AD租使用者，或您已選取適當的Azure AD租使用者，請略過此步驟。
+1. 按一下頁面右上角的您的帳戶，然後按一下「切換目錄」導覽，然後選取適當的租使用者，以選擇Azure AD租使用者。 如果您的帳戶下只有一個Azure AD租使用者，或您已選取適當的Azure AD租使用者，請略過此步驟。
 
    ![](assets/setup-2.png)
 
@@ -42,9 +45,9 @@ ht-degree: 0%
    ![](assets/setup-5.png)
 
 1. 按照提示建立應用程式。 不論是Web應用程式或公用使用者端（行動與案頭）應用程式，但如果您想要Web應用程式或公用使用者端應用程式的特定範例，請檢視[快速入門](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-overview)。\
-   a.名稱是應用程式名稱，向一般使用者說明您的應用程式。\
-   b.在「支援的帳戶型別」下，選取任何組織目錄中的帳戶和個人Microsoft帳戶。\
-   c.提供重新導向URI。 若為Web應用程式，這是使用者可登入之應用程式的基礎URL。 例如 `http://localhost:12345`。對於公用使用者端（行動裝置和案頭），Azure AD會使用它來傳回權杖回應。 輸入應用程式的特定值。 例如 `http://MyFirstAADApp`。
+   答： 名稱是應用程式名稱，向一般使用者說明您的應用程式。\
+   b. 在支援的帳戶型別下，選取任何組織目錄中的帳戶和個人Microsoft帳戶。\
+   c. 提供重新導向URI。 若為Web應用程式，這是使用者可登入之應用程式的基礎URL。 例如 `http://localhost:12345`。 對於公開使用者端（行動裝置和案頭），Azure AD會使用它來傳回權杖回應。 輸入應用程式的特定值。 例如 `http://MyFirstAADApp`。
 
 1. 註冊完成後，Azure AD會指派唯一的使用者端識別碼（應用程式ID）給應用程式。 您需要在下一節中使用此值，請從應用程式頁面複製此值。
 
@@ -110,13 +113,13 @@ ht-degree: 0%
 
 1. 提示輸入OAuth認證時，請填入上節中設定的使用者端ID、使用者端密碼和應用程式ID URI。
 
-a.使用者端ID是上一節中步驟#7的ID。 如果您沒有寫下應用程式ID，應用程式註冊的設定中會顯示應用程式ID 。
+答： 使用者端ID是上節中步驟#7的ID。 如果您沒有寫下應用程式ID，應用程式註冊的設定中會顯示應用程式ID 。
 
-b.使用者端密碼是在Azure入口網站中為您在「憑證和密碼」下的應用程式建立的應用程式密碼。
+b. 使用者端密碼是在Azure入口網站中，在「憑證和密碼」下為您的應用程式建立的應用程式密碼。
 
 ![](assets/creating-2e.png)
 
-c.應用程式ID URI是目標網頁API （安全資源）的URL。 若要尋找應用程式ID URL，請在Azure入口網站中，按一下[!DNL Azure Active Directory]，按一下[應用程式註冊]，開啟應用程式的[設定]頁面，然後按一下[內容]。 它也可以是外部資源，例如`https://graph.microsoft.com`。 這通常是Dynamics執行個體的URL。
+c. 應用程式ID URI是目標網站API （安全資源）的URL。 若要尋找應用程式ID URL，請在Azure入口網站中，按一下[!DNL Azure Active Directory]，按一下[應用程式註冊]，開啟應用程式的[設定]頁面，然後按一下[內容]。 它也可以是外部資源，例如`https://graph.microsoft.com`。 這通常是Dynamics執行個體的URL。
 
 1. 按一下&#x200B;**[!UICONTROL Submit]**&#x200B;後，系統會提示您使用[!DNL Azure Active Directory]登入。 驗證成功後，您的Dynamics帳戶會在[!DNL Marketo Measure]內以資料提供者的身分連線。
 

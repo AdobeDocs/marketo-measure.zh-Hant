@@ -4,9 +4,11 @@ description: 正在新增 [!DNL Marketo Measure] 至 [!DNL Hubspot] - [!DNL Mark
 title: 正在新增 [!DNL Marketo Measure] 至 [!DNL Hubspot]
 exl-id: 633e7ef7-7959-461e-881f-dcc543595b66
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/3To9-9GZMHJf6vVOUPTedkJBpqU1TZNxKeVBHIm0PKY
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: 173
 ht-degree: 1%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 瞭解如何新增[!DNL Marketo Measure] JavaScript以追蹤您的[!DNL Hubspot]登陸頁面和表單提交。
 
-Hubspot與其他行銷自動化系統有些不同，因為它可以託管您的登入頁面/表單以及您的網站。 請務必注意，以下指示適用於在[!DNL Marketo Measure]託管頁面上使用[!DNL Hubspot]追蹤活動。 如果您使用[!DNL Hubspot]以外的CMS （例如Wordpress）支援網站，您也需要將[!DNL Marketo Measure] JavaScript新增至該CMS。
+Hubspot與其他行銷自動化系統有些不同，因為它可以託管您的登入頁面/表單以及您的網站。 請務必注意，以下指示適用於在[!DNL Hubspot]託管頁面上使用[!DNL Marketo Measure]追蹤活動。 如果您使用[!DNL Hubspot]以外的CMS （例如Wordpress）支援網站，您也需要將[!DNL Marketo Measure] JavaScript新增至該CMS。
 
 >[!NOTE]
 >

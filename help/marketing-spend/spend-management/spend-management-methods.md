@@ -3,9 +3,13 @@ description: 支出管理方法 —  [!DNL Marketo Measure]
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/HdGBr6tPbjbLrO71Zr1MWN6i19TuDIaqvEhgWcNNxAY
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: 421
 ht-degree: 0%
 
 ---
@@ -18,7 +22,7 @@ ht-degree: 0%
 
 **1個API連線帳戶**
 
-您透過API連線至[!DNL Marketo Measure]的任何廣告帳戶其支出會自動提取至[!DNL Marketo Measure]，以產生ROI報表。 若要檢查您已連線哪些帳戶，進而提取支出，請移至您的[!DNL Marketo Measure]應用程式，並選取「[!UICONTROL Connections]」區段下的「[!UICONTROL Integrations]」標籤。 如需有關設定API連線的詳細資訊，請檢閱[整合式廣告平台](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms)。
+您透過API連線至[!DNL Marketo Measure]的任何廣告帳戶其支出會自動提取至[!DNL Marketo Measure]，以產生ROI報表。 若要檢查您已連線哪些帳戶，進而提取支出，請移至您的[!DNL Marketo Measure]應用程式，並選取「[!UICONTROL Integrations]」區段下的「[!UICONTROL Connections]」標籤。 如需有關設定API連線的詳細資訊，請檢閱[整合式廣告平台](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms)。
 
 **2 CRM Campaign成本同步**
 
@@ -28,13 +32,13 @@ ht-degree: 0%
 
 啟用後，此功能會自動從符合以下條件的任何CRM行銷活動/方案中提取費用：
 
-i. [!DNL Marketo Measure]會先檢視行銷活動/方案是否正在建立接觸點，其來源是已建立的相符的[行銷活動同步規則](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)、或已建立的相符的[方案同步規則](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md)，或[啟用購買者接觸點值](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints)是「包含所有行銷活動成員」或「包含『已回應』行銷活動成員」。
+i. [!DNL Marketo Measure]會先檢視行銷活動/方案是否正在建立接觸點，可能是來自已建立的相符之[行銷活動同步規則](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)，或是已建立的相符之[方案同步規則](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md)，或[啟用購買者接觸點值](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints)是「包含所有行銷活動成員」或「包含『已回應』行銷活動成員」。
 
-二、 行銷活動/方案必須填入開始日期
+ii. 行銷活動/方案必須填入開始日期
 
-三、 必須在行銷活動/方案上填入結束日期
+iii. 必須在行銷活動/方案上填入結束日期
 
-iv. 必須指定實際成本(適用於SFDC中的行銷活動)或期間成本(適用於Marketo中的方案)。
+iv. 必須指定實際成本（適用於SFDC中的行銷活動）或期間成本（適用於Marketo中的方案）。
 
 **3手動成本上傳**
 

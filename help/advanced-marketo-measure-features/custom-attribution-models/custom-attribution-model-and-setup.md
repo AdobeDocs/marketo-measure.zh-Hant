@@ -4,9 +4,12 @@ description: 自訂歸因模型與設定 —  [!DNL Marketo Measure]
 title: 自訂歸因模型與設定
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Bqvp26IvjPnXom9rfkB2cWtrnrM3Jsz6SQKqDYKp-cc
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: 826
 ht-degree: 0%
 
 ---
@@ -55,7 +58,7 @@ ht-degree: 0%
 
 1. 決定自訂模型的歸因百分比。
 
-   移至&#x200B;**[!UICONTROL Attribution Settings]**&#x200B;應用程式中的[!DNL Marketo Measure]；自訂階段會出現在歸因表格中。 歸因表格會顯示所有[!DNL Marketo Measure]個歸因模型，以及每個模型的歸因加權。 前五個模型的歸因百分比是固定的，無法變更。
+   移至[!DNL Marketo Measure]應用程式中的&#x200B;**[!UICONTROL Attribution Settings]**；自訂階段會出現在歸因表格中。 歸因表格會顯示所有[!DNL Marketo Measure]個歸因模型，以及每個模型的歸因加權。 前五個模型的歸因百分比是固定的，無法變更。
 
    在標示為「**[!UICONTROL Custom]**」的最右欄中，您可以為自訂歸因模型中的各個階段設定百分比加權。 在自訂欄下輸入每個階段的值，完成時按一下&#x200B;**[!UICONTROL Save and Reprocess]**。
 

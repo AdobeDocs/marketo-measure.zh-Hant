@@ -4,9 +4,11 @@ description: Google Analytics轉換與Buyer Touchpoint之間的差異 —  [!DNL
 title: Google Analytics轉換與Buyer Touchpoint之間的差異
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/lgrksIiybtRf6YujoQci-RffEe5-wiEdX2BI71RaBYg
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: 494
 ht-degree: 1%
 
 ---
@@ -36,7 +38,7 @@ ht-degree: 1%
   <tr> 
    <td><p>目標</p></td> 
    <td>特定位置載入</td> 
-   <td><em>感謝您註冊！</em>網頁或應用程式畫面</td> 
+   <td><em>感謝您註冊！</em> 網頁或應用程式畫面</td> 
   </tr> 
   <tr> 
    <td>持續時間</td> 

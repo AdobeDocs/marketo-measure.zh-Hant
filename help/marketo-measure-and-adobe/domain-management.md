@@ -3,9 +3,12 @@ description: 網域管理 —  [!DNL Marketo Measure]
 title: 網域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/kDKzgnweet5U9iOfl1fg8ewsgq6uU3T48SxLFpuC7tY
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: 559
 ht-degree: 0%
 
 ---
@@ -20,11 +23,11 @@ ht-degree: 0%
 
 ![](assets/domain-management-1.png)
 
-您可以在[Admin Console檔案](https://helpx.adobe.com/tw/enterprise/using/add-domains-directories.html)中找到新增網域的指示。 新增網域後，它必須是[連結到目錄](https://helpx.adobe.com/tw/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
+您可以在[Admin Console檔案](https://helpx.adobe.com/enterprise/using/add-domains-directories.html)中找到新增網域的指示。 新增網域後，它必須是[連結到目錄](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
 
 ## 在[!DNL Marketo Measure]中管理網域 {#managing-domains-in-marketo-measure}
 
-在Admin Console中新增網域後，[!DNL Marketo Measure]會定期將此記錄同步至資料庫。 此同步會在夜間進行，也可在使用者每次在&#x200B;**[!UICONTROL Domains]** UI中造訪[!DNL Marketo Measure]頁面時進行。 依預設，[!DNL Marketo Measure]匯入的任何記錄都會停用，租使用者必須手動啟用每個網域。
+在Admin Console中新增網域後，[!DNL Marketo Measure]會定期將此記錄同步至資料庫。 此同步會在夜間進行，也可在使用者每次在[!DNL Marketo Measure] UI中造訪&#x200B;**[!UICONTROL Domains]**&#x200B;頁面時進行。 依預設，[!DNL Marketo Measure]匯入的任何記錄都會停用，租使用者必須手動啟用每個網域。
 
 ![](assets/domain-management-2.png)
 
@@ -51,7 +54,7 @@ Admin Console狀態會依下列方式分類：
 
 將滑鼠懸停在任何個別狀態專案上會觸發工具提示，進一步說明該狀態。
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **在Admin Console中移除網域後會發生什麼事？**
 

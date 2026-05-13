@@ -4,9 +4,11 @@ description: Marketo Measure歸因模型 — Marketo Measure — 產品檔案
 title: Marketo Measure歸因模型
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 feature: Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/auiVcEzz1L3cujxvhEw6C7gig67ZHZCMKmB87oPxjVo
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: 777
 ht-degree: 0%
 
 ---
@@ -31,8 +33,8 @@ Marketo Measure提供六種型別的歸因模型：
 
 ![](assets/1-1.png)
 
-在&#x200B;**單次接觸模型**&#x200B;中，歸因評分只會歸因於一個里程碑接觸點，因此命名為「單次接觸」。
-在&#x200B;**多重接觸模型**&#x200B;中，大部分歸因點數已指派給兩個或多個里程碑接觸點。 剩餘的點數會歸因於發生在里程碑接觸點之間的接觸點。
+在&#x200B;**單次接觸模型**中，歸因評分只會歸因於一個里程碑接觸點，因此命名為「單次接觸」。
+在**多重接觸模型**&#x200B;中，大部分歸因點數已指派給兩個或多個里程碑接觸點。 剩餘的點數會歸因於發生在里程碑接觸點之間的接觸點。
 
 接下來的幾個區段會說明每個歸因模型，以及歸因評分的指派方式。
 

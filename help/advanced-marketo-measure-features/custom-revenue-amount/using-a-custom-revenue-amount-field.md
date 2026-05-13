@@ -4,10 +4,12 @@ description: 使用自訂收入金額欄位 —  [!DNL Marketo Measure]
 title: 使用自訂收入金額欄位
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/EygbB-2KJDZKMRdKS2Mx7JQwdzhmJ77swewudzsGIb0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: 602
+ht-degree: 1%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 依預設，「購買者歸因接觸點」會從下列兩個欄位之一提取「商機金額」：
 
-* 金額(SFDC預設)
+* 金額（SFDC預設）
 * [!DNL Marketo Measure]機會金額（自訂）
 
 如果您在您的Opportunities上使用自訂「金額」欄位，則需要設定工作流程以計算Buyer Touchpoint收入。 這需要[!DNL Salesforce]的進階知識，因此可能需要您的SFDC管理員協助。
@@ -67,7 +69,7 @@ ht-degree: 0%
 
    ![](assets/using-a-custom-revenue-amount-field-7.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。 隨即顯示快顯視窗。 在「儲存流量」視窗中輸入「流量標籤」（會自動產生「流量API名稱」）。 再按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下「**[!UICONTROL Save]**」。 隨即顯示快顯視窗。 在「儲存流量」視窗中輸入「流量標籤」（會自動產生「流量API名稱」）。 再按一下&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/using-a-custom-revenue-amount-field-8.png)
 

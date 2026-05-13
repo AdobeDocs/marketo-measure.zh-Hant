@@ -3,9 +3,12 @@ description: '[!DNL Marketo Measure] Salesforce封裝安裝及設定 —  [!DNL 
 title: '[!DNL Marketo Measure] [!DNL Salesforce] 封裝安裝及設定'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: 504
 ht-degree: 0%
 
 ---
@@ -42,7 +45,7 @@ ht-degree: 0%
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-2.png)
 
-完成安裝之後，您可以視需要使用[[!DNL Salesforce] 欄位更新您的](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"}頁面配置[!DNL Marketo Measure]。
+完成安裝之後，您可以視需要使用[!DNL Marketo Measure]欄位更新您的[[!DNL Salesforce] 頁面配置](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"}。
 
 >[!NOTE]
 >
@@ -50,9 +53,9 @@ ht-degree: 0%
 
 ## 建立[!DNL Marketo Measure]設定檔和使用者 {#creating-a-marketo-measure-profile-and-user}
 
-[!DNL Marketo Measure]會透過[!DNL Salesforce]應用程式中連線的[!DNL Marketo Measure]使用者傳送及接收資料。
+[!DNL Marketo Measure]會透過[!DNL Marketo Measure]應用程式中連線的[!DNL Salesforce]使用者傳送及接收資料。
 
-若要將接觸點資料推送至您的[!DNL Salesforce]執行個體，連線的使用者必須能存取[!DNL Marketo Measure]個自訂物件(例如Buyer Touchpoint和Buyer Attribution Touchpoint)以及銷售機會和聯絡人等標準[!DNL Salesforce]物件。
+若要將接觸點資料推送至您的[!DNL Salesforce]執行個體，連線的使用者必須能存取[!DNL Marketo Measure]個自訂物件（例如Buyer Touchpoint和Buyer Attribution Touchpoint）以及銷售機會和聯絡人等標準[!DNL Salesforce]物件。
 
 建立[!DNL Marketo Measure]設定檔，以確保您在推送資料至Salesforce時不會發生驗證錯誤。
 
@@ -83,9 +86,9 @@ ht-degree: 0%
 
 1. 前往apps.bizible.com並使用新的使用者產品[!DNL Salesforce]認證登入。
 
-1. 在&#x200B;**[!UICONTROL Settings]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL My Account]**。
+1. 在&#x200B;**[!UICONTROL My Account]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Settings]**。
 
-1. 在&#x200B;**[!UICONTROL Connections]**&#x200B;群組中選取&#x200B;**[!UICONTROL Integrations]**。
+1. 在&#x200B;**[!UICONTROL Integrations]**&#x200B;群組中選取&#x200B;**[!UICONTROL Connections]**。
 
 1. 按一下目前連線的[!DNL Salesforce]連線右側的鍵圖示，並選取&#x200B;**使用生產重新授權**。 使用新的使用者憑證再次登入（如果出現提示）。
 

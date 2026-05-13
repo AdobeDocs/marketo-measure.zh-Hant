@@ -4,9 +4,11 @@ description: 接觸點產生與對應 —  [!DNL Marketo Measure]
 title: 接觸點產生與對應
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/otuePoQBPvb-UEJCTI1CeyA1BYQ7Jn-jZQm63si-6uA
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: 357
 ht-degree: 0%
 
 ---
@@ -40,9 +42,9 @@ ht-degree: 0%
 
 | **互動型別** | **產生方法** | **對應方法** |
 |---|---|---|
-| 線上，在您的網站上 | [!DNL Marketo Measure] JavaScript | 透過[!DNL Online Channels]中的[!DNL Marketo Measure]頁面，參考UTM值、登陸頁面和引用頁面資訊 |
-| 離線；線上，不在您的網站上 | CRM Campaign成員資格同步 | 透過[!UICONTROL Offline Channels]中的[!DNL Marketo Measure]頁面，透過參考促銷活動型別 |
-| 銷售活動 | CRM活動同步 | 透過[!UICONTROL Online Channels]中的[!DNL Marketo Measure]頁面，參考[!UICONTROL Activities]頁面上指派的行銷活動名稱 |
+| 線上，在您的網站上 | [!DNL Marketo Measure] JavaScript | 透過[!DNL Marketo Measure]中的[!DNL Online Channels]頁面，參考UTM值、登陸頁面和引用頁面資訊 |
+| 離線；線上，不在您的網站上 | CRM Campaign成員資格同步 | 透過[!DNL Marketo Measure]中的[!UICONTROL Offline Channels]頁面，透過參考促銷活動型別 |
+| 銷售活動 | CRM活動同步 | 透過[!DNL Marketo Measure]中的[!UICONTROL Online Channels]頁面，參考[!UICONTROL Activities]頁面上指派的行銷活動名稱 |
 
 >[!MORELIKETHIS]
 >

@@ -4,10 +4,13 @@ description: 合併潛在客戶的最佳實務 —  [!DNL Marketo Measure]
 title: 合併潛在客戶的最佳實務
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/VonT7Suvlt5VjzPqZ9UWoVe3ZTpPsk4c-7q-0wLplA0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 0%
+source-wordcount: 200
+ht-degree: 3%
 
 ---
 
@@ -15,7 +18,7 @@ ht-degree: 0%
 
 在[!DNL Salesforce]中合併Lead時，最好永遠保持謹慎，以確保不會遺失任何資料。
 
-為方便您參考，這裡提供[支援中](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5)如何合併銷售機會[!DNL Salesforce]的劃分。
+為方便您參考，這裡提供[!DNL Salesforce]支援中[如何合併銷售機會](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5)的劃分。
 
 [!DNL Marketo Measure]的進入時間是時候選取填入合併記錄上的欄位。 選取主要記錄後，驗證是否已選取[!DNL Marketo Measure]欄位以延續至新記錄。
 

@@ -4,9 +4,12 @@ description: 接觸點欄位 —  [!DNL Marketo Measure]
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/f45LL11QRQWjzRDTMdsiSUKbB357lPibq8nFNVt75bk
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: 1956
 ht-degree: 0%
 
 ---
@@ -44,13 +47,13 @@ ht-degree: 0%
 目標：使用自訂欄位的值，並將其放在接觸點物件上，以更輕鬆地進行報告。
 
 * 建立計算欄位並加上標籤「Campaign Source」
-* 從搜尋Contact.Campaign_Source__c欄位開始定義規則
+* 從搜尋Contact.Campaign___c欄位開始定義規則
 * 使用運運算元「extracts」，因為我們需要從引數中提取值
 * 若要從欄位中擷取完整字串，我們將使用運算式&quot;(.&#42;)&quot;
 
    * **(**&#x200B;標籤擷取的開始
    * **)**&#x200B;標籤擷取的結尾
-   * **。&#42;**&#x200B;告訴我們我們正在擷取完整的字串
+   * **.&#42;** 會告訴我們正在擷取完整的字串
 
 ![](assets/two.png)
 
@@ -95,7 +98,7 @@ ht-degree: 0%
 **範例#4**
 
 由於您的登入頁面愈來愈複雜，且您有多個追蹤引數，因此您可能需要建立多個接觸點欄位，並多次擷取值，例如：
-`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`。
+`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`.
 
 **目標：**&#x200B;使用引數中的個別值，為「目標國家/地區」和「自訂促銷活動ID」建立多個計算欄位。
 
@@ -140,7 +143,7 @@ ht-degree: 0%
 * 建立計算欄位並標示為「區域」
 * 從搜尋Touchpoint.Session.LandingPage欄位開始定義規則
 * 使用運運算元&quot;[!UICONTROL extracts]&quot;，因為我們需要從引數中取出值
-* 若要擷取「04」值，我們會將該值定義為「BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}」
+* 若要擷取「04」值，我們會將該值定義為「BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}」
 
    * **(**&#x200B;標籤擷取的開始
 
@@ -153,7 +156,7 @@ ht-degree: 0%
 
 
 
-* 按一下[!UICONTROL Save]。 您必須先儲存新欄位，才能用於下一個規則！
+* 按一下「[!UICONTROL Save]」。 您必須先儲存新欄位，才能用於下一個規則！
 * 接下來，我們要將第一個數字的所有可能值對應到其易記名稱
 * 建立計算欄位並加上標籤「Region_Name」
 * 從搜尋擷取的欄位開始，以定義規則。 在此案例中，[!DNL Touchpoint.Region]
@@ -162,10 +165,10 @@ ht-degree: 0%
 * 根據對應和上述URL，使用此登陸頁面的接觸點「Region_Value」將是「EMEA」
 * 對其餘4組數字重複擷取和對應
 
-   * 若要擷取01，您可將值定義為「BZ=\d{2}-**(\d{2})**-\d{2}-\d{2}-\d{2}-\d{2}」
-   * 若要擷取09，您可將值定義為&quot;BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}&quot;
-   * 若要擷取03，您可將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-**(\d{2})**-\d{2}」
-   * 若要擷取10，您可將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-**(\d{2})**」
+   * 若要擷取01，您可將值定義為&quot;BZ=\d-**(\d{2})**-\d{2}-\d{2}-\d{2}-\d{2}&quot;
+   * 若要擷取09，您可將值定義為「BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}」
+   * 若要擷取03，您可將值定義為&quot;BZ=\d{2}-\d{2}-\d{2}-\d **(\d{2})**-\d{2}&quot;
+   * 若要擷取10，您可將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d **(\d{2})**」
 
 ![](assets/seven.png)
 
@@ -197,7 +200,7 @@ Segment__c和Grade__c的Opportunity物件上有個別欄位，使用者想將它
 
 ![](assets/eleven.png)
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **我們可以建立的接觸點欄位數量是否達到上限？**
 

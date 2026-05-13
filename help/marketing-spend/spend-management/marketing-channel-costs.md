@@ -4,16 +4,20 @@ description: 行銷管道成本 —  [!DNL Marketo Measure]
 title: 行銷管道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: 1277
 ht-degree: 0%
 
 ---
 
 # 行銷管道成本 {#marketing-channel-costs}
 
-使用[!DNL Marketo Measure]的最基本優點之一，就是能夠直接將行銷工作與對收入的影響連結，並擁有所需的詳細程度。 您可以在接觸點層級看到投資報酬率。 若要利用此權益，管道成本必須上傳至[!DNL Marketo Measure]應用程式。 ROI報告會自動建立，並可在&#x200B;**experience.adobe.com/marketo-measure**&#x200B;的[行銷ROI儀表板](https://experience.adobe.com/marketo-measure){target="_blank"}中使用。
+使用[!DNL Marketo Measure]的最基本優點之一，就是能夠直接將行銷工作與對收入的影響連結，並擁有所需的詳細程度。 您可以在接觸點層級看到投資報酬率。 若要利用此權益，管道成本必須上傳至[!DNL Marketo Measure]應用程式。 ROI報告會自動建立，並可在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}的&#x200B;**行銷ROI儀表板**&#x200B;中使用。
 
 [按一下這裡直接導覽至指示。](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 
@@ -67,7 +71,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]隨附13個可使用或展開的預設管道。 此外，最多可建立40個線上和離線管道，以因應您獨特的行銷結構。 在此基礎上可建立總計200個子管道，以支援這些線上和離線管道。
 
-[!DNL Marketo Measure]會自動從與API整合的平台(例如Bing Ads和Google AdWords)下載行銷管道成本。 需要手動上傳未與[!DNL Marketo Measure]整合之平台的成本。 行銷管道應於成本資料上傳前完成設定。
+[!DNL Marketo Measure]會自動從與API整合的平台（例如Bing Ads和Google AdWords）下載行銷管道成本。 需要手動上傳未與[!DNL Marketo Measure]整合之平台的成本。 行銷管道應於成本資料上傳前完成設定。
 
 ## 上傳行銷成本 {#uploading-marketing-costs}
 
@@ -75,13 +79,13 @@ ht-degree: 0%
 
 **步驟1：導覽至[!DNL Marketo Measure]應用程式中的「行銷支出」頁面。**
 
-前往&#x200B;**[!UICONTROL My Account]**&#x200B;功能表，按一下&#x200B;**[!UICONTROL Settings]**，然後導覽至&#x200B;**[!UICONTROL Marketing Spend]**&#x200B;區段下左側邊欄的&#x200B;**[!UICONTROL Reporting]**&#x200B;選項。
+前往&#x200B;**[!UICONTROL My Account]**&#x200B;功能表，按一下&#x200B;**[!UICONTROL Settings]**，然後導覽至&#x200B;**[!UICONTROL Reporting]**&#x200B;區段下左側邊欄的&#x200B;**[!UICONTROL Marketing Spend]**&#x200B;選項。
 
 ![](assets/1.png)
 
 **步驟2：下載目前的成本CSV**
 
-導覽至畫面右側，然後按一下&#x200B;**[!UICONTROL Download Current Costs]。**&#x200B;此選項可讓您下載CSV格式的試算表。
+導覽至畫面右側，然後按一下&#x200B;**[!UICONTROL Download Current Costs].** 此選項可讓您下載CSV格式的試算表。
 
 ![](assets/2.png)
 
@@ -91,7 +95,7 @@ ht-degree: 0%
 
 匯入工作表之後，進行所需的變更，例如將成本新增至管道和子管道，或更新現有資訊。
 
-檢查工作表中的邏輯規則。 每一列應包含一個色版及其其中一個子色版，其結尾應以(.)點分隔。 請務必堅持使用此格式。
+檢查工作表中的邏輯規則。 每一列應包含一個色版及其其中一個子色版，以(.)分隔 點在結尾。 請務必堅持使用此格式。
 
 例如，若要將Facebook標示為子管道，將social標示為管道，則規則應如下所示：「Social.Facebook」。 同樣地，若要追蹤離線事件，管道語法應為：&quot;Events.Big Conference&quot;。 範例如下圖所示：
 
@@ -111,9 +115,9 @@ _其他附註_：
 
 **步驟5：上傳CSV檔案**
 
-移至&#x200B;**[!UICONTROL Cost]**&#x200B;應用程式的[!DNL Marketo Measure]區段，然後按一下&#x200B;**[!UICONTROL Upload.CSV]**。 系統將重新整理並反映新資訊。
+移至[!DNL Marketo Measure]應用程式的&#x200B;**[!UICONTROL Cost]**&#x200B;區段，然後按一下&#x200B;**[!UICONTROL Upload.CSV]**。 系統將重新整理並反映新資訊。
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **為什麼數字出現在CSV中**
 

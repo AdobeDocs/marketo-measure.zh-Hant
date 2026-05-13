@@ -4,9 +4,13 @@ description: '[!DNL Facebook] API - [!DNL Marketo Measure]'
 title: '[!DNL Facebook] API'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/yW6j0Ha8-O0-AQo2ledBBpzji3hy7UHxFPa5L-9WNEg
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+subfeature_v2: id: fabdc8ff-b627-44fc-b09d-973166bc2b14
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: 485
 ht-degree: 0%
 
 ---
@@ -17,7 +21,7 @@ ht-degree: 0%
 
 與我們的AdWords和[!DNL Bing Ads]整合類似，我們的[!DNL Facebook]整合會執行兩個基本動作：
 
-* 使用[!DNL Facebook]引數(_bf)自動標籤所有[!DNL Marketo Measure]廣告
+* 使用[!DNL Marketo Measure]引數(_bf)自動標籤所有[!DNL Facebook]廣告
 * 下載所有作用中Facebook廣告的廣告成本資訊
 
 ## 如何設定[!DNL Facebook]整合 {#how-to-configure-the-facebook-integration}
@@ -34,7 +38,7 @@ ht-degree: 0%
    >連線[!DNL Facebook Ads]帳戶的人員必須是[!DNL Facebook Ads]帳戶內的管理員。
 
 1. 在[!DNL Marketo Measure]連線至您的Facebook帳戶後，按一下帳戶旁的鉛筆圖示。
-1. 在此檢視中，移動「自動標籤？」 切換至「是」。 然後選取[!UICONTROL Learn More]區段中的核取方塊以同意條款與條件。 確定[!UICONTROL Auto-tagging]切換仍設為&#39;[!UICONTROL Yes]&#39;。
+1. 在此檢視中，將「自動標籤？」切換開關移至「是」。 然後選取[!UICONTROL Learn More]區段中的核取方塊以同意條款與條件。 確定[!UICONTROL Auto-tagging]切換仍設為&#39;[!UICONTROL Yes]&#39;。
 
 ## 連線帳戶 {#connecting-the-account}
 
@@ -64,7 +68,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <th><p><strong>接觸點欄位</strong></p></th> 
-   <th><p><strong>價值</strong></p></th> 
+   <th><p><strong>值</strong></p></th> 
   </tr> 
   <tr> 
    <td><p>廣告行銷活動ID</p></td> 
@@ -87,7 +91,7 @@ ht-degree: 0%
    <td><p>"[!DNL Facebook]"或[utm_source] （若提供）</p></td> 
   </tr> 
   <tr> 
-   <td><p>媒體</p></td> 
+   <td><p>中</p></td> 
    <td><p>"Social"，或[utm_medium] （若提供）</p></td> 
   </tr> 
   <tr> 
@@ -129,9 +133,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
-**問：[!DNL Facebook]支援哪些[!DNL Marketo Measure]廣告？**
+**問：[!DNL Marketo Measure]支援哪些[!DNL Facebook]廣告？**
 
 答：輪播，單一影像。 目前不是影片、投影片或集合。
 

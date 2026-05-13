@@ -4,9 +4,11 @@ description: 行銷活動和行銷活動成員 —  [!DNL Marketo Measure]
 title: 行銷活動和行銷活動成員
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/bGHbuHCn0cI99duchXSFkqieTipt7FIcsHfvqqv21OU
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: 1183
 ht-degree: 0%
 
 ---
@@ -112,7 +114,7 @@ ht-degree: 0%
 
 ## 行銷活動成本 {#campaign-costs}
 
-在本文[中瞭解所有促銷活動成本](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}。
+在本文](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本[。
 
 ## 行銷活動成員移除 {#campaign-member-removal}
 
@@ -126,6 +128,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
 >
->[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}

@@ -4,9 +4,11 @@ description: 活動歸因常見問題集 —  [!DNL Marketo Measure]
 title: 活動歸因常見問題集
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -29,7 +31,7 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 **如果我有具有相同遞回任務的Lead或Contact，我是否會看到所有這些專案的購買者接觸點？**
 
-可以。您的同步活動與建立的接觸點之間有1:1關係。
+是的。 您的同步活動與建立的接觸點之間有1:1關係。
 
 **我如何知道哪些記錄會導致建立接觸點？**
 
@@ -59,7 +61,7 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 **如何在[!DNL Marketo Measure]應用程式中設定活動？**
 
-您可在[!UICONTROL Marketo]活動支援文章中找到如何設定[!DNL Marketo Measure]量值應用程式內活動的指示。
+您可在[!DNL Marketo Measure]活動支援文章中找到如何設定[!UICONTROL Marketo]量值應用程式內活動的指示。
 
 **不同的運運算元代表什麼意思？**
 

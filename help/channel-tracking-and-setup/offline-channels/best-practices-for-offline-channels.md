@@ -3,9 +3,12 @@ description: 離線頻道的最佳作法 —  [!DNL Marketo Measure]
 title: 離線管道的最佳作法
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/p-xffnDY4cbrbz4dH1Z4MgWCOwuoP-IjDHU4YdTww8o
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: 1053
 ht-degree: 0%
 
 ---
@@ -27,7 +30,7 @@ ht-degree: 0%
 
 這些接觸點的「行銷管道」值以行銷活動上的「型別」欄位為基礎。 &#39;CRM Campaign Type&#39;到&#39;Marketing Channel&#39;和&#39;Subchannel&#39;的對映是在[!DNL Marketo Measure]帳戶設定的&#39;Offline Channel&#39;索引標籤中管理的。 確保您的離線管道對應正確且為最新狀態，將可保證您的離線接觸點資料已歸因至[!DNL Marketo Measure]報表內的正確行銷管道和子管道。
 
-## 最佳實務 | 離線管道對應 {#best-practice-offline-channel-mapping}
+## 最佳實務 |離線管道對應 {#best-practice-offline-channel-mapping}
 
 無論您是第一次對應離線頻道，還是隻檢視離線頻道以檢查其準確性，請記住以下最佳實務。
 
@@ -43,11 +46,11 @@ ht-degree: 0%
 * 只有離線CRM促銷活動「型別」對應至離線頻道，因為只有離線促銷活動才會與[!DNL Marketo Measure]同步以建立接觸點：
    * ONLINE CRM Campaign的&#39;Types&#39;應該對應到[!UICONTROL Marketing Channel] = &quot;NULL&quot;。 建議使用此值，因為此值會成為「紅色旗標」，表示您的離線管道已檢閱，且對應至「NULL」的任何CRM Campaign「型別」均為線上「型別」，不應與[!DNL Marketo Measure]同步。 已經透過[!DNL Marketo Measure]線上功能與管道追蹤與Online CRM Campaign「型別」相關的接觸點。 同步這些行銷活動會產生「重複」接觸點/重複計數的風險
 
-## 最佳實務 | 離線Campaign同步 {#best-practice-offline-campaign-sync}
+## 最佳實務 |離線Campaign同步 {#best-practice-offline-campaign-sync}
 
 * 確定每個CRM行銷活動的「型別」欄位都準確
    * 「型別」會針對在同步後源自促銷活動之任何接觸點，決定行銷管道和子管道
-* 不論是使用CRM型Campaign同步方法（啟用購買者接觸點）還是[!DNL Marketo Measure]應用程式型同步方法（在您[!UICONTROL Campaigns]帳戶設定的&#39;[!UICONTROL Marketo Measure]&#39;標籤內的「自訂Campaign同步」），只有在促銷活動成員與Campaign和您的品牌有實際的離線參與時，才應該建立離線接觸點：
+* 不論是使用CRM型Campaign同步方法（啟用購買者接觸點）還是[!DNL Marketo Measure]應用程式型同步方法（在您[!UICONTROL Marketo Measure]帳戶設定的&#39;[!UICONTROL Campaigns]&#39;標籤內的「自訂Campaign同步」），只有在促銷活動成員與Campaign和您的品牌有實際的離線參與時，才應該建立離線接觸點：
    * 對於離線頻道，例如活動或網路研討會：「註冊」通常透過網站上的表單提交和[!DNL Marketo Measure]線上功能進行追蹤。 因此，狀態為「已註冊」的Campaign成員不應收到Campaign的離線接觸點，以避免重複計算。 離線接觸點僅能代表活動或網路研討會的「出席情況」。
    * 某些離線頻道（例如內容整合）較為直接簡單，因為每個行銷活動會員都有相同的「已回應」狀態，這表示他們確實已回應行銷活動，在此情況下，就是從協力廠商網站下載內容，因此應該會收到離線接觸點
 * 在[!DNL Marketo Measure]應用程式中使用「自訂促銷活動同步」方法時，請確定「接觸點日期」欄位是根據「促銷活動」或「促銷活動成員」的日期欄位，最能指出實際發生接觸點互動的時間

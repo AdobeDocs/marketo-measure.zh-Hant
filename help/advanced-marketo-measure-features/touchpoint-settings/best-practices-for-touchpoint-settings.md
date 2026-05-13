@@ -3,9 +3,12 @@ description: 接觸點設定的最佳實務 —  [!DNL Marketo Measure]
 title: 接觸點設定的最佳實務
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/57Y-eSngdDje7RcPmmKobrzk2-QWrRyxN2rIVtdrOLQ
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: 651
 ht-degree: 0%
 
 ---
@@ -14,7 +17,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-[!UICONTROL Touchpoint Settings]應用程式的[!DNL Marketo Measure]區段可讓您設定規則，以抑制或移除[!DNL Marketo Measure]資料和相關系統中的接觸點。 這些規則可協助您隔離某些不需要顯示在購買者接觸點資料中的資料集，或是您不想在不干擾追蹤和資料收集的情況下接收歸因點數的資料集。
+[!DNL Marketo Measure]應用程式的[!UICONTROL Touchpoint Settings]區段可讓您設定規則，以抑制或移除[!DNL Marketo Measure]資料和相關系統中的接觸點。 這些規則可協助您隔離某些不需要顯示在購買者接觸點資料中的資料集，或是您不想在不干擾追蹤和資料收集的情況下接收歸因點數的資料集。
 
 **接觸點移除**&#x200B;表示[!DNL Marketo Measure]將從您的CRM中清除（亦即移除）符合規則條件的任何接觸點。 資料可以在[!DNL Marketo Measure] ROI控制面板（探索）中回報，但不會顯示在CRM中。 通常用於減輕CRM內資料儲存空間限制的壓力
 

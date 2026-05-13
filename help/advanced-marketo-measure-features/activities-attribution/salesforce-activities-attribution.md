@@ -4,9 +4,12 @@ description: Salesforce活動歸因 —  [!DNL Marketo Measure]
 title: Salesforce活動歸因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/ti99Z40gvNCYWahCq2viPcNh-eAW4-laO3C6fBY7INU
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: 642
 ht-degree: 1%
 
 ---
@@ -64,7 +67,7 @@ ht-degree: 1%
 
 ![](assets/5.png)
 
-您可能會想要將這些新的接觸點放入其適當的[行銷管道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}。 使用剛建立的新行銷活動對應來定義頻道，以執行此操作。
+您可能會想要將這些新的接觸點放入其適當的[行銷管道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/！/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}。 使用剛建立的新行銷活動對應來定義頻道，以執行此操作。
 
 >[!TIP]
 >
@@ -87,7 +90,7 @@ ht-degree: 1%
 
 ![](assets/6.png)
 
-最後，您可以選擇輸入新管道的成本。 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}可讓您在頻道層級、子頻道層級或行銷活動層級輸入支出。 使用新的[!DNL Marketo Measure]行銷活動，您可以按月新增這些相關成本，然後檢視每個行銷活動的ROI！
+最後，您可以選擇輸入新管道的成本。 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/！/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}可讓您在頻道層級、子頻道層級或行銷活動層級輸入支出。 使用新的[!DNL Marketo Measure]行銷活動，您可以按月新增這些相關成本，然後檢視每個行銷活動的ROI！
 
 ![](assets/7.png)
 

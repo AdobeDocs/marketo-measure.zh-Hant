@@ -4,9 +4,12 @@ description: 設定 —  [!DNL Marketo Measure]
 title: 設定
 exl-id: 704dc52d-fa21-4475-878b-073e2e65c566
 feature: Multi-Currency
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/UzGt-bX2JvKlHEMod-NOnokTkKkGe66uxKrvorwCda0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: 126
 ht-degree: 1%
 
 ---
@@ -19,6 +22,6 @@ ht-degree: 1%
 
 **進階貨幣**：如果客戶使用Salesforce的「進階貨幣管理」功能，使用者可以設定轉換率的時間型範圍，則需要啟用額外的位元。
 
-在[!UICONTROL User Settings]應用程式的[!DNL Marketo Measure]底下，我們將顯示公司貨幣和從CRM提取的任何支援貨幣。 因為這些值都是從CRM提取，所以這些欄位是唯讀的，無法變更。 儀表板貨幣是每次載入儀表板時的預設貨幣。 您可以視需要返回並變更貨幣。
+在[!DNL Marketo Measure]應用程式的[!UICONTROL User Settings]底下，我們將顯示公司貨幣和從CRM提取的任何支援貨幣。 因為這些值都是從CRM提取，所以這些欄位是唯讀的，無法變更。 儀表板貨幣是每次載入儀表板時的預設貨幣。 您可以視需要返回並變更貨幣。
 
 ![](assets/one-1.png)

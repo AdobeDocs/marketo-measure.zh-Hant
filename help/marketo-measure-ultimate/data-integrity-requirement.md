@@ -3,10 +3,13 @@ description: '[!DNL Marketo Measure] Ultimate資料完整性需求 —  [!DNL Ma
 title: '[!DNL Marketo Measure] Ultimate資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/bsfx5FTcHyxii6iTHPyHBemX9Wfwo9-iIvHO6uTX95E
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 17%
+source-wordcount: 1703
+ht-degree: 22%
 
 ---
 
@@ -23,12 +26,12 @@ ht-degree: 17%
     <th>XDM路徑</th>
     <th>XDM型別</th>
     <th>資料Source欄位</th>
-    <th>必填？</th>
+    <th>必要?</th>
     <th>附註</th>
   </tr>
   <tbody>
     <tr>
-      <td colspan="7"><strong>帳戶</strong> (Salesforce的帳戶、公司和/或Marketo的指定帳戶)</td>
+      <td colspan="7"><strong>帳戶</strong> （Salesforce的帳戶、公司和/或Marketo的指定帳戶）</td>
     </tr>
     <tr>
       <td rowspan="6">XDM商業帳戶</td>
@@ -41,19 +44,19 @@ ht-degree: 17%
     </tr>
     <tr>
       <td></td>
-      <td>accountKey.sourceID</td>
+      <td>帳戶金鑰.sourceID</td>
       <td>字串</td>
       <td>ID</td>
       <td>是</td>
-      <td>例如 — 123</td>
+      <td>E.g. - 123</td>
     </tr>
     <tr>
       <td></td>
-      <td>accountKey.sourceInstanceID</td>
+      <td>帳戶金鑰.sourceInstanceID</td>
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -61,7 +64,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -89,7 +92,7 @@ ht-degree: 17%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>行銷活動</strong> (Salesforce的行銷活動、Marketo的方案)</td>
+      <td colspan="7"><strong>行銷活動</strong> （Salesforce的行銷活動、Marketo的方案）</td>
     </tr>
     <tr>
       <td rowspan="8">XDM商業活動</td>
@@ -98,7 +101,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -106,7 +109,7 @@ ht-degree: 17%
       <td>字串</td>
       <td>ID</td>
       <td>是</td>
-      <td>例如 — 55555</td>
+      <td>E.g. - 55555</td>
     </tr>
     <tr>
       <td></td>
@@ -114,7 +117,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -122,7 +125,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -183,7 +186,7 @@ ht-degree: 17%
     </tr>
     <tr>
       <td></td>
-      <td>actualCost.amount</td>
+      <td>actualcost.amount</td>
       <td>數字</td>
       <td>成本</td>
       <td>無</td>
@@ -201,7 +204,7 @@ ht-degree: 17%
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>行銷活動成員</strong> (Salesforce的行銷活動成員、Marketo的方案成員)</td>
+      <td colspan="7"><strong>行銷活動成員</strong> （Salesforce的行銷活動成員、Marketo的方案成員）</td>
     </tr>
     <tr>
       <td rowspan="14">XDM商業活動會員</td>
@@ -210,7 +213,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 987654321@999-abc-888.Marketo</td>
+      <td>E.g. - 987654321@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -218,7 +221,7 @@ ht-degree: 17%
       <td>字串</td>
       <td>ID</td>
       <td>是</td>
-      <td>例如 — 987654321</td>
+      <td>E.g. - 987654321</td>
     </tr>
     <tr>
       <td></td>
@@ -226,7 +229,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -234,7 +237,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -258,7 +261,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 333@999-abc-888.Marketo</td>
+      <td>E.g. - 333@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -267,7 +270,7 @@ ht-degree: 17%
       <td>潛在客戶ID或聯絡人ID</td>
       <td>是</td>
       <td>
-        <p>例如 — 333，根據資料來源表格，這有可能是銷售機會ID或聯絡人ID。</p>
+        <p>E.g. - 333，視資料來源表格而定，此為銷售機會ID或聯絡人ID。</p>
         <p>潛在客戶或聯絡人的外部索引鍵</p>
       </td>
     </tr>
@@ -277,7 +280,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -285,7 +288,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -293,7 +296,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -302,7 +305,7 @@ ht-degree: 17%
       <td>行銷活動 ID</td>
       <td>是</td>
       <td>
-        <p>例如 — 55555。</p>
+        <p>E.g. - 55555.</p>
         <p>Campaign的外部索引鍵</p>
       </td>
     </tr>
@@ -312,7 +315,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -320,7 +323,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -356,7 +359,7 @@ ht-degree: 17%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>人員</strong> (Salesforce的聯絡人或潛在客戶、Marketo的人員)</td>
+      <td colspan="7"><strong>人員</strong> （Salesforce的聯絡人或潛在客戶、Marketo的人員）</td>
     </tr>
     <tr>
       <td>XDM 個人輪廓</td>
@@ -381,7 +384,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -389,7 +392,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -458,7 +461,7 @@ ht-degree: 17%
       <td></td>
       <td>無</td>
       <td>
-        <p>例如 — 123@999-abc-888.Marketo。</p>
+        <p>E.g. - 123@999-abc-888.Marketo。</p>
         <p>sourceAccountKey欄位集僅對真正的連絡人記錄為「必要」，定義為連結至帳戶的人員記錄。 缺少它不會導致資料集遭到拒絕，但歸因結果將會關閉。</p>
         <p>personComponents是陣列，但Marketo Measure僅取用第一個元素personComponents[0]</p>
       </td>
@@ -470,7 +473,7 @@ ht-degree: 17%
       <td>帳戶 ID</td>
       <td>無</td>
       <td>
-        <p>例如 — 123。</p>
+        <p>E.g. - 123.</p>
         <p>帳戶的外部索引鍵</p>
       </td>
     </tr>
@@ -488,10 +491,10 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>無</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>機會</strong> (Salesforce的機會、Marketo的機會)</td>
+      <td colspan="7"><strong>機會</strong> （Salesforce的機會、Marketo的機會）</td>
     </tr>
     <tr>
       <td rowspan="13">XDM商業機會</td>
@@ -508,7 +511,7 @@ ht-degree: 17%
       <td>字串</td>
       <td>ID</td>
       <td>是</td>
-      <td>例如 — 77777</td>
+      <td>E.g. - 77777</td>
     </tr>
     <tr>
       <td></td>
@@ -516,7 +519,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -524,7 +527,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -552,22 +555,22 @@ ht-degree: 17%
     </tr>
     <tr>
       <td></td>
-      <td>accountKey.sourceID</td>
+      <td>帳戶金鑰.sourceID</td>
       <td>字串</td>
       <td>帳戶 ID</td>
       <td>是</td>
       <td>
-        <p>例如 — 123。</p>
+        <p>E.g. - 123.</p>
         <p>帳戶的外部索引鍵</p>
       </td>
     </tr>
     <tr>
       <td></td>
-      <td>accountKey.sourceInstanceID</td>
+      <td>帳戶金鑰.sourceInstanceID</td>
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -575,7 +578,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -664,7 +667,7 @@ ht-degree: 17%
       <td>聯絡人ID</td>
       <td>是</td>
       <td>
-        <p>例如 — 333。</p>
+        <p>e.g. - 333.</p>
         <p>連絡人的外部索引鍵</p>
       </td>
     </tr>
@@ -674,7 +677,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -682,7 +685,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -707,7 +710,7 @@ ht-degree: 17%
       <td>機會 ID</td>
       <td>是</td>
       <td>
-        <p>例如 — 77777。</p>
+        <p>e.g. - 77777.</p>
         <p>機會的外部索引鍵</p>
       </td>
     </tr>
@@ -717,7 +720,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -725,7 +728,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -741,7 +744,7 @@ ht-degree: 17%
       <td>字串</td>
       <td>ID</td>
       <td>是</td>
-      <td>例如 — 222222</td>
+      <td>e.g. - 222222</td>
     </tr>
     <tr>
       <td></td>
@@ -749,7 +752,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -757,7 +760,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -784,7 +787,7 @@ ht-degree: 17%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>轉換率(僅在使用多種貨幣時需要；只能將一個轉換率資料集啟用至Marketo Measure)</strong></td>
+      <td colspan="7"><strong>轉換率（僅在使用多種貨幣時需要；只能將一個轉換率資料集啟用至Marketo Measure）</strong></td>
     </tr>
     <tr>
       <td rowspan="7">轉換</td>
@@ -801,7 +804,7 @@ ht-degree: 17%
       <td>字串</td>
       <td>ID</td>
       <td>是</td>
-      <td>例如 — 8888</td>
+      <td>e.g. - 8888</td>
     </tr>
     <tr>
       <td></td>
@@ -809,7 +812,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 0x012345</td>
+      <td>E.g. - 0x012345</td>
     </tr>
     <tr>
       <td></td>
@@ -817,7 +820,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Salesforce</td>
+      <td>E.g. - SALESFORCE</td>
     </tr>
     <tr>
       <td></td>
@@ -874,7 +877,7 @@ ht-degree: 17%
       <td>字串</td>
       <td>ISOCode</td>
       <td>是</td>
-      <td>例如EUR</td>
+      <td>E.g. 歐元</td>
     </tr>
     <tr>
       <td></td>
@@ -908,7 +911,7 @@ ht-degree: 17%
     <th>XDM路徑</th>
     <th>XDM型別</th>
     <th>資料Source欄位</th>
-    <th>必填？</th>
+    <th>必要?</th>
     <th>附註</th>
   </tr>
   <tbody>
@@ -947,7 +950,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 333@999-abc-888.Marketo</td>
+      <td>E.g. - 333@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -957,7 +960,7 @@ ht-degree: 17%
       <td>潛在客戶ID或聯絡人ID</td>
       <td>是</td>
       <td>
-        <p>例如 — 333，根據資料來源表格，這有可能是銷售機會ID或聯絡人ID。</p>
+        <p>E.g. - 333，視資料來源表格而定，此為銷售機會ID或聯絡人ID。</p>
         <p>潛在客戶或聯絡人的外部索引鍵</p>
       </td>
     </tr>
@@ -968,7 +971,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -977,7 +980,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -986,7 +989,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是（僅適用於leadOperation.addToCampaign型別）</td>
-      <td>例如 — 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -996,7 +999,7 @@ ht-degree: 17%
       <td>行銷活動 ID</td>
       <td>是（僅適用於leadOperation.addToCampaign型別）</td>
       <td>
-        <p>例如 — 55555。</p>
+        <p>E.g. - 55555.</p>
         <p>Campaign的外部索引鍵</p>
       </td>
     </tr>
@@ -1007,7 +1010,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是（僅適用於leadOperation.addToCampaign型別）</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -1016,7 +1019,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是（僅適用於leadOperation.addToCampaign型別）</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
     <tr>
       <td></td>
@@ -1025,7 +1028,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是（僅適用於leadOperation.campaignProgression型別）</td>
-      <td>例如 — 55555@999-abc-888.Marketo</td>
+      <td>E.g. - 55555@999-abc-888.Marketo</td>
     </tr>
     <tr>
       <td></td>
@@ -1035,7 +1038,7 @@ ht-degree: 17%
       <td>行銷活動 ID</td>
       <td>是（僅適用於leadOperation.campaignProgression型別）</td>
       <td>
-        <p>例如 — 55555。</p>
+        <p>E.g. - 55555.</p>
         <p>Campaign的外部索引鍵</p>
       </td>
     </tr>
@@ -1046,7 +1049,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是（僅適用於leadOperation.campaignProgression型別）</td>
-      <td>例如 — 999-abc-888</td>
+      <td>E.g. - 999-abc-888</td>
     </tr>
     <tr>
       <td></td>
@@ -1055,7 +1058,7 @@ ht-degree: 17%
       <td>字串</td>
       <td></td>
       <td>是（僅適用於leadOperation.campaignProgression型別）</td>
-      <td>例如 — Marketo</td>
+      <td>E.g. - MARKETO</td>
     </tr>
   </tbody>
 </table>
@@ -1071,7 +1074,7 @@ ht-degree: 17%
   <tbody>
     <tr>
       <td>新銷售機會</td>
-      <td>leadOperation.newLead</td>
+      <td>Leadoperationationnewlead</td>
       <td>用於記錄新行銷線索的建立和詳細資訊</td>
     </tr>
     <tr>
@@ -1081,7 +1084,7 @@ ht-degree: 17%
     </tr>
     <tr>
       <td>關鍵時刻</td>
-      <td>leadOperation.interestingMoment</td>
+      <td>leadOperation.interestedMoment</td>
       <td>用於追蹤潛在客戶的高價值活動</td>
     </tr>
     <tr>
@@ -1096,7 +1099,7 @@ ht-degree: 17%
     </tr>
     <tr>
       <td>開啟電子郵件</td>
-      <td>directMarketing.emailOpened</td>
+      <td>directMarketing.emailOpen</td>
       <td>若有人開啟行銷電子郵件時，可用於擷取詳細資訊</td>
     </tr>
     <tr>

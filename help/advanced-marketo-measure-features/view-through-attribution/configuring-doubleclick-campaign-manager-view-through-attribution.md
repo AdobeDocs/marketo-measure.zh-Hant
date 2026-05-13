@@ -4,9 +4,12 @@ description: 透過歸因設定Doubleclick Campaign Manager檢視 —  [!DNL Mar
 title: 透過歸因設定Doubleclick Campaign Manager檢視
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RekX4OsH-i5HHm-KyRNTp8r6SHhJRGM14trA7XXaJNQ
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 425
 ht-degree: 0%
 
 ---
@@ -41,7 +44,7 @@ ht-degree: 0%
 
 1. 新增分隔符號後，請確認分隔符號已如下對應。 套用標籤後，這應為自動的：
 
-   v = %eadv！ [!DNL Expand]廣告商ID\
+   v = %eadv！[!DNL Expand] 廣告商ID\
    a = %eaid！ 展開廣告Id\
    c = %ecid！ 展開Creative Id\
    s = %esid！ 展開網站ID\
@@ -51,7 +54,7 @@ ht-degree: 0%
 
    ![](assets/1.png)
 
-## 常見問題 {#faq}
+## 常見問題集 {#faq}
 
 **問：影像標籤是否安全？**
 
