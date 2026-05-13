@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 帳戶型行銷概觀 {#account-based-marketing-overview}
 
-下列章節提供ABM的簡短概觀、[!DNL Marketo Measure] ABM功能的元件，以及如何將其新增至您的[!DNL Salesforce]頁面配置。 若要深入瞭解ABM，請檢閱Adobe的[ABM部落格](https://business.adobe.com/blog/basics/account-based-marketing){target="_blank"}。
+下列章節提供ABM的簡短概觀、[!DNL Marketo Measure] ABM功能的元件，以及如何將其新增至您的[!DNL Salesforce]頁面配置。 若要深入瞭解ABM，請檢閱Adobe的[ABM部落格](https://business.adobe.com/tw/blog/basics/account-based-marketing){target="_blank"}。
 
 如需在您的[!DNL Salesforce]執行個體中設定ABM的詳細指示，請移至[在Salesforce中設定ABM頁面配置](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}。
 
