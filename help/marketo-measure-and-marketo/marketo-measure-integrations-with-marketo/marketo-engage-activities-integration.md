@@ -5,9 +5,12 @@ title: '[!DNL Marketo Engage]個活動整合'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
 TQID: https://experienceleague.adobe.com/X0GAwexe-IPzGn-ITUglGHhbiwVWtTy1uHEnfDNpQCI
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 1642
@@ -163,9 +166,9 @@ SFDC活動(26)\
 
 ## 頻道對應 {#channel-mapping}
 
-若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您需要確定您的頻道已依照此處](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的指示正確設定[。
+若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您需要確定您的頻道已依照此處[&#128279;](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的指示正確設定。
 
-對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您在此佈局的自訂線上頻道[](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
+對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您在此佈局的自訂線上頻道[&#128279;](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
 
 如果您的Marketo活動管道未正確設定，則您的新接觸點可能會落在「其他」管道下。
 

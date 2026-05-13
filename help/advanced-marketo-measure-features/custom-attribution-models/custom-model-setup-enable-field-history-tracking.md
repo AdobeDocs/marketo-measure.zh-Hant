@@ -5,8 +5,10 @@ title: 自訂模型設定 — 啟用欄位歷史記錄追蹤
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
 feature: Custom Models
 TQID: https://experienceleague.adobe.com/VUMTg9lOnCtRb3TUt7SIkUeOsghibBX0LDtqQVeXdcg
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2: id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 308
@@ -18,7 +20,7 @@ ht-degree: 0%
 
 ## 啟用欄位記錄追蹤的原因與時機 {#why-and-when-to-enable-field-history-tracking}
 
-如果您決定將自訂欄位加入為自訂歸因模型中的階段，則必須為此欄位啟用欄位歷程記錄追蹤&#x200B;****。 啟用欄位歷史記錄追蹤將允許[!DNL Salesforce]透過在「歷史記錄追蹤」表格中建立記錄，隨時追蹤編輯自訂欄位。 [!DNL Marketo Measure]可以下載該資料表，並使用此資訊來測量「轉換」發生的時間和日期。 若沒有欄位歷史記錄追蹤，[!DNL Marketo Measure]將無法追蹤與此欄位相關的變更。
+如果您決定將自訂欄位加入為自訂歸因模型中的階段，則必須為此欄位啟用欄位歷程記錄追蹤&#x200B;**&#x200B;**。 啟用欄位歷史記錄追蹤將允許[!DNL Salesforce]透過在「歷史記錄追蹤」表格中建立記錄，隨時追蹤編輯自訂欄位。 [!DNL Marketo Measure]可以下載該資料表，並使用此資訊來測量「轉換」發生的時間和日期。 若沒有欄位歷史記錄追蹤，[!DNL Marketo Measure]將無法追蹤與此欄位相關的變更。
 
 如果自訂模型中只使用[!UICONTROL Lead Status]或機會階段，則不需要開啟欄位歷史記錄追蹤，因為它會在階段轉換時自動追蹤。
 

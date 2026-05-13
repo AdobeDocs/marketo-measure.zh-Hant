@@ -5,8 +5,10 @@ title: A/B測試設定與報告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
 TQID: https://experienceleague.adobe.com/lMtRvc6owu6vx-FsOjCyd40HGhQefpNIr48cnKP5CmM
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 409
@@ -16,7 +18,7 @@ ht-degree: 2%
 
 # A/B測試設定與報告 {#a-b-testing-set-up-and-reporting}
 
-[!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[和VWO網站實驗對收入的影響。 ](https://www.optimizely.com/){target="_blank"}本文提供如何將[!DNL Marketo Measure]個A/B測試區段新增至銷售機會、[!UICONTROL Contact]、大小寫和[!UICONTROL Opportunity]頁面配置的指示。 也涵蓋一般報告實務和執行[!DNL Marketo Measure] A/B報告型別的建議。
+[!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[和VWO網站實驗對收入的影響。 &#x200B;](https://www.optimizely.com/){target="_blank"}本文提供如何將[!DNL Marketo Measure]個A/B測試區段新增至銷售機會、[!UICONTROL Contact]、大小寫和[!UICONTROL Opportunity]頁面配置的指示。 也涵蓋一般報告實務和執行[!DNL Marketo Measure] A/B報告型別的建議。
 
 ## 設定 {#set-up}
 

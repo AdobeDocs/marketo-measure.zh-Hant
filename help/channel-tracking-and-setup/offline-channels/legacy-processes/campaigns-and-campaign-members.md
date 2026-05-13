@@ -5,7 +5,8 @@ title: 行銷活動和行銷活動成員
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
 TQID: https://experienceleague.adobe.com/bGHbuHCn0cI99duchXSFkqieTipt7FIcsHfvqqv21OU
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 1183
@@ -114,7 +115,7 @@ ht-degree: 0%
 
 ## 行銷活動成本 {#campaign-costs}
 
-在本文](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本[。
+在本文[&#128279;](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本。
 
 ## 行銷活動成員移除 {#campaign-member-removal}
 
