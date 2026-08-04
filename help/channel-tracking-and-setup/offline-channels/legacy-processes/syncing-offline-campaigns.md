@@ -5,8 +5,7 @@ title: 同步離線行銷活動
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
 TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
-product_v2:
-  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 727
@@ -65,18 +64,18 @@ ht-degree: 0%
 ![](assets/4-3.png)
 
 * **包含所有行銷活動成員**
-   * 此選項可讓[!DNL Marketo Measure]將接觸點歸因於每個行銷活動成員。
+  * 此選項可讓[!DNL Marketo Measure]將接觸點歸因於每個行銷活動成員。
 
 * **包含「已回應」的行銷活動成員。**
-   * 此選項會將接觸點套用至狀態為「已回應」的行銷活動成員。
+  * 此選項會將接觸點套用至狀態為「已回應」的行銷活動成員。
 
 * **排除所有行銷活動成員。**
-   * 此選項不會將接觸點歸因於行銷活動中的任何成員，且會作為刻意將行銷活動從[!DNL Marketo Measure]中排除的標幟。 如果您曾經在意外情況下將促銷活動與購買者接觸點同步，您可以將狀態變更為「排除所有促銷活動成員」，且接觸點將會移除。
+  * 此選項不會將接觸點歸因於行銷活動中的任何成員，且會作為刻意將行銷活動從[!DNL Marketo Measure]中排除的標幟。 如果您曾經在意外情況下將促銷活動與購買者接觸點同步，您可以將狀態變更為「排除所有促銷活動成員」，且接觸點將會移除。
 
 一旦選擇其中一個選項，[!DNL Marketo Measure]就會將接觸點指派給每個行銷活動成員（若適用）。 新增至行銷活動&#x200B;_的銷售機會或聯絡人必須_&#x200B;擁有與其記錄關聯的電子郵件地址，才能讓[!DNL Marketo Measure]建立接觸點。 若沒有電子郵件地址，[!DNL Marketo Measure]就不會將接觸點指派給行銷活動成員。
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
