@@ -4,8 +4,12 @@ title: '[!DNL Marketo Measure]報告指南'
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
 TQID: https://experienceleague.adobe.com/qdhOT569T3OyHBOuwBGbxAV-kYaCJnfP6qJ8Mb-A4Wk
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 5685
@@ -38,7 +42,7 @@ ht-degree: 1%
 1. **購買者接觸點** (BT) /個人/參與總數
 
    * 常用於&#x200B;_個人_ （潛在客戶、聯絡人、[!DNL Marketo Measure]個人）相關的「funnel頂端」（豆腐）量度和報告
-   * BT是用來瞭解與&#x200B;**人員**相關的所有行銷互動，因為它們包含每個人的完整接觸點歷史記錄。 提醒您，這些接觸點是在CRM中針對匿名的首次接觸、潛在客戶建立接觸，以及您選擇從中同步的任何後續表單提交或接觸點建立的
+   * BT是用來瞭解與&#x200B;**人員**&#x200B;相關的所有行銷互動，因為它們包含每個人的完整接觸點歷史記錄。 提醒您，這些接觸點是在CRM中針對匿名的首次接觸、潛在客戶建立接觸，以及您選擇從中同步的任何後續表單提交或接觸點建立的
      離線行銷活動或活動。
 
 1. **購買者歸因接觸點** (BAT) /商機/帳戶層級/收入
@@ -399,7 +403,7 @@ Buyer Touchpoint (BT)物件是用來追蹤某人每次與您的行銷資料互�
 
 **3. [!DNL MARKETO MEASURE] 具有購買者接觸點**&#x200B;的人員
 
-Salesforce中有第三個自訂[!DNL Marketo Measure]物件，在報告人員相關量度時非常有用： **人員(BP)[!DNL Marketo Measure]。** BP解決了如何在同一份報告中同時表示潛在客戶與聯絡人資訊這個古老的問題。 它會結合與「人員」相關的所有BT （[!DNL Marketo Measure]人員的ID是他們的電子郵件地址）。 無論潛在客戶或聯絡人存在與否，BP都會當作橋接物件，協助報告跨越潛在客戶或聯絡人，對於製作更複雜的人員報告非常有用。
+Salesforce中有第三個自訂[!DNL Marketo Measure]物件，在報告人員相關量度時非常有用： **人員(BP) [!DNL Marketo Measure]。** BP解決了如何在同一份報告中同時表示潛在客戶與聯絡人資訊這個古老的問題。 它會結合與「人員」相關的所有BT （[!DNL Marketo Measure]人員的ID是他們的電子郵件地址）。 無論潛在客戶或聯絡人存在與否，BP都會當作橋接物件，協助報告跨越潛在客戶或聯絡人，對於製作更複雜的人員報告非常有用。
 
 [!DNL Marketo Measure]個人只與其中一個接觸點物件Buyer Touchpoint (BT)相關。 這表示此量度無法用於機會或收入相關量度。 &#39;[!DNL Marketo Measure]個人與購買者接觸點&#39;報告型別對於瞭解&#x200B;_總參與度_&#x200B;非常有用，因為它會更具體地顯示所有BT，無論BT是否與潛在客戶或聯絡人有關。 例如：如果您有用來追蹤事件的Salesforce促銷活動，則CRM促銷活動中的促銷活動成員可能會以潛在客戶或聯絡人的身分存在。 無論如何，[!DNL Marketo Measure]都會為行銷活動成員建立接觸點，但若沒有[!DNL Marketo Measure]人員，標準Salesforce報告將需要兩個個別的報告，以瞭解您從事件中擁有的&#x200B;_總計_&#x200B;個接觸點數目：一個是「具有購買者接觸點的銷售機會」，另一個是「具有購買者接觸點的聯絡人」。 以下列出一些其他[!DNL Marketo Measure]個人型報告使用案例：
 
