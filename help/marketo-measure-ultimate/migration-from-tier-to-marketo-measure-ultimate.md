@@ -1,24 +1,33 @@
 ---
-description: 瞭解從 [!DNL Marketo Measure] 階層訂閱移轉至 [!DNL Marketo Measure] Ultimate時的移轉程式。
-title: 從階層移轉至 [!DNL Marketo Measure] Ultimate
+description: 瞭解從[!DNL Marketo Measure]階層訂閱移轉至[!DNL Marketo Measure] Ultimate時的移轉程式。
+title: 從階層移轉至[!DNL Marketo Measure] Ultimate
 feature: Integration, Tracking, Attribution
 exl-id: 828c9bba-3835-484a-bd80-84b5a6b67e22
-TQID: https://experienceleague.adobe.com/Q-VV8-RWaGb-lk-vr3y9KK9SjTlsugPJ-N4HrSH5uxA
+TQID: 'https://experienceleague.adobe.com/Q-VV8-RWaGb-lk-vr3y9KK9SjTlsugPJ-N4HrSH5uxA'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Data collection
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 283
+source-wordcount: '286'
 ht-degree: 1%
-
 ---
-
 # 從第1-2層移轉至[!DNL Marketo Measure]個Ultimate {#migration-from-tier-to-marketo-measure-ultimate}
 
 本文概述從第1或第2層訂閱移轉至[!DNL Marketo Measure] Ultimate的使用者移轉程式。
@@ -51,16 +60,16 @@ ht-degree: 1%
 
 * Account-Based Marketing功能（包括銷售線索與帳戶的比對和預測性參與分數）在Ultimate中無法使用。
 
-   * 不過，您可以透過AEP匯入銷售線索與帳戶的比對結果，並在平台內使用。
+  * 不過，您可以透過AEP匯入銷售線索與帳戶的比對結果，並在平台內使用。
 
 * 在Ultimate中，會推斷CRM歷史階段轉變，而非直接讀取，因為沒有直接CRM連線。
 
-   * 我們會讀取機會記錄和時間戳記，檢視目前階段，然後推斷歷史階段。
+  * 我們會讀取機會記錄和時間戳記，檢視目前階段，然後推斷歷史階段。
 
 ## 報告 {#reporting}
 
 * Ultimate不會將資料推送回CRM。
 
-   * 如果需要將資料推送回CRM，則需要自訂ETL管道，才能從Marketo Measure Snowflake將資料擷取到CRM。 您必須在CRM中設定自訂資料模型。
+  * 如果需要將資料推送回CRM，則需要自訂ETL管道，才能從Marketo Measure Snowflake將資料擷取到CRM。 您必須在CRM中設定自訂資料模型。
 
 * 除了Attribution AI儀表板，所有Discover儀表板都維持與階層式解決方案中的相同。

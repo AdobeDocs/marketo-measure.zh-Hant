@@ -1,21 +1,25 @@
 ---
-description: 探索儀表板基本知識 —  [!DNL Marketo Measure]  — 產品
+description: 探索儀表板基本知識 — [!DNL Marketo Measure] — 產品
 title: 探索儀表板基本知識
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-TQID: https://experienceleague.adobe.com/8BzKWeGZnFCIl-FMrY727kJgu4cw7oOOZMdqWEBRv9o
+TQID: 'https://experienceleague.adobe.com/8BzKWeGZnFCIl-FMrY727kJgu4cw7oOOZMdqWEBRv9o'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # 探索儀表板基本知識 {#discover-dashboard-basics}
 
 本文將引導您瞭解重新設計介面的基礎功能，確保您可以輕鬆存取和解讀資料。 深入瞭解篩選器窗格的動態，並找出增強型報告功能的複雜之處，例如鑽床功能、交叉篩選和工具提示。

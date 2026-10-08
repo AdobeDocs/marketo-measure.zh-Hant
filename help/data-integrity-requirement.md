@@ -1,15 +1,23 @@
 ---
-description: '''[!DNL Marketo Measure] Ultimate資料完整性需求 —  [!DNL Marketo Measure]'''
+description: '''[!DNL Marketo Measure] Ultimate資料完整性需求 — [!DNL Marketo Measure]'''
 title: '[!DNL Marketo Measure] Ultimate資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1702'
-ht-degree: 21%
-
+ht-degree: 22%
 ---
-
 
 # [!DNL Marketo Measure] Ultimate資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
 
@@ -29,7 +37,7 @@ ht-degree: 21%
   </tr>
   <tbody>
     <tr>
-      <td colspan="7"><strong>帳戶</strong> (Salesforce的帳戶、公司和/或Marketo的指定帳戶)</td>
+      <td colspan="7"><strong>帳戶</strong> （Salesforce的帳戶、公司和/或Marketo的指定帳戶）</td>
     </tr>
     <tr>
       <td rowspan="6">XDM商業帳戶</td>
@@ -90,7 +98,7 @@ ht-degree: 21%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>行銷活動</strong> (Salesforce的行銷活動、Marketo的方案)</td>
+      <td colspan="7"><strong>行銷活動</strong> （Salesforce的行銷活動、Marketo的方案）</td>
     </tr>
     <tr>
       <td rowspan="8">XDM商業活動</td>
@@ -202,7 +210,7 @@ ht-degree: 21%
       <td>針對行銷活動成本</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>行銷活動成員</strong> (Salesforce的行銷活動成員、Marketo的方案成員)</td>
+      <td colspan="7"><strong>行銷活動成員</strong> （Salesforce的行銷活動成員、Marketo的方案成員）</td>
     </tr>
     <tr>
       <td rowspan="14">XDM商業活動會員</td>
@@ -357,7 +365,7 @@ ht-degree: 21%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>人員</strong> (Salesforce的聯絡人或潛在客戶、Marketo的人員)</td>
+      <td colspan="7"><strong>人員</strong> （Salesforce的聯絡人或潛在客戶、Marketo的人員）</td>
     </tr>
     <tr>
       <td>XDM 個人輪廓</td>
@@ -492,7 +500,7 @@ ht-degree: 21%
       <td>E.g. - MARKETO</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>機會</strong> (Salesforce的機會、Marketo的機會)</td>
+      <td colspan="7"><strong>機會</strong> （Salesforce的機會、Marketo的機會）</td>
     </tr>
     <tr>
       <td rowspan="13">XDM商業機會</td>
@@ -785,7 +793,7 @@ ht-degree: 21%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>轉換率(僅在使用多種貨幣時需要；只能將一個轉換率資料集啟用至Marketo Measure)</strong></td>
+      <td colspan="7"><strong>轉換率（僅在使用多種貨幣時需要；只能將一個轉換率資料集啟用至Marketo Measure）</strong></td>
     </tr>
     <tr>
       <td rowspan="7">轉換</td>
@@ -890,7 +898,7 @@ ht-degree: 21%
 
 ## 貨幣轉換資料需求 {#currency-conversion-data-requirements}
 
-**預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如，USD至USD），其轉換率為1。
+**預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如USD到USD），其轉換率為1。
 
 **轉換率**：每個（來源貨幣、目標貨幣）配對可以在不同的日期期間有多個轉換率。 根據Salesforce DatedConversionRate物件，匯率必須涵蓋從0001-01-01到9999-12-31的整個時間範圍。
 
@@ -1378,7 +1386,7 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 我們建議在欄位對應中使用計算欄位，以將欄位預設為非NULL值。 以下是兩個範例：
 
 * 如果某些機會記錄中的`opportunityName`為Null，請在欄位對應中建立並使用下列計算欄位
-   * `iif(name != null && trim(name) != "", name, "Unknown")`
+  * `iif(name != null && trim(name) != "", name, "Unknown")`
 
 * 如果某些體驗事件記錄中的`leadOperation.campaignProgression.campaignID`為Null，請在欄位對應中建立並使用下列計算欄位
-   * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
+  * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`

@@ -3,14 +3,18 @@ description: 說明一段時間內造訪訪訪客頁面檢視表單與管道效�
 title: 網站流量儀表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 2%
-
 ---
-
 # 網站流量儀表板 {#web-traffic-dashboard}
 
 「網站流量控制面板」可提供您網站訪客互動的完整檢視。 探索量度，例如每個URL的不重複訪客計數、整體造訪、頁面檢視，以及來自特定表單URL或登入頁面的表單提交。 監控每月流量趨勢並識別高績效的付費媒體，讓您能夠調整策略以創造最佳收入。

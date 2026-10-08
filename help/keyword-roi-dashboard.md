@@ -1,15 +1,19 @@
 ---
-description: 關鍵字ROI儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 關鍵字ROI儀表板 — [!DNL Marketo Measure] — 產品
 title: 關鍵字ROI控制面板
 feature: Reporting
 exl-id: 9c85a3ad-1806-4e30-b0fb-686760aea587
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
-
 ---
-
 # 關鍵字ROI控制面板 {#keyword-roi-dashboard}
 
 關鍵字ROI儀表板提供付費搜尋行銷活動績效的詳細深入分析。 它提供關鍵字層級成本、歸因收入、以及產生的新銷售機會和機會的全面分析，以確保對關鍵字ROI的明確瞭解。
@@ -68,11 +72,11 @@ ht-degree: 0%
 此儀表板配備了下列設定和篩選器：
 
 * 日期
-   * 根據：
-      * 建立日期：新銷售機會、新銷售機會
-      * 成本發生日期：成本
-      * 結束日期：歸因收入（簡單ROI）、交易
-      * 接觸點日期：已實現歸因收入（已實現ROI）的接觸點
+  * 根據：
+    * 建立日期：新銷售機會、新銷售機會
+    * 成本發生日期：成本
+    * 結束日期：歸因收入（簡單ROI）、交易
+    * 接觸點日期：已實現歸因收入（已實現ROI）的接觸點
 * 歸因模型
 * 關鍵字
 * 行銷活動

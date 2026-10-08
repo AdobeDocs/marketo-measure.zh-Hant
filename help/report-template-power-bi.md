@@ -3,13 +3,17 @@ description: '[!DNL Marketo Measure]報告範本 — Power BI - [!DNL Marketo Me
 title: '[!DNL Marketo Measure]報告範本 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]報告範本 — Power BI {#marketo-measure-report-template-power-bi}
 
 ## 快速入門 {#getting-started}
@@ -99,7 +103,7 @@ Power Query中的資料已套用一些轉換。 若要檢視任何表格的特�
 
 ### 已重新命名區段 {#renamed-segments}
 
-由於區段名稱是可自訂的，因此在Snowflake Data Warehouse中會有通用的欄名稱。[!DNL BIZ_SEGMENT_NAMES] 是一個對應表格，其中列出一般區段名稱及其對應的自訂區段名稱，定義於[!DNL Marketo Measure] UI中的區段區段。 「區段名稱」表格可用來重新命名「潛在客戶接觸點」和「歸因接觸點」表格中的區段欄。 如果自訂區段不存在，則保留一般區段名稱。
+由於區段名稱是可自訂的，因此在Snowflake Data Warehouse中會有通用的欄名稱。 [!DNL BIZ_SEGMENT_NAMES]是一個對應表格，其中列出一般區段名稱及其對應的自訂區段名稱，定義於[!DNL Marketo Measure] UI中的區段區段。 「區段名稱」表格可用來重新命名「潛在客戶接觸點」和「歸因接觸點」表格中的區段欄。 如果自訂區段不存在，則保留一般區段名稱。
 
 ![由於區段名稱是可自訂的，因此它們在](assets/marketo-bi-4.png)中具有一般資料行名稱
 

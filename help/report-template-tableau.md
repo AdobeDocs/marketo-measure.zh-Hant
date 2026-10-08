@@ -3,13 +3,17 @@ description: '[!DNL Marketo Measure]報告範本 — Tableau - [!DNL Marketo Mea
 title: '[!DNL Marketo Measure]報告範本 — Tableau'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]報告範本 — Tableau {#marketo-measure-report-template-tableau}
 
 ## 快速入門 {#getting-started}
@@ -92,11 +96,11 @@ ht-degree: 0%
 
 ### 區段名稱 {#segment-names}
 
-由於區段名稱是可自訂的，因此在Snowflake Data Warehouse中會有通用的欄名稱。[!DNL BIZ_SEGMENT_NAMES] 為對應表格，如[!DNL Marketo Measure] UI中的區段區段所定義，此表格會列出一般區段名稱及其對應的自訂區段名稱。 如果您使用自訂區段名稱，並且想要更新您的[!DNL Tableau]模型以合併這些名稱，請使用此表格並手動重新命名Tableau模型內的欄。 區段欄位位於「銷售機會」和「歸因接觸點」表格中，且只需重新命名一次。
+由於區段名稱是可自訂的，因此在Snowflake Data Warehouse中會有通用的欄名稱。 [!DNL BIZ_SEGMENT_NAMES]為對應表格，其中列出一般區段名稱及其對應的自訂區段名稱，如[!DNL Marketo Measure] UI中的區段區段所定義。 如果您使用自訂區段名稱，並且想要更新您的[!DNL Tableau]模型以合併這些名稱，請使用此表格並手動重新命名Tableau模型內的欄。 區段欄位位於「銷售機會」和「歸因接觸點」表格中，且只需重新命名一次。
 
 [!UICONTROL CATEGORY]欄列示類別編號，而SEGMENT_NAME欄具有其對應的自訂區段名稱。
 
-![&#x200B; CATEGORY資料行列出類別編號與SEGMENTNAME資料行](assets/marketo-tableau-13.png)
+![ CATEGORY資料行列出類別編號與SEGMENTNAME資料行](assets/marketo-tableau-13.png)
 
 名稱可以兩種方式更新。 第一個選項是更新自訂SQL。 在此範例中，已根據「區段名稱」表格的對應重新命名類別1-6。
 

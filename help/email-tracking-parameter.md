@@ -3,13 +3,17 @@ description: Marketo Measure使用者的電子郵件追蹤引數指南
 title: 電子郵件追蹤引數
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 2%
-
 ---
-
 # 電子郵件追蹤引數 {#email-tracking-parameter}
 
 [!DNL Marketo Measure]電子郵件追蹤引數可讓行銷人員將電子郵件點按視為表單提交，以便針對這些動作產生接觸點。 若不使用電子郵件追蹤引數，來自電子郵件的點進次數僅會視為「網頁造訪」，直到使用者透過表單提交或網頁聊天實際參與網站為止。
@@ -32,7 +36,7 @@ Marketo Measure接受下列值：電子郵件地址、Salesforce銷售機會Id�
 
 | 行銷自動化 | Token /標籤/巨集 | 範例 | 支援材料 |
 | --- | --- | --- | --- |
-| Marketo | `{{lead.Email Address}}` | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`> | [代號總覽](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=zh-Hant) |
+| Marketo | `{{lead.Email Address}}` | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`> | [代號總覽](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html) |
 | Pardot | %%email%%或%%user_crm_id%% | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%> | [Pardot變數標籤參考](https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5) |
 | Hubspot | （透過編輯器插入） | 不適用 | [HubSpot個人化內容](https://knowledge.hubspot.com/website-pages/personalize-your-content) |
 | 動作 | （透過訊息撰寫器插入） | 不適用 | [即時個人化電子郵件內容](https://connect.act-on.com/hc/en-us/articles/360033436074-How-to-Personalize-Email-Content-with-CRM-Data) |

@@ -3,19 +3,25 @@ description: 重新授權Marketo Measure使用者的連線帳戶指引
 title: 重新授權連線的帳戶
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
-
 ---
-
 # 重新授權連線的帳戶 {#reauthorizing-connected-accounts}
 
 當帳戶與您的[!DNL Marketo Measure]帳戶中斷連線時，平台的狀態將變更為「需要授權」並顯示一個紅色鑰匙圖示。
 
-如果您的廣告平台中斷連線，[!DNL Marketo Measure]將無法下載成本資料，或者，如果您已啟用自動標籤，請將[!DNL Marketo Measure] UTM引數附加至任何新建立的廣告。[!DNL Marketo Measure] 帳戶中斷連線時，將無法回溯附加UTM引數至任何從廣告平台建立的接觸點。
+如果您的廣告平台中斷連線，[!DNL Marketo Measure]將無法下載成本資料，或者，如果您已啟用自動標籤，請將[!DNL Marketo Measure] UTM引數附加至任何新建立的廣告。 帳戶中斷連線時，[!DNL Marketo Measure]將無法回溯附加UTM引數到任何從廣告平台建立的接觸點。
 
 如果您的CRM平台中斷連線，[!DNL Marketo Measure]將無法更新[!DNL Marketo Measure]資料或將任何新的接觸點推入您的組織。 重新建立CRM連線後，[!DNL Marketo Measure]會推送帳戶中斷連線時所遺漏的任何資料。
 

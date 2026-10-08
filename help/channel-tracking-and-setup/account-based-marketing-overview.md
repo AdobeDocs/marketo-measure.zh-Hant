@@ -3,22 +3,26 @@ description: 瞭解Account-Based Marketing (ABM)，以及Adobe Marketo Measure�
 title: 帳戶型行銷概觀
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 96ef477f-0ffb-5375-8fca-6d27be6b7c00
+    internal-label: Account-based Marketing
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # 帳戶型行銷概觀 {#account-based-marketing-overview}
 
-下列章節提供ABM的簡短概觀、[!DNL Marketo Measure] ABM功能的元件，以及如何將其新增至您的[!DNL Salesforce]頁面配置。 若要深入瞭解ABM，請檢閱Adobe的[ABM部落格](https://business.adobe.com/tw/blog/basics/account-based-marketing){target="_blank"}。
+下列章節提供ABM的簡短概觀、[!DNL Marketo Measure] ABM功能的元件，以及如何將其新增至您的[!DNL Salesforce]頁面配置。 若要深入瞭解ABM，請檢閱Adobe的[ABM部落格](https://business.adobe.com/blog/basics/account-based-marketing){target="_blank"}。
 
 如需在您的[!DNL Salesforce]執行個體中設定ABM的詳細指示，請移至[在Salesforce中設定ABM頁面配置](/help/channel-tracking-and-setup/account-based-marketing-overview.md){target="_blank"}。
 
 ## 什麼是ABM {#what-is-abm}
 
-以帳戶為基礎的行銷ABM是一種行銷策略，您可將目標鎖定並銷售給整個公司和帳戶，而不僅僅是個人。[!DNL Marketo Measure] 協助行銷與銷售團隊透過其銷售線索對帳戶對應功能與預測性參與分數，執行成功的ABM策略。
+以帳戶為基礎的行銷ABM是一種行銷策略，您可將目標鎖定並銷售給整個公司和帳戶，而不僅僅是個人。 [!DNL Marketo Measure]透過其銷售線索對帳戶對應功能與預測性參與分數，協助行銷與銷售團隊執行成功的ABM策略。
 
 若要讓我們的帳戶型行銷模型開始填入您的CRM，[!DNL Marketo Measure]需要符合下列條件：
 
@@ -69,7 +73,7 @@ ht-degree: 0%
 >您可能會注意到某些帳戶的預測性參與分數中的等級為「N/A」或「 — 」（破折號）。
 
 _等級「N/A」僅表示該帳戶沒有足夠的資料可讓模型產生真正的等級 — 如果資料較多，最終將會提供等級。_
-_等級「 — 」（破折號）表示ABM處理尚未處理此帳戶，因為時間限制，偶爾會遺漏處理等等。 如果您認為某個帳戶應該有等級，並根據其他類似的帳戶或時間範圍，請聯絡並告知[!DNL Marketo Measure]。_
+_等級「 — 」（破折號）表示ABM程式尚未處理此帳戶，因為時間限制、偶爾遺漏程式等等。 如果您認為某個帳戶應該有等級，並根據其他類似的帳戶或時間範圍，請聯絡並告知[!DNL Marketo Measure]。_
 
 ## 在[!DNL Salesforce]中設定ABM頁面配置 {#setting-up-abm-page-layout-in-salesforce}
 

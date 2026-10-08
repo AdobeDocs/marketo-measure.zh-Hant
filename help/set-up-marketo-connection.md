@@ -3,20 +3,24 @@ description: 為Marketo Measure使用者設定Marketo連線指南
 title: 設定Marketo連線
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 4%
-
 ---
-
 # 設定Marketo連線 {#set-up-marketo-connection}
 
 以下說明如何設定您與Marketo的連線。
 
 >[!PREREQUISITES]
 >
->[為[!DNL Marketo Measure]/Marketo Engage連線建立僅API使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html?lang=zh-Hant)。
+>[為[!DNL Marketo Measure]/Marketo Engage連線建立僅API使用者角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html)。
 
 1. 在[!DNL Marketo Measure]中，按一下&#x200B;**[!UICONTROL My Account]**&#x200B;下拉式清單並選取&#x200B;**[!UICONTROL Settings]**。
 
@@ -38,7 +42,7 @@ ht-degree: 4%
 
    ![1. 在新標籤中，登入您的Marketo Engage帳戶。](assets/set-connection-6.png)
 
-1. 仍然在Marketo Engage中，在左側的樹狀結構中選取&#x200B;**LaunchPoint**。 尋找您要連線至Marketo Measure的自訂服務，然後按一下[檢視詳細資料]。**&#x200B;**
+1. 仍然在Marketo Engage中，在左側的樹狀結構中選取&#x200B;**LaunchPoint**。 尋找您要連線至Marketo Measure的自訂服務，然後按一下[檢視詳細資料]。****
 
    ![1. 仍然在Marketo Engage中，選取](assets/set-connection-4.png)樹狀結構中的LaunchPoint
 

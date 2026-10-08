@@ -3,13 +3,22 @@ description: Marketo Measure使用者的Salesforce活動歸因指引
 title: Salesforce活動歸因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
-
 ---
-
 # Salesforce活動歸因 {#salesforce-activities-attribution}
 
 [!DNL Marketo Measure] Salesforce活動整合會將特定的任務和事件記錄帶入您的歸因模型。 開始追蹤未收到到期點數的銷售電子郵件或銷售電話等內容。 若要設定活動規則，請移至[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}。 從那裡，移至&#x200B;**[!UICONTROL Settings]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Activities]**&#x200B;標籤。
@@ -23,11 +32,11 @@ ht-degree: 0%
 熟悉此階層：
 
 * 管道
-   * 子管道
-      * 行銷活動
-      * 行銷活動
-   * 子管道
-      * 行銷活動
+  * 子管道
+    * 行銷活動
+    * 行銷活動
+  * 子管道
+    * 行銷活動
 
 >[!TIP]
 >
@@ -45,7 +54,7 @@ ht-degree: 0%
 >
 >公式欄位無法在規則中使用，也不會出現在選擇清單中。 因為公式會在背景計算且不會修改記錄，[!DNL Marketo Measure]無法偵測記錄是否符合規則。
 >
->請務必對ID欄位使用正確的值，例如CrmEvent.CreatedById。[!DNL Salesforce IDs] 長度為18個字元( 0054H000007WmrfQAC)。
+>請務必對ID欄位使用正確的值，例如CrmEvent.CreatedById。 [!DNL Salesforce IDs]長度為18個字元( 0054H000007WmrfQAC)。
 
 最後，選擇一個日期或日期/時間欄位來用作Buyer Touchpoint日期。 標準和自訂欄位都是可選取的。
 
@@ -80,7 +89,7 @@ ht-degree: 0%
 | 符合任一 | 多個值 — 完全相符 |
 | 符合任何（包含） | 多個值 — &#42;值&#42;、&#42;值、&#42;值&#42; |
 
-![| 符合任何（包含） | 多個值 — &amp;42；值&amp;42；，&amp;42；值，&amp;42；值&amp;42； |](assets/activities-attribution-8.png)
+![|符合任何（包含） |多個值 — &amp;42；值&amp;42；，&amp;42；值，&amp;42；值&amp;42； |](assets/activities-attribution-8.png)
 
 最後，您可以選擇輸入新管道的成本。 [行銷支出上傳](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/！/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}可讓您在頻道層級、子頻道層級或行銷活動層級輸入支出。 使用新的[!DNL Marketo Measure]行銷活動，您可以按月新增這些相關成本，然後檢視每個行銷活動的ROI！
 

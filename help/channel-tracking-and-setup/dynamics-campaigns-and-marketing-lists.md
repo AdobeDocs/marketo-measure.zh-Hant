@@ -3,13 +3,20 @@ description: Marketo Measure使用者的Dynamics行銷活動和行銷清單指�
 title: Dynamics行銷活動和行銷清單
 exl-id: 7b3d4032-5edf-489d-b86b-1e2a5755b258
 feature: Microsoft Dynamics
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # Dynamics行銷活動和行銷清單 {#dynamics-campaigns-and-marketing-lists}
 
 >[!NOTE]
@@ -80,7 +87,7 @@ Campaign回應可能不會顯示的原因之一，是因為Lead/Contact已記錄
 
 Dynamics行銷活動會使用「行銷活動型別」欄位在您的自訂行銷管道中分組。 您可以在Dynamics自訂功能表中變更這些專案。
 
-促銷活動型別選單中的值被提取到[!DNL Marketo Measure]應用程式中。**[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**.
+促銷活動型別選單中的值被提取到[!DNL Marketo Measure]應用程式中。**[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**。
 
 對於各種「促銷活動型別」，可將之對應至「管道」和「子管道」組合，使衍生自「促銷活動」的每個接觸點都具有正確對應的「管道」和「子管道」。
 

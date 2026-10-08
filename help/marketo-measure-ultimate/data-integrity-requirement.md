@@ -1,21 +1,29 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate資料完整性需求 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate資料完整性需求 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate資料完整性需求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-TQID: https://experienceleague.adobe.com/bsfx5FTcHyxii6iTHPyHBemX9Wfwo9-iIvHO6uTX95E
+TQID: 'https://experienceleague.adobe.com/bsfx5FTcHyxii6iTHPyHBemX9Wfwo9-iIvHO6uTX95E'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1703
+source-wordcount: '1703'
 ht-degree: 22%
-
 ---
-
 # [!DNL Marketo Measure] Ultimate資料完整性需求 {#marketo-measure-ultimate-data-integrity-requirement}
 
 [!DNL Marketo Measure]會驗證傳入的AEP資料集，確保資料充足且一致地可歸因。 若未符合資料完整性要求，資料集將遭到[!DNL Marketo Measure]系統拒絕。 本文詳細說明資料完整性需求，提供資料檢查的查詢範例，並建議具有null值的必要欄位的解決方案。
@@ -895,7 +903,7 @@ ht-degree: 22%
 
 ## 貨幣轉換資料需求 {#currency-conversion-data-requirements}
 
-**預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如，USD至USD），其轉換率為1。
+**預設貨幣**：在Marketo Measure中，所有收入和成本在報告時都會轉換為預設貨幣。 目標貨幣本身必須有相同日期涵蓋範圍的記錄（例如USD到USD），其轉換率為1。
 
 **轉換率**：每個（來源貨幣、目標貨幣）配對可以在不同的日期期間有多個轉換率。 根據Salesforce DatedConversionRate物件，匯率必須涵蓋從0001-01-01到9999-12-31的整個時間範圍。
 
@@ -1384,7 +1392,7 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 我們建議在欄位對應中使用計算欄位，以將欄位預設為非NULL值。 以下是兩個範例：
 
 * 如果某些機會記錄的opportunityName為Null，請在欄位對應中建立並使用下列計算欄位
-   * `iif(name != null && trim(name) != "", name, "Unknown")`
+  * `iif(name != null && trim(name) != "", name, "Unknown")`
 
 * 如果部分experienceevent記錄的leadOperation.campaignProgression.campaignID為Null，請在欄位對應中建立並使用以下計算欄位
-   * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
+  * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`

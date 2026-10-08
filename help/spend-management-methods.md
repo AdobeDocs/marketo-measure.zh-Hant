@@ -3,13 +3,17 @@ description: Marketo Measure使用者的支出管理方法指南
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
-
 ---
-
 # 支出管理方法 {#spend-management-methods}
 
 支出資料是成功使用[!DNL Marketo Measure]進行ROI報告的關鍵。 若要針對所有管道和子管道製作準確且全面的ROI報表，您必須確定已將適當的支出資料提取至「[!DNL Marketo Measure]」。
@@ -28,13 +32,13 @@ ht-degree: 0%
 
 啟用後，此功能會自動從符合以下條件的任何CRM行銷活動/方案中提取費用：
 
-i. [!DNL Marketo Measure] 首先檢視行銷活動/方案是否正在建立接觸點，該接觸點來自已建立的相符之[行銷活動同步規則](/help/channel-tracking-and-setup/custom-campaign-sync.md)、或已建立的相符之[方案同步規則](/help/marketo-engage-programs-integration.md)，或[啟用購買者接觸點值](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)為「包含所有行銷活動成員」或「包含『已回應』行銷活動成員」。
+i. [!DNL Marketo Measure]會先檢視行銷活動/方案是否正在建立接觸點，可能是來自已建立的相符之[行銷活動同步規則](/help/channel-tracking-and-setup/custom-campaign-sync.md)，或是已建立的相符之[方案同步規則](/help/marketo-engage-programs-integration.md)，或[啟用購買者接觸點值](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)是「包含所有行銷活動成員」或「包含『已回應』行銷活動成員」。
 
 ii. 行銷活動/方案必須填入開始日期
 
 iii. 必須在行銷活動/方案上填入結束日期
 
-iv. 必須指定實際成本(適用於SFDC中的行銷活動)或期間成本(適用於Marketo中的方案)。
+iv. 必須指定實際成本（適用於SFDC中的行銷活動）或期間成本（適用於Marketo中的方案）。
 
 **3手動成本上傳**
 

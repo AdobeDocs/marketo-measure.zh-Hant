@@ -3,14 +3,18 @@ description: 探索ROI儀表板，以比較不同管道子管道和促銷活動�
 title: ROI控制面板
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
-
 ---
-
 # ROI控制面板 {#roi-dashboard}
 
 ROI控制面板為行銷人員提供了跨管道、子管道和行銷活動的投資回報細微檢視。 它細緻地劃分成本和收入模式，同時重點指出每個銷售機會的成本、交易和機會等量度，以確保對行銷歸因的全面瞭解。
@@ -130,11 +134,11 @@ ROI控制面板為行銷人員提供了跨管道、子管道和行銷活動的�
 此儀表板配備了下列設定和篩選器：
 
 * 日期
-   * 根據：
-      * 建立日期：新銷售機會、新銷售機會
-      * 成本發生日期：成本
-      * 結束日期：歸因收入（簡單ROI）、交易
-      * 接觸點日期：已實現歸因收入（已實現ROI）的接觸點
+  * 根據：
+    * 建立日期：新銷售機會、新銷售機會
+    * 成本發生日期：成本
+    * 結束日期：歸因收入（簡單ROI）、交易
+    * 接觸點日期：已實現歸因收入（已實現ROI）的接觸點
 * 歸因模型
 * 頻道、子頻道
 * 行銷活動

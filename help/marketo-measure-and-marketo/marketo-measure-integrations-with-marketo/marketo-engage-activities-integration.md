@@ -1,23 +1,26 @@
 ---
 unique-page-id: 42762749
-description: '[!DNL Marketo Engage]活動整合 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Engage]活動整合 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]個活動整合'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-TQID: https://experienceleague.adobe.com/X0GAwexe-IPzGn-ITUglGHhbiwVWtTy1uHEnfDNpQCI
+TQID: 'https://experienceleague.adobe.com/X0GAwexe-IPzGn-ITUglGHhbiwVWtTy1uHEnfDNpQCI'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1642
+source-wordcount: '1642'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Engage]個活動整合 {#marketo-engage-activities-integration}
 
 作為整體[!DNL Marketo Measure]和[!DNL Marketo Engage]整合的一部分，這項提取Marketo活動的努力扮演了重要的角色。 透過Marketo活動，系統會追蹤`Click Email`、`Change Score`或`Change Status in Progression`等事件 — 這些活動型別可以精簡並定義，以選取符合接觸點資格的子集。 在這些活動上建立接觸點後，即會在參與歷程中進行追蹤，並與您的其他行銷管道一起測量，例如付費搜尋或合作夥伴行銷。
@@ -166,9 +169,9 @@ SFDC活動(26)\
 
 ## 頻道對應 {#channel-mapping}
 
-若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您需要確定您的頻道已依照此處[&#128279;](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的指示正確設定。
+若為具有方案ID的活動型別中的任何規則，則Marketo方案頻道由方案決定。 我們使用方案頻道來對應到您的自訂離線頻道，因此您需要確定您的頻道已依照此處](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的指示正確設定[。
 
-對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您在此佈局的自訂線上頻道[&#128279;](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
+對於沒有方案ID的活動型別中的任何規則，您的第一步是建立行銷活動名稱。 使用此行銷活動名稱來設定您在此佈局的自訂線上頻道[](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
 
 如果您的Marketo活動管道未正確設定，則您的新接觸點可能會落在「其他」管道下。
 

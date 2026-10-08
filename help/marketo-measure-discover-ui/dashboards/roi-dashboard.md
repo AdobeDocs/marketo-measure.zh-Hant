@@ -1,20 +1,23 @@
 ---
-description: ROI儀表板 —  [!DNL Marketo Measure]  — 產品
+description: ROI儀表板 — [!DNL Marketo Measure] — 產品
 title: ROI控制面板
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-TQID: https://experienceleague.adobe.com/fPjoTK2sNSt8lOg4qePjqJIL8vOPhWy-GK5gQLqeSc4
+TQID: 'https://experienceleague.adobe.com/fPjoTK2sNSt8lOg4qePjqJIL8vOPhWy-GK5gQLqeSc4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 736
+source-wordcount: '736'
 ht-degree: 0%
-
 ---
-
 # ROI控制面板 {#roi-dashboard}
 
 ROI控制面板為行銷人員提供了跨管道、子管道和行銷活動的投資回報細微檢視。 它細緻地劃分成本和收入模式，同時重點指出每個銷售機會的成本、交易和機會等量度，以確保對行銷歸因的全面瞭解。
@@ -134,11 +137,11 @@ ROI控制面板為行銷人員提供了跨管道、子管道和行銷活動的�
 此儀表板配備了下列設定和篩選器：
 
 * 日期
-   * 根據：
-      * 建立日期：新銷售機會、新銷售機會
-      * 成本發生日期：成本
-      * 結束日期：歸因收入（簡單ROI）、交易
-      * 接觸點日期：已實現歸因收入（已實現ROI）的接觸點
+  * 根據：
+    * 建立日期：新銷售機會、新銷售機會
+    * 成本發生日期：成本
+    * 結束日期：歸因收入（簡單ROI）、交易
+    * 接觸點日期：已實現歸因收入（已實現ROI）的接觸點
 * 歸因模型
 * 頻道、子頻道
 * 行銷活動

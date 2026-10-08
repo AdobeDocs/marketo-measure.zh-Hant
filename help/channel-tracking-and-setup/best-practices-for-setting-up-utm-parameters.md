@@ -3,17 +3,21 @@ description: 為Marketo Measure使用者設定UTM引數指引的最佳作法
 title: 設定UTM引數的最佳作法
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
-
 ---
-
 # 設定UTM引數的最佳作法 {#best-practices-for-setting-up-utm-parameters}
 
-UTM引數是切分行銷資料的絕佳方式。[!DNL Marketo Measure] 使用和擷取所有UTM引數，以填入Salesforce和[!DNL Marketo Measure]應用程式中的欄位。 有了這些資訊，您就能更詳細地瞭解您的銷售機會、商機以及已結/已贏的交易來自何處。
+UTM引數是切分行銷資料的絕佳方式。 [!DNL Marketo Measure]使用和擷取所有UTM引數，以填入Salesforce和[!DNL Marketo Measure]應用程式中的欄位。 有了這些資訊，您就能更詳細地瞭解您的銷售機會、商機以及已結/已贏的交易來自何處。
 
 您可以使用[Google URL產生器](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}來設定您的UTM引數，並在行銷工作中將其新增至您的連結。 如果您想要以更簡單的方式追蹤所有UTM連結，請使用此[Google試算表](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"}。
 
@@ -29,7 +33,7 @@ UTM引數是切分行銷資料的絕佳方式。[!DNL Marketo Measure] 使用和
 
 例如，Facebook、Twitter、Linkedin、Drip_email、Email_blast、電子報。
 
-保持簡單。 請勿使用此引數來表示廣告型別，例如重新定位或贊助。 請勿新增utm_source = homepage， webdirect， website。[!DNL Marketo Measure] 會自動為您填寫此資訊。
+保持簡單。 請勿使用此引數來表示廣告型別，例如重新定位或贊助。 請勿新增utm_source = homepage， webdirect， website。 [!DNL Marketo Measure]會自動為您填寫此資訊。
 
 **utm_campaign**：此欄位對應到廣告行銷活動名稱。 使用utm_campaign表示行銷活動的標題，如廣告平台中所有，或內部所參照。
 

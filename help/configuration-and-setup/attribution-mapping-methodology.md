@@ -3,13 +3,17 @@ description: Marketo Measure使用者的歸因對應方法指引
 title: 歸因對應方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
-
 ---
-
 # 歸因對應方法 {#attribution-mapping-methodology}
 
 歸因對應方法是指在CRM中查詢特定物件（聯絡人、商機、帳戶）的程式，以便在關聯的商機中建立歸因接觸點。 換言之，這是[!DNL Marketo Measure]種方式，讓您根據目前CRM的流程，瞭解要納入歸因模型的接觸點。
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 優點：這種歸因方法對大多數公司都非常有效。 行銷團隊不需要依賴銷售團隊將所有連絡人與特定機會建立關聯（這通常是問題）。 此外，即使銷售團隊與聯絡人角色建立關聯，也可能會遺漏許多其他聯絡人與行銷資料的互動。 最後，此方法可協助ABM策略，該策略會努力影響帳戶的整體性，而非特定影響者。
 
-缺點：如果有強大的行銷和銷售SLA定義誰應該獲得功勞，則此方法可能會產生問題。 此外，如果人們不使用帳戶階層來定義較大帳戶內的特定業務單位(例如：IBM)，則特定於一個業務單位的行銷互動可能會散佈到其他業務單位機會。
+缺點：如果有強大的行銷和銷售SLA定義誰應該獲得功勞，則此方法可能會產生問題。 此外，如果人們不使用帳戶階層來定義較大帳戶內的特定業務單位（例如：IBM），則特定於一個業務單位的行銷互動可能會散佈到其他業務單位機會。
 
 ## 機會聯絡人角色對應 {#opportunity-contact-role-mapping}
 

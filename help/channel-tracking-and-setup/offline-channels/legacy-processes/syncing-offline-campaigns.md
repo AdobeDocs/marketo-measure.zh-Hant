@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874600
-description: 同步離線行銷活動 —  [!DNL Marketo Measure]
+description: 同步離線行銷活動 — [!DNL Marketo Measure]
 title: 同步離線行銷活動
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
+TQID: 'https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 727
+source-wordcount: '727'
 ht-degree: 0%
-
 ---
-
 # 同步離線行銷活動 {#syncing-offline-campaigns}
 
 準確地追蹤離線行銷活動，並瞭解其與您數位行銷工作的比較情形，可能相當困難。 [!DNL Marketo Measure]可讓您在[!DNL Salesforce]中追蹤並歸因您的離線行銷活動，即使在事件幾週後才會建立[!DNL Salesforce]行銷活動的情況下亦然。
@@ -77,6 +79,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}

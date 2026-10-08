@@ -1,19 +1,21 @@
 ---
 unique-page-id: 37356030
-description: 電子郵件追蹤引數 —  [!DNL Marketo Measure]
+description: 電子郵件追蹤引數 — [!DNL Marketo Measure]
 title: 電子郵件追蹤引數
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-TQID: https://experienceleague.adobe.com/IC3sOBtb9A4EUwhhtD4s7JBTx2gT07y9DtKtM5F1qRQ
+TQID: 'https://experienceleague.adobe.com/IC3sOBtb9A4EUwhhtD4s7JBTx2gT07y9DtKtM5F1qRQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 462
+source-wordcount: '462'
 ht-degree: 2%
-
 ---
-
 # 電子郵件追蹤引數 {#email-tracking-parameter}
 
 [!DNL Marketo Measure]電子郵件追蹤引數可讓行銷人員將電子郵件點按視為表單提交，以便針對這些動作產生接觸點。 若不使用電子郵件追蹤引數，來自電子郵件的點進次數僅會視為「網頁造訪」，直到使用者透過表單提交或網頁聊天實際參與網站為止。
@@ -52,13 +54,13 @@ Marketo Measure接受下列值：電子郵件地址、Salesforce銷售機會Id�
    <td><p>Marketo</p></td> 
    <td><p><pre><code>{{lead.Email Address}}</code></pre></p></td> 
    <td><p><pre><code>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId={{lead.EmailAddress}}</code></pre></p></td> 
-   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=zh-Hant</p></td> 
+   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html</p></td> 
   </tr> 
   <tr> 
    <td><p>Pardot</p></td> 
    <td><p>%%email%% </p><p>或</p><p>%%user_crm_id%%</p></td> 
    <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%</p></td> 
-   <td><p>https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5</p></td> 
+   <td><p>https://help.salesforce.com/s/articleView?language=en_US&amp;id=pardot_variable_tags_reference.htm&amp;type=5</p></td> 
   </tr> 
   <tr> 
    <td><p>Hubspot</p></td> 

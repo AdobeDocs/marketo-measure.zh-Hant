@@ -1,15 +1,22 @@
 ---
-description: '''[!DNL Salesforce]封裝合併 —  [!DNL Marketo Measure]'''
+description: '''[!DNL Salesforce]封裝合併 — [!DNL Marketo Measure]'''
 title: '[!DNL Salesforce]封裝合併'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
-
 ---
-
 # [!DNL Salesforce]封裝合併 {#salesforce-package-consolidation}
 
 為了改善使用者體驗並簡化使用流程，現有套件正在編譯為單一、完整的套件。
@@ -25,7 +32,7 @@ ht-degree: 4%
 有兩個新欄位可增強您的報告功能：
 
 * form_name：此欄位現在可在BT/BAT物件中使用，可讓使用者根據表單名稱建立報表。
-* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數( Salesforce中的`bizible2__User_Touchpoint_V2__c`)的報告。
+* user_touchpoint_id：此欄位可讓使用者建立具有不重複使用者接觸點計數（ Salesforce中的`bizible2__User_Touchpoint_V2__c`）的報告。
 
 ## 支援與轉換 {#support-and-transition}
 
@@ -36,16 +43,16 @@ ht-degree: 4%
 * 如果您已安裝V2套件，則必須將其更新至新的整合版本。
 * 如果您有來自任何報告套件的報告或儀表板，則可以輕鬆地重新建立它們，而無需進行任何修改，因為所有欄位都存在於合併套件中。
 * 如果您有使用V2_EXT封裝中的欄位的報告，可以透過下列步驟在合併封裝中重新建立它們：
-   * V2_EXT欄位中的所有資料都可在接觸點欄位中使用，因此您可以修改報表，透過在接觸點位置新增篩選器來從對應的V2接觸點欄位擷取資料。
-   * 範例報告會擷取廣告內容FT包含「外聯」文字的所有銷售機會。
-      * V2_EXT查詢：
-         * bizible2_ext__Ad_Content_FT__c包含外聯
+  * V2_EXT欄位中的所有資料都可在接觸點欄位中使用，因此您可以修改報表，透過在接觸點位置新增篩選器來從對應的V2接觸點欄位擷取資料。
+  * 範例報告會擷取廣告內容FT包含「外聯」文字的所有銷售機會。
+    * V2_EXT查詢：
+      * bizible2_ext__Ad_Content_FT__c包含外聯
 
 ![bizible2extAdContentFTc包含外展](assets/bizible-full-1.png)
 
 * 整合封裝中的對應查詢：
-   * bizible2__Touchpoint_Position__c包含FT AND
-   * bizible2__Ad_Content__c包含外聯
+  * bizible2__Touchpoint_Position__c包含FT AND
+  * bizible2__Ad_Content__c包含外聯
 
 ![bizible2AdContentc包含外聯](assets/bizible-taxonomy-1.png)
 

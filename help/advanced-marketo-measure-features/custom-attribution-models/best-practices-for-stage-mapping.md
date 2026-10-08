@@ -1,20 +1,25 @@
 ---
-description: 階段對應的最佳實務 —  [!DNL Marketo Measure]
+description: 階段對應的最佳實務 — [!DNL Marketo Measure]
 title: 階段對應的最佳實務
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-TQID: https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg
+TQID: 'https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 479
+source-wordcount: '479'
 ht-degree: 0%
-
 ---
-
 # 階段對應的最佳實務 {#best-practices-for-stage-mapping}
 
 ## 概觀 {#overview}
@@ -30,17 +35,17 @@ ht-degree: 0%
 無論您是第一次評估階段對應，還是檢閱您的funnel訂單，請務必牢記以下最佳實務。
 
 * 順序就是一切！
-   * 考慮到CRM中同時處於使用中和非使用中階段的[!DNL Marketo Measure]個提取，請確認任何可用於銷售機會/聯絡人或機會的階段都會分組在一起，並據此排序
+  * 考慮到CRM中同時處於使用中和非使用中階段的[!DNL Marketo Measure]個提取，請確認任何可用於銷售機會/聯絡人或機會的階段都會分組在一起，並據此排序
 * 定義自訂階段時，請確定已針對用來定義階段的任何欄位啟用欄位歷史記錄追蹤
 * 請勿使用公式欄位來定義自訂階段
-   * 布林值欄位是最佳實務建議
+  * 布林值欄位是最佳實務建議
 * 請注意，「銷售機會」或「聯絡人」階段區段分為「遺失」、「開啟」和「已轉換」；驗證階段是否在其適當的階段區段中
-   * 在不正確的階段區段中有階段，可能會導致[!DNL Marketo Measure]資料高度不正確
-   * 如果您是Marketo Measure Ultimate客戶，並將您的預設儀表板物件設定為連絡人，請勿使用下列兩個專屬於潛在客戶的欄位（[深入瞭解](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
-      * b2b.personStatus
-      * b2b.isConverted
+  * 在不正確的階段區段中有階段，可能會導致[!DNL Marketo Measure]資料高度不正確
+  * 如果您是Marketo Measure Ultimate客戶，並將您的預設儀表板物件設定為連絡人，請勿使用下列兩個專屬於潛在客戶的欄位（[深入瞭解](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
+    * b2b.personStatus
+    * b2b.isConverted
 * 請注意，「機會」階段區段分為「已失敗」、「未完成」和「已獲勝」；驗證階段是否在其適當的階段區段中
-   * 在不正確的階段區段中有某個階段，可能會導致[!DNL Marketo Measure]收入或管道收入資料高度不正確
+  * 在不正確的階段區段中有某個階段，可能會導致[!DNL Marketo Measure]收入或管道收入資料高度不正確
 * 避免使用重複的階段名稱（我們的系統將偵測這些名稱並自動移除一個）。
 * 若要設定檢查NULL值的規則，請將值文字方塊留空。
 
@@ -57,4 +62,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[&#x200B; Funnel階段和自訂模型階段之間的差異](/help/advanced-marketo-measure-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)
+>[ Funnel階段和自訂模型階段之間的差異](/help/advanced-marketo-measure-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)

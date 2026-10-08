@@ -1,15 +1,19 @@
 ---
-description: '''[!DNL Marketo Measure]與Adobe Launch - [!DNL Marketo Measure]''的整合'
+description: '''[!DNL Marketo Measure]與Adobe Launch - [!DNL Marketo Measure]的整合'
 title: '[!DNL Marketo Measure]與Adobe Launch的整合'
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 5%
-
 ---
-
 # [!DNL Marketo Measure]與Adobe Launch的整合 {#marketo-measure-integrations-with-adobe-launch}
 
 Adobe Launch擴充功能是專為已在網站上使用Adobe Launch的現有[!DNL Marketo Measure]使用者所設計。 擴充功能可作為標籤管理解決方案，用於根據特定事件和條件設定及動態載入頁面上的指令碼。
@@ -22,11 +26,11 @@ Adobe Launch擴充功能是專為已在網站上使用Adobe Launch的現有[!DNL
 >
 >請參閱下列連結，深入瞭解Adobe Launch及其擴充功能：
 >
->* [[!DNL Marketo Measure] 副檔名](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=zh-Hant#catalog){target="_blank"}
->* [Adobe啟動概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=zh-Hant){target="_blank"}
->* [Adobe Launch擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=zh-Hant){target="_blank"}
+>* [[!DNL Marketo Measure] 副檔名](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html#catalog){target="_blank"}
+>* [Adobe啟動概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+>* [Adobe Launch擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html){target="_blank"}
 
-1. 依照本文[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=zh-Hant#go-to-the-data-collection-interface){target="_blank"}中的步驟建立屬性。
+1. 依照本文](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}中的步驟[建立屬性。
 
 1. 按一下您建立的屬性。
 

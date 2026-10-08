@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874743
-description: 正在連線 [!DNL Marketo Measure] 至解除退回指令碼管理員 —  [!DNL Marketo Measure]
-title: 正在連線 [!DNL Marketo Measure] 至解除退回指令碼管理員
+description: 正在將[!DNL Marketo Measure]連線到解除指令碼管理員 — [!DNL Marketo Measure]
+title: 正在將[!DNL Marketo Measure]連線到解除指令碼管理員
 exl-id: c3212bc3-1d8f-4da5-bb2d-11ffd2fb4e98
 feature: Tracking
-TQID: https://experienceleague.adobe.com/Bo0BFhBLbNfX89BScumswE7WvVzztOak1P38xcXdk1M
+TQID: 'https://experienceleague.adobe.com/Bo0BFhBLbNfX89BScumswE7WvVzztOak1P38xcXdk1M'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 109
+source-wordcount: '111'
 ht-degree: 3%
-
 ---
-
 # 正在將[!DNL Marketo Measure]連線到解除指令碼管理員 {#connecting-marketo-measure-to-unbounce-script-manager}
 
 [!DNL Marketo Measure]直接與「取消退回」整合，可讓您直接在[!DNL Salesforce]中追蹤登陸頁面轉換的數位行銷來源。 若要建立連線，只需將[!DNL Marketo Measure]指令碼新增至您的「彈回指令碼管理員」即可。 方法如下。

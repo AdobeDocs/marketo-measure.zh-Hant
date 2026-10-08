@@ -1,23 +1,26 @@
 ---
 unique-page-id: 18874598
-description: 離線自訂頻道設定 —  [!DNL Marketo Measure]
+description: 離線自訂頻道設定 — [!DNL Marketo Measure]
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-TQID: https://experienceleague.adobe.com/L-mkNzo9yTir-EzNiX-a9ylKKZoKAs0nIXdu39YnLT4
+TQID: 'https://experienceleague.adobe.com/L-mkNzo9yTir-EzNiX-a9ylKKZoKAs0nIXdu39YnLT4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 887
+source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # 離線自訂頻道設定 {#offline-custom-channel-setup}
 
 ## 快速入門 {#getting-started}
@@ -90,8 +93,8 @@ SFDC行銷活動型別將顯示在離線頻道的標籤中，列在「[!DNL Sale
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>* [[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->* [[!DNL Marketo Measure] 教學課程：同步處理離線行銷活動](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
+>* [[!DNL Marketo Measure] 教學課程：同步處理離線行銷活動](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
 >
 >* [Marketo Engage程式整合](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}

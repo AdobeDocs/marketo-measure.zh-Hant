@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874710
-description: 接觸點移除與接觸點抑制 —  [!DNL Marketo Measure]
+description: 接觸點移除與接觸點隱藏 — [!DNL Marketo Measure]
 title: 接觸點移除與接觸點抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/DgzPRjvGigZ3swx1fTw0x7r-XbURxwRMNGHH4JdXLfQ
+TQID: 'https://experienceleague.adobe.com/DgzPRjvGigZ3swx1fTw0x7r-XbURxwRMNGHH4JdXLfQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 643
+source-wordcount: '643'
 ht-degree: 0%
-
 ---
-
 # 接觸點移除與接觸點抑制 {#touchpoint-removal-and-touchpoint-suppression}
 
 瞭解如何從您的CRM移除或隱藏符合特定條件的接觸點。 如果您有[!DNL Salesforce]個資料儲存限制，這有助於釋放資料空間。

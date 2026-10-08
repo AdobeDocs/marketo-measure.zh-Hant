@@ -3,13 +3,17 @@ description: Marketo Measure使用者的接觸點欄位指引
 title: 接觸點欄位
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2167'
 ht-degree: 0%
-
 ---
-
 # 接觸點欄位 {#touchpoint-fields}
 
 過去，當客戶使用[!DNL Marketo Measure]上線時，在我們沒有直接標籤整合的情況下，我們的客戶成功團隊會教育我們的客戶如何適當地標籤其登陸頁面，以便他們使用正確的UTM格式，並且我們可以解決其廣告。 這些客戶中有些不使用UTM，而是使用自己的標籤引數，這表示透過[!DNL Marketo Measure]強制執行的新標籤結構編輯其所有廣告網路中的所有登入頁面可能相當費時。 為了適應它們的標籤結構，我們現在接受可以使用我們的規則定義對應的自訂引數。 目標是要因應客戶對其自訂追蹤引數的使用方式，因此我們不需要要求他們變更其URL結構。
@@ -34,7 +38,7 @@ ht-degree: 0%
 
 擷取
 
-[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面[&#128279;](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}擷取自訂引數。 然後它會將其放置到接觸點欄位(請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]運運算元從其他位置提取欄位的值，例如：促銷活動欄位、潛在客戶欄位，或在更進階的使用案例中，從登入頁面](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}擷取自訂引數。 [然後它會將其放置到接觸點欄位（請參閱[對應到範例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2）。
 
 **範例#1**
 
@@ -43,13 +47,13 @@ ht-degree: 0%
 目標：使用自訂欄位的值，並將其放在接觸點物件上，以更輕鬆地進行報告。
 
 * 建立計算欄位並加上標籤「Campaign Source」
-* 從搜尋Contact.Campaign_Source__c欄位開始定義規則
+* 從搜尋Contact.Campaign___c欄位開始定義規則
 * 使用運運算元「extracts」，因為我們需要從引數中提取值
 * 若要從欄位中擷取完整字串，我們將使用運算式&quot;(.&#42;)&quot;
 
-   * **(**&#x200B;標籤擷取的開始
-   * **)**&#x200B;標籤擷取的結尾
-   * **.&#42;** 會告訴我們正在擷取完整的字串
+  * **(**&#x200B;標籤擷取的開始
+  * **)**&#x200B;標籤擷取的結尾
+  * **.&#42;** 會告訴我們正在擷取完整的字串
 
 ![.&amp;42；告訴我們正在擷取完整的字串](assets/touchpoint-fields-10.png)
 
@@ -65,11 +69,11 @@ ht-degree: 0%
 * 使用運運算元「extracts」，因為我們需要從引數中提取值
 * 若要擷取促銷的值，我們會將該值定義為「promo=(\w+)」
 
-   * **(**&#x200B;標籤擷取的開始
-   * **)**&#x200B;標籤擷取的結尾
-   * **\w**&#x200B;告訴我們正在擷取包含0-9的「單字」
-   * **+**&#x200B;將會擷取引數的完整值，而且字元數沒有限制
-   * 請注意，您使用的是正斜線，而不是反斜線
+  * **(**&#x200B;標籤擷取的開始
+  * **)**&#x200B;標籤擷取的結尾
+  * **\w**&#x200B;告訴我們正在擷取包含0-9的「單字」
+  * **+**&#x200B;將會擷取引數的完整值，而且字元數沒有限制
+  * 請注意，您使用的是正斜線，而不是反斜線
 
 ![請注意，您使用的是正斜線，而不是](assets/touchpoint-fields-11.png)
 
@@ -84,17 +88,17 @@ ht-degree: 0%
 * 使用運運算元「extracts」，因為我們需要從引數中提取值
 * 若要擷取「123456」值，我們會將該值定義為「cid=(\d{6})」
 
-   * **(**&#x200B;標籤擷取的開始
-   * **)**&#x200B;標籤擷取的結尾
-   * **\d**&#x200B;告訴我們正在擷取「數字」
-   * **{6}**&#x200B;是我們正在擷取的字元數
+  * **(**&#x200B;標籤擷取的開始
+  * **)**&#x200B;標籤擷取的結尾
+  * **\d**&#x200B;告訴我們正在擷取「數字」
+  * **{6}**&#x200B;是我們正在擷取的字元數
 
 ![{6}是我們正在擷取的字元數](assets/touchpoint-fields-12.png)
 
 **範例#4**
 
 由於您的登入頁面愈來愈複雜，且您有多個追蹤引數，因此您可能需要建立多個接觸點欄位，並多次擷取值，例如：
-`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`。
+`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`.
 
 **目標：**&#x200B;使用引數中的個別值，為「目標國家/地區」和「自訂促銷活動ID」建立多個計算欄位。
 
@@ -103,20 +107,20 @@ ht-degree: 0%
 * 使用運運算元「extracts」，因為我們需要從引數中提取值
 * 若要擷取「美國」值，我們會將該值定義為「country=(\w{2})」
 
-   * **(**&#x200B;標籤擷取的開始
-   * **)**&#x200B;標籤擷取的結尾
-   * **\w**&#x200B;告訴我們正在擷取「word」
-   * **&#x200B;**&#x200B;**是我們正在擷取的字元數
+  * **(**&#x200B;標籤擷取的開始
+  * **)**&#x200B;標籤擷取的結尾
+  * **\w**&#x200B;告訴我們正在擷取「word」
+  * **{2}**&#x200B;是我們正在擷取的字元數
 
 * 建立計算欄位並加上標籤「自訂行銷活動Id」
 * 從搜尋Touchpoint.Session.LandingPage欄位開始定義規則
 * 使用運運算元「extracts」，因為我們需要從引數中提取值
 * 若要擷取「123456」值，我們會將該值定義為「campaign_ID=(\d{6})」
 
-   * **(**&#x200B;標籤擷取的開始
-   * **)**&#x200B;標籤擷取的結尾
-   * **\d**&#x200B;告訴我們正在擷取「數字」
-   * **{6}**&#x200B;是我們正在擷取的字元數
+  * **(**&#x200B;標籤擷取的開始
+  * **)**&#x200B;標籤擷取的結尾
+  * **\d**&#x200B;告訴我們正在擷取「數字」
+  * **{6}**&#x200B;是我們正在擷取的字元數
 
 ![{6}是我們正在擷取的字元數](assets/touchpoint-fields-13.png)
 
@@ -141,14 +145,14 @@ ht-degree: 0%
 * 使用運運算元&quot;[!UICONTROL extracts]&quot;，因為我們需要從引數中取出值
 * 若要擷取「04」值，我們會將該值定義為「BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}」
 
-   * **(**&#x200B;標籤擷取的開始
+  * **(**&#x200B;標籤擷取的開始
 
-      * 請注意，由於我們僅擷取4，因此只有第一個數字有左括弧
-   * **)**&#x200B;標籤擷取的結尾
+    * 請注意，由於我們僅擷取4，因此只有第一個數字有左括弧
+  * **)**&#x200B;標籤擷取的結尾
 
-      * 請注意，由於我們僅擷取4，因此只有第一個數字有右括弧
-   * **\d**&#x200B;告訴我們正在擷取「數字」
-   * **&#x200B;**&#x200B;**是我們正在擷取的字元數
+    * 請注意，由於我們僅擷取4，因此只有第一個數字有右括弧
+  * **\d**&#x200B;告訴我們正在擷取「數字」
+  * **{2}**&#x200B;是我們正在擷取的字元數
 
 
 
@@ -161,12 +165,12 @@ ht-degree: 0%
 * 根據對應和上述URL，使用此登陸頁面的接觸點「Region_Value」將是「EMEA」
 * 對其餘4組數字重複擷取和對應
 
-   * 若要擷取01，您可將值定義為&quot;BZ=\d-**(\d**)**-\d**-\d&#x200B;**-\d**-\d**&quot;
-   * 若要擷取09，您可將值定義為「BZ=\d **-\d**-**(\d**)**-\d**-\d**」
-   * 若要擷取03，您可將值定義為&quot;BZ=\d **-\d**-\d&#x200B;**-\d**(\d&#x200B;**)**-\d**&quot;
-   * 若要擷取10，您可將值定義為「BZ=\d **-\d**-\d&#x200B;**-\d**-\d&#x200B;**(\d**)**」
+  * 若要擷取01，您可將值定義為&quot;BZ=\d-**(\d{2})**-\d{2}-\d{2}-\d{2}-\d{2}&quot;
+  * 若要擷取09，您可將值定義為「BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}」
+  * 若要擷取03，您可將值定義為&quot;BZ=\d{2}-\d{2}-\d{2}-\d **(\d{2})**-\d{2}&quot;
+  * 若要擷取10，您可將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d **(\d{2})**」
 
-![若要擷取10，您可以將值定義為「BZ=\d](assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-(\d&rbrack;(assets/touchpoint-fields-3.png))」&rbrack;(assets/touchpoint-fields-3.png)
+![若要擷取10，您可以將值定義為「BZ=\d{2}-\d{2}-\d{2}-\d{2}-(\d{2})」](assets/touchpoint-fields-3.png)
 
 **串連**
 

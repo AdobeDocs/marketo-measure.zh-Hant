@@ -2,13 +2,20 @@
 description: 瞭解如何處理CRM匯出中的錯誤
 title: CRM匯出的錯誤處理
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
-
 ---
-
 # CRM匯出的錯誤處理
 
 您可以在&#x200B;**我的帳戶** > **設定** > **CRM** > **一般**&#x200B;下找到「匯出錯誤時暫停」設定。 它可讓您控制CRM匯出作業在遇到記錄層級錯誤時是否應暫停。

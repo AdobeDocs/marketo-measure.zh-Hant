@@ -3,13 +3,20 @@ description: 為Marketo Measure使用者測試Marketo Measure與Salesforce沙箱
 title: 測試Marketo Measure與Salesforce沙箱的整合
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
-
 ---
-
 # 測試Marketo Measure與Salesforce沙箱的整合 {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
 
 >[!NOTE]
@@ -18,7 +25,7 @@ ht-degree: 1%
 
 [!DNL Marketo Measure]核心功能之一，是能夠透過網站上的動作追蹤您的數位行銷工作，然後透過Leads和Contacts將該資料推送至您的產品[!DNL Salesforce org]。 不過，在沙箱整合中，通常不會從您的網站建立傳入銷售機會，因此對資料的關注將從純粹離線角度進行。
 
-以下是測試兩個階段參考的兩個來源。[步驟1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&language=en_US&type=5)和[步驟5-6](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)。 建議您檢閱這些檔案，因為它們在某些方面提供了更多詳細資訊。
+以下是測試兩個階段參考的兩個來源。 [步驟1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&language=en_US&type=5)和[步驟5-6](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)。 建議您檢閱這些檔案，因為它們在某些方面提供了更多詳細資訊。
 
 1. 您需要在CSV中建立一些銷售機會，以便將其上傳至促銷活動。 方法是透過生產Salesforce中的報告匯出一些銷售機會。 否則，您可以在Excel檔案中手動建立銷售機會，然後將其儲存為CSV以供匯入。 您只需要大約20筆記錄。 檔案必須包含下列欄：
 

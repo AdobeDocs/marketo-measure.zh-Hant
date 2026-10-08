@@ -3,13 +3,17 @@ description: Marketo Measure使用者的AJAX表單處理指南
 title: AJAX表單處理
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # AJAX表單處理 {#ajax-form-handling}
 
 若要手動將客戶轉換報告給[!DNL Marketo Measure]，您可以使用一個簡單的API。 如果您的網站上具有追蹤程式碼，這兩個JavaScript API都可在您的網站上自動使用。 無需執行任何特殊操作即可存取。
@@ -18,7 +22,7 @@ ht-degree: 0%
 
 使用包含AJAX （或其他機制）的表單將轉換日期從使用者端提交至我們的伺服器時，[!DNL Marketo Measure]可能不知道客戶透過我們監控的任何標準路徑的轉換。 在這個案例中，我們可以使用簡單的API （如下所示）。
 
-如果您處理自己的表單提交，可以明確從JavaScript呼叫[!DNL Marketo Measure]。[!DNL Marketo Measure] 會從表單收集所有相關資訊，並以非同步方式張貼至我們的伺服器。
+如果您處理自己的表單提交，可以明確從JavaScript呼叫[!DNL Marketo Measure]。 [!DNL Marketo Measure]會從表單收集所有相關資訊，並以非同步方式張貼至我們的伺服器。
 
 **以下是使用JQuery的程式碼範例（假設表單上的ID為「formId」）：**
 
@@ -57,7 +61,7 @@ eMail: 'user@gmail.com' // required
 });
 ```
 
-在此程式碼中，[!UICONTROL email]欄位為必填。[!DNL Marketo Measure] 以非同步方式將此資料張貼至我們的伺服器。
+在此程式碼中，[!UICONTROL email]欄位為必填。 [!DNL Marketo Measure]以非同步方式將此資料張貼至我們的伺服器。
 
 ## 案例3 — 從感謝頁面報告使用者資訊 {#scenario-report-user-information-from-the-thank-you-page}
 
@@ -70,4 +74,4 @@ eMail: 'user@gmail.com' // required
 data-email="user@gmail.com">
 ```
 
-隱藏元素是div、指令碼或任何其他標籤型別並不重要。[!DNL Marketo Measure] 尋找id=&quot;bizible.reportUser&quot;以讀取資訊。
+隱藏元素是div、指令碼或任何其他標籤型別並不重要。 [!DNL Marketo Measure]會尋找id=&quot;bizible.reportUser&quot;以讀取資訊。

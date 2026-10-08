@@ -1,15 +1,19 @@
 ---
-description: 為Marketo Measure使用者新增 [!DNL Marketo Measure] 至Marketo登陸頁面指引
-title: 正在新增 [!DNL Marketo Measure] 至Marketo登陸頁面
+description: 為Marketo Measure使用者將[!DNL Marketo Measure]新增至Marketo登陸頁面指引
+title: 正在新增[!DNL Marketo Measure]至Marketo登陸頁面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 1%
-
 ---
-
 # 正在新增[!DNL Marketo Measure]至Marketo登陸頁面 {#adding-marketo-measure-to-marketo-landing-pages}
 
 瞭解如何在[!DNL Marketo Engage]登陸頁面需要其他處理時新增追蹤。[!DNL Marketo Measure] JavaScript必須在登入頁面和[!DNL Marketo Engage]表單本身都準備就緒。 若要這麼做，您必須依照下列指示，將[!DNL Marketo Measure] JavaScript載入[!DNL Marketo Engage]。
@@ -41,4 +45,4 @@ ht-degree: 1%
 
 * 您可能有多個登陸頁面範本正在使用中，請務必新增程式碼至所有包含表單的範本。
 
-* 有時當您編輯登入頁面的範本時，必須重新核准登入頁面所使用的頁面。 本文說明[如何大量核准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hant){target="_blank"}。
+* 有時當您編輯登入頁面的範本時，必須重新核准登入頁面所使用的頁面。 本文說明[如何大量核准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。

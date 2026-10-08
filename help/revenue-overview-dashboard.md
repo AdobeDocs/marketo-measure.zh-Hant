@@ -3,14 +3,18 @@ description: 彙總「收入概觀」儀表板，顯示一段時間內的收入�
 title: 收入總覽儀表板
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
-
 ---
-
 # 收入總覽儀表板 {#revenue-overview-dashboard}
 
 收入概觀儀表板提供從CRM衍生的總收入的深入分析，讓您更清楚瞭解行銷策略的角色。 它概略說明行銷如何影響您的整體收入，以及如何協助成功完成交易。

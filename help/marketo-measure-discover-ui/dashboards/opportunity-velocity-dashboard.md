@@ -1,21 +1,25 @@
 ---
-description: 商機Velocity儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 機會Velocity儀表板 — [!DNL Marketo Measure] — 產品
 title: 機會Velocity控制面板
 feature: Reporting
 exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
-TQID: https://experienceleague.adobe.com/Jo1bO9vUfT5yYLTe1NQZvNyQQVLnjqr-sbntl14lgX0
+TQID: 'https://experienceleague.adobe.com/Jo1bO9vUfT5yYLTe1NQZvNyQQVLnjqr-sbntl14lgX0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 380
+source-wordcount: '380'
 ht-degree: 1%
-
 ---
-
 # 機會Velocity控制面板 {#opportunity-velocity-dashboard}
 
 Velocity儀表板可動態檢視潛在客戶在銷售funnel中的移動速度，為行銷人員和銷售團隊提供關於不同管道的轉換時間的重要深入分析。 此工具對於回答有關銷售階段中商機生命週期和進度效率的關鍵問題非常有用，可讓您最佳化參與策略，以加快成長和轉換。
@@ -78,7 +82,7 @@ Velocity儀表板可動態檢視潛在客戶在銷售funnel中的移動速度，
 此儀表板配備了下列設定和篩選器：
 
 * 日期
-   * 根據：轉換日期
+  * 根據：轉換日期
 * 階段
 * 管道
 * 子管道

@@ -1,21 +1,25 @@
 ---
-description: 新的Discover儀表板指南 —  [!DNL Marketo Measure]  — 產品
+description: 新的Discover儀表板指南 — [!DNL Marketo Measure] — 產品
 title: 新增Discover儀表板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-TQID: https://experienceleague.adobe.com/p9wH91818KiCuzb-Nk0QtGA9J6mmpzn2erlxrnQiTk8
+TQID: 'https://experienceleague.adobe.com/p9wH91818KiCuzb-Nk0QtGA9J6mmpzn2erlxrnQiTk8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1055
+source-wordcount: '1057'
 ht-degree: 0%
-
 ---
-
 # 新增Discover儀表板指南 {#new-discover-dashboard-guide}
 
 我們很高興向您介紹Discover控制面板的重新設計。 我們的主要目標是為您提供更精簡且直覺的體驗。 透過更簡潔的視覺效果和更簡單的導覽，這項改版不僅保留大部分的現有量度，還引入全新的深入分析。 深入瞭解，探索更清楚且更附加值的功能。

@@ -3,14 +3,23 @@ description: 在Microsoft Dynamics CRM中安裝和設定Marketo Measure套件的
 title: '[!DNL Microsoft Dynamics] CRM安裝指南'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 1%
-
 ---
-
 # [!DNL Microsoft Dynamics] CRM安裝指南 {#microsoft-dynamics-crm-installation-guide}
 
 >[!NOTE]
@@ -72,7 +81,7 @@ ht-degree: 1%
 1. 選取應在子格線中呈現的物件（「購買者歸因接觸點」或「購買者接觸點」），這取決於物件關係。 或者，按一下編輯按鈕來變更顯示的欄。 預設版面配置是由受管理的解決方案所設定。
 
    Buyer Attribution Touchpoint子格線 — 帳戶、機會和連絡人
-Buyer Touchpoint子網路 — 銷售機會與聯絡人
+   Buyer Touchpoint子網路 — 銷售機會與聯絡人
 
 1. 更新完表單後，請發佈並儲存變更。
 
@@ -132,7 +141,7 @@ Buyer Touchpoint子網路 — 銷售機會與聯絡人
    >
    >若要新增多個根網域，請聯絡您的[!DNL Marketo Measure]客戶代表。
 
-1. 然後必須將[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)放置在整個網站和登入頁面上。 建議將指令碼硬式編碼於登入頁面的標題內，或透過Tag Management系統(例如[Google Tag Manager](/help/marketo-measure-tracking/adding-marketo-measure-script-via-google-tag-manager.md))新增。
+1. 然後必須將[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)放置在整個網站和登入頁面上。 建議將指令碼硬式編碼於登入頁面的標題內，或透過Tag Management系統（例如[Google Tag Manager](/help/marketo-measure-tracking/adding-marketo-measure-script-via-google-tag-manager.md)）新增。
 
    >[!NOTE]
    >

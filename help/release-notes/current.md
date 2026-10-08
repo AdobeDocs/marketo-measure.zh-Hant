@@ -1,24 +1,31 @@
 ---
-description: 最新發行說明 —  [!DNL Marketo Measure]
+description: 最新發行說明 - [!DNL Marketo Measure]
 title: 最新發行說明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-TQID: https://experienceleague.adobe.com/WCmnCEZ-aUK4OODKYLymgD8-Ohb6k-AIcJMVrBHMm2Y
+TQID: 'https://experienceleague.adobe.com/WCmnCEZ-aUK4OODKYLymgD8-Ohb6k-AIcJMVrBHMm2Y'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: ffecc0ee-70f2-5687-bca0-deee982ffbfa
+    internal-label: Release Notes
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Privacy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # 發行說明：2024年 {#release-notes-2024}
 
 請參閱下文，瞭解2024年發行版本的所有新功能和更新功能。
@@ -33,13 +40,13 @@ ht-degree: 0%
 
 對於新客戶，工作階段管道結轉現在是預設行為。 現有客戶可透過在「設定>每次接觸歸因」下開啟「工作階段管道結轉」切換來啟用此功能。 此設定一經啟用即無法復原。
 
-檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+檔案： [Marketo Measure Web工作階段定義](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 關鍵字ROI控制面板
 
 新的關鍵字ROI儀表板提供付費搜尋行銷活動績效的詳細深入分析，提供關鍵字層級成本、已歸因收入以及產生的潛在客戶和商機的完整檢視。 此控制面板可幫助您評估Google Adwords、LinkedIn和Bing Ads等產品中每個關鍵字的ROI。
 
-檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+檔案： [關鍵字ROI儀表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增強型區段規則
 

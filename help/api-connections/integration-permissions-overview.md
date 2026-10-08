@@ -3,13 +3,19 @@ description: Marketo Measure使用者的整合許可權總覽指南
 title: 整合許可權概述
 feature: APIs, Integration
 exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1476'
 ht-degree: 2%
-
 ---
-
 
 # 整合許可權概述 {#integration-permissions-overview}
 
@@ -65,7 +71,7 @@ ht-degree: 2%
     <p>
     <b>Salesforce自訂欄位許可權</b>
     <br>
-    我們提供功能設定，用於儲存客戶可以使用的自訂Salesforce欄位。 如果這些功能設定已定義，那麼我們需要「讀取」存取儲存在功能設定中的每個Salesforce欄位(例如，如果CustomLeadSourceField設定值等於「LeadSource__c」，那麼我們需要「讀取」存取此欄位)。
+    我們提供功能設定，用於儲存客戶可以使用的自訂Salesforce欄位。 如果這些功能設定已定義，那麼我們需要「讀取」存取儲存在功能設定中的每個Salesforce欄位（例如，如果CustomLeadSourceField設定值等於「LeadSource__c」，那麼我們需要「讀取」存取此欄位）。
     </td>
   </tr>
   <tr>
@@ -202,7 +208,7 @@ Marketo Measure會追蹤促銷活動、廣告群組、創意、網站連結和�
     <td>Bing</td>
     <td>廣告平台資料</td>
     <td>Marketo Measure會追蹤帳戶、行銷活動、廣告群組、創意和關鍵字。</td>
-    <td><li>使用者必須透過其Microsoft帳戶授予「離線存取權」(即使未登入，也會授予Marketo Measure對一般使用者UserInfo的存取權)。 請參閱<a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的頁面</a>以瞭解如何操作。</li>
+    <td><li>使用者必須透過其Microsoft帳戶授予「離線存取權」（即使未登入，也會授予Marketo Measure對一般使用者UserInfo的存取權）。 請參閱<a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的頁面</a>以瞭解如何操作。</li>
 <p>
     <b>領域</b>
     <br>
@@ -220,7 +226,7 @@ Marketo Measure會追蹤促銷活動、廣告群組、創意、網站連結和�
   <tr>
     <td>Adobe Analytics</td>
     <td>B2B系統資料</td>
-    <td>B2B客戶屬性整合可讓Marketo Measure和Adobe Analytics的共同使用者透過衍生自Marketo Measure歸因引擎的寶貴中繼資料，以及透過其與CRM (Microsoft Dynamics和Salesforce)的同步功能，擴充其Adobe Analytics使用者設定檔。 <a href="/help/adobe-analytics.md">了解更多</a>。</td>
+    <td>B2B客戶屬性整合可讓Marketo Measure和Adobe Analytics的共同使用者透過衍生自Marketo Measure歸因引擎的寶貴中繼資料，以及透過其與CRM （Microsoft Dynamics和Salesforce）的同步功能，擴充其Adobe Analytics使用者設定檔。 <a href="/help/adobe-analytics.md">了解更多</a>。</td>
     <td>客戶必須向Marketo Measure提供別名ID和FTP伺服器認證，才能將資料上傳至其Analytics執行個體。
     <p>
     請記下下列資訊，因為您將需要這些資訊來完成程式中的後續步驟：

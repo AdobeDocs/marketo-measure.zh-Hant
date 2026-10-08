@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Engage]方案整合 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Engage]方案整合 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]個方案整合'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 1%
-
 ---
-
 # [!DNL Marketo Engage]個方案整合 {#marketo-engage-programs-integration}
 
 透過[!DNL Marketo Measure]與[!DNL Marketo Engage]計畫的整合，我們的客戶可以開始從Marketo計畫會員資格建立歸因追蹤的接觸點。 此功能可讓行銷人員從電子郵件或參與方案中開始追蹤方案會籍，這些方案在[!DNL Marketo Measure] JavaScript看不到且應在歸因歷程中測量。

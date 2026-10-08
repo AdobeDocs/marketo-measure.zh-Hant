@@ -1,20 +1,23 @@
 ---
-description: 離線頻道的最佳作法 —  [!DNL Marketo Measure]
+description: 離線頻道的最佳作法 — [!DNL Marketo Measure]
 title: 離線管道的最佳作法
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-TQID: https://experienceleague.adobe.com/p-xffnDY4cbrbz4dH1Z4MgWCOwuoP-IjDHU4YdTww8o
+TQID: 'https://experienceleague.adobe.com/p-xffnDY4cbrbz4dH1Z4MgWCOwuoP-IjDHU4YdTww8o'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1053
+source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # 離線管道的最佳作法 {#best-practices-for-offline-channels}
 
 ## 概觀 {#overview}
@@ -37,24 +40,24 @@ ht-degree: 0%
 無論您是第一次對應離線頻道，還是隻檢視離線頻道以檢查其準確性，請記住以下最佳實務。
 
 * 為離線管道建立審慎的架構
-   * 請花點時間思考行銷活動的組織方式，以及行銷活動如何融入[!DNL Marketo Measure]框架。 決定離線頻道中應該顯示哪些頻道和子頻道，以及哪些CRM行銷活動型別會區分這些頻道
+  * 請花點時間思考行銷活動的組織方式，以及行銷活動如何融入[!DNL Marketo Measure]框架。 決定離線頻道中應該顯示哪些頻道和子頻道，以及哪些CRM行銷活動型別會區分這些頻道
 * 先努力利用您目前的CRM Campaign「型別」值
-   * 離線管道由CRM Campaign「型別」定義，不過可能需要建立自訂CRM Campaign「型別」值，以配合理想的離線管道和子管道值。 理想的自訂CRM Campaign「型別」值應該遵循如下所示的命名慣例：
-      * 頻道 — 子頻道
-      * 範例：事件 — 商展
-      * 這可確保對應至子管道層級儘可能簡單明瞭
+  * 離線管道由CRM Campaign「型別」定義，不過可能需要建立自訂CRM Campaign「型別」值，以配合理想的離線管道和子管道值。 理想的自訂CRM Campaign「型別」值應該遵循如下所示的命名慣例：
+    * 頻道 — 子頻道
+    * 範例：事件 — 商展
+    * 這可確保對應至子管道層級儘可能簡單明瞭
 * 一個子管道只能對應至一個CRM行銷活動「型別」
-   * 多個CRM Campaign「型別」可對映至單一管道，但只有一個CRM Campaign「型別」可對映至每個管道內的每個子管道
+  * 多個CRM Campaign「型別」可對映至單一管道，但只有一個CRM Campaign「型別」可對映至每個管道內的每個子管道
 * 只有離線CRM促銷活動「型別」對應至離線頻道，因為只有離線促銷活動才會與[!DNL Marketo Measure]同步以建立接觸點：
-   * ONLINE CRM Campaign的&#39;Types&#39;應該對應到[!UICONTROL Marketing Channel] = &quot;NULL&quot;。 建議使用此值，因為此值會成為「紅色旗標」，表示您的離線管道已檢閱，且對應至「NULL」的任何CRM Campaign「型別」均為線上「型別」，不應與[!DNL Marketo Measure]同步。 已經透過[!DNL Marketo Measure]線上功能與管道追蹤與Online CRM Campaign「型別」相關的接觸點。 同步這些行銷活動會產生「重複」接觸點/重複計數的風險
+  * ONLINE CRM Campaign的&#39;Types&#39;應該對應到[!UICONTROL Marketing Channel] = &quot;NULL&quot;。 建議使用此值，因為此值會成為「紅色旗標」，表示您的離線管道已檢閱，且對應至「NULL」的任何CRM Campaign「型別」均為線上「型別」，不應與[!DNL Marketo Measure]同步。 已經透過[!DNL Marketo Measure]線上功能與管道追蹤與Online CRM Campaign「型別」相關的接觸點。 同步這些行銷活動會產生「重複」接觸點/重複計數的風險
 
 ## 最佳實務 |離線Campaign同步 {#best-practice-offline-campaign-sync}
 
 * 確定每個CRM行銷活動的「型別」欄位都準確
-   * 「型別」會針對在同步後源自促銷活動之任何接觸點，決定行銷管道和子管道
+  * 「型別」會針對在同步後源自促銷活動之任何接觸點，決定行銷管道和子管道
 * 不論是使用CRM型Campaign同步方法（啟用購買者接觸點）還是[!DNL Marketo Measure]應用程式型同步方法（在您[!UICONTROL Marketo Measure]帳戶設定的&#39;[!UICONTROL Campaigns]&#39;標籤內的「自訂Campaign同步」），只有在促銷活動成員與Campaign和您的品牌有實際的離線參與時，才應該建立離線接觸點：
-   * 對於離線頻道，例如活動或網路研討會：「註冊」通常透過網站上的表單提交和[!DNL Marketo Measure]線上功能進行追蹤。 因此，狀態為「已註冊」的Campaign成員不應收到Campaign的離線接觸點，以避免重複計算。 離線接觸點僅能代表活動或網路研討會的「出席情況」。
-   * 某些離線頻道（例如內容整合）較為直接簡單，因為每個行銷活動會員都有相同的「已回應」狀態，這表示他們確實已回應行銷活動，在此情況下，就是從協力廠商網站下載內容，因此應該會收到離線接觸點
+  * 對於離線頻道，例如活動或網路研討會：「註冊」通常透過網站上的表單提交和[!DNL Marketo Measure]線上功能進行追蹤。 因此，狀態為「已註冊」的Campaign成員不應收到Campaign的離線接觸點，以避免重複計算。 離線接觸點僅能代表活動或網路研討會的「出席情況」。
+  * 某些離線頻道（例如內容整合）較為直接簡單，因為每個行銷活動會員都有相同的「已回應」狀態，這表示他們確實已回應行銷活動，在此情況下，就是從協力廠商網站下載內容，因此應該會收到離線接觸點
 * 在[!DNL Marketo Measure]應用程式中使用「自訂促銷活動同步」方法時，請確定「接觸點日期」欄位是根據「促銷活動」或「促銷活動成員」的日期欄位，最能指出實際發生接觸點互動的時間
 * 如果您需要覆寫來源為CRM Campaign之任何離線接觸點的「接觸點日期」，請使用「大量更新接觸點日期」按鈕。 「接觸點日期」必須儘可能準確，以確保接觸點擁有儘可能準確的「接觸點位置」，並進而擁有適當的歸因點數金額
 

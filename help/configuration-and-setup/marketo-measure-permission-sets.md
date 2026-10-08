@@ -1,15 +1,22 @@
 ---
-description: '[!DNL Marketo Measure]許可權集 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]許可權集 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]許可權集'
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
-
 ---
-
 # [!DNL Marketo Measure]許可權集 {#marketo-measure-permission-sets}
 
 瞭解如何在Salesforce中存取及指派[!DNL Marketo Measure]許可權集。
@@ -34,7 +41,7 @@ ht-degree: 1%
  <tbody>
   <tr>
    <td><span><strong>[!DNL Marketo Measure] 管理員</strong></span></td>
-   <td><span>讓SFDC管理員能從[!DNL Marketo Measure]物件建立、讀取、寫入及刪除記錄。 [!DNL Marketo Measure]將資料推送至SFDC的授權應啟用此許可權集。 此外，建議此授權能夠編輯轉換的銷售機會，在[!DNL Marketo Measure]將資料套用至記錄之前轉換的銷售機會。 這可確保Salesforce與[!DNL Marketo Measure]之間報表的正確性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&type=5&release=206&language=en_us">在此閱讀更多資訊</a>。</span></td>
+   <td><span>讓SFDC管理員能從[!DNL Marketo Measure]物件建立、讀取、寫入及刪除記錄。 [!DNL Marketo Measure]將資料推送至SFDC的授權應啟用此許可權集。 此外，建議此授權能夠編輯轉換的銷售機會，在[!DNL Marketo Measure]將資料套用至記錄之前轉換的銷售機會。 這可確保Salesforce與[!DNL Marketo Measure]之間報表的正確性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">在此閱讀更多資訊</a>。</span></td>
   </tr>
   <tr>
    <td><span><strong>[!DNL Marketo Measure] 行銷使用者</strong></span></td>

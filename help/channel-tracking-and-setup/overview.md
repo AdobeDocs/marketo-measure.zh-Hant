@@ -3,16 +3,20 @@ description: Marketo Measure使用者總覽指南
 title: 概觀
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
 feature: Multi-Currency
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
-
 ---
-
 # 概觀 {#overview}
 
-目前，[!DNL Marketo Measure]應用程式僅支援單一貨幣（假設為美元），但我們知道並知道全球有客戶需要報告自己的公司和使用者貨幣。 此功能可讓使用者在檢視[!DNL Marketo Measure]中報告的支出或銷售收入時，於其CRM中使用的相同貨幣之間切換。
+目前，[!DNL Marketo Measure]應用程式僅支援單一貨幣（假設為USD），但我們知道並知道全球有客戶需要報告自己的公司和使用者貨幣。 此功能可讓使用者在檢視[!DNL Marketo Measure]中報告的支出或銷售收入時，於其CRM中使用的相同貨幣之間切換。
 
 ## 可用性 {#availability}
 
@@ -31,7 +35,7 @@ ht-degree: 1%
 | **字詞** | 說明 |
 |---|---|
 | **進階貨幣** | 客戶已啟用「進階幣別管理」與「多重幣別」，這表示他們可以在不同的期間有不同的兌換率。 |
-| **公司貨幣** | 這些是組織在CRM中列出並宣告的各種貨幣，全都採用轉換率。[!DNL Marketo Measure] 將會匯入這些值，並讓使用者在我們的產品中可以使用這些貨幣。 |
+| **公司貨幣** | 這些是組織在CRM中列出並宣告的各種貨幣，全都採用轉換率。 [!DNL Marketo Measure]將匯入這些值，並讓我們的產品內的使用者可以使用這些貨幣。 |
 | **貨幣地區設定** | 組織所用的單一貨幣，在公司資訊頁面上設定。 |
 | **當地貨幣（或使用者貨幣）** | 在使用者設定檔中為單一使用者設定的貨幣，以便他們能夠檢視任何金額的當地貨幣。 組織必須先宣告並設定貨幣，使用者才能選取其當地貨幣。 |
 | **單一貨幣** | 用於未在CRM中使用多種貨幣，但其組織以不同貨幣執行的客戶，因此他們具有「貨幣地區設定」。 這仍然是組織的單一貨幣，但沒有任何轉換。 |

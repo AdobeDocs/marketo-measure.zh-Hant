@@ -1,15 +1,19 @@
 ---
-description: 跨BT的接觸點位置和產生方式說明，以及Marketo Measure使用者的 [!DNL BATs] 指引
-title: 跨BT和 [!DNL BATs]的接觸點位置和產生方式說明
+description: 跨BT的接觸點位置和產生方式說明，以及Marketo Measure使用者的[!DNL BATs]指引
+title: 跨BT和[!DNL BATs]的接觸點位置和產生方式說明
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 0%
-
 ---
-
 
 # 跨BT和[!DNL BATs]的接觸點位置和產生方式說明 {#explanation-of-touchpoint-positions-and-generation-across-bts-and-bats}
 
@@ -112,10 +116,10 @@ ht-degree: 0%
 **商機** Buyer Attribution Touchpoint資料將讀取如下……
 
 * 首次接觸(FT) — 付費Social.Facebook - 8/26/2019
-   * （來自&#x200B;**人員B**，因為他們具有帳戶/Opp的真&#x200B;_首次接觸_）
+  * （來自&#x200B;**人員B**，因為他們具有帳戶/Opp的真&#x200B;_首次接觸_）
 * 銷售機會建立(LC) - Organic Search.Google - 11/20/2019
-   * （來自&#x200B;**人員A**，因為他們擁有帳戶/Opp的真&#x200B;_銷售機會建立_）
+  * （來自&#x200B;**人員A**，因為他們擁有帳戶/Opp的真&#x200B;_銷售機會建立_）
 * 機會建立(OC) — 網路研討會 — 3/4/2020
-   * （**人員A**&#x200B;的Post LC接觸點將是&#x200B;_OC接觸點_，因為這是我們最近一次與2020年3月7日建立的商機互動）
+  * （**人員A**&#x200B;的Post LC接觸點將是&#x200B;_OC接觸點_，因為這是我們最近一次與2020年3月7日建立的商機互動）
 * 非公開 — 電子郵件 — 5/1/2020
-   * （**人員B**&#x200B;的Post LC接觸點將是&#x200B;_已關閉的成功接觸點_，因為這是我們最近一次不得不在2020年5月6日關閉商機的互動）
+  * （**人員B**&#x200B;的Post LC接觸點將是&#x200B;_已關閉的成功接觸點_，因為這是我們最近一次不得不在2020年5月6日關閉商機的互動）

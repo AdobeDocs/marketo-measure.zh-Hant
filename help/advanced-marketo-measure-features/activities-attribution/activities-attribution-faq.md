@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874704
-description: 活動歸因常見問題集 —  [!DNL Marketo Measure]
+description: 活動歸因常見問題集 — [!DNL Marketo Measure]
 title: 活動歸因常見問題集
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-TQID: https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo
+TQID: 'https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: '765'
 ht-degree: 0%
-
 ---
-
 # 活動歸因常見問題集 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活動會匯入您的所有活動記錄並為其產生接觸點，以允許這些活動接收歸因評分。 最常見的使用案例是追蹤銷售團隊的活動，因為這些活動通常會建立傳送給潛在客戶的電話或電子郵件記錄。 其他可以追蹤的獨特專案包括內容互動，例如資產下載或視訊檢視。
@@ -32,7 +34,7 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 **如果我有具有相同遞回任務的Lead或Contact，我是否會看到所有這些專案的購買者接觸點？**
 
-是的。 您的同步活動與建立的接觸點之間有1:1關係。
+是的。 您的同步活動與建立的接觸點之間會維持1:1關係。
 
 **我如何知道哪些記錄會導致建立接觸點？**
 

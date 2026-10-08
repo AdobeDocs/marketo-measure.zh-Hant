@@ -1,16 +1,25 @@
 ---
-description: Salesforce套件安裝與設定 —  [!DNL Marketo Measure]
+description: Salesforce封裝安裝及設定 — [!DNL Marketo Measure]
 title: '[!DNL Salesforce]封裝安裝及設定'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
-
 ---
-
 # Salesforce套件安裝{#marketo-measure-salesforce-package-installation}
 
 在安裝[!DNL Marketo Measure] [!DNL Salesforce]基本套件之前，您必須先判斷您是否先在[!DNL Salesforce]沙箱中安裝它，然後再移至您的Salesforce生產執行個體。
@@ -53,7 +62,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]會透過[!DNL Marketo Measure]應用程式中連線的[!DNL Salesforce]使用者傳送及接收資料。
 
-若要將接觸點資料推送至您的[!DNL Salesforce]執行個體，連線的使用者必須能存取[!DNL Marketo Measure]個自訂物件(例如Buyer Touchpoint和Buyer Attribution Touchpoint)以及銷售機會和聯絡人等標準[!DNL Salesforce]物件。
+若要將接觸點資料推送至您的[!DNL Salesforce]執行個體，連線的使用者必須能存取[!DNL Marketo Measure]個自訂物件（例如Buyer Touchpoint和Buyer Attribution Touchpoint）以及銷售機會和聯絡人等標準[!DNL Salesforce]物件。
 
 建立[!DNL Marketo Measure]設定檔，以確保您在推送資料至Salesforce時不會發生驗證錯誤。
 
@@ -62,9 +71,9 @@ ht-degree: 0%
 1. 指派下列許可權：
 
 * [!DNL Marketo Measure]管理員許可權集
-   * Managed許可權集可讓SFDC管理員從[!DNL Marketo Measure]物件建立、讀取、寫入和刪除記錄。
+  * Managed許可權集可讓SFDC管理員從[!DNL Marketo Measure]物件建立、讀取、寫入和刪除記錄。
 * 「檢視和編輯轉換的潛在客戶許可權集」
-   * 這可讓[!DNL Marketo Measure]在銷售機會轉換為聯絡人後裝飾銷售機會。 如果未啟用此許可權集，可能會出現嚴重的資料追蹤差距。
+  * 這可讓[!DNL Marketo Measure]在銷售機會轉換為聯絡人後裝飾銷售機會。 如果未啟用此許可權集，可能會出現嚴重的資料追蹤差距。
 
 >[!NOTE]
 >
@@ -76,7 +85,7 @@ ht-degree: 0%
 
 1. 啟用「行銷使用者」作為使用者層級的許可權。
 
-* [!UICONTROL Marketing User]核取方塊可讓使用者建立行銷活動並使用行銷活動匯入精靈。 如果未選取此選項，使用者只能檢視行銷活動和進階行銷活動設定、編輯單一潛在客戶或聯絡人的行銷活動歷史記錄，以及執行行銷活動報告。[!DNL Marketo Measure] 必須能夠讀取和寫入campaign物件。
+* [!UICONTROL Marketing User]核取方塊可讓使用者建立行銷活動並使用行銷活動匯入精靈。 如果未選取此選項，使用者只能檢視行銷活動和進階行銷活動設定、編輯單一潛在客戶或聯絡人的行銷活動歷史記錄，以及執行行銷活動報告。 [!DNL Marketo Measure]必須能夠讀取和寫入行銷活動物件。
 
 步驟3：從所有觸發器、工作流程和流程中排除此設定檔
 

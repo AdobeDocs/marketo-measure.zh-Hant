@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874732
-description: 設定UTM引數的最佳實務 —  [!DNL Marketo Measure]
+description: 設定UTM引數的最佳實務 — [!DNL Marketo Measure]
 title: 設定UTM引數的最佳作法
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-TQID: https://experienceleague.adobe.com/DtL-NA5HSr40pOEJ0iCge--9Aa-reP1PRyJIw3qfAqM
+TQID: 'https://experienceleague.adobe.com/DtL-NA5HSr40pOEJ0iCge--9Aa-reP1PRyJIw3qfAqM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 453
+source-wordcount: '453'
 ht-degree: 1%
-
 ---
-
 # 設定UTM引數的最佳作法 {#best-practices-for-setting-up-utm-parameters}
 
 UTM引數是切分行銷資料的絕佳方式。 [!DNL Marketo Measure]使用和擷取所有UTM引數，以填入Salesforce和[!DNL Marketo Measure]應用程式中的欄位。 有了這些資訊，您就能更詳細地瞭解您的銷售機會、商機以及已結/已贏的交易來自何處。

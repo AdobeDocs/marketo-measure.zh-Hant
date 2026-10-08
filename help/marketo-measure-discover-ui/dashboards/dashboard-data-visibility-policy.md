@@ -1,20 +1,23 @@
 ---
-description: 儀表板資料可見性原則 —  [!DNL Marketo Measure]  — 產品
+description: 儀表板資料可見性原則 — [!DNL Marketo Measure] — 產品
 title: 控制面板資料可見性原則
 feature: Reporting
 exl-id: 5f6f7173-617e-459d-992f-8a8b6c2db7cb
-TQID: https://experienceleague.adobe.com/BoS1frFIuxKjaHbi9FkI5lgtBbjMqYo3-4AFliP9ehc
+TQID: 'https://experienceleague.adobe.com/BoS1frFIuxKjaHbi9FkI5lgtBbjMqYo3-4AFliP9ehc'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 239
+source-wordcount: '239'
 ht-degree: 6%
-
 ---
-
 # 控制面板資料可見性原則 {#dashboard-data-visibility-policy}
 
 為了在儀表板中提供更好的體驗，我們已針對所報告的物件建立資料可見性原則。 請務必注意，當您熟悉我們的新版Discover儀表板時，您可能會發現其數量比舊版儀表板還少。 這是因為我們的資料呈現方式有所變更，新儀表板現在提供明確的可見度指引。 有別於顯示所有可用資料的舊版Discover儀表板，新版只會根據可見性原則顯示資料。 本文旨在釐清不同資料物件的可見度政策為何，並確保報表的透明度與資料詮釋準確。

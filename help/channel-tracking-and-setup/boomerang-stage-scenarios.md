@@ -3,13 +3,17 @@ description: Marketo Measure使用者的Boomerang階段案例指南
 title: 迴旋舞步舞台情境
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 1096bc28-f8ba-5a87-abf9-ad1b68c31f97
+    internal-label: Boomerang
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
-
 ---
-
 # 迴旋舞步舞台情境 {#boomerang-stage-scenarios}
 
 >[!AVAILABILITY]
@@ -38,7 +42,7 @@ ht-degree: 0%
 
 請注意，MQL接觸點位置未標示為數字。 這是因為未選取要使用迴旋加速器接觸點來追蹤。 為包含在自訂模型中但未使用Boomerang追蹤的階段建立接觸點時，[!DNL Marketo Measure]會取用該階段的最後一次發生。
 
-對於SAL階段，[!DNL Marketo Measure]會忽略此階段的前兩次發生次數。[!DNL Marketo Measure] 僅建立&#x200B;_最後一個_&#x200B;專案的SAL接觸點。 在上述範例中，這會在OC接觸點之前發生。
+對於SAL階段，[!DNL Marketo Measure]會忽略此階段的前兩次發生次數。 [!DNL Marketo Measure]只會為&#x200B;_最後_&#x200B;個發生次數建立SAL接觸點。 在上述範例中，這會在OC接觸點之前發生。
 
 正在使用Boomerang接觸點追蹤SQL階段，並且已建立三個接觸點並相應地加上標籤。
 
@@ -88,7 +92,7 @@ Lead 3的FT、LC和MQL、SQL、SAL接觸點（橙色）都發生在Opportunity�
 
 來自Lead 2的MQL-01 （上一個）最終成為Opportunity上的MQL-04 （上一個）接觸點。 由於此案例是檢視一個商機中多個潛在客戶的歷程，潛在客戶的接觸點的定位和編號可能會在其轉譯為商機上的接觸點時變更。 同樣地，來自Lead 2的SQL-01 （最後）會變成Opp上的SQL-04 （最後）。 Lead 2的SAL-01 （最後）也會變成Opportunity的SAL-02 （最後）。
 
-Opportunity上只包含2個SAL接觸點。[!DNL Marketo Measure] 不會嘗試強制/建立階段轉換的接觸點（如果尚未發生）。
+Opportunity上只包含2個SAL接觸點。 如果階段轉換尚未發生，[!DNL Marketo Measure]將不會嘗試強制/建立接觸點。
 
 Lead 3的接觸點歷程開始於OC接觸發生之前，但在Lead 1和Lead 2進行FT和LC接觸之後很久。 在此案例中，Lead 3的FT和LC會顯示為Opportunity上的Form接觸點。 然後Lead 1會轉換為具有商機的聯絡人，這視為OC接觸。
 

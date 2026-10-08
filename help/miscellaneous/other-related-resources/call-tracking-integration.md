@@ -1,21 +1,26 @@
 ---
 unique-page-id: 18874592
-description: 呼叫追蹤整合 —  [!DNL Marketo Measure]
+description: 呼叫追蹤整合 — [!DNL Marketo Measure]
 title: 呼叫追蹤整合
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-TQID: https://experienceleague.adobe.com/6-mDiLKLFk2x3Y2FzWxNjlm6BmLKNRDAObs3CYPvEgE
+TQID: 'https://experienceleague.adobe.com/6-mDiLKLFk2x3Y2FzWxNjlm6BmLKNRDAObs3CYPvEgE'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 691
+source-wordcount: '693'
 ht-degree: 0%
-
 ---
-
 # 呼叫追蹤整合 {#call-tracking-integration}
 
 我們與[!DNL CallTrackingMetrics]的整合旨在將網頁工作階段與電話通話合併。 會將電話視為提交至[!DNL Marketo Measure]的表單。 這會將Web工作階段的評分給予原本只會視為Web造訪，因為沒有實際提交的表單。
@@ -76,7 +81,7 @@ CallTrackingMetrics必須在其終端執行一些開發工作，才能正常運�
 
 首先，檢查任務以確定有[!DNL BizibleId]填入。 如果沒有值，我們就無法為其建立接觸點。 需要以CallTrackingMetrics將此問題呈報。
 
-請注意，如果有值，我們只會將所有網路工作階段視為30分鐘。 如果在12:17pm （網站上的工作階段開始）點選Google廣告，但直到1:05pm才發生電話呼叫，則我們不會合併網頁工作階段和電話呼叫。 [!DNL Marketo Measure]會建立個別的[!DNL Salesforce Task]接觸點來追蹤電話通話，但不會有任何Web工作階段資料。
+請注意，如果有值，我們只會將所有網路工作階段視為30分鐘。 如果Google廣告是在中午12:17 （網站上的工作階段開始）點選，但直到下午1:05才發生電話呼叫，則不會合併網頁工作階段和電話呼叫。 [!DNL Marketo Measure]會建立個別的[!DNL Salesforce Task]接觸點來追蹤電話通話，但不會有任何Web工作階段資料。
 
 ![](assets/6.png)
 

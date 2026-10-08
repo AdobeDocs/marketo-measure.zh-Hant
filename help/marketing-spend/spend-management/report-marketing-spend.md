@@ -1,23 +1,28 @@
 ---
 unique-page-id: 27656737
-description: 報告行銷支出 —  [!DNL Marketo Measure]
+description: 報告行銷支出 — [!DNL Marketo Measure]
 title: 報告行銷支出
 exl-id: 46b0f81c-acd1-47a5-bf75-6a943edb9009
 feature: Reporting, Spend Management
-TQID: https://experienceleague.adobe.com/xdj3h4D3SQtHJkxyBAHjlqdLY2I1tQCzZEDyX06o9bE
+TQID: 'https://experienceleague.adobe.com/xdj3h4D3SQtHJkxyBAHjlqdLY2I1tQCzZEDyX06o9bE'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 342
+source-wordcount: '342'
 ht-degree: 0%
-
 ---
-
 # 報告行銷支出 {#report-marketing-spend}
 
 ## 行銷支出表格 {#marketing-spend-table}
@@ -38,7 +43,7 @@ ht-degree: 0%
 
 ## 移轉至轉換的行銷支出 {#migrate-to-converted-marketing-spend}
 
-由於行銷支出歷來只使用單一（美元）貨幣，因此只需要少量工作即可將所有報告的支出變更為新貨幣。 即使您的帳戶未啟用多種貨幣，但如果您使用美元以外的單一企業貨幣，則應進行此移轉。
+由於行銷支出歷來只使用單一(USD)貨幣，因此只需要少量工作即可將所有報告的支出變更為新貨幣。 即使您的帳戶未啟用多種貨幣，但如果您使用USD以外的單一企業貨幣，則應進行此移轉。
 
 1. 將目前的支出檔案下載至CSV
 1. 貨幣欄顯示&quot;[!UICONTROL USD]&quot;為假設貨幣。 您可以手動取代所有出現的&quot;[!UICONTROL USD]&quot;，或使用「尋找+取代」將所有&quot;[!UICONTROL USD]&quot;執行個體變更為您自己的公司貨幣，例如&quot;[!UICONTROL EUR]&quot;或&quot;[!UICONTROL GBP]&quot;。

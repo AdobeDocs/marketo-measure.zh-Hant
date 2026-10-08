@@ -1,22 +1,29 @@
 ---
 unique-page-id: 18874582
-description: '[!DNL Marketo Measure]個Salesforce物件 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]個Salesforce物件 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]個Salesforce物件'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/JCaHo-8eaHFN-8-nE0mXfgxpxaWP2-cmp-9DwdyW0xk
+TQID: 'https://experienceleague.adobe.com/JCaHo-8eaHFN-8-nE0mXfgxpxaWP2-cmp-9DwdyW0xk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Taxonomy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 927
+source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]個Salesforce物件 {#marketo-measure-salesforce-objects}
 
 >[!NOTE]
@@ -79,7 +86,7 @@ BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Accoun
 
 ## [!DNL Marketo Measure]欄位 {#marketo-measure-fields}
 
-由[!DNL Marketo Measure] JavaScript擷取的資料已推送到[!DNL Marketo Measure]物件內的自訂[!DNL Marketo Measure]欄位。 某些欄位僅存在於某些物件上。 您可以檢閱[[!DNL Marketo Measure]欄位][&#128279;](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)的[字彙表，以及相關 [!DNL Marketo Measure] 物件](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)的視覺效果。
+由[!DNL Marketo Measure] JavaScript擷取的資料已推送到[!DNL Marketo Measure]物件內的自訂[!DNL Marketo Measure]欄位。 某些欄位僅存在於某些物件上。 您可以檢閱[[!DNL Marketo Measure]欄位]](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)的[字彙表，以及相關 [!DNL Marketo Measure] 物件](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)的[視覺效果。
 
 ## [!DNL Marketo Measure]個報告和儀表板 {#marketo-measure-reports-and-dashboards}
 

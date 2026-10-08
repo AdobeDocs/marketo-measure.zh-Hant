@@ -1,23 +1,27 @@
 ---
-description: 線上頻道的最佳實務 —  [!DNL Marketo Measure]
+description: 線上頻道的最佳實務 — [!DNL Marketo Measure]
 title: 線上管道的最佳作法
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-TQID: https://experienceleague.adobe.com/USJRMuxX8gBPFwCYWb5ujG-158EWyVpwwy47studXK0
+TQID: 'https://experienceleague.adobe.com/USJRMuxX8gBPFwCYWb5ujG-158EWyVpwwy47studXK0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 613
+source-wordcount: '613'
 ht-degree: 0%
-
 ---
-
 # 線上管道的最佳作法 {#best-practices-for-online-channels}
 
 ## 概觀 {#overview}
@@ -37,16 +41,16 @@ ht-degree: 0%
 注意事項：
 
 * 所有數位頻道和子頻道至少應用一個規則表示
-   * 如果頻道沒有促使人們進入您的網站，則不是線上頻道
+  * 如果頻道沒有促使人們進入您的網站，則不是線上頻道
 * 一個管道/子管道可以有多個規則
-   * 您可以將多個規則視為「投射更寬的網路」，以確保每個接觸點都正確對應。 通常可以不正確新增或完全遺漏引數，因此擁有多個規則來擷取管道/子管道是確保對應正確性的好方法。
+  * 您可以將多個規則視為「投射更寬的網路」，以確保每個接觸點都正確對應。 通常可以不正確新增或完全遺漏引數，因此擁有多個規則來擷取管道/子管道是確保對應正確性的好方法。
 * [!DNL Marketo Measure]邏輯會從試算表的上方列開始，依遞減順序排列接觸點對應的優先順序，並向下進行
-   * [!DNL Marketo Measure]讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
-   * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
+  * [!DNL Marketo Measure]讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
+  * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
 * 維護括弧內的規則，請勿編輯或新增至括弧內的規則（例如，[AdWords付費搜尋]或[Facebook付費]）
-   * 這些是內建邏輯且與[!DNL Marketo Measure]整合繫結的開箱[!DNL Marketo Measure]規則。 讓這些規則成為該管道/子管道區段的最高優先順序，以確保[!DNL Marketo Measure]整合能夠如預期般運作。
+  * 這些是內建邏輯且與[!DNL Marketo Measure]整合繫結的開箱[!DNL Marketo Measure]規則。 讓這些規則成為該管道/子管道區段的最高優先順序，以確保[!DNL Marketo Measure]整合能夠如預期般運作。
 * 上傳檔案後，您七天內無法變更任何規則
-   * [!DNL Marketo Measure]利用這個時間處理和更新接觸點，因此請務必在上傳之前仔細檢查您的規則。
+  * [!DNL Marketo Measure]利用這個時間處理和更新接觸點，因此請務必在上傳之前仔細檢查您的規則。
 
 ## 維護最佳實務 {#best-practice-for-maintenace}
 

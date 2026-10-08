@@ -1,22 +1,26 @@
 ---
 unique-page-id: 37356962
-description: '[!DNL Marketo Measure]資源清單 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]資源清單 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]資源清單'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-TQID: https://experienceleague.adobe.com/oY2h-o6vE-X-TcsklCmmKitANBYszLt7SSBWbAmy1lU
+TQID: 'https://experienceleague.adobe.com/oY2h-o6vE-X-TcsklCmmKitANBYszLt7SSBWbAmy1lU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Troubleshooting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 341
+source-wordcount: '341'
 ht-degree: 3%
-
 ---
-
 # [!DNL Marketo Measure]資源清單 {#marketo-measure-resource-list}
 
 以下為相關文章/影片的各種連結，可協助您啟動並執行[!DNL Marketo Measure]！
@@ -39,12 +43,12 @@ ht-degree: 3%
 * [上傳行銷支出](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 * [重新連線Ad帳戶](/help/api-connections/utilizing-marketo-measures-api-connections/reauthorizing-connected-accounts.md)
 * [正在新增 [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
-   * [排除Forms](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
+  * [排除Forms](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
 
 **報告**
 
 * [使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md)建立自訂報告型別（如果您必須報告自訂銷售機會/連絡人/商機欄位）
-* [&#x200B; [!DNL Marketo Measure] 欄位的字彙表](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
+* [ [!DNL Marketo Measure] 欄位的字彙表](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 **疑難排解**
 
@@ -56,9 +60,9 @@ ht-degree: 3%
 以下影片可協助您快速上手：
 
 * [[!DNL Marketo Measure] 簡介訓練](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4？) （22分鐘）
-* [[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant) （30-45分鐘）
+* [[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）
 
-**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant) （~30分鐘）**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （~30分鐘）**
 
 此課程系列是設計為您瞭解[!DNL Marketo Measure]的基本概念的一般簡介。 它介紹歸因的概念、[!DNL Marketo Measure]作為工具的作用，以及[!DNL Marketo Measure]操作的一般架構。
 
@@ -70,7 +74,7 @@ ht-degree: 3%
 * 接觸點
 * 歸因模型
 
-**[[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant) （30-45分鐘）**
+**[[!DNL Marketo Measure] 在SFDC中報告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分鐘）**
 
 本課程系列旨在介紹已安裝到Salesforce中的[!DNL Marketo Measure]庫存報告。 這些報表是您使用[!DNL Marketo Measure]資料進行大部分報表的基礎。
 
@@ -83,7 +87,7 @@ ht-degree: 3%
 * 依ID列出的商機報表
 * 依據管道的機會報表
 
-**[頻道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant)**
+**[頻道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
 
 本課程涵蓋您自訂[!DNL Marketo Measure]的各種方式，包括線上和離線追蹤。 此課程較為進階，可能並非適用於所有使用者。
 
@@ -95,4 +99,4 @@ ht-degree: 3%
 * 行銷活動和行銷活動成員欄位
 * 離線管道管理
 
-以下是[所有初學者電子學習影片](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hant)。
+以下是[所有初學者電子學習影片](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)。

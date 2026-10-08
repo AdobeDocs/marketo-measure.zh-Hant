@@ -1,23 +1,33 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate實作指南 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate實作指南 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate實作指南'
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
-TQID: https://experienceleague.adobe.com/Dj1Dbz4wPQt99NlAEtcn7v3AQoQPdIV5HDExXmlbcZ0
+TQID: 'https://experienceleague.adobe.com/Dj1Dbz4wPQt99NlAEtcn7v3AQoQPdIV5HDExXmlbcZ0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Data management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1074
+source-wordcount: '1074'
 ht-degree: 3%
-
 ---
-
 # [!DNL Marketo Measure] Ultimate實作指南 {#marketo-measure-ultimate-implementation-guide}
 
 本文可作為Marketo Measure Ultimate的實作指南，提供清晰的步驟和深入分析，以確保成功的整合和使用。
@@ -45,7 +55,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 >[!NOTE]
 >
->請檢視[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#building-blocks-of-a-schema){target="_blank"}的建置區塊，以取得結構描述、類別和欄位群組的概觀。
+>請檢視[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的建置區塊，以取得結構描述、類別和欄位群組的概觀。
 
 **XDM結構描述=類別+結構描述欄位群組&#42;**
 
@@ -62,9 +72,9 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 我們建議使用自動產生公用程式來建立十個標準B2B結構描述。
 
-* 下載及設定公用程式[的步驟可在此找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=zh-Hant#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}。
+* 下載及設定公用程式[的步驟可在此找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}。
 
-對於具有&#x200B;_&#x200B;**CDP權利**&#x200B;_&#x200B;的使用者：請前往「來源」頁面建立結構描述。
+對於具有&#x200B;_**CDP權利**_&#x200B;的使用者：請前往「來源」頁面建立結構描述。
 
 * 從來源中，選取新增資料>使用範本
 
@@ -80,7 +90,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 >
 >新增資料集時，我們建議建立流程，而非使用現有流程。
 
-[資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=zh-Hant){target="_blank"}
+[資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **建立資料流的步驟：**
 
@@ -95,7 +105,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
    >* 如果將一種結構描述型別對應到另一種相同的結構描述型別，則會自動完成對應操作。
    >* 您也可以從系統中的另一個流程匯入對應。
    >* 您可以將一個Source欄位對應到多個目的地欄位，但無法做相反的事情。
-   >* 您可以建立計算欄位（[資料準備對應函式](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=zh-Hant){target="_blank"}）。
+   >* 您可以建立計算欄位（[資料準備對應函式](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}）。
 
    >[!CAUTION]
    >
@@ -123,7 +133,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-選項2： [下載及使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=zh-Hant){target="_blank"} （更快且更可靠）。
+選項2： [下載及使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （更快且更可靠）。
 
 ## 啟動Marketo Measure的資料集 {#activate-dataset-for-marketo-measure}
 

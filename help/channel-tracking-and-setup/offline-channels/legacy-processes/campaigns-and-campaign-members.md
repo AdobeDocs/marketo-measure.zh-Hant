@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874578
-description: 行銷活動和行銷活動成員 —  [!DNL Marketo Measure]
+description: 行銷活動和行銷活動成員 — [!DNL Marketo Measure]
 title: 行銷活動和行銷活動成員
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-TQID: https://experienceleague.adobe.com/bGHbuHCn0cI99duchXSFkqieTipt7FIcsHfvqqv21OU
+TQID: 'https://experienceleague.adobe.com/bGHbuHCn0cI99duchXSFkqieTipt7FIcsHfvqqv21OU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1183
+source-wordcount: '1183'
 ht-degree: 0%
-
 ---
-
 # 行銷活動和行銷活動成員 {#campaigns-and-campaign-members}
 
 [!DNL Salesforce]行銷活動旨在追蹤與行銷方案或活動相關聯的潛在客戶與聯絡人清單。 例如，這通常是網路研討會、註冊或兩次造訪。 行銷人員可選擇是否應在接觸點歷程中計入行銷活動。
@@ -83,7 +85,7 @@ ht-degree: 0%
 
 * Buyer Touchpoint日期
 * 第一個回應日期
-   * 當狀態變更為「已回應」時，會自動設定第一個回應日期，且為無法變更的標準[!DNL Salesforce]欄位
+  * 當狀態變更為「已回應」時，會自動設定第一個回應日期，且為無法變更的標準[!DNL Salesforce]欄位
 
 * 促銷活動會員建立日期
 
@@ -115,7 +117,7 @@ ht-degree: 0%
 
 ## 行銷活動成本 {#campaign-costs}
 
-在本文[&#128279;](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本。
+在本文](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}中瞭解所有促銷活動成本[。
 
 ## 行銷活動成員移除 {#campaign-member-removal}
 
@@ -129,6 +131,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程： Campaign物件欄位](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
 >
->[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/zh-hant/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教學課程：對應離線頻道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}

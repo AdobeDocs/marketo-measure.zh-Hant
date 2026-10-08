@@ -3,13 +3,17 @@ description: 探索Engagement儀表板，用於追蹤一段時間內使用者透
 title: 參與儀表板
 feature: Reporting
 exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
-
 ---
-
 
 # 參與儀表板 {#engagement-dashboard}
 
@@ -37,7 +41,7 @@ ht-degree: 0%
 ### KPI動態磚 {#kpi-tiles}
 
 * 接觸點：產生的原始接觸點總數。
-   * 購買者接觸點和購買者歸因接觸點是歸因結果，是透過為點數選取特定接觸點所建立。 並非所有接觸點都會被選為BT和BAT。
+  * 購買者接觸點和購買者歸因接觸點是歸因結果，是透過為點數選取特定接觸點所建立。 並非所有接觸點都會被選為BT和BAT。
 * 接觸的人：擁有任何接觸點的總人數。
 * 每人接觸點：每人接觸的平均接觸點數。
 

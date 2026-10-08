@@ -3,13 +3,17 @@ description: Marketo Measure使用者的活動歸因常見問題集指南
 title: 活動歸因常見問題集
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '747'
 ht-degree: 0%
-
 ---
-
 # 活動歸因常見問題集 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活動會匯入您的所有活動記錄並為其產生接觸點，以允許這些活動接收歸因評分。 最常見的使用案例是追蹤銷售團隊的活動，因為這些活動通常會建立傳送給潛在客戶的電話或電子郵件記錄。 其他可以追蹤的獨特專案包括內容互動，例如資產下載或視訊檢視。
@@ -24,7 +28,7 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 **如果我有具有相同遞回任務的Lead或Contact，我是否會看到所有這些專案的購買者接觸點？**
 
-是的。 您的同步活動與建立的接觸點之間有1:1關係。
+是的。 您的同步活動與建立的接觸點之間會維持1:1關係。
 
 **我如何知道哪些記錄會導致建立接觸點？**
 
@@ -68,6 +72,6 @@ Activities物件可作為Task和Event物件的傘狀物件或父件。 活動基
 
 **這些活動是根據哪個管道？**
 
-建立活動規則及其對應的[!DNL Marketo Measure]行銷活動名稱時，請使用線上管道定義，將這些行銷活動放置在正確的行銷管道下。[!DNL Marketo Measure] 不僅可使用媒體和來源，還可使用行銷活動來定義管道。
+建立活動規則及其對應的[!DNL Marketo Measure]行銷活動名稱時，請使用線上管道定義，將這些行銷活動放置在正確的行銷管道下。 [!DNL Marketo Measure]不僅可以使用媒體和來源，而且可以使用行銷活動來定義管道。
 
 在上述範例中，若要將「傳出呼叫{Assigned To}」行銷活動指派給BDR頻道，請在您的線上頻道CSV中為BDR頻道插入一列，其行銷活動定義為「傳出呼叫&#42;」 — 星號代表萬用字元值，因此所有以「傳出呼叫」開頭的行銷活動都將落在BDR頻道之下，而不必為每個行銷活動名稱建立個別的列。

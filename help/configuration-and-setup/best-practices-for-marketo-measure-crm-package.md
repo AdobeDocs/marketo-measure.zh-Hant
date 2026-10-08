@@ -1,15 +1,22 @@
 ---
-description: 適用於Marketo Measure使用者的 [!DNL Marketo Measure] CRM套件指引的最佳作法
-title: ' [!DNL Marketo Measure] CRM封裝的最佳作法'
+description: 適用於Marketo Measure使用者的[!DNL Marketo Measure] CRM套件指引的最佳實務
+title: '[!DNL Marketo Measure] CRM封裝的最佳實務'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 0%
-
 ---
-
 
 # [!DNL Marketo Measure] CRM封裝的最佳實務 {#best-practices-for-marketo-measure-crm-package}
 
@@ -32,9 +39,9 @@ ht-degree: 0%
 在實作及管理您的[!DNL Marketo Measure] [!DNL Salesforce]封裝時，請記住下列最佳實務。
 
 * 確認每個必要的團隊成員都可以存取[!DNL Marketo Measure]報告資料夾。 應該有1到3個[!DNL Marketo Measure]資料夾（下面將加以說明）。 若要開啟存取權，安裝套件的人員必須與適當的使用者或角色共用報表資料夾。
-   * **Buyer Touchpoint報告** — 可供所有人使用
-   * **[!DNL Marketo Measure]帳戶型行銷報告** — 報告僅會填入至第2層及以上的客戶
-   * **Buyer Touchpoint儀表板** — 可供所有人使用，不過此套件為選購專案。
+  * **Buyer Touchpoint報告** — 可供所有人使用
+  * **[!DNL Marketo Measure]帳戶型行銷報告** — 報告僅會填入至第2層及以上的客戶
+  * **Buyer Touchpoint儀表板** — 可供所有人使用，不過此套件為選購專案。
 
 ## 維護最佳實務 {#best-practice-for-maintenance}
 
@@ -54,5 +61,5 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 > [更新Buyer Touchpoint封裝](/help/configuration-and-setup/install-set-up.md)
 > [[!DNL Marketo Measure] 許可權集](/help/configuration-and-setup/marketo-measure-permission-sets.md)
-> [共用報告和儀表板資料夾](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
+> [共用報表和控制面板資料夾](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
 > [將Marketo Measure連線至Salesforce](/help/configuration-and-setup/connect-marketo-measure-to-salesforce.md)

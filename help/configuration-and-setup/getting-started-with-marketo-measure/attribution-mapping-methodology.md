@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874716
-description: 歸因對應方法 —  [!DNL Marketo Measure]
+description: 歸因對應方法 — [!DNL Marketo Measure]
 title: 歸因對應方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-TQID: https://experienceleague.adobe.com/VMGKAlL-YsHK20a6Wv4zbSejz4yXAH4gGMyhjkf9KyM
+TQID: 'https://experienceleague.adobe.com/VMGKAlL-YsHK20a6Wv4zbSejz4yXAH4gGMyhjkf9KyM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # 歸因對應方法 {#attribution-mapping-methodology}
 
 歸因對應方法是指在CRM中查詢特定物件（聯絡人、商機、帳戶）的程式，以便在關聯的商機中建立歸因接觸點。 換言之，這是[!DNL Marketo Measure]種方式，讓您根據目前CRM的流程，瞭解要納入歸因模型的接觸點。
