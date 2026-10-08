@@ -4,20 +4,25 @@ description: Data Warehouse結構描述 — Marketo Measure — 產品檔案
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-TQID: https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY
+TQID: 'https://experienceleague.adobe.com/s-38GwD0VQzRyhmmPfQGEOvKQMqvDd3ASMNK5lLayCY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 21775
+source-wordcount: '21775'
 ht-degree: 8%
-
 ---
-
 # Data Warehouse結構描述 {#data-warehouse-schema}
 
 Data Warehouse可讓您視需要追蹤更多內容、隨處報告歸因資料，並將資料插入其他資料集。
@@ -913,7 +918,7 @@ _按一下完整版本的影像_
         <p>來源系統中用於廣告帳戶的貨幣代碼。</p>
       </td>
       <td>
-        <p>美元</p>
+        <p>USD</p>
       </td>
     </tr>
     <tr>
@@ -3747,7 +3752,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>Source_ISO_CODE</td>
       <td>varchar</td>
       <td>來自來源系統的貨幣ISO代碼。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>START_DATE</td>
@@ -4236,7 +4241,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>ISO_CURRENCY_CODE</td>
       <td>varchar</td>
       <td>貨幣的ISO代碼，從來源系統匯入。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>Source_ID</td>
@@ -5124,7 +5129,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>ISO_CODE</td>
       <td>varchar</td>
       <td>貨幣的ISO代碼。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>IS_CORPORATE</td>
@@ -8842,7 +8847,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>CURRENCY_ISO_CODE</td>
       <td>varchar</td>
       <td>貨幣的ISO代碼，從來源系統匯入。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>

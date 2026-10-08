@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874771
-description: 使用資料載入器來更新 [!DNL Marketo Measure] 自訂金額欄位 —  [!DNL Marketo Measure]
+description: 使用資料載入器更新[!DNL Marketo Measure]自訂金額欄位 — [!DNL Marketo Measure]
 title: 使用資料載入器更新Marketo Measure自訂金額欄位
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 feature: Custom Revenue Amount
-TQID: https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0
+TQID: 'https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 191
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # 使用資料載入器更新[!DNL Marketo Measure]自訂金額欄位 {#using-data-loader-to-update-marketo-measure-custom-amount-field}
 
 [!DNL Marketo Measure]建議使用資料載入器，作為在[!DNL Marketo Measure]中使用自訂收入欄位時更新機會值的便利選項（我們使用立即可用的金額欄位）。 較偏好使用資料載入器而非使用[!DNL Marketo Measure]更新指令碼，因為指令碼要求使用者在[!DNL Marketo Measure]指令碼執行時停用所有Salesforce驗證規則。

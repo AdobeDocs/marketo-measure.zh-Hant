@@ -1,16 +1,23 @@
 ---
-description: 授予Marketo Measure使用者 [!DNL Salesforce] 對Marketo Measure支援指導的存取權
-title: 授予 [!DNL Salesforce] 對Marketo Measure支援的存取權
+description: 授予[!DNL Salesforce]對Marketo Measure使用者Marketo Measure支援指導的存取權
+title: 授予[!DNL Salesforce]對Marketo Measure支援的存取權
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 feature: Salesforce
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '169'
 ht-degree: 2%
-
 ---
-
 # 授予[!DNL Salesforce]對Marketo Measure支援的存取權 {#granting-salesforce-access-to-marketo-measure-support}
 
 在某些情況下，[!DNL Marketo Measure]支援人員可能會要求存取您的[!DNL Salesforce]環境，以協助進行診斷疑難排解或在實作期間進行Salesforce設定。

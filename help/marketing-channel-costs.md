@@ -3,14 +3,20 @@ description: Marketo Measure使用者的行銷管道成本指南
 title: 行銷管道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
-
 ---
-
 # 行銷管道成本 {#marketing-channel-costs}
 
 使用[!DNL Marketo Measure]的最基本優點之一，就是能夠直接將行銷工作與對收入的影響連結，並擁有所需的詳細程度。 您可以在接觸點層級看到投資報酬率。 若要利用此權益，管道成本必須上傳至[!DNL Marketo Measure]應用程式。 ROI報告會自動建立，並可在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}的&#x200B;**行銷ROI儀表板**&#x200B;中使用。
@@ -67,7 +73,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]隨附13個可使用或展開的預設管道。 此外，最多可建立40個線上和離線管道，以因應您獨特的行銷結構。 在此基礎上可建立總計200個子管道，以支援這些線上和離線管道。
 
-[!DNL Marketo Measure]會自動從與API整合的平台(例如Bing Ads和Google AdWords)下載行銷管道成本。 需要手動上傳未與[!DNL Marketo Measure]整合之平台的成本。 行銷管道應於成本資料上傳前完成設定。
+[!DNL Marketo Measure]會自動從與API整合的平台（例如Bing Ads和Google AdWords）下載行銷管道成本。 需要手動上傳未與[!DNL Marketo Measure]整合之平台的成本。 行銷管道應於成本資料上傳前完成設定。
 
 ## 上傳行銷成本 {#uploading-marketing-costs}
 
@@ -87,7 +93,7 @@ ht-degree: 0%
 
 **步驟3：開啟CSV檔案並進行變更**
 
-您可以匯入檔案，並使用Google Sheets、Apple Numbers、Microsoft Excel或您選擇的軟體來開啟檔案。[!DNL Marketo Measure] 建議使用Google工作表。
+您可以匯入檔案，並使用Google Sheets、Apple Numbers、Microsoft Excel或您選擇的軟體來開啟檔案。 [!DNL Marketo Measure]建議使用Google工作表。
 
 匯入工作表之後，進行所需的變更，例如將成本新增至管道和子管道，或更新現有資訊。
 

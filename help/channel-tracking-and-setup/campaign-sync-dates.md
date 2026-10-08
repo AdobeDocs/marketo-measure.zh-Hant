@@ -3,13 +3,17 @@ description: Marketo Measure使用者的Campaign同步日期指引
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 1%
-
 ---
-
 # Campaign同步日期 {#campaign-sync-dates}
 
 瞭解Campaign同步日期功能的功能，並提供此功能的一些使用案例。
@@ -25,7 +29,7 @@ ht-degree: 1%
 * 接觸點開始日期
 * 接觸點結束日期
 
-在特定行銷活動上啟用購買者接觸點後，Campaign同步日期將允許您在個別行銷活動上設定接觸點日期引數。 因此，如果您要新增接觸點結束日期2017年3月1日，則[!DNL Marketo Measure]將只會在該日期之前新增至行銷活動的行銷活動成員上建立接觸點。[!DNL Marketo Measure] 將不會針對2017年3月1日之後新增的行銷活動成員建立接觸點。
+在特定行銷活動上啟用購買者接觸點後，Campaign同步日期將允許您在個別行銷活動上設定接觸點日期引數。 因此，如果您要新增接觸點結束日期2017年3月1日，則[!DNL Marketo Measure]將只會在該日期之前新增至行銷活動的行銷活動成員上建立接觸點。 [!DNL Marketo Measure]不會為2017年3月1日之後新增的行銷活動成員建立接觸點。
 
 ![在特定行銷活動上啟用購買者接觸點後，行銷活動同步日期](assets/legacy-processes-3.gif)
 
@@ -35,7 +39,7 @@ ht-degree: 1%
 
 **回填接觸點**
 
-行銷團隊有時可能會遺漏將utm引數新增到特定行銷工作。 行銷活動同步日期可讓您(如果您使用SFDC行銷活動進行線上工作)回填一些遺漏的資料。 假設您正在執行從5月1日開始的電子郵件促銷活動，但您的團隊直到5月15日才在該電子郵件促銷活動上新增utm引數。 如果您透過SFDC促銷活動追蹤電子郵件轉換，您可以將接觸點結束日期設為5月15日（該促銷活動）並啟用促銷活動「已回應」成員的接觸點。 此動作會指示[!DNL Marketo Measure]為截至5月15日的所有這些回應建立接觸點。
+行銷團隊有時可能會遺漏將utm引數新增到特定行銷工作。 行銷活動同步日期可讓您（如果您使用SFDC行銷活動進行線上工作）回填一些遺漏的資料。 假設您正在執行從5月1日開始的電子郵件促銷活動，但您的團隊直到5月15日才在該電子郵件促銷活動上新增utm引數。 如果您透過SFDC促銷活動追蹤電子郵件轉換，您可以將接觸點結束日期設為5月15日（該促銷活動）並啟用促銷活動「已回應」成員的接觸點。 此動作會指示[!DNL Marketo Measure]為截至5月15日的所有這些回應建立接觸點。
 
 **回溯性行銷活動會籍接觸點**
 

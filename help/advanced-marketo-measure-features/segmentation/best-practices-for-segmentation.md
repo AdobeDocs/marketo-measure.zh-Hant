@@ -1,20 +1,23 @@
 ---
-description: 細分的最佳實務 —  [!DNL Marketo Measure]
+description: 細分的最佳實務 — [!DNL Marketo Measure]
 title: 細分的最佳實務
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-TQID: https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY
+TQID: 'https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d3432b7d-03be-560e-8abb-8681f1afaeb4
+    internal-label: Segmentation
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: '449'
 ht-degree: 0%
-
 ---
-
 # 細分的最佳實務 {#best-practices-for-segmentation}
 
 ## 概觀 {#overview}
@@ -35,11 +38,11 @@ ht-degree: 0%
 * 將您的區段名稱與組織的名稱對齊，即類別=篩選器名稱，區段=篩選器值
 * 請勿在規則中使用公式欄位
 * 儘可能在銷售機會/聯絡人和機會上建立細分，以便您可以在整個funnel中使用
-   * 如果您是Marketo Measure Ultimate客戶，並將您的預設儀表板物件設定為連絡人，請勿使用下列兩個專屬於潛在客戶的欄位（[在這裡瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
-      * b2b.personStatus
-      * b2b.isConverted
-   * 並非每個區段類別都會在整個funnel中對齊
-      * 例如，「機會型別」的區段類別不會與銷售機會相關，但與「地區」相關的區段可能是可在整個funnel中定義的類別
+  * 如果您是Marketo Measure Ultimate客戶，並將您的預設儀表板物件設定為連絡人，請勿使用下列兩個專屬於潛在客戶的欄位（[在這裡瞭解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
+    * b2b.personStatus
+    * b2b.isConverted
+  * 並非每個區段類別都會在整個funnel中對齊
+    * 例如，「機會型別」的區段類別不會與銷售機會相關，但與「地區」相關的區段可能是可在整個funnel中定義的類別
 * 請思考您目前想要切割資料的方式，不論資料位於CRM或BI工具中，請考慮將此區段建置為[!DNL Marketo Measure]中的區段，以便您在Discover中擁有相同的報表
 
 ## 維護最佳實務 {#best-practice-for-maintenance}

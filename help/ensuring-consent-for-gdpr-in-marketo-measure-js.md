@@ -3,13 +3,17 @@ description: 顯示如何設定bizible.js，以便在設定Cookie或傳送資料
 title: 在Marketo Measure Js中確保GDPR的同意
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
-
 ---
-
 # 在Marketo Measure Js中確保GDPR的同意 {#ensuring-consent-for-gdpr-in-marketo-measure-js}
 
 一般資料保護規範(GDPR)是一項歐盟法規，於2018年5月25日生效。

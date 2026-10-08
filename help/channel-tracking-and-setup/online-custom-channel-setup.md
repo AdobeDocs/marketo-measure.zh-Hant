@@ -3,14 +3,18 @@ description: Marketo Measure使用者的線上自訂頻道設定指南
 title: 線上自訂頻道設定
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
-
 ---
-
 # 線上自訂頻道設定 {#online-custom-channel-setup}
 
 若要獲得準確的報告，行銷管道必須設定以反映您組織的UTM策略。 本指南會帶您瞭解設定自訂管道規則的最佳方式。
@@ -26,7 +30,7 @@ ht-degree: 0%
 * 每個資料收集或貯體都需要有自己的規則（試算表中的列）來指定資料的整理方式。 儘可能具體一些。
 * [!DNL Marketo Measure]邏輯會從試算表的上方列開始，依遞減順序排列資料的優先順序，並向下進行。 它會依列讀取每個儲存貯體或儲存格，尋找第一個符合。 然後會根據這些值區內的值排序資料。 有關詳情，請參閱下文。
 * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
-* 上傳檔案後，您七天內無法變更任何規則。[!DNL Marketo Measure] 利用此時間處理和更新接觸點。
+* 上傳檔案後，您七天內無法變更任何規則。 [!DNL Marketo Measure]利用這個時間處理和更新接觸點。
 
 ## [!DNL Marketo Measure]邏輯和優先順序 {#marketo-measure-logic-and-priorities}
 
@@ -46,7 +50,7 @@ ht-degree: 0%
 * **登陸頁面：**&#x200B;在此新增登陸頁面
 * **反向連結網站：**&#x200B;參照您頁面流量或內建[!DNL Marketo Measure]邏輯的網站URL （以方括弧表示）
 
-第八欄會記下您無法從試算表刪除的規則為「請勿移除」。 試算表頂端有預設的管道規則，即使您未使用這些管道，[!DNL Marketo Measure]也建議不要變更或移除這些規則。[!DNL Marketo Measure] 與這些平台深度整合，預設情況下會包含這些平台。
+第八欄會記下您無法從試算表刪除的規則為「請勿移除」。 試算表頂端有預設的管道規則，即使您未使用這些管道，[!DNL Marketo Measure]也建議不要變更或移除這些規則。 [!DNL Marketo Measure]與這些平台有深入的整合，所以預設會包含這些平台。
 
 這些列代表規則和[!DNL Marketo Measure]排列資料優先順序的順序。 第一列的優先順序高於第二列，第二列的優先順序高於第三列，依此類推。 在決定要將接觸點貯入哪個行銷管道和子管道時，[!DNL Marketo Measure]會由上到下、由左到右閱讀，直到找到符合接觸點條件的列為止。 （如果接觸點有`utm_source=Facebook`，由於熒幕擷取畫面中的規則15，該接觸點會分組到Social.Facebook頻道）。
 

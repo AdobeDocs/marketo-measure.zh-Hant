@@ -3,13 +3,17 @@ description: 列出Salesforce IP範圍以允許清單，以便在執行工作階
 title: 安全性工作階段限制 — 允許清單的IP位址
 exl-id: aaf5190f-893c-4872-8d03-93f516e70a59
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 0%
-
+source-wordcount: '98'
+ht-degree: 6%
 ---
-
 # 安全性工作階段限制：允許清單的IP位址 {#security-session-restrictions-ip-addresses-to-allowlist}
 
 如果已經有[工作階段安全性設定](https://help.salesforce.com/articleView?id=admin_sessions.htm&type=0){target="_blank"}防止特定IP位址推送/提取資料到您的[!DNL Salesforce]執行個體，我們將需要下列IP範圍加入允許清單，以允許[!DNL Marketo Measure]推送資料到[!DNL Salesforce]：

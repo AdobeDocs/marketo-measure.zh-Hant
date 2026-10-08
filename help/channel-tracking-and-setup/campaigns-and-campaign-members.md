@@ -3,14 +3,18 @@ description: Marketo Measure使用者的行銷活動和行銷活動成員指引
 title: 行銷活動和行銷活動成員
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 0%
-
 ---
-
 # 行銷活動和行銷活動成員 {#campaigns-and-campaign-members}
 
 [!DNL Salesforce]行銷活動旨在追蹤與行銷方案或活動相關聯的潛在客戶與聯絡人清單。 例如，這通常是網路研討會、註冊或兩次造訪。 行銷人員可選擇是否應在接觸點歷程中計入行銷活動。
@@ -80,7 +84,7 @@ ht-degree: 0%
 
 * Buyer Touchpoint日期
 * 第一個回應日期
-   * 當狀態變更為「已回應」時，會自動設定第一個回應日期，且為無法變更的標準[!DNL Salesforce]欄位
+  * 當狀態變更為「已回應」時，會自動設定第一個回應日期，且為無法變更的標準[!DNL Salesforce]欄位
 
 * 促銷活動會員建立日期
 
@@ -118,7 +122,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]在Salesforce中追蹤任何已刪除記錄（無論已刪除潛在客戶、帳戶或商機）的方式，就是在API中檢視這些記錄並追蹤專案是否標示為「IsDeleted」。 不幸的是，對於行銷活動成員，Salesforce推出了從行銷活動中刪除這些行銷活動成員的不同方式，這些成員實際上會標籤為「已移除」而非「已刪除」，因此問題為接觸點仍然存在於Salesforce中，並且與已刪除的行銷活動成員相關。
 
-為了解決此問題，[!DNL Marketo Measure]已建立[!DNL Marketo Measure]歷程記錄物件及觸發器，以便在移除行銷活動成員時進行追蹤，然後刪除對應的接觸點。**您需要[!DNL Marketo Measure] Marketing Analytics套件V6.15或更新版本**&#x200B;才能使用此功能。
+為了解決此問題，[!DNL Marketo Measure]已建立[!DNL Marketo Measure]歷程記錄物件及觸發器，以便在移除行銷活動成員時進行追蹤，然後刪除對應的接觸點。 **您需要[!DNL Marketo Measure] Marketing Analytics套件V6.15或更新版本**&#x200B;才能使用此功能。
 
 >[!CAUTION]
 >

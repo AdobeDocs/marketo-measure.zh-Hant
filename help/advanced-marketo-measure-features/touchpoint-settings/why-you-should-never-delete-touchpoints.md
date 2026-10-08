@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874560
-description: 為什麼您絕不應該刪除接觸點 —  [!DNL Marketo Measure]
+description: 為什麼您絕不應該刪除接觸點 — [!DNL Marketo Measure]
 title: 為何您絕不應該刪除接觸點
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/HeJr54wYsCH2Ic4dZ-Ds24c5-kC-Joq0uIZhXL5zE-o
+TQID: 'https://experienceleague.adobe.com/HeJr54wYsCH2Ic4dZ-Ds24c5-kC-Joq0uIZhXL5zE-o'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 228
+source-wordcount: '228'
 ht-degree: 3%
-
 ---
-
 # 為何您絕不應該刪除接觸點 {#why-you-should-never-delete-touchpoints}
 
 如果您發現Opportunity上的某個接觸點未正確指派歸因評分，請洽詢您的客戶經理以決定後續步驟。 在這些情況下，我們建議使用購買者的接觸點隱藏功能，從SFDC和ROI控制面板移除接觸點。 您的客戶經理可協助建立這些規則。 請勿自行手動刪除這些接觸點。

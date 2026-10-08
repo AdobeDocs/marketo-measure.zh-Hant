@@ -1,23 +1,27 @@
 ---
-description: '[!DNL Marketo Measure]與Adobe Analytics的整合 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure]與 [!DNL Adobe Analytics]的整合'
+description: '[!DNL Marketo Measure]與Adobe Analytics的整合 — [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]與[!DNL Adobe Analytics]的整合'
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
-TQID: https://experienceleague.adobe.com/6IzJMn8-MWNL1vIX5-O1f7CgCmBtSAituyE2rfYLKPQ
+TQID: 'https://experienceleague.adobe.com/6IzJMn8-MWNL1vIX5-O1f7CgCmBtSAituyE2rfYLKPQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 960
+source-wordcount: '957'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]與Adobe Analytics的整合 {#marketo-measure-integrations-with-adobe-analytics}
 
 B2B客戶屬性整合可讓[!DNL Marketo Measure]和Adobe Analytics的共同使用者透過其與CRM （[!DNL Microsoft Dynamics]和[!DNL Salesforce]）的同步功能，利用衍生自[!DNL Marketo Measure]歸因引擎的寶貴中繼資料，擴充其[!DNL Adobe Analytics]使用者設定檔。 所有使用[!DNL Adobe Analytics]和[!DNL Marketo Measure]的客戶都可以免費使用。
@@ -28,7 +32,7 @@ B2B客戶屬性整合可讓[!DNL Marketo Measure]和Adobe Analytics的共同使�
 
 ## 設定整合 {#configuring-the-integration}
 
-1. 在您的Experience Cloud主控台中建立新的客戶屬性資料Source 。 您可在此找到[的詳細指示](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hant)。
+1. 在您的Experience Cloud Console中建立新的客戶屬性資料Source 。 您可在此找到[的詳細指示](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hant)。
 
    記下下列資訊（在後續步驟中需要）：
 
@@ -46,7 +50,7 @@ B2B客戶屬性整合可讓[!DNL Marketo Measure]和Adobe Analytics的共同使�
 
    如果您選擇從CRM帳戶物件同步屬性，強烈建議您為這些屬性選擇新的顯示名稱，因為[!DNL Marketo Measure]只會填入這些屬性的API層級名稱，這些名稱通常對報表不友好。
 
-1. 最後一個步驟是設定您要在其中使用屬性之Experience Cloud應用程式的屬性訂閱。 您可以設定[!DNL Adobe Analytics]或[!DNL Adobe Target]的訂閱。  如需如何執行此動作的詳細資訊[，請前往這裡](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html?lang=zh-Hant)。
+1. 最後一個步驟是設定您要在其中使用屬性的Experience Cloud應用程式的屬性訂閱。 您可以設定[!DNL Adobe Analytics]或[!DNL Adobe Target]的訂閱。  如需如何執行此動作的詳細資訊[，請前往這裡](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html?lang=zh-Hant)。
 
 ## 屬性說明 {#attribute-descriptions}
 

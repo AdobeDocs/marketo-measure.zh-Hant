@@ -3,13 +3,17 @@ description: Marketo Measure使用者的A/B測試設定與報告指南
 title: A/B測試設定與報告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 348f752d-f464-5239-ab5e-c1faaeafb983
+    internal-label: A/B Testing
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%
-
 ---
-
 # A/B測試設定與報告 {#a-b-testing-set-up-and-reporting}
 
 [!DNL Marketo Measure] A/B測試整合可讓您以最佳化方式追蹤[和VWO網站實驗對收入的影響。 &#x200B;](https://www.optimizely.com/){target="_blank"}本文提供如何將[!DNL Marketo Measure]個A/B測試區段新增至銷售機會、[!UICONTROL Contact]、大小寫和[!UICONTROL Opportunity]頁面配置的指示。 也涵蓋一般報告實務和執行[!DNL Marketo Measure] A/B報告型別的建議。

@@ -1,20 +1,23 @@
 ---
-description: Passport Dashboard - [!DNL Marketo Measure]  — 產品
+description: Passport Dashboard - [!DNL Marketo Measure] — 產品
 title: Passport儀表板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-TQID: https://experienceleague.adobe.com/SlIfN-Y5sttJQUeLgA-JA-H-lbRJMS8BrgBYdnhmgZk
+TQID: 'https://experienceleague.adobe.com/SlIfN-Y5sttJQUeLgA-JA-H-lbRJMS8BrgBYdnhmgZk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Passport儀表板 {#passport-dashboard}
 
 Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時，動態檢視潛在客戶、聯絡人和機會。 透過篩選特定日期，使用者也可以取得當天的記錄快照。
@@ -23,7 +26,7 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 
 * 每個非終端機階段中，所選日期上有多少銷售機會、聯絡人或銷售機會？
 * 在指定的期間內，有多少不同的潛在客戶或聯絡人會進行到每個暫時的階段？
-   * _範例_：如果銷售機會A在2023年1月1日處於階段1，並於2023年3月31日進入階段5，則2023年第1季的Passport分析會將銷售機會A計入階段1到5。
+  * _範例_：如果銷售機會A在2023年1月1日處於階段1，並於2023年3月31日進入階段5，則2023年第1季的Passport分析會將銷售機會A計入階段1到5。
 * 在指定的時間範圍內，每個暫時階段傳遞了多少個不重複的機會？
 
 ## 控制面板元件 {#dashboard-components}
@@ -31,7 +34,7 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 ### 階段中的機會（依階段名稱） {#opportunities-in-stage-by-stage-name}
 
 * 每個階段會顯示具有接觸點，且在指定時間範圍內傳遞的機會數量。
-   * 如果機會在該範圍內的多個階段中進行，則會將其計入每個階段中。
+  * 如果機會在該範圍內的多個階段中進行，則會將其計入每個階段中。
 * 排除終端機階段，例如「已關閉的贏家」和「已關閉的輸家」。
 * 開始和結束日期皆包含。
 
@@ -40,8 +43,8 @@ Passport儀表板可讓行銷人員在指定期間內透過不同階段轉換時
 ### 依據階段名稱的階段中的潛在客戶或聯絡人 {#leads-or-contacts-in-stage-by-stage-name}
 
 * 每個階段會顯示具有接觸點，且在指定時間範圍內經過的Lead或Contact數量。
-   * 是否顯示「銷售機會」或「連絡人」取決於在「設定>歸因設定>預設儀表板物件」中設定的偏好設定。
-   * 如果Lead或Contact在該範圍內的多個階段中進行，則會將其計入每個階段。
+  * 是否顯示「銷售機會」或「連絡人」取決於在「設定>歸因設定>預設儀表板物件」中設定的偏好設定。
+  * 如果Lead或Contact在該範圍內的多個階段中進行，則會將其計入每個階段。
 * 排除終端機階段，例如「已關閉的贏家」和「已關閉的輸家」。
 * 開始和結束日期皆包含。
 

@@ -1,15 +1,19 @@
 ---
-description: 正在為Marketo Measure使用者新增 [!DNL Marketo Measure] 指令碼至 [!DNL Uberflip] Forms指南
-title: 正在新增 [!DNL Marketo Measure] 指令碼至 [!DNL Uberflip] Forms
+description: 為Marketo Measure使用者新增[!DNL Marketo Measure]指令碼至[!DNL Uberflip]個Forms指引
+title: 正在新增[!DNL Marketo Measure]指令碼至[!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '209'
 ht-degree: 0%
-
 ---
-
 # 正在新增[!DNL Marketo Measure]指令碼至[!DNL Uberflip] Forms {#adding-marketo-measure-script-to-uberflip-forms}
 
 如果您目前使用[!DNL Uberflip]管理您的內容，請務必採取這些必要步驟，以確定[!DNL Marketo Measure]正在追蹤這些表單提交。 您在[!DNL Uberflip]的成功管理員也應該能夠協助您完成此工作。
@@ -47,7 +51,7 @@ ht-degree: 0%
 
    `}`
 
-1. 提交表單CTA時，請確定您的[!DNL Marketo Measure]函式已執行以下命令。 這是在[!UICONTROL Custom Code>JS]區段內完成。 (注意：Hubs.onCtaFormSubmitSuccess JavaScript事件勾點中可能有其他程式碼，請確定您也包含此函式呼叫)。
+1. 提交表單CTA時，請確定您的[!DNL Marketo Measure]函式已執行以下命令。 這是在[!UICONTROL Custom Code>JS]區段內完成。 （注意：Hubs.onCtaFormSubmitSuccess JavaScript事件勾點中可能有其他程式碼，請確定您也包含此函式呼叫）。
 
    `Hubs.onCtaFormSubmitSuccess = function (ctaId, ctaData, ctaName) {`
    `bizibleFormCode(ctaId, ctaData, ctaName);`\

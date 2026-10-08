@@ -3,13 +3,17 @@ description: Marketo Measure使用者的自訂Campaign同步指引
 title: 自訂Campaign同步
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 1%
-
 ---
-
 # 自訂Campaign同步 {#custom-campaign-sync}
 
 現在，如果已安裝[!DNL Marketo Measure]套件，您可以指出要納入哪些行銷活動作為合格的接觸點。 由於先前已有多個障礙存在，因此必須加以克服。 在CRM中安裝[!DNL Marketo Measure]套件之後，您的安全性團隊可能需要一些時間才能核准。 此外，在Campaign物件上使用單一挑選清單時缺乏彈性。 有了這項新功能，就不需要安裝套件即可開始使用Campaign和Campaign成員記錄。 可以建立規則，以明確定義可以建立的記錄，以明確定義哪些記錄是符合資格的。

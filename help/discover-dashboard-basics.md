@@ -3,14 +3,18 @@ description: 介紹Discover儀表板介面、篩選器、鑽研動作、交叉�
 title: 探索儀表板基本知識
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-hidefromtoc: true
-source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
-
+source-wordcount: '576'
+ht-degree: 3%
 ---
-
 # 探索儀表板基本知識 {#discover-dashboard-basics}
 
 本文將引導您瞭解重新設計介面的基礎功能，確保您可以輕鬆存取和解讀資料。 深入瞭解篩選器窗格的動態，並找出增強型報告功能的複雜之處，例如鑽床功能、交叉篩選和工具提示。
@@ -21,10 +25,10 @@ ht-degree: 0%
 
 | 名稱 | 說明 |
 | --- | --- |
-| 篩選器切換按鈕 | 將篩選窗格切換為開啟或關閉。![\| --- \| --- \|](assets/discover-basics-9.png) |
-| 搜尋列 | 使用篩選器窗格頂端的搜尋功能來搜尋特定篩選器。 每個篩選器都有自己的搜尋列。![\| --- \| --- \|](assets/discover-basics-10.png) |
-| 清除篩選器按鈕 | 若要清除濾鏡，請按一下每個濾鏡右上角的橡皮擦圖示。![\| --- \| --- \|](assets/discover-basics-11.png) |
-| 套用按鈕 | 按一下以確認並在控制面板上實作您的篩選器變更。![\| --- \| --- \|](assets/discover-3a-1.png) |
+| 篩選器切換按鈕 | 將篩選窗格切換為開啟或關閉。 ![\| --- \| --- \|](assets/discover-basics-9.png) |
+| 搜尋列 | 使用篩選器窗格頂端的搜尋功能來搜尋特定篩選器。 每個篩選器都有自己的搜尋列。 ![\| --- \| --- \|](assets/discover-basics-10.png) |
+| 清除篩選器按鈕 | 若要清除濾鏡，請按一下每個濾鏡右上角的橡皮擦圖示。 ![\| --- \| --- \|](assets/discover-basics-11.png) |
+| 套用按鈕 | 按一下以確認並在控制面板上實作您的篩選器變更。 ![\| --- \| --- \|](assets/discover-3a-1.png) |
 
 ## 視覺效果上的篩選器 {#filters-on-visual}
 

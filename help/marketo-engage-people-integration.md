@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Engage]人員整合 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Engage]人員整合 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]人員整合'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # [!DNL Marketo Engage]人員整合 {#marketo-engage-people-integration}
 
 Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，並開始將其追蹤的工作階段連結至個人，並將接觸點對應至其參與。 在過去，[!DNL Marketo Measure]只能將接觸點對應至CRM中的人員，因此這有助於行銷人員更早衡量其行銷成效，而非等待階段或觸發器將其同步至CRM。
@@ -19,7 +23,7 @@ Marketo人員整合可讓[!DNL Marketo Measure]開始從Marketo下載人員，�
 * 生產Marketo執行個體
 * 生產[!DNL Salesforce]或[!DNL Microsoft Dynamics]執行個體
 * 任何付費的[!DNL Marketo Measure]訂閱
-* SOLR已啟用(請聯絡[Marketo支援](https://nation.marketo.com/t5/Support/ct-p/Support)以啟用此功能)
+* SOLR已啟用（請聯絡[Marketo支援](https://nation.marketo.com/t5/Support/ct-p/Support)以啟用此功能）
 
 ## 運作方式 {#how-it-works}
 

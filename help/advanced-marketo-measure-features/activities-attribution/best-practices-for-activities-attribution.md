@@ -1,18 +1,20 @@
 ---
-description: 活動歸因的最佳實務 —  [!DNL Marketo Measure]
+description: 活動歸因的最佳實務 — [!DNL Marketo Measure]
 title: 活動歸因的最佳實務
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-TQID: https://experienceleague.adobe.com/hCGaaarnFmGXgMvu9N2l5JZIXJQ0oAsY214s1MFlS84
+TQID: 'https://experienceleague.adobe.com/hCGaaarnFmGXgMvu9N2l5JZIXJQ0oAsY214s1MFlS84'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # 活動歸因的最佳實務 {#best-practices-for-activities-attribution}
 
 ## 概觀 {#overview}
@@ -28,8 +30,8 @@ ht-degree: 0%
 無論是第一次定義活動規則，還是檢閱先前已設定的活動規則，請記住以下最佳實務。
 
 * 開始簡單
-   * 識別您想要整合至[!DNL Marketo Measure]資料中的幾項關鍵活動型別，然後在您瞭解這些接觸點的歸因方式後新增更多型別
-   * 如前所述，此功能的主要使用案例是建立追蹤銷售開發團隊功效的接觸點，尤其是「傳出電話」和「傳出電子郵件」
+  * 識別您想要整合至[!DNL Marketo Measure]資料中的幾項關鍵活動型別，然後在您瞭解這些接觸點的歸因方式後新增更多型別
+  * 如前所述，此功能的主要使用案例是建立追蹤銷售開發團隊功效的接觸點，尤其是「傳出電話」和「傳出電子郵件」
 
 >[!NOTE]
 >
@@ -37,11 +39,11 @@ ht-degree: 0%
 
 * 請勿使用公式欄位來定義規則
 * 建立明確且精確的規則
-   * 建立活動接觸點的臨界值應與表單填寫或行銷活動成員資格相同（或類似）：回覆傳出電子郵件或完成的電話交談
+  * 建立活動接觸點的臨界值應與表單填寫或行銷活動成員資格相同（或類似）：回覆傳出電子郵件或完成的電話交談
 * 儲存與處理前，一律驗證[!DNL Salesforce]中的新規則
-   * 在「任務與事件」報表型別中複製活動規則，可讓您清楚瞭解該規則中有多少接觸點
+  * 在「任務與事件」報表型別中複製活動規則，可讓您清楚瞭解該規則中有多少接觸點
 * 與您的Sales Opp團隊合作
-   * 引進與您的活動記錄或銷售啟用工具最接近的團隊，將確保您使用正確的欄位來定義規則
+  * 引進與您的活動記錄或銷售啟用工具最接近的團隊，將確保您使用正確的欄位來定義規則
 
 ## 維護最佳實務 {#best-practice-for-maintenance}
 

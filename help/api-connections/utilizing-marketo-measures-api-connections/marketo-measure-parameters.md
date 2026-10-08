@@ -1,23 +1,28 @@
 ---
 unique-page-id: 18874608
-description: '[!DNL Marketo Measure]引數 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]引數 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]引數'
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
-TQID: https://experienceleague.adobe.com/IurdaUgr2R1vxfOP4bcXp8TSUj4ymkA-R9kZ9put4Ug
+TQID: 'https://experienceleague.adobe.com/IurdaUgr2R1vxfOP4bcXp8TSUj4ymkA-R9kZ9put4Ug'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
 subfeature_v2:
   - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Facebook API
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 243
+source-wordcount: '243'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]引數 {#marketo-measure-parameters}
 
 ## [!DNL Marketo Measure]引數說明 {#marketo-measure-parameters-explained}
@@ -35,28 +40,28 @@ ht-degree: 0%
 ## AdWords引數 {#adwords-parameters}
 
 * `_bk={keyword}`
-   * 代表人員在搜尋引擎中使用的關鍵字。
-   * 它與UTM字詞引數類似。
+  * 代表人員在搜尋引擎中使用的關鍵字。
+  * 它與UTM字詞引數類似。
 
 * `_bt={creative}`
-   * 代表創作ID或名稱。
-   * 它類似於UTM內容引數。
+  * 代表創作ID或名稱。
+  * 它類似於UTM內容引數。
 
 * `_bm={matchtype}`
-   * 表示關鍵字的符合程度。
-   * 關鍵字比對型別有助於控制哪些搜尋會觸發您的廣告。 例如，您可以使用廣泛比對來向廣泛的對象顯示您的廣告，或使用完全比對來關注特定的客戶群組。
-   * 三種相符型別為：廣泛、模糊和精確。
+  * 表示關鍵字的符合程度。
+  * 關鍵字比對型別有助於控制哪些搜尋會觸發您的廣告。 例如，您可以使用廣泛比對來向廣泛的對象顯示您的廣告，或使用完全比對來關注特定的客戶群組。
+  * 三種相符型別為：廣泛、模糊和精確。
 
 >[!TIP]
 >
 >如需相符型別的詳細資訊，[這裡有相關的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}。
 
 * `_bn={network}`
-   * 代表廣告網路型別 — [顯示或搜尋](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}。
-   * 這類似於UTM Source引數。
+  * 代表廣告網路型別 — [顯示或搜尋](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}。
+  * 這類似於UTM Source引數。
 
 * `_bg={adgroupID}`
-   * 代表廣告所屬廣告群組的ID
+  * 代表廣告所屬廣告群組的ID
 
 >[!NOTE]
 >
@@ -72,4 +77,4 @@ ht-degree: 0%
 ## Facebook引數 {#facebook-parameters}
 
 * `_bf ={creative}`
-   * 這代表創作ID或名稱
+  * 這代表創作ID或名稱

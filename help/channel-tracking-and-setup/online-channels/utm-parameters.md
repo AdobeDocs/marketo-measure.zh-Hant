@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874606
-description: UTM引數 —  [!DNL Marketo Measure]
+description: UTM引數 — [!DNL Marketo Measure]
 title: UTM引數
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-TQID: https://experienceleague.adobe.com/BjDwxuOaOhug3ynGSyyLLNzSYrzn4v49z-6TGJao9U8
+TQID: 'https://experienceleague.adobe.com/BjDwxuOaOhug3ynGSyyLLNzSYrzn4v49z-6TGJao9U8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 939
+source-wordcount: '939'
 ht-degree: 0%
-
 ---
-
 # UTM引數 {#utm-parameters}
 
 標籤URL是擷取數位行銷工作相關資料的簡單有效方式。 是將引數新增至收集及記錄資料之URL結尾的程式。 最常使用的引數是Google支援的Urchin追蹤模組(UTM)。 有五個主要的UTM引數可供使用：Medium、Source、Campaign、Content和Term。 下一節將更詳細地討論這些內容。
@@ -48,7 +50,7 @@ UTM引數可以手動新增至URL，或透過特定平台（例如AdWords ）的
 * Source會識別作為流量來源的子管道。
 * 此報告回答以下問題：「這個人來自何處？」
 * 在社群媒體範例中，流量的來源是使用中的社群媒體平台。
-   * 在此範例中，[!DNL Facebook]是Source值。 其他範例為Twitter和Instagram。 另一方面，如果UTM Medium是[!DNL Paid Search]，則UTM Source可以是AdWords或BingAds。
+  * 在此範例中，[!DNL Facebook]是Source值。 其他範例為Twitter和Instagram。 另一方面，如果UTM Medium是[!DNL Paid Search]，則UTM Source可以是AdWords或BingAds。
 
 * 此引數對應至SFDC中的[!DNL Marketo Measure]「接觸點Source」欄位。
 * _[!DNL Marketo Measure]最佳實務&#x200B;:_此引數會追蹤流量的來源，因此不適於用來指出廣告型別，例如重新鎖定目標、贊助等。 它最好用於追蹤較高層級的子管道。 請記住，您回答的問題為「我的流量來自何處？」 您在尋找反向連結。 在此範例中，UTM Source是廣告所在的位置（而非實際網頁，因為系統會自動在標籤外部追蹤該網頁）。 如果您追蹤的是滴答式電子郵件行銷活動，則滴答式電子郵件為來源。

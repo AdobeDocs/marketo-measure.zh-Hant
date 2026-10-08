@@ -3,13 +3,19 @@ description: Marketo Measure使用者的LinkedIn整合指南
 title: LinkedIn整合
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2769'
 ht-degree: 0%
-
 ---
-
 # LinkedIn整合 {#linkedin-integration}
 
 ## 概觀 {#overview}
@@ -61,7 +67,7 @@ Lead Gen Forms：透過與LinkedIn的Lead Gen Forms整合，Marketo Measure將in
 
 贊助內容可讓您將內容傳送給關注您公司之成員以外的[!DNL LinkedIn]資訊源。 贊助內容可以鎖定在特定對象，無論何時何地，只要廣告商在[!DNL LinkedIn]平台上橫跨案頭、行動裝置和平板電腦，都可以協助他們觸及到[!DNL LinkedIn]位成員。 支援Lead Gen Forms的贊助內容。
 
-[!DNL Marketo Measure]支援的贊助內容廣告格式型別為單一影像廣告和視訊廣告(透過Lead Gen Forms)。 由於結構描述的複雜性，我們不支援轉盤廣告。
+[!DNL Marketo Measure]支援的贊助內容廣告格式型別為單一影像廣告和視訊廣告（透過Lead Gen Forms）。 由於結構描述的複雜性，我們不支援轉盤廣告。
 
 [!DNL Marketo Measure]不支援贊助訊息、文字廣告或動態廣告。
 
@@ -87,7 +93,7 @@ Lead Gen Forms：透過與LinkedIn的Lead Gen Forms整合，Marketo Measure將in
 
 透過此[!DNL Marketo Measure/LinkedIn]整合，我們要求客戶不要複製/複製/複製現有創意內容。 如果找到「共用」且偵測到只使用在一個Creative上，[!DNL Marketo Measure]可以將「共用」標示為原樣，而不需要重新建立任何「創意」或「共用」，並且所有廣告歷史記錄（曝光數、點按數、共用）都將保留。
 
-一旦發現共用可跨多個創意內容共用，[!DNL Marketo Measure]就必須執行暫停、複製和重新標籤的程式，才能建立唯一集合。[!DNL Marketo Measure] 將會暫停並封存即時創意內容，因此會清除廣告歷史記錄（包括曝光數、點按數和社交分享），以正確自動標籤所有內容。
+一旦發現共用可跨多個創意內容共用，[!DNL Marketo Measure]就必須執行暫停、複製和重新標籤的程式，才能建立唯一集合。 [!DNL Marketo Measure]將暫停並封存即時創意，因此會清除廣告歷史記錄（包括曝光數、點按數和社交分享），以正確自動標籤所有內容。
 
 往後，[!DNL Marketo Measure]建議您不要複製任何[!DNL LinkedIn]個共用，並儘可能將所有創意和共用保持獨特，這樣我們就能在不清除廣告歷史記錄的情況下新增追蹤。
 
@@ -108,11 +114,11 @@ Creative D ：共用234個
 
 ![Creative D ：共用234](../assets/marketo-engage-activities-05.png)
 
-`1)` [!DNL Marketo Measure]將先檢視所有狀態為「作用中」的行銷活動、創意和共用。[!DNL Marketo Measure] 將不會標籤已暫停、已封存或已取消的廣告。 如果廣告已暫停，然後設定為[!UICONTROL active]，則當它再次生效時，我們將標籤它。 如果我們能找到唯一的「共用」，表示它並未跨多個創意人員或行銷活動使用(例如Creative A ：共用123)，[!DNL Marketo Measure]會將我們的自訂引數`>> ?_bl={creativeId}`新增至共用URL。
+`1)` [!DNL Marketo Measure]將先檢視所有狀態為「作用中」的行銷活動、創意和共用。 [!DNL Marketo Measure]不會標籤已暫停、已封存或已取消的廣告。 如果廣告已暫停，然後設定為[!UICONTROL active]，則當它再次生效時，我們將標籤它。 如果我們能找到唯一的「共用」，表示它並未跨多個創意人員或行銷活動使用（例如Creative A ：共用123），[!DNL Marketo Measure]會將我們的自訂引數`>> ?_bl={creativeId}`新增至共用URL。
 
-`2)`現在，如果共用已共用且失去其唯一性(例如，Creative B ：共用234和Creative C ：共用234和Creative D ：共用234)，[!DNL Marketo Measure]將暫停並封存所有類似的創意(可能是Creative B、Creative C和Creative D)。
+`2)`現在，如果共用已共用且失去其唯一性（例如，Creative B ：共用234和Creative C ：共用234和Creative D ：共用234），[!DNL Marketo Measure]將暫停並封存所有類似的創意（可能是Creative B、Creative C和Creative D）。
 
-`3)` [!DNL Marketo Measure]將建立3個新創意專案(Creative E、Creative F和Creative G)，以複製已封存的Creative B內容。
+`3)` [!DNL Marketo Measure]將建立3個新創意專案（Creative E、Creative F和Creative G），以複製已封存的Creative B內容。
 
 `4)` [!DNL Marketo Measure]也將建立3個複製Share 234內容的新共用、Share 345、Share 456和Share 567，但會有自己的唯一`?_bl`標籤。
 
@@ -134,7 +140,7 @@ Creative D ：共用234個
 
 LinkedIn表單可能包含多個電子郵件地址。 下載表單回應時，我們會尋找具有下列優先順序的電子郵件地址：工作電子郵件、電子郵件地址（主要表單欄位）或具有有效電子郵件值的自訂欄位。
 
-無論Campaign或Creative狀態為何，所有表單回應都會產生接觸點。[!DNL Marketo Measure] 有90天的回顧限制，因此[!DNL Marketo Measure]無法存取超過90天的表單回應，但[!DNL Marketo Measure]與[!DNL LinkedIn]整合啟用時間越長，透過[!DNL Marketo Measure]看到的潛在客戶一般表單接觸點就越多。
+無論Campaign或Creative狀態為何，所有表單回應都會產生接觸點。 [!DNL Marketo Measure]有90天的回顧限制，因此[!DNL Marketo Measure]無法存取超過90天的表單回應，但[!DNL Marketo Measure]與[!DNL LinkedIn]整合啟用時間越長，透過[!DNL Marketo Measure]看到的潛在客戶一般表單接觸點就越多。
 
 >[!NOTE]
 >
@@ -284,7 +290,7 @@ LinkedIn表單可能包含多個電子郵件地址。 下載表單回應時，�
 
 **[!DNL Marketo Measure]實際標籤哪些狀態？**
 
-[!DNL LinkedIn]行銷活動和Creative有四種不同的狀態：作用中、已暫停、已封存和已取消。 我們只會標籤作用中的行銷活動和創意內容。 標籤其他狀態會再次將其設定為「使用中」。[!DNL Marketo Measure] 將不會標籤「已暫停、已封存或已取消的行銷活動」或「創意」，但如果狀態變更為「作用中」，則會繼續標籤。
+[!DNL LinkedIn]行銷活動和Creative有四種不同的狀態：作用中、已暫停、已封存和已取消。 我們只會標籤作用中的行銷活動和創意內容。 標籤其他狀態會再次將其設定為「使用中」。 [!DNL Marketo Measure]不會標籤「已暫停、已封存或已取消的行銷活動」或「創意」，但如果狀態變更為「作用中」，則會繼續標籤。
 
 **[!DNL Marketo Measure]用來標籤的值是多少？**
 
@@ -304,11 +310,11 @@ LinkedIn表單可能包含多個電子郵件地址。 下載表單回應時，�
 
 **糟糕，我的團隊中有人不小心複製了一個共用。 我可以暫停它嗎？**
 
-沒關係。[!DNL Marketo Measure] 將以程式設計方式檢查不再唯一的共用，這表示它已被複製到其他Creative。 偵測到副本後，[!DNL Marketo Measure]將依照平常的流程標籤並建立新廣告。
+沒關係。 [!DNL Marketo Measure]將以程式設計方式檢查不再唯一的共用，這表示它已被複製到其他Creative。 偵測到副本後，[!DNL Marketo Measure]將依照平常的流程標籤並建立新廣告。
 
 **我的廣告先前擱置檢閱。 為什麼在[!DNL Marketo Measure]標籤它之後它再次擱置檢閱？**
 
-LinkedIn要求所有已建立或修改的廣告在張貼前都必須經過一般的安全性程式。[!DNL Marketo Measure] 會嘗試儘快攔截廣告，因為它每6小時掃描一次新廣告，但額外有[!DNL LinkedIn's]個步驟，可能會延遲幾個小時的啟動。
+LinkedIn要求所有已建立或修改的廣告在張貼前都必須經過一般的安全性程式。 [!DNL Marketo Measure]嘗試儘快攔截廣告，因為它每6小時掃描一次新廣告，但透過[!DNL LinkedIn's]個額外的步驟，可能會延遲幾個小時的啟動。
 
 **我的廣告中有2個URL。 哪一個被標籤？**
 

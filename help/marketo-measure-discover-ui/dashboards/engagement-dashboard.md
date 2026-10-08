@@ -1,21 +1,25 @@
 ---
-description: 參與儀表板 —  [!DNL Marketo Measure]  — 產品
+description: 參與儀表板 — [!DNL Marketo Measure] — 產品
 title: 參與儀表板
 feature: Reporting
 exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
-TQID: https://experienceleague.adobe.com/m5XdQV-IiIUddL3-YPcne1yf-ORR4ZdbxHzAf5wSADM
+TQID: 'https://experienceleague.adobe.com/m5XdQV-IiIUddL3-YPcne1yf-ORR4ZdbxHzAf5wSADM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 507
+source-wordcount: '507'
 ht-degree: 0%
-
 ---
-
 # 參與儀表板 {#engagement-dashboard}
 
 參與儀表板會謹慎追蹤使用者參與量度。 它會顯示接觸點、參與人數和每個人的平均接觸點。 利用時間序列長條圖進行每月、每季或每年檢視，並利用長條圖進行詳細的管道、子管道和促銷活動深入分析。 此工具對於瞭解參與模式及微調參與策略至關重要。
@@ -43,7 +47,7 @@ ht-degree: 0%
 ### KPI動態磚 {#kpi-tiles}
 
 * 接觸點：產生的原始接觸點總數。
-   * 購買者接觸點和購買者歸因接觸點是歸因結果，是透過為點數選取特定接觸點所建立。 並非所有接觸點都會被選為BT和BAT。
+  * 購買者接觸點和購買者歸因接觸點是歸因結果，是透過為點數選取特定接觸點所建立。 並非所有接觸點都會被選為BT和BAT。
 * 接觸的人：擁有任何接觸點的總人數。
 * 每人接觸點：每人接觸的平均接觸點數。
 

@@ -3,19 +3,23 @@ description: Data Warehouse存取 — Reader帳戶 — 產品檔案
 title: Data Warehouse存取 — Reader帳戶
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-TQID: https://experienceleague.adobe.com/3ZD-17UlkoJpMExA-ZdV-coGFa0DSeZMW0gjFZodlMM
+TQID: 'https://experienceleague.adobe.com/3ZD-17UlkoJpMExA-ZdV-coGFa0DSeZMW0gjFZodlMM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Security
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Data Warehouse存取 — Reader帳戶 {#data-warehouse-access-reader-account}
 
 ## Snowflake存取連結 {#snowflake-access-link}
@@ -72,14 +76,14 @@ ht-degree: 0%
 >每個工具的連線需求都不同；建議您參閱檔案，瞭解嘗試連線的特定工具。
 
 * **URI** （永遠必要）
-   * 這是Snowflake帳戶的網域名稱。 它包含在Snowflake登入連結的一部分中。
+  * 這是Snowflake帳戶的網域名稱。 它包含在Snowflake登入連結的一部分中。
 * **使用者名稱** （永遠必要）
-   * 使用者名稱列在[!DNL Marketo Measure]的Data Warehouse資訊頁中。
+  * 使用者名稱列在[!DNL Marketo Measure]的Data Warehouse資訊頁中。
 * **密碼** （永遠必要）
-   * 這是您第一次登入Snowflake帳戶時所設定的密碼。 若要重設密碼，請參閱上述步驟。
+  * 這是您第一次登入Snowflake帳戶時所設定的密碼。 若要重設密碼，請參閱上述步驟。
 * **資料庫名稱** （非永遠必要）
-   * 資料庫是將資料儲存在Snowflake中。 而是儲存資源。 資料庫名稱列在[!DNL Marketo Measure]的Data Warehouse資訊頁中。
+  * 資料庫是將資料儲存在Snowflake中。 而是儲存資源。 資料庫名稱列在[!DNL Marketo Measure]的Data Warehouse資訊頁中。
 * **倉儲名稱** （非永遠必要）
-   * Warehouse就是在Snowflake中執行查詢的地方。 這是運算資源。 倉儲名稱列在[!DNL Marketo Measure]的Data Warehouse資訊頁中。
+  * Warehouse就是在Snowflake中執行查詢的地方。 這是運算資源。 倉儲名稱列在[!DNL Marketo Measure]的Data Warehouse資訊頁中。
 
   ![](assets/data-warehouse-access-reader-account-9.png)

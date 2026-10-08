@@ -1,22 +1,24 @@
 ---
 unique-page-id: 27656735
-description: 總覽 —  [!DNL Marketo Measure]
+description: 總覽 — [!DNL Marketo Measure]
 title: 概觀
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
 feature: Multi-Currency
-TQID: https://experienceleague.adobe.com/x-CcPqcp3SXgSToNxdrLNnkYf5DA7Be9nPPwHTxA8pM
+TQID: 'https://experienceleague.adobe.com/x-CcPqcp3SXgSToNxdrLNnkYf5DA7Be9nPPwHTxA8pM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: '334'
 ht-degree: 1%
-
 ---
-
 # 概觀 {#overview}
 
-目前，[!DNL Marketo Measure]應用程式僅支援單一貨幣（假設為美元），但我們知道並知道全球有客戶需要報告自己的公司和使用者貨幣。 此功能可讓使用者在檢視[!DNL Marketo Measure]中報告的支出或銷售收入時，於其CRM中使用的相同貨幣之間切換。
+目前，[!DNL Marketo Measure]應用程式僅支援單一貨幣（假設為USD），但我們知道並知道全球有客戶需要報告自己的公司和使用者貨幣。 此功能可讓使用者在檢視[!DNL Marketo Measure]中報告的支出或銷售收入時，於其CRM中使用的相同貨幣之間切換。
 
 ## 可用性 {#availability}
 

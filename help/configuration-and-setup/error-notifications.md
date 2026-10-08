@@ -3,13 +3,17 @@ description: Marketo Measure使用者的錯誤通知指引
 title: 錯誤通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
-
 ---
-
 # 錯誤通知 {#error-notifications}
 
 以下是您可透過應用程式內通知或電子郵件收到的錯誤清單。 如果您收到任何這些訊息，請依照各自的疑難排解步驟進行。 如果這些步驟沒有解決問題，請連絡[Marketo支援](https://nation.marketo.com/t5/support/ct-p/Support)。
@@ -167,7 +171,7 @@ ht-degree: 1%
       <p>
       廣告匯入期間發生錯誤： INVALID_CURRENCY_ISO_CODE ： Marketo Measure不支援帳戶1234的貨幣XXX。</td>
       <td>發生不支援的貨幣。</td>
-      <td>在通知(廣告、Crm、Marketo)中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
+      <td>在通知（廣告、Crm、Marketo）中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
     </tr>
     <tr>
       <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
@@ -179,7 +183,7 @@ ht-degree: 1%
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Crm匯出期間發生錯誤： MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Marketo Measure缺少「檢視/編輯轉換的潛在客戶」許可權</td>
-      <td>請參閱下列Experience League檔案，以取得在您的CRM<br/>中啟用此許可權的相關協助
+      <td>如需在CRM中啟用此許可權的協助，請參閱下列Experience League檔案<br/>
           <a href="/help/marketo-measure-salesforce-reporting/enabling-the-permission-to-edit-converted-leads.md">啟用許可權以編輯轉換的潛在客戶</a></td>
     </tr>
     <tr>
@@ -239,7 +243,7 @@ ht-degree: 1%
           Crm匯入期間發生錯誤： NULL_EMPTY_CURRENCY_ISO_CODE：為RecordId 1234啟用MultiCurrency時，貨幣ISO代碼為NULL或空白
       </td>
       <td>貨幣必須是支援的ISO貨幣代碼。</td>
-      <td>在通知(廣告、Crm、Marketo)中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
+      <td>在通知（廣告、Crm、Marketo）中指出的來源系統中，會確保與記錄關聯的貨幣具有支援且有效的貨幣。 支援的貨幣衍生自ISO貨幣標準。</td>
     </tr>
     <tr>
       <td>OPERATION_TO_LARGE</td>

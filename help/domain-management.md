@@ -3,17 +3,23 @@ description: Marketo Measure使用者的網域管理指引
 title: 網域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # 網域管理 {#domain-management}
 
-針對在Experience Cloud介面中執行[!DNL Marketo Measure]且已啟用IMS的租使用者，[!DNL Marketo Measure]提供可讓使用者管理自己網域清單的介面。[!DNL Marketo Measure] 使用者必須先確認要在[Adobe Admin Console](https://adminconsole.adobe.com/)中追蹤的任何網域。 在Admin Console中驗證網域後，使用者可以管理[!DNL Marketo Measure]是否使用這些網域來追蹤網站流量。
+對於在Experience Cloud介面中執行[!DNL Marketo Measure]且已啟用IMS的租使用者，[!DNL Marketo Measure]會提供一個介面，讓使用者可以管理自己的網域清單。 [!DNL Marketo Measure]使用者必須先確認他們要在[Adobe Admin Console](https://adminconsole.adobe.com/)中追蹤的任何網域。 在Admin Console中驗證網域後，使用者可以管理[!DNL Marketo Measure]是否使用這些網域來追蹤網站流量。
 
 ## 在Admin Console中新增網域 {#adding-domains-in-admin-console}
 
@@ -29,7 +35,7 @@ ht-degree: 0%
 
 ![在Admin Console中新增網域後， Marketo Measure](assets/domain-management-2.png)
 
-在「**[!UICONTROL Integration]** > **[!UICONTROL Domains]**」頁面上，使用者可以看到已在Admin Console中註冊的所有網域及其狀態。 每個網域都可以啟用或停用。 如果已啟用網域，[!DNL Marketo Measure]追蹤會收集在該網域上看到的任何流量。 如果網域已停用，[!DNL Marketo Measure]會忽略來自該網域的任何流量，而不會建立接觸點或其他資料。[!DNL Marketo Measure] 確認網域停用，並警告任何後果：
+在「**[!UICONTROL Integration]** > **[!UICONTROL Domains]**」頁面上，使用者可以看到已在Admin Console中註冊的所有網域及其狀態。 每個網域都可以啟用或停用。 如果已啟用網域，[!DNL Marketo Measure]追蹤會收集在該網域上看到的任何流量。 如果網域已停用，[!DNL Marketo Measure]會忽略來自該網域的任何流量，而不會建立接觸點或其他資料。 [!DNL Marketo Measure]會確認網域已停用，並警告任何後果：
 
 ![在[整合網域]頁面上，使用者會看見所有網域](assets/domain-management-3.png)
 
@@ -56,7 +62,7 @@ Admin Console狀態會依下列方式分類：
 
 **在Admin Console中移除網域後會發生什麼事？**
 
-在Admin Console中移除網域時，[!DNL Marketo Measure]會將該網域標示為已刪除。[!DNL Marketo Measure] 會立即停止追蹤此網域上的流量，但不會移除任何先前收集的資料。
+在Admin Console中移除網域時，[!DNL Marketo Measure]會將該網域標示為已刪除。 [!DNL Marketo Measure]會立即停止追蹤此網域上的流量，但不會移除任何先前收集的資料。
 
 **為什麼我無法啟用網域？**
 

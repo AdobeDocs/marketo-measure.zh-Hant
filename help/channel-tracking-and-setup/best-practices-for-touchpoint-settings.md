@@ -3,13 +3,17 @@ description: Marketo Measure使用者接觸點設定指南的最佳作法
 title: 接觸點設定的最佳實務
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
-
 ---
-
 # 接觸點設定的最佳實務 {#best-practices-for-touchpoint-settings}
 
 ## 概觀 {#overview}
@@ -23,13 +27,13 @@ ht-degree: 0%
 在您的[!DNL Marketo Measure]應用程式中，[!UICONTROL Touchpoint Settings]區段將分成四個主要區段。 每個區段都會隱藏或移除不同的資料集。 使用下列鍵來確保您的規則會隱藏或移除所需的接觸點。
 
 * 從CRM移除購買者接觸點
-   * 當您想要建立將從&#x200B;**CRM**&#x200B;移除&#x200B;**Buyer Touchpoint資料** （與個人而非機會相關聯的接觸點）的規則時，請使用此區段
+  * 當您想要建立將從&#x200B;**CRM**&#x200B;移除&#x200B;**Buyer Touchpoint資料** （與個人而非機會相關聯的接觸點）的規則時，請使用此區段
 * 從CRM隱藏購買者接觸點
-   * 當您想要建立將將&#x200B;**Buyer Touchpoint資料** （與個人關聯的接觸點，而非商機）從您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;移除的規則時，請使用此區段
+  * 當您想要建立將將&#x200B;**Buyer Touchpoint資料** （與個人關聯的接觸點，而非商機）從您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;移除的規則時，請使用此區段
 * 從CRM移除購買者歸因接觸點
-   * 當您想要建立將從&#x200B;**CRM**&#x200B;移除&#x200B;**Buyer Attribution Touchpoint**&#x200B;資料（與商機和收入關聯的接觸點）的規則時，請使用此區段
+  * 當您想要建立將從&#x200B;**CRM**&#x200B;移除&#x200B;**Buyer Attribution Touchpoint**&#x200B;資料（與商機和收入關聯的接觸點）的規則時，請使用此區段
 * 從CRM隱藏購買者歸因接觸點
-   * 當您想要建立將從&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中移除&#x200B;**Buyer Attribution Touchpoint**&#x200B;資料（與商機和收入相關聯的接觸點）的規則時，請使用此區段
+  * 當您想要建立將從&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中移除&#x200B;**Buyer Attribution Touchpoint**&#x200B;資料（與商機和收入相關聯的接觸點）的規則時，請使用此區段
 
 ## 最佳實務 {#best-practice}
 
@@ -50,7 +54,7 @@ ht-degree: 0%
 * 您行銷團隊中的營業額
 * 網站結構的重大更新
 * 識別不再實用的接觸點資料
-   * 每當您遇到不應該獲得歸因評分的接觸點資料時，[!DNL touchpoint suppression]規則都是功能，可確保您的資料儘可能乾淨和準確。
+  * 每當您遇到不應該獲得歸因評分的接觸點資料時，[!DNL touchpoint suppression]規則都是功能，可確保您的資料儘可能乾淨和準確。
 * 用於定義隱藏或移除規則的欄位變更
 
 >[!MORELIKETHIS]

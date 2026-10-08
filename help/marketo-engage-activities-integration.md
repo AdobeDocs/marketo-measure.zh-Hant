@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Engage]活動整合 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Engage]活動整合 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]個活動整合'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 1%
-
 ---
-
 # [!DNL Marketo Engage]個活動整合 {#marketo-engage-activities-integration}
 
 作為整體[!DNL Marketo Measure]和[!DNL Marketo Engage]整合的一部分，這項提取Marketo活動的努力扮演了重要的角色。 透過Marketo活動，系統會追蹤`Click Email`、`Change Score`或`Change Status in Progression`等事件 — 這些活動型別可以精簡並定義，以選取符合接觸點資格的子集。 在這些活動上建立接觸點後，即會在參與歷程中進行追蹤，並與您的其他行銷管道一起測量，例如付費搜尋或合作夥伴行銷。

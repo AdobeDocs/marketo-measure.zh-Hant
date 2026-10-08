@@ -3,13 +3,17 @@ description: Marketo Measure使用者無機會聯絡人的報表型別指南
 title: 沒有商機的連絡人的報表型別
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 # 沒有商機的連絡人的報表型別 {#report-type-for-contacts-without-opportunities}
 
 >[!NOTE]
@@ -18,7 +22,7 @@ ht-degree: 2%
 
 若要報告與未關聯至商機的採購員接觸點之聯絡人，您必須建立自訂報告型別。
 
-1. 前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
+1. 前往 **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
    ![1. 前往設定建立報表型別。](assets/new-types-1.png)
 

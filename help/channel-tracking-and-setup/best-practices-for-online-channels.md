@@ -3,13 +3,17 @@ description: Marketo Measure使用者線上管道指引的最佳作法
 title: 線上管道的最佳作法
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '617'
 ht-degree: 0%
-
 ---
-
 
 # 線上管道的最佳作法 {#best-practices-for-online-channels}
 
@@ -30,20 +34,20 @@ ht-degree: 0%
 注意事項：
 
 * 所有數位頻道和子頻道至少應用一個規則表示
-   * 如果頻道沒有促使人們進入您的網站，則不是線上頻道
+  * 如果頻道沒有促使人們進入您的網站，則不是線上頻道
 * 一個管道/子管道可以有多個規則
-   * 您可以將多個規則視為「投射更寬的網路」，以確保每個接觸點都正確對應。 通常可以不正確新增或完全遺漏引數，因此擁有多個規則來擷取管道/子管道是確保對應正確性的好方法。
+  * 您可以將多個規則視為「投射更寬的網路」，以確保每個接觸點都正確對應。 通常可以不正確新增或完全遺漏引數，因此擁有多個規則來擷取管道/子管道是確保對應正確性的好方法。
 * [!DNL Marketo Measure]邏輯會從試算表的上方列開始，依遞減順序排列接觸點對應的優先順序，並向下進行
-   * [!DNL Marketo Measure]讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
-   * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
+  * [!DNL Marketo Measure]讀取每個規則（列），尋找真和第一個符合。 然後，接觸點會對映至該管道/子管道
+  * 請勿以字母順序排序工作表，因為這會干擾邏輯規則。
 * 維護括弧內的規則，請勿編輯或新增至括弧內的規則（例如，[AdWords付費搜尋]或[Facebook付費]）
-   * 這些是內建邏輯且與[!DNL Marketo Measure]整合繫結的開箱[!DNL Marketo Measure]規則。 讓這些規則成為該管道/子管道區段的最高優先順序，以確保[!DNL Marketo Measure]整合能夠如預期般運作。
+  * 這些是內建邏輯且與[!DNL Marketo Measure]整合繫結的開箱[!DNL Marketo Measure]規則。 讓這些規則成為該管道/子管道區段的最高優先順序，以確保[!DNL Marketo Measure]整合能夠如預期般運作。
 * 上傳檔案後，您七天內無法變更任何規則
-   * [!DNL Marketo Measure]利用這個時間處理和更新接觸點，因此請務必在上傳之前仔細檢查您的規則。
+  * [!DNL Marketo Measure]利用這個時間處理和更新接觸點，因此請務必在上傳之前仔細檢查您的規則。
 
 ## 維護最佳實務 {#best-practice-for-maintenace}
 
-儲存及處理線上管道規則後，這些規則會持續運作以儲存您的數位接觸點。 不過，某些變更或情況會導致您檢閱線上頻道設定。[!DNL Marketo Measure] 建議您每六個月檢閱一次線上管道規則。 這可確保您的[!DNL Marketo Measure]資料符合線上頻道/子頻道的內部定義以及UTM的使用方式。
+儲存及處理線上管道規則後，這些規則會持續運作以儲存您的數位接觸點。 不過，某些變更或情況會導致您檢閱線上頻道設定。 [!DNL Marketo Measure]建議您每六個月檢閱一次線上頻道規則。 這可確保您的[!DNL Marketo Measure]資料符合線上頻道/子頻道的內部定義以及UTM的使用方式。
 
 可能觸發您的團隊進行線上頻道維護的其他專案包括....
 

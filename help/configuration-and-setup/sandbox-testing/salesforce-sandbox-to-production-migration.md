@@ -1,21 +1,27 @@
 ---
 unique-page-id: 18874694
-description: Salesforce沙箱移轉至生產環境 —  [!DNL Marketo Measure]
+description: Salesforce沙箱移轉至生產環境 — [!DNL Marketo Measure]
 title: Salesforce沙箱移轉至生產
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/tdO2AE1dXfriuURbldKa0NB6wzc0o6NBH0CdgolkqSc
+TQID: 'https://experienceleague.adobe.com/tdO2AE1dXfriuURbldKa0NB6wzc0o6NBH0CdgolkqSc'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 309
+source-wordcount: '309'
 ht-degree: 0%
-
 ---
-
 # Salesforce沙箱移轉至生產 {#salesforce-sandbox-to-production-migration}
 
 如果您選擇在[!DNL Salesforce]沙箱環境中測試[!DNL Marketo Measure]，請依照這些指示，在您準備好後移轉至生產。 下列指示假設您已將[!DNL Marketo Measure]套件下載至您的沙箱組織、執行了必要的測試並準備將[!DNL Marketo Measure]推送至生產環境。
@@ -24,7 +30,7 @@ ht-degree: 0%
 
 * 使用&quot;[!UICONTROL All Users]&quot;設定將[!DNL Marketo Measure]套件安裝至生產環境
 
-   * [基礎封裝](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
+  * [基礎封裝](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
 
 * 有關與[!DNL Salesforce]的[!DNL Marketo Measure]關係的詳細資訊，請參閱[本文章](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * 需要[!DNL Salesforce]位元組態。 下面的[步驟4](#salesforce-configuration)概述了特定動作專案
@@ -38,7 +44,7 @@ ht-degree: 0%
 
   ![](assets/salesforce-sandbox-to-production-migration-1.png)
 
-   * 按照確認模式中的提示輸入企業的名稱，然後按一下「我瞭解後果，刪除此連線」
+  * 按照確認模式中的提示輸入企業的名稱，然後按一下「我瞭解後果，刪除此連線」
 * 這會觸發刪除程式，並需要一些時間才能完成
 
 ## 步驟3：在[!DNL Marketo Measure]應用程式中連線生產CRM執行個體 {#connect-the-production-crm-instance-in-marketo-measure-app}

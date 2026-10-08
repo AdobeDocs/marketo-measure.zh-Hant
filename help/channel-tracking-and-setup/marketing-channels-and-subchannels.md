@@ -3,14 +3,18 @@ description: Marketo Measure使用者的行銷管道和子管道指引
 title: 行銷管道和子管道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 # 行銷管道和子管道 {#marketing-channels-and-subchannels}
 
 ## 用途 {#purpose}
@@ -19,7 +23,7 @@ ht-degree: 2%
 
 ## 概觀 {#overview}
 
-行銷管道是用來協助將您的行銷活動分類（或「貯體」），以方便您在[!DNL Marketo Measure] ROI短劃線以及您的CRM中報告。[!DNL Marketo Measure] 隨附立即可用的12個管道（您可自訂/重新命名以符合貴組織的慣例），並可進一步建立自訂管道以進行更精細的篩選。
+行銷管道是用來協助將您的行銷活動分類（或「貯體」），以方便在[!DNL Marketo Measure] ROI短劃線以及您的CRM中報告。 [!DNL Marketo Measure]隨附12個現成可用的管道（您可依據組織慣例自訂/重新命名），並可進一步建立自訂管道以進行更精細的篩選。
 
 每當您收到網站其中一個內容頁面（無論是網頁、白皮書下載、頁面URL等）的訪客時，該Lead會根據URL中的數個UTM引數，分組到頻道/子頻道中：
 
@@ -47,7 +51,7 @@ ht-degree: 2%
 
 * [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
 
-在此情況下，使用者嘗試存取的內容是B2B行銷歸因簡介指南。[!DNL Marketo Measure] 將使用此組織中設定的管道規則來分析導向此內容的URL，並使用它們「貯體」此銷售機會至行銷管道「付費社交」和子管道「LinkedIn」。
+在此情況下，使用者嘗試存取的內容是B2B行銷歸因簡介指南。 [!DNL Marketo Measure]將使用此組織中設定的管道規則來分析導向此內容的URL，並使用它們「貯存」此銷售機會至行銷管道「付費社交」和子管道「LinkedIn」。
 
 ![在此案例中，使用者嘗試存取的內容為](assets/online-channels-1.png)
 
@@ -64,7 +68,7 @@ ht-degree: 2%
 * PR
 * 轉介計畫
 
-**子管道(接觸點Source)**
+**子管道（接觸點Source）**
 
 * Google AdWords
 * BingAds

@@ -3,13 +3,19 @@ description: Marketo Measure使用者的自訂歸因模型與設定指南
 title: 自訂歸因模型與設定
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # 自訂歸因模型與設定 {#custom-attribution-model-and-setup}
 
 請參閱下方的[!DNL Marketo Measure]自訂歸因模型概觀以及如何設定。

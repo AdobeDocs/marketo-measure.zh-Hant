@@ -1,15 +1,23 @@
 ---
-description: 瞭解適用於Marketo Measure使用者的 [!DNL Marketo Measure] AdWords標籤指南
-title: 瞭解 [!DNL Marketo Measure] AdWords標籤
+description: 瞭解適用於Marketo Measure使用者的[!DNL Marketo Measure]個AdWords標籤指引
+title: 瞭解[!DNL Marketo Measure]個AdWords標籤
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '656'
 ht-degree: 2%
-
 ---
-
 # 瞭解[!DNL Marketo Measure]個AdWords標籤 {#understanding-marketo-measure-adwords-tagging}
 
 為了在非常精細的層級追蹤您的廣告，廣告目的地URL必須是唯一的。 若要完成此操作，[!DNL Marketo Measure]自動標籤會自動將追蹤引數新增到[!DNL AdWords]個廣告的廣告目的地URL。 讓我們來看一個範例。
@@ -40,7 +48,7 @@ ht-degree: 2%
 
 ## 追蹤範本 {#tracking-templates}
 
-如[!DNL Google AdWords]所說明，追蹤範本是用來存取登入頁面的URL。 收集到的追蹤資訊會用於瞭解您的廣告流量。[按一下這裡](https://support.google.com/adwords/answer/7197008?hl=en){target="_blank"}以取得來自Google的詳細資訊。
+如[!DNL Google AdWords]所說明，追蹤範本是用來存取登入頁面的URL。 收集到的追蹤資訊會用於瞭解您的廣告流量。 [按一下這裡](https://support.google.com/adwords/answer/7197008?hl=en){target="_blank"}以取得來自Google的詳細資訊。
 
 [!DNL Marketo Measure]建議使用帳戶層級、行銷活動層級或廣告群組層級追蹤範本，因為它允許針對所有廣告新增及減除引數，而不會造成廣告歷史記錄中斷或刪除的風險。
 

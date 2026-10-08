@@ -1,15 +1,19 @@
 ---
-description: 為Marketo Measure使用者新增 [!DNL Marketo Measure] Script至Sitecore頁面指南
-title: 正在新增 [!DNL Marketo Measure] 指令碼至Sitecore頁面
+description: 為Marketo Measure使用者新增[!DNL Marketo Measure]指令碼至Sitecore頁面指南
+title: 正在新增[!DNL Marketo Measure]指令碼至Sitecore頁面
 exl-id: 87ce1857-7532-45a7-8c39-255c6118b50a
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '121'
 ht-degree: 0%
-
 ---
-
 # 正在新增[!DNL Marketo Measure]指令碼至Sitecore頁面 {#adding-marketo-measure-script-to-sitecore-pages}
 
 除了標準指令碼實作之外，內容管理系統可能還需要其他步驟，以讓[!DNL Marketo Measure]識別表單提交。 以下程式概述如何將[!DNL Marketo Measure] JavaScript新增至您的[!DNL Sitecore]頁面。

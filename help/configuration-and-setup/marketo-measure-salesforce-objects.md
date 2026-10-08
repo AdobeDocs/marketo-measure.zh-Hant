@@ -1,15 +1,22 @@
 ---
-description: '[!DNL Marketo Measure]個Salesforce物件 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]個Salesforce物件 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]個Salesforce物件'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]個Salesforce物件 {#marketo-measure-salesforce-objects}
 
 >[!NOTE]
@@ -46,11 +53,11 @@ BT相關清單會顯示屬於潛在客戶或聯絡人的所有接觸點。 清�
 
 購買者歸因接觸點(BAT)只有在建立與具有Buyer Touchpoint (BT)資料的聯絡人相關的Opportunity後，才會建立。 BAT若沒有Opportunity將無法建立。 一旦建立機會後，BAT物件將會使用機會上的[!DNL Salesforce] *金額*&#x200B;欄位，來瞭解歸因於接觸點的收入有多少。
 
-如果您使用[自訂金額欄位](/help/channel-tracking-and-setup/using-a-custom-revenue-amount-field.md)在機會物件上顯示收入，則必須建立&#x200B;**工作流程**。[!DNL Marketo Measure] 無法讀取自訂「金額」欄位中顯示的資訊，因此無法填入接觸點上的收入歸因資料。 此工作流程將使用&#x200B;**[!DNL Marketo Measure]機會金額**&#x200B;欄位（其中[!DNL Marketo Measure]個自訂欄位之一）將自訂金額欄位的收入值對應至機會金額欄位。
+如果您使用[自訂金額欄位](/help/channel-tracking-and-setup/using-a-custom-revenue-amount-field.md)在機會物件上顯示收入，則必須建立&#x200B;**工作流程**。 [!DNL Marketo Measure]無法讀取自訂「金額」欄位中顯示的資訊，因此無法填入接觸點上的收入歸因資料。 此工作流程將使用&#x200B;**[!DNL Marketo Measure]機會金額**&#x200B;欄位（其中[!DNL Marketo Measure]個自訂欄位之一）將自訂金額欄位的收入值對應至機會金額欄位。
 
 ![如果您使用自訂金額欄位，則必須建立工作流程](assets/connect-salesforce-1.png)
 
-BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Account]物件上顯示為相關清單。 此清單會顯示所有具有屬於某個機會的歸因資料的接觸點。 按一下Buyer Attribution Touchpoint ID可將您導向Buyer Attribution Touchpoint詳細資料頁面。 在這裡，您可以看到更具體的歸因資料，以及有關接觸點來源資訊(類似於Buyer Touchpoint物件所提供的資訊)。
+BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Account]物件上顯示為相關清單。 此清單會顯示所有具有屬於某個機會的歸因資料的接觸點。 按一下Buyer Attribution Touchpoint ID可將您導向Buyer Attribution Touchpoint詳細資料頁面。 在這裡，您可以看到更具體的歸因資料，以及有關接觸點來源資訊（類似於Buyer Touchpoint物件所提供的資訊）。
 
 ## [!DNL Marketo Measure]人 {#marketo-measure-person}
 
@@ -72,7 +79,7 @@ BAT物件在[!UICONTROL Opportunity]、[!UICONTROL Contact]和[!UICONTROL Accoun
 
 ## [!DNL Marketo Measure]欄位 {#marketo-measure-fields}
 
-由[!DNL Marketo Measure] JavaScript擷取的資料已推送到[!DNL Marketo Measure]物件內的自訂[!DNL Marketo Measure]欄位。 某些欄位僅存在於某些物件上。 您可以檢閱[[!DNL Marketo Measure]欄位][&#128279;](/help/glossary.md)的[字彙表，以及相關 [!DNL Marketo Measure] 物件](/help/configuration-and-setup/marketo-measure-object-and-field-taxonomy.md)的視覺效果。
+由[!DNL Marketo Measure] JavaScript擷取的資料已推送到[!DNL Marketo Measure]物件內的自訂[!DNL Marketo Measure]欄位。 某些欄位僅存在於某些物件上。 您可以檢閱[[!DNL Marketo Measure]欄位]&#x200B;[&#128279;](/help/glossary.md)的[字彙表，以及相關 [!DNL Marketo Measure] 物件](/help/configuration-and-setup/marketo-measure-object-and-field-taxonomy.md)的視覺效果。
 
 ## [!DNL Marketo Measure]個報告和儀表板 {#marketo-measure-reports-and-dashboards}
 

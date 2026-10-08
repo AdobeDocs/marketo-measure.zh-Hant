@@ -3,14 +3,18 @@ description: 將舊版Discover儀表板對應至重新設計的版本，並醒�
 title: 探索儀表板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1066'
 ht-degree: 0%
-
 ---
-
 # 探索儀表板指南 {#new-discover-dashboard-guide}
 
 我們很高興向您介紹Discover控制面板的重新設計。 我們的主要目標是為您提供更精簡且直覺的體驗。 透過更簡潔的視覺效果和更簡單的導覽，這項改版不僅保留大部分的現有量度，還引入全新的深入分析。 深入瞭解，探索更清楚且更附加值的功能。
@@ -240,8 +244,8 @@ ht-degree: 0%
             <strong></strong>網站流量儀表板</li>
           <li>
             <strong>依據管道的表單URL</strong>
-            <strong>：</strong>
-            <strong></strong>網站流量儀表板(依管道篩選網站Forms磚)</li>
+            <strong>:</strong>
+            <strong></strong>網站流量儀表板（依管道篩選網站Forms磚）</li>
           <li>
             按收入<strong>登陸頁面：</strong>已棄用（請參閱下文）</li>
           <li>

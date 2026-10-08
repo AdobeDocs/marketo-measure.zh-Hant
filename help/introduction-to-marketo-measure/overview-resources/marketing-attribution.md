@@ -4,23 +4,26 @@ description: 行銷歸因 — Marketo Measure — 產品檔案
 title: 行銷歸因
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 feature: Attribution
-TQID: https://experienceleague.adobe.com/KmQcMmJ5n6h1cHZcG-GtJPhMT9gt3BzNqGr4gRoytzQ
+TQID: 'https://experienceleague.adobe.com/KmQcMmJ5n6h1cHZcG-GtJPhMT9gt3BzNqGr4gRoytzQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Customer engagement
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 465
-ht-degree: 0%
-
+source-wordcount: '465'
+ht-degree: 4%
 ---
-
 # 行銷歸因 {#marketing-attribution}
 
 ## 歡迎使用Marketo Measure {#welcome-to-marketo-measure}
 
-Marketo Measure為行銷人員提供insight，讓他們瞭解哪些行銷手法最能有效提升公司營收。 Marketo Measure是一種行銷歸因解決方案，可自動追蹤和報告管道效能，讓您可見哪些管道可帶來最多客戶參與，並據此將行銷支出最佳化。
+Marketo Measure 可協助行銷人員深入了解哪些行銷手法最能有效提升公司收入。 Marketo Measure是一種行銷歸因解決方案，可自動追蹤和報告管道效能，讓您可見哪些管道可帶來最多客戶參與，並據此將行銷支出最佳化。
 
 ## 行銷歸因 {#marketing-attribution-1}
 

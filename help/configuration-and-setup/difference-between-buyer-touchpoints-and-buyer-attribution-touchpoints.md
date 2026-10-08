@@ -3,13 +3,17 @@ description: Marketo Measure使用者之購買者接觸點和購買者歸因接�
 title: 購買者接觸點和購買者歸因接觸點之間的差異
 exl-id: 19109271-7b59-44c0-b1ff-e3b0bba9f5ce
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # 購買者接觸點和購買者歸因接觸點之間的差異 {#difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints}
 
 瞭解什麼會定義Buyer Touchpoint (BT)和Buyer Attribution Touchpoint (BAT)，以及兩者之間的差異，並回答常見問題。

@@ -1,21 +1,23 @@
 ---
 unique-page-id: 18874745
-description: AJAX表單處理 —  [!DNL Marketo Measure]
+description: AJAX表單處理 — [!DNL Marketo Measure]
 title: AJAX表單處理
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-TQID: https://experienceleague.adobe.com/2isohrsWngucMZ4EC1YeoaIwhWPP9cyIVdoVUQ6thyI
+TQID: 'https://experienceleague.adobe.com/2isohrsWngucMZ4EC1YeoaIwhWPP9cyIVdoVUQ6thyI'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: APIs
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 315
+source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # AJAX表單處理 {#ajax-form-handling}
 
 若要手動將客戶轉換報告給[!DNL Marketo Measure]，您可以使用一個簡單的API。 如果您的網站上具有追蹤程式碼，這兩個JavaScript API都可在您的網站上自動使用。 無需執行任何特殊操作即可存取。

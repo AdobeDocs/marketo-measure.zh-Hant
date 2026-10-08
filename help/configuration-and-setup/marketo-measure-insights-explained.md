@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure]深入分析說明 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]深入分析說明 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]深入分析說明'
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]深入分析說明 {#marketo-measure-insights-explained}
 
 瞭解[!DNL Salesforce]中的[!DNL Marketo Measure]深入分析檢視，包括不同的圖示代表什麼以及如何使用功能。 此功能非常有助於檢視潛在客戶、聯絡人或帳戶的前20個工作階段。

@@ -1,22 +1,26 @@
 ---
 unique-page-id: 18874718
-description: 正在建立 [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]的行銷活動清單檢視
-title: 建立 [!DNL Salesforce] 行銷活動的行銷活動清單檢視
+description: 正在建立[!DNL Salesforce Campaigns] - [!DNL Marketo Measure]的行銷活動清單檢視
+title: 建立[!DNL Salesforce]行銷活動的行銷活動清單檢視
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-TQID: https://experienceleague.adobe.com/MYh66JaJKdgBI7XVxfffWlX9QDg4SqLWDhpsdv1kSG4
+TQID: 'https://experienceleague.adobe.com/MYh66JaJKdgBI7XVxfffWlX9QDg4SqLWDhpsdv1kSG4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Troubleshooting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 0%
-
+source-wordcount: '448'
+ht-degree: 2%
 ---
-
 # 建立[!DNL Salesforce]行銷活動的行銷活動清單檢視 {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 瞭解如何針對您要與購買者接觸點同步的促銷活動建立「清單檢視」 。
@@ -33,7 +37,7 @@ ht-degree: 0%
 
    * **型別** [等於] &#39;我們已對應至您的離線管道的所有行銷活動型別&#39;。 請參閱您的實作計畫或[!DNL Marketo Measure]中的「離線頻道」索引標籤（[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} ->我的帳戶 — >設定 — >離線頻道）。 您可以透過放大鏡圖示選取您想要的型別（已對應至離線行銷管道的型別）。
 
-      * 每個篩選器最多選擇3種型別。 篩選欄位中的字元數量存在限制。 從每個篩選器3個型別開始，並視需要新增額外的「型別」篩選器列。
+     * 每個篩選器最多選擇3種型別。 篩選欄位中的字元數量存在限制。 從每個篩選器3個型別開始，並視需要新增額外的「型別」篩選器列。
 
    * **建立日期** [大於或等於]您的[!DNL Marketo Measure]開始日期。 您可以在[!DNL Marketo Measure]應用程式的ROI儀表板中找到您的開始日期。 只要在虛線的日期範圍中選取「自從建立日期」，它就會顯示您的開始日期。
    * **&#42;記錄型別&#42;** — 若要在清單檢視中進行編輯，您必須為記錄型別新增篩選器。 您可能需要編輯的每個行銷活動記錄都需要相同記錄型別。

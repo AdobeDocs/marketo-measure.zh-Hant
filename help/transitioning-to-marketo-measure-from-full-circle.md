@@ -1,15 +1,21 @@
 ---
-description: '從Marketo Measure使用者的完整圓圈指南轉換為 [!DNL Marketo Measure] '
-title: '正在從完整圓圈轉換為 [!DNL Marketo Measure] '
+description: 從Marketo Measure使用者的完整圓圈指南轉換為[!DNL Marketo Measure]
+title: 正在從完整圓圈轉換為[!DNL Marketo Measure]
 exl-id: fd471771-33e2-413a-b155-02ba6e32e10c
 feature: Attribution, Fundamentals
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '639'
 ht-degree: 0%
-
 ---
-
 # 正在從完整圓圈轉換為[!DNL Marketo Measure] {#transitioning-to-marketo-measure-from-full-circle}
 
 正在從完整圓圈移動到[!DNL Marketo Measure]？ 您並不孤單。 以下是應牢記的最大考量事項，以及我們從進行切換的其他客戶那裡學到的經驗教訓。
@@ -30,7 +36,7 @@ ht-degree: 0%
 
 ## 可見性與歸因 {#visibility-vs-attribution}
 
-透過大多數Full Circle設定，您可以看到個人與行銷或銷售工作的每次互動。 頁面檢視、重複的頁面造訪、三聯式行銷活動的成員資格 — 全部為完整圓形。 如果檢視頁面300次，Full Circle會建立300個重複的行銷活動，並為您提供每個行銷活動的成員資格。[!DNL Marketo Measure] 不會，這是我們有意為之的設計決策。
+透過大多數Full Circle設定，您可以看到個人與行銷或銷售工作的每次互動。 頁面檢視、重複的頁面造訪、三聯式行銷活動的成員資格 — 全部為完整圓形。 如果檢視頁面300次，Full Circle會建立300個重複的行銷活動，並為您提供每個行銷活動的成員資格。 [!DNL Marketo Measure]沒有，這是我們有意為之的設計決定。
 
 [!DNL Marketo Measure]旨在為您提供歸因故事，呈現有意義的互動，並在最具影響力的接觸點之間適當地分配權重。 例如，[!DNL Marketo Measure]架構不會將頁面檢視（沒有表單填滿）顯示為例行接觸點。 獨立頁面檢視不太可能會對推動購買歷程產生影響，但若是指定的CRM里程碑之前的最新互動（例如銷售機會或商機建立），我們會建立接觸點。 我們不想向您顯示一切。 我們希望從歸因的角度顯示重要內容。
 

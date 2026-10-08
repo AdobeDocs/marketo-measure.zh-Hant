@@ -4,18 +4,21 @@ description: 瞭解Account-Based Marketing (ABM)，以及Adobe Marketo Measure�
 title: 帳戶型行銷概觀
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-TQID: https://experienceleague.adobe.com/iYWfa6eSeqICk5K3p2mVPRf2xt3UybpRFIJxSYzRmAA
+TQID: 'https://experienceleague.adobe.com/iYWfa6eSeqICk5K3p2mVPRf2xt3UybpRFIJxSYzRmAA'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 96ef477f-0ffb-5375-8fca-6d27be6b7c00
+    internal-label: Account-based Marketing
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: '829'
 ht-degree: 0%
-
 ---
-
 # 帳戶型行銷概觀 {#account-based-marketing-overview}
 
 下列章節提供ABM的簡短概觀、[!DNL Marketo Measure] ABM功能的元件，以及如何將其新增至您的[!DNL Salesforce]頁面配置。 若要深入瞭解ABM，請檢閱Adobe的[ABM部落格](https://business.adobe.com/tw/blog/basics/account-based-marketing){target="_blank"}。

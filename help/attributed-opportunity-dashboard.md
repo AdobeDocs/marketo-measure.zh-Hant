@@ -3,14 +3,18 @@ description: 涵蓋Attributed Opportunity儀表板，該儀表板會依管道子
 title: 已歸因的機會儀表板
 feature: Reporting
 exl-id: b98cc45a-9483-42a5-8b75-b235273f867b
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
-
 ---
-
 # 已歸因的機會儀表板 {#attributed-opportunity-dashboard}
 
 「已歸因的機會」儀表板提供行銷工作對新興和成熟管道機會的貢獻之全面檢視。 深入瞭解策略可歸因於您的每個開放和已關閉商機的詳細資訊，並具備依商機階段篩選的彈性，強調除已關閉交易以外的行銷影響力的完整範圍。
@@ -72,7 +76,7 @@ ht-degree: 0%
 
 * 日期（根據商機建立日期）
 * 歸因模型
-   * 針對開放機會，「完整路徑」和「自訂」歸因模型可提供時間點檢視，而不會呈現最終歸因結果。
+  * 針對開放機會，「完整路徑」和「自訂」歸因模型可提供時間點檢視，而不會呈現最終歸因結果。
 * 機會階段（根據目前階段）
 * 頻道、子頻道
 * 行銷活動

@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874700
-description: 啟用許可權以編輯轉換的潛在客戶 —  [!DNL Marketo Measure]
+description: 啟用許可權以編輯轉換的潛在客戶 — [!DNL Marketo Measure]
 title: 啟用許可權以編輯轉換的潛在客戶
 exl-id: 00f59d98-272e-47e8-bc20-9d805b1826be
 feature: Tracking
-TQID: https://experienceleague.adobe.com/HPiPX-majV643tP2uWodzIjGeAJB0mBSF21d3OPFW9Y
+TQID: 'https://experienceleague.adobe.com/HPiPX-majV643tP2uWodzIjGeAJB0mBSF21d3OPFW9Y'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 147
+source-wordcount: '147'
 ht-degree: 0%
-
 ---
-
 # 啟用許可權以編輯轉換的潛在客戶 {#enabling-the-permission-to-edit-converted-leads}
 
 瞭解如何啟用許可權以編輯[!DNL Salesforce]中轉換的潛在客戶記錄。 [!DNL Marketo Measure]能夠推送資料至Salesforce中的各種物件。 推送至銷售機會時，我們發現在某些情況下，我們可能需要重新推送至已轉換的銷售機會記錄。 為了將資料推送至這些記錄，我們連線的使用者必須具有在設定檔層級檢視和編輯轉換後潛在客戶的許可權。

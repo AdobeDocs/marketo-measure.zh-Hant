@@ -3,14 +3,18 @@ description: Marketo Measure使用者的離線自訂頻道設定指南
 title: 離線自訂頻道設定
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
-
 ---
-
 # 離線自訂頻道設定 {#offline-custom-channel-setup}
 
 ## 快速入門 {#getting-started}
@@ -45,7 +49,7 @@ SFDC行銷活動型別將顯示在離線頻道的標籤中，列在「[!DNL Sale
 
 例如，假設您每年出席兩個[!DNL Salesforce]會議。 然而，每個會議都大不相同，並且具有獨特的目標對象。 您希望瞭解這兩種方法中哪一種能帶來更多價值。 在您的[!DNL Salesforce]環境中，您可以為1月事件提供Campaign型別「會議」，將您的頻道命名為「[!DNL Salesforce]」，並將子頻道命名為「1月會議」。
 
-現在，您要對六月會議執行相同的動作。 您認為，由於這也是一個會議，因此可為其指定相同的促銷活動型別，在此例中為「會議」。 頻道相同，[!DNL Salesforce]，而且此第二次會議的子頻道是「六月會議」。 從組織的角度來看，這是合理的。 但是，讀取和套用這些規則會讓[!DNL Marketo Measure]邏輯非常困惑，因為兩個行銷活動具有相同的行銷活動型別。[!DNL Marketo Measure] 指令碼無法將一個型別的資料對應到兩個不同的子管道。 這表示您需要為每個子管道建立新的「行銷活動型別」，但子管道可以有相同的管道。
+現在，您要對六月會議執行相同的動作。 您認為，由於這也是一個會議，因此可為其指定相同的促銷活動型別，在此例中為「會議」。 頻道相同，[!DNL Salesforce]，而且此第二次會議的子頻道是「六月會議」。 從組織的角度來看，這是合理的。 但是，讀取和套用這些規則會讓[!DNL Marketo Measure]邏輯非常困惑，因為兩個行銷活動具有相同的行銷活動型別。 [!DNL Marketo Measure]指令碼無法將一個型別的資料對應到兩個不同的子管道。 這表示您需要為每個子管道建立新的「行銷活動型別」，但子管道可以有相同的管道。
 
 以下是[!DNL Marketo Measure]無法讀取的邏輯範例：
 

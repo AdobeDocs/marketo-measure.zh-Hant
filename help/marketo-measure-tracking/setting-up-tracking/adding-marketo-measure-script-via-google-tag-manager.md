@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874797
-description: 正在透過 [!DNL Google Tag Manager] - [!DNL Marketo Measure]新增 [!DNL Marketo Measure] 指令碼
-title: 正在透過 [!DNL Google Tag Manager]新增 [!DNL Marketo Measure] 指令碼
+description: 透過[!DNL Google Tag Manager] - [!DNL Marketo Measure]新增[!DNL Marketo Measure]指令碼
+title: 透過[!DNL Google Tag Manager]新增[!DNL Marketo Measure]指令碼
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
-TQID: https://experienceleague.adobe.com/g3PTxiShipF9q79oIAWKZIUU-YFMarLEDeKknaPiHck
+TQID: 'https://experienceleague.adobe.com/g3PTxiShipF9q79oIAWKZIUU-YFMarLEDeKknaPiHck'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 190
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # 透過[!DNL Google Tag Manager]新增[!DNL Marketo Measure]指令碼 {#adding-marketo-measure-script-via-google-tag-manager}
 
 安裝[!DNL Marketo Measure] JavaScript時，建議您[直接將指令碼](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md){target="_blank"}硬式編碼至網站。 如果無法這樣做，您也可以使用[!DNL Google Tag Manager] (GTM)來載入[!DNL Marketo Measure] JS。 請注意，透過GTM載入的[!DNL Marketo Measure] JS容易發生延遲。 延遲會導致指令碼載入時間延遲，這可能會造成所有表單提交中約3-5%的遺失。

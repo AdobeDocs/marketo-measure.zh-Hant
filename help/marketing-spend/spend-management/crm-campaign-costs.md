@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874688
-description: CRM行銷活動成本 —  [!DNL Marketo Measure]
+description: CRM行銷活動成本 — [!DNL Marketo Measure]
 title: CRM促銷活動成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-TQID: https://experienceleague.adobe.com/RxCP7bZJ9DND0BSpQ2PY5mOsSe-Kr45d24UKXWDmX6M
+TQID: 'https://experienceleague.adobe.com/RxCP7bZJ9DND0BSpQ2PY5mOsSe-Kr45d24UKXWDmX6M'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1193
-ht-degree: 0%
-
+source-wordcount: '1204'
+ht-degree: 1%
 ---
-
 # CRM促銷活動成本 {#crm-campaign-costs}
 
 大多數[!DNL Marketo Measure]客戶都會使用CRM行銷活動來追蹤離線行銷活動。 使用這些行銷活動的行銷人員也會在CRM內監控成本。 此功能可讓[!DNL Marketo Measure]讀取這些成本，並將這些成本套用至[!DNL Marketo Measure]內報告的行銷支出，讓行銷人員更容易操作。 到目前為止，客戶每個月都必須手動輸入每個行銷活動的成本，但透過提供給[!DNL Marketo Measure]的必要資訊，使用者可以自動化此程式，讓行銷人員可以花費更多時間分析他們的支出和ROI。

@@ -1,25 +1,33 @@
 ---
-description: '''[!DNL Marketo Measure] Ultimate總覽 —  [!DNL Marketo Measure]'''
+description: '''[!DNL Marketo Measure] Ultimate總覽 — [!DNL Marketo Measure]'''
 title: '[!DNL Marketo Measure] Ultimate概觀'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 2%
-
+ht-degree: 5%
 ---
-
 # [!DNL Marketo Measure] Ultimate概觀 {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure] （前身為Bizible）為行銷人員提供insight，讓行銷人員能夠最有效率地推動公司營收並最大化投資報酬。[!DNL Marketo Measure] 是一種行銷歸因解決方案，可自動追蹤和報告管道績效，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
+[!DNL Marketo Measure] (之前稱為 Bizible) 可協助行銷人員深入了解哪些行銷手法最能有效提升公司營收並取得最大的投資報酬率。 [!DNL Marketo Measure]是行銷歸因解決方案，可自動追蹤並報告管道效能，讓您可見哪些管道可推動最多客戶參與，並據此將行銷支出最佳化。
 
 [!DNL Marketo Measure Ultimate]包含其他功能：
 
 * 從幾乎所有資料來源和相同型別的多個資料來源擷取，以匯入所有資料進行歸因。
-   * 與幾乎任何CRM搭配使用，不只是Salesforce和Dynamics。
-   * 將多個CRM執行個體和/或MAP執行個體連線到一個[!DNL Marketo Measure]執行個體。
-   * 引進協力廠商網路研討會註冊和參與率資料。
+  * 與幾乎任何CRM搭配使用，不只是Salesforce和Dynamics。
+  * 將多個CRM執行個體和/或MAP執行個體連線到一個[!DNL Marketo Measure]執行個體。
+  * 引進協力廠商網路研討會註冊和參與率資料。
 
 * 透過欄位對應和轉換功能，以極大的彈性轉換資料，確保正確的資料形狀。
 
@@ -47,7 +55,7 @@ ht-degree: 2%
 
 [!DNL Marketo Measure Ultimate]將預設貨幣設定為USD，直到使用者變更為止。 設定新的預設貨幣會更新資料，而不會重新處理。 只要選取的貨幣以目標ISO代碼的形式存在，就不需要提交轉換率。
 
-![Marketo Measure Ultimate將預設貨幣設定為USD，直到](assets/marketo-overview-7.png)
+![Marketo Measure Ultimate將預設貨幣設為USD，直到](assets/marketo-overview-7.png)
 
 **[!DNL Marketo Measure Ultimate]沙箱**
 

@@ -1,21 +1,25 @@
 ---
-description: 實作 [!DNL Marketo Measure] JavaScript - [!DNL Marketo Measure]的最佳作法
-title: 實作 [!DNL Marketo Measure] JavaScript的最佳作法
+description: 實作[!DNL Marketo Measure] JavaScript的最佳實務 — [!DNL Marketo Measure]
+title: 實作[!DNL Marketo Measure] JavaScript的最佳實務
 exl-id: 0359ad27-81e8-4902-a23a-49a5646a44d0
 feature: Tracking
-TQID: https://experienceleague.adobe.com/Hr98nEk-MyqnwmS4piEFxfFKUEyEaZwcNH-OuTxFzE8
+TQID: 'https://experienceleague.adobe.com/Hr98nEk-MyqnwmS4piEFxfFKUEyEaZwcNH-OuTxFzE8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 370
+source-wordcount: '372'
 ht-degree: 0%
-
 ---
-
 # 實作[!DNL Marketo Measure] JavaScript的最佳實務 {#best-practices-for-implementing-marketo-measure-javascript}
 
 ## 概觀 {#overview}
@@ -36,16 +40,16 @@ ht-degree: 0%
 實施及管理[!DNL Marketo Measure] JavaScript時，請記住下列最佳實務。
 
 * 確認您的[!DNL Marketo Measure]帳戶中列出了您的所有網域
-   * 如果您對網域有任何疑慮，請聯絡支援服務
+  * 如果您對網域有任何疑慮，請聯絡支援服務
 * 在所有頁面中部署JavaScript。
-   * 僅將JavaScript放在某些頁面上會導致工作階段資料中斷，進而導致[!DNL Marketo Measure]資料不正確
+  * 僅將JavaScript放在某些頁面上會導致工作階段資料中斷，進而導致[!DNL Marketo Measure]資料不正確
 * 對於您網站上您不想要建立接觸點的表單，請務必新增[!DNL Marketo Measure]排除指令碼
-   * 此排除指令碼將確保[!DNL Marketo Measure]工作階段資料不會中斷，並且來源資料會保留在適當位置
-      * 要隱藏的常見表單範例有：
-         * 客戶登入
-         * 忘記密碼表單
-         * 取消訂閱表單
-         * 職涯申請表
+  * 此排除指令碼將確保[!DNL Marketo Measure]工作階段資料不會中斷，並且來源資料會保留在適當位置
+    * 要隱藏的常見表單範例有：
+      * 客戶登入
+      * 忘記密碼表單
+      * 取消訂閱表單
+      * 職涯申請表
 * 檢閱下列新增[!DNL Marketo Measure]指令碼資源的「其他考量事項」和「Forms格外留意」區段，以檢查任何可能需要特殊處理的情境
 
 ## 維護最佳實務 {#best-practice-for-maintenance}

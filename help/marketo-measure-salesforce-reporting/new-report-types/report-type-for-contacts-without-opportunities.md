@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874616
-description: 沒有商機的連絡人的報告型別 —  [!DNL Marketo Measure]
+description: 沒有商機的連絡人的報告型別 — [!DNL Marketo Measure]
 title: 沒有商機的連絡人的報表型別
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-TQID: https://experienceleague.adobe.com/j7dgYcy3QY2XRGdYptv-S3N6IWfsSRa6iQrpD0FF1Tg
+TQID: 'https://experienceleague.adobe.com/j7dgYcy3QY2XRGdYptv-S3N6IWfsSRa6iQrpD0FF1Tg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 151
-ht-degree: 0%
-
+source-wordcount: '151'
+ht-degree: 1%
 ---
-
 # 沒有商機的連絡人的報表型別 {#report-type-for-contacts-without-opportunities}
 
 >[!NOTE]
@@ -24,7 +27,7 @@ ht-degree: 0%
 
 若要報告與未關聯至商機的採購員接觸點之聯絡人，您必須建立自訂報告型別。
 
-1. 前往&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
+1. 前往 **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
    ![](assets/1.jpg)
 

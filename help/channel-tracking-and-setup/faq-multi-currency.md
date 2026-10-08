@@ -3,13 +3,17 @@ description: Marketo Measure使用者常見問題集（多貨幣）指南
 title: 常見問題集（多貨幣）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
-
 ---
-
 # 常見問題集（多貨幣） {#faq-multi-currency}
 
 **我如何知道要啟用哪個功能位元？**
@@ -52,7 +56,7 @@ Marketo Measure會自動從客戶的CRM提取貨幣設定。 不再需要在Mark
 
 很遺憾，由於[!DNL Salesforce]的長期限制，這對[!DNL Salesforce]進階貨幣管理的使用者運作方式有一些細微差異。 「在此情況下我們該做什麼」的簡短答案是，我們會使用基本（即非進階）「管理幣別」標籤中定義的統一匯率，來換算收入金額。 換言之，我們完全忽略過過期的匯率，儘管客戶已定義過期的匯率。
 
-對於感興趣的讀者來說，以下是它如此運作的原因。 我們的接觸點會使用公式欄位來計算收入（從相關的商機金額衍生）。[!DNL Salesforce] 原生支援這些公式計算的貨幣轉換，但僅支援其貨幣支援的基本風格。 我們無法定義參考日期匯率的公式欄位。[!DNL Salesforce] 只是不支援該功能，因此我們無法參考收入計算中的日期匯率，儘管這些日期匯率存在於[!DNL Salesforce]中（這聽起來很不可思議，但就是這麼運作的）。
+對於感興趣的讀者來說，以下是它如此運作的原因。 我們的接觸點會使用公式欄位來計算收入（從相關的商機金額衍生）。 [!DNL Salesforce]原生支援這些公式計算的貨幣轉換，但僅支援其基本型別的貨幣支援。 我們無法定義參考日期匯率的公式欄位。 [!DNL Salesforce]不支援該功能，因此我們無法參考收入計算中的日期費率，儘管這些日期費率存在於[!DNL Salesforce]中（這聽起來很不可思議，但就是這麼運作的）。
 
 **如果我的客戶使用工作流程填入轉換的欄位，他們以後應該如何使用此欄位？**
 

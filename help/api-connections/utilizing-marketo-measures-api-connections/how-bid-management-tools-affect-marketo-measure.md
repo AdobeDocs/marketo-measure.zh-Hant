@@ -1,21 +1,25 @@
 ---
 unique-page-id: 18874720
-description: 競標管理工具如何影響 [!DNL Marketo Measure] - [!DNL Marketo Measure]
-title: 競標管理工具如何影響 [!DNL Marketo Measure]
+description: 競標管理工具如何影響[!DNL Marketo Measure] - [!DNL Marketo Measure]
+title: 競標管理工具如何影響[!DNL Marketo Measure]
 exl-id: 67c00ad9-8b12-4238-8a1f-2d2f5ed04423
 feature: APIs, Integration, UTM Parameters
-TQID: https://experienceleague.adobe.com/gcugeRrHUi4qetrYBpUavRyrBHVpB0qCzPo4OYMI4hw
+TQID: 'https://experienceleague.adobe.com/gcugeRrHUi4qetrYBpUavRyrBHVpB0qCzPo4OYMI4hw'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 259
+source-wordcount: '259'
 ht-degree: 2%
-
 ---
-
 # 競標管理工具如何影響[!DNL Marketo Measure] {#how-bid-management-tools-affect-marketo-measure}
 
 瞭解競標管理平台如何影響[!DNL Marketo Measure]追蹤AdWords和BingAds的能力，以及如何使用我們的引數設定追蹤範本以確保所有專案都正確追蹤。
@@ -32,10 +36,10 @@ Kenshoo和Marin是絕佳的工具，行銷人員可以透過不同的搜尋引�
 * 在「追蹤範本」旁邊，按一下&#x200B;**編輯**。
 * 填入URL：
 
-   * 如果您的所有廣告URL都有「？」 在其中，使用此URL：
-      * `{lpurl}&_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
-   * 如果您的任何廣告URL都沒有「？」 在其中，使用此URL：
-      * `{lpurl}?_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
+  * 如果您的所有廣告URL都有「？」 在其中，使用此URL：
+    * `{lpurl}&_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
+  * 如果您的任何廣告URL都沒有「？」 在其中，使用此URL：
+    * `{lpurl}?_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
 
 
 ## 針對[!DNL Bing Ads]個帳戶 {#for-bing-ads-accounts}
@@ -48,7 +52,7 @@ Kenshoo和Marin是絕佳的工具，行銷人員可以透過不同的搜尋引�
 * 在「追蹤範本」旁邊，按一下&#x200B;**編輯**。
 * 填入URL：
 
-   * 如果您的所有廣告URL都有「？」 在其中，使用此URL：
-      * `{lpurl}&_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`
-   * 如果您的任何廣告URL都沒有「？」 在其中，使用此URL：
-      * `{lpurl}?_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`
+  * 如果您的所有廣告URL都有「？」 在其中，使用此URL：
+    * `{lpurl}&_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`
+  * 如果您的任何廣告URL都沒有「？」 在其中，使用此URL：
+    * `{lpurl}?_bt={adid}&utm_term={keyword}&utm_source=Bing_Yahoo&utm_medium=CPC`

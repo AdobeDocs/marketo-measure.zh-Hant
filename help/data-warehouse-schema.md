@@ -3,13 +3,17 @@ description: Marketo Measure Data Warehouse結構描述詳述表格和欄的參�
 title: Data Warehouse結構描述
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '21802'
 ht-degree: 8%
-
 ---
-
 # Data Warehouse結構描述 {#data-warehouse-schema}
 
 Data Warehouse可讓您視需要追蹤更多內容、隨處報告歸因資料，並將資料插入其他資料集。
@@ -905,7 +909,7 @@ _按一下完整版本的影像_
         <p>來源系統中用於廣告帳戶的貨幣代碼。</p>
       </td>
       <td>
-        <p>美元</p>
+        <p>USD</p>
       </td>
     </tr>
     <tr>
@@ -1154,7 +1158,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為任何廣告階層中的行銷活動上方沒有廣告群組。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1653,7 +1657,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為Doubleclick廣告階層中沒有「廣告群組」。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1665,7 +1669,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為Doubleclick廣告階層中沒有「廣告群組」。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1677,7 +1681,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為這是階層中「廣告群組」的記錄。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -1689,7 +1693,7 @@ _按一下完整版本的影像_
         <p>預期為Null，因為這是階層中「廣告群組」的記錄。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -3739,7 +3743,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>Source_ISO_CODE</td>
       <td>varchar</td>
       <td>來自來源系統的貨幣ISO代碼。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>START_DATE</td>
@@ -4003,7 +4007,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>從廣告連線中拉取的廣告群組名稱。</p>
       </td>
       <td>
-        <p>歸因管理軟體 | 片語</p>
+        <p>歸因管理軟體 |片語</p>
       </td>
     </tr>
     <tr>
@@ -4090,7 +4094,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由Creative加總的成本。 (也就是若要取得Creative Cost，加總此欄等於true的列)。</p>
+        <p>指出列是否包含可由Creative加總的成本。 （也就是若要取得Creative Cost，加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>假</p>
@@ -4228,7 +4232,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>ISO_CURRENCY_CODE</td>
       <td>varchar</td>
       <td>貨幣的ISO代碼，從來源系統匯入。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>Source_ID</td>
@@ -5116,7 +5120,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>ISO_CODE</td>
       <td>varchar</td>
       <td>貨幣的ISO代碼。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>IS_CORPORATE</td>
@@ -6471,7 +6475,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>布林值</p>
       </td>
       <td>
-        <p>指出列是否包含可由Creative加總的成本。 (也就是若要取得Creative Cost，加總此欄等於true的列)。</p>
+        <p>指出列是否包含可由Creative加總的成本。 （也就是若要取得Creative Cost，加總此欄等於true的列）。</p>
       </td>
       <td>
         <p>假</p>
@@ -7188,7 +7192,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>預期為Null，因為Doubleclick階層中沒有廣告群組可供曝光</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7200,7 +7204,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>預期為Null，因為Doubleclick階層中沒有廣告群組可供曝光</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7236,7 +7240,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>因為「曝光數」的Doubleclick階層中沒有Creative，所以預期為空值。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7531,7 +7535,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -7543,7 +7547,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>因為「曝光數」的Doubleclick階層中沒有「關鍵字」，所以預期為Null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8249,7 +8253,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>（已棄用）</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8261,7 +8265,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>（已棄用）</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8699,7 +8703,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>（已棄用）</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8726,7 +8730,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>請注意，此欄位未設定，並在Snowflake中為所有客戶傳回null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8739,7 +8743,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
         <p>請注意，此欄位未設定，並在Snowflake中為所有客戶傳回null。</p>
       </td>
       <td>
-        <p>null</p>
+        <p>Null</p>
       </td>
     </tr>
     <tr>
@@ -8834,7 +8838,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
       <td>CURRENCY_ISO_CODE</td>
       <td>varchar</td>
       <td>貨幣的ISO代碼，從來源系統匯入。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>

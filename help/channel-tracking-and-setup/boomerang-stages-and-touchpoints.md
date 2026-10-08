@@ -3,13 +3,19 @@ description: Marketo Measure使用者的Boomerang階段與接觸點指引
 title: 回味郎舞台和接觸點
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 1096bc28-f8ba-5a87-abf9-ad1b68c31f97
+    internal-label: Boomerang
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
-
 ---
-
 # 回味郎舞台和接觸點 {#boomerang-stages-and-touchpoints}
 
 >[!AVAILABILITY]
@@ -59,7 +65,7 @@ MQL-02 **（最後）**
 
 **任何使用「等於[接觸點位置]」的報表**
 
-* 回饋式階段會為您的資料引入新的接觸點位置。[!DNL Marketo Measure] 正在變更接觸點位置的格式，以包含舞台出現位置，例如「MQL-01」或「MQL-05 （上一個）」。 在此範例中，「迴旋移動階段」會影響任何使用「接觸點位置等於MQL」的報表。 若要調整這些報表，篩選器應改用「包含」運運算元。
+* 回饋式階段會為您的資料引入新的接觸點位置。 [!DNL Marketo Measure]正在變更接觸點位置的格式，以包含階段出現次數，例如&quot;MQL-01&quot;或&quot;MQL-05 （上一個）&quot;。 在此範例中，「迴旋移動階段」會影響任何使用「接觸點位置等於MQL」的報表。 若要調整這些報表，篩選器應改用「包含」運運算元。
 
 ## 常見問題集 {#faq}
 

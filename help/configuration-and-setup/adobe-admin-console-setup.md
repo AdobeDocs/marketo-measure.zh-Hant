@@ -3,13 +3,17 @@ description: 指南會透過Adobe Admin Console設定檔設定Marketo Measure存
 title: Adobe Admin Console設定
 feature: Installation
 exl-id: f9edacae-79e0-408c-ac37-bbe67c185f2d
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 5%
-
 ---
-
 # Adobe Admin Console設定 {#adobe-admin-console-setup}
 
 使用[!DNL Marketo Measure]的第一步是建立並登入您已布建的Adobe Admin Console。 如果您尚未收到包含登入指示的電子郵件，請聯絡您的[!DNL Marketo Measure]客戶代表。
@@ -51,7 +55,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->若要成為[!DNL Marketo Measure]管理員(位於[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"})，使用者必須新增為使用者&#x200B;_和_ [!DNL Marketo Measure]產品卡中任何[!DNL Marketo Measure]產品設定檔的管理員。
+>若要成為[!DNL Marketo Measure]管理員（位於[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}），使用者必須新增為使用者&#x200B;_和_ [!DNL Marketo Measure]產品卡中任何[!DNL Marketo Measure]產品設定檔的管理員。
 
 **正在登入[!DNL Marketo Measure]**
 

@@ -1,24 +1,28 @@
 ---
 unique-page-id: 18874594
-description: 整合式廣告平台 —  [!DNL Marketo Measure]
+description: 整合式廣告平台 — [!DNL Marketo Measure]
 title: 整合式廣告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-TQID: https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0
+TQID: 'https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1763
+source-wordcount: '1763'
 ht-degree: 0%
-
 ---
-
 # 整合式廣告平台 {#integrated-ad-platforms}
 
 [!DNL Marketo Measure]擁有與Google AdWords、Microsoft BingAds、[!DNL Facebook]個廣告和DoubleClick促銷活動管理員的API連線。 透過這些API連線，[!DNL Marketo Measure]能夠輕鬆提取資料，並將其連同外部購買者應用程式推播到您的CRM。 不需要手動上傳成本或資料。 您的帳戶只需要連線並授權至[!DNL Marketo Measure]應用程式即可。 然後[!DNL Marketo Measure]將自動從平台下載行銷成本，並將其載入至[!DNL Marketo Measure]應用程式。 如果您選取啟用AdWords、BingAds或[!DNL Facebook]廣告的自動標籤，[!DNL Marketo Measure]會自動將其引數附加至廣告的URL。
@@ -53,8 +57,8 @@ ht-degree: 0%
 * *選項B*：找到第三方重新導向。 如果在追蹤範本中找到協力廠商重新導向，[!DNL Marketo Measure]無法採取任何動作。 您必須手動將[!DNL Marketo Measure]標籤新增至協力廠商系統。 例如，Kenshoo或Marin之類的競標管理工具就是第三方重新導向的範例。 深入瞭解[競標管理工具如何影響 [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}。
 
 * *選項C*：找不到追蹤範本。 [!DNL Marketo Measure]會掃描[!DNL Marketo Measure]引數的所有廣告目的地URL。 根據掃描，如果：
-   * 找到引數：設定完成！
-   * 找不到引數： [!DNL Marketo Measure]會將其引數附加至廣告目的地URL的結尾。 [!DNL Marketo Measure]會在建立新廣告後的兩小時內附加新廣告。 請記住，不會將引數新增至範本。
+  * 找到引數：設定完成！
+  * 找不到引數： [!DNL Marketo Measure]會將其引數附加至廣告目的地URL的結尾。 [!DNL Marketo Measure]會在建立新廣告後的兩小時內附加新廣告。 請記住，不會將引數新增至範本。
 
 深入瞭解[[!DNL AdWords] 自動標籤功能](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}。
 

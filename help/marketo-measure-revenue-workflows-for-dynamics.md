@@ -3,13 +3,20 @@ description: 用於調整Marketo Measure報表之Dynamics收入和關閉日期�
 title: Dynamics的[!DNL Marketo Measure]收入工作流程
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
-
 ---
-
 # Dynamics的[!DNL Marketo Measure]收入工作流程 {#marketo-measure-revenue-workflows-for-dynamics}
 
 ## 第一部分：預估收入vs實際收入 {#part-estimated-revenue-vs-actual-revenue}
@@ -42,7 +49,7 @@ ht-degree: 0%
 
 ## 第2部分：預估關閉日期vs.實際關閉日期 {#part-estimated-close-date-vs-actual-close-date}
 
-管道收入資料是現成可用的儀表板，因為依預設，Dynamics有兩個庫存結案日期欄位：預估結案日期和實際結案日期。[!DNL Marketo Measure] 只能指向控制面板中的一個關閉日期欄位，且它指向實際關閉日期。
+管道收入資料是現成可用的儀表板，因為依預設，Dynamics有兩個庫存結案日期欄位：預估結案日期和實際結案日期。 [!DNL Marketo Measure]在儀表板中只能指向一個關閉日期欄位，它指向實際關閉日期。
 
 如果「實際關閉日期」欄位中沒有開啟商機的資料，則控制面板中沒有開啟商機的資料。 也就是說，需要根據機會階段的工作流程來支援這兩個日期欄位。
 
