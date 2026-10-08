@@ -55,7 +55,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 >[!NOTE]
 >
->請檢視[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的建置區塊，以取得結構描述、類別和欄位群組的概觀。
+>請檢視[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#building-blocks-of-a-schema){target="_blank"}的建置區塊，以取得結構描述、類別和欄位群組的概觀。
 
 **XDM結構描述=類別+結構描述欄位群組&#42;**
 
@@ -72,7 +72,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 我們建議使用自動產生公用程式來建立十個標準B2B結構描述。
 
-* 下載及設定公用程式[的步驟可在此找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}。
+* 下載及設定公用程式[的步驟可在此找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=zh-Hant#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}。
 
 對於具有&#x200B;_&#x200B;**CDP權利**&#x200B;_&#x200B;的使用者：請前往「來源」頁面建立結構描述。
 
@@ -90,7 +90,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 >
 >新增資料集時，我們建議建立流程，而非使用現有流程。
 
-[資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
+[資料流概觀](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=zh-Hant){target="_blank"}
 
 **建立資料流的步驟：**
 
@@ -105,7 +105,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
    >* 如果將一種結構描述型別對應到另一種相同的結構描述型別，則會自動完成對應操作。
    >* 您也可以從系統中的另一個流程匯入對應。
    >* 您可以將一個Source欄位對應到多個目的地欄位，但無法做相反的事情。
-   >* 您可以建立計算欄位（[資料準備對應函式](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}）。
+   >* 您可以建立計算欄位（[資料準備對應函式](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=zh-Hant){target="_blank"}）。
 
    >[!CAUTION]
    >
@@ -133,7 +133,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-選項2： [下載及使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （更快且更可靠）。
+選項2： [下載及使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=zh-Hant){target="_blank"} （更快且更可靠）。
 
 ## 啟動Marketo Measure的資料集 {#activate-dataset-for-marketo-measure}
 
