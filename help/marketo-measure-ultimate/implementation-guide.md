@@ -74,7 +74,7 @@ Ultimate使用者會布建為AEP。 如果他們已有AEP，我們將不會重�
 
 * 下載及設定公用程式[的步驟可在此找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}。
 
-對於具有&#x200B;_**CDP權利**_&#x200B;的使用者：請前往「來源」頁面建立結構描述。
+對於具有&#x200B;_&#x200B;**CDP權利**&#x200B;_&#x200B;的使用者：請前往「來源」頁面建立結構描述。
 
 * 從來源中，選取新增資料>使用範本
 
