@@ -26,11 +26,11 @@ UTM引數可以手動新增至URL，或透過特定平台（例如AdWords ）的
 
 若要瞭解UTM引數如何運作，讓我們看看不含UTM的典型URL：
 
-`http://www.adobe.com`
+`http://www.adobe.com/tw`
 
 現在，讓我們檢視具有UTM的URL：
 
-`http://www.adobe.com?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
+`http://www.adobe.com/tw?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
 
 第二個連結包含更多文字。 UTM引數一律位於最上層網域（此範例中為.com）後面，並以問號開頭。 之後，引數的順序並不重要，但建議遵循一致的命名慣例。 必須在每個引數之間放置&amp;符號，以分隔每個UTM。 現在，我們可以更詳細地瞭解每個引數代表什麼。
 
