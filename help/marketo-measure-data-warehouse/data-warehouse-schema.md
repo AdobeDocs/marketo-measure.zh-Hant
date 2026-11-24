@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
+source-git-commit: 85b421a896fb78f5469a41c8d11131802d08910c
 workflow-type: tm+mt
-source-wordcount: '21775'
+source-wordcount: '21772'
 ht-degree: 8%
 ---
 # Data Warehouse結構描述 {#data-warehouse-schema}
@@ -5804,7 +5804,7 @@ Attribution AI整合產生的資料。 這些欄位僅會針對Marketo Measure U
 
 >[!IMPORTANT]
 >
->Marketo Measure將在2024年中淘汰此表格。 如果您想在您端建立它，請執行[這個SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
+>Marketo Measure已於2024年淘汰此表格。 如果您想在您端建立它，請執行[這個SQL查詢](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.txt)。
 
 <table>
   <tbody>
